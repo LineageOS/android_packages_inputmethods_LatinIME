@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAACX///tI\u003d",
+        "filename": "java/res/xml/prefs.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 32
+      },
+      "writtenOn": "2011-02-06T03:44:37Z",
+      "side": 1,
+      "message": "No tabs please",
+      "revId": "c4cec27784469115bc24c73e4f918c9a43318851",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
