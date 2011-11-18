@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAALn///5Y\u003d",
+        "filename": "java/res/values-hu/bools.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1642
+      },
+      "writtenOn": "2011-11-18T19:03:35Z",
+      "side": 1,
+      "message": "error;red whitespace",
+      "revId": "92b3f30bd84af0c345efbcecf91adbb0fedf2dd7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAALn///5c\u003d",
+        "filename": "java/res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1642
+      },
+      "writtenOn": "2011-11-18T19:03:35Z",
+      "side": 1,
+      "message": "error;red whitespace",
+      "revId": "92b3f30bd84af0c345efbcecf91adbb0fedf2dd7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
