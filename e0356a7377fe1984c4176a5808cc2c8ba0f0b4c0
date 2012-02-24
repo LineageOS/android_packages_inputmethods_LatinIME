@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAQX//9yg\u003d",
+        "filename": "java/src/com/android/inputmethod/latin/LatinIME.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1102,
+      "author": {
+        "id": 940
+      },
+      "writtenOn": "2012-02-24T08:53:52Z",
+      "side": 1,
+      "message": "Any particular reason for moving this here ?",
+      "revId": "e0356a7377fe1984c4176a5808cc2c8ba0f0b4c0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
