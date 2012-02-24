@@ -16,6 +16,24 @@
       "revId": "e0356a7377fe1984c4176a5808cc2c8ba0f0b4c0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAQX//9yU\u003d",
+        "filename": "java/src/com/android/inputmethod/latin/LatinIME.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1102,
+      "author": {
+        "id": 1358
+      },
+      "writtenOn": "2012-02-24T09:08:23Z",
+      "side": 1,
+      "message": "Didn\u0027t notice that, thanks. Left over from when I was messing around with the code.",
+      "parentUuid": "AAAAQX//9yg\u003d",
+      "revId": "e0356a7377fe1984c4176a5808cc2c8ba0f0b4c0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
