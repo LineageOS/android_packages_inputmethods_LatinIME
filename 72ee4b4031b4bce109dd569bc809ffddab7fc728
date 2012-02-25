@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAQX//9mQ\u003d",
+        "filename": "java/res/values/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 353,
+      "author": {
+        "id": 1078
+      },
+      "writtenOn": "2012-02-25T06:10:04Z",
+      "side": 1,
+      "message": "\"Use the volume keys to move the cursor\". It is assumed that for a CheckBoxPreference if it is checked the summary is true and if it is not checked the summary is false, so no need for the \"while active\".",
+      "revId": "72ee4b4031b4bce109dd569bc809ffddab7fc728",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAQX//9mM\u003d",
+        "filename": "java/res/xml/prefs.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 1078
+      },
+      "writtenOn": "2012-02-25T06:10:04Z",
+      "side": 1,
+      "message": "Should use spaces instead of tabs. defaultValue should be false.",
+      "revId": "72ee4b4031b4bce109dd569bc809ffddab7fc728",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
