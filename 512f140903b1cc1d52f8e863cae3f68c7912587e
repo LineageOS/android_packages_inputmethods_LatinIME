@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAASX///1Q\u003d",
+        "filename": "java/src/com/android/inputmethod/latin/LatinIME.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 986,
+      "author": {
+        "id": 1929
+      },
+      "writtenOn": "2012-04-12T16:42:49Z",
+      "side": 1,
+      "message": "how about use \n\nflipscreens \u003d \"180\".equals(SystemProperties.get(\"persist.sys.hwrotation\", \"0\"));\n\nif (flipscreens) {\n// do nothing\n} else {\n// do below\n}\n\nor something :)\n\nwill try to implement this into my zte blade, :D",
+      "revId": "512f140903b1cc1d52f8e863cae3f68c7912587e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
