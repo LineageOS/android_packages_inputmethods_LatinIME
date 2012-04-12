@@ -16,6 +16,24 @@
       "revId": "512f140903b1cc1d52f8e863cae3f68c7912587e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAASX///0U\u003d",
+        "filename": "java/src/com/android/inputmethod/latin/LatinIME.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 986,
+      "author": {
+        "id": 1579
+      },
+      "writtenOn": "2012-04-12T19:08:16Z",
+      "side": 1,
+      "message": "thanks, would look into it after FCs issue solved :-)",
+      "parentUuid": "AAAASX///1Q\u003d",
+      "revId": "512f140903b1cc1d52f8e863cae3f68c7912587e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
