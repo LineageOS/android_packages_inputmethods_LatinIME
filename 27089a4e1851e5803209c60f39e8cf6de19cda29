@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAATH///kc\u003d",
+        "filename": "java/res/values-cs-rZZ/donottranslate-more-keys.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 129
+      },
+      "writtenOn": "2012-05-22T03:11:21Z",
+      "side": 1,
+      "message": "the 6 by z should be removed",
+      "revId": "27089a4e1851e5803209c60f39e8cf6de19cda29",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
