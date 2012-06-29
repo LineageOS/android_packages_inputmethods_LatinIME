@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAUH//7hw\u003d",
+        "filename": "java/res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-06-29T22:38:03Z",
+      "side": 1,
+      "message": "Is deze dan ook te lang? Ik denk dat het gebruikt wordt in lijsten op internet.",
+      "revId": "b14cf7ce64d88c05f2f6453d51ee50ea8b768b36",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAUH//7h0\u003d",
+        "filename": "java/res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-06-29T22:38:03Z",
+      "side": 1,
+      "message": "En Verzend of Verstuur?",
+      "revId": "b14cf7ce64d88c05f2f6453d51ee50ea8b768b36",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
