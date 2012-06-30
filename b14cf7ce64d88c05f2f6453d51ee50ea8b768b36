@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAUH//7aE\u003d",
+        "filename": "java/res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 2248
+      },
+      "writtenOn": "2012-06-30T00:34:51Z",
+      "side": 1,
+      "message": "Volgende is 1 letter korter dan verzenden :)",
+      "parentUuid": "AAAAUH//7bE\u003d",
+      "revId": "b14cf7ce64d88c05f2f6453d51ee50ea8b768b36",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAUH//7h0\u003d",
         "filename": "java/res/values-nl/strings.xml",
         "patchSetId": 1
