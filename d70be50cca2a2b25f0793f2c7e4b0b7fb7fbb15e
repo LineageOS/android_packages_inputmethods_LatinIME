@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAVn//+Lk\u003d",
+        "filename": "java/res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 127,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2012-08-05T01:25:55Z",
+      "side": 1,
+      "message": "Eigenlijk precies 25 karakters.\nDone",
+      "parentUuid": "AAAAVn//+MQ\u003d",
+      "revId": "d70be50cca2a2b25f0793f2c7e4b0b7fb7fbb15e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAVn//+3g\u003d",
         "filename": "java/res/values-nl/strings.xml",
         "patchSetId": 1
@@ -48,6 +66,24 @@
       "writtenOn": "2012-08-03T04:03:55Z",
       "side": 1,
       "message": "toevoegen",
+      "revId": "d70be50cca2a2b25f0793f2c7e4b0b7fb7fbb15e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAVn//+Ls\u003d",
+        "filename": "java/res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 128,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2012-08-05T01:25:55Z",
+      "side": 1,
+      "message": "Dat moet wel passen.\nDone",
+      "parentUuid": "AAAAVn//+3g\u003d",
       "revId": "d70be50cca2a2b25f0793f2c7e4b0b7fb7fbb15e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
