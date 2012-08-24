@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAWn///Bg\u003d",
+        "filename": "java/res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-08-24T21:05:11Z",
+      "side": 1,
+      "message": "Wsl bedoeld op onderstaande? Ik vind de options nogal \u0027vaag\u0027.",
+      "parentUuid": "AAAAWn///D4\u003d",
+      "revId": "a6f7a56f390d59e09ae2c7a3fbb6b6e543cac955",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAWn///D0\u003d",
         "filename": "java/res/values-nl/strings.xml",
         "patchSetId": 1
@@ -30,6 +48,23 @@
       "writtenOn": "2012-08-24T18:22:58Z",
       "side": 1,
       "message": "Punt?",
+      "revId": "a6f7a56f390d59e09ae2c7a3fbb6b6e543cac955",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAWn///Bc\u003d",
+        "filename": "java/res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 93,
+      "author": {
+        "id": 2049
+      },
+      "writtenOn": "2012-08-24T21:05:11Z",
+      "side": 1,
+      "message": "Ik zou ook punt zeggen.",
       "revId": "a6f7a56f390d59e09ae2c7a3fbb6b6e543cac955",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
