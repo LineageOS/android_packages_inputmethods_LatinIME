@@ -37,6 +37,23 @@
     },
     {
       "key": {
+        "uuid": "AAAAWn//+4A\u003d",
+        "filename": "java/res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2012-08-25T01:30:51Z",
+      "side": 1,
+      "message": "r.35: \n\n* Opties voor ervaren gebruikers",
+      "revId": "a6f7a56f390d59e09ae2c7a3fbb6b6e543cac955",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAWn///A4\u003d",
         "filename": "java/res/values-nl/strings.xml",
         "patchSetId": 1
@@ -66,6 +83,92 @@
       "side": 1,
       "message": "Done",
       "parentUuid": "AAAAWn///A4\u003d",
+      "revId": "a6f7a56f390d59e09ae2c7a3fbb6b6e543cac955",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAWn//+4Y\u003d",
+        "filename": "java/res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2012-08-25T01:30:51Z",
+      "side": 1,
+      "message": "* Invoermethoden wisselen",
+      "parentUuid": "AAAAWn///Aw\u003d",
+      "revId": "a6f7a56f390d59e09ae2c7a3fbb6b6e543cac955",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAWn//+2w\u003d",
+        "filename": "java/res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2012-08-25T01:30:51Z",
+      "side": 1,
+      "message": "* Wisseltoets voor taal ook van toepassing op andere invoermethoden",
+      "revId": "a6f7a56f390d59e09ae2c7a3fbb6b6e543cac955",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAWn//+4k\u003d",
+        "filename": "java/res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2012-08-25T01:30:51Z",
+      "side": 1,
+      "message": "* Taal wisselen uitzetten\n\n* Taal wisselen uit\n\nen anders \n\n* Taal wisselen onderdrukken\n\nwant ik zie liever een paar puntjes in portretmodus en het woord volledig in landschapsmodus dan zo\u0027n rare afkorting.",
+      "revId": "a6f7a56f390d59e09ae2c7a3fbb6b6e543cac955",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAWn//+38\u003d",
+        "filename": "java/res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2012-08-25T01:30:51Z",
+      "side": 1,
+      "message": "Key pop-up dismiss delay\n\nLastig!!\n\n*Toetspop-up afwijsvertraging\n\n??",
+      "revId": "a6f7a56f390d59e09ae2c7a3fbb6b6e543cac955",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAWn//+3s\u003d",
+        "filename": "java/res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2012-08-25T01:30:51Z",
+      "side": 1,
+      "message": "Volgende-woordvoorspelling",
       "revId": "a6f7a56f390d59e09ae2c7a3fbb6b6e543cac955",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -106,6 +209,75 @@
     },
     {
       "key": {
+        "uuid": "AAAAWn//+3o\u003d",
+        "filename": "java/res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 93,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2012-08-25T01:30:51Z",
+      "side": 1,
+      "message": "Ja, Punt",
+      "parentUuid": "AAAAWn///Bc\u003d",
+      "revId": "a6f7a56f390d59e09ae2c7a3fbb6b6e543cac955",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAWn//+3k\u003d",
+        "filename": "java/res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2012-08-25T01:30:51Z",
+      "side": 1,
+      "message": "Voice input key\nkey in in dit geval \"toets\", niet \"sleutel\"\n\n* Spraakinvoer toets",
+      "revId": "a6f7a56f390d59e09ae2c7a3fbb6b6e543cac955",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAWn//+3c\u003d",
+        "filename": "java/res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 105,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2012-08-25T01:30:51Z",
+      "side": 1,
+      "message": "voluit?",
+      "revId": "a6f7a56f390d59e09ae2c7a3fbb6b6e543cac955",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAWn//+3Y\u003d",
+        "filename": "java/res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2012-08-25T01:30:51Z",
+      "side": 1,
+      "message": "voluit?",
+      "revId": "a6f7a56f390d59e09ae2c7a3fbb6b6e543cac955",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAWn///Dw\u003d",
         "filename": "java/res/values-nl/strings.xml",
         "patchSetId": 1
@@ -117,6 +289,24 @@
       "writtenOn": "2012-08-24T18:22:58Z",
       "side": 1,
       "message": "Invoertalen kiezen?",
+      "revId": "a6f7a56f390d59e09ae2c7a3fbb6b6e543cac955",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAWn//+3U\u003d",
+        "filename": "java/res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2012-08-25T01:30:51Z",
+      "side": 1,
+      "message": "Input languages - ik zou het zo laten",
+      "parentUuid": "AAAAWn///Dw\u003d",
       "revId": "a6f7a56f390d59e09ae2c7a3fbb6b6e543cac955",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
