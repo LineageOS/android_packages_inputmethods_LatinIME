@@ -54,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAWn//+u0\u003d",
+        "filename": "java/res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2012-08-25T13:15:59Z",
+      "side": 1,
+      "message": "Ik vind dit persoonlijk niets extra\u0027s toevoegen.",
+      "parentUuid": "AAAAWn//+4A\u003d",
+      "revId": "a6f7a56f390d59e09ae2c7a3fbb6b6e543cac955",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAWn///A4\u003d",
         "filename": "java/res/values-nl/strings.xml",
         "patchSetId": 1
@@ -124,6 +142,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAWn//+uw\u003d",
+        "filename": "java/res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2012-08-25T13:15:59Z",
+      "side": 1,
+      "message": "Wisselknop (we hebben overal voor \u0027knop\u0027 gekozen, niet waar?)",
+      "parentUuid": "AAAAWn//+2w\u003d",
+      "revId": "a6f7a56f390d59e09ae2c7a3fbb6b6e543cac955",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAWn//+4k\u003d",
         "filename": "java/res/values-nl/strings.xml",
         "patchSetId": 1
@@ -135,6 +171,24 @@
       "writtenOn": "2012-08-25T01:30:51Z",
       "side": 1,
       "message": "* Taal wisselen uitzetten\n\n* Taal wisselen uit\n\nen anders \n\n* Taal wisselen onderdrukken\n\nwant ik zie liever een paar puntjes in portretmodus en het woord volledig in landschapsmodus dan zo\u0027n rare afkorting.",
+      "revId": "a6f7a56f390d59e09ae2c7a3fbb6b6e543cac955",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAWn//+us\u003d",
+        "filename": "java/res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2012-08-25T13:15:59Z",
+      "side": 1,
+      "message": "- Taal wisselen uit",
+      "parentUuid": "AAAAWn//+4k\u003d",
       "revId": "a6f7a56f390d59e09ae2c7a3fbb6b6e543cac955",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -158,6 +212,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAWn//+uk\u003d",
+        "filename": "java/res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2012-08-25T13:15:59Z",
+      "side": 1,
+      "message": "Ik hou het op AOSP.",
+      "parentUuid": "AAAAWn//+38\u003d",
+      "revId": "a6f7a56f390d59e09ae2c7a3fbb6b6e543cac955",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAWn//+3s\u003d",
         "filename": "java/res/values-nl/strings.xml",
         "patchSetId": 1
@@ -175,6 +247,23 @@
     },
     {
       "key": {
+        "uuid": "AAAAWn//+uY\u003d",
+        "filename": "java/res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2012-08-25T13:15:59Z",
+      "side": 1,
+      "message": "^^\nDone",
+      "revId": "a6f7a56f390d59e09ae2c7a3fbb6b6e543cac955",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAWn///D0\u003d",
         "filename": "java/res/values-nl/strings.xml",
         "patchSetId": 1
@@ -186,6 +275,24 @@
       "writtenOn": "2012-08-24T18:22:58Z",
       "side": 1,
       "message": "Punt?",
+      "revId": "a6f7a56f390d59e09ae2c7a3fbb6b6e543cac955",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAWn//+uU\u003d",
+        "filename": "java/res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2012-08-25T13:15:59Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAWn///D0\u003d",
       "revId": "a6f7a56f390d59e09ae2c7a3fbb6b6e543cac955",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -244,6 +351,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAWn//+uQ\u003d",
+        "filename": "java/res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2012-08-25T13:15:59Z",
+      "side": 1,
+      "message": "- Spraakinvoerknop (geen spatie!)\n- Knop voor spraakinvoer",
+      "parentUuid": "AAAAWn//+3k\u003d",
+      "revId": "a6f7a56f390d59e09ae2c7a3fbb6b6e543cac955",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAWn//+3c\u003d",
         "filename": "java/res/values-nl/strings.xml",
         "patchSetId": 1
@@ -261,6 +386,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAWn//+uM\u003d",
+        "filename": "java/res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 105,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2012-08-25T13:15:59Z",
+      "side": 1,
+      "message": "- Micr. ...\n- Microfoon op hoofdtoet... \u003d volledig",
+      "parentUuid": "AAAAWn//+3c\u003d",
+      "revId": "a6f7a56f390d59e09ae2c7a3fbb6b6e543cac955",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAWn//+3Y\u003d",
         "filename": "java/res/values-nl/strings.xml",
         "patchSetId": 1
@@ -272,6 +415,24 @@
       "writtenOn": "2012-08-25T01:30:51Z",
       "side": 1,
       "message": "voluit?",
+      "revId": "a6f7a56f390d59e09ae2c7a3fbb6b6e543cac955",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAWn//+uI\u003d",
+        "filename": "java/res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2012-08-25T13:15:59Z",
+      "side": 1,
+      "message": "- Micr. ...\n- Microfoon op symbolent... \u003d volledig",
+      "parentUuid": "AAAAWn//+3Y\u003d",
       "revId": "a6f7a56f390d59e09ae2c7a3fbb6b6e543cac955",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -307,6 +468,24 @@
       "side": 1,
       "message": "Input languages - ik zou het zo laten",
       "parentUuid": "AAAAWn///Dw\u003d",
+      "revId": "a6f7a56f390d59e09ae2c7a3fbb6b6e543cac955",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAWn//+uE\u003d",
+        "filename": "java/res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2012-08-25T13:15:59Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAWn//+3U\u003d",
       "revId": "a6f7a56f390d59e09ae2c7a3fbb6b6e543cac955",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
