@@ -16,6 +16,24 @@
       "revId": "c00d2f25724f5596e224b55b2539a0b597015329",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAaH//+jQ\u003d",
+        "filename": "java/res/xml/rowkeys_qwertz2.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1053
+      },
+      "writtenOn": "2012-10-22T19:48:04Z",
+      "side": 1,
+      "message": "\u0027e\u0027 is already occupied with \u00271\u0027\nI think \u0027€\u0027 should be reachable with one klick as it is pretty common.",
+      "parentUuid": "AAAAaH//+lM\u003d",
+      "revId": "c00d2f25724f5596e224b55b2539a0b597015329",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
