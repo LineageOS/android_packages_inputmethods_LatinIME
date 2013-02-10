@@ -1,0 +1,242 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAdH//+TE\u003d",
+        "filename": "java/res/values-hy/bools.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 4884
+      },
+      "writtenOn": "2013-02-10T01:18:59Z",
+      "side": 1,
+      "message": "Copyright should look like this https://android.googlesource.com/platform/packages/apps/Settings/+/android-4.2.1_r1.2/res/values/strings.xml",
+      "revId": "88440ed171fff0778cdc9498243ca081a4f2fcdd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdH//+TA\u003d",
+        "filename": "java/res/values-hy/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 4884
+      },
+      "writtenOn": "2013-02-10T01:18:59Z",
+      "side": 1,
+      "message": "whitespace",
+      "revId": "88440ed171fff0778cdc9498243ca081a4f2fcdd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdH//+S8\u003d",
+        "filename": "java/res/values-hy/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 4884
+      },
+      "writtenOn": "2013-02-10T01:18:59Z",
+      "side": 1,
+      "message": "copyright should look like this",
+      "revId": "88440ed171fff0778cdc9498243ca081a4f2fcdd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdH//+S4\u003d",
+        "filename": "java/res/xml-sw600dp/rowkeys_symbols3.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 4884
+      },
+      "writtenOn": "2013-02-10T01:18:59Z",
+      "side": 1,
+      "message": "tab",
+      "revId": "88440ed171fff0778cdc9498243ca081a4f2fcdd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdH//+S0\u003d",
+        "filename": "java/res/xml-sw600dp/rows_armenian.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 4884
+      },
+      "writtenOn": "2013-02-10T01:18:59Z",
+      "side": 1,
+      "message": "Copyright should look like this https://android.googlesource.com/platform/packages/apps/Settings/+/android-4.2.1_r1.2/res/values/strings.xml",
+      "revId": "88440ed171fff0778cdc9498243ca081a4f2fcdd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdH//+Sw\u003d",
+        "filename": "java/res/xml-sw768dp/rows_armenian.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 4884
+      },
+      "writtenOn": "2013-02-10T01:18:59Z",
+      "side": 1,
+      "message": "Copyright should look like this https://android.googlesource.com/platform/packages/apps/Settings/+/android-4.2.1_r1.2/res/values/strings.xml",
+      "revId": "88440ed171fff0778cdc9498243ca081a4f2fcdd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdH//+Ss\u003d",
+        "filename": "java/res/xml/kbd_armenian.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 4884
+      },
+      "writtenOn": "2013-02-10T01:18:59Z",
+      "side": 1,
+      "message": "Copyright should look like this https://android.googlesource.com/platform/packages/apps/Settings/+/android-4.2.1_r1.2/res/values/strings.xml",
+      "revId": "88440ed171fff0778cdc9498243ca081a4f2fcdd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdH//+So\u003d",
+        "filename": "java/res/xml/keyboard_layout_set_armenian.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 4884
+      },
+      "writtenOn": "2013-02-10T01:18:59Z",
+      "side": 1,
+      "message": "Copyright should look like this https://android.googlesource.com/platform/packages/apps/Settings/+/android-4.2.1_r1.2/res/values/strings.xml",
+      "revId": "88440ed171fff0778cdc9498243ca081a4f2fcdd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdH//+Sk\u003d",
+        "filename": "java/res/xml/rowkeys_armenian1.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 4884
+      },
+      "writtenOn": "2013-02-10T01:18:59Z",
+      "side": 1,
+      "message": "Copyright should look like this https://android.googlesource.com/platform/packages/apps/Settings/+/android-4.2.1_r1.2/res/values/strings.xml",
+      "revId": "88440ed171fff0778cdc9498243ca081a4f2fcdd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdH//+Sg\u003d",
+        "filename": "java/res/xml/rowkeys_armenian2.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 4884
+      },
+      "writtenOn": "2013-02-10T01:18:59Z",
+      "side": 1,
+      "message": "Copyright should look like this https://android.googlesource.com/platform/packages/apps/Settings/+/android-4.2.1_r1.2/res/values/strings.xml",
+      "revId": "88440ed171fff0778cdc9498243ca081a4f2fcdd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdH//+Sc\u003d",
+        "filename": "java/res/xml/rowkeys_armenian3.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 4884
+      },
+      "writtenOn": "2013-02-10T01:18:59Z",
+      "side": 1,
+      "message": "Copyright should look like this https://android.googlesource.com/platform/packages/apps/Settings/+/android-4.2.1_r1.2/res/values/strings.xml",
+      "revId": "88440ed171fff0778cdc9498243ca081a4f2fcdd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdH//+SY\u003d",
+        "filename": "java/res/xml/rowkeys_symbols3.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 4884
+      },
+      "writtenOn": "2013-02-10T01:18:59Z",
+      "side": 1,
+      "message": "Copyright should look like this https://android.googlesource.com/platform/packages/apps/Settings/+/android-4.2.1_r1.2/res/values/strings.xml",
+      "revId": "88440ed171fff0778cdc9498243ca081a4f2fcdd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdH//+SU\u003d",
+        "filename": "java/res/xml/rows_armenian.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 4884
+      },
+      "writtenOn": "2013-02-10T01:18:59Z",
+      "side": 1,
+      "message": "Copyright should look like this https://android.googlesource.com/platform/packages/apps/Settings/+/android-4.2.1_r1.2/res/values/strings.xml",
+      "revId": "88440ed171fff0778cdc9498243ca081a4f2fcdd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdH//+SQ\u003d",
+        "filename": "tools/maketext/res/values-hy/donottranslate-more-keys.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 4884
+      },
+      "writtenOn": "2013-02-10T01:18:59Z",
+      "side": 1,
+      "message": "Copyright should look like this https://android.googlesource.com/platform/packages/apps/Settings/+/android-4.2.1_r1.2/res/values/strings.xml",
+      "revId": "88440ed171fff0778cdc9498243ca081a4f2fcdd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
