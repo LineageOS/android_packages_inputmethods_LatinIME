@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "iBGlcAM",
+        "filename": "java/res/xml/rowkeys_symbols_shift1.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-06-03T04:45:37Z",
+      "side": 1,
+      "message": "whitespace and tabs errors - tabs should be 4 spaces, and no empty spaces at the end of a line (the red parts)",
+      "revId": "0df2ee4e5a746c41e53f3687ecc9d1d34207fa6a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "iPGp3OA",
+        "filename": "java/res/xml/rowkeys_symbols_shift3.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-06-03T04:45:37Z",
+      "side": 1,
+      "message": "tabs and white space errors",
+      "revId": "0df2ee4e5a746c41e53f3687ecc9d1d34207fa6a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
