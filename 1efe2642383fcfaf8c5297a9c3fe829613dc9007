@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1aca2d91_723cb12f",
+        "filename": "java/res/values/colors.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-02T19:01:14Z",
+      "side": 1,
+      "message": "You only need to change this color, not the other 2.",
+      "revId": "1efe2642383fcfaf8c5297a9c3fe829613dc9007",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
