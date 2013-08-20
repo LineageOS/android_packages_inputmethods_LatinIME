@@ -36,6 +36,24 @@
     },
     {
       "key": {
+        "uuid": "baee8101_a4d55aba",
+        "filename": "java/src/com/android/inputmethod/latin/CapsModeUtils.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 204,
+      "author": {
+        "id": 5654
+      },
+      "writtenOn": "2013-08-20T02:44:00Z",
+      "side": 1,
+      "message": "I\u0027ll move the left double angle quote to the Constants but I\u0027m in doubt about this one.\nIn Constant class all constants are general so my proposal is to leave the Armenian full stop here. :-)",
+      "parentUuid": "baee8101_c4597e90",
+      "revId": "4826a843213be5fa61d9bac9827ed53d9fe0865b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baee8101_a45e7a74",
         "filename": "java/src/com/android/inputmethod/latin/CapsModeUtils.java",
         "patchSetId": 3
