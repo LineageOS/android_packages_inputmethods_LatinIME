@@ -34,6 +34,24 @@
       "revId": "05f9ca287915546ecd8f035ddb67dd0f8d2f941d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fade3982_28c16f81",
+        "filename": "java/res/values-nl/cm_strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2014-01-31T12:46:38Z",
+      "side": 1,
+      "message": "Ik vind van wel, het gaat om een .dict bestand wat mensen op hun foon moeten zetten om daarna te importeren\n\n\"Select a dictionary file to import\"",
+      "parentUuid": "fade3982_c2dc221b",
+      "revId": "05f9ca287915546ecd8f035ddb67dd0f8d2f941d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
