@@ -52,6 +52,24 @@
       "revId": "05f9ca287915546ecd8f035ddb67dd0f8d2f941d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fade3982_68bb770f",
+        "filename": "java/res/values-nl/cm_strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 7630
+      },
+      "writtenOn": "2014-01-31T12:50:41Z",
+      "side": 1,
+      "message": "-1 Is mij om het even als het gaat om duidelijkheid, een woordenboek importeren is imo even duidelijk. De gebruiker gaat er echt geen papier bij halen om in de telefoon/tablet te stoppen. En ik ben een beetje spaarzaam met tekst, hoe minder hoe beter, scheelt weer kostbare bytes :-)",
+      "parentUuid": "fade3982_28c16f81",
+      "revId": "05f9ca287915546ecd8f035ddb67dd0f8d2f941d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
