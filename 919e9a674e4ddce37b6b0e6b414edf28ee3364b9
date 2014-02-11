@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fade3982_3640a256",
+        "filename": "java/res/values-de/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 4977
+      },
+      "writtenOn": "2014-02-11T23:28:02Z",
+      "side": 1,
+      "message": "ein zu importierendes ... ?",
+      "revId": "919e9a674e4ddce37b6b0e6b414edf28ee3364b9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
