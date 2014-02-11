@@ -16,6 +16,24 @@
       "revId": "919e9a674e4ddce37b6b0e6b414edf28ee3364b9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fade3982_b62cb2ac",
+        "filename": "java/res/values-de/cm_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-02-11T23:32:22Z",
+      "side": 1,
+      "message": "Oder \u0027Wählen Sie das zu importierende Wörterbuch aus\u0027",
+      "parentUuid": "fade3982_3640a256",
+      "revId": "919e9a674e4ddce37b6b0e6b414edf28ee3364b9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
