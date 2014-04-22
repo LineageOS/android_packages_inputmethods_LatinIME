@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7af24918_8002043d",
+        "filename": "tools/make-keyboard-text/res/values-de/donottranslate-more-keys.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-04-22T19:13:10Z",
+      "side": 1,
+      "message": "@ missing in the string?",
+      "revId": "10a10b0c1a02733ba71f87d70b9a597efaff96a2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
