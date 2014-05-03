@@ -69,6 +69,24 @@
       "revId": "47d6169163a3caf34a8e9971d8b7ca9383726d64",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3afc51ec_fc40e909",
+        "filename": "java/src/com/android/inputmethod/keyboard/MainKeyboardView.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 662,
+      "author": {
+        "id": 4449
+      },
+      "writtenOn": "2014-05-03T02:07:16Z",
+      "side": 1,
+      "message": "Hmm, I\u0027m not a \u0027guy in chagre\u0027 here, but I would just screw the 100 char limit and go with:\n\nif () {\n\n}\n\n;)",
+      "parentUuid": "3afc51ec_7ce7b940",
+      "revId": "47d6169163a3caf34a8e9971d8b7ca9383726d64",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
