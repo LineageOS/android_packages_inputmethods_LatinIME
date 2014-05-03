@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "3afc51ec_1cdaf578",
+        "filename": "java/src/com/android/inputmethod/keyboard/MainKeyboardView.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 440,
+      "author": {
+        "id": 6351
+      },
+      "writtenOn": "2014-05-03T01:12:48Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3afc51ec_3c96d194",
+      "revId": "47d6169163a3caf34a8e9971d8b7ca9383726d64",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3afc51ec_1c9315a5",
         "filename": "java/src/com/android/inputmethod/keyboard/MainKeyboardView.java",
         "patchSetId": 3
@@ -30,6 +48,24 @@
       "writtenOn": "2014-05-03T00:25:42Z",
       "side": 1,
       "message": "bad indent?",
+      "revId": "47d6169163a3caf34a8e9971d8b7ca9383726d64",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3afc51ec_7ce7b940",
+        "filename": "java/src/com/android/inputmethod/keyboard/MainKeyboardView.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 662,
+      "author": {
+        "id": 6351
+      },
+      "writtenOn": "2014-05-03T01:12:48Z",
+      "side": 1,
+      "message": "Urg.  That\u0027s 101 characters.  What\u0027s the right indentation of that?\n\nif (...)\n{\n   ...\n}\n\n?",
+      "parentUuid": "3afc51ec_1c9315a5",
       "revId": "47d6169163a3caf34a8e9971d8b7ca9383726d64",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
