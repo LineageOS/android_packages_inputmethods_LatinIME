@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3afc51ec_3c96d194",
+        "filename": "java/src/com/android/inputmethod/keyboard/MainKeyboardView.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 440,
+      "author": {
+        "id": 4449
+      },
+      "writtenOn": "2014-05-03T00:25:42Z",
+      "side": 1,
+      "message": "tab",
+      "revId": "47d6169163a3caf34a8e9971d8b7ca9383726d64",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3afc51ec_1c9315a5",
+        "filename": "java/src/com/android/inputmethod/keyboard/MainKeyboardView.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 662,
+      "author": {
+        "id": 4449
+      },
+      "writtenOn": "2014-05-03T00:25:42Z",
+      "side": 1,
+      "message": "bad indent?",
+      "revId": "47d6169163a3caf34a8e9971d8b7ca9383726d64",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
