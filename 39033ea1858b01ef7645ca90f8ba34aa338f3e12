@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3ac371cc_0b575e03",
+        "filename": "java/res/values/customize.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 9045
+      },
+      "writtenOn": "2015-04-09T09:47:33Z",
+      "side": 1,
+      "message": "I\u0027d move this to config.xml, and prepend the string name with \"config_\"",
+      "revId": "39033ea1858b01ef7645ca90f8ba34aa338f3e12",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3ac371cc_0b20fe9a",
+        "filename": "java/src/com/android/inputmethod/latin/settings/SettingsValues.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 296,
+      "author": {
+        "id": 9045
+      },
+      "writtenOn": "2015-04-09T09:47:33Z",
+      "side": 1,
+      "message": "remove tabs",
+      "revId": "39033ea1858b01ef7645ca90f8ba34aa338f3e12",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
