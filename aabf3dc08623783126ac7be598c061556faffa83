@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3ac371cc_2b517a63",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-04-09T11:30:05Z",
+      "side": 1,
+      "message": "s/defalut/default\n\nAlso, consider wording this better.",
+      "revId": "aabf3dc08623783126ac7be598c061556faffa83",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3ac371cc_4b54b653",
+        "filename": "java/res/values/config.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 95,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-04-09T11:30:05Z",
+      "side": 1,
+      "message": "Maybe a more descriptive title here?",
+      "revId": "aabf3dc08623783126ac7be598c061556faffa83",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
