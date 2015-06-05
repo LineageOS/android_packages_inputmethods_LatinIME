@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a8ec9b2_8f3c1731",
+        "filename": "java/res/values/gesture-input-default.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 940
+      },
+      "writtenOn": "2015-06-05T11:25:13Z",
+      "side": 1,
+      "message": "Should be CyanogenMod and 2015 ?",
+      "revId": "4a00b473100ca060d0fd4ea581dba01d2112d8f4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
