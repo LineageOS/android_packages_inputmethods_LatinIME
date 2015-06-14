@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a461143_2f2245ba",
+        "filename": "java/res/values/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 286,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2015-06-14T07:37:44Z",
+      "side": 1,
+      "message": "This should go to cm_strings.xml",
+      "revId": "1661875383e02a4c52254a7eae2b30a78f6b0802",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a461143_4f2f91a1",
+        "filename": "java/res/xml-sw600dp/rows_bepo.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2015-06-14T07:37:44Z",
+      "side": 1,
+      "message": "Should be:\n\nCopyright 2015, The CyanogenMod Project\n\nhere and in other files",
+      "range": {
+        "startLine": 5,
+        "startChar": 3,
+        "endLine": 5,
+        "endChar": 50
+      },
+      "revId": "1661875383e02a4c52254a7eae2b30a78f6b0802",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
