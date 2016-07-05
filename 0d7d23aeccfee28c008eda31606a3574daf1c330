@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3fa7e38b_b635e6f9",
+        "filename": "java/src/com/android/inputmethod/latin/settings/CorrectionSettingsFragment.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 13956
+      },
+      "writtenOn": "2016-07-05T15:56:54Z",
+      "side": 1,
+      "message": "Why we need those from the beginning ?\nWouldn\u0027t  it be  configable directly in prefs_screen_correction.xml for show_suggestions ?\n+        android:defaultValue\u003d\"@bool/config_show_suggestions_default\"",
+      "revId": "0d7d23aeccfee28c008eda31606a3574daf1c330",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
