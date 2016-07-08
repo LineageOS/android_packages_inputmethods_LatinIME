@@ -22,6 +22,30 @@
       "revId": "67a22e902417859904f1bf70c44b4b41cc2efc22",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3fa7e38b_3de6ae18",
+        "filename": "java/src/com/android/inputmethod/latin/settings/CorrectionSettingsFragment.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 13956
+      },
+      "writtenOn": "2016-07-08T17:24:26Z",
+      "side": 0,
+      "message": "It shouldn\u0027t. Those lines are added to support suggestion default value overlay settings originally by cm and not in aosp. But a simple default value in xml should works.\nIf user changes its preference, it should override the default value in the xml.",
+      "parentUuid": "3fa7e38b_3df8eec2",
+      "range": {
+        "startLine": 94,
+        "startChar": 0,
+        "endLine": 99,
+        "endChar": 9
+      },
+      "revId": "67a22e902417859904f1bf70c44b4b41cc2efc22",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
