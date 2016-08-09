@@ -16,6 +16,24 @@
       "revId": "7b92d617c6ca377924344cca4f0d1fa48fa15d1c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3fa7e38b_103fd0d6",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 14451
+      },
+      "writtenOn": "2016-08-09T17:49:58Z",
+      "side": 1,
+      "message": "Yeah. It should be Dan Yu.",
+      "parentUuid": "3fa7e38b_d065b8e2",
+      "revId": "7b92d617c6ca377924344cca4f0d1fa48fa15d1c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
