@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1fa4df85_5ebc75ba",
+        "filename": "java/src/com/android/inputmethod/latin/UserBinaryDictionary.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2016-09-14T14:51:27Z",
+      "side": 1,
+      "message": "You could replace this with: import com.android.inputmethod.latin.common.Constants;\n\nand check with: if (Constants.JELLY_BEAN_MR1_OR_HIGHER)\n\nlike it\u0027s done in the original commit mentioned in the commit message.",
+      "revId": "c5cc90f9451bdb361bcdb3b94e36f3b3456c31ab",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
