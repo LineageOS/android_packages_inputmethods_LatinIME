@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a288981_03681cb9",
+        "filename": "java/res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2017-02-05T16:31:42Z",
+      "side": 1,
+      "message": "Remove this, will be handled in crowdin",
+      "revId": "5b749e6a5d00d50fb00d9e6908d409eb382e232a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a288981_e364f0e6",
+        "filename": "java/res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 242,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2017-02-05T16:31:42Z",
+      "side": 1,
+      "message": "Move this to cm_strings",
+      "revId": "5b749e6a5d00d50fb00d9e6908d409eb382e232a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
