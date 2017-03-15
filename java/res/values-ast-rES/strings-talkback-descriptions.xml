@@ -28,6 +28,7 @@
   <!-- Spoken description for unknown keyboard keys. -->
   <!-- Spoken description for the "Shift" keyboard key when "Shift" is off. -->
   <!-- Spoken description for the "Shift" keyboard key in symbols mode. -->
+  <string name="spoken_description_symbols_shift">Más símbolos</string>
   <!-- Spoken description for the "Shift" keyboard key when "Shift" is on. -->
   <!-- Spoken description for the "Shift" keyboard key in 2nd symbols (a.k.a. symbols shift) mode. -->
   <!-- Spoken description for the "Shift" keyboard key when "Caps lock" is on. -->
@@ -40,6 +41,7 @@
   <!-- Spoken description for the "Space" keyboard key. -->
   <!-- Spoken description for the "Mic" keyboard key. -->
   <!-- Spoken description for the "Emoji" keyboard key. -->
+  <string name="spoken_description_emoji">Fustaxes</string>
   <!-- Spoken description for the "Return" keyboard key. -->
   <!-- Spoken description for the "Search" keyboard key. -->
   <!-- Spoken description for the "U+2022" (BULLET) keyboard key. -->
@@ -84,6 +86,7 @@
          Note that depending on locale, the lower-case of this letter is U+0069 or U+0131. -->
   <!-- Spoken description for unknown symbol code point. -->
   <!-- Spoken description for unknown emoji code point. -->
+  <string name="spoken_emoji_unknown">Fustax desconocíu</string>
   <!-- Spoken description for emoticons ":-!". -->
   <!-- Spoken description for emoticons ":-$". -->
   <!-- Spoken description for emoticons "B-)". -->
