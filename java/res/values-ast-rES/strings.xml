@@ -261,6 +261,7 @@ mobile devices. [CHAR LIMIT=25] -->
   <!-- Downloadable dictionaries will get update information through the network. This describes the associated download. -->
   <!-- Title and summary of the dictionary settings screen -->
   <!-- Title for the prompt dialog which informs the user that a dictionary is available for the current language and asks to decide whether to download it over 3g -->
+  <string name="dictionary_settings_summary">Axustes pa diccionarios</string>
   <!-- Name of the user dictionaries settings category -->
   <!-- Name for the "user dictionary" preference item when there is only one -->
   <!-- Message about some dictionary indicating it can be downloaded, but hasn't been yet -->
@@ -277,6 +278,7 @@ mobile devices. [CHAR LIMIT=25] -->
   <!-- Standard message to dismiss a dialog box -->
   <string name="cancel">Encaboxar</string>
   <!-- Title of the button in a dialog box. The button takes the user to the keyboard settings. [CHAR LIMIT=15] -->
+  <string name="go_to_settings">Axustes</string>
   <!-- Action to download and install a dictionary [CHAR_LIMIT=15] -->
   <!-- Action to cancel the ongoing download of a dictionary file [CHAR_LIMIT=25] -->
   <string name="cancel_download_dict">Encaboxar</string>
