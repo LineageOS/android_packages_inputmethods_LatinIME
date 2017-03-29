@@ -95,7 +95,9 @@
          for submitting feedback. [CHAR LIMIT=35] -->
   <!-- Preference for input language selection -->
   <!-- Add to dictionary hint -->
+  <string name="hint_add_to_dictionary">Volvi calcar pa guardar</string>
   <!-- Add to dictionary hint -->
+  <string name="hint_add_to_dictionary_without_word">Toca equí pa guardar</string>
   <!-- Inform the user that a particular language has an available dictionary -->
   <!-- Title of the item to change the keyboard theme [CHAR LIMIT=20]-->
   <!-- Title of the preference item for switching accounts [CHAR LIMIT=30] -->
@@ -216,6 +218,7 @@ mobile devices. [CHAR LIMIT=25] -->
   <!-- Title of the button to add custom style entry in the settings dialog [CHAR LIMIT=15] -->
   <!-- Title of the button to remove a custom style entry in the settings dialog [CHAR LIMIT=15] -->
   <!-- Title of the button to save a custom style entry in the settings dialog [CHAR LIMIT=15] -->
+  <string name="save">Guardar</string>
   <!-- Title of the spinner for choosing a language of custom style in the settings dialog [CHAR LIMIT=15] -->
   <!-- Title of the spinner for choosing a keyboard layout of custom style in the settings dialog [CHAR LIMIT=15] -->
   <!-- The message of the dialog to note that a custom input style needs to be enabled. [CHAR LIMIT=130] -->
