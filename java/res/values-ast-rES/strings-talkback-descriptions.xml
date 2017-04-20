@@ -76,8 +76,10 @@
   <!-- Description of the emoji category icon of Flags. -->
   <!-- Description of the emoji category icon of Smiley & People. -->
   <!-- Description of the emoji category icon of Animals & Nature. -->
+  <string name="spoken_descrption_emoji_category_eight_animals_nature">Animales y ñatura</string>
   <!-- Description of the emoji category icon of Food & Drink. -->
   <!-- Description of the emoji category icon of Travel & Places. -->
+  <string name="spoken_descrption_emoji_category_eight_travel_places">Viaxes y llugares</string>
   <!-- Description of the emoji category icon of Activity. -->
   <!-- Description of the emoji category icon of Emoticons. -->
   <!-- Description of an upper case letter of LOWER_LETTER. -->

@@ -27,10 +27,13 @@
   <!-- Option to control whether or not to show a popup with a larger font on each key press. -->
   <!-- Settings screen title for preferences [CHAR LIMIT=33]-->
   <!-- Settings screen title for accounts and privacy preferences [CHAR LIMIT=33]-->
+  <string name="settings_screen_accounts">Cuentes y privacidá</string>
   <!-- Settings screen title for appearance & layouts preferences [CHAR LIMIT=33] -->
+  <string name="settings_screen_appearance">Aspeutu y distribuciones</string>
   <!-- Settings screen title for gesture typing preferences [CHAR_LIMIT=33] -->
   <!-- Settings screen title for text correction options [CHAR_LIMIT=33] -->
   <!-- Settings screen title for advanced settings [CHAR LIMIT=33] -->
+  <string name="settings_screen_advanced">Avanzao</string>
   <!-- Settings screen title for keyboard theme settings [CHAR LIMIT=33] -->
   <!--  Option for enabling or disabling the split keyboard layout. [CHAR LIMIT=65]-->
   <!-- Option title for enabling cloud sync feature [CHAR LIMIT=33]-->
@@ -58,6 +61,7 @@
   <!-- Option name for enabling or disabling the use of names of people in Contacts for suggestion and correction [CHAR LIMIT=25] -->
   <!-- Description for option enabling or disabling the use of names of people in Contacts for suggestion and correction [CHAR LIMIT=65] -->
   <!-- Option name for enabling the use by the keyboards of sent/received messages, e-mail and typing history to improve suggestion accuracy [CHAR LIMIT=25] -->
+  <string name="use_personalized_dicts">Suxerencies personalizaes</string>
   <!-- Option to enable sending usage statistics -->
   <!-- Option name for enabling or disabling the double-space period feature that lets double tap on spacebar insert a period followed by a space [CHAR LIMIT=30] -->
   <!-- Description for option enabling or disabling the double-space period feature that lets double tap on spacebar insert a period followed by a space [CHAR LIMIT=65] -->
@@ -91,9 +95,11 @@
   <string name="voice_input_disabled_summary">Nun s\'habilitó métodu dalu d\'entrada per voz. Comprueba los axustes de Llingües y entrada.</string>
   <!-- Title for configuring input method settings [CHAR LIMIT=35] -->
   <!-- Title for input language selection screen -->
+  <string name="language_selection_title">Llingües</string>
   <!-- Title for the 'Help & feedback' settings fragment which shows a help page and has a button
          for submitting feedback. [CHAR LIMIT=35] -->
   <!-- Preference for input language selection -->
+  <string name="select_language">Llingües</string>
   <!-- Add to dictionary hint -->
   <string name="hint_add_to_dictionary">Volvi calcar pa guardar</string>
   <!-- Add to dictionary hint -->
@@ -217,9 +223,11 @@ mobile devices. [CHAR LIMIT=25] -->
   <!-- Title of the option menu to add a new style entry in the preference settings [CHAR LIMIT=16] -->
   <!-- Title of the button to add custom style entry in the settings dialog [CHAR LIMIT=15] -->
   <!-- Title of the button to remove a custom style entry in the settings dialog [CHAR LIMIT=15] -->
+  <string name="remove">Desaniciar</string>
   <!-- Title of the button to save a custom style entry in the settings dialog [CHAR LIMIT=15] -->
   <string name="save">Guardar</string>
   <!-- Title of the spinner for choosing a language of custom style in the settings dialog [CHAR LIMIT=15] -->
+  <string name="subtype_locale">Llingua</string>
   <!-- Title of the spinner for choosing a keyboard layout of custom style in the settings dialog [CHAR LIMIT=15] -->
   <!-- The message of the dialog to note that a custom input style needs to be enabled. [CHAR LIMIT=130] -->
   <!-- Title of the button to enable a custom input style entry in the settings dialog [CHAR LIMIT=15] -->
@@ -313,6 +321,7 @@ mobile devices. [CHAR LIMIT=25] -->
   <!-- This resource is corresponding to msgid="660089258866063925" -->
   <!-- User dictionary settings. Label to put before the language field. [CHAR LIMIT=20] -->
   <!-- This resource is corresponding to msgid="5696358317061318532" -->
+  <string name="user_dict_settings_add_locale_option_name">Llingua:</string>
   <!-- User dictionary settings. Hint for the text field to type the word to add to the user dictionary. [CHAR LIMIT=35] -->
   <!-- This resource is corresponding to msgid="5725254076556821247" -->
   <!-- User dictionary settings. Hint for the text field to type the optional shortcut to add to the user dictionary. [CHAR LIMIT=35] -->
@@ -327,6 +336,7 @@ mobile devices. [CHAR LIMIT=25] -->
   <!-- This resource is corresponding to msgid="8165273379942105271" -->
   <!-- User dictionary settings. The list item to choose to insert a word into the user dictionary for all languages -->
   <!-- This resource is corresponding to msgid="6742000040975959247" -->
+  <string name="user_dict_settings_all_languages">Pa toles llingües</string>
   <!-- User dictionary settings. The text to show for the option that shows the entire list of supported locales to choose one [CHAR LIMIT=30] -->
   <!-- This resource is corresponding to msgid="7316375944684977910" -->
   <string name="user_dict_settings_more_languages">Más llingües&#8230;</string>
