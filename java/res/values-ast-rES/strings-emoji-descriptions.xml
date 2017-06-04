@@ -815,6 +815,7 @@
   <!-- Spoken description for Unicode code point U+1F4F1: "📱" MOBILE PHONE -->
   <!-- Spoken description for Unicode code point U+1F4F2: "📲" MOBILE PHONE WITH RIGHTWARDS ARROW AT LEFT -->
   <!-- Spoken description for Unicode code point U+1F4F3: "📳" VIBRATION MODE -->
+  <string name="spoken_emoji_1F4F3">Mou vibración</string>
   <!-- Spoken description for Unicode code point U+1F4F4: "📴" MOBILE PHONE OFF -->
   <!-- Spoken description for Unicode code point U+1F4F5: "📵" NO MOBILE PHONES -->
   <!-- Spoken description for Unicode code point U+1F4F6: "📶" ANTENNA WITH BARS -->
