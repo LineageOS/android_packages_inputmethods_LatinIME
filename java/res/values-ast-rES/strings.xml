@@ -242,8 +242,9 @@ mobile devices. [CHAR LIMIT=25] -->
   <string name="prefs_enable_emoji_alt_physical_key_summary">La tecla Alt física amuesa la paleta de fustaxes</string>
   <!-- Title of the button to revert to the default value of the device in the settings dialog [CHAR LIMIT=15] -->
   <!-- Title of the setup wizard welcome screen. [CHAR LIMT=40] -->
-  <string name="setup_welcome_title">"Bienllegáu a <xliff:g id="APPLICATION_NAME" example="Android Keyboard">%s</xliff:g>"</string>
+  <string name="setup_welcome_title">"Afáyate en <xliff:g id="APPLICATION_NAME" example="Android Keyboard">%s</xliff:g>"</string>
   <!-- Additional title of the setup wizard welcome screen, just below the setup_welcome_title. [CHAR_LIMIT=64] -->
+  <string name="setup_welcome_additional_description">cola escritura xestual</string>
   <!-- The label of the button that starts the setup wizard. [CHAR_LIMIT=64] -->
   <!-- The label of the button that navigates the user to the next step of the setup wizard. [CHAR_LIMIT=64] -->
   <!-- Title of the setup wizard. [CHAR LIMT=40] -->
@@ -280,11 +281,13 @@ mobile devices. [CHAR LIMIT=25] -->
   <!-- Message about some dictionary indicating it is already installed -->
   <!-- Message about some dictionary indicating the file is installed, but the dictionary is disabled -->
   <!-- Message to display in the dictionaries setting screen when some error prevented us to list installed dictionaries [CHAR LIMIT=20] -->
+  <string name="cannot_connect_to_dict_service">Problema coneutando col serviciu de diccionarios</string>
   <!-- Message to display in the dictionaries setting screen when we found that no dictionaries are available [CHAR LIMIT=20]-->
   <!-- Title of the options to press to refresh the list (as in, check for updates now) [CHAR_LIMIT=50] -->
   <!-- Hint to tell when the data was last updated. Usage : "Last updated [date]", may contain a : or so. [CHAR LIMIT=45] -->
   <!-- Message to display in a dialog box while we are actively updating the word list [CHAR LIMIT=60] -->
   <!-- Message to display while the add-on dictionary list is updating [no space constraints on this, there is plenty of space but shorter is better because it's only on the screen for a second] -->
+  <string name="message_loading">Cargando&#8230;</string>
   <!-- String to explain this dictionary is the main dictionary for this language [CHAR_LIMIT=30] -->
   <!-- Standard message to dismiss a dialog box -->
   <string name="cancel">Encaboxar</string>
