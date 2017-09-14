@@ -51,6 +51,24 @@
       "revId": "35f3ef7ff6903065f6e15b6d4845659db1b65ab8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "93c700b7_9bf990b0",
+        "filename": "java/src/com/android/inputmethod/latin/utils/JniUtils.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2017-09-14T18:52:00Z",
+      "side": 1,
+      "message": "Oh right",
+      "parentUuid": "50642b79_29497578",
+      "revId": "35f3ef7ff6903065f6e15b6d4845659db1b65ab8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
