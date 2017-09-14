@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3fdab8fc_ba44e92d",
+        "filename": "java/src/com/android/inputmethod/latin/utils/JniUtils.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2017-09-14T16:17:32Z",
+      "side": 1,
+      "message": "Better log we tried to load this library",
+      "range": {
+        "startLine": 29,
+        "startChar": 38,
+        "endLine": 29,
+        "endChar": 40
+      },
+      "revId": "c7905c828c044783bb5d214ae5f2901d1fde823a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
