@@ -33,6 +33,24 @@
       "revId": "35f3ef7ff6903065f6e15b6d4845659db1b65ab8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "50642b79_29497578",
+        "filename": "java/src/com/android/inputmethod/latin/utils/JniUtils.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 7230
+      },
+      "writtenOn": "2017-09-14T18:51:15Z",
+      "side": 1,
+      "message": "AOSP library does not have gesture typing support, that\u0027s the point of this patch",
+      "parentUuid": "2ae9ba72_5453f0dc",
+      "revId": "35f3ef7ff6903065f6e15b6d4845659db1b65ab8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
