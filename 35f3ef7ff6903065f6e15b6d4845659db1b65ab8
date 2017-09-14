@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "96b7bd1c_72de8478",
+        "filename": "java/src/com/android/inputmethod/latin/utils/JniUtils.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2017-09-14T17:09:56Z",
+      "side": 1,
+      "message": "Nit: variable should be named sHaveGestureLib.",
+      "revId": "35f3ef7ff6903065f6e15b6d4845659db1b65ab8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
