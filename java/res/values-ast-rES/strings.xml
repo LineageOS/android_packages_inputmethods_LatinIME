@@ -27,9 +27,7 @@
   <!-- Option to control whether or not to show a popup with a larger font on each key press. -->
   <!-- Settings screen title for preferences [CHAR LIMIT=33]-->
   <!-- Settings screen title for accounts and privacy preferences [CHAR LIMIT=33]-->
-  <string name="settings_screen_accounts">Cuentes y privacidá</string>
   <!-- Settings screen title for appearance & layouts preferences [CHAR LIMIT=33] -->
-  <string name="settings_screen_appearance">Aspeutu y distribuciones</string>
   <!-- Settings screen title for gesture typing preferences [CHAR_LIMIT=33] -->
   <!-- Settings screen title for text correction options [CHAR_LIMIT=33] -->
   <!-- Settings screen title for advanced settings [CHAR LIMIT=33] -->
@@ -45,7 +43,6 @@
   <!-- Text for confirmation dialog box asking user to confirm deletion of cloud data. [CHAR LIMIT=65] -->
   <!-- Option to confirm deleting of user data from cloud [CHAR LIMIT=20] -->
   <!-- Option to cancel the deletion of user data from cloud [CHAR LIMIT=20] -->
-  <string name="cloud_sync_cancel">Encaboxar</string>
   <!-- Option to agree to terms and conditions for enabling cloud sync feature. -->
   <!-- Text to tell the user to add a Google account to the device to enable the cloud sync feature. [CHAR LIMIT=65]-->
   <!-- Text to tell the user that sync feature is disabled because they have Google Apps for Business account(s) on their device. [CHAR LIMIT=80]-->
@@ -57,11 +54,11 @@
   <!-- Description for delay for dismissing a popup on keypress: no delay [CHAR LIMIT=15] -->
   <!-- Description for delay for dismissing a popup on screen: default value of the delay [CHAR LIMIT=15] -->
   <!-- Units abbreviation for the duration (milliseconds) [CHAR LIMIT=10] -->
+  <string name="abbreviation_unit_milliseconds"><xliff:g id="MILLISECONDS">%s</xliff:g>ms</string>
   <!-- The text that represents the current settings value is the system default [CHAR LIMIT=25] -->
   <!-- Option name for enabling or disabling the use of names of people in Contacts for suggestion and correction [CHAR LIMIT=25] -->
   <!-- Description for option enabling or disabling the use of names of people in Contacts for suggestion and correction [CHAR LIMIT=65] -->
   <!-- Option name for enabling the use by the keyboards of sent/received messages, e-mail and typing history to improve suggestion accuracy [CHAR LIMIT=25] -->
-  <string name="use_personalized_dicts">Suxerencies personalizaes</string>
   <!-- Option to enable sending usage statistics -->
   <!-- Option name for enabling or disabling the double-space period feature that lets double tap on spacebar insert a period followed by a space [CHAR LIMIT=30] -->
   <!-- Description for option enabling or disabling the double-space period feature that lets double tap on spacebar insert a period followed by a space [CHAR LIMIT=65] -->
@@ -95,15 +92,12 @@
   <string name="voice_input_disabled_summary">Nun s\'habilitó métodu dalu d\'entrada per voz. Comprueba los axustes de Llingües y entrada.</string>
   <!-- Title for configuring input method settings [CHAR LIMIT=35] -->
   <!-- Title for input language selection screen -->
-  <string name="language_selection_title">Llingües</string>
   <!-- Title for the 'Help & feedback' settings fragment which shows a help page and has a button
          for submitting feedback. [CHAR LIMIT=35] -->
   <!-- Preference for input language selection -->
-  <string name="select_language">Llingües</string>
   <!-- Add to dictionary hint -->
   <string name="hint_add_to_dictionary">Volvi calcar pa guardar</string>
   <!-- Add to dictionary hint -->
-  <string name="hint_add_to_dictionary_without_word">Toca equí pa guardar</string>
   <!-- Inform the user that a particular language has an available dictionary -->
   <!-- Title of the item to change the keyboard theme [CHAR LIMIT=20]-->
   <!-- Title of the preference item for switching accounts [CHAR LIMIT=30] -->
@@ -113,7 +107,6 @@
          is selected [CHAR LIMIT=65] -->
   <!-- Positive text for selecting an account -->
   <!-- Negative text for selecting an account -->
-  <string name="account_select_cancel">Encaboxar</string>
   <!-- Text for signing out of an account -->
   <!-- Title of the account picker dialog for selecting an account [CHAR LIMIT=40] -->
   <!-- Description for English (UK) keyboard subtype [CHAR LIMIT=25]
@@ -142,6 +135,7 @@
          (Traditional) can be an abbreviation to fit in the CHAR LIMIT. -->
   <!-- Description for "LANGUAGE_NAME" (Compact) keyboard subtype [CHAR LIMIT=25]
          (Compact) can be an abbreviation to fit in the CHAR LIMIT. -->
+  <string name="subtype_generic_compact"><xliff:g id="LANGUAGE_NAME" example="Hindi">%s</xliff:g> (Compautu)</string>
   <!-- This string is displayed in a language list that allows to choose a language for
 suggestions in a software keyboard. This setting won't give suggestions in any particular
 language, hence "No language".
@@ -223,11 +217,8 @@ mobile devices. [CHAR LIMIT=25] -->
   <!-- Title of the option menu to add a new style entry in the preference settings [CHAR LIMIT=16] -->
   <!-- Title of the button to add custom style entry in the settings dialog [CHAR LIMIT=15] -->
   <!-- Title of the button to remove a custom style entry in the settings dialog [CHAR LIMIT=15] -->
-  <string name="remove">Desaniciar</string>
   <!-- Title of the button to save a custom style entry in the settings dialog [CHAR LIMIT=15] -->
-  <string name="save">Guardar</string>
   <!-- Title of the spinner for choosing a language of custom style in the settings dialog [CHAR LIMIT=15] -->
-  <string name="subtype_locale">Llingua</string>
   <!-- Title of the spinner for choosing a keyboard layout of custom style in the settings dialog [CHAR LIMIT=15] -->
   <!-- The message of the dialog to note that a custom input style needs to be enabled. [CHAR LIMIT=130] -->
   <!-- Title of the button to enable a custom input style entry in the settings dialog [CHAR LIMIT=15] -->
@@ -237,9 +228,7 @@ mobile devices. [CHAR LIMIT=25] -->
   <!-- Title of the settings for keypress sound volume [CHAR LIMIT=35] -->
   <!-- Title of the settings for key long press delay [CHAR LIMIT=35] -->
   <!-- Title of the settings for enabling Emoji palette triggered by the Alt key on physical keyboards [CHAR LIMIT=35] -->
-  <string name="prefs_enable_emoji_alt_physical_key">Fustaxes pa tecláu físicu</string>
   <!-- Description of the settings for enabling Emoji palette triggered by the Alt key on physical keyboards [CHAR LIMIT=64] -->
-  <string name="prefs_enable_emoji_alt_physical_key_summary">La tecla Alt física amuesa la paleta de fustaxes</string>
   <!-- Title of the button to revert to the default value of the device in the settings dialog [CHAR LIMIT=15] -->
   <!-- Title of the setup wizard welcome screen. [CHAR LIMT=40] -->
   <string name="setup_welcome_title">"Afáyate en <xliff:g id="APPLICATION_NAME" example="Android Keyboard">%s</xliff:g>"</string>
@@ -248,7 +237,6 @@ mobile devices. [CHAR LIMIT=25] -->
   <!-- The label of the button that starts the setup wizard. [CHAR_LIMIT=64] -->
   <!-- The label of the button that navigates the user to the next step of the setup wizard. [CHAR_LIMIT=64] -->
   <!-- Title of the setup wizard. [CHAR LIMT=40] -->
-  <string name="setup_steps_title">"Configurando <xliff:g id="APPLICATION_NAME" example="Android Keyboard">%s</xliff:g>"</string>
   <!-- Ordinal number of the 1st step in the setup wizard. [CHAR LIMIT=5] -->
   <!-- Title of the 1st step in the setup wizard. [CHAR LIMIT=64] -->
   <!-- Detailed instruction of the 1st step in the setup wizard. [CHAR LIMIT=120] -->
@@ -273,7 +261,6 @@ mobile devices. [CHAR LIMIT=25] -->
   <!-- Downloadable dictionaries will get update information through the network. This describes the associated download. -->
   <!-- Title and summary of the dictionary settings screen -->
   <!-- Title for the prompt dialog which informs the user that a dictionary is available for the current language and asks to decide whether to download it over 3g -->
-  <string name="dictionary_settings_summary">Axustes pa diccionarios</string>
   <!-- Name of the user dictionaries settings category -->
   <!-- Name for the "user dictionary" preference item when there is only one -->
   <!-- Message about some dictionary indicating it can be downloaded, but hasn't been yet -->
@@ -287,15 +274,11 @@ mobile devices. [CHAR LIMIT=25] -->
   <!-- Hint to tell when the data was last updated. Usage : "Last updated [date]", may contain a : or so. [CHAR LIMIT=45] -->
   <!-- Message to display in a dialog box while we are actively updating the word list [CHAR LIMIT=60] -->
   <!-- Message to display while the add-on dictionary list is updating [no space constraints on this, there is plenty of space but shorter is better because it's only on the screen for a second] -->
-  <string name="message_loading">Cargando&#8230;</string>
   <!-- String to explain this dictionary is the main dictionary for this language [CHAR_LIMIT=30] -->
   <!-- Standard message to dismiss a dialog box -->
-  <string name="cancel">Encaboxar</string>
   <!-- Title of the button in a dialog box. The button takes the user to the keyboard settings. [CHAR LIMIT=15] -->
-  <string name="go_to_settings">Axustes</string>
   <!-- Action to download and install a dictionary [CHAR_LIMIT=15] -->
   <!-- Action to cancel the ongoing download of a dictionary file [CHAR_LIMIT=25] -->
-  <string name="cancel_download_dict">Encaboxar</string>
   <!-- Action to delete a dictionary file [CHAR_LIMIT=15] -->
   <!-- Message in the popup informing the user a dictionary is available for their language, and asking for a decision to download over their mobile data plan or not. The reason we ask for this is, the data is large and may be downloaded over a paid-per-megabyte connection but a dictionary is also essential to type comfortably, so we ask the user. This only pops in selected cases, when there is no dictionary at all currently, and the only available network seems to be metered. The "Languages & input" part should be set to the actual name of the option (message ID 5292716747264442359 in the translation console). [CHAR_LIMIT=700] -->
   <!-- The text of the "dictionary available" notification. -->
@@ -312,7 +295,6 @@ mobile devices. [CHAR LIMIT=25] -->
   <!-- This resource is corresponding to msgid="742580720124344291" -->
   <!-- User dictionary settings. Text on the dialog button to pop more options for adding a word. [CHAR LIMIT=16] -->
   <!-- This resource is corresponding to msgid="8848798370746019825" -->
-  <string name="user_dict_settings_add_dialog_more_options">Más opciones</string>
   <!-- User dictionary settings. Text on the dialog button mask advanced options. [CHAR LIMIT=15] -->
   <!-- This resource is corresponding to msgid="2441785268726036101" -->
   <!-- User dictionary settings. Text on the dialog button to confirm adding a word. [CHAR LIMIT=15] -->
@@ -324,7 +306,6 @@ mobile devices. [CHAR LIMIT=25] -->
   <!-- This resource is corresponding to msgid="660089258866063925" -->
   <!-- User dictionary settings. Label to put before the language field. [CHAR LIMIT=20] -->
   <!-- This resource is corresponding to msgid="5696358317061318532" -->
-  <string name="user_dict_settings_add_locale_option_name">Llingua:</string>
   <!-- User dictionary settings. Hint for the text field to type the word to add to the user dictionary. [CHAR LIMIT=35] -->
   <!-- This resource is corresponding to msgid="5725254076556821247" -->
   <!-- User dictionary settings. Hint for the text field to type the optional shortcut to add to the user dictionary. [CHAR LIMIT=35] -->
@@ -339,10 +320,8 @@ mobile devices. [CHAR LIMIT=25] -->
   <!-- This resource is corresponding to msgid="8165273379942105271" -->
   <!-- User dictionary settings. The list item to choose to insert a word into the user dictionary for all languages -->
   <!-- This resource is corresponding to msgid="6742000040975959247" -->
-  <string name="user_dict_settings_all_languages">Pa toles llingües</string>
   <!-- User dictionary settings. The text to show for the option that shows the entire list of supported locales to choose one [CHAR LIMIT=30] -->
   <!-- This resource is corresponding to msgid="7316375944684977910" -->
-  <string name="user_dict_settings_more_languages">Más llingües&#8230;</string>
   <!-- User dictionary settings. Label to delete an entry in the user dictionary [CHAR LIMIT=30]
          This resource is copied from packages/apps/Settings/res/values/strings.xml -->
   <!-- This resource is corresponding to msgid="4219243412325163003" -->

@@ -28,7 +28,6 @@
   <!-- Spoken description for unknown keyboard keys. -->
   <!-- Spoken description for the "Shift" keyboard key when "Shift" is off. -->
   <!-- Spoken description for the "Shift" keyboard key in symbols mode. -->
-  <string name="spoken_description_symbols_shift">Más símbolos</string>
   <!-- Spoken description for the "Shift" keyboard key when "Shift" is on. -->
   <!-- Spoken description for the "Shift" keyboard key in 2nd symbols (a.k.a. symbols shift) mode. -->
   <!-- Spoken description for the "Shift" keyboard key when "Caps lock" is on. -->
@@ -37,7 +36,6 @@
   <!-- Spoken description for the "To Alpha" keyboard key. -->
   <!-- Spoken description for the "To Numbers" keyboard key. -->
   <!-- Spoken description for the "Settings" keyboard key. -->
-  <string name="spoken_description_settings">Axustes</string>
   <!-- Spoken description for the "Tab" keyboard key. -->
   <!-- Spoken description for the "Space" keyboard key. -->
   <!-- Spoken description for the "Mic" keyboard key. -->
@@ -76,10 +74,8 @@
   <!-- Description of the emoji category icon of Flags. -->
   <!-- Description of the emoji category icon of Smiley & People. -->
   <!-- Description of the emoji category icon of Animals & Nature. -->
-  <string name="spoken_descrption_emoji_category_eight_animals_nature">Animales y ñatura</string>
   <!-- Description of the emoji category icon of Food & Drink. -->
   <!-- Description of the emoji category icon of Travel & Places. -->
-  <string name="spoken_descrption_emoji_category_eight_travel_places">Viaxes y llugares</string>
   <!-- Description of the emoji category icon of Activity. -->
   <!-- Description of the emoji category icon of Emoticons. -->
   <!-- Description of an upper case letter of LOWER_LETTER. -->
@@ -88,6 +84,7 @@
   <!-- Spoken description for Unicode code point U+0130: "İ" LATIN CAPITAL LETTER I WITH DOT ABOVE
          Note that depending on locale, the lower-case of this letter is U+0069 or U+0131. -->
   <!-- Spoken description for unknown symbol code point. -->
+  <string name="spoken_symbol_unknown">Símbolu desconocíu</string>
   <!-- Spoken description for unknown emoji code point. -->
   <string name="spoken_emoji_unknown">Fustax desconocíu</string>
   <!-- Spoken description for emoticons ":-!". -->
