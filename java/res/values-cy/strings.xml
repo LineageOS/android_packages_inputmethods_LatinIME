@@ -87,13 +87,16 @@
   <!-- Description for "gesture_space_aware" option. The user can input multiple words by gliding through the space key during a gesture input.[CHAR LIMIT=65]-->
   <!-- Preferences item for enabling speech input -->
   <!-- The summary text to describe the reason why the "Voice input key" option is disabled. [CHAR LIMIT=100] -->
+  <string name="voice_input_disabled_summary">Does dim dulliau mewnbwn llais wedi eu galluogi. Gwiria gosodiadau Ieithoedd a Mewnbwn.</string>
   <!-- Title for configuring input method settings [CHAR LIMIT=35] -->
   <!-- Title for input language selection screen -->
   <!-- Title for the 'Help & feedback' settings fragment which shows a help page and has a button
          for submitting feedback. [CHAR LIMIT=35] -->
   <!-- Preference for input language selection -->
   <!-- Add to dictionary hint -->
+  <string name="hint_add_to_dictionary">Tara unwaith eto i gadw.</string>
   <!-- Add to dictionary hint -->
+  <string name="hint_add_to_dictionary_without_word">Tara yma i gadw</string>
   <!-- Inform the user that a particular language has an available dictionary -->
   <!-- Title of the item to change the keyboard theme [CHAR LIMIT=20]-->
   <!-- Title of the preference item for switching accounts [CHAR LIMIT=30] -->
@@ -232,7 +235,9 @@ mobile devices. [CHAR LIMIT=25] -->
   <!-- Ordinal number of the 1st step in the setup wizard. [CHAR LIMIT=5] -->
   <!-- Title of the 1st step in the setup wizard. [CHAR LIMIT=64] -->
   <!-- Detailed instruction of the 1st step in the setup wizard. [CHAR LIMIT=120] -->
+  <string name="setup_step1_instruction">"Dewisa \"<xliff:g id="APPLICATION_NAME" example="Android Keyboard">%s</xliff:g>\" yn dy osodiadau Ieithoedd a Mewnbwn. Bydd hyn yn caniatáu ei redeg ar dy ddyfais."</string>
   <!-- Detailed instruction of the already finished 1st step in the setup wizard. [CHAR LIMIT=120] -->
+  <string name="setup_step1_finished_instruction">"Mae <xliff:g id="APPLICATION_NAME" example="Android Keyboard">%s</xliff:g> eisoes wedi ei alluogi yn dy osodiadau Ieithoedd a Mewnbwn, felly mae'r cam hwn wedi ei gwblhau. Ymlaen i'r nesaf!"</string>
   <!-- The label of the button that triggers the Languages & input settings in order to enable the keyboard. [CHAR_LIMIT=64] -->
   <!-- Ordinal number of the 2nd step in the setup wizard. [CHAR LIMIT=5] -->
   <!-- Title of the 2nd step in the setup wizard. [CHAR LIMIT=64] -->
@@ -270,6 +275,13 @@ mobile devices. [CHAR LIMIT=25] -->
   <!-- Action to cancel the ongoing download of a dictionary file [CHAR_LIMIT=25] -->
   <!-- Action to delete a dictionary file [CHAR_LIMIT=15] -->
   <!-- Message in the popup informing the user a dictionary is available for their language, and asking for a decision to download over their mobile data plan or not. The reason we ask for this is, the data is large and may be downloaded over a paid-per-megabyte connection but a dictionary is also essential to type comfortably, so we ask the user. This only pops in selected cases, when there is no dictionary at all currently, and the only available network seems to be metered. The "Languages & input" part should be set to the actual name of the option (message ID 5292716747264442359 in the translation console). [CHAR_LIMIT=700] -->
+  <string name="should_download_over_metered_prompt">Mae yna eiriadur ar gael ar gyfer yr iaith sydd wedi\'i dewis ar dy ddyfais.&lt;br/&gt;
+Rydym yn argymell &lt;b&gt;lawrlwytho&lt;/b&gt;\'r geiriadur <xliff:g id="LANGUAGE_NAME" example="English">%1$s</xliff:g> i wella dy brofiad teipio.&lt;br/&gt;
+&lt;br/&gt;
+Gall y geiriadur gymryd munud neu ddwy i\'w lawrlwytho dros gysylltiad 3G. Mae\'n bosib bydd gost am lawrlwytho\'r data, oni bai fod gennyt &lt;b&gt;gynllun data di-derfyn&lt;/b&gt;.&lt;br/&gt;
+Os nad wyt yn siŵr pa gynllun data sydd gennyt, rydym yn argymell defnyddio cysylltiad Wi-Fi i lawrlwytho\'r geiriadur yn awtomatig.&lt;br/&gt;
+&lt;br/&gt;
+Nodyn: Mae\'n bosib lawrlwytho a thynnu geiriaduron gan fynd i &lt;b&gt;Ieithoedd a Mewnbwn&lt;/b&gt; yn newislen &lt;b&gt;Gosodiadau&lt;/b&gt; dy ddyfais symudol.</string>
   <!-- The text of the "dictionary available" notification. -->
   <!-- The small subtext in the "dictionary available" notification. -->
   <!-- The text of the toast warning a download is starting automatically to enable suggestions for the selected language [CHAR LIMIT=100] -->
@@ -306,6 +318,7 @@ mobile devices. [CHAR LIMIT=25] -->
   <!-- This resource is corresponding to msgid="9140703913776549054" -->
   <!-- User dictionary settings. The text to show when there are no user-defined words in the dictionary  [CHAR LIMIT=200] -->
   <!-- This resource is corresponding to msgid="8165273379942105271" -->
+  <string name="user_dict_settings_empty_text">Does dim geiriau yn y geiriadur defnyddiwr. I ychwanegu gair, tara\'r botwm Ychwanegu (+).</string>
   <!-- User dictionary settings. The list item to choose to insert a word into the user dictionary for all languages -->
   <!-- This resource is corresponding to msgid="6742000040975959247" -->
   <!-- User dictionary settings. The text to show for the option that shows the entire list of supported locales to choose one [CHAR LIMIT=30] -->
