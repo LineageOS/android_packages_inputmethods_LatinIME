@@ -44,7 +44,6 @@
   <!-- Spoken description for the "Search" keyboard key. -->
   <!-- Spoken description for the "U+2022" (BULLET) keyboard key. -->
   <!-- Spoken description for the "Switch language" keyboard key. -->
-  <string name="spoken_description_language_switch">Newid iaith</string>
   <!-- Spoken description for the "Next" action keyboard key. -->
   <!-- Spoken description for the "Previous" action keyboard key. -->
   <!-- Spoken feedback after turning "Shift" mode on. -->
@@ -81,10 +80,8 @@
   <!-- Description of an upper case letter of LOWER_LETTER. -->
   <!-- Spoken description for Unicode code point U+0049: "I" LATIN CAPITAL LETTER I
          Note that depending on locale, the lower-case of this letter is U+0069 or U+0131. -->
-  <string name="spoken_letter_0049">I mawr</string>
   <!-- Spoken description for Unicode code point U+0130: "İ" LATIN CAPITAL LETTER I WITH DOT ABOVE
          Note that depending on locale, the lower-case of this letter is U+0069 or U+0131. -->
-  <string name="spoken_letter_0130">I mawr, dot uwchben</string>
   <!-- Spoken description for unknown symbol code point. -->
   <!-- Spoken description for unknown emoji code point. -->
   <!-- Spoken description for emoticons ":-!". -->

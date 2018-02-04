@@ -348,7 +348,6 @@
   <!-- Spoken description for Unicode code point U+1F380: "🎀" RIBBON -->
   <!-- Spoken description for Unicode code point U+1F381: "🎁" WRAPPED PRESENT -->
   <!-- Spoken description for Unicode code point U+1F382: "🎂" BIRTHDAY CAKE -->
-  <string name="spoken_emoji_1F382">Cacen pen-blwydd</string>
   <!-- Spoken description for Unicode code point U+1F383: "🎃" JACK-O-LANTERN -->
   <!-- Spoken description for Unicode code point U+1F384: "🎄" CHRISTMAS TREE -->
   <!-- Spoken description for Unicode code point U+1F385: "🎅" FATHER CHRISTMAS -->
@@ -685,7 +684,6 @@
   <!-- Spoken description for Unicode code point U+1F4D8: "📘" BLUE BOOK -->
   <!-- Spoken description for Unicode code point U+1F4D9: "📙" ORANGE BOOK -->
   <!-- Spoken description for Unicode code point U+1F4DA: "📚" BOOKS -->
-  <string name="spoken_emoji_1F4DA">Llyfrau</string>
   <!-- Spoken description for Unicode code point U+1F4DB: "📛" NAME BADGE -->
   <!-- Spoken description for Unicode code point U+1F4DC: "📜" SCROLL -->
   <!-- Spoken description for Unicode code point U+1F4DD: "📝" MEMO -->
