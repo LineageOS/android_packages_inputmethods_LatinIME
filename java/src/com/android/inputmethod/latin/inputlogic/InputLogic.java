@@ -189,10 +189,22 @@ public final class InputLogic {
         // the useless IPC of {begin,end}BatchEdit.
         if (mWordComposer.isComposingWord()) {
             mConnection.beginBatchEdit();
+
+            final CharSequence textBeforeCursor =
+                    mConnection.getTextBeforeCursor(Constants.EDITOR_CONTENTS_CACHE_SIZE, 0);
+            final CharSequence textAfterCursor =
+                    mConnection.getTextAfterCursor(Constants.EDITOR_CONTENTS_CACHE_SIZE, 0);
+            final String text = String.valueOf(textBeforeCursor) + String.valueOf(textAfterCursor);
+            final String typedWord = mWordComposer.getTypedWord();
+            if (textBeforeCursor != null && !text.contains(typedWord)) {
+                mWordComposer.reset();
+            }
+
             // If we had a composition in progress, we need to commit the word so that the
             // suggestionsSpan will be added. This will allow resuming on the same suggestions
             // after rotation is finished.
             commitTyped(settingsValues, LastComposedWord.NOT_A_SEPARATOR);
+            mConnection.finishComposingText();
             mConnection.endBatchEdit();
         }
     }
