@@ -27,7 +27,7 @@
   <string name="spell_checker_service_name">Correutor ortográficu d\'AOSP</string>
   <!-- Title for Android Keyboard settings screen. AOSP(Android Open Source Project) should not be translated.
          This resource should be copied from msgid="423615877174850267" -->
-  <string name="english_ime_settings">Axustes de tecláu d\'AOSP</string>
+  <string name="english_ime_settings">Axustes del tecláu d\'AOSP</string>
   <!-- Title for the spell checking service settings screen. AOSP(Android Open Source Project) should not be translated.
          This resource should be copied from msgid="2970535894327288421" -->
   <string name="android_spell_checker_settings">Axustes del correutor ortográficu d\'AOSP</string>

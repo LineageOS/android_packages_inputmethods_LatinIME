@@ -253,6 +253,7 @@ mobile devices. [CHAR LIMIT=25] -->
   <!-- Option to show setup wizard icon. [CHAR LIMIT=30]-->
   <!-- Description for the option to show setup wizard application icon of this IME in the laucher. [CHAR_LIMIT=65] -->
   <!-- The dictionary provider application name. Visible in Settings/Applications/Manage applications. -->
+  <string name="app_name">Fornidor de diccionarios</string>
   <!-- The dictionary provider ContentProvider name. Visible in Settings/Applications/Running services. -->
   <!-- The dictionary provider Service name. Visible in Settings/Applications/Running services. -->
   <!-- Downloadable dictionaries will get update information through the network. This describes the associated download. -->
