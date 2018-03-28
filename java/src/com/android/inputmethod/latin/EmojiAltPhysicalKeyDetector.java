@@ -93,9 +93,11 @@ final class EmojiAltPhysicalKeyDetector {
             final Pair<Integer, Integer> key = Pair.create(keyCode, metaState);
             if (mKeySet.contains(key)) {
                 if (mCanFire) {
-                    if (!keyEvent.isCanceled()) {
+                    if (!keyEvent.isCanceled() || keyCode == KeyEvent.KEYCODE_ALT_RIGHT ||
+                            keyCode == KeyEvent.KEYCODE_ALT_LEFT) {
                         if (DEBUG) {
-                            Log.d(TAG, "EmojiHotKeys.onKeyUp() - " + mName + " - firing action");
+                            Log.d(TAG, "EmojiHotKeys.onKeyUp() - " + mName + " - firing action" +
+                                    " keyCode " + keyCode);
                         }
                         action();
                     } else {
