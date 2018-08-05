@@ -32,10 +32,12 @@
   <!-- Spoken description for the "Shift" keyboard key in 2nd symbols (a.k.a. symbols shift) mode. -->
   <!-- Spoken description for the "Shift" keyboard key when "Caps lock" is on. -->
   <!-- Spoken description for the "Delete" keyboard key. -->
+  <string name="spoken_description_delete">Dileu</string>
   <!-- Spoken description for the "To Symbol" keyboard key. -->
   <!-- Spoken description for the "To Alpha" keyboard key. -->
   <!-- Spoken description for the "To Numbers" keyboard key. -->
   <!-- Spoken description for the "Settings" keyboard key. -->
+  <string name="spoken_description_settings">Gosodiadau</string>
   <!-- Spoken description for the "Tab" keyboard key. -->
   <!-- Spoken description for the "Space" keyboard key. -->
   <!-- Spoken description for the "Mic" keyboard key. -->
@@ -46,7 +48,9 @@
   <!-- Spoken description for the "Switch language" keyboard key. -->
   <string name="spoken_description_language_switch">Newid iaith</string>
   <!-- Spoken description for the "Next" action keyboard key. -->
+  <string name="spoken_description_action_next">Nesaf</string>
   <!-- Spoken description for the "Previous" action keyboard key. -->
+  <string name="spoken_description_action_previous">Blaenorol</string>
   <!-- Spoken feedback after turning "Shift" mode on. -->
   <!-- Spoken feedback after turning "Caps lock" mode on. -->
   <!-- Spoken feedback after changing to the symbols keyboard. -->
@@ -81,10 +85,10 @@
   <!-- Description of an upper case letter of LOWER_LETTER. -->
   <!-- Spoken description for Unicode code point U+0049: "I" LATIN CAPITAL LETTER I
          Note that depending on locale, the lower-case of this letter is U+0069 or U+0131. -->
-  <string name="spoken_letter_0049">I mawr</string>
+  <string name="spoken_letter_0049">Prif lythyren I</string>
   <!-- Spoken description for Unicode code point U+0130: "İ" LATIN CAPITAL LETTER I WITH DOT ABOVE
          Note that depending on locale, the lower-case of this letter is U+0069 or U+0131. -->
-  <string name="spoken_letter_0130">I mawr, dot uwchben</string>
+  <string name="spoken_letter_0130">Prif lythyren I, dot uwch ei ben</string>
   <!-- Spoken description for unknown symbol code point. -->
   <!-- Spoken description for unknown emoji code point. -->
   <!-- Spoken description for emoticons ":-!". -->

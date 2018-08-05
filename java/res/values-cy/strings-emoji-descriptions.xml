@@ -395,7 +395,9 @@
   <!-- Spoken description for Unicode code point U+1F3B3: "🎳" BOWLING -->
   <!-- Spoken description for Unicode code point U+1F3B4: "🎴" FLOWER PLAYING CARDS -->
   <!-- Spoken description for Unicode code point U+1F3B5: "🎵" MUSICAL NOTE -->
+  <string name="spoken_emoji_1F3B5">Nodyn cerddorol</string>
   <!-- Spoken description for Unicode code point U+1F3B6: "🎶" MULTIPLE MUSICAL NOTES -->
+  <string name="spoken_emoji_1F3B6">Nifer o nodau cerddorol</string>
   <!-- Spoken description for Unicode code point U+1F3B7: "🎷" SAXOPHONE -->
   <!-- Spoken description for Unicode code point U+1F3B8: "🎸" GUITAR -->
   <!-- Spoken description for Unicode code point U+1F3B9: "🎹" MUSICAL KEYBOARD -->
@@ -678,7 +680,9 @@
   <!-- Spoken description for Unicode code point U+1F4D1: "📑" BOOKMARK TABS -->
   <!-- Spoken description for Unicode code point U+1F4D2: "📒" LEDGER -->
   <!-- Spoken description for Unicode code point U+1F4D3: "📓" NOTEBOOK -->
+  <string name="spoken_emoji_1F4D3">Llyfr nodiadau</string>
   <!-- Spoken description for Unicode code point U+1F4D4: "📔" NOTEBOOK WITH DECORATIVE COVER -->
+  <string name="spoken_emoji_1F4D4">Llyfr nodiadau gyda chlawr wedi’i addurno</string>
   <!-- Spoken description for Unicode code point U+1F4D5: "📕" CLOSED BOOK -->
   <!-- Spoken description for Unicode code point U+1F4D6: "📖" OPEN BOOK -->
   <!-- Spoken description for Unicode code point U+1F4D7: "📗" GREEN BOOK -->
