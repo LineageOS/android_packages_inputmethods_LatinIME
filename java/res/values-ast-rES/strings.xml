@@ -45,7 +45,13 @@
   <!-- Option to cancel the deletion of user data from cloud [CHAR LIMIT=20] -->
   <!-- Option to agree to terms and conditions for enabling cloud sync feature. -->
   <!-- Text to tell the user to add a Google account to the device to enable the cloud sync feature. [CHAR LIMIT=65]-->
+  <string name="add_account_to_enable_sync">
+        Amiesta una cuenta de Google p\'activar esta carauterística
+    </string>
   <!-- Text to tell the user that sync feature is disabled because they have Google Apps for Business account(s) on their device. [CHAR LIMIT=80]-->
+  <string name="cloud_sync_summary_disabled_work_profile">
+        La sincronización nun ta disponible pa preseos con cuentes Google Apps for Business
+    </string>
   <!-- Option name for including other IMEs in the language switch list [CHAR LIMIT=30] -->
   <!-- Option summary for including other IMEs in the language switch list [CHAR LIMIT=65] -->
   <!-- Option to show language switch key [CHAR LIMIT=30] -->
@@ -326,4 +332,5 @@ mobile devices. [CHAR LIMIT=25] -->
   <!-- User dictionary settings. Index of the user dictionary [CHAR LIMIT=30]
          This resource is copied from packages/apps/Settings/res/values/strings.xml -->
   <!-- This resource is corresponding to msgid="5433275485499039199" -->
+  <string name="user_dict_fast_scroll_alphabet">\u0020ABCDEFGHḤIJKLḶMNÑOPQRSTUVWXYZ</string>
 </resources>
