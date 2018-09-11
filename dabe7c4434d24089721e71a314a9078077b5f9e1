@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba66fba8_1272440d",
+        "filename": "java/res/xml/spellchecker.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2018-09-11T17:43:28Z",
+      "side": 1,
+      "message": "Here it is",
+      "revId": "dabe7c4434d24089721e71a314a9078077b5f9e1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
