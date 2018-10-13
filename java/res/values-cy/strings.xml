@@ -146,6 +146,7 @@ Dyw cysoni ddim yn bosib ar ddyfeisiau gyda chyfrifon Google Apps ar gyfer Busne
   <!-- Preferences item for enabling speech input -->
   <string name="voice_input">Bysell mewnbynnu â llais</string>
   <!-- The summary text to describe the reason why the "Voice input key" option is disabled. [CHAR LIMIT=100] -->
+  <string name="voice_input_disabled_summary">Does dim dulliau mewnbwn llais wedi eu galluogi. Gwiria gosodiadau Ieithoedd a Mewnbwn.</string>
   <!-- Title for configuring input method settings [CHAR LIMIT=35] -->
   <string name="configure_input_method">Ffurfweddu dulliau mewnbwn</string>
   <!-- Title for input language selection screen -->
@@ -347,7 +348,9 @@ mobile devices. [CHAR LIMIT=25] -->
   <!-- Ordinal number of the 1st step in the setup wizard. [CHAR LIMIT=5] -->
   <!-- Title of the 1st step in the setup wizard. [CHAR LIMIT=64] -->
   <!-- Detailed instruction of the 1st step in the setup wizard. [CHAR LIMIT=120] -->
+  <string name="setup_step1_instruction">"Dewisa \"<xliff:g id="APPLICATION_NAME" example="Android Keyboard">%s</xliff:g>\" yn dy osodiadau Ieithoedd a Mewnbwn. Bydd hyn yn caniatáu ei redeg ar dy ddyfais."</string>
   <!-- Detailed instruction of the already finished 1st step in the setup wizard. [CHAR LIMIT=120] -->
+  <string name="setup_step1_finished_instruction">"Mae <xliff:g id="APPLICATION_NAME" example="Android Keyboard">%s</xliff:g> eisoes wedi ei alluogi yn dy osodiadau Ieithoedd a Mewnbwn, felly mae'r cam hwn wedi ei gwblhau. Ymlaen i'r nesaf!"</string>
   <!-- The label of the button that triggers the Languages & input settings in order to enable the keyboard. [CHAR_LIMIT=64] -->
   <string name="setup_step1_action">Galluogi yn Gosodiadau</string>
   <!-- Ordinal number of the 2nd step in the setup wizard. [CHAR LIMIT=5] -->
@@ -406,6 +409,7 @@ mobile devices. [CHAR LIMIT=25] -->
   <!-- Message to display in a dialog box while we are actively updating the word list [CHAR LIMIT=60] -->
   <string name="message_updating">Yn gwirio am ddiweddariadau</string>
   <!-- Message to display while the add-on dictionary list is updating [no space constraints on this, there is plenty of space but shorter is better because it's only on the screen for a second] -->
+  <string name="message_loading">Yn llwytho&#x2026;</string>
   <!-- String to explain this dictionary is the main dictionary for this language [CHAR_LIMIT=30] -->
   <string name="main_dict_description">Prif Eiriadur</string>
   <!-- Standard message to dismiss a dialog box -->

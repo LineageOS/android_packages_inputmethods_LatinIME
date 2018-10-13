@@ -59,13 +59,16 @@
   <!-- Spoken feedback after changing to the phone dialer keyboard. -->
   <!-- Spoken feedback after changing to the shifted phone dialer (symbols) keyboard. -->
   <!-- Spoken feedback when the keyboard is hidden. -->
+  <string name="announce_keyboard_hidden">Cuddiwyd y bysellfwrdd</string>
   <!-- Spoken feedback when the keyboard mode changes. -->
   <!-- Description of the keyboard mode for entering dates. -->
   <!-- Description of the keyboard mode for entering dates and times. -->
   <!-- Description of the keyboard mode for entering email addresses. -->
+  <string name="keyboard_mode_email">ebost</string>
   <!-- Description of the keyboard mode for entering text messages. -->
   <!-- Description of the keyboard mode for entering numbers. -->
   <!-- Description of the keyboard mode for entering phone numbers. -->
+  <string name="keyboard_mode_phone">ffôn</string>
   <!-- Description of the keyboard mode for entering generic text. -->
   <!-- Description of the keyboard mode for entering times. -->
   <!-- Description of the keyboard mode for entering URLs. -->
