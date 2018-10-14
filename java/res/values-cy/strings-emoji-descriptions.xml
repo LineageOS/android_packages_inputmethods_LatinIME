@@ -49,8 +49,10 @@
   <!-- Spoken description for Unicode code point U+23EE: "⏮" BLACK LEFT-POINTING DOUBLE TRIANGLE WITH VERTICAL BAR -->
   <!-- Spoken description for Unicode code point U+23EF: "⏯" BLACK RIGHT-POINTING TRIANGLE WITH DOUBLE VERTICAL BAR -->
   <!-- Spoken description for Unicode code point U+23F0: "⏰" ALARM CLOCK -->
+  <string name="spoken_emoji_23F0">Cloc larwm</string>
   <!-- Spoken description for Unicode code point U+23F1: "⏱" STOPWATCH -->
   <!-- Spoken description for Unicode code point U+23F2: "⏲" TIMER CLOCK -->
+  <string name="spoken_emoji_23F2">Cloc amseru</string>
   <!-- Spoken description for Unicode code point U+23F3: "⏳" HOURGLASS WITH FLOWING SAND -->
   <!-- Spoken description for Unicode code point U+23F8: "⏸" DOUBLE VERTICAL BAR -->
   <!-- Spoken description for Unicode code point U+23F9: "⏹" BLACK SQUARE FOR STOP -->
@@ -395,7 +397,9 @@
   <!-- Spoken description for Unicode code point U+1F3B3: "🎳" BOWLING -->
   <!-- Spoken description for Unicode code point U+1F3B4: "🎴" FLOWER PLAYING CARDS -->
   <!-- Spoken description for Unicode code point U+1F3B5: "🎵" MUSICAL NOTE -->
+  <string name="spoken_emoji_1F3B5">Nodyn cerddorol</string>
   <!-- Spoken description for Unicode code point U+1F3B6: "🎶" MULTIPLE MUSICAL NOTES -->
+  <string name="spoken_emoji_1F3B6">Nifer o nodau cerddorol</string>
   <!-- Spoken description for Unicode code point U+1F3B7: "🎷" SAXOPHONE -->
   <!-- Spoken description for Unicode code point U+1F3B8: "🎸" GUITAR -->
   <!-- Spoken description for Unicode code point U+1F3B9: "🎹" MUSICAL KEYBOARD -->
@@ -468,6 +472,7 @@
   <!-- Spoken description for Unicode code point U+1F3FF: "🏿" EMOJI MODIFIER FITZPATRICK TYPE-6 -->
   <!-- Spoken description for Unicode code point U+1F400: "🐀" RAT -->
   <!-- Spoken description for Unicode code point U+1F401: "🐁" MOUSE -->
+  <string name="spoken_emoji_1F401">Llygoden</string>
   <!-- Spoken description for Unicode code point U+1F402: "🐂" OX -->
   <!-- Spoken description for Unicode code point U+1F403: "🐃" WATER BUFFALO -->
   <!-- Spoken description for Unicode code point U+1F404: "🐄" COW -->
@@ -512,6 +517,7 @@
   <!-- Spoken description for Unicode code point U+1F42B: "🐫" BACTRIAN CAMEL -->
   <!-- Spoken description for Unicode code point U+1F42C: "🐬" DOLPHIN -->
   <!-- Spoken description for Unicode code point U+1F42D: "🐭" MOUSE FACE -->
+  <string name="spoken_emoji_1F42D">Wyneb llygoden</string>
   <!-- Spoken description for Unicode code point U+1F42E: "🐮" COW FACE -->
   <!-- Spoken description for Unicode code point U+1F42F: "🐯" TIGER FACE -->
   <!-- Spoken description for Unicode code point U+1F430: "🐰" RABBIT FACE -->
@@ -609,6 +615,7 @@
   <!-- Spoken description for Unicode code point U+1F48C: "💌" LOVE LETTER -->
   <!-- Spoken description for Unicode code point U+1F48D: "💍" RING -->
   <!-- Spoken description for Unicode code point U+1F48E: "💎" GEM STONE -->
+  <string name="spoken_emoji_1F48E">Carreg gem</string>
   <!-- Spoken description for Unicode code point U+1F48F: "💏" KISS -->
   <!-- Spoken description for Unicode code point U+1F490: "💐" BOUQUET -->
   <!-- Spoken description for Unicode code point U+1F491: "💑" COUPLE WITH HEART -->
@@ -678,7 +685,9 @@
   <!-- Spoken description for Unicode code point U+1F4D1: "📑" BOOKMARK TABS -->
   <!-- Spoken description for Unicode code point U+1F4D2: "📒" LEDGER -->
   <!-- Spoken description for Unicode code point U+1F4D3: "📓" NOTEBOOK -->
+  <string name="spoken_emoji_1F4D3">Llyfr nodiadau</string>
   <!-- Spoken description for Unicode code point U+1F4D4: "📔" NOTEBOOK WITH DECORATIVE COVER -->
+  <string name="spoken_emoji_1F4D4">Llyfr nodiadau gyda chlawr wedi’i addurno</string>
   <!-- Spoken description for Unicode code point U+1F4D5: "📕" CLOSED BOOK -->
   <!-- Spoken description for Unicode code point U+1F4D6: "📖" OPEN BOOK -->
   <!-- Spoken description for Unicode code point U+1F4D7: "📗" GREEN BOOK -->
@@ -687,6 +696,7 @@
   <!-- Spoken description for Unicode code point U+1F4DA: "📚" BOOKS -->
   <string name="spoken_emoji_1F4DA">Llyfrau</string>
   <!-- Spoken description for Unicode code point U+1F4DB: "📛" NAME BADGE -->
+  <string name="spoken_emoji_1F4DB">Bathodyn enw</string>
   <!-- Spoken description for Unicode code point U+1F4DC: "📜" SCROLL -->
   <!-- Spoken description for Unicode code point U+1F4DD: "📝" MEMO -->
   <!-- Spoken description for Unicode code point U+1F4DE: "📞" TELEPHONE RECEIVER -->
@@ -728,7 +738,9 @@
   <!-- Spoken description for Unicode code point U+1F503: "🔃" CLOCKWISE DOWNWARDS AND UPWARDS OPEN CIRCLE ARROWS -->
   <!-- Spoken description for Unicode code point U+1F504: "🔄" ANTICLOCKWISE DOWNWARDS AND UPWARDS OPEN CIRCLE ARROWS -->
   <!-- Spoken description for Unicode code point U+1F505: "🔅" LOW BRIGHTNESS SYMBOL -->
+  <string name="spoken_emoji_1F505">Symbol disgleirdeb isel</string>
   <!-- Spoken description for Unicode code point U+1F506: "🔆" HIGH BRIGHTNESS SYMBOL -->
+  <string name="spoken_emoji_1F506">Symbol disgleirdeb uchel</string>
   <!-- Spoken description for Unicode code point U+1F507: "🔇" SPEAKER WITH CANCELLATION STROKE -->
   <!-- Spoken description for Unicode code point U+1F508: "🔈" SPEAKER -->
   <!-- Spoken description for Unicode code point U+1F509: "🔉" SPEAKER WITH ONE SOUND WAVE -->
@@ -791,29 +803,53 @@
   <!-- Spoken description for Unicode code point U+1F54D: "🕍" SYNAGOGUE -->
   <!-- Spoken description for Unicode code point U+1F54E: "🕎" MENORAH WITH NINE BRANCHES -->
   <!-- Spoken description for Unicode code point U+1F550: "🕐" CLOCK FACE ONE OCLOCK -->
+  <string name="spoken_emoji_1F550">Wyneb cloc un o\'r gloch</string>
   <!-- Spoken description for Unicode code point U+1F551: "🕑" CLOCK FACE TWO OCLOCK -->
+  <string name="spoken_emoji_1F551">Wyneb cloc dau o\'r gloch</string>
   <!-- Spoken description for Unicode code point U+1F552: "🕒" CLOCK FACE THREE OCLOCK -->
+  <string name="spoken_emoji_1F552">Wyneb cloc tri o\'r gloch</string>
   <!-- Spoken description for Unicode code point U+1F553: "🕓" CLOCK FACE FOUR OCLOCK -->
+  <string name="spoken_emoji_1F553">Wyneb cloc pedwar o\'r gloch</string>
   <!-- Spoken description for Unicode code point U+1F554: "🕔" CLOCK FACE FIVE OCLOCK -->
+  <string name="spoken_emoji_1F554">Wyneb cloc pump o\'r gloch</string>
   <!-- Spoken description for Unicode code point U+1F555: "🕕" CLOCK FACE SIX OCLOCK -->
+  <string name="spoken_emoji_1F555">Wyneb cloc chwech o\'r gloch</string>
   <!-- Spoken description for Unicode code point U+1F556: "🕖" CLOCK FACE SEVEN OCLOCK -->
+  <string name="spoken_emoji_1F556">Wyneb cloc saith o\'r gloch</string>
   <!-- Spoken description for Unicode code point U+1F557: "🕗" CLOCK FACE EIGHT OCLOCK -->
+  <string name="spoken_emoji_1F557">Wyneb cloc wyth o\'r gloch</string>
   <!-- Spoken description for Unicode code point U+1F558: "🕘" CLOCK FACE NINE OCLOCK -->
+  <string name="spoken_emoji_1F558">Wyneb cloc naw o\'r gloch</string>
   <!-- Spoken description for Unicode code point U+1F559: "🕙" CLOCK FACE TEN OCLOCK -->
+  <string name="spoken_emoji_1F559">Wyneb cloc deg o\'r gloch</string>
   <!-- Spoken description for Unicode code point U+1F55A: "🕚" CLOCK FACE ELEVEN OCLOCK -->
+  <string name="spoken_emoji_1F55A">Wyneb cloc unarddeg o\'r gloch</string>
   <!-- Spoken description for Unicode code point U+1F55B: "🕛" CLOCK FACE TWELVE OCLOCK -->
+  <string name="spoken_emoji_1F55B">Wyneb cloc deuddeg o\'r gloch</string>
   <!-- Spoken description for Unicode code point U+1F55C: "🕜" CLOCK FACE ONE-THIRTY -->
+  <string name="spoken_emoji_1F55C">Wyneb cloc hanner awr wedi un</string>
   <!-- Spoken description for Unicode code point U+1F55D: "🕝" CLOCK FACE TWO-THIRTY -->
+  <string name="spoken_emoji_1F55D">Wyneb cloc hanner awr wedi dau</string>
   <!-- Spoken description for Unicode code point U+1F55E: "🕞" CLOCK FACE THREE-THIRTY -->
+  <string name="spoken_emoji_1F55E">Wyneb cloc hanner awr wedi tri</string>
   <!-- Spoken description for Unicode code point U+1F55F: "🕟" CLOCK FACE FOUR-THIRTY -->
+  <string name="spoken_emoji_1F55F">Wyneb cloc hanner awr wedi pedwar</string>
   <!-- Spoken description for Unicode code point U+1F560: "🕠" CLOCK FACE FIVE-THIRTY -->
+  <string name="spoken_emoji_1F560">Wyneb cloc hanner awr wedi pump</string>
   <!-- Spoken description for Unicode code point U+1F561: "🕡" CLOCK FACE SIX-THIRTY -->
+  <string name="spoken_emoji_1F561">Wyneb cloc hanner awr wedi chwech</string>
   <!-- Spoken description for Unicode code point U+1F562: "🕢" CLOCK FACE SEVEN-THIRTY -->
+  <string name="spoken_emoji_1F562">Wyneb cloc hanner awr wedi saith</string>
   <!-- Spoken description for Unicode code point U+1F563: "🕣" CLOCK FACE EIGHT-THIRTY -->
+  <string name="spoken_emoji_1F563">Wyneb cloc hanner awr wedi wyth</string>
   <!-- Spoken description for Unicode code point U+1F564: "🕤" CLOCK FACE NINE-THIRTY -->
+  <string name="spoken_emoji_1F564">Wyneb cloc hanner awr wedi naw</string>
   <!-- Spoken description for Unicode code point U+1F565: "🕥" CLOCK FACE TEN-THIRTY -->
+  <string name="spoken_emoji_1F565">Wyneb cloc hanner awr wedi deg</string>
   <!-- Spoken description for Unicode code point U+1F566: "🕦" CLOCK FACE ELEVEN-THIRTY -->
+  <string name="spoken_emoji_1F566">Wyneb cloc hanner awr wedi unarddeg</string>
   <!-- Spoken description for Unicode code point U+1F567: "🕧" CLOCK FACE TWELVE-THIRTY -->
+  <string name="spoken_emoji_1F567">Wyneb cloc hanner awr wedi deuddeg</string>
   <!-- Spoken description for Unicode code point U+1F56F: "🕯" CANDLE -->
   <!-- Spoken description for Unicode code point U+1F570: "🕰" MANTELPIECE CLOCK -->
   <!-- Spoken description for Unicode code point U+1F573: "🕳" HOLE -->
@@ -834,6 +870,7 @@
   <!-- Spoken description for Unicode code point U+1F5A5: "🖥" DESKTOP COMPUTER -->
   <!-- Spoken description for Unicode code point U+1F5A8: "🖨" PRINTER -->
   <!-- Spoken description for Unicode code point U+1F5B1: "🖱" THREE BUTTON MOUSE -->
+  <string name="spoken_emoji_1F5B1">Llygoden tri botwm</string>
   <!-- Spoken description for Unicode code point U+1F5B2: "🖲" TRACKBALL -->
   <!-- Spoken description for Unicode code point U+1F5BC: "🖼" FRAME WITH PICTURE -->
   <!-- Spoken description for Unicode code point U+1F5C2: "🗂" CARD INDEX DIVIDERS -->
@@ -959,7 +996,9 @@
   <!-- Spoken description for Unicode code point U+1F695: "🚕" TAXI -->
   <!-- Spoken description for Unicode code point U+1F696: "🚖" ONCOMING TAXI -->
   <!-- Spoken description for Unicode code point U+1F697: "🚗" AUTOMOBILE -->
+  <string name="spoken_emoji_1F697">Cerbyd</string>
   <!-- Spoken description for Unicode code point U+1F698: "🚘" ONCOMING AUTOMOBILE -->
+  <string name="spoken_emoji_1F698">Cerbyd yn agosáu</string>
   <!-- Spoken description for Unicode code point U+1F699: "🚙" RECREATIONAL VEHICLE -->
   <!-- Spoken description for Unicode code point U+1F69A: "🚚" DELIVERY TRUCK -->
   <!-- Spoken description for Unicode code point U+1F69B: "🚛" ARTICULATED LORRY -->
@@ -1176,7 +1215,9 @@
   <!-- Spoken description for Unicode code point sequence U+1F1F0 U+1F1F2: "🇰🇲" FLAG FOR COMOROS -->
   <!-- Spoken description for Unicode code point sequence U+1F1F0 U+1F1F3: "🇰🇳" FLAG FOR ST. KITTS & NEVIS -->
   <!-- Spoken description for Unicode code point sequence U+1F1F0 U+1F1F5: "🇰🇵" FLAG FOR NORTH KOREA -->
+  <string name="spoken_emoji_1F1F0_1F1F5">Baner Gogledd Corea</string>
   <!-- Spoken description for Unicode code point sequence U+1F1F0 U+1F1F7: "🇰🇷" FLAG FOR SOUTH KOREA -->
+  <string name="spoken_emoji_1F1F0_1F1F7">Baner De Corea</string>
   <!-- Spoken description for Unicode code point sequence U+1F1F0 U+1F1FC: "🇰🇼" FLAG FOR KUWAIT -->
   <!-- Spoken description for Unicode code point sequence U+1F1F0 U+1F1FE: "🇰🇾" FLAG FOR CAYMAN ISLANDS -->
   <!-- Spoken description for Unicode code point sequence U+1F1F0 U+1F1FF: "🇰🇿" FLAG FOR KAZAKHSTAN -->

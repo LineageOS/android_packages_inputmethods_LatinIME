@@ -90,6 +90,7 @@
   <!-- Spoken description for Unicode code point U+2639: "☹" WHITE FROWNING FACE -->
   <!-- Spoken description for Unicode code point U+263A: "☺" WHITE SMILING FACE -->
   <!-- Spoken description for Unicode code point U+2648: "♈" ARIES -->
+  <string name="spoken_emoji_2648">Aries</string>
   <!-- Spoken description for Unicode code point U+2649: "♉" TAURUS -->
   <!-- Spoken description for Unicode code point U+264A: "♊" GEMINI -->
   <!-- Spoken description for Unicode code point U+264B: "♋" CANCER -->
@@ -100,6 +101,7 @@
   <!-- Spoken description for Unicode code point U+2650: "♐" SAGITTARIUS -->
   <!-- Spoken description for Unicode code point U+2651: "♑" CAPRICORN -->
   <!-- Spoken description for Unicode code point U+2652: "♒" AQUARIUS -->
+  <string name="spoken_emoji_2652">Acuariu</string>
   <!-- Spoken description for Unicode code point U+2653: "♓" PISCES -->
   <!-- Spoken description for Unicode code point U+2660: "♠" BLACK SPADE SUIT -->
   <!-- Spoken description for Unicode code point U+2663: "♣" BLACK CLUB SUIT -->
@@ -110,6 +112,7 @@
   <!-- Spoken description for Unicode code point U+267F: "♿" WHEELCHAIR SYMBOL -->
   <!-- Spoken description for Unicode code point U+2692: "⚒" HAMMER AND PICK -->
   <!-- Spoken description for Unicode code point U+2693: "⚓" ANCHOR -->
+  <string name="spoken_emoji_2693">Anchor</string>
   <!-- Spoken description for Unicode code point U+2694: "⚔" CROSSED SWORDS -->
   <!-- Spoken description for Unicode code point U+2696: "⚖" SCALES -->
   <string name="spoken_emoji_2696">Balances</string>
@@ -985,6 +988,7 @@
   <!-- Spoken description for Unicode code point U+1F630: "😰" FACE WITH OPEN MOUTH AND COLD SWEAT -->
   <!-- Spoken description for Unicode code point U+1F631: "😱" FACE SCREAMING IN FEAR -->
   <!-- Spoken description for Unicode code point U+1F632: "😲" ASTONISHED FACE -->
+  <string name="spoken_emoji_1F632">Cara ablucada</string>
   <!-- Spoken description for Unicode code point U+1F633: "😳" FLUSHED FACE -->
   <!-- Spoken description for Unicode code point U+1F634: "😴" SLEEPING FACE -->
   <!-- Spoken description for Unicode code point U+1F635: "😵" DIZZY FACE -->
@@ -1043,6 +1047,7 @@
   <!-- Spoken description for Unicode code point U+1F699: "🚙" RECREATIONAL VEHICLE -->
   <!-- Spoken description for Unicode code point U+1F69A: "🚚" DELIVERY TRUCK -->
   <!-- Spoken description for Unicode code point U+1F69B: "🚛" ARTICULATED LORRY -->
+  <string name="spoken_emoji_1F69B">Camión articuláu</string>
   <!-- Spoken description for Unicode code point U+1F69C: "🚜" TRACTOR -->
   <!-- Spoken description for Unicode code point U+1F69D: "🚝" MONORAIL -->
   <!-- Spoken description for Unicode code point U+1F69E: "🚞" MOUNTAIN RAILWAY -->
