@@ -746,6 +746,7 @@
   <!-- Spoken description for Unicode code point U+1F509: "🔉" SPEAKER WITH ONE SOUND WAVE -->
   <!-- Spoken description for Unicode code point U+1F50A: "🔊" SPEAKER WITH THREE SOUND WAVES -->
   <!-- Spoken description for Unicode code point U+1F50B: "🔋" BATTERY -->
+  <string name="spoken_emoji_1F50B">Batri</string>
   <!-- Spoken description for Unicode code point U+1F50C: "🔌" ELECTRIC PLUG -->
   <!-- Spoken description for Unicode code point U+1F50D: "🔍" LEFT-POINTING MAGNIFYING GLASS -->
   <!-- Spoken description for Unicode code point U+1F50E: "🔎" RIGHT-POINTING MAGNIFYING GLASS -->
