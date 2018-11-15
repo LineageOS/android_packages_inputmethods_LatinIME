@@ -67,9 +67,9 @@
     <!-- Option to agree to terms and conditions for enabling cloud sync feature. -->
     <string name="cloud_sync_opt_in_text">Caiff dy eiriadur personol ei gysoni a bydd copi wrth gefn yn cael ei gadw ar weinyddwyr Google. Gall gwybodaeth ystadegol defnydd geiriau gael ei gasglu i helpu gwella cynnyrch. Bydd y casglu a\'r defnydd o\'r wybodaeth yn cydymffurfio â <a href="https://www.google.com/policies/privacy">Polisi Preifatrwydd Google</a>.</string>
     <!-- Text to tell the user to add a Google account to the device to enable the cloud sync feature. [CHAR LIMIT=65]-->
-    <string name="add_account_to_enable_sync">Ychwanega gyfrif Google i\'r ddyfais hon er mwyn galluogi\'r nodwedd hon.</string>
+    <string name="add_account_to_enable_sync">Ychwanega gyfrif Google i\'r ddyfais hon er mwyn galluogi\'r nodwedd hon.    </string>
     <!-- Text to tell the user that sync feature is disabled because they have Google Apps for Business account(s) on their device. [CHAR LIMIT=80]-->
-    <string name="cloud_sync_summary_disabled_work_profile">Dyw cysoni ddim yn bosib ar ddyfeisiau gyda chyfrifon Google Apps ar gyfer Busnes.</string>
+    <string name="cloud_sync_summary_disabled_work_profile">Dyw cysoni ddim yn bosib ar ddyfeisiau gyda chyfrifon Google Apps ar gyfer Busnes.    </string>
     <!-- Option name for including other IMEs in the language switch list [CHAR LIMIT=30] -->
     <string name="include_other_imes_in_language_switch_list">Newid i ddulliau mewnbwn eraill</string>
     <!-- Option summary for including other IMEs in the language switch list [CHAR LIMIT=65] -->
