@@ -85,7 +85,7 @@
     <!-- Option to enable sending usage statistics -->
     <string name="enable_metrics_logging">"<xliff:g id="APPLICATION_NAME" example="Android Keyboard">%s</xliff:g> verbesseren"</string>
     <!-- Option name for enabling or disabling the double-space period feature that lets double tap on spacebar insert a period followed by a space [CHAR LIMIT=30] -->
-    <string name="use_double_space_period">Zweefach Espace fir e Punkt</string>
+    <string name="use_double_space_period">Zweefach Espace fir e Punkt </string>
     <!-- Description for option enabling or disabling the double-space period feature that lets double tap on spacebar insert a period followed by a space [CHAR LIMIT=65] -->
     <string name="use_double_space_period_summary">Zweemol op Espace drécke fir e Punkt mat Espace anzeginn</string>
     <!-- Option to enable auto capitalization of sentences -->
