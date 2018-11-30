@@ -85,6 +85,10 @@
     />
     <subtype
             android:label="@string/subtype_generic"
+            android:subtypeLocale="pl"
+    />
+    <subtype
+            android:label="@string/subtype_generic"
             android:subtypeLocale="uk"
     />
 </spell-checker>
