@@ -345,6 +345,7 @@ mobile devices. [CHAR LIMIT=25] -->
     <string name="setup_steps_title">"Gosod <xliff:g id="APPLICATION_NAME" example="Android Keyboard">%s</xliff:g>"</string>
     <!-- Ordinal number of the 1st step in the setup wizard. [CHAR LIMIT=5] -->
     <!-- Title of the 1st step in the setup wizard. [CHAR LIMIT=64] -->
+    <string name="setup_step1_title">"Galluogi <xliff:g id="APPLICATION_NAME" example="Android Keyboard">%s</xliff:g>"</string>
     <!-- Detailed instruction of the 1st step in the setup wizard. [CHAR LIMIT=120] -->
     <string name="setup_step1_instruction">"Dewisa \"<xliff:g id="APPLICATION_NAME" example="Android Keyboard">%s</xliff:g>\" yn dy osodiadau Ieithoedd a Mewnbwn. Bydd hyn yn caniatáu ei redeg ar dy ddyfais."</string>
     <!-- Detailed instruction of the already finished 1st step in the setup wizard. [CHAR LIMIT=120] -->

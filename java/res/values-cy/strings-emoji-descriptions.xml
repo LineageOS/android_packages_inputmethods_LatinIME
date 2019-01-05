@@ -24,50 +24,91 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Spoken description for Unicode code point U+00A9: "©" COPYRIGHT SIGN -->
+  <string name="spoken_emoji_00A9">Nod hawlfraint</string>
   <!-- Spoken description for Unicode code point U+00AE: "®" REGISTERED SIGN -->
+  <string name="spoken_emoji_00AE">Nod cofrestredig</string>
   <!-- Spoken description for Unicode code point U+203C: "‼" DOUBLE EXCLAMATION MARK -->
+  <string name="spoken_emoji_203C">Ebychnod dwbl</string>
   <!-- Spoken description for Unicode code point U+2049: "⁉" EXCLAMATION QUESTION MARK -->
+  <string name="spoken_emoji_2049">Ebychnod nod cwestiwn</string>
   <!-- Spoken description for Unicode code point U+2122: "™" TRADE MARK SIGN -->
+  <string name="spoken_emoji_2122">Arwydd nod masnach</string>
   <!-- Spoken description for Unicode code point U+2139: "ℹ" INFORMATION SOURCE -->
+  <string name="spoken_emoji_2139">Ffynhonnell wybodaeth</string>
   <!-- Spoken description for Unicode code point U+2194: "↔" LEFT RIGHT ARROW -->
+  <string name="spoken_emoji_2194">Saeth chwith a de</string>
   <!-- Spoken description for Unicode code point U+2195: "↕" UP DOWN ARROW -->
+  <string name="spoken_emoji_2195">Saeth fyny a lawr</string>
   <!-- Spoken description for Unicode code point U+2196: "↖" NORTH WEST ARROW -->
+  <string name="spoken_emoji_2196">Saeth gogledd orllewin</string>
   <!-- Spoken description for Unicode code point U+2197: "↗" NORTH EAST ARROW -->
+  <string name="spoken_emoji_2197">Saeth gogledd ddwyrain</string>
   <!-- Spoken description for Unicode code point U+2198: "↘" SOUTH EAST ARROW -->
+  <string name="spoken_emoji_2198">Saeth de ddwyrain</string>
   <!-- Spoken description for Unicode code point U+2199: "↙" SOUTH WEST ARROW -->
+  <string name="spoken_emoji_2199">Saeth de orllewin</string>
   <!-- Spoken description for Unicode code point U+21A9: "↩" LEFTWARDS ARROW WITH HOOK -->
+  <string name="spoken_emoji_21A9">Saeth i\'r chwith gyda bachyn</string>
   <!-- Spoken description for Unicode code point U+21AA: "↪" RIGHTWARDS ARROW WITH HOOK -->
+  <string name="spoken_emoji_21AA">Saeth i\'r dde gyda bachyn</string>
   <!-- Spoken description for Unicode code point U+231A: "⌚" WATCH -->
+  <string name="spoken_emoji_231A">Wats</string>
   <!-- Spoken description for Unicode code point U+231B: "⌛" HOURGLASS -->
+  <string name="spoken_emoji_231B">Awrwydr</string>
   <!-- Spoken description for Unicode code point U+2328: "⌨" KEYBOARD -->
+  <string name="spoken_emoji_2328">Bysellfwrdd</string>
   <!-- Spoken description for Unicode code point U+23CF: "⏏" EJECT SYMBOL -->
+  <string name="spoken_emoji_23CF">Symbol gwthio allan</string>
   <!-- Spoken description for Unicode code point U+23E9: "⏩" BLACK RIGHT-POINTING DOUBLE TRIANGLE -->
+  <string name="spoken_emoji_23E9">Dwbl triongl du yn pwyntio i\'r dde</string>
   <!-- Spoken description for Unicode code point U+23EA: "⏪" BLACK LEFT-POINTING DOUBLE TRIANGLE -->
+  <string name="spoken_emoji_23EA">Dwbl triongl du yn pwyntio i\'r chwith</string>
   <!-- Spoken description for Unicode code point U+23EB: "⏫" BLACK UP-POINTING DOUBLE TRIANGLE -->
+  <string name="spoken_emoji_23EB">Dwbl triongl du yn pwyntio i fyny</string>
   <!-- Spoken description for Unicode code point U+23EC: "⏬" BLACK DOWN-POINTING DOUBLE TRIANGLE -->
+  <string name="spoken_emoji_23EC">Dwbl triongl du yn pwyntio i lawr</string>
   <!-- Spoken description for Unicode code point U+23ED: "⏭" BLACK RIGHT-POINTING DOUBLE TRIANGLE WITH VERTICAL BAR -->
+  <string name="spoken_emoji_23ED">Dwbl triongl du yn pwyntio i\'r dde gyda bar fertigol</string>
   <!-- Spoken description for Unicode code point U+23EE: "⏮" BLACK LEFT-POINTING DOUBLE TRIANGLE WITH VERTICAL BAR -->
+  <string name="spoken_emoji_23EE">Dwbl triongl du yn pwyntio i\'r chwith gyda bar fertigol</string>
   <!-- Spoken description for Unicode code point U+23EF: "⏯" BLACK RIGHT-POINTING TRIANGLE WITH DOUBLE VERTICAL BAR -->
+  <string name="spoken_emoji_23EF">Dwbl triongl du yn pwyntio i\'r dde gyda dwbl bar fertigol</string>
   <!-- Spoken description for Unicode code point U+23F0: "⏰" ALARM CLOCK -->
   <string name="spoken_emoji_23F0">Cloc larwm</string>
   <!-- Spoken description for Unicode code point U+23F1: "⏱" STOPWATCH -->
+  <string name="spoken_emoji_23F1">Stopwats</string>
   <!-- Spoken description for Unicode code point U+23F2: "⏲" TIMER CLOCK -->
   <string name="spoken_emoji_23F2">Cloc amseru</string>
   <!-- Spoken description for Unicode code point U+23F3: "⏳" HOURGLASS WITH FLOWING SAND -->
+  <string name="spoken_emoji_23F3">Awrwydr gyda thywod yn llifo</string>
   <!-- Spoken description for Unicode code point U+23F8: "⏸" DOUBLE VERTICAL BAR -->
+  <string name="spoken_emoji_23F8">Dwbl bar fertigol</string>
   <!-- Spoken description for Unicode code point U+23F9: "⏹" BLACK SQUARE FOR STOP -->
+  <string name="spoken_emoji_23F9">Sgwâr du ar gyfer stopio</string>
   <!-- Spoken description for Unicode code point U+23FA: "⏺" BLACK CIRCLE FOR RECORD -->
+  <string name="spoken_emoji_23FA">Cylch du ar gyfer recordio</string>
   <!-- Spoken description for Unicode code point U+24C2: "Ⓜ" CIRCLED LATIN CAPITAL LETTER M -->
+  <string name="spoken_emoji_24C2">Y brif lythyren M gyda chylch o\'i hamgylch</string>
   <!-- Spoken description for Unicode code point U+25AA: "▪" BLACK SMALL SQUARE -->
+  <string name="spoken_emoji_25AA">Sgwâr bach du</string>
   <!-- Spoken description for Unicode code point U+25AB: "▫" WHITE SMALL SQUARE -->
+  <string name="spoken_emoji_25AB">Sgwâr bach gwyn</string>
   <!-- Spoken description for Unicode code point U+25B6: "▶" BLACK RIGHT-POINTING TRIANGLE -->
+  <string name="spoken_emoji_25B6">Triongl du yn pwyntio i\'r dde</string>
   <!-- Spoken description for Unicode code point U+25C0: "◀" BLACK LEFT-POINTING TRIANGLE -->
+  <string name="spoken_emoji_25C0">Triongl du yn pwyntio i\'r chwith</string>
   <!-- Spoken description for Unicode code point U+25FB: "◻" WHITE MEDIUM SQUARE -->
+  <string name="spoken_emoji_25FB">Sgwâr canolig gwyn</string>
   <!-- Spoken description for Unicode code point U+25FC: "◼" BLACK MEDIUM SQUARE -->
+  <string name="spoken_emoji_25FC">Sgwâr canolig du</string>
   <!-- Spoken description for Unicode code point U+25FD: "◽" WHITE MEDIUM SMALL SQUARE -->
+  <string name="spoken_emoji_25FD">Sgwâr bach canolig gwyn</string>
   <!-- Spoken description for Unicode code point U+25FE: "◾" BLACK MEDIUM SMALL SQUARE -->
+  <string name="spoken_emoji_25FE">Sgwâr bach canolig du</string>
   <!-- Spoken description for Unicode code point U+2600: "☀" BLACK SUN WITH RAYS -->
+  <string name="spoken_emoji_2600">Haul du â phelydrau</string>
   <!-- Spoken description for Unicode code point U+2601: "☁" CLOUD -->
+  <string name="spoken_emoji_2601">Cwmwl</string>
   <!-- Spoken description for Unicode code point U+2602: "☂" UMBRELLA -->
   <!-- Spoken description for Unicode code point U+2603: "☃" SNOWMAN -->
   <!-- Spoken description for Unicode code point U+2604: "☄" COMET -->
@@ -192,10 +233,14 @@
   <!-- Spoken description for Unicode code point U+1F004: "🀄" MAHJONG TILE RED DRAGON -->
   <!-- Spoken description for Unicode code point U+1F0CF: "🃏" PLAYING CARD BLACK JOKER -->
   <!-- Spoken description for Unicode code point U+1F170: "🅰" NEGATIVE SQUARED LATIN CAPITAL LETTER A -->
+  <string name="spoken_emoji_1F170">Grŵp gwaed A</string>
   <!-- Spoken description for Unicode code point U+1F171: "🅱" NEGATIVE SQUARED LATIN CAPITAL LETTER B -->
+  <string name="spoken_emoji_1F171">Grŵp gwaed B</string>
   <!-- Spoken description for Unicode code point U+1F17E: "🅾" NEGATIVE SQUARED LATIN CAPITAL LETTER O -->
+  <string name="spoken_emoji_1F17E">Grŵp gwaed O</string>
   <!-- Spoken description for Unicode code point U+1F17F: "🅿" NEGATIVE SQUARED LATIN CAPITAL LETTER P -->
   <!-- Spoken description for Unicode code point U+1F18E: "🆎" NEGATIVE SQUARED AB -->
+  <string name="spoken_emoji_1F18E">Grŵp gwaed AB</string>
   <!-- Spoken description for Unicode code point U+1F191: "🆑" SQUARED CL -->
   <!-- Spoken description for Unicode code point U+1F192: "🆒" SQUARED COOL -->
   <!-- Spoken description for Unicode code point U+1F193: "🆓" SQUARED FREE -->
@@ -299,6 +344,7 @@
   <!-- Spoken description for Unicode code point U+1F34D: "🍍" PINEAPPLE -->
   <!-- Spoken description for Unicode code point U+1F34E: "🍎" RED APPLE -->
   <!-- Spoken description for Unicode code point U+1F34F: "🍏" GREEN APPLE -->
+  <string name="spoken_emoji_1F34F">Afal gwyrdd</string>
   <!-- Spoken description for Unicode code point U+1F350: "🍐" PEAR -->
   <!-- Spoken description for Unicode code point U+1F351: "🍑" PEACH -->
   <!-- Spoken description for Unicode code point U+1F352: "🍒" CHERRIES -->
@@ -349,6 +395,7 @@
   <!-- Spoken description for Unicode code point U+1F37F: "🍿" POPCORN -->
   <!-- Spoken description for Unicode code point U+1F380: "🎀" RIBBON -->
   <!-- Spoken description for Unicode code point U+1F381: "🎁" WRAPPED PRESENT -->
+  <string name="spoken_emoji_1F381">Anrheg wedi\'i lapio</string>
   <!-- Spoken description for Unicode code point U+1F382: "🎂" BIRTHDAY CAKE -->
   <string name="spoken_emoji_1F382">Cacen pen-blwydd</string>
   <!-- Spoken description for Unicode code point U+1F383: "🎃" JACK-O-LANTERN -->
@@ -719,10 +766,12 @@
   <!-- Spoken description for Unicode code point U+1F4EF: "📯" POSTAL HORN -->
   <!-- Spoken description for Unicode code point U+1F4F0: "📰" NEWSPAPER -->
   <!-- Spoken description for Unicode code point U+1F4F1: "📱" MOBILE PHONE -->
+  <string name="spoken_emoji_1F4F1">Ffôn symudol</string>
   <!-- Spoken description for Unicode code point U+1F4F2: "📲" MOBILE PHONE WITH RIGHTWARDS ARROW AT LEFT -->
   <!-- Spoken description for Unicode code point U+1F4F3: "📳" VIBRATION MODE -->
   <!-- Spoken description for Unicode code point U+1F4F4: "📴" MOBILE PHONE OFF -->
   <!-- Spoken description for Unicode code point U+1F4F5: "📵" NO MOBILE PHONES -->
+  <string name="spoken_emoji_1F4F5">Dim ffonau symudol</string>
   <!-- Spoken description for Unicode code point U+1F4F6: "📶" ANTENNA WITH BARS -->
   <!-- Spoken description for Unicode code point U+1F4F7: "📷" CAMERA -->
   <!-- Spoken description for Unicode code point U+1F4F8: "📸" CAMERA WITH FLASH -->
@@ -758,6 +807,7 @@
   <!-- Spoken description for Unicode code point U+1F514: "🔔" BELL -->
   <!-- Spoken description for Unicode code point U+1F515: "🔕" BELL WITH CANCELLATION STROKE -->
   <!-- Spoken description for Unicode code point U+1F516: "🔖" BOOKMARK -->
+  <string name="spoken_emoji_1F516">Nod llyfr</string>
   <!-- Spoken description for Unicode code point U+1F517: "🔗" LINK SYMBOL -->
   <!-- Spoken description for Unicode code point U+1F518: "🔘" RADIO BUTTON -->
   <!-- Spoken description for Unicode code point U+1F519: "🔙" BACK WITH LEFTWARDS ARROW ABOVE -->
@@ -1178,6 +1228,7 @@
   <!-- Spoken description for Unicode code point sequence U+1F1EC U+1F1ED: "🇬🇭" FLAG FOR GHANA -->
   <!-- Spoken description for Unicode code point sequence U+1F1EC U+1F1EE: "🇬🇮" FLAG FOR GIBRALTAR -->
   <!-- Spoken description for Unicode code point sequence U+1F1EC U+1F1F1: "🇬🇱" FLAG FOR GREENLAND -->
+  <string name="spoken_emoji_1F1EC_1F1F1">Baner yr Ynys Las</string>
   <!-- Spoken description for Unicode code point sequence U+1F1EC U+1F1F2: "🇬🇲" FLAG FOR GAMBIA -->
   <!-- Spoken description for Unicode code point sequence U+1F1EC U+1F1F3: "🇬🇳" FLAG FOR GUINEA -->
   <!-- Spoken description for Unicode code point sequence U+1F1EC U+1F1F5: "🇬🇵" FLAG FOR GUADELOUPE -->
