@@ -107,4 +107,8 @@
             android:label="@string/subtype_generic"
             android:subtypeLocale="iw"
     />
+    <subtype
+            android:label="@string/subtype_generic"
+            android:subtypeLocale="bg"
+    />
 </spell-checker>
