@@ -91,4 +91,8 @@
             android:label="@string/subtype_generic"
             android:subtypeLocale="uk"
     />
+    <subtype
+            android:label="@string/subtype_generic"
+            android:subtypeLocale="cs"
+    />
 </spell-checker>
