@@ -15,6 +15,5 @@
      limitations under the License.
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="subtype_no_language_bepo">Alfabetet (Bépo)</string>
-    <string name="subtype_hu_ZZ">Ungerska (QWERTY)</string>
+    <string name="subtype_hu_ZZ">Hongaarsk (QWERTY)</string>
 </resources>
