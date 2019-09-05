@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9bb3ffff_78504a8e",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2019-09-05T14:40:45Z",
+      "side": 1,
+      "message": "To be accurate, this should be 15.1. Having them on another branch means nothing.",
+      "range": {
+        "startLine": 12,
+        "startChar": 65,
+        "endLine": 12,
+        "endChar": 69
+      },
+      "revId": "da573339b7dd33900154d62999ccca9f91f03d23",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5e27692a_7444397a",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2019-09-05T14:40:45Z",
+      "side": 1,
+      "message": "Ditto.",
+      "range": {
+        "startLine": 13,
+        "startChar": 81,
+        "endLine": 13,
+        "endChar": 85
+      },
+      "revId": "da573339b7dd33900154d62999ccca9f91f03d23",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
