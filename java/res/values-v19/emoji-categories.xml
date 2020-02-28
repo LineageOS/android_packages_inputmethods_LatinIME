@@ -245,10 +245,10 @@
         <item>1f6af</item>
         <item>1f6b0</item>
         <item>1f6b1</item>
-        <item>1f170</item>
-        <item>1f171</item>
+        <!-- Removed for lack of color glyph support.  <item>1f170</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>1f171</item>  -->
         <item>1f18e</item>
-        <item>1f17e</item>
+        <!-- Removed for lack of color glyph support.  <item>1f17e</item>  -->
         <item>1f4ae</item>
         <item>1f4af</item>
         <item>1f520</item>
@@ -265,10 +265,10 @@
         <item>1f6ba</item>
         <item>1f6bc</item>
         <item>267f</item>
-        <item>267b</item>
+        <!-- Removed for lack of color glyph support.  <item>267b</item>  -->
         <item>1f6ad</item>
         <item>1f6a9</item>
-        <item>26a0</item>
+        <!-- Removed for lack of color glyph support.  <item>26a0</item>  -->
         <item>1f201</item>
         <item>1f51e</item>
         <item>26d4</item>
@@ -285,33 +285,33 @@
         <item>1f234</item>
         <item>1f235</item>
         <item>1f236</item>
-        <item>1f237</item>
+        <!-- Removed for lack of color glyph support.  <item>1f237</item>  -->
         <item>1f238</item>
         <item>1f239</item>
-        <item>1f202</item>
+        <!-- Removed for lack of color glyph support.  <item>1f202</item>  -->
         <item>1f23a</item>
         <item>1f250</item>
         <item>1f251</item>
-        <item>3299</item>
-        <item>00ae</item>
-        <item>00a9</item>
-        <item>2122</item>
+        <!-- Removed for lack of color glyph support.  <item>3299</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>00ae</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>00a9</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>2122</item>  -->
         <item>1f21a</item>
         <item>1f22f</item>
-        <item>3297</item>
+        <!-- Removed for lack of color glyph support.  <item>3297</item>  -->
         <item>2b55</item>
         <item>274c</item>
         <item>274e</item>
-        <item>2139</item>
+        <!-- Removed for lack of color glyph support.  <item>2139</item>  -->
         <item>1f6ab</item>
         <item>2705</item>
-        <item>2714</item>
+        <!-- Removed for lack of color glyph support.  <item>2714</item>  -->
         <item>1f517</item>
-        <item>2734</item>
-        <item>2733</item>
+        <!-- Removed for lack of color glyph support.  <item>2734</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>2733</item>  -->
         <item>2795</item>
         <item>2796</item>
-        <item>2716</item>
+        <!-- Removed for lack of color glyph support.  <item>2716</item>  -->
         <item>2797</item>
         <item>1f4a0</item>
         <item>1f4a1</item>
@@ -346,27 +346,27 @@
         <item>1f565</item>
         <item>1f55a</item>
         <item>1f566</item>
-        <item>2195</item>
-        <item>2b06</item>
-        <item>2197</item>
-        <item>27a1</item>
-        <item>2198</item>
-        <item>2b07</item>
-        <item>2199</item>
-        <item>2b05</item>
-        <item>2196</item>
-        <item>2194</item>
-        <item>2934</item>
-        <item>2935</item>
+        <!-- Removed for lack of color glyph support.  <item>2195</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>2b06</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>2197</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>27a1</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>2198</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>2b07</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>2199</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>2b05</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>2196</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>2194</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>2934</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>2935</item>  -->
         <item>23ea</item>
         <item>23eb</item>
         <item>23ec</item>
         <item>23e9</item>
-        <item>25c0</item>
-        <item>25b6</item>
+        <!-- Removed for lack of color glyph support.  <item>25c0</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>25b6</item>  -->
         <item>1f53d</item>
         <item>1f53c</item>
-        <item>2747</item>
+        <!-- Removed for lack of color glyph support.  <item>2747</item>  -->
         <item>2728</item>
         <item>1f534</item>
         <item>1f535</item>
@@ -377,12 +377,12 @@
         <item>2b50</item>
         <item>1f31f</item>
         <item>1f320</item>
-        <item>25ab</item>
-        <item>25aa</item>
+        <!-- Removed for lack of color glyph support.  <item>25ab</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>25aa</item>  -->
         <item>25fd</item>
         <item>25fe</item>
-        <item>25fb</item>
-        <item>25fc</item>
+        <!-- Removed for lack of color glyph support.  <item>25fb</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>25fc</item>  -->
         <item>2b1c</item>
         <item>2b1b</item>
         <item>1f538</item>
@@ -395,9 +395,9 @@
         <item>2753</item>
         <item>2755</item>
         <item>2757</item>
-        <item>203c</item>
-        <item>2049</item>
-        <item>3030</item>
+        <!-- Removed for lack of color glyph support.  <item>203c</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>2049</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>3030</item>  -->
         <item>27b0</item>
         <item>2660</item>
         <item>2665</item>
@@ -405,14 +405,14 @@
         <item>2666</item>
         <item>1f194</item>
         <item>1f511</item>
-        <item>21a9</item>
+        <!-- Removed for lack of color glyph support.  <item>21a9</item>  -->
         <item>1f191</item>
         <item>1f50d</item>
         <item>1f512</item>
         <item>1f513</item>
-        <item>21aa</item>
+        <!-- Removed for lack of color glyph support.  <item>21aa</item>  -->
         <item>1f510</item>
-        <item>2611</item>
+        <!-- Removed for lack of color glyph support.  <item>2611</item>  -->
         <item>1f518</item>
         <item>1f50e</item>
         <item>1f516</item>
@@ -716,15 +716,15 @@
         <item>1f4e1</item>
         <item>1f4ac</item>
         <item>1f4ad</item>
-        <item>2712</item>
-        <item>270f</item>
+        <!-- Removed for lack of color glyph support.  <item>2712</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>270f</item>  -->
         <item>1f4dd</item>
         <item>1f4cf</item>
         <item>1f4d0</item>
         <item>1f4cd</item>
         <item>1f4cc</item>
         <item>1f4ce</item>
-        <item>2702</item>
+        <!-- Removed for lack of color glyph support.  <item>2702</item>  -->
         <item>1f4ba</item>
         <item>1f4bb</item>
         <item>1f4bd</item>
@@ -775,7 +775,7 @@
         <item>1f3b7</item>
         <item>1f3ba</item>
         <item>1f3b8</item>
-        <item>303d</item>
+        <!-- Removed for lack of color glyph support.  <item>303d</item>  -->
         <item>1f940</item>
         <item>1f941</item>
         <item>1f942</item>
@@ -853,7 +853,7 @@
         <item>1f685</item>
         <item>1f686</item>
         <item>1f687</item>
-        <item>24c2</item>
+        <!-- Removed for lack of color glyph support.  <item>24c2</item>  -->
         <item>1f688</item>
         <item>1f68a</item>
         <item>1f68b</item>
@@ -882,7 +882,7 @@
         <item>1f6a2</item>
         <item>1f6a3</item>
         <item>1f681</item>
-        <item>2708</item>
+        <!-- Removed for lack of color glyph support.  <item>2708</item>  -->
         <item>1f6c2</item>
         <item>1f6c3</item>
         <item>1f6c4</item>
@@ -899,7 +899,7 @@
         <item>1f6a4</item>
         <item>1f6b6</item>
         <item>26fd</item>
-        <item>1f17f</item>
+        <!-- Removed for lack of color glyph support.  <item>1f17f</item>  -->
         <item>1f6a5</item>
         <item>1f6a6</item>
         <item>1f6a7</item>
@@ -1192,7 +1192,7 @@
         <item>1F6C4</item>
         <item>1F6C5</item>
         <!-- warning -->
-        <item>26A0</item>
+        <!-- Removed for lack of color glyph support.  <item>26A0</item>  -->
         <item>1F6B8</item>
         <item>26D4</item>
         <item>1F6AB</item>
@@ -1203,23 +1203,23 @@
         <item>1F6B7</item>
         <item>1F4F5</item>
         <item>1F51E</item>
-        <item>2622</item>
-        <item>2623</item>
+        <!-- Removed for lack of color glyph support.  <item>2622</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>2623</item>  -->
         <!-- arrow -->
-        <item>2B06</item>
-        <item>2197</item>
-        <item>27A1</item>
-        <item>2198</item>
-        <item>2B07</item>
-        <item>2199</item>
-        <item>2B05</item>
-        <item>2196</item>
-        <item>2195</item>
-        <item>2194</item>
-        <item>21A9</item>
-        <item>21AA</item>
-        <item>2934</item>
-        <item>2935</item>
+        <!-- Removed for lack of color glyph support.  <item>2B06</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>2197</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>27A1</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>2198</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>2B07</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>2199</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>2B05</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>2196</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>2195</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>2194</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>21A9</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>21AA</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>2934</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>2935</item>  -->
         <item>1F503</item>
         <item>1F504</item>
         <item>1F519</item>
@@ -1229,15 +1229,15 @@
         <item>1F51D</item>
         <!-- religion -->
         <item>1F6D0</item>
-        <item>269B</item>
+        <!-- Removed for lack of color glyph support.  <item>269B</item>  -->
         <item>1F549</item>
-        <item>2721</item>
-        <item>2638</item>
-        <item>262F</item>
-        <item>271D</item>
-        <item>2626</item>
-        <item>262A</item>
-        <item>262E</item>
+        <!-- Removed for lack of color glyph support.  <item>2721</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>2638</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>262F</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>271D</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>2626</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>262A</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>262E</item>  -->
         <item>1F54E</item>
         <item>1F52F</item>
         <!-- zodiac -->
@@ -1258,13 +1258,13 @@
         <item>1F500</item>
         <item>1F501</item>
         <item>1F502</item>
-        <item>25B6</item>
+        <!-- Removed for lack of color glyph support.  <item>25B6</item>  -->
         <item>23E9</item>
-        <item>23ED</item>
-        <item>23EF</item>
-        <item>25C0</item>
+        <!-- Removed for lack of color glyph support.  <item>23ED</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>23EF</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>25C0</item>  -->
         <item>23EA</item>
-        <item>23EE</item>
+        <!-- Removed for lack of color glyph support.  <item>23EE</item>  -->
         <item>1F53C</item>
         <item>23EB</item>
         <item>1F53D</item>
@@ -1272,7 +1272,7 @@
         <item>23F8</item>
         <item>23F9</item>
         <item>23FA</item>
-        <item>23CF</item>
+        <!-- Removed for lack of color glyph support.  <item>23CF</item>  -->
         <item>1F3A6</item>
         <item>1F505</item>
         <item>1F506</item>
@@ -1280,21 +1280,21 @@
         <item>1F4F3</item>
         <item>1F4F4</item>
         <!-- gender -->
-        <item>2640</item>
-        <item>2642</item>
+        <!-- Removed for lack of color glyph support.  <item>2640</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>2642</item>  -->
         <!-- other-symbol -->
-        <item>2695</item>
-        <item>267E</item>
-        <item>267B</item>
-        <item>269C</item>
+        <!-- Removed for lack of color glyph support.  <item>2695</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>267E</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>267B</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>269C</item>  -->
         <item>1F531</item>
         <item>1F4DB</item>
         <item>1F530</item>
         <item>2B55</item>
         <item>2705</item>
-        <item>2611</item>
-        <item>2714</item>
-        <item>2716</item>
+        <!-- Removed for lack of color glyph support.  <item>2611</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>2714</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>2716</item>  -->
         <item>274C</item>
         <item>274E</item>
         <item>2795</item>
@@ -1302,20 +1302,20 @@
         <item>2797</item>
         <item>27B0</item>
         <item>27BF</item>
-        <item>303D</item>
-        <item>2733</item>
-        <item>2734</item>
-        <item>2747</item>
-        <item>203C</item>
-        <item>2049</item>
+        <!-- Removed for lack of color glyph support.  <item>303D</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>2733</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>2734</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>2747</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>203C</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>2049</item>  -->
         <item>2753</item>
         <item>2754</item>
         <item>2755</item>
         <item>2757</item>
-        <item>3030</item>
-        <item>00A9</item>
-        <item>00AE</item>
-        <item>2122</item>
+        <!-- Removed for lack of color glyph support.  <item>3030</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>00A9</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>00AE</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>2122</item>  -->
         <!-- keycap -->
         <item>0023,FE0F,20E3</item>
         <item>002A,FE0F,20E3</item>
@@ -1336,26 +1336,26 @@
         <item>1F522</item>
         <item>1F523</item>
         <item>1F524</item>
-        <item>1F170</item>
+        <!-- Removed for lack of color glyph support.  <item>1F170</item>  -->
         <item>1F18E</item>
-        <item>1F171</item>
+        <!-- Removed for lack of color glyph support.  <item>1F171</item>  -->
         <item>1F191</item>
         <item>1F192</item>
         <item>1F193</item>
-        <item>2139</item>
+        <!-- Removed for lack of color glyph support.  <item>2139</item>  -->
         <item>1F194</item>
-        <item>24C2</item>
+        <!-- Removed for lack of color glyph support.  <item>24C2</item>  -->
         <item>1F195</item>
         <item>1F196</item>
-        <item>1F17E</item>
+        <!-- Removed for lack of color glyph support.  <item>1F17E</item>  -->
         <item>1F197</item>
-        <item>1F17F</item>
+        <!-- Removed for lack of color glyph support.  <item>1F17F</item>  -->
         <item>1F198</item>
         <item>1F199</item>
         <item>1F19A</item>
         <item>1F201</item>
-        <item>1F202</item>
-        <item>1F237</item>
+        <!-- Removed for lack of color glyph support.  <item>1F202</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>1F237</item>  -->
         <item>1F236</item>
         <item>1F22F</item>
         <item>1F250</item>
@@ -1366,8 +1366,8 @@
         <item>1F238</item>
         <item>1F234</item>
         <item>1F233</item>
-        <item>3297</item>
-        <item>3299</item>
+        <!-- Removed for lack of color glyph support.  <item>3297</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>3299</item>  -->
         <item>1F23A</item>
         <item>1F235</item>
         <!-- geometric -->
@@ -1389,12 +1389,12 @@
         <item>1F7EB</item>
         <item>2B1B</item>
         <item>2B1C</item>
-        <item>25FC</item>
-        <item>25FB</item>
+        <!-- Removed for lack of color glyph support.  <item>25FC</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>25FB</item>  -->
         <item>25FE</item>
         <item>25FD</item>
-        <item>25AA</item>
-        <item>25AB</item>
+        <!-- Removed for lack of color glyph support.  <item>25AA</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>25AB</item>  -->
         <item>1F536</item>
         <item>1F537</item>
         <item>1F538</item>
@@ -1540,7 +1540,7 @@
         <item>1F335</item>
         <item>1F33E</item>
         <item>1F33F</item>
-        <item>2618</item>
+        <!-- Removed for lack of color glyph support.  <item>2618</item>  -->
         <item>1F340</item>
         <item>1F341</item>
         <item>1F342</item>
@@ -1625,7 +1625,7 @@
         <item>1F615</item>
         <item>1F61F</item>
         <item>1F641</item>
-        <item>2639</item>
+        <!-- Removed for lack of color glyph support.  <item>2639</item>  -->
         <item>1F62E</item>
         <item>1F62F</item>
         <item>1F632</item>
@@ -1654,7 +1654,7 @@
         <item>1F608</item>
         <item>1F47F</item>
         <item>1F480</item>
-        <item>2620</item>
+        <!-- Removed for lack of color glyph support.  <item>2620</item>  -->
         <!-- face-costume -->
         <item>1F4A9</item>
         <item>1F921</item>
@@ -1689,7 +1689,7 @@
         <item>1F49E</item>
         <item>1F495</item>
         <item>1F49F</item>
-        <item>2763</item>
+        <!-- Removed for lack of color glyph support.  <item>2763</item>  -->
         <item>1F494</item>
         <item>2764</item>
         <item>1F9E1</item>
@@ -1750,7 +1750,7 @@
         <item>1F91D</item>
         <item>1F64F</item>
         <!-- hand-prop -->
-        <item>270D</item>
+        <!-- Removed for lack of color glyph support.  <item>270D</item>  -->
         <item>1F485</item>
         <item>1F933</item>
         <!-- body-parts -->
@@ -1950,7 +1950,7 @@
         <!-- person-sport -->
         <item>1F93A</item>
         <item>1F3C7</item>
-        <item>26F7</item>
+        <!-- Removed for lack of color glyph support.  <item>26F7</item>  -->
         <item>1F3C2</item>
         <item>1F3CC</item>
         <item>1F3CC,FE0F,200D,2642,FE0F</item>
@@ -1964,7 +1964,7 @@
         <item>1F3CA</item>
         <item>1F3CA,200D,2642,FE0F</item>
         <item>1F3CA,200D,2640,FE0F</item>
-        <item>26F9</item>
+        <!-- Removed for lack of color glyph support.  <item>26F9</item>  -->
         <item>26F9,FE0F,200D,2642,FE0F</item>
         <item>26F9,FE0F,200D,2640,FE0F</item>
         <item>1F3CB</item>
@@ -2126,7 +2126,7 @@
         <item>1F615</item>
         <item>1F61F</item>
         <item>1F641</item>
-        <item>2639</item>
+        <!-- Removed for lack of color glyph support.  <item>2639</item>  -->
         <item>1F62E</item>
         <item>1F62F</item>
         <item>1F632</item>
@@ -2155,7 +2155,7 @@
         <item>1F608</item>
         <item>1F47F</item>
         <item>1F480</item>
-        <item>2620</item>
+        <!-- Removed for lack of color glyph support.  <item>2620</item>  -->
         <!-- face-costume -->
         <item>1F4A9</item>
         <item>1F921</item>
@@ -2190,7 +2190,7 @@
         <item>1F49E</item>
         <item>1F495</item>
         <item>1F49F</item>
-        <item>2763</item>
+        <!-- Removed for lack of color glyph support.  <item>2763</item>  -->
         <item>1F494</item>
         <item>2764</item>
         <item>1F9E1</item>
@@ -2251,7 +2251,7 @@
         <item>1F91D</item>
         <item>1F64F</item>
         <!-- hand-prop -->
-        <item>270D</item>
+        <!-- Removed for lack of color glyph support.  <item>270D</item>  -->
         <item>1F485</item>
         <item>1F933</item>
         <!-- body-parts -->
@@ -2451,7 +2451,7 @@
         <!-- person-sport -->
         <item>1F93A</item>
         <item>1F3C7</item>
-        <item>26F7</item>
+        <!-- Removed for lack of color glyph support.  <item>26F7</item>  -->
         <item>1F3C2</item>
         <item>1F3CC</item>
         <item>1F3CC,FE0F,200D,2642,FE0F</item>
@@ -2465,7 +2465,7 @@
         <item>1F3CA</item>
         <item>1F3CA,200D,2642,FE0F</item>
         <item>1F3CA,200D,2640,FE0F</item>
-        <item>26F9</item>
+        <!-- Removed for lack of color glyph support.  <item>26F9</item>  -->
         <item>26F9,FE0F,200D,2642,FE0F</item>
         <item>26F9,FE0F,200D,2640,FE0F</item>
         <item>1F3CB</item>
@@ -2726,7 +2726,7 @@
         <item>1F3A9</item>
         <item>1F393</item>
         <item>1F9E2</item>
-        <item>26D1</item>
+        <!-- Removed for lack of color glyph support.  <item>26D1</item>  -->
         <item>1F4FF</item>
         <item>1F484</item>
         <item>1F48D</item>
@@ -2772,7 +2772,7 @@
         <item>1F4BB</item>
         <item>1F5A5</item>
         <item>1F5A8</item>
-        <item>2328</item>
+        <!-- Removed for lack of color glyph support.  <item>2328</item>  -->
         <item>1F5B1</item>
         <item>1F5B2</item>
         <item>1F4BD</item>
@@ -2842,8 +2842,8 @@
         <item>1F4EE</item>
         <item>1F5F3</item>
         <!-- writing -->
-        <item>270F</item>
-        <item>2712</item>
+        <!-- Removed for lack of color glyph support.  <item>270F</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>2712</item>  -->
         <item>1F58B</item>
         <item>1F58A</item>
         <item>1F58C</item>
@@ -2869,7 +2869,7 @@
         <item>1F587</item>
         <item>1F4CF</item>
         <item>1F4D0</item>
-        <item>2702</item>
+        <!-- Removed for lack of color glyph support.  <item>2702</item>  -->
         <item>1F5C3</item>
         <item>1F5C4</item>
         <item>1F5D1</item>
@@ -2883,26 +2883,26 @@
         <!-- tool -->
         <item>1F528</item>
         <item>1FA93</item>
-        <item>26CF</item>
-        <item>2692</item>
+        <!-- Removed for lack of color glyph support.  <item>26CF</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>2692</item>  -->
         <item>1F6E0</item>
         <item>1F5E1</item>
-        <item>2694</item>
+        <!-- Removed for lack of color glyph support.  <item>2694</item>  -->
         <item>1F52B</item>
         <item>1F3F9</item>
         <item>1F6E1</item>
         <item>1F527</item>
         <item>1F529</item>
-        <item>2699</item>
+        <!-- Removed for lack of color glyph support.  <item>2699</item>  -->
         <item>1F5DC</item>
-        <item>2696</item>
+        <!-- Removed for lack of color glyph support.  <item>2696</item>  -->
         <item>1F9AF</item>
         <item>1F517</item>
-        <item>26D3</item>
+        <!-- Removed for lack of color glyph support.  <item>26D3</item>  -->
         <item>1F9F0</item>
         <item>1F9F2</item>
         <!-- science -->
-        <item>2697</item>
+        <!-- Removed for lack of color glyph support.  <item>2697</item>  -->
         <item>1F9EA</item>
         <item>1F9EB</item>
         <item>1F9EC</item>
@@ -2935,8 +2935,8 @@
         <item>1F6D2</item>
         <!-- other-object -->
         <item>1F6AC</item>
-        <item>26B0</item>
-        <item>26B1</item>
+        <!-- Removed for lack of color glyph support.  <item>26B0</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>26B1</item>  -->
         <item>1F5FF</item>
     </array>
     <array
@@ -2993,7 +2993,7 @@
         <item>1F94B</item>
         <item>1F945</item>
         <item>26F3</item>
-        <item>26F8</item>
+        <!-- Removed for lack of color glyph support.  <item>26F8</item>  -->
         <item>1F3A3</item>
         <item>1F93F</item>
         <item>1F3BD</item>
@@ -3017,7 +3017,7 @@
         <item>2665</item>
         <item>2666</item>
         <item>2663</item>
-        <item>265F</item>
+        <!-- Removed for lack of color glyph support.  <item>265F</item>  -->
         <item>1F0CF</item>
         <item>1F004</item>
         <item>1F3B4</item>
@@ -3042,7 +3042,7 @@
         <item>1F9ED</item>
         <!-- place-geographic -->
         <item>1F3D4</item>
-        <item>26F0</item>
+        <!-- Removed for lack of color glyph support.  <item>26F0</item>  -->
         <item>1F30B</item>
         <item>1F5FB</item>
         <item>1F3D5</item>
@@ -3080,7 +3080,7 @@
         <item>1F54C</item>
         <item>1F6D5</item>
         <item>1F54D</item>
-        <item>26E9</item>
+        <!-- Removed for lack of color glyph support.  <item>26E9</item>  -->
         <item>1F54B</item>
         <!-- place-other -->
         <item>26F2</item>
@@ -3153,11 +3153,11 @@
         <item>1F6F6</item>
         <item>1F6A4</item>
         <item>1F6F3</item>
-        <item>26F4</item>
+        <!-- Removed for lack of color glyph support.  <item>26F4</item>  -->
         <item>1F6E5</item>
         <item>1F6A2</item>
         <!-- transport-air -->
-        <item>2708</item>
+        <!-- Removed for lack of color glyph support.  <item>2708</item>  -->
         <item>1F6E9</item>
         <item>1F6EB</item>
         <item>1F6EC</item>
@@ -3178,8 +3178,8 @@
         <item>23F3</item>
         <item>231A</item>
         <item>23F0</item>
-        <item>23F1</item>
-        <item>23F2</item>
+        <!-- Removed for lack of color glyph support.  <item>23F1</item>  -->
+        <!-- Removed for lack of color glyph support.  <item>23F2</item>  -->
         <item>1F570</item>
         <item>1F55B</item>
         <item>1F567</item>
@@ -3229,7 +3229,7 @@
         <item>1F30C</item>
         <item>2601</item>
         <item>26C5</item>
-        <item>26C8</item>
+        <!-- Removed for lack of color glyph support.  <item>26C8</item>  -->
         <item>1F324</item>
         <item>1F325</item>
         <item>1F326</item>
@@ -3242,14 +3242,14 @@
         <item>1F300</item>
         <item>1F308</item>
         <item>1F302</item>
-        <item>2602</item>
+        <!-- Removed for lack of color glyph support.  <item>2602</item>  -->
         <item>2614</item>
-        <item>26F1</item>
+        <!-- Removed for lack of color glyph support.  <item>26F1</item>  -->
         <item>26A1</item>
         <item>2744</item>
-        <item>2603</item>
+        <!-- Removed for lack of color glyph support.  <item>2603</item>  -->
         <item>26C4</item>
-        <item>2604</item>
+        <!-- Removed for lack of color glyph support.  <item>2604</item>  -->
         <item>1F525</item>
         <item>1F4A7</item>
         <item>1F30A</item>
