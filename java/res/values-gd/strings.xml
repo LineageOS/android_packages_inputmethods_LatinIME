@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+**
+** Copyright 2008, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="settings_screen_theme">Ùrlar</string>
+    <string name="sync_now_title">Sioncronaich an-dràsta</string>
+    <string name="auto_correction">Fèin-cheartachadh</string>
+    <string name="auto_correction_threshold_mode_off">Dheth</string>
+    <string name="auto_correction_threshold_mode_aggressive">Ionnsaigheach</string>
+    <string name="account_select_sign_out">Clàraich a-mach</string>
+    <string name="subtype_en_US">Beurla (SA)</string>
+    <string name="add">Cuir ris</string>
+    <string name="save">Sàbhail</string>
+    <string name="subtype_locale">Cànan</string>
+    <string name="keyboard_layout_set">Co-dhealbhachd</string>
+    <string name="enable">Cuir an comas</string>
+    <string name="not_now">Chan ann an-dràsta</string>
+    <string name="check_for_updates_now">Ath-nuadhaich</string>
+    <string name="message_updating">A’ toirt sùil airson ùrachaidhean</string>
+    <string name="go_to_settings">Roghainnean</string>
+    <string name="install_dict">Stàlaich</string>
+    <string name="user_dict_settings_add_menu_title">Cuir ris</string>
+    <string name="user_dict_settings_add_dialog_more_options">Barrachd roghainnean</string>
+    <string name="user_dict_settings_add_locale_option_name">Cànan:</string>
+    <string name="user_dict_settings_context_menu_edit_title">Deasaich</string>
+</resources>
