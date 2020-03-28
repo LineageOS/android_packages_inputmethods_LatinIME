@@ -17,6 +17,11 @@
 ** limitations under the License.
 */
 -->
-<resources>
-    <string name="use_personalized_dicts_summary">Dysgu o dy gyfathrebiadau a\'r hyn rwyt yn ei deipio er mwyn gwella awgrymiadau</string>
+<!--
+    These accented letters (spoken_accented_letter_*) are unsupported by TTS.
+    These symbols (spoken_symbol_*) are also unsupported by TTS.
+    TODO: Remove these string resources when TTS/TalkBack support these letters.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="spoken_symbol_2020">Biodag</string>
 </resources>
