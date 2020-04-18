@@ -61,7 +61,8 @@
         </case>
         <!-- Note: Some subtype locales may not have a country code, and it is supposed to indicate
              the country where the language is originally and/or mainly spoken. -->
-        <!-- da: Denmark (da_DK)
+        <!-- bg: Bulgaria (bg_BG)
+             da: Denmark (da_DK)
              de: Germany (de_DE)
              el: Greece (el_GR)
              es: Spain (es_ES)
@@ -77,7 +78,7 @@
              sk: Slovakia (sk_SK)
              sl: Slovenia (sl_SL)
              sv: Sweden (sv_SV) -->
-        <case latin:localeCode="da|de|el|es|et|fi|fr|it|lt|lv|nl|pl|ro|sk|sl|sv">
+        <case latin:localeCode="bg|da|de|el|es|et|fi|fr|it|lt|lv|nl|pl|ro|sk|sl|sv">
             <include latin:keyboardLayout="@xml/key_styles_currency_euro" />
         </case>
         <!-- ca: Catalan (Andorra, Spain)
