@@ -293,8 +293,8 @@
         <item>1f250</item>
         <item>1f251</item>
         <item>3299,FE0F</item>
-        <!-- Removed for lack of color glyph support.  <item>00ae</item>  -->
-        <!-- Removed for lack of color glyph support.  <item>00a9</item>  -->
+        <item>00ae,FE0F</item>
+        <item>00a9,FE0F</item>
         <item>2122,FE0F</item>
         <item>1f21a</item>
         <item>1f22f</item>
@@ -377,12 +377,12 @@
         <item>2b50</item>
         <item>1f31f</item>
         <item>1f320</item>
-        <!-- Removed for lack of color glyph support.  <item>25ab</item>  -->
-        <!-- Removed for lack of color glyph support.  <item>25aa</item>  -->
+        <item>25ab,FE0F</item>
+        <item>25aa,FE0F</item>
         <item>25fd</item>
         <item>25fe</item>
-        <!-- Removed for lack of color glyph support.  <item>25fb</item>  -->
-        <!-- Removed for lack of color glyph support.  <item>25fc</item>  -->
+        <item>25fb,FE0F</item>
+        <item>25fc,FE0F</item>
         <item>2b1c</item>
         <item>2b1b</item>
         <item>1f538</item>
