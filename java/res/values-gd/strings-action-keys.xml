@@ -2,7 +2,7 @@
 <!--
 /*
 **
-** Copyright 2014, The Android Open Source Project
+** Copyright 2013, The Android Open Source Project
 **
 ** Licensed under the Apache License, Version 2.0 (the "License");
 ** you may not use this file except in compliance with the License.
@@ -17,6 +17,7 @@
 ** limitations under the License.
 */
 -->
-<resources>
-    <string name="use_personalized_dicts_summary">Dysgu o dy gyfathrebiadau a\'r hyn rwyt yn ei deipio er mwyn gwella awgrymiadau</string>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="label_next_key">Air adhart</string>
+    <string name="label_search_key">Lorg</string>
 </resources>

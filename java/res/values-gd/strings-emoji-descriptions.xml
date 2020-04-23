@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+**
+** Copyright 2014, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<!--
+    These Emoji symbols are unsupported by TTS.
+    TODO: Remove this file when TTS/TalkBack support these Emoji symbols.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="spoken_emoji_23F1">Stad-uaireadair</string>
+  <string name="spoken_emoji_2601">Neul</string>
+  <string name="spoken_emoji_2602">Sgàilean</string>
+  <string name="spoken_emoji_2603">Bodach-sneachda</string>
+  <string name="spoken_emoji_2615">Deoch theth</string>
+  <string name="spoken_emoji_2620">Claigeann is crois chnàmhan</string>
+  <string name="spoken_emoji_2622">Comharra rèididheachd bheò</string>
+  <string name="spoken_emoji_262E">Comharra sìthe</string>
+  <string name="spoken_emoji_262F">Yin Yang</string>
+  <string name="spoken_emoji_2649">An Tarbh</string>
+  <string name="spoken_emoji_264A">An Dà Leth-aon (Gaolag is Gràdhag na Caiginn)</string>
+  <string name="spoken_emoji_264B">Am Partan</string>
+  <string name="spoken_emoji_264C">An Leòmhann</string>
+  <string name="spoken_emoji_264D">An Òigh</string>
+  <string name="spoken_emoji_264E">A’ Mheidh</string>
+  <string name="spoken_emoji_264F">An Sgairp</string>
+  <string name="spoken_emoji_2693">Acair</string>
+  <string name="spoken_emoji_26CE">An Giùlanair-nathrach (Ophiuchus)</string>
+  <string name="spoken_emoji_26EA">Eaglais</string>
+  <string name="spoken_emoji_26FA">Tenta</string>
+  <string name="spoken_emoji_2709">Cèiseag</string>
+  <string name="spoken_emoji_270C">Làmh a thug buaidh</string>
+  <string name="spoken_emoji_270D">Làmh a tha a’ sgrìobhadh</string>
+  <string name="spoken_emoji_270F">Peansail</string>
+  <string name="spoken_emoji_1F301">Ceòthach</string>
+  <string name="spoken_emoji_1F305">Èirigh na grèine</string>
+  <string name="spoken_emoji_1F308">Dathan bogha-froise</string>
+  <string name="spoken_emoji_1F30B">Beinn-theine</string>
+  <string name="spoken_emoji_1F32B">Ceò</string>
+  <string name="spoken_emoji_1F335">Cactas</string>
+  <string name="spoken_emoji_1F33A">Ìbisg</string>
+  <string name="spoken_emoji_1F344">Balgan-buachair</string>
+  <string name="spoken_emoji_1F345">Tomàto</string>
+  <string name="spoken_emoji_1F347">Fìon-dhearcan</string>
+  <string name="spoken_emoji_1F349">Meal-bhuc uisge</string>
+  <string name="spoken_emoji_1F35E">Aran</string>
+  <string name="spoken_emoji_1F36C">Suiteas</string>
+  <string name="spoken_emoji_1F386">Cleasan-teine</string>
+  <string name="spoken_emoji_1F3A6">Taigh-dhealbh</string>
+  <string name="spoken_emoji_1F3B7">Sacsafon</string>
+  <string name="spoken_emoji_1F3B8">Giotàr</string>
+  <string name="spoken_emoji_1F3BA">Trombaid</string>
+  <string name="spoken_emoji_1F3C3">Ruitheadair</string>
+  <string name="spoken_emoji_1F3DC">Fàsach</string>
+  <string name="spoken_emoji_1F3DF">Stèideam</string>
+  <string name="spoken_emoji_1F3E5">Ospadal</string>
+  <string name="spoken_emoji_1F3E8">Taigh-òsta</string>
+  <string name="spoken_emoji_1F3F5">Cruth ròis</string>
+  <string name="spoken_emoji_1F3F7">Leubail</string>
+  <string name="spoken_emoji_1F400">Radan</string>
+  <string name="spoken_emoji_1F401">Luch</string>
+  <string name="spoken_emoji_1F405">Tìgear</string>
+  <string name="spoken_emoji_1F407">Coineanach</string>
+  <string name="spoken_emoji_1F409">Dràgon</string>
+  <string name="spoken_emoji_1F40A">Crogall</string>
+  <string name="spoken_emoji_1F40C">Seilcheag</string>
+  <string name="spoken_emoji_1F40D">Nathair</string>
+  <string name="spoken_emoji_1F40E">Each</string>
+  <string name="spoken_emoji_1F40F">Reithe</string>
+  <string name="spoken_emoji_1F410">Gobhar</string>
+  <string name="spoken_emoji_1F414">Cearc</string>
+  <string name="spoken_emoji_1F416">Muc</string>
+  <string name="spoken_emoji_1F417">Torc</string>
+  <string name="spoken_emoji_1F418">Ailbhean</string>
+  <string name="spoken_emoji_1F41F">Iasg</string>
+  <string name="spoken_emoji_1F426">Eun</string>
+  <string name="spoken_emoji_1F441">Sùil</string>
+  <string name="spoken_emoji_1F46A">Teaghlach</string>
+  <string name="spoken_emoji_1F476">Leanabh</string>
+  <string name="spoken_emoji_1F48F">Pòg</string>
+  <string name="spoken_emoji_1F4A3">Boma</string>
+  <string name="spoken_emoji_1F4DA">Leabhraichean</string>
+  <string name="spoken_emoji_1F4DD">Cuimhneachan</string>
+  <string name="spoken_emoji_1F4E6">Pacaid</string>
+  <string name="spoken_emoji_1F4F9">Camara video</string>
+  <string name="spoken_emoji_1F4FB">Rèidio</string>
+  <string name="spoken_emoji_1F508">Glaodhaire</string>
+  <string name="spoken_emoji_1F511">Iuchair</string>
+  <string name="spoken_emoji_1F516">Comharra-leabhair</string>
+  <string name="spoken_emoji_1F528">Òrd</string>
+  <string name="spoken_emoji_1F52B">Daga</string>
+  <string name="spoken_emoji_1F56F">Coinneal</string>
+  <string name="spoken_emoji_1F577">Damhan-allaidh</string>
+  <string name="spoken_emoji_1F579">Bioran-smachd</string>
+  <string name="spoken_emoji_1F604">Aodann le gàire, beul fosgailte agus sùilean toilichte</string>
+  <string name="spoken_emoji_1F607">Aodann le gàire agus riomball</string>
+  <string name="spoken_emoji_1F608">Aodann le gàire agus adharcan</string>
+  <string name="spoken_emoji_1F609">Aodann le sùil bheag</string>
+  <string name="spoken_emoji_1F60A">Aodann le gàire agus sùilean toilichte</string>
+  <string name="spoken_emoji_1F60B">Aodann a tha ag ithe biadh blasta</string>
+  <string name="spoken_emoji_1F60D">Aodann le gàire ⁊ sùilean an cumadh cridhe</string>
+  <string name="spoken_emoji_1F60E">Aodann toilichte le speuclairean-grèine</string>
+  <string name="spoken_emoji_1F60F">Aodann le plìonas</string>
+  <string name="spoken_emoji_1F610">Aodann gun fhiamh</string>
+  <string name="spoken_emoji_1F612">Aodann nuair nach eil e èibhinn</string>
+  <string name="spoken_emoji_1F616">Aodann am breislich</string>
+  <string name="spoken_emoji_1F618">Aodann a’ caitheamh pòg</string>
+  <string name="spoken_emoji_1F61A">Aodann a’ pògadh le sùilean dùinte</string>
+  <string name="spoken_emoji_1F61C">Aodann le theanga a-mach ⁊ sùil bheag</string>
+  <string name="spoken_emoji_1F61E">Aodann a fhuair briseadh-dùil</string>
+  <string name="spoken_emoji_1F620">Aodann feargach</string>
+  <string name="spoken_emoji_1F621">Aodann busach</string>
+  <string name="spoken_emoji_1F622">Aodann a’ caoineadh</string>
+  <string name="spoken_emoji_1F623">Aodann rag</string>
+  <string name="spoken_emoji_1F629">Aodann air chlaoidh</string>
+  <string name="spoken_emoji_1F62B">Aodann sgìth</string>
+  <string name="spoken_emoji_1F632">Aodann a ghabh mòr-iongnadh</string>
+  <string name="spoken_emoji_1F633">Aodann air rudhadh</string>
+  <string name="spoken_emoji_1F635">Aodann na thuaineal</string>
+  <string name="spoken_emoji_1F695">Tacsaidh</string>
+  <string name="spoken_emoji_1F697">Càr</string>
+  <string name="spoken_emoji_1F6A2">Long</string>
+  <string name="spoken_emoji_1F6AA">Doras</string>
+  <string name="spoken_emoji_1F6B2">Baidhseagal</string>
+  <string name="spoken_emoji_1F6E1">Sgiath</string>
+  <string name="spoken_emoji_1F6F0">Saideal</string>
+  <string name="spoken_emoji_1F982">Sgairp</string>
+  <string name="spoken_emoji_1F983">Cearc-Fhrangach</string>
+</resources>
