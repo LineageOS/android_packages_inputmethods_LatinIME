@@ -24,17 +24,14 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.preference.ListPreference;
 import android.preference.Preference;
-import android.preference.PreferenceFragment;
 import android.preference.PreferenceScreen;
 import android.util.Log;
-import android.view.View;
-import android.widget.ListView;
 
 /**
  * A base abstract class for a {@link PreferenceFragment} that implements a nested
  * {@link PreferenceScreen} of the main preference screen.
  */
-public abstract class SubScreenFragment extends PreferenceFragment
+public abstract class SubScreenFragment extends CustomPreferenceFragment
         implements OnSharedPreferenceChangeListener {
     private OnSharedPreferenceChangeListener mSharedPreferenceChangeListener;
 
@@ -102,11 +99,6 @@ public abstract class SubScreenFragment extends PreferenceFragment
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-
-        // remove dividers
-        View rootView = getView();
-        ListView list = (ListView) rootView.findViewById(android.R.id.list);
-        list.setDivider(null);
     }
 
     @Override
