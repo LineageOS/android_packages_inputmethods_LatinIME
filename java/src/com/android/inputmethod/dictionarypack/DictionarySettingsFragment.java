@@ -44,6 +44,7 @@ import android.view.ViewGroup;
 import android.view.animation.AnimationUtils;
 
 import com.android.inputmethod.latin.R;
+import com.android.inputmethod.latin.settings.CustomPreferenceFragment;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -53,7 +54,7 @@ import java.util.TreeMap;
 /**
  * Preference screen.
  */
-public final class DictionarySettingsFragment extends PreferenceFragment
+public final class DictionarySettingsFragment extends CustomPreferenceFragment
         implements UpdateHandler.UpdateEventListener {
     private static final String TAG = DictionarySettingsFragment.class.getSimpleName();
 

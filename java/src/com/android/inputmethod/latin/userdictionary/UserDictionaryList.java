@@ -32,6 +32,7 @@ import android.view.inputmethod.InputMethodSubtype;
 
 import com.android.inputmethod.latin.R;
 import com.android.inputmethod.latin.common.LocaleUtils;
+import com.android.inputmethod.latin.settings.CustomPreferenceFragment;
 
 import java.util.List;
 import java.util.Locale;
@@ -43,7 +44,7 @@ import javax.annotation.Nullable;
 // packages/apps/Settings/src/com/android/settings/inputmethod/UserDictionaryList.java
 // in order to deal with some devices that have issues with the user dictionary handling
 
-public class UserDictionaryList extends PreferenceFragment {
+public class UserDictionaryList extends CustomPreferenceFragment {
 
     public static final String USER_DICTIONARY_SETTINGS_INTENT_ACTION =
             "android.settings.USER_DICTIONARY_SETTINGS";

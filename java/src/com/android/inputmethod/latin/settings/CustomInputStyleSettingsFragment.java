@@ -47,7 +47,7 @@ import com.android.inputmethod.latin.utils.SubtypeLocaleUtils;
 
 import java.util.ArrayList;
 
-public final class CustomInputStyleSettingsFragment extends PreferenceFragment
+public final class CustomInputStyleSettingsFragment extends CustomPreferenceFragment
         implements CustomInputStylePreference.Listener {
     private static final String TAG = CustomInputStyleSettingsFragment.class.getSimpleName();
     // Note: We would like to turn this debug flag true in order to see what input styles are
