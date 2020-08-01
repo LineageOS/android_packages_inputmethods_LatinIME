@@ -37,7 +37,7 @@ import java.util.Random;
 public class UserHistoryDictionaryTestsHelper {
 
     /**
-     * Locale prefix for generating dummy locales for tests.
+     * Locale prefix for generating placeholder locales for tests.
      */
     public static final String TEST_LOCALE_PREFIX = "test-";
 
@@ -110,7 +110,7 @@ public class UserHistoryDictionaryTestsHelper {
     /**
      * Creates unique test locale for using within tests.
      */
-    public static Locale getDummyLocale(final String name) {
+    public static Locale getFakeLocale(final String name) {
         return new Locale(TEST_LOCALE_PREFIX + name + System.currentTimeMillis());
     }
 
