@@ -119,6 +119,10 @@ public final class Settings implements SharedPreferences.OnSharedPreferenceChang
     public static final String PREF_EMOJI_CATEGORY_LAST_TYPED_ID = "emoji_category_last_typed_id";
     public static final String PREF_LAST_SHOWN_EMOJI_CATEGORY_ID = "last_shown_emoji_category_id";
 
+    // Keyboard scale
+    public static final String PREF_RESIZE_KEYBOARD = "pref_resize_keyboard";
+    public static final String PREF_KEYBOARD_HEIGHT_SCALE = "pref_keyboard_height_scale";
+
     private static final float UNDEFINED_PREFERENCE_VALUE_FLOAT = -1.0f;
     private static final int UNDEFINED_PREFERENCE_VALUE_INT = -1;
 
@@ -350,7 +354,7 @@ public final class Settings implements SharedPreferences.OnSharedPreferenceChang
     public static float readKeyboardHeight(final SharedPreferences prefs,
             final float defaultValue) {
         final float percentage = prefs.getFloat(
-                DebugSettings.PREF_KEYBOARD_HEIGHT_SCALE, UNDEFINED_PREFERENCE_VALUE_FLOAT);
+                Settings.PREF_KEYBOARD_HEIGHT_SCALE, UNDEFINED_PREFERENCE_VALUE_FLOAT);
         return (percentage != UNDEFINED_PREFERENCE_VALUE_FLOAT) ? percentage : defaultValue;
     }
 
