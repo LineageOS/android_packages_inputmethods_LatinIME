@@ -17,4 +17,5 @@
     <string name="subtype_no_language_bepo">字母表 (Bépo)</string>
     <string name="subtype_hu_ZZ">匈牙利 (QWERTY)</string>
     <string name="keyboard_theme_follow_system">跟随系统设置</string>
+    <string name="prefs_keyboard_height_scale">键盘高度缩放</string>
 </resources>

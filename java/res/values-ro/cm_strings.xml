@@ -17,4 +17,5 @@
     <string name="subtype_no_language_bepo">Alfabet (Bépo)</string>
     <string name="subtype_hu_ZZ">Maghiară (QWERTY)</string>
     <string name="keyboard_theme_follow_system">Respectă setările de sistem</string>
+    <string name="prefs_keyboard_height_scale">Scară înălţime tastatură</string>
 </resources>
