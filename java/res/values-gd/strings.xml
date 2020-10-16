@@ -23,6 +23,8 @@
     <string name="auto_correction">Fèin-cheartachadh</string>
     <string name="auto_correction_threshold_mode_off">Dheth</string>
     <string name="auto_correction_threshold_mode_aggressive">Ionnsaigheach</string>
+    <string name="hint_add_to_dictionary">Thoir gnogag air a-rithist gus a shàbhaladh</string>
+    <string name="hint_add_to_dictionary_without_word">Thoir gnogag an-seo airson a shàbhaladh</string>
     <string name="account_select_sign_out">Clàraich a-mach</string>
     <string name="subtype_en_US">Beurla (SA)</string>
     <string name="add">Cuir ris</string>
@@ -39,4 +41,5 @@
     <string name="user_dict_settings_add_dialog_more_options">Barrachd roghainnean</string>
     <string name="user_dict_settings_add_locale_option_name">Cànan:</string>
     <string name="user_dict_settings_context_menu_edit_title">Deasaich</string>
+    <string name="user_dict_settings_empty_text">Chan eil facal san fhaclair cleachdaiche agad. Airson facal a chur ris, thoir gnogag air a’ phutan cuir ris (+).</string>
 </resources>
