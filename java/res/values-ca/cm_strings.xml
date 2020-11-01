@@ -17,4 +17,5 @@
     <string name="subtype_no_language_bepo">Alfabet (Bépo)</string>
     <string name="subtype_hu_ZZ">Hongarès (QWERTY)</string>
     <string name="keyboard_theme_follow_system">Seguiu la configuració del sistema</string>
+    <string name="prefs_keyboard_height_scale">Escala de l\'alçada del teclat</string>
 </resources>
