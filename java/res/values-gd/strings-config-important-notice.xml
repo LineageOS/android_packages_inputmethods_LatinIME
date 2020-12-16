@@ -2,7 +2,7 @@
 <!--
 /*
 **
-** Copyright 2013, The Android Open Source Project
+** Copyright 2014, The Android Open Source Project
 **
 ** Licensed under the Apache License, Version 2.0 (the "License");
 ** you may not use this file except in compliance with the License.
@@ -17,13 +17,6 @@
 ** limitations under the License.
 */
 -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="label_go_key">Siuthad</string>
-    <string name="label_next_key">Air adhart</string>
-    <string name="label_previous_key">Air ais</string>
-    <string name="label_done_key">Deiseil</string>
-    <string name="label_send_key">Cuir</string>
-    <string name="label_search_key">Lorg</string>
-    <string name="label_pause_key">Cuir ’na stad</string>
-    <string name="label_wait_key">Fuirich</string>
+<resources>
+    <string name="use_personalized_dicts_summary">Ionnsaich on chonaltradh agad ’s an dàta a sgrìobhas tu airson piseach a thoirt air na molaidhean</string>
 </resources>

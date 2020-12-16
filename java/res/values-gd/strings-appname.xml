@@ -17,13 +17,9 @@
 ** limitations under the License.
 */
 -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="label_go_key">Siuthad</string>
-    <string name="label_next_key">Air adhart</string>
-    <string name="label_previous_key">Air ais</string>
-    <string name="label_done_key">Deiseil</string>
-    <string name="label_send_key">Cuir</string>
-    <string name="label_search_key">Lorg</string>
-    <string name="label_pause_key">Cuir ’na stad</string>
-    <string name="label_wait_key">Fuirich</string>
+<resources>
+    <string name="english_ime_name">Meur-chlàr Android (AOSP)</string>
+    <string name="spell_checker_service_name">Dearbhair-litreachaidh Android (AOSP)</string>
+    <string name="english_ime_settings">Roghainnean a’ mheur-chlàir Android (AOSP)</string>
+    <string name="android_spell_checker_settings">Roghainnean dearbhair-litreachaidh Android (AOSP)</string>
 </resources>
