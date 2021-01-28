@@ -22,6 +22,29 @@
       "revId": "40395924b1698415067382db07bafdd3e0c63ec8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f0690f74_af7897eb",
+        "filename": "java/src/com/android/inputmethod/keyboard/emoji/EmojiLayoutParams.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2021-01-28T17:24:53Z",
+      "side": 1,
+      "message": "this can be a local variable, as it\u0027s not used anywhere else in the class...\nfinal int numberOfRows \u003d ....",
+      "range": {
+        "startLine": 50,
+        "startChar": 8,
+        "endLine": 51,
+        "endChar": 27
+      },
+      "revId": "40395924b1698415067382db07bafdd3e0c63ec8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
