@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1cd885c6_42ce93a5",
+        "filename": "java/src/com/android/inputmethod/keyboard/emoji/EmojiLayoutParams.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2021-01-28T15:28:10Z",
+      "side": 1,
+      "message": "Remove this completely",
+      "range": {
+        "startLine": 28,
+        "startChar": 4,
+        "endLine": 28,
+        "endChar": 58
+      },
+      "revId": "40395924b1698415067382db07bafdd3e0c63ec8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
