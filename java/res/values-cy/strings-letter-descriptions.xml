@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+**
+** Copyright 2014, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<!--
+    These accented letters (spoken_accented_letter_*) are unsupported by TTS.
+    These symbols (spoken_symbol_*) are also unsupported by TTS.
+    TODO: Remove these string resources when TTS/TalkBack support these letters.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="spoken_accented_letter_00AA">Dangosydd trefnol benywaidd</string>
+    <string name="spoken_accented_letter_00B5">Symbol micro</string>
+    <string name="spoken_accented_letter_00BA">Dangosydd trefnol gwrywaidd</string>
+    <string name="spoken_accented_letter_00DF">Eszett</string>
+    <string name="spoken_accented_letter_00E0">A, acen ddisgynedig</string>
+    <string name="spoken_accented_letter_00E1">A, acen ddyrchafedig</string>
+    <string name="spoken_accented_letter_00E2">A, acen grom</string>
+    <string name="spoken_accented_letter_00E3">A, tild</string>
+    <string name="spoken_accented_letter_00E4">A, didolnod</string>
+    <string name="spoken_accented_letter_00E5">A, cylch uwchlaw</string>
+    <string name="spoken_accented_letter_00E6">A, E, clymlythyren</string>
+    <string name="spoken_accented_letter_00E7">C, sedila</string>
+    <string name="spoken_accented_letter_00E8">E, acen ddisgynedig</string>
+    <string name="spoken_accented_letter_00E9">E, acen ddyrchafedig</string>
+    <string name="spoken_accented_letter_00EA">E, acen grom</string>
+    <string name="spoken_accented_letter_00EB">E, didolnod</string>
+    <string name="spoken_accented_letter_00EC">I, acen ddisgynedig</string>
+    <string name="spoken_accented_letter_00ED">I, acen ddyrchafedig</string>
+    <string name="spoken_accented_letter_00EE">I, acen grom</string>
+    <string name="spoken_accented_letter_00EF">I, didolnod</string>
+    <string name="spoken_accented_letter_00F0">Eth</string>
+    <string name="spoken_accented_letter_00F1">N, tild</string>
+    <string name="spoken_accented_letter_00F2">O, acen ddisgynedig</string>
+    <string name="spoken_accented_letter_00F3">O, acen ddyrchafedig</string>
+    <string name="spoken_accented_letter_00F4">O, acen grom</string>
+    <string name="spoken_accented_letter_00F5">O, tild</string>
+    <string name="spoken_accented_letter_00F6">O, didolnod</string>
+    <string name="spoken_accented_letter_00F8">O, slaes</string>
+    <string name="spoken_accented_letter_00F9">U, acen ddisgynedig</string>
+    <string name="spoken_accented_letter_00FA">U, acen ddyrchafedig</string>
+    <string name="spoken_accented_letter_00FB">U, acen grom</string>
+    <string name="spoken_accented_letter_00FC">U, didolnod</string>
+    <string name="spoken_accented_letter_00FD">Y, acen ddyrchafedig</string>
+    <string name="spoken_accented_letter_00FE">Thorn</string>
+    <string name="spoken_accented_letter_00FF">Y, didolnod</string>
+    <string name="spoken_accented_letter_0101">A, hirnod</string>
+    <string name="spoken_accented_letter_0103">A, brif</string>
+    <string name="spoken_accented_letter_0105">A, ogonek</string>
+    <string name="spoken_accented_letter_0107">C, acen ddyrchafedig</string>
+    <string name="spoken_accented_letter_0109">C, acen grom</string>
+    <string name="spoken_accented_letter_010B">C, dot uwchlaw</string>
+    <string name="spoken_accented_letter_010D">C, caron</string>
+    <string name="spoken_accented_letter_010F">D, caron</string>
+    <string name="spoken_accented_letter_0111">D, slaes</string>
+    <string name="spoken_accented_letter_0113">E, hirnod</string>
+    <string name="spoken_accented_letter_0115">E, brif</string>
+    <string name="spoken_accented_letter_0117">E, dot uwchlaw</string>
+    <string name="spoken_accented_letter_0119">E, ogonek</string>
+    <string name="spoken_accented_letter_011B">E, caron</string>
+    <string name="spoken_accented_letter_011D">G, acen grom</string>
+    <string name="spoken_accented_letter_011F">G, brif</string>
+    <string name="spoken_accented_letter_0121">G, dot uwchlaw</string>
+    <string name="spoken_accented_letter_0123">G, sedila</string>
+    <string name="spoken_accented_letter_0125">H, acen grom</string>
+    <string name="spoken_accented_letter_0127">H, slaes</string>
+    <string name="spoken_accented_letter_0129">I, tild</string>
+    <string name="spoken_accented_letter_012B">I, hirnod</string>
+    <string name="spoken_accented_letter_012D">I, brif</string>
+    <string name="spoken_accented_letter_012F">I, ogonek</string>
+    <string name="spoken_accented_letter_0131">I heb ddot</string>
+    <string name="spoken_accented_letter_0133">I, J, clymlythyren</string>
+    <string name="spoken_accented_letter_0135">J, acen grom</string>
+    <string name="spoken_accented_letter_0137">K, sedila</string>
+    <string name="spoken_accented_letter_0138">Kra</string>
+    <string name="spoken_accented_letter_013A">L, acen ddyrchafedig</string>
+    <string name="spoken_accented_letter_013C">L, sedila</string>
+    <string name="spoken_accented_letter_013E">L, caron</string>
+    <string name="spoken_accented_letter_0140">L, dot canol</string>
+    <string name="spoken_accented_letter_0142">L, slaes</string>
+    <string name="spoken_accented_letter_0144">N, acen ddyrchafedig</string>
+    <string name="spoken_accented_letter_0146">N, sedila</string>
+    <string name="spoken_accented_letter_0148">N, caron</string>
+    <string name="spoken_accented_letter_0149">N, collnod o\'i blaen</string>
+    <string name="spoken_accented_letter_014B">Eng</string>
+    <string name="spoken_accented_letter_014D">O, hirnod</string>
+    <string name="spoken_accented_letter_014F">O, brif</string>
+    <string name="spoken_accented_letter_0151">O, dyrchafog dwbl</string>
+    <string name="spoken_accented_letter_0153">O, E, clymlythyren</string>
+    <string name="spoken_accented_letter_0155">R, acen ddyrchafedig</string>
+    <string name="spoken_accented_letter_0157">R, sedila</string>
+    <string name="spoken_accented_letter_0159">R, caron</string>
+    <string name="spoken_accented_letter_015B">S, acen ddyrchafedig</string>
+    <string name="spoken_accented_letter_015D">S, acen grom</string>
+    <string name="spoken_accented_letter_015F">S, sedila</string>
+    <string name="spoken_accented_letter_0161">S, caron</string>
+    <string name="spoken_accented_letter_0163">T, sedila</string>
+    <string name="spoken_accented_letter_0165">T, caron</string>
+    <string name="spoken_accented_letter_0167">T, slaes</string>
+    <string name="spoken_accented_letter_0169">U, tild</string>
+    <string name="spoken_accented_letter_016B">U, hirnod</string>
+    <string name="spoken_accented_letter_016D">U, brif</string>
+    <string name="spoken_accented_letter_016F">U, cylch uwchlaw</string>
+    <string name="spoken_accented_letter_0171">U, dyrchafog dwbl</string>
+    <string name="spoken_accented_letter_0173">U, ogonek</string>
+    <string name="spoken_accented_letter_0175">W, acen grom</string>
+    <string name="spoken_accented_letter_0177">Y, acen grom</string>
+    <string name="spoken_accented_letter_017A">Z, acen ddyrchafedig</string>
+    <string name="spoken_accented_letter_017C">Z, dot uwchlaw</string>
+    <string name="spoken_accented_letter_017E">Z, caron</string>
+    <string name="spoken_accented_letter_017F">S hir</string>
+    <string name="spoken_accented_letter_01A1">O, corn</string>
+    <string name="spoken_accented_letter_01B0">U, corn</string>
+    <string name="spoken_accented_letter_0219">S, coma islaw</string>
+    <string name="spoken_accented_letter_021B">T, coma islaw</string>
+    <string name="spoken_accented_letter_0259">Shwa</string>
+    <string name="spoken_accented_letter_1EA1">A, dot islaw</string>
+    <string name="spoken_accented_letter_1EA3">A, bachyn uwchlaw</string>
+    <string name="spoken_accented_letter_1EA5">A, acen grom a dyrchafedig</string>
+    <string name="spoken_accented_letter_1EA7">A, acen grom a disgynedig</string>
+    <string name="spoken_accented_letter_1EA9">A, acen grom a bachyn uwchlaw</string>
+    <string name="spoken_accented_letter_1EAB">A, acen grom a thild</string>
+    <string name="spoken_accented_letter_1EAD">A, acen grom a dot islaw</string>
+    <string name="spoken_accented_letter_1EAF">A, brif a dyrchafog</string>
+    <string name="spoken_accented_letter_1EB1">A, brif a disgynedig</string>
+    <string name="spoken_accented_letter_1EB3">A, brif a bachyn uwchben</string>
+    <string name="spoken_accented_letter_1EB5">A, brif a thild</string>
+    <string name="spoken_accented_letter_1EB7">A, brif a dot islaw</string>
+    <string name="spoken_accented_letter_1EB9">E, dot islaw</string>
+    <string name="spoken_accented_letter_1EBB">E, bachyn uwchlaw</string>
+    <string name="spoken_accented_letter_1EBD">E, tild</string>
+    <string name="spoken_accented_letter_1EBF">E, acen grom a dyrchafedig</string>
+    <string name="spoken_accented_letter_1EC1">E, acen grom a disgynedig</string>
+    <string name="spoken_accented_letter_1EC3">E, acen grom a bachyn uwchlaw</string>
+    <string name="spoken_accented_letter_1EC5">E, acen grom a thild</string>
+    <string name="spoken_accented_letter_1EC7">E, acen grom a dot islaw</string>
+    <string name="spoken_accented_letter_1EC9">I, bachyn uwchlaw</string>
+    <string name="spoken_accented_letter_1ECB">I, dot islaw</string>
+    <string name="spoken_accented_letter_1ECD">O, dot islaw</string>
+    <string name="spoken_accented_letter_1ECF">O, bachyn uwchlaw</string>
+    <string name="spoken_accented_letter_1ED1">O, acen grom a dyrchafedig</string>
+    <string name="spoken_accented_letter_1ED3">O, acen grom a disgynedig</string>
+    <string name="spoken_accented_letter_1ED5">O, acen grom a bachyn uwchlaw</string>
+    <string name="spoken_accented_letter_1ED7">O, acen grom a thild</string>
+    <string name="spoken_accented_letter_1ED9">O, acen grom a dot islaw</string>
+    <string name="spoken_accented_letter_1EDB">O, corn a dyrchafog</string>
+    <string name="spoken_accented_letter_1EDD">O, corn a disgynedig</string>
+    <string name="spoken_accented_letter_1EDF">O, corn a bachyn uwchben</string>
+    <string name="spoken_accented_letter_1EE1">O, corn a thild</string>
+    <string name="spoken_accented_letter_1EE3">O, corn a dot islaw</string>
+    <string name="spoken_accented_letter_1EE5">U, dot islaw</string>
+    <string name="spoken_accented_letter_1EE7">U, bachyn uwchlaw</string>
+    <string name="spoken_accented_letter_1EE9">U, corn a dyrchafog</string>
+    <string name="spoken_accented_letter_1EEB">U, corn a disgynedig</string>
+    <string name="spoken_accented_letter_1EED">U, corn a bachyn uwchben</string>
+    <string name="spoken_accented_letter_1EEF">U, corn a thild</string>
+    <string name="spoken_accented_letter_1EF1">U, corn a dot islaw</string>
+    <string name="spoken_accented_letter_1EF3">Y, acen ddisgynedig</string>
+    <string name="spoken_accented_letter_1EF5">Y, dot islaw</string>
+    <string name="spoken_accented_letter_1EF7">Y, bachyn uwchlaw</string>
+    <string name="spoken_accented_letter_1EF9">Y, tild</string>
+    <string name="spoken_symbol_00A1">Ebychnod a\'i ben i lawr</string>
+    <string name="spoken_symbol_00AB">Dyfynnod ongl dwbl yn pwyntio i\'r chwith</string>
+    <string name="spoken_symbol_00B7">Dot canol</string>
+    <string name="spoken_symbol_00B9">Uwchysgrif un</string>
+    <string name="spoken_symbol_00BB">Dyfynnod ongl dwbl yn pwyntio i\'r dde</string>
+    <string name="spoken_symbol_00BF">Gofynnod a\'i ben i lawr</string>
+    <string name="spoken_symbol_2018">Dyfynnod sengl chwith</string>
+    <string name="spoken_symbol_2019">Dyfynnod sengl de</string>
+    <string name="spoken_symbol_201A">Dyfynnod sengl 9-isel</string>
+    <string name="spoken_symbol_201C">Dyfynnod dwbl chwith</string>
+    <string name="spoken_symbol_201D">Dyfynnod dwbl de</string>
+    <string name="spoken_symbol_2020">Dagr</string>
+    <string name="spoken_symbol_2021">Dagr dwbl</string>
+    <string name="spoken_symbol_2030">Symbol y mil</string>
+    <string name="spoken_symbol_2032">Prim</string>
+    <string name="spoken_symbol_2033">Prim dwbl</string>
+    <string name="spoken_symbol_2039">Dyfynnod ongl sengl yn pwyntio i\'r chwith</string>
+    <string name="spoken_symbol_203A">Dyfynnod ongl sengl yn pwyntio i\'r dde</string>
+    <string name="spoken_symbol_2074">Uwchysgrif pedwar</string>
+    <string name="spoken_symbol_207F">Uwchysgrif llythyren n bach</string>
+    <string name="spoken_symbol_20B1">Arwydd peso</string>
+    <string name="spoken_symbol_2105">Dan ofal</string>
+    <string name="spoken_symbol_2192">Saeth i\'r dde</string>
+    <string name="spoken_symbol_2193">Saeth i lawr</string>
+    <string name="spoken_symbol_2205">Set gwag</string>
+    <string name="spoken_symbol_2206">Cynnydd</string>
+    <string name="spoken_symbol_2264">Llai na neu\'n gyfartal â</string>
+    <string name="spoken_symbol_2265">Mwy na neu\'n gyfartal â</string>
+    <string name="spoken_symbol_2605">Seren ddu</string>
+</resources>

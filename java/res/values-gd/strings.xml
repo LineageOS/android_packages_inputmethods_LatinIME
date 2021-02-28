@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+**
+** Copyright 2008, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="english_ime_input_options">Roghainnean ion-chuir</string>
+    <string name="use_contacts_for_spellchecking_option_title">Lorg ainmean luchd-aithne</string>
+    <string name="use_contacts_for_spellchecking_option_summary">Cleachdaidh an dearbhair-litreachaidh na h-ainmean o liosta an luchd-aithne agad</string>
+    <string name="vibrate_on_keypress">Dèan crith nuair a bhrùthar iuchair</string>
+    <string name="sound_on_keypress">Cluich fuaim nuair a bhrùthar iuchair</string>
+    <string name="popup_on_keypress">Dèan priobadh nuair a bhrùthar iuchair</string>
+    <string name="settings_screen_preferences">Roghainnean</string>
+    <string name="settings_screen_accounts">Cunntasan ⁊ prìobhaideachd</string>
+    <string name="settings_screen_appearance">Coltas ⁊ co-dhealbhachdan</string>
+    <string name="settings_screen_gesture">Taidhpeadh slìobaidh</string>
+    <string name="settings_screen_correction">Ceartachadh teacsa</string>
+    <string name="settings_screen_advanced">Adhartach</string>
+    <string name="settings_screen_theme">Ùrlar</string>
+    <string name="enable_split_keyboard">Cuir am meur-chlàr sgoilte an comas</string>
+    <string name="cloud_sync_title">Sioncronachadh meur-chlàr Google</string>
+    <string name="cloud_sync_summary">Tha an sioncronachadh air</string>
+    <string name="cloud_sync_summary_disabled">Sioncronaich am faclair pearsanta agad thar nan uidheaman</string>
+    <string name="sync_now_title">Sioncronaich an-dràsta</string>
+    <string name="clear_sync_data_title">Sguab às dàta an neòil</string>
+    <string name="clear_sync_data_summary">Sguabaidh seo às an dàta sioncronaichte agad air Google</string>
+    <string name="clear_sync_data_confirmation">Thèid an dàta sioncronaichte agad a sguabadh às on neul. A bheil thu cinnteach?</string>
+    <string name="clear_sync_data_ok">Sguab às</string>
+    <string name="cloud_sync_cancel">Sguir dheth</string>
+    <string name="cloud_sync_opt_in_text">Thèid am faclair pearsanta agad a shioncronachadh agus
+        lethbhreac dheth a chur air frithealaichean Google. Dh’fhaoidte gun cruinnich sinn stadastaireachd air tricead nam faclan feuch
+        an cuir sinn piseach air na batharan againn. Thèid am fiosrachadh uile seo a chruinneachadh ’s a chleachdadh a-rèir
+        <a href="https://www.google.com/policies/privacy">poileasaidh prìobhaideachd Google</a>.
+    </string>
+    <string name="add_account_to_enable_sync">        Cuir cunntas Google ris an uidheam seo airson an gleus seo a chur an comas
+    </string>
+    <string name="cloud_sync_summary_disabled_work_profile">        Chan eil sioncronachadh ri fhaighinn air uidheaman le cunntas Google Apps for Business
+    </string>
+    <string name="include_other_imes_in_language_switch_list">Geàrr leum gu modhan ion-chuir eile</string>
+    <string name="include_other_imes_in_language_switch_list_summary">Bheir iuchair atharrachadh a’ chànain modhan ion-chuir eile dhut cuideachd</string>
+    <string name="show_language_switch_key">Iuchair atharrachadh a’ chànain</string>
+    <string name="show_language_switch_key_summary">Seall dhomh nuair a bhios iomadh cànan ion-chuir an comas</string>
+    <string name="key_preview_popup_dismiss_delay">Dàil air leigeil seachad priobadh iuchrach</string>
+    <string name="key_preview_popup_dismiss_no_delay">Gun dàil</string>
+    <string name="key_preview_popup_dismiss_default_delay">Tùsail</string>
+    <string name="abbreviation_unit_milliseconds"><xliff:g id="MILLISECONDS">%s</xliff:g>ms</string>
+    <string name="settings_system_default">Bun-roghainn an t-siostaim</string>
+    <string name="use_contacts_dict">Mol ainmean an luchd-aithne</string>
+    <string name="use_contacts_dict_summary">Cleachd na h-ainmean on luchd-aithne airson molaidhean is ceartachadh</string>
+    <string name="use_personalized_dicts">Molaidhean pearsanaichte</string>
+    <string name="enable_metrics_logging">"Pisich <xliff:g id="APPLICATION_NAME" example="Android Keyboard">%s</xliff:g>"</string>
+    <string name="use_double_space_period">Faigh puing à dà bheàrn</string>
+    <string name="use_double_space_period_summary">Nì gnogag dhùbailte air a’ spacebar puing is geal-spàs</string>
+    <string name="auto_cap">Tùs-litrichean mòra fèin-obrachail</string>
+    <string name="auto_cap_summary">Cuir litir mhòr aig toiseach gach seantans</string>
+    <string name="edit_personal_dictionary">Am faclair pearsanta</string>
+    <string name="configure_dictionaries_title">Faclairean tuilleadain</string>
+    <string name="main_dictionary">Am prìomh-fhaclair</string>
+    <string name="prefs_show_suggestions">Seall molaidhean ceartachaidh</string>
+    <string name="prefs_show_suggestions_summary">Seall am facal molta fhad ’s a bhios mi a’ sgrìobhadh</string>
+    <string name="prefs_block_potentially_offensive_title">Bac droch-chainnt</string>
+    <string name="prefs_block_potentially_offensive_summary">Na mol droch-chaint</string>
+    <string name="auto_correction">Fèin-cheartachadh</string>
+    <string name="auto_correction_summary">Cuiridh a’ spacebar no puingeachadh faclan a chaidh a dhroch-litreachadh gu ceart gu fèin-obrachail</string>
+    <string name="auto_correction_threshold_mode_off">Dheth</string>
+    <string name="auto_correction_threshold_mode_modest">Sèimh</string>
+    <string name="auto_correction_threshold_mode_aggressive">Ionnsaigheach</string>
+    <string name="auto_correction_threshold_mode_very_aggressive">Glè ionnsaigheach</string>
+    <string name="bigram_prediction">Moladh an ath-fhacal</string>
+    <string name="bigram_prediction_summary">Cleachd am facal roimhe a chùm molaidhean</string>
+    <string name="gesture_input">Cuir an comas taidhpeadh slìobaidh</string>
+    <string name="gesture_input_summary">Dèan slìobadh thar nan litrichean a chur a-steach facal</string>
+    <string name="gesture_preview_trail">Seall lorgan an t-slìobaidh</string>
+    <string name="gesture_floating_preview_text">Ro-shealladh innsgineach air fhleòd</string>
+    <string name="gesture_floating_preview_text_summary">Seall moladh facail rè a’ ghluasaid</string>
+    <string name="gesture_space_aware">Slìobadh thar iomadh facal</string>
+    <string name="gesture_space_aware_summary">Cuiridh slìobadh dhan spacebar beàrn a-steach</string>
+    <string name="voice_input">Iuchair ion-chuir gutha</string>
+    <string name="configure_input_method">Rèitich na modhan ion-chuir</string>
+    <string name="language_selection_title">Cànain</string>
+    <string name="help_and_feedback">Cobhair ⁊ beachdan thugainn</string>
+    <string name="select_language">Cànain</string>
+    <string name="hint_add_to_dictionary">Thoir gnogag air a-rithist gus a shàbhaladh</string>
+    <string name="hint_add_to_dictionary_without_word">Thoir gnogag an-seo airson a shàbhaladh</string>
+    <string name="has_dictionary">Tha faclair ri fhaighinn</string>
+    <string name="keyboard_layout">Ùrlar a’ mheur-chlàir</string>
+    <string name="switch_accounts">Leum eadar cunntasan</string>
+    <string name="no_accounts_selected">Cha deach cunntas a thaghadh</string>
+    <string name="account_selected">A’ cleachdadh <xliff:g id="EMAIL_ADDRESS" example="someone@example.com">%1$s</xliff:g> an-dràsta</string>
+    <string name="account_select_ok">Ceart ma-thà</string>
+    <string name="account_select_cancel">Sguir dheth</string>
+    <string name="account_select_sign_out">Clàraich a-mach</string>
+    <string name="account_select_title">Tagh an cunntas ri chleachdadh</string>
+    <string name="subtype_en_GB">Beurla (RA)</string>
+    <string name="subtype_en_US">Beurla (SA)</string>
+    <string name="subtype_es_US">Spàinntis (SA)</string>
+    <string name="subtype_hi_ZZ">Hinglish</string>
+    <string name="subtype_sr_ZZ">Sèirbis (Laideann)</string>
+    <string name="subtype_with_layout_en_GB">Beurla (RA) (<xliff:g id="KEYBOARD_LAYOUT" example="QWERTY">%s</xliff:g>)</string>
+    <string name="subtype_with_layout_en_US">Beurla (SA) (<xliff:g id="KEYBOARD_LAYOUT" example="QWERTY">%s</xliff:g>)</string>
+    <string name="subtype_with_layout_es_US">Spàinntis (SA) (<xliff:g id="KEYBOARD_LAYOUT" example="QWERTY">%s</xliff:g>)</string>
+    <string name="subtype_with_layout_hi_ZZ">Hinglish (<xliff:g id="KEYBOARD_LAYOUT" example="QWERTY">%s</xliff:g>)</string>
+    <string name="subtype_with_layout_sr_ZZ">Sèirbis (<xliff:g id="KEYBOARD_LAYOUT" example="QWERTY">%s</xliff:g>)</string>
+    <string name="subtype_generic_traditional"><xliff:g id="LANGUAGE_NAME" example="Nepali">%s</xliff:g> (thradaiseanta)</string>
+    <string name="subtype_generic_compact"><xliff:g id="LANGUAGE_NAME" example="Hindi">%s</xliff:g> (dhùmhlaichte)</string>
+    <string name="subtype_no_language">Gun cànan (aibidil)</string>
+    <string name="subtype_no_language_qwerty">Aibidil (QWERTY)</string>
+    <string name="subtype_no_language_qwertz">Aibidil (QWERTZ)</string>
+    <string name="subtype_no_language_azerty">Aibidil (AZERTY)</string>
+    <string name="subtype_no_language_dvorak">Aibidil (Dvorak)</string>
+    <string name="subtype_no_language_colemak">Aibidil (Colemak)</string>
+    <string name="subtype_no_language_pcqwerty">Aibidil (PC)</string>
+    <string name="subtype_emoji">Emoji</string>
+    <string name="keyboard_theme">Ùrlar a’ mheur-chlàir</string>
+    <string name="custom_input_styles_title">Stoidhlichean ion-chuir gnàthaichte</string>
+    <string name="add_style">Cuir stoidhle ris</string>
+    <string name="add">Cuir ris</string>
+    <string name="remove">Thoir air falbh</string>
+    <string name="save">Sàbhail</string>
+    <string name="subtype_locale">Cànan</string>
+    <string name="keyboard_layout_set">Co-dhealbhachd</string>
+    <string name="custom_input_style_note_message">"Feumaidh tu stoidhle ghnàthaichte an ion-chuir a chur an comas mus cleachd thu i? An cuir thu an comas i an-dràsta?"</string>
+    <string name="enable">Cuir an comas</string>
+    <string name="not_now">Chan ann an-dràsta</string>
+    <string name="custom_input_style_already_exists">"Tha an stoidhle ion-chuir seo ann mu thràth: <xliff:g id="INPUT_STYLE_NAME" example="English (Dvorak)">%s</xliff:g>"</string>
+    <string name="prefs_keypress_vibration_duration_settings">Faid crith a’ bhrùthaidh-iuchrach</string>
+    <string name="prefs_keypress_sound_volume_settings">Àirde fuaime a’ bhrùthaidh-iuchrach</string>
+    <string name="prefs_key_longpress_timeout_settings">Dàil a’ bhrùthaidh-iuchrach fhaide</string>
+    <string name="prefs_enable_emoji_alt_physical_key">Emoji air meur-chlàr fiosaigeach</string>
+    <string name="prefs_enable_emoji_alt_physical_key_summary">Seallaidh iuchair Alt fiosaigeach pailead nan Emoji</string>
+    <string name="button_default">Tùsail</string>
+    <string name="setup_welcome_title">"Fàilte gu <xliff:g id="APPLICATION_NAME" example="Android Keyboard">%s</xliff:g>"</string>
+    <string name="setup_welcome_additional_description">le taidhpeadh slìobaidh</string>
+    <string name="setup_start_action">Dèan toiseach-tòiseachaidh</string>
+    <string name="setup_next_action">An ath-cheum</string>
+    <string name="setup_steps_title">"A’ suidheachadh <xliff:g id="APPLICATION_NAME" example="Android Keyboard">%s</xliff:g>"</string>
+    <string name="setup_step1_title">"Cuir an comas <xliff:g id="APPLICATION_NAME" example="Android Keyboard">%s</xliff:g>"</string>
+    <string name="setup_step1_action">Cuir an comas e sna roghainnean</string>
+    <string name="setup_step2_title">"Geàrr leum gu <xliff:g id="APPLICATION_NAME" example="Android Keyboard">%s</xliff:g>"</string>
+    <string name="setup_step2_instruction">"Nise, tagh “<xliff:g id="APPLICATION_NAME" example="Android Keyboard">%s</xliff:g>” mar am modh ion-chuir ghnìomhach agad."</string>
+    <string name="setup_step2_action">Cleachd modh ion-chuir eile</string>
+    <string name="setup_step3_title">"Meal do naidheachd, tha a h-uile rud air dòigh!"</string>
+    <string name="setup_step3_instruction">’S urrainn dhut sgrìobhadh le <xliff:g id="APPLICATION_NAME" example="Android Keyboard">%s</xliff:g> sa h-uile aplacaid agad a-nis.</string>
+    <string name="setup_step3_action">Rèitich cànain eile</string>
+    <string name="setup_finish_action">Deiseil</string>
+    <string name="show_setup_wizard_icon">Seall ìomhaigheag na h-aplacaid</string>
+    <string name="show_setup_wizard_icon_summary">Seall ìomhaigheag na h-aplacaid san lòinsear</string>
+    <string name="app_name">Solaraiche an fhaclair</string>
+    <string name="dictionary_provider_name">Solaraiche an fhaclair</string>
+    <string name="dictionary_service_name">Seirbheis an fhaclair</string>
+    <string name="download_description">Fiosrachadh ùrachaidh mun fhaclair</string>
+    <string name="dictionary_settings_title">Faclairean tuilleadain</string>
+    <string name="dictionary_install_over_metered_network_prompt">Tha faclair ri fhaighinn</string>
+    <string name="dictionary_settings_summary">Roghainnean nam faclairean</string>
+    <string name="user_dictionaries">Faclairean a’ chleachdaiche</string>
+    <string name="default_user_dict_pref_name">Faclair a’ chleachdaiche</string>
+    <string name="dictionary_available">Tha faclair ri fhaighinn</string>
+    <string name="dictionary_downloading">’Ga luchdadh a-nuas an-dràsta</string>
+    <string name="dictionary_installed">Air a stàladh</string>
+    <string name="dictionary_disabled">Air a stàladh, à comas</string>
+    <string name="cannot_connect_to_dict_service">Tha duilgheadas le ceangal ri seirbheis an fhaclair</string>
+    <string name="no_dictionaries_available">Chan eil faclair ri fhaighinn</string>
+    <string name="check_for_updates_now">Ath-nuadhaich</string>
+    <string name="last_update">An t-ùrachadh mu dheireadh</string>
+    <string name="message_updating">A’ toirt sùil airson ùrachaidhean</string>
+    <string name="main_dict_description">Am prìomh-fhaclair</string>
+    <string name="cancel">Sguir dheth</string>
+    <string name="go_to_settings">Roghainnean</string>
+    <string name="install_dict">Stàlaich</string>
+    <string name="cancel_download_dict">Sguir dheth</string>
+    <string name="delete_dict">Sguab às</string>
+    <string name="download_over_metered">Luchdaich a-nuas an-dràsta (<xliff:g id="SIZE_IN_MEGABYTES" example="0.7">%1$.1f</xliff:g>MB)</string>
+    <string name="do_not_download_over_metered">Luchdaich a-nuas thar WiFi</string>
+    <string name="dict_available_notification_title">Tha faclair ri fhaighinn dha <xliff:g id="LANGUAGE_NAME" example="English">%1$s</xliff:g></string>
+    <string name="dict_available_notification_description">Brùth airson sùil a thoirt air ’s a luchdadh a-nuas</string>
+    <string name="toast_downloading_suggestions">’Ga luchdadh a-nuas: bidh molaidhean <xliff:g id="LANGUAGE_NAME" example="English">%1$s</xliff:g> ri làimh dhut a dh’aithghearr.</string>
+    <string name="version_text">Tionndadh <xliff:g id="VERSION_NUMBER" example="1.0.1864.643521">%1$s</xliff:g></string>
+    <string name="user_dict_settings_add_menu_title">Cuir ris</string>
+    <string name="user_dict_settings_add_dialog_title">Cuir ris an fhaclair</string>
+    <string name="user_dict_settings_add_screen_title">Abairt</string>
+    <string name="user_dict_settings_add_dialog_more_options">Barrachd roghainnean</string>
+    <string name="user_dict_settings_add_dialog_less_options">Nas lugha de roghainnean</string>
+    <string name="user_dict_settings_add_dialog_confirm">Ceart ma-thà</string>
+    <string name="user_dict_settings_add_word_option_name">Facal:</string>
+    <string name="user_dict_settings_add_shortcut_option_name">Ath-ghoirid:</string>
+    <string name="user_dict_settings_add_locale_option_name">Cànan:</string>
+    <string name="user_dict_settings_add_word_hint">Cuir a-steach facal</string>
+    <string name="user_dict_settings_add_shortcut_hint">Ath-ghoirid roghainneil</string>
+    <string name="user_dict_settings_edit_dialog_title">Deasaich am facal</string>
+    <string name="user_dict_settings_context_menu_edit_title">Deasaich</string>
+    <string name="user_dict_settings_context_menu_delete_title">Sguab às</string>
+    <string name="user_dict_settings_empty_text">Chan eil facal san fhaclair cleachdaiche agad. Airson facal a chur ris, thoir gnogag air a’ phutan cuir ris (+).</string>
+    <string name="user_dict_settings_all_languages">Dhan a h-uile cànan</string>
+    <string name="user_dict_settings_more_languages">Barrachd chànan…</string>
+    <string name="user_dict_settings_delete">Sguab às</string>
+    <string name="user_dict_fast_scroll_alphabet">\u0020ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+</resources>

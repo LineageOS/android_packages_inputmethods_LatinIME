@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+**
+** Copyright 2015, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="spoken_use_headphones">Ceangail headset ris ach an cluinn thu iuchraichean an fhacail-fhaire ’gan cantainn riut.</string>
+    <string name="spoken_current_text_is">An teacsa làithreach: “%s”</string>
+    <string name="spoken_no_text_entered">Cha deach teacsa a chur a-steach</string>
+    <string name="spoken_auto_correct">Ceartaichidh <xliff:g id="KEY_NAME" example="Space">%1$s</xliff:g> am facal <xliff:g id="ORIGINAL_WORD">%2$s</xliff:g> gu <xliff:g id="CORRECTED_WORD">%3$s</xliff:g></string>
+    <string name="spoken_auto_correct_obscured">Nì <xliff:g id="KEY_NAME" example="Space">%1$s</xliff:g> ceartachadh fèin-obrachail</string>
+    <string name="spoken_empty_suggestion">Chan eil moladh ann</string>
+    <string name="spoken_description_unknown">Caractar nach aithne dhuinn</string>
+    <string name="spoken_description_shift">Gluais</string>
+    <string name="spoken_description_symbols_shift">Barrachd shamhlaidhean</string>
+    <string name="spoken_description_shift_shifted">Gluais</string>
+    <string name="spoken_description_symbols_shift_shifted">Samhlaidhean</string>
+    <string name="spoken_description_caps_lock">Gluais</string>
+    <string name="spoken_description_delete">Sguab às</string>
+    <string name="spoken_description_to_symbol">Samhlaidhean</string>
+    <string name="spoken_description_to_alpha">Litrichean</string>
+    <string name="spoken_description_to_numeric">Àireamhan</string>
+    <string name="spoken_description_settings">Roghainnean</string>
+    <string name="spoken_description_tab">Tab</string>
+    <string name="spoken_description_space">Space</string>
+    <string name="spoken_description_mic">Ion-chur gutha</string>
+    <string name="spoken_description_emoji">Emoji</string>
+    <string name="spoken_description_return">Return</string>
+    <string name="spoken_description_search">Lorg</string>
+    <string name="spoken_description_dot">Dotag</string>
+    <string name="spoken_description_language_switch">Atharraich an cànan</string>
+    <string name="spoken_description_action_next">Air adhart</string>
+    <string name="spoken_description_action_previous">Air ais</string>
+    <string name="spoken_description_shiftmode_on">Tha Shift an comas</string>
+    <string name="spoken_description_shiftmode_locked">Tha Caps Lock an comas</string>
+    <string name="spoken_description_mode_symbol">Modh shamhlaidhean</string>
+    <string name="spoken_description_mode_symbol_shift">Modh barrachd shamhlaidhean</string>
+    <string name="spoken_description_mode_alpha">Modh nan litrichean</string>
+    <string name="spoken_description_mode_phone">Modh an fhòn</string>
+    <string name="spoken_description_mode_phone_shift">Modh shamhlaidhean fòn</string>
+    <string name="announce_keyboard_hidden">Tha am meur-chlàr falaichte</string>
+    <string name="announce_keyboard_mode">A’ sealltainn meur-chlàr <xliff:g id="KEYBOARD_MODE" example="email">%s</xliff:g></string>
+    <string name="keyboard_mode_date">ceann-là</string>
+    <string name="keyboard_mode_date_time">ceann-là ’s àm</string>
+    <string name="keyboard_mode_email">post-d</string>
+    <string name="keyboard_mode_im">teachdaireachdan</string>
+    <string name="keyboard_mode_number">àireamhan</string>
+    <string name="keyboard_mode_phone">fòn</string>
+    <string name="keyboard_mode_text">teacs</string>
+    <string name="keyboard_mode_time">àm</string>
+    <string name="keyboard_mode_url">URL</string>
+    <string name="spoken_descrption_emoji_category_recents">O chionn ghoirid</string>
+    <string name="spoken_descrption_emoji_category_people">Daoine</string>
+    <string name="spoken_descrption_emoji_category_objects">Nithean</string>
+    <string name="spoken_descrption_emoji_category_nature">An nàdar</string>
+    <string name="spoken_descrption_emoji_category_places">Ionadan</string>
+    <string name="spoken_descrption_emoji_category_symbols">Samhlaidhean</string>
+    <string name="spoken_descrption_emoji_category_flags">Brataichean</string>
+    <string name="spoken_descrption_emoji_category_eight_smiley_people">Samhlaidhean-gnùis ⁊ daoine</string>
+    <string name="spoken_descrption_emoji_category_eight_animals_nature">Beathaichean ⁊ an nàdar</string>
+    <string name="spoken_descrption_emoji_category_eight_food_drink">Biadh ⁊ Deochan</string>
+    <string name="spoken_descrption_emoji_category_eight_travel_places">Siubhal ⁊ àitichean</string>
+    <string name="spoken_descrption_emoji_category_eight_activity">Gnìomhachd</string>
+    <string name="spoken_descrption_emoji_category_emoticons">Samhlaidhean-gnùis</string>
+    <string name="spoken_description_upper_case"><xliff:g id="LOWER_LETTER" example="A, E, ligature">%s</xliff:g> mhòr</string>
+    <string name="spoken_letter_0049">I mhòr</string>
+    <string name="spoken_letter_0130">I mhòr, dotag os a chionn</string>
+    <string name="spoken_symbol_unknown">Samhla nach aithne dhuinn</string>
+    <string name="spoken_emoji_unknown">Emoji nach aithne dhuinn</string>
+    <string name="spoken_emoticon_3A_2D_21_20">Aodann le fadal air</string>
+    <string name="spoken_emoticon_3A_2D_24_20">Aodann le nàire air</string>
+    <string name="spoken_emoticon_42_2D_29_20">Aodann le speuclairean-grèine</string>
+    <string name="spoken_emoticon_3A_4F_20">Aodann is iongnadh air</string>
+    <string name="spoken_emoticon_3A_2D_2A_20">Aodann pòige</string>
+    <string name="spoken_emoticon_3A_2D_5B_20">Aodann le fiamh drèin</string>
+    <string name="spoken_open_more_keys_keyboard">Tha roghainn eile nan caractaran ri làimh</string>
+    <string name="spoken_close_more_keys_keyboard">Chaidh roghainn eile nan caractaran a leigeil seachad</string>
+    <string name="spoken_open_more_suggestions">Tha na molaidhean eile ri làimh</string>
+    <string name="spoken_close_more_suggestions">Chaidh na molaidhean eile a leigeil seachad</string>
+</resources>

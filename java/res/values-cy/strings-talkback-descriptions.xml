@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+**
+** Copyright 2015, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="spoken_use_headphones">Cysyllta glustffonau i glywed bysellau\'r cyfrinair yn cael eu hadrodd yn uchel.</string>
+    <string name="spoken_current_text_is">Y testun cyfredol yw \"%s\"</string>
+    <string name="spoken_no_text_entered">Ni roddwyd unrhyw destun</string>
+    <string name="spoken_auto_correct">Mae <xliff:g id="KEY_NAME" example="Space">%1$s</xliff:g> yn cywiro <xliff:g id="ORIGINAL_WORD">%2$s</xliff:g> i <xliff:g id="CORRECTED_WORD">%3$s</xliff:g></string>
+    <string name="spoken_auto_correct_obscured">Mae <xliff:g id="KEY_NAME" example="Space">%1$s</xliff:g> yn perfformio cywiriad awtomatig</string>
+    <string name="spoken_empty_suggestion">Dim awgrymiad</string>
+    <string name="spoken_description_unknown">Nod anhysbys</string>
+    <string name="spoken_description_shift">Shift</string>
+    <string name="spoken_description_symbols_shift">Rhagor o symbolau</string>
+    <string name="spoken_description_shift_shifted">Shift</string>
+    <string name="spoken_description_symbols_shift_shifted">Symbolau</string>
+    <string name="spoken_description_caps_lock">Shift</string>
+    <string name="spoken_description_delete">Dileu</string>
+    <string name="spoken_description_to_symbol">Symbolau</string>
+    <string name="spoken_description_to_alpha">Llythrennau</string>
+    <string name="spoken_description_to_numeric">Rhifau</string>
+    <string name="spoken_description_settings">Gosodiadau</string>
+    <string name="spoken_description_tab">Tab</string>
+    <string name="spoken_description_space">Bwlch</string>
+    <string name="spoken_description_mic">Mewnbwn llais</string>
+    <string name="spoken_description_emoji">Gwenoglun</string>
+    <string name="spoken_description_return">Return</string>
+    <string name="spoken_description_search">Chwilio</string>
+    <string name="spoken_description_dot">Dot</string>
+    <string name="spoken_description_language_switch">Newid iaith</string>
+    <string name="spoken_description_action_next">Nesaf</string>
+    <string name="spoken_description_action_previous">Blaenorol</string>
+    <string name="spoken_description_shiftmode_on">Galluogwyd Shift</string>
+    <string name="spoken_description_shiftmode_locked">Galluogwyd CapsLock</string>
+    <string name="spoken_description_mode_symbol">Modd symbolau</string>
+    <string name="spoken_description_mode_symbol_shift">Modd rhagor o symbolau</string>
+    <string name="spoken_description_mode_alpha">Modd llythrennau</string>
+    <string name="spoken_description_mode_phone">Modd ffôn</string>
+    <string name="spoken_description_mode_phone_shift">Modd symbolau ffôn</string>
+    <string name="announce_keyboard_hidden">Cuddiwyd y bysellfwrdd</string>
+    <string name="announce_keyboard_mode">Yn dangos bysellfwrdd <xliff:g id="KEYBOARD_MODE" example="email">%s</xliff:g></string>
+    <string name="keyboard_mode_date">dyddiad</string>
+    <string name="keyboard_mode_date_time">dyddiad ac amser</string>
+    <string name="keyboard_mode_email">ebost</string>
+    <string name="keyboard_mode_im">negesu</string>
+    <string name="keyboard_mode_number">rhif</string>
+    <string name="keyboard_mode_phone">ffôn</string>
+    <string name="keyboard_mode_text">testun</string>
+    <string name="keyboard_mode_time">amser</string>
+    <string name="keyboard_mode_url">URL</string>
+    <string name="spoken_descrption_emoji_category_recents">Diweddar</string>
+    <string name="spoken_descrption_emoji_category_people">Pobol</string>
+    <string name="spoken_descrption_emoji_category_objects">Gwrthrychau</string>
+    <string name="spoken_descrption_emoji_category_nature">Natur</string>
+    <string name="spoken_descrption_emoji_category_places">Lleoedd</string>
+    <string name="spoken_descrption_emoji_category_symbols">Symbolau</string>
+    <string name="spoken_descrption_emoji_category_flags">Baneri</string>
+    <string name="spoken_descrption_emoji_category_eight_smiley_people">Gwenogluniau a Phobol</string>
+    <string name="spoken_descrption_emoji_category_eight_animals_nature">Anifeiliaid a Natur</string>
+    <string name="spoken_descrption_emoji_category_eight_food_drink">Bwyd a Diod</string>
+    <string name="spoken_descrption_emoji_category_eight_travel_places">Teithio a Lleoedd</string>
+    <string name="spoken_descrption_emoji_category_eight_activity">Gweithred</string>
+    <string name="spoken_descrption_emoji_category_emoticons">Gwenogluniau</string>
+    <string name="spoken_description_upper_case">Prif lythyren <xliff:g id="LOWER_LETTER" example="A, E, ligature">%s</xliff:g></string>
+    <string name="spoken_letter_0049">Prif lythyren I</string>
+    <string name="spoken_letter_0130">Prif lythyren I, dot uwch ei ben</string>
+    <string name="spoken_symbol_unknown">Symbol anhysbys</string>
+    <string name="spoken_emoji_unknown">Gwenoglun anhysbys</string>
+    <string name="spoken_emoticon_3A_2D_21_20">Wyneb wedi diflasu</string>
+    <string name="spoken_emoticon_3A_2D_24_20">Wyneb embaras</string>
+    <string name="spoken_emoticon_42_2D_29_20">Wyneb yn gwisgo sbectol haul</string>
+    <string name="spoken_emoticon_3A_4F_20">Wyneb wedi synnu</string>
+    <string name="spoken_emoticon_3A_2D_2A_20">Wyneb yn cusanu</string>
+    <string name="spoken_emoticon_3A_2D_5B_20">Wyneb yn gwgu</string>
+    <string name="spoken_open_more_keys_keyboard">Mae nodau amgen ar gael</string>
+    <string name="spoken_close_more_keys_keyboard">Diystyriwyd nodau amgen</string>
+    <string name="spoken_open_more_suggestions">Mae awgrymiadau amgen ar gael</string>
+    <string name="spoken_close_more_suggestions">Mae awgrymiadau amgen wedi eu gwrthod</string>
+</resources>
