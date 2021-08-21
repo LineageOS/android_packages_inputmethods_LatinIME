@@ -18,18 +18,18 @@
 */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="spoken_use_headphones">Ceangail headset ris ach an cluinn thu iuchraichean an fhacail-fhaire ’gan cantainn riut.</string>
+    <string name="spoken_use_headphones">Ceangail seata-cinn ris ach an cluinn thu iuchraichean an fhacail-fhaire ’gan cantainn riut.</string>
     <string name="spoken_current_text_is">An teacsa làithreach: “%s”</string>
     <string name="spoken_no_text_entered">Cha deach teacsa a chur a-steach</string>
     <string name="spoken_auto_correct">Ceartaichidh <xliff:g id="KEY_NAME" example="Space">%1$s</xliff:g> am facal <xliff:g id="ORIGINAL_WORD">%2$s</xliff:g> gu <xliff:g id="CORRECTED_WORD">%3$s</xliff:g></string>
     <string name="spoken_auto_correct_obscured">Nì <xliff:g id="KEY_NAME" example="Space">%1$s</xliff:g> ceartachadh fèin-obrachail</string>
     <string name="spoken_empty_suggestion">Chan eil moladh ann</string>
     <string name="spoken_description_unknown">Caractar nach aithne dhuinn</string>
-    <string name="spoken_description_shift">Gluais</string>
+    <string name="spoken_description_shift">Shift</string>
     <string name="spoken_description_symbols_shift">Barrachd shamhlaidhean</string>
-    <string name="spoken_description_shift_shifted">Gluais</string>
+    <string name="spoken_description_shift_shifted">Shift</string>
     <string name="spoken_description_symbols_shift_shifted">Samhlaidhean</string>
-    <string name="spoken_description_caps_lock">Gluais</string>
+    <string name="spoken_description_caps_lock">Shift</string>
     <string name="spoken_description_delete">Sguab às</string>
     <string name="spoken_description_to_symbol">Samhlaidhean</string>
     <string name="spoken_description_to_alpha">Litrichean</string>
@@ -63,7 +63,7 @@
     <string name="keyboard_mode_text">teacs</string>
     <string name="keyboard_mode_time">àm</string>
     <string name="keyboard_mode_url">URL</string>
-    <string name="spoken_descrption_emoji_category_recents">O chionn ghoirid</string>
+    <string name="spoken_descrption_emoji_category_recents">O chionn goirid</string>
     <string name="spoken_descrption_emoji_category_people">Daoine</string>
     <string name="spoken_descrption_emoji_category_objects">Nithean</string>
     <string name="spoken_descrption_emoji_category_nature">An nàdar</string>
