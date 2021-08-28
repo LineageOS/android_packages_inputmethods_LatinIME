@@ -133,7 +133,7 @@ public class BinaryDictDecoderEncoderTests extends AndroidTestCase {
         for (int i = 0; i < number; ++i) {
             final String word = words.get(i);
             final ArrayList<WeightedString> shortcuts = new ArrayList<>();
-            dict.add(word, new ProbabilityInfo(UNIGRAM_FREQ), false /* isNotAWord */,
+            dict.add(word, new ProbabilityInfo(UNIGRAM_FREQ), new ArrayList<WeightedString>(), false /* isNotAWord */,
                     false /* isPossiblyOffensive */);
         }
     }
