@@ -40,6 +40,11 @@
     <string name="morekeys_w"></string>
     <string name="morekeys_q"></string>
     <string name="morekeys_x"></string>
+    <string name="morekeys_p"></string>
+    <string name="morekeys_b"></string>
+    <string name="morekeys_f"></string>
+    <string name="morekeys_m"></string>
+    <string name="morekeys_x"></string>
     <string name="keyspec_q">q</string>
     <string name="keyspec_w">w</string>
     <string name="keyspec_y">y</string>

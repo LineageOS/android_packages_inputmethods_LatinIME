@@ -75,7 +75,7 @@ public class Ver4DictEncoder implements DictEncoder {
         }
         for (final WordProperty wordProperty : dict) {
             if (!binaryDict.addUnigramEntry(wordProperty.mWord, wordProperty.getProbability(),
-                    wordProperty.mIsBeginningOfSentence, wordProperty.mIsNotAWord,
+                    "",0,wordProperty.mIsBeginningOfSentence, wordProperty.mIsNotAWord,
                     wordProperty.mIsPossiblyOffensive, 0 /* timestamp */)) {
                 MakedictLog.e("Cannot add unigram entry for " + wordProperty.mWord);
             }

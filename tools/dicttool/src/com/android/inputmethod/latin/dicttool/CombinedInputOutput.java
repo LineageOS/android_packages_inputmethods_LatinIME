@@ -106,7 +106,7 @@ public class CombinedInputOutput {
             final String args[] = line.trim().split(",");
             if (args[0].matches(CombinedFormatUtils.WORD_TAG + "=.*")) {
                 if (null != word) {
-                    dict.add(word, probabilityInfo, isNotAWord, isPossiblyOffensive);
+                    dict.add(word, probabilityInfo, shortcuts, isNotAWord, isPossiblyOffensive);
                     for (WeightedString s : bigrams) {
                         dict.setBigram(word, s.mWord, s.mProbabilityInfo);
                     }
@@ -180,7 +180,7 @@ public class CombinedInputOutput {
             }
         }
         if (null != word) {
-            dict.add(word, probabilityInfo, isNotAWord, isPossiblyOffensive);
+            dict.add(word, probabilityInfo, shortcuts, isNotAWord, isPossiblyOffensive);
             for (WeightedString s : bigrams) {
                 dict.setBigram(word, s.mWord, s.mProbabilityInfo);
             }
