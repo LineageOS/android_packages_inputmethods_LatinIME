@@ -14,8 +14,5 @@
      limitations under the License.
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="subtype_no_language_bepo">Alfabet (Bépo)</string>
-    <string name="subtype_hu_ZZ">Hongaars (QWERTY)</string>
-    <string name="keyboard_theme_follow_system">Volg systeeminstellingen</string>
-    <string name="prefs_keyboard_height_scale">Toetsenbord hoogte</string>
+    <string name="subtype_no_language_bepo">Alphabet (Bépo)</string>
 </resources>
