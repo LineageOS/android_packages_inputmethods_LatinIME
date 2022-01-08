@@ -18,77 +18,152 @@
 */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Spoken description to let the user know that when typing in a password, they can plug in a headset in to hear spoken descriptions of the keys they type. [CHAR LIMIT=NONE] -->
     <string name="spoken_use_headphones">Ceangail seata-cinn ris ach an cluinn thu iuchraichean an fhacail-fhaire ’gan cantainn riut.</string>
+    <!-- Spoken description for the currently entered text -->
     <string name="spoken_current_text_is">An teacsa làithreach: “%s”</string>
+    <!-- Spoken description when there is no text entered -->
     <string name="spoken_no_text_entered">Cha deach teacsa a chur a-steach</string>
+    <!-- Spoken description to let the user know what auto-correction will be performed when a key is pressed. An auto-correction replaces a single word with one or more words. -->
     <string name="spoken_auto_correct">Ceartaichidh <xliff:g id="KEY_NAME" example="Space">%1$s</xliff:g> am facal <xliff:g id="ORIGINAL_WORD">%2$s</xliff:g> gu <xliff:g id="CORRECTED_WORD">%3$s</xliff:g></string>
+    <!-- Spoken description used during obscured (e.g. password) entry to let the user know that auto-correction will be performed when a key is pressed. -->
     <string name="spoken_auto_correct_obscured">Nì <xliff:g id="KEY_NAME" example="Space">%1$s</xliff:g> ceartachadh fèin-obrachail</string>
+    <!-- Spoken description of a suggestion when nothing is specified and the field is blank. -->
     <string name="spoken_empty_suggestion">Chan eil moladh ann</string>
+    <!-- Spoken description for unknown keyboard keys. -->
     <string name="spoken_description_unknown">Caractar nach aithne dhuinn</string>
+    <!-- Spoken description for the "Shift" keyboard key when "Shift" is off. -->
     <string name="spoken_description_shift">Shift</string>
+    <!-- Spoken description for the "Shift" keyboard key in symbols mode. -->
     <string name="spoken_description_symbols_shift">Barrachd shamhlaidhean</string>
+    <!-- Spoken description for the "Shift" keyboard key when "Shift" is on. -->
     <string name="spoken_description_shift_shifted">Shift</string>
+    <!-- Spoken description for the "Shift" keyboard key in 2nd symbols (a.k.a. symbols shift) mode. -->
     <string name="spoken_description_symbols_shift_shifted">Samhlaidhean</string>
+    <!-- Spoken description for the "Shift" keyboard key when "Caps lock" is on. -->
     <string name="spoken_description_caps_lock">Shift</string>
+    <!-- Spoken description for the "Delete" keyboard key. -->
     <string name="spoken_description_delete">Sguab às</string>
+    <!-- Spoken description for the "To Symbol" keyboard key. -->
     <string name="spoken_description_to_symbol">Samhlaidhean</string>
+    <!-- Spoken description for the "To Alpha" keyboard key. -->
     <string name="spoken_description_to_alpha">Litrichean</string>
+    <!-- Spoken description for the "To Numbers" keyboard key. -->
     <string name="spoken_description_to_numeric">Àireamhan</string>
+    <!-- Spoken description for the "Settings" keyboard key. -->
     <string name="spoken_description_settings">Roghainnean</string>
+    <!-- Spoken description for the "Tab" keyboard key. -->
     <string name="spoken_description_tab">Tab</string>
+    <!-- Spoken description for the "Space" keyboard key. -->
     <string name="spoken_description_space">Space</string>
+    <!-- Spoken description for the "Mic" keyboard key. -->
     <string name="spoken_description_mic">Ion-chur gutha</string>
+    <!-- Spoken description for the "Emoji" keyboard key. -->
     <string name="spoken_description_emoji">Emoji</string>
+    <!-- Spoken description for the "Return" keyboard key. -->
     <string name="spoken_description_return">Return</string>
+    <!-- Spoken description for the "Search" keyboard key. -->
     <string name="spoken_description_search">Lorg</string>
+    <!-- Spoken description for the "U+2022" (BULLET) keyboard key. -->
     <string name="spoken_description_dot">Dotag</string>
+    <!-- Spoken description for the "Switch language" keyboard key. -->
     <string name="spoken_description_language_switch">Atharraich an cànan</string>
+    <!-- Spoken description for the "Next" action keyboard key. -->
     <string name="spoken_description_action_next">Air adhart</string>
+    <!-- Spoken description for the "Previous" action keyboard key. -->
     <string name="spoken_description_action_previous">Air ais</string>
+    <!-- Spoken feedback after turning "Shift" mode on. -->
     <string name="spoken_description_shiftmode_on">Tha Shift an comas</string>
+    <!-- Spoken feedback after turning "Caps lock" mode on. -->
     <string name="spoken_description_shiftmode_locked">Tha Caps Lock an comas</string>
+    <!-- Spoken feedback after changing to the symbols keyboard. -->
     <string name="spoken_description_mode_symbol">Modh shamhlaidhean</string>
+    <!-- Spoken feedback after changing to the 2nd symbols (a.k.a. symbols shift) keyboard. -->
     <string name="spoken_description_mode_symbol_shift">Modh barrachd shamhlaidhean</string>
+    <!-- Spoken feedback after changing to the alphanumeric keyboard. -->
     <string name="spoken_description_mode_alpha">Modh nan litrichean</string>
+    <!-- Spoken feedback after changing to the phone dialer keyboard. -->
     <string name="spoken_description_mode_phone">Modh an fhòn</string>
+    <!-- Spoken feedback after changing to the shifted phone dialer (symbols) keyboard. -->
     <string name="spoken_description_mode_phone_shift">Modh shamhlaidhean fòn</string>
+    <!-- Spoken feedback when the keyboard is hidden. -->
     <string name="announce_keyboard_hidden">Tha am meur-chlàr falaichte</string>
+    <!-- Spoken feedback when the keyboard mode changes. -->
     <string name="announce_keyboard_mode">A’ sealltainn meur-chlàr <xliff:g id="KEYBOARD_MODE" example="email">%s</xliff:g></string>
+    <!-- Description of the keyboard mode for entering dates. -->
     <string name="keyboard_mode_date">ceann-là</string>
+    <!-- Description of the keyboard mode for entering dates and times. -->
     <string name="keyboard_mode_date_time">ceann-là ’s àm</string>
+    <!-- Description of the keyboard mode for entering email addresses. -->
     <string name="keyboard_mode_email">post-d</string>
+    <!-- Description of the keyboard mode for entering text messages. -->
     <string name="keyboard_mode_im">teachdaireachdan</string>
+    <!-- Description of the keyboard mode for entering numbers. -->
     <string name="keyboard_mode_number">àireamhan</string>
+    <!-- Description of the keyboard mode for entering phone numbers. -->
     <string name="keyboard_mode_phone">fòn</string>
+    <!-- Description of the keyboard mode for entering generic text. -->
     <string name="keyboard_mode_text">teacs</string>
+    <!-- Description of the keyboard mode for entering times. -->
     <string name="keyboard_mode_time">àm</string>
+    <!-- Description of the keyboard mode for entering URLs. -->
     <string name="keyboard_mode_url">URL</string>
+    <!-- Description of the emoji category icon of Recents. -->
     <string name="spoken_descrption_emoji_category_recents">O chionn goirid</string>
+    <!-- Description of the emoji category icon of People. -->
     <string name="spoken_descrption_emoji_category_people">Daoine</string>
+    <!-- Description of the emoji category icon of Objects. -->
     <string name="spoken_descrption_emoji_category_objects">Nithean</string>
+    <!-- Description of the emoji category icon of Nature. -->
     <string name="spoken_descrption_emoji_category_nature">An nàdar</string>
+    <!-- Description of the emoji category icon of Places. -->
     <string name="spoken_descrption_emoji_category_places">Ionadan</string>
+    <!-- Description of the emoji category icon of Symbols. -->
     <string name="spoken_descrption_emoji_category_symbols">Samhlaidhean</string>
+    <!-- Description of the emoji category icon of Flags. -->
     <string name="spoken_descrption_emoji_category_flags">Brataichean</string>
+    <!-- Description of the emoji category icon of Smiley & People. -->
     <string name="spoken_descrption_emoji_category_eight_smiley_people">Samhlaidhean-gnùis ⁊ daoine</string>
+    <!-- Description of the emoji category icon of Animals & Nature. -->
     <string name="spoken_descrption_emoji_category_eight_animals_nature">Beathaichean ⁊ an nàdar</string>
+    <!-- Description of the emoji category icon of Food & Drink. -->
     <string name="spoken_descrption_emoji_category_eight_food_drink">Biadh ⁊ Deochan</string>
+    <!-- Description of the emoji category icon of Travel & Places. -->
     <string name="spoken_descrption_emoji_category_eight_travel_places">Siubhal ⁊ àitichean</string>
+    <!-- Description of the emoji category icon of Activity. -->
     <string name="spoken_descrption_emoji_category_eight_activity">Gnìomhachd</string>
+    <!-- Description of the emoji category icon of Emoticons. -->
     <string name="spoken_descrption_emoji_category_emoticons">Samhlaidhean-gnùis</string>
+    <!-- Description of an upper case letter of LOWER_LETTER. -->
     <string name="spoken_description_upper_case"><xliff:g id="LOWER_LETTER" example="A, E, ligature">%s</xliff:g> mhòr</string>
+    <!-- Spoken description for Unicode code point U+0049: "I" LATIN CAPITAL LETTER I
+         Note that depending on locale, the lower-case of this letter is U+0069 or U+0131. -->
     <string name="spoken_letter_0049">I mhòr</string>
+    <!-- Spoken description for Unicode code point U+0130: "İ" LATIN CAPITAL LETTER I WITH DOT ABOVE
+         Note that depending on locale, the lower-case of this letter is U+0069 or U+0131. -->
     <string name="spoken_letter_0130">I mhòr, dotag os a chionn</string>
+    <!-- Spoken description for unknown symbol code point. -->
     <string name="spoken_symbol_unknown">Samhla nach aithne dhuinn</string>
+    <!-- Spoken description for unknown emoji code point. -->
     <string name="spoken_emoji_unknown">Emoji nach aithne dhuinn</string>
+    <!-- Spoken description for emoticons ":-!". -->
     <string name="spoken_emoticon_3A_2D_21_20">Aodann le fadal air</string>
+    <!-- Spoken description for emoticons ":-$". -->
     <string name="spoken_emoticon_3A_2D_24_20">Aodann le nàire air</string>
+    <!-- Spoken description for emoticons "B-)". -->
     <string name="spoken_emoticon_42_2D_29_20">Aodann le speuclairean-grèine</string>
+    <!-- Spoken description for emoticons ":O". -->
     <string name="spoken_emoticon_3A_4F_20">Aodann is iongnadh air</string>
+    <!-- Spoken description for emoticons ":-*". -->
     <string name="spoken_emoticon_3A_2D_2A_20">Aodann pòige</string>
+    <!-- Spoken description for emoticons ":-[". -->
     <string name="spoken_emoticon_3A_2D_5B_20">Aodann le fiamh drèin</string>
+    <!-- Spoken descriptions when opening a more keys keyboard that has alternative characters. -->
     <string name="spoken_open_more_keys_keyboard">Tha roghainn eile nan caractaran ri làimh</string>
+    <!-- Spoken descriptions when closing a more keys keyboard that has alternative characters. -->
     <string name="spoken_close_more_keys_keyboard">Chaidh roghainn eile nan caractaran a leigeil seachad</string>
+    <!-- Spoken descriptions when opening a more suggestions panel that has alternative suggested words. -->
     <string name="spoken_open_more_suggestions">Tha na molaidhean eile ri làimh</string>
+    <!-- Spoken descriptions when closing a more suggestions panel that has alternative suggested words. -->
     <string name="spoken_close_more_suggestions">Chaidh na molaidhean eile a leigeil seachad</string>
 </resources>
