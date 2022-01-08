@@ -56,7 +56,7 @@
     <string name="show_language_switch_key_summary">Seall dhomh nuair a bhios iomadh cànan ion-chuir an comas</string>
     <string name="key_preview_popup_dismiss_delay">Dàil air leigeil seachad priobadh iuchrach</string>
     <string name="key_preview_popup_dismiss_no_delay">Gun dàil</string>
-    <string name="key_preview_popup_dismiss_default_delay">Tùsail</string>
+    <string name="key_preview_popup_dismiss_default_delay">Bun-roghainn</string>
     <string name="abbreviation_unit_milliseconds"><xliff:g id="MILLISECONDS">%s</xliff:g>ms</string>
     <string name="settings_system_default">Bun-roghainn an t-siostaim</string>
     <string name="use_contacts_dict">Mol ainmean an luchd-aithne</string>
@@ -90,6 +90,7 @@
     <string name="gesture_space_aware">Slìobadh thar iomadh facal</string>
     <string name="gesture_space_aware_summary">Cuiridh slìobadh dhan spacebar beàrn a-steach</string>
     <string name="voice_input">Iuchair ion-chuir gutha</string>
+    <string name="voice_input_disabled_summary">Cha deach modh ion-chur gutha a chur an comas. Thoir sùil air roghainnean nan cànan ⁊ ion-chur.</string>
     <string name="configure_input_method">Rèitich na modhan ion-chuir</string>
     <string name="language_selection_title">Cànain</string>
     <string name="help_and_feedback">Cobhair ⁊ beachdan thugainn</string>
@@ -142,13 +143,15 @@
     <string name="prefs_key_longpress_timeout_settings">Dàil a’ bhrùthaidh-iuchrach fhaide</string>
     <string name="prefs_enable_emoji_alt_physical_key">Emoji air meur-chlàr fiosaigeach</string>
     <string name="prefs_enable_emoji_alt_physical_key_summary">Seallaidh iuchair Alt fiosaigeach pailead nan Emoji</string>
-    <string name="button_default">Tùsail</string>
+    <string name="button_default">Bun-roghainn</string>
     <string name="setup_welcome_title">"Fàilte gu <xliff:g id="APPLICATION_NAME" example="Android Keyboard">%s</xliff:g>"</string>
     <string name="setup_welcome_additional_description">le taidhpeadh slìobaidh</string>
     <string name="setup_start_action">Dèan toiseach-tòiseachaidh</string>
     <string name="setup_next_action">An ath-cheum</string>
     <string name="setup_steps_title">"A’ suidheachadh <xliff:g id="APPLICATION_NAME" example="Android Keyboard">%s</xliff:g>"</string>
     <string name="setup_step1_title">"Cuir an comas <xliff:g id="APPLICATION_NAME" example="Android Keyboard">%s</xliff:g>"</string>
+    <string name="setup_step1_instruction">"Cuir cromag ri “<xliff:g id="APPLICATION_NAME" example="Android Keyboard">%s</xliff:g>” an an roghainnean nan cànan ⁊ ion-chur agad. Ceadaichidh sin dha gun ruith e air an uidheam agad."</string>
+    <string name="setup_step1_finished_instruction">"Chaidh <xliff:g id="APPLICATION_NAME" example="Android Keyboard">%s</xliff:g> a chur an comas ann an roghainnean nan cànan ⁊ ion-chur agad mu thràth, mar sin tha an ceum seo deiseil. Air adhart dhan ath-cheum!"</string>
     <string name="setup_step1_action">Cuir an comas e sna roghainnean</string>
     <string name="setup_step2_title">"Geàrr leum gu <xliff:g id="APPLICATION_NAME" example="Android Keyboard">%s</xliff:g>"</string>
     <string name="setup_step2_instruction">"Nise, tagh “<xliff:g id="APPLICATION_NAME" example="Android Keyboard">%s</xliff:g>” mar am modh ion-chuir ghnìomhach agad."</string>
@@ -177,12 +180,20 @@
     <string name="check_for_updates_now">Ath-nuadhaich</string>
     <string name="last_update">An t-ùrachadh mu dheireadh</string>
     <string name="message_updating">A’ toirt sùil airson ùrachaidhean</string>
+    <string name="message_loading">’Ga luchdadh…</string>
     <string name="main_dict_description">Am prìomh-fhaclair</string>
     <string name="cancel">Sguir dheth</string>
     <string name="go_to_settings">Roghainnean</string>
     <string name="install_dict">Stàlaich</string>
     <string name="cancel_download_dict">Sguir dheth</string>
     <string name="delete_dict">Sguab às</string>
+    <string name="should_download_over_metered_prompt">Tha faclair aig a’ chànan a thagh thu air an uidheam mobile agad.&lt;br/&gt;
+Mholamaid gun &lt;b&gt;luchdaich thu a-nuas&lt;/b&gt; faclair <xliff:g id="LANGUAGE_NAME" example="English">%1$s</xliff:g> ach am bi an taidhpeadh nas fhasa dhut.&lt;br/&gt;
+&lt;br/&gt;
+Dh’fhaoidte gun doir an luchdadh a-nuas mionaid no dhà thar 3G. Dh’fhaoidte gun èirich cosgaisean ’na lùib mur eil &lt;b&gt;plana dàta gun chrìoch&lt;/b&gt;.&lt;br/&gt; agad.
+Mur eil thu cinnteach dè am plana dàta a th’ agad, mholamaid gun lorg thu ceangal WiFi airson an luchdadh a-nuas a thòiseachadh gu fèin-obrachail.&lt;br/&gt;
+&lt;br/&gt;
+Gliocas: ’S urrainn dhut faclairean a luchdadh a-nuas ’s a thoirt air falbh ’s tu a’ tadhal air clàr-taice &lt;b&gt;Cànanan ⁊ ion-chur&lt;/b&gt; sna &lt;b&gt;Roghainnean&lt;/b&gt; aig an uidheam mobile agad.</string>
     <string name="download_over_metered">Luchdaich a-nuas an-dràsta (<xliff:g id="SIZE_IN_MEGABYTES" example="0.7">%1$.1f</xliff:g>MB)</string>
     <string name="do_not_download_over_metered">Luchdaich a-nuas thar WiFi</string>
     <string name="dict_available_notification_title">Tha faclair ri fhaighinn dha <xliff:g id="LANGUAGE_NAME" example="English">%1$s</xliff:g></string>
