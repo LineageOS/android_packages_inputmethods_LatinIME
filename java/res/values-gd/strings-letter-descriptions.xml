@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+**
+** Copyright 2014, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<!--
+    These accented letters (spoken_accented_letter_*) are unsupported by TTS.
+    These symbols (spoken_symbol_*) are also unsupported by TTS.
+    TODO: Remove these string resources when TTS/TalkBack support these letters.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="spoken_accented_letter_00AA">Samhla òrduigh boireann</string>
+    <string name="spoken_accented_letter_00B5">Samhla micreo</string>
+    <string name="spoken_accented_letter_00BA">Samhla òrduigh fireann</string>
+    <string name="spoken_accented_letter_00DF">S gheur</string>
+    <string name="spoken_accented_letter_00E0">À le stràc throm</string>
+    <string name="spoken_accented_letter_00E1">Á le stràc gheur</string>
+    <string name="spoken_accented_letter_00E2">Â le cuairt-lùb</string>
+    <string name="spoken_accented_letter_00E3">A le tonn</string>
+    <string name="spoken_accented_letter_00E4">A le umlaut</string>
+    <string name="spoken_accented_letter_00E5">A le fàinne os a cionn</string>
+    <string name="spoken_accented_letter_00E6">Nasg-litir A, E</string>
+    <string name="spoken_accented_letter_00E7">C le Cedilla</string>
+    <string name="spoken_accented_letter_00E8">È le stràc throm</string>
+    <string name="spoken_accented_letter_00E9">É le stràc gheur</string>
+    <string name="spoken_accented_letter_00EA">Ê le cuairt-lùb</string>
+    <string name="spoken_accented_letter_00EB">E le umlaut</string>
+    <string name="spoken_accented_letter_00EC">Ì le stràc throm</string>
+    <string name="spoken_accented_letter_00ED">Í le stràc gheur</string>
+    <string name="spoken_accented_letter_00EE">Î le cuairt-lùb</string>
+    <string name="spoken_accented_letter_00EF">I le umlaut</string>
+    <string name="spoken_accented_letter_00F0">Eth</string>
+    <string name="spoken_accented_letter_00F1">N le tonn</string>
+    <string name="spoken_accented_letter_00F2">Ò le stràc throm</string>
+    <string name="spoken_accented_letter_00F3">Ó le stràc gheur</string>
+    <string name="spoken_accented_letter_00F4">Ô le cuairt-lùb</string>
+    <string name="spoken_accented_letter_00F5">O le tonn</string>
+    <string name="spoken_accented_letter_00F6">O le umlaut</string>
+    <string name="spoken_accented_letter_00F8">O le stròc</string>
+    <string name="spoken_accented_letter_00F9">Ù le stràc throm</string>
+    <string name="spoken_accented_letter_00FA">Ù le stràc gheur</string>
+    <string name="spoken_accented_letter_00FB">Û le cuairt-lùb</string>
+    <string name="spoken_accented_letter_00FC">U le umlaut</string>
+    <string name="spoken_accented_letter_00FD">Y le stràc gheur</string>
+    <string name="spoken_accented_letter_00FE">Thorn</string>
+    <string name="spoken_accented_letter_00FF">Y le umlaut</string>
+    <string name="spoken_accented_letter_0101">A le macron</string>
+    <string name="spoken_accented_letter_0103">A le brìbh</string>
+    <string name="spoken_accented_letter_0105">A le ogonek</string>
+    <string name="spoken_accented_letter_0107">C le stràc gheur</string>
+    <string name="spoken_accented_letter_0109">C le cuairt-lùb</string>
+    <string name="spoken_accented_letter_010B">C le dotag os a cionn</string>
+    <string name="spoken_accented_letter_010D">C le caron</string>
+    <string name="spoken_accented_letter_010F">D le caron</string>
+    <string name="spoken_accented_letter_0111">D le stròc</string>
+    <string name="spoken_accented_letter_0113">E le macron</string>
+    <string name="spoken_accented_letter_0115">E le brìbh</string>
+    <string name="spoken_accented_letter_0117">E le dotag os a cionn</string>
+    <string name="spoken_accented_letter_0119">E le ogonek</string>
+    <string name="spoken_accented_letter_011B">E le caron</string>
+    <string name="spoken_accented_letter_011D">G le cuairt-lùb</string>
+    <string name="spoken_accented_letter_011F">G le brìbh</string>
+    <string name="spoken_accented_letter_0121">G le dotag os a cionn</string>
+    <string name="spoken_accented_letter_0123">G le cedilla</string>
+    <string name="spoken_accented_letter_0125">H le cuairt-lùb</string>
+    <string name="spoken_accented_letter_0127">H le stròc</string>
+    <string name="spoken_accented_letter_0129">I le tonn</string>
+    <string name="spoken_accented_letter_012B">I le macron</string>
+    <string name="spoken_accented_letter_012D">I le brìbh</string>
+    <string name="spoken_accented_letter_012F">I le ogonek</string>
+    <string name="spoken_accented_letter_0131">I gun dotag</string>
+    <string name="spoken_accented_letter_0133">Nasg-litir I, J</string>
+    <string name="spoken_accented_letter_0135">J le cuairt-lùb</string>
+    <string name="spoken_accented_letter_0137">K le cedilla</string>
+    <string name="spoken_accented_letter_0138">Kra</string>
+    <string name="spoken_accented_letter_013A">L le stràc gheur</string>
+    <string name="spoken_accented_letter_013C">L le cedilla</string>
+    <string name="spoken_accented_letter_013E">L le caron</string>
+    <string name="spoken_accented_letter_0140">L le dotag sa mheadhan</string>
+    <string name="spoken_accented_letter_0142">L le stròc</string>
+    <string name="spoken_accented_letter_0144">N le stràc gheur</string>
+    <string name="spoken_accented_letter_0146">N le cedilla</string>
+    <string name="spoken_accented_letter_0148">N le caron</string>
+    <string name="spoken_accented_letter_0149">N le asgair roimphe</string>
+    <string name="spoken_accented_letter_014B">Eng</string>
+    <string name="spoken_accented_letter_014D">O le macron</string>
+    <string name="spoken_accented_letter_014F">O le brìbh</string>
+    <string name="spoken_accented_letter_0151">Ó le dà stràc gheur</string>
+    <string name="spoken_accented_letter_0153">Nasg-litir O, E</string>
+    <string name="spoken_accented_letter_0155">R le stràc gheur</string>
+    <string name="spoken_accented_letter_0157">R le cedilla</string>
+    <string name="spoken_accented_letter_0159">R le caron</string>
+    <string name="spoken_accented_letter_015B">S le stràc gheur</string>
+    <string name="spoken_accented_letter_015D">S le cuairt-lùb</string>
+    <string name="spoken_accented_letter_015F">S le cedilla</string>
+    <string name="spoken_accented_letter_0161">S le caron</string>
+    <string name="spoken_accented_letter_0163">T le cedilla</string>
+    <string name="spoken_accented_letter_0165">T le caron</string>
+    <string name="spoken_accented_letter_0167">T le stròc</string>
+    <string name="spoken_accented_letter_0169">U le tonn</string>
+    <string name="spoken_accented_letter_016B">U le macron</string>
+    <string name="spoken_accented_letter_016D">U le brìbh</string>
+    <string name="spoken_accented_letter_016F">U le fàinne os a cionn</string>
+    <string name="spoken_accented_letter_0171">Ù le dà stràc gheur</string>
+    <string name="spoken_accented_letter_0173">U le ogonek</string>
+    <string name="spoken_accented_letter_0175">W le cuairt-lùb</string>
+    <string name="spoken_accented_letter_0177">Y le cuairt-lùb</string>
+    <string name="spoken_accented_letter_017A">Z le stràc gheur</string>
+    <string name="spoken_accented_letter_017C">Z le dotag os a cionn</string>
+    <string name="spoken_accented_letter_017E">Z le caron</string>
+    <string name="spoken_accented_letter_017F">S fhada</string>
+    <string name="spoken_accented_letter_01A1">O le adharc</string>
+    <string name="spoken_accented_letter_01B0">U le adharc</string>
+    <string name="spoken_accented_letter_0219">S le cromag foidhpe</string>
+    <string name="spoken_accented_letter_021B">T le cromag foidhpe</string>
+    <string name="spoken_accented_letter_0259">Schwa</string>
+    <string name="spoken_accented_letter_1EA1">A le dotag foidhpe</string>
+    <string name="spoken_accented_letter_1EA3">A le cromag os a cionn</string>
+    <string name="spoken_accented_letter_1EA5">A le cuairt-lùb is stràc gheur</string>
+    <string name="spoken_accented_letter_1EA7">A le cuairt-lùb is stràc throm</string>
+    <string name="spoken_accented_letter_1EA9">A le cuairt-lùb is cromag os a cionn</string>
+    <string name="spoken_accented_letter_1EAB">A le cuairt-lùb is tonn</string>
+    <string name="spoken_accented_letter_1EAD">A le cuairt-lùb is dotag foidhpe</string>
+    <string name="spoken_accented_letter_1EAF">A le brìbh is stràc gheur</string>
+    <string name="spoken_accented_letter_1EB1">A le brìbh is stràc throm</string>
+    <string name="spoken_accented_letter_1EB3">A le brìbh is cromag os a cionn</string>
+    <string name="spoken_accented_letter_1EB5">A le brìbh is tonn</string>
+    <string name="spoken_accented_letter_1EB7">A le brìbh is dotag foidhpe</string>
+    <string name="spoken_accented_letter_1EB9">E le dotag foidhpe</string>
+    <string name="spoken_accented_letter_1EBB">E le cromag os a cionn</string>
+    <string name="spoken_accented_letter_1EBD">E le tonn</string>
+    <string name="spoken_accented_letter_1EBF">E le cuairt-lùb is stràc gheur</string>
+    <string name="spoken_accented_letter_1EC1">E le cuairt-lùb is stràc throm</string>
+    <string name="spoken_accented_letter_1EC3">E le cuairt-lùb is cromag os a cionn</string>
+    <string name="spoken_accented_letter_1EC5">E le cuairt-lùb is tonn</string>
+    <string name="spoken_accented_letter_1EC7">E le cuairt-lùb is dotag foidhpe</string>
+    <string name="spoken_accented_letter_1EC9">I le cromag os a cionn</string>
+    <string name="spoken_accented_letter_1ECB">I le dotag foidhpe</string>
+    <string name="spoken_accented_letter_1ECD">O le dotag foidhpe</string>
+    <string name="spoken_accented_letter_1ECF">O le cromag os a cionn</string>
+    <string name="spoken_accented_letter_1ED1">O le cuairt-lùb is stràc gheur</string>
+    <string name="spoken_accented_letter_1ED3">O le cuairt-lùb is stràc throm</string>
+    <string name="spoken_accented_letter_1ED5">O le cuairt-lùb is cromag os a cionn</string>
+    <string name="spoken_accented_letter_1ED7">O le cuairt-lùb is tonn</string>
+    <string name="spoken_accented_letter_1ED9">O le cuairt-lùb is dotag foidhpe</string>
+    <string name="spoken_accented_letter_1EDB">O le adharc is stràc gheur</string>
+    <string name="spoken_accented_letter_1EDD">O le adharc is stràc throm</string>
+    <string name="spoken_accented_letter_1EDF">O le adharc is cromag os a cionn</string>
+    <string name="spoken_accented_letter_1EE1">O le adharc is tonn</string>
+    <string name="spoken_accented_letter_1EE3">O le adharc is dotag foidhpe</string>
+    <string name="spoken_accented_letter_1EE5">U le dotag foidhpe</string>
+    <string name="spoken_accented_letter_1EE7">U le cromag os a cionn</string>
+    <string name="spoken_accented_letter_1EE9">U le adharc is stràc gheur</string>
+    <string name="spoken_accented_letter_1EEB">U le adharc is stràc throm</string>
+    <string name="spoken_accented_letter_1EED">U le adharc is cromag os a cionn</string>
+    <string name="spoken_accented_letter_1EEF">U le adharc is tonn</string>
+    <string name="spoken_accented_letter_1EF1">U le adharc is dotag foidhpe</string>
+    <string name="spoken_accented_letter_1EF3">Y le stràc throm</string>
+    <string name="spoken_accented_letter_1EF5">Y le dotag foidhpe</string>
+    <string name="spoken_accented_letter_1EF7">Y le cromag os a cionn</string>
+    <string name="spoken_accented_letter_1EF9">Y le tonn</string>
+    <string name="spoken_symbol_00A1">Clisg-phuing chontrarra</string>
+    <string name="spoken_symbol_00AB">Comharra-labhairt Frangach fosglaidh</string>
+    <string name="spoken_symbol_00B7">Dotag sa mheadhan</string>
+    <string name="spoken_symbol_00B9">A h-aon os-sgrìobhte</string>
+    <string name="spoken_symbol_00BB">Comharra-labhairt Frangach dùnaidh</string>
+    <string name="spoken_symbol_00BF">Comharra-ceiste contrarra</string>
+    <string name="spoken_symbol_2018">Comharra-labhairt singilte fosglaidh</string>
+    <string name="spoken_symbol_2019">Comharra-labhairt singilte dùnaidh</string>
+    <string name="spoken_symbol_201A">Comharra-labhairt singilte ìosal</string>
+    <string name="spoken_symbol_201C">Comharra-labhairt dùbailte fosglaidh</string>
+    <string name="spoken_symbol_201D">Comharra-labhairt dùbailte dùnaidh</string>
+    <string name="spoken_symbol_2020">Samhla biodaige</string>
+    <string name="spoken_symbol_2021">Samhla biodaige dùbailte</string>
+    <string name="spoken_symbol_2030">Samhla sa mhìle</string>
+    <string name="spoken_symbol_2032">Prìme</string>
+    <string name="spoken_symbol_2033">Prìme dhùbailte</string>
+    <string name="spoken_symbol_2039">Comharra-labhairt biorach singilte fosglaidh</string>
+    <string name="spoken_symbol_203A">Comharra-labhairt biorach singilte dùnaidh</string>
+    <string name="spoken_symbol_2074">A ceithir os-sgrìobhte</string>
+    <string name="spoken_symbol_207F">Litir Laidinn bheag n os-sgrìobhte</string>
+    <string name="spoken_symbol_20B1">Samhla Peso</string>
+    <string name="spoken_symbol_2105">Fo chùram</string>
+    <string name="spoken_symbol_2192">Saighead dheas</string>
+    <string name="spoken_symbol_2193">Saighead sìos</string>
+    <string name="spoken_symbol_2205">Seata falamh</string>
+    <string name="spoken_symbol_2206">Ioncramaid</string>
+    <string name="spoken_symbol_2264">Nas lugha na no co-ionnann ri</string>
+    <string name="spoken_symbol_2265">Nas motha na no co-ionnann ri</string>
+    <string name="spoken_symbol_2605">Rionnag dhubh</string>
+</resources>
