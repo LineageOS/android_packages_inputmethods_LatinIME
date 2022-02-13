@@ -21,7 +21,7 @@
     <string name="english_ime_input_options">Roghainnean ion-chuir</string>
     <string name="use_contacts_for_spellchecking_option_title">Lorg ainmean luchd-aithne</string>
     <string name="use_contacts_for_spellchecking_option_summary">Cleachdaidh an dearbhair-litreachaidh na h-ainmean o liosta an luchd-aithne agad</string>
-    <string name="vibrate_on_keypress">Dèan crith nuair a bhrùthar iuchair</string>
+    <string name="vibrate_on_keypress">Nì bruthadh iuchrach crith</string>
     <string name="sound_on_keypress">Cluich fuaim nuair a bhrùthar iuchair</string>
     <string name="popup_on_keypress">Dèan priobadh nuair a bhrùthar iuchair</string>
     <string name="settings_screen_preferences">Roghainnean</string>
@@ -149,7 +149,7 @@
     <string name="setup_start_action">Dèan toiseach-tòiseachaidh</string>
     <string name="setup_next_action">An ath-cheum</string>
     <string name="setup_steps_title">"A’ suidheachadh <xliff:g id="APPLICATION_NAME" example="Android Keyboard">%s</xliff:g>"</string>
-    <string name="setup_step1_title">"Cuir an comas <xliff:g id="APPLICATION_NAME" example="Android Keyboard">%s</xliff:g>"</string>
+    <string name="setup_step1_title">"Cuir air <xliff:g id="APPLICATION_NAME" example="Android Keyboard">%s</xliff:g>"</string>
     <string name="setup_step1_instruction">"Cuir cromag ri “<xliff:g id="APPLICATION_NAME" example="Android Keyboard">%s</xliff:g>” an an roghainnean nan cànan ⁊ ion-chur agad. Ceadaichidh sin dha gun ruith e air an uidheam agad."</string>
     <string name="setup_step1_finished_instruction">"Chaidh <xliff:g id="APPLICATION_NAME" example="Android Keyboard">%s</xliff:g> a chur an comas ann an roghainnean nan cànan ⁊ ion-chur agad mu thràth, mar sin tha an ceum seo deiseil. Air adhart dhan ath-cheum!"</string>
     <string name="setup_step1_action">Cuir an comas e sna roghainnean</string>
