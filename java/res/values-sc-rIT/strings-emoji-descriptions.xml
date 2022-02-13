@@ -17,6 +17,10 @@
 ** limitations under the License.
 */
 -->
-<resources>
-    <string name="use_personalized_dicts_summary">Deprendi de les tos comunicaciones y datos p\'ameyorar suxerencies</string>
+<!--
+    These Emoji symbols are unsupported by TTS.
+    TODO: Remove this file when TTS/TalkBack support these Emoji symbols.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="spoken_emoji_1F5FC">Turre de Tòkyo</string>
 </resources>
