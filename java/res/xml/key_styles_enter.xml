@@ -222,6 +222,16 @@
                 latin:backgroundType="action"
                 latin:parentStyle="navigateMoreKeysStyle" />
         </case>
+        <!-- keyboardTheme="YouDark" -->
+        <case latin:keyboardTheme="YouDark">
+            <key-style
+                latin:styleName="defaultEnterKeyStyle"
+                latin:keySpec="!icon/enter_key|!code/key_enter"
+                latin:keyLabelFlags="preserveCase|autoXScale|followKeyLabelRatio|followFunctionalTextColor"
+                latin:keyActionFlags="noKeyPreview"
+                latin:backgroundType="functional"
+                latin:parentStyle="navigateMoreKeysStyle" />
+        </case>
         <!-- keyboardTheme="LXXLight|LXXDark" -->
         <default>
             <key-style
