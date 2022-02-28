@@ -33,6 +33,8 @@
             latin:keyXPos="25%p"
             latin:keyboardLayout="@xml/key_space_5kw" />
         <include
+            latin:keyboardLayout="@xml/key_emoji" />
+        <include
             latin:keyboardLayout="@xml/key_period" />
         <Key
             latin:keyStyle="enterKeyStyle"

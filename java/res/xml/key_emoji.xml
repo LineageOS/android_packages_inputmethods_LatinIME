@@ -31,8 +31,7 @@
         </case>
         <default>
             <Key
-                latin:keyStyle="emojiKeyStyle"
-                latin:keyWidth="fillRight" />
+                latin:keyStyle="emojiKeyStyle" />
         </default>
     </switch>
 </merge>
