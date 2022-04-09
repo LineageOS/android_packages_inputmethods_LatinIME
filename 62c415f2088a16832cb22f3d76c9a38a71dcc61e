@@ -16,6 +16,24 @@
       "message": "Can I suggest making the the key backgrounds same as the keyboard background, just as in the current Material*  themes",
       "revId": "62c415f2088a16832cb22f3d76c9a38a71dcc61e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0b37e3f8_e7027cc3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 20
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21651
+      },
+      "writtenOn": "2022-04-09T08:12:34Z",
+      "side": 1,
+      "message": "I\u0027m planning to make that a seperate switch like on gboard.",
+      "parentUuid": "990618cb_053363a1",
+      "revId": "62c415f2088a16832cb22f3d76c9a38a71dcc61e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
