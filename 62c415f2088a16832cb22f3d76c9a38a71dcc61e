@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "990618cb_053363a1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 20
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19936
+      },
+      "writtenOn": "2022-04-09T04:09:23Z",
+      "side": 1,
+      "message": "Can I suggest making the the key backgrounds same as the keyboard background, just as in the current Material*  themes",
+      "revId": "62c415f2088a16832cb22f3d76c9a38a71dcc61e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
