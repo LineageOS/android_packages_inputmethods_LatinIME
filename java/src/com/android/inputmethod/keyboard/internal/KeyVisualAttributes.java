@@ -39,6 +39,7 @@ public final class KeyVisualAttributes {
     public final float mShiftedLetterHintRatio;
     public final float mHintLabelRatio;
     public final float mPreviewTextRatio;
+    public final boolean mIsKeyBorderless;
 
     public final int mTextColor;
     public final int mTextInactivatedColor;
@@ -63,6 +64,7 @@ public final class KeyVisualAttributes {
         R.styleable.Keyboard_Key_keyShiftedLetterHintRatio,
         R.styleable.Keyboard_Key_keyHintLabelRatio,
         R.styleable.Keyboard_Key_keyPreviewTextRatio,
+        R.styleable.Keyboard_Key_keyIsBorderless,
         R.styleable.Keyboard_Key_keyTextColor,
         R.styleable.Keyboard_Key_keyTextInactivatedColor,
         R.styleable.Keyboard_Key_keyTextShadowColor,
@@ -124,6 +126,8 @@ public final class KeyVisualAttributes {
                 R.styleable.Keyboard_Key_keyHintLabelRatio);
         mPreviewTextRatio = ResourceUtils.getFraction(keyAttr,
                 R.styleable.Keyboard_Key_keyPreviewTextRatio);
+        mIsKeyBorderless = ResourceUtils.getBoolean(keyAttr,
+                R.styleable.Keyboard_Key_keyIsBorderless, false);
 
         mTextColor = keyAttr.getColor(R.styleable.Keyboard_Key_keyTextColor, 0);
         mTextInactivatedColor = keyAttr.getColor(

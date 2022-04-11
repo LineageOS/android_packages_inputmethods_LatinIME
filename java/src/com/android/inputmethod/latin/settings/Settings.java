@@ -117,6 +117,8 @@ public final class Settings implements SharedPreferences.OnSharedPreferenceChang
     // Keyboard height (moved from debug settings)
     public static final String PREF_KEYBOARD_HEIGHT_SCALE = "pref_keyboard_height_scale";
 
+    public static final String PREF_BORDERLESS_KEYS = "pref_borderless_keys";
+
     // Emoji
     public static final String PREF_EMOJI_RECENT_KEYS = "emoji_recent_keys";
     public static final String PREF_EMOJI_CATEGORY_LAST_TYPED_ID = "emoji_category_last_typed_id";
@@ -356,6 +358,12 @@ public final class Settings implements SharedPreferences.OnSharedPreferenceChang
                 PREF_KEYBOARD_HEIGHT_SCALE, UNDEFINED_PREFERENCE_VALUE_FLOAT);
         return (percentage != UNDEFINED_PREFERENCE_VALUE_FLOAT) ? percentage : defaultValue;
     }
+
+    public static boolean readBorderlessKeys(final SharedPreferences prefs,
+            final float defaultValue) {
+        final float borderless = prefs.getBoolean(
+                PREF_BORDERLESS_KEYS, false);
+        return borderless;
 
     public static boolean readUseFullscreenMode(final Resources res) {
         return res.getBoolean(R.bool.config_use_fullscreen_mode);

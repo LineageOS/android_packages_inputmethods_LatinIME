@@ -69,6 +69,7 @@ import javax.annotation.Nullable;
  * @attr ref R.styleable#Keyboard_Key_keyLabelOffCenterRatio
  * @attr ref R.styleable#Keyboard_Key_keyHintLabelOffCenterRatio
  * @attr ref R.styleable#Keyboard_Key_keyPreviewTextRatio
+ * @attr ref R.styleable#Keyboard_Key_keyIsBorderless
  * @attr ref R.styleable#Keyboard_Key_keyTextColor
  * @attr ref R.styleable#Keyboard_Key_keyTextColorDisabled
  * @attr ref R.styleable#Keyboard_Key_keyTextShadowColor

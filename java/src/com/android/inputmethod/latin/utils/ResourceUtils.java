@@ -281,6 +281,17 @@ public final class ResourceUtils {
         return defValue;
     }
 
+    public static boolean getBoolean(final TypedArray a, final int index, boolean defValue) {
+        final TypedValue value = a.peekValue(index);
+        if (value == null) {
+            return defValue;
+        }
+        if (isBooleanValue(value)) {
+            return a.getBoolean(index, defValue);
+        }
+        return defValue;
+    }
+
     public static boolean isFractionValue(final TypedValue v) {
         return v.type == TypedValue.TYPE_FRACTION;
     }
@@ -295,5 +306,9 @@ public final class ResourceUtils {
 
     public static boolean isStringValue(final TypedValue v) {
         return v.type == TypedValue.TYPE_STRING;
+    }
+
+    public static boolean isBooleanValue(final TypedValue v) {
+        return v.type == TypedValue.TYPE_INT_BOOLEAN;
     }
 }
