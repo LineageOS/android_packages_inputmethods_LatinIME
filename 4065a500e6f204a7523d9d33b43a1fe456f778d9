@@ -16,6 +16,24 @@
       "message": "I think we only need to change the English ones, an crowdin will remove the old strings.",
       "revId": "4065a500e6f204a7523d9d33b43a1fe456f778d9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "58bb2830_d1d8ea5a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21651
+      },
+      "writtenOn": "2022-04-14T15:40:00Z",
+      "side": 1,
+      "message": "Should I leave all the old strings as they are and only add new? \nOr do you mean to remove only the values/strings.xml version of the old string and add a new one (leaving all other values-* untouched)?",
+      "parentUuid": "4250d742_39062cca",
+      "revId": "4065a500e6f204a7523d9d33b43a1fe456f778d9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
