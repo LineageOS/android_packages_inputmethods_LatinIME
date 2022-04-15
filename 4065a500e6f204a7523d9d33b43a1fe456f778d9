@@ -34,6 +34,24 @@
       "parentUuid": "4250d742_39062cca",
       "revId": "4065a500e6f204a7523d9d33b43a1fe456f778d9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ab579333_d80716fb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11801
+      },
+      "writtenOn": "2022-04-15T22:20:23Z",
+      "side": 1,
+      "message": "Yes, leave all the old strings and only add the new ones.",
+      "parentUuid": "58bb2830_d1d8ea5a",
+      "revId": "4065a500e6f204a7523d9d33b43a1fe456f778d9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
