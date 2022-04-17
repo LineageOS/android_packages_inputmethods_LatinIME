@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b9855935_618bb20f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11801
+      },
+      "writtenOn": "2022-04-17T00:01:46Z",
+      "side": 1,
+      "message": "Argh, Sorry. Miscommunication -- remove the unused English strings, and crowdin will mirror that change on a translation sync.",
+      "revId": "b5bb86ebd141b08052344d3059a969f62a18f522",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
