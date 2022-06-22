@@ -73,6 +73,15 @@ class Suggest : public SuggestInterface {
     void processDicNodeAsMatch(DicTraverseSession *traverseSession,
             DicNode *childDicNode) const;
 
+    void expandCurrentDicNodesGesture(DicTraverseSession *traverseSession) const;
+    void processDicNodeAsOmissionGesture(DicTraverseSession *traverseSession, DicNode *dicNode) const;
+    void processDicNodeAsMatchGesture(DicTraverseSession *traverseSession,
+                               DicNode *childDicNode) const;
+    void processDicNodeAsSkipGesture(DicTraverseSession *traverseSession, DicNode *dicNode) const;
+    void processExpandedDicNodeGesture(DicTraverseSession *traverseSession, DicNode *dicNode) const;
+    void processTerminalDicNodeGesture(DicTraverseSession *traverseSession, DicNode *dicNode) const;
+    void weightChildNodeGesture(DicTraverseSession *traverseSession, DicNode *dicNode) const;
+
     static const int MIN_CONTINUOUS_SUGGESTION_INPUT_SIZE;
 
     const Traversal *const TRAVERSAL;

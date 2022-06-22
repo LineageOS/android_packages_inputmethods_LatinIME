@@ -52,6 +52,11 @@ class TypingWeighting : public Weighting {
         return cost;
     }
 
+    float getSkipCost(const DicTraverseSession *const traverseSession,
+                      const DicNode *const dicNode) const {
+        return 0;
+    }
+
     float getOmissionCost(const DicNode *const parentDicNode, const DicNode *const dicNode) const {
         const bool isZeroCostOmission = parentDicNode->isZeroCostOmission();
         const bool isIntentionalOmission = parentDicNode->canBeIntentionalOmission();

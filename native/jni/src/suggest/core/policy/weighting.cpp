@@ -134,6 +134,8 @@ static inline void profile(const CorrectionType correctionType, DicNode *const n
         return weighting->getInsertionCost(traverseSession, parentDicNode, dicNode);
     case CT_TRANSPOSITION:
         return weighting->getTranspositionCost(traverseSession, parentDicNode, dicNode);
+    case CT_SKIP:
+        return weighting->getSkipCost(traverseSession, dicNode);
     default:
         return 0.0f;
     }
@@ -199,8 +201,67 @@ static inline void profile(const CorrectionType correctionType, DicNode *const n
             return 2; /* look ahead + skip the current char */
         case CT_TRANSPOSITION:
             return 2; /* look ahead + skip the current char */
+        case CT_SKIP:
+            return 1;
         default:
             return 0;
     }
 }
+
+
+    /* static */ void Weighting::addCostAndForwardInputIndexGesture(const Weighting *const weighting,
+                                                                    const CorrectionType correctionType, const DicTraverseSession *const traverseSession,
+                                                                    const DicNode *const parentDicNode, DicNode *const dicNode,
+                                                                    MultiBigramMap *const multiBigramMap) {
+        const int inputSize = traverseSession->getInputSize();
+        DicNode_InputStateG inputStateG;
+        inputStateG.mNeedsToUpdateInputStateG = false; // Don't use input info by default
+        const float spatialCost = Weighting::getSpatialCost(weighting, correctionType,
+                                                            traverseSession, parentDicNode, dicNode, &inputStateG);
+        const float languageCost = Weighting::getLanguageCostGesture(weighting, correctionType,
+                                                                     traverseSession, parentDicNode, dicNode, multiBigramMap);
+        const ErrorTypeUtils::ErrorType errorType = weighting->getErrorType(correctionType,
+                                                                            traverseSession, parentDicNode, dicNode);
+        if (inputStateG.mNeedsToUpdateInputStateG) {
+            dicNode->updateInputIndexG(&inputStateG);
+        } else {
+            dicNode->forwardInputIndex(0 /*pointerId*/, getForwardInputCount(correctionType), false);
+        }
+        dicNode->addCost(spatialCost, languageCost, weighting->needsToNormalizeCompoundDistance(),
+                         inputSize, errorType);
+    }
+
+    /* static */ float Weighting::getLanguageCostGesture(const Weighting *const weighting,
+                                                         const CorrectionType correctionType, const DicTraverseSession *const traverseSession,
+                                                         const DicNode *const parentDicNode, const DicNode *const dicNode,
+                                                         MultiBigramMap *const multiBigramMap) {
+        switch(correctionType) {
+            case CT_OMISSION:
+                return 0.0f;
+            case CT_SUBSTITUTION:
+                return 0.0f;
+            case CT_NEW_WORD_SPACE_OMISSION:
+                return 0;
+            case CT_MATCH:
+                return 0.0f;
+            case CT_COMPLETION:
+                return 0.0f;
+            case CT_TERMINAL: {
+                const float languageImprobability =
+                        DicNodeUtils::getBigramNodeImprobability(
+                                traverseSession->getDictionaryStructurePolicy(), dicNode, multiBigramMap);
+                return weighting->getTerminalLanguageCost(traverseSession, dicNode, languageImprobability);
+            }
+            case CT_TERMINAL_INSERTION:
+                return 0.0f;
+            case CT_NEW_WORD_SPACE_SUBSTITUTION:
+                return 0;
+            case CT_INSERTION:
+                return 0.0f;
+            case CT_TRANSPOSITION:
+                return 0.0f;
+            default:
+                return 0.0f;
+        }
+    }
 }  // namespace latinime

@@ -45,11 +45,21 @@ class SuggestionsOutputUtils {
             DicTraverseSession *traverseSession, const float weightOfLangModelVsSpatialModel,
             SuggestionResults *const outSuggestionResults);
 
+    static void outputSuggestionsGesture(const Scoring *const scoringPolicy,
+            DicTraverseSession *traverseSession, const float weightOfLangModelVsSpatialModel,
+            SuggestionResults *const outSuggestionResults);
+
  private:
     DISALLOW_IMPLICIT_CONSTRUCTORS(SuggestionsOutputUtils);
 
     // Inputs longer than this will autocorrect if the suggestion is multi-word
     static const int MIN_LEN_FOR_MULTI_WORD_AUTOCORRECT;
+
+    static void outputSuggestionsOfDicNodeGesture(const Scoring *const scoringPolicy,
+           DicTraverseSession *traverseSession, const DicNode *const terminalDicNode,
+           const float weightOfLangModelVsSpatialModel, const bool boostExactMatches,
+           const bool forceCommitMultiWords, const bool outputSecondWordFirstLetterInputIndex,
+           SuggestionResults *const outSuggestionResults);
 
     static void outputSuggestionsOfDicNode(const Scoring *const scoringPolicy,
             DicTraverseSession *traverseSession, const DicNode *const terminalDicNode,

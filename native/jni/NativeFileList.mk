@@ -87,7 +87,11 @@ LATIN_IME_CORE_SRC_FILES := \
     $(addprefix suggest/core/result/, \
         suggestion_results.cpp \
         suggestions_output_utils.cpp) \
-    suggest/policyimpl/gesture/gesture_suggest_policy_factory.cpp \
+   suggest/policyimpl/gesture/gesture_scoring.cpp \
+   suggest/policyimpl/gesture/gesture_suggest_policy.cpp \
+   suggest/policyimpl/gesture/gesture_traversal.cpp \
+   suggest/policyimpl/gesture/gesture_weighting.cpp \
+   suggest/policyimpl/gesture/scoring_params_g.cpp \
     $(addprefix suggest/policyimpl/typing/, \
         scoring_params.cpp \
         typing_scoring.cpp \

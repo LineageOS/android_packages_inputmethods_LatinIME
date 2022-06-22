@@ -66,7 +66,8 @@ void DicTraverseSession::initializeProximityInfoStates(const int *const inputCod
         const int maxPointerCount) {
     ASSERT(1 <= maxPointerCount && maxPointerCount <= MAX_POINTER_COUNT_G);
     mInputSize = 0;
-    for (int i = 0; i < maxPointerCount; ++i) {
+    // change MAX_POINTER_COUNT_G to MAX_POINTER_COUNT, not support 2 pointers
+    for (int i = 0; i < MAX_POINTER_COUNT; ++i) {
         mProximityInfoStates[i].initInputParams(i, maxSpatialDistance, getProximityInfo(),
                 inputCodePoints, inputSize, inputXs, inputYs, times, pointerIds,
                 // Right now the line below is trying to figure out whether this is a gesture by

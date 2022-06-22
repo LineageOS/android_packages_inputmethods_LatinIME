@@ -338,5 +338,6 @@ typedef enum {
     CT_NEW_WORD_SPACE_OMISSION,
     // Create new word with space substitution
     CT_NEW_WORD_SPACE_SUBSTITUTION,
+    CT_SKIP,
 } CorrectionType;
 #endif // LATINIME_DEFINES_H

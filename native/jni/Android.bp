@@ -81,7 +81,7 @@ filegroup {
         "src/suggest/core/session/dic_traverse_session.cpp",
         "src/suggest/core/result/suggestion_results.cpp",
         "src/suggest/core/result/suggestions_output_utils.cpp",
-        "src/suggest/policyimpl/gesture/gesture_suggest_policy_factory.cpp",
+        //"src/suggest/policyimpl/gesture/gesture_suggest_policy_factory.cpp",
         "src/suggest/policyimpl/typing/scoring_params.cpp",
         "src/suggest/policyimpl/typing/typing_scoring.cpp",
         "src/suggest/policyimpl/typing/typing_suggest_policy.cpp",
@@ -92,6 +92,13 @@ filegroup {
         "src/utils/jni_data_utils.cpp",
         "src/utils/log_utils.cpp",
         "src/utils/time_keeper.cpp",
+
+	// Gesture
+        "src/suggest/policyimpl/gesture/gesture_scoring.cpp",
+        "src/suggest/policyimpl/gesture/gesture_suggest_policy.cpp",
+        "src/suggest/policyimpl/gesture/gesture_traversal.cpp",
+        "src/suggest/policyimpl/gesture/gesture_weighting.cpp",
+        "src/suggest/policyimpl/gesture/scoring_params_g.cpp",
 
         // BACKWARD_V402
         "src/dictionary/structure/backward/v402/ver4_dict_buffers.cpp",

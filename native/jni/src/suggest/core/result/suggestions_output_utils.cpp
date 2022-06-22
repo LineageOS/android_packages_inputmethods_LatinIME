@@ -27,10 +27,93 @@
 #include "suggest/core/result/suggestion_results.h"
 #include "suggest/core/session/dic_traverse_session.h"
 #include "suggest/core/suggest_options.h"
+#include "defines.h"
 
 namespace latinime {
 
 const int SuggestionsOutputUtils::MIN_LEN_FOR_MULTI_WORD_AUTOCORRECT = 16;
+
+    /* static */ void SuggestionsOutputUtils::outputSuggestionsGesture(
+            const Scoring *const scoringPolicy, DicTraverseSession *traverseSession,
+            const float weightOfLangModelVsSpatialModel,
+            SuggestionResults *const outSuggestionResults) {
+#if DEBUG_EVALUATE_MOST_PROBABLE_STRING
+        const int terminalSize = 0;
+#else
+        const int terminalSize = traverseSession->getDicTraverseCache()->terminalSize();
+#endif
+        std::vector<DicNode> terminals(terminalSize);
+        for (int index = terminalSize - 1; index >= 0; --index) {
+            traverseSession->getDicTraverseCache()->popTerminal(&terminals[index]);
+        }
+
+        const bool outputSecondWordFirstLetterInputIndex =
+                traverseSession->isOnlyOnePointerUsed(0 /* pointerId */);
+        const bool boostExactMatches = traverseSession->getDictionaryStructurePolicy()->
+                getHeaderStructurePolicy()->shouldBoostExactMatches();
+
+        // Output suggestion results here
+        for (auto &terminalDicNode : terminals) {
+            outputSuggestionsOfDicNodeGesture(scoringPolicy, traverseSession, &terminalDicNode,
+                                       1.0, boostExactMatches,
+                                       false, outputSecondWordFirstLetterInputIndex, outSuggestionResults);
+        }
+    }
+
+    /* static */ void SuggestionsOutputUtils::outputSuggestionsOfDicNodeGesture(
+            const Scoring *const scoringPolicy, DicTraverseSession *traverseSession,
+            const DicNode *const terminalDicNode, const float weightOfLangModelVsSpatialModel,
+            const bool boostExactMatches, const bool forceCommitMultiWords,
+            const bool outputSecondWordFirstLetterInputIndex,
+            SuggestionResults *const outSuggestionResults) {
+
+
+        const WordAttributes wordAttributes = traverseSession->getDictionaryStructurePolicy()
+                ->getWordAttributesInContext(terminalDicNode->getPrevWordIds(),
+                                             terminalDicNode->getWordId(), nullptr /* multiBigramMap */);
+        const bool isExactMatch =
+                ErrorTypeUtils::isExactMatch(terminalDicNode->getContainedErrorTypes());
+        const bool isExactMatchWithIntentionalOmission =
+                ErrorTypeUtils::isExactMatchWithIntentionalOmission(
+                        terminalDicNode->getContainedErrorTypes());
+        // TODO: Decide whether the word should be auto-corrected or not here.
+        const bool isAppropriateForAutoCorrection = !ErrorTypeUtils::isMissingExplicitAccent(
+                terminalDicNode->getContainedErrorTypes());
+        const int outputTypeFlags =
+                (wordAttributes.isPossiblyOffensive() ? Dictionary::KIND_FLAG_POSSIBLY_OFFENSIVE : 0)
+                | ((isExactMatch && boostExactMatches) ? Dictionary::KIND_FLAG_EXACT_MATCH : 0)
+                | (isExactMatchWithIntentionalOmission ?
+                   Dictionary::KIND_FLAG_EXACT_MATCH_WITH_INTENTIONAL_OMISSION : 0)
+                | (isAppropriateForAutoCorrection ?
+                   Dictionary::KIND_FLAG_APPROPRIATE_FOR_AUTOCORRECTION : 0);
+        // Entries that are blacklisted or do not represent a word should not be output.
+        const bool isValidWord = !(wordAttributes.isBlacklisted() || wordAttributes.isNotAWord());
+
+        const bool shouldBlockThisWord = shouldBlockWord(traverseSession->getSuggestOptions(),
+                                                         terminalDicNode, wordAttributes, true /* isLastWord */);
+
+        // Increase output score of top typing suggestion to ensure autocorrection.
+        // TODO: Better integration with java side autocorrection logic.
+        const float compoundDistance = terminalDicNode->getCompoundDistance(1);
+        const int finalScore = compoundDistance * -10000.0f;
+
+        // Don't output invalid or blocked offensive words. However, we still need to submit their
+        // shortcuts if any.
+        if (isValidWord && !shouldBlockThisWord) {
+            int codePoints[MAX_WORD_LENGTH];
+            terminalDicNode->outputResult(codePoints);
+            const int indexToPartialCommit = outputSecondWordFirstLetterInputIndex ?
+                                             terminalDicNode->getSecondWordFirstInputIndex(
+                                                     traverseSession->getProximityInfoState(0)) :
+                                             NOT_AN_INDEX;
+
+            outSuggestionResults->addSuggestion(codePoints,
+                                                terminalDicNode->getTotalNodeCodePointCount(),
+                                                finalScore, Dictionary::KIND_CORRECTION | outputTypeFlags,
+                                                indexToPartialCommit, computeFirstWordConfidence(terminalDicNode));
+        }
+
+    }
 
 /* static */ void SuggestionsOutputUtils::outputSuggestions(
         const Scoring *const scoringPolicy, DicTraverseSession *traverseSession,

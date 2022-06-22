@@ -52,6 +52,7 @@ void Suggest::getSuggestions(ProximityInfo *pInfo, void *traverseSession,
     PROF_INIT;
     PROF_TIMER_START(0);
     const float maxSpatialDistance = TRAVERSAL->getMaxSpatialDistance();
+    const bool isGesture = TRAVERSAL->getMaxPointerCount() == MAX_POINTER_COUNT_G;
     DicTraverseSession *tSession = static_cast<DicTraverseSession *>(traverseSession);
     tSession->setupForGetSuggestions(pInfo, inputCodePoints, inputSize, inputXs, inputYs, times,
             pointerIds, maxSpatialDistance, TRAVERSAL->getMaxPointerCount());
@@ -59,19 +60,36 @@ void Suggest::getSuggestions(ProximityInfo *pInfo, void *traverseSession,
 
     initializeSearch(tSession);
     PROF_TIMER_END(0);
-    PROF_TIMER_START(1);
 
-    // keep expanding search dicNodes until all have terminated.
-    while (tSession->getDicTraverseCache()->activeSize() > 0) {
-        expandCurrentDicNodes(tSession);
-        tSession->getDicTraverseCache()->advanceActiveDicNodes();
-        tSession->getDicTraverseCache()->advanceInputIndex(inputSize);
+    if (isGesture) {
+        PROF_TIMER_START(1);
+
+        // keep expanding search dicNodes until all have terminated.
+        while (tSession->getDicTraverseCache()->activeSize() > 0) {
+            expandCurrentDicNodesGesture(tSession);
+            tSession->getDicTraverseCache()->advanceActiveDicNodes();
+            tSession->getDicTraverseCache()->advanceInputIndex(inputSize);
+        }
+        PROF_TIMER_END(1);
+        PROF_TIMER_START(2);
+        SuggestionsOutputUtils::outputSuggestionsGesture(
+                SCORING, tSession, weightOfLangModelVsSpatialModel, outSuggestionResults);
+        PROF_TIMER_END(2);
+    } else {
+        PROF_TIMER_START(1);
+
+        // keep expanding search dicNodes until all have terminated.
+        while (tSession->getDicTraverseCache()->activeSize() > 0) {
+            expandCurrentDicNodes(tSession);
+            tSession->getDicTraverseCache()->advanceActiveDicNodes();
+            tSession->getDicTraverseCache()->advanceInputIndex(inputSize);
+        }
+        PROF_TIMER_END(1);
+        PROF_TIMER_START(2);
+        SuggestionsOutputUtils::outputSuggestions(
+                SCORING, tSession, weightOfLangModelVsSpatialModel, outSuggestionResults);
+        PROF_TIMER_END(2);
     }
-    PROF_TIMER_END(1);
-    PROF_TIMER_START(2);
-    SuggestionsOutputUtils::outputSuggestions(
-            SCORING, tSession, weightOfLangModelVsSpatialModel, outSuggestionResults);
-    PROF_TIMER_END(2);
 }
 
 /**
@@ -441,4 +459,141 @@ void Suggest::createNextWordDicNode(DicTraverseSession *traverseSession, DicNode
         traverseSession->getDicTraverseCache()->copyPushNextActive(&newDicNode);
     }
 }
+
+    //for gesture
+    void Suggest::expandCurrentDicNodesGesture(DicTraverseSession *traverseSession) const {
+        const int inputSize = traverseSession->getInputSize();
+        DicNodeVector childDicNodes(TRAVERSAL->getDefaultExpandDicNodeSize());
+        DicNode correctionDicNode;
+
+        while (traverseSession->getDicTraverseCache()->activeSize() > 0) {
+            DicNode dicNode;
+            traverseSession->getDicTraverseCache()->popActive(&dicNode);
+
+            if (dicNode.isTotalInputSizeExceedingLimit()) {
+                return;
+            }
+
+            // Only consider typing error corrections if the normalized compound distance is
+            // below a spatial distance threshold.
+            // NOTE: the threshold may need to be updated if scoring model changes.
+            const bool allowsErrorCorrections = TRAVERSAL->allowsErrorCorrections(&dicNode);
+            const int point0Index = dicNode.getInputIndex(0);
+            const bool isCompletion = dicNode.isCompletion(inputSize);
+
+            //const bool isSkip = TRAVERSAL->isSkip(traverseSession, &dicNode);
+            if (point0Index > 0 && TRAVERSAL->isSkip(traverseSession, &dicNode)) {
+                correctionDicNode.initByCopy(&dicNode);
+                processDicNodeAsSkipGesture(traverseSession, &correctionDicNode);
+            }
+
+            childDicNodes.clear();
+            DicNodeUtils::getAllChildDicNodes(&dicNode,
+                                              traverseSession->getDictionaryStructurePolicy(),
+                                              &childDicNodes);
+            const int childDicNodesSize = childDicNodes.getSizeAndLock();
+            for (int i = 0; i < childDicNodesSize; ++i) {
+                DicNode *const childDicNode = childDicNodes[i];
+                if (isCompletion) {
+                    // Handle forward lookahead when the lexicon letter exceeds the input size.
+                    processDicNodeAsMatchGesture(traverseSession, childDicNode);
+                    continue;
+                }
+
+                if(childDicNode->canBeIntentionalOmission()) {
+                    processExpandedDicNodeGesture(traverseSession, childDicNode);
+                    continue;
+                }
+
+                if (point0Index > 0 && TRAVERSAL->isOmission(traverseSession, &dicNode, childDicNode,
+                                                              allowsErrorCorrections)) {
+                    // TODO: (Gesture) Change weight between omission and substitution errors
+                    // TODO: (Gesture) Terminal node should not be handled as omission
+                    correctionDicNode.initByCopy(childDicNode);
+                    processDicNodeAsOmissionGesture(traverseSession, &correctionDicNode);
+                }
+                const ProximityType proximityType = TRAVERSAL->getProximityType(
+                        traverseSession, &dicNode, childDicNode);
+                switch (proximityType) {
+                    // TODO: Consider the difference of proximityType here
+                    case MATCH_CHAR:
+                        processDicNodeAsMatchGesture(traverseSession, childDicNode);
+                        break;
+                    default:
+                        // Just drop this dicNode and do nothing.
+                        break;
+                }
+            }
+
+        }
+    }
+
+    void Suggest::processDicNodeAsSkipGesture(DicTraverseSession *traverseSession,
+                                              DicNode *dicNode) const {
+        Weighting::addCostAndForwardInputIndexGesture(WEIGHTING, CT_SKIP, traverseSession,
+                                                      0 /* parentDicNode */, dicNode, 0 /* multiBigramMap */);
+        processExpandedDicNodeGesture(traverseSession, dicNode);
+    }
+
+    void Suggest::processDicNodeAsMatchGesture(DicTraverseSession *traverseSession,
+                                               DicNode *childDicNode) const {
+        weightChildNodeGesture(traverseSession, childDicNode);
+        processExpandedDicNodeGesture(traverseSession, childDicNode);
+    }
+
+    void Suggest::processDicNodeAsOmissionGesture(DicTraverseSession *traverseSession, DicNode *dicNode) const {
+        DicNodeVector childDicNodes;
+        DicNodeUtils::getAllChildDicNodes(
+                dicNode, traverseSession->getDictionaryStructurePolicy(), &childDicNodes);
+
+        const int size = childDicNodes.getSizeAndLock();
+        for (int i = 0; i < size; i++) {
+            DicNode *const childDicNode = childDicNodes[i];
+            // Treat this word as omission
+            if (!TRAVERSAL->isPossibleOmissionChildNode(traverseSession, dicNode, childDicNode)) {
+                continue;
+            }
+
+            Weighting::addCostAndForwardInputIndexGesture(WEIGHTING, CT_OMISSION, traverseSession,
+                                                   dicNode, childDicNode, 0 /* multiBigramMap */);
+            weightChildNodeGesture(traverseSession, childDicNode);
+            processExpandedDicNodeGesture(traverseSession, childDicNode);
+        }
+    }
+
+    void Suggest::weightChildNodeGesture(DicTraverseSession *traverseSession, DicNode *dicNode) const {
+        const int inputSize = traverseSession->getInputSize();
+        if (dicNode->isCompletion(inputSize)) {
+            Weighting::addCostAndForwardInputIndexGesture(WEIGHTING, CT_COMPLETION, traverseSession,
+                                                          0 /* parentDicNode */, dicNode, 0 /* multiBigramMap */);
+        } else {
+            Weighting::addCostAndForwardInputIndexGesture(WEIGHTING, CT_MATCH, traverseSession,
+                                                          0 /* parentDicNode */, dicNode, 0 /* multiBigramMap */);
+        }
+    }
+
+    void Suggest::processExpandedDicNodeGesture(
+            DicTraverseSession *traverseSession, DicNode *dicNode) const {
+        processTerminalDicNodeGesture(traverseSession, dicNode);
+        if (dicNode->getCompoundDistance() < static_cast<float>(MAX_VALUE_FOR_WEIGHTING)) {
+            if (dicNode->hasChildren()) {
+                traverseSession->getDicTraverseCache()->copyPushNextActive(dicNode);
+            }
+        }
+    }
+
+    void Suggest::processTerminalDicNodeGesture(
+            DicTraverseSession *traverseSession, DicNode *dicNode) const {
+        if (dicNode->getCompoundDistance() >= static_cast<float>(MAX_VALUE_FOR_WEIGHTING)) {
+            return;
+        }
+        if (!dicNode->isTerminalDicNode()) {
+            return;
+        }
+        // Create a non-cached node here.
+        DicNode terminalDicNode(*dicNode);
+        Weighting::addCostAndForwardInputIndexGesture(WEIGHTING, CT_TERMINAL, traverseSession, 0,
+                                               &terminalDicNode, traverseSession->getMultiBigramMap());
+        traverseSession->getDicTraverseCache()->copyPushTerminal(&terminalDicNode);
+    }
 } // namespace latinime
