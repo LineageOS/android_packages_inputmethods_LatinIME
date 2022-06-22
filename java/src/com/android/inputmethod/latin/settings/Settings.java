@@ -31,7 +31,6 @@ import com.android.inputmethod.latin.InputAttributes;
 import com.android.inputmethod.latin.R;
 import com.android.inputmethod.latin.common.StringUtils;
 import com.android.inputmethod.latin.utils.AdditionalSubtypeUtils;
-import com.android.inputmethod.latin.utils.JniUtils;
 import com.android.inputmethod.latin.utils.ResourceUtils;
 import com.android.inputmethod.latin.utils.RunInLocale;
 import com.android.inputmethod.latin.utils.StatsUtils;
@@ -49,7 +48,6 @@ public final class Settings implements SharedPreferences.OnSharedPreferenceChang
     public static final String SCREEN_ACCOUNTS = "screen_accounts";
     public static final String SCREEN_THEME = "screen_theme";
     public static final String SCREEN_DEBUG = "screen_debug";
-    public static final String SCREEN_GESTURE = "screen_gesture";
     // In the same order as xml/prefs.xml
     public static final String PREF_AUTO_CAP = "auto_cap";
     public static final String PREF_VIBRATE_ON = "vibrate_on";
@@ -242,9 +240,6 @@ public final class Settings implements SharedPreferences.OnSharedPreferenceChang
     }
 
     public static boolean readFromBuildConfigIfGestureInputEnabled(final Resources res) {
-        if (!JniUtils.sHaveGestureLib) {
-            return false;
-        }
         return res.getBoolean(R.bool.config_gesture_input_enabled_by_build_config);
     }
 
