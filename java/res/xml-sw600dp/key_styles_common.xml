@@ -109,6 +109,12 @@
         latin:keyActionFlags="noKeyPreview"
         latin:backgroundType="functional" />
     <key-style
+        latin:styleName="emojiKeyStylePopup"
+        latin:keySpec="!icon/emoji_action_key|!code/key_emoji"
+        latin:keyLabelFlags="keepBackgroundAspectRatio"
+        latin:keyActionFlags="noKeyPreview"
+        latin:backgroundType="action" />
+    <key-style
         latin:styleName="settingsKeyStyle"
         latin:keySpec="!icon/settings_key|!code/key_settings"
         latin:keyActionFlags="noKeyPreview"
