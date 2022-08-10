@@ -149,7 +149,7 @@
         <activity android:name="com.android.inputmethod.dictionarypack.DownloadOverMeteredDialog"
              android:theme="@style/platformActivityTheme"
              android:label="@string/dictionary_install_over_metered_network_prompt"
-             android:exported="true">
+             android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
             </intent-filter>
