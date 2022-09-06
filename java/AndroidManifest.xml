@@ -54,6 +54,13 @@
     <permission android:name="com.android.inputmethod.latin.HIDE_SOFT_INPUT"
          android:protectionLevel="signature"/>
 
+    <!-- To query enabled input methods. -->
+    <queries>
+        <intent>
+            <action android:name="android.view.InputMethod" />
+        </intent>
+    </queries>
+
     <application android:label="@string/english_ime_name"
          android:icon="@drawable/ic_launcher_keyboard"
          android:supportsRtl="true"
@@ -65,7 +72,8 @@
         <service android:name="LatinIME"
              android:label="@string/english_ime_name"
              android:permission="android.permission.BIND_INPUT_METHOD"
-             android:exported="true">
+             android:exported="true"
+             android:visibleToInstantApps="true">
             <intent-filter>
                 <action android:name="android.view.InputMethod"/>
             </intent-filter>
