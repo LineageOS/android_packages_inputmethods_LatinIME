@@ -16,4 +16,6 @@
     <color name="auto_correct_color_you">@color/auto_correct_color_lxx_light</color>
     <color name="suggested_word_color_you">@color/suggested_word_color_lxx_light</color>
     <color name="highlight_color_you">@color/highlight_color_lxx_light</color>
+    <color name="gesture_trail_color_you">@android:color/system_accent3_800</color>
+    <color name="gesture_floating_preview_text_color_you">@android:color/system_neutral1_1000</color>
 </resources>

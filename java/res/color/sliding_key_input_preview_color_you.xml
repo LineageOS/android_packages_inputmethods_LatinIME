@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- This is necessary to add alpha to dynamic colors to a single theme -->
+    <item
+        android:alpha=".7"
+        android:color="@color/gesture_trail_color_you" />
+</selector>
