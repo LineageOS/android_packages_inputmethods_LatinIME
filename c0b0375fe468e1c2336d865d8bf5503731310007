@@ -63,6 +63,24 @@
       "message": "If you are bored, light theme numpad colors are also wrong",
       "revId": "c0b0375fe468e1c2336d865d8bf5503731310007",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fb570777_6a8e85c5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32138
+      },
+      "writtenOn": "2022-12-19T03:49:46Z",
+      "side": 1,
+      "message": "I\u0027m planning to fix a lot of the colors in other areas of the keyboard a bit later in another change",
+      "parentUuid": "cba0861b_566d05a1",
+      "revId": "c0b0375fe468e1c2336d865d8bf5503731310007",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
