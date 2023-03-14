@@ -628,16 +628,31 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
 
         final IntentFilter newDictFilter = new IntentFilter();
         newDictFilter.addAction(DictionaryPackConstants.NEW_DICTIONARY_INTENT_ACTION);
-        registerReceiver(mDictionaryPackInstallReceiver, newDictFilter);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            registerReceiver(mDictionaryPackInstallReceiver, newDictFilter,
+                    Context.RECEIVER_NOT_EXPORTED);
+        } else {
+            registerReceiver(mDictionaryPackInstallReceiver, newDictFilter);
+        }
 
         final IntentFilter dictDumpFilter = new IntentFilter();
         dictDumpFilter.addAction(DictionaryDumpBroadcastReceiver.DICTIONARY_DUMP_INTENT_ACTION);
-        registerReceiver(mDictionaryDumpBroadcastReceiver, dictDumpFilter);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            registerReceiver(mDictionaryDumpBroadcastReceiver, dictDumpFilter,
+                    Context.RECEIVER_NOT_EXPORTED);
+        } else {
+            registerReceiver(mDictionaryDumpBroadcastReceiver, dictDumpFilter);
+        }
 
         final IntentFilter hideSoftInputFilter = new IntentFilter();
         hideSoftInputFilter.addAction(ACTION_HIDE_SOFT_INPUT);
-        registerReceiver(mHideSoftInputReceiver, hideSoftInputFilter, PERMISSION_HIDE_SOFT_INPUT,
-                null /* scheduler */);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            registerReceiver(mHideSoftInputReceiver, hideSoftInputFilter,
+                    PERMISSION_HIDE_SOFT_INPUT, null /* scheduler */, Context.RECEIVER_EXPORTED);
+        } else {
+            registerReceiver(mHideSoftInputReceiver, hideSoftInputFilter,
+                    PERMISSION_HIDE_SOFT_INPUT, null /* scheduler */);
+        }
 
         StatsUtils.onCreate(mSettings.getCurrent(), mRichImm);
     }
