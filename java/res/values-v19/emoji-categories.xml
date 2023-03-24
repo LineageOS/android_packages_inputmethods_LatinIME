@@ -1192,7 +1192,7 @@
         <item>1F6C4</item>
         <item>1F6C5</item>
         <!-- warning -->
-        <item>26A0,FE0F</item>
+        <item>26A0</item>
         <item>1F6B8</item>
         <item>26D4</item>
         <item>1F6AB</item>
@@ -1203,23 +1203,23 @@
         <item>1F6B7</item>
         <item>1F4F5</item>
         <item>1F51E</item>
-        <item>2622,FE0F</item>
-        <item>2623,FE0F</item>
+        <item>2622</item>
+        <item>2623</item>
         <!-- arrow -->
-        <item>2B06,FE0F</item>
-        <item>2197,FE0F</item>
-        <item>27A1,FE0F</item>
-        <item>2198,FE0F</item>
-        <item>2B07,FE0F</item>
-        <item>2199,FE0F</item>
-        <item>2B05,FE0F</item>
-        <item>2196,FE0F</item>
-        <item>2195,FE0F</item>
-        <item>2194,FE0F</item>
-        <item>21A9,FE0F</item>
-        <item>21AA,FE0F</item>
-        <item>2934,FE0F</item>
-        <item>2935,FE0F</item>
+        <item>2B06</item>
+        <item>2197</item>
+        <item>27A1</item>
+        <item>2198</item>
+        <item>2B07</item>
+        <item>2199</item>
+        <item>2B05</item>
+        <item>2196</item>
+        <item>2195</item>
+        <item>2194</item>
+        <item>21A9</item>
+        <item>21AA</item>
+        <item>2934</item>
+        <item>2935</item>
         <item>1F503</item>
         <item>1F504</item>
         <item>1F519</item>
@@ -1229,17 +1229,18 @@
         <item>1F51D</item>
         <!-- religion -->
         <item>1F6D0</item>
-        <item>269B,FE0F</item>
+        <item>269B</item>
         <item>1F549</item>
-        <item>2721,FE0F</item>
-        <item>2638,FE0F</item>
-        <item>262F,FE0F</item>
-        <item>271D,FE0F</item>
-        <item>2626,FE0F</item>
-        <item>262A,FE0F</item>
-        <item>262E,FE0F</item>
+        <item>2721</item>
+        <item>2638</item>
+        <item>262F</item>
+        <item>271D</item>
+        <item>2626</item>
+        <item>262A</item>
+        <item>262E</item>
         <item>1F54E</item>
         <item>1F52F</item>
+        <item>1FAAF</item>
         <!-- zodiac -->
         <item>2648</item>
         <item>2649</item>
@@ -1258,13 +1259,13 @@
         <item>1F500</item>
         <item>1F501</item>
         <item>1F502</item>
-        <item>25B6,FE0F</item>
+        <item>25B6</item>
         <item>23E9</item>
-        <item>23ED,FE0F</item>
-        <item>23EF,FE0F</item>
-        <item>25C0,FE0F</item>
+        <item>23ED</item>
+        <item>23EF</item>
+        <item>25C0</item>
         <item>23EA</item>
-        <item>23EE,FE0F</item>
+        <item>23EE</item>
         <item>1F53C</item>
         <item>23EB</item>
         <item>1F53D</item>
@@ -1272,56 +1273,58 @@
         <item>23F8</item>
         <item>23F9</item>
         <item>23FA</item>
-        <item>23CF,FE0F</item>
+        <item>23CF</item>
         <item>1F3A6</item>
         <item>1F505</item>
         <item>1F506</item>
         <item>1F4F6</item>
+        <item>1F6DC</item>
         <item>1F4F3</item>
         <item>1F4F4</item>
         <!-- gender -->
-        <item>2640,FE0F</item>
-        <item>2642,FE0F</item>
+        <item>2640</item>
+        <item>2642</item>
         <item>26A7</item>
         <!-- math -->
-        <item>2716,FE0F</item>
+        <item>2716</item>
         <item>2795</item>
         <item>2796</item>
         <item>2797</item>
-        <item>267E,FE0F</item>
+        <item>1F7F0</item>
+        <item>267E</item>
         <!-- punctuation -->
-        <item>203C,FE0F</item>
-        <item>2049,FE0F</item>
+        <item>203C</item>
+        <item>2049</item>
         <item>2753</item>
         <item>2754</item>
         <item>2755</item>
         <item>2757</item>
-        <item>3030,FE0F</item>
+        <item>3030</item>
         <!-- currency -->
         <item>1F4B1</item>
         <item>1F4B2</item>
         <!-- other-symbol -->
-        <item>2695,FE0F</item>
-        <item>267B,FE0F</item>
-        <item>269C,FE0F</item>
+        <item>2695</item>
+        <item>267B</item>
+        <item>269C</item>
         <item>1F531</item>
         <item>1F4DB</item>
         <item>1F530</item>
         <item>2B55</item>
         <item>2705</item>
-        <item>2611,FE0F</item>
-        <item>2714,FE0F</item>
+        <item>2611</item>
+        <item>2714</item>
         <item>274C</item>
         <item>274E</item>
         <item>27B0</item>
         <item>27BF</item>
-        <item>303D,FE0F</item>
-        <item>2733,FE0F</item>
-        <item>2734,FE0F</item>
-        <item>2747,FE0F</item>
-        <item>00A9,FE0F</item>
-        <item>00AE,FE0F</item>
-        <item>2122,FE0F</item>
+        <item>303D</item>
+        <item>2733</item>
+        <item>2734</item>
+        <item>2747</item>
+        <item>00A9</item>
+        <item>00AE</item>
+        <item>2122</item>
         <!-- keycap -->
         <item>0023,FE0F,20E3</item>
         <item>002A,FE0F,20E3</item>
@@ -1342,26 +1345,26 @@
         <item>1F522</item>
         <item>1F523</item>
         <item>1F524</item>
-        <item>1F170,FE0F</item>
+        <item>1F170</item>
         <item>1F18E</item>
-        <item>1F171,FE0F</item>
+        <item>1F171</item>
         <item>1F191</item>
         <item>1F192</item>
         <item>1F193</item>
-        <item>2139,FE0F</item>
+        <item>2139</item>
         <item>1F194</item>
-        <item>24C2,FE0F</item>
+        <item>24C2</item>
         <item>1F195</item>
         <item>1F196</item>
-        <item>1F17E,FE0F</item>
+        <item>1F17E</item>
         <item>1F197</item>
-        <item>1F17F,FE0F</item>
+        <item>1F17F</item>
         <item>1F198</item>
         <item>1F199</item>
         <item>1F19A</item>
         <item>1F201</item>
-        <item>1F202,FE0F</item>
-        <item>1F237,FE0F</item>
+        <item>1F202</item>
+        <item>1F237</item>
         <item>1F236</item>
         <item>1F22F</item>
         <item>1F250</item>
@@ -1372,8 +1375,8 @@
         <item>1F238</item>
         <item>1F234</item>
         <item>1F233</item>
-        <item>3297,FE0F</item>
-        <item>3299,FE0F</item>
+        <item>3297</item>
+        <item>3299</item>
         <item>1F23A</item>
         <item>1F235</item>
         <!-- geometric -->
@@ -1395,12 +1398,12 @@
         <item>1F7EB</item>
         <item>2B1B</item>
         <item>2B1C</item>
-        <item>25FC,FE0F</item>
-        <item>25FB,FE0F</item>
+        <item>25FC</item>
+        <item>25FB</item>
         <item>25FE</item>
         <item>25FD</item>
-        <item>25AA,FE0F</item>
-        <item>25AB,FE0F</item>
+        <item>25AA</item>
+        <item>25AB</item>
         <item>1F536</item>
         <item>1F537</item>
         <item>1F538</item>
@@ -1437,6 +1440,8 @@
         <item>1F405</item>
         <item>1F406</item>
         <item>1F434</item>
+        <item>1FACE</item>
+        <item>1FACF</item>
         <item>1F40E</item>
         <item>1F984</item>
         <item>1F993</item>
@@ -1500,6 +1505,9 @@
         <item>1F9A9</item>
         <item>1F99A</item>
         <item>1F99C</item>
+        <item>1FABD</item>
+        <item>1F426,200D,2B1B</item>
+        <item>1FABF</item>
         <!-- animal-amphibian -->
         <item>1F438</item>
         <!-- animal-reptile -->
@@ -1523,6 +1531,7 @@
         <item>1F419</item>
         <item>1F41A</item>
         <item>1FAB8</item>
+        <item>1FABC</item>
         <!-- animal-bug -->
         <item>1F40C</item>
         <item>1F98B</item>
@@ -1552,6 +1561,7 @@
         <item>1F33B</item>
         <item>1F33C</item>
         <item>1F337</item>
+        <item>1FABB</item>
         <!-- plant-other -->
         <item>1F331</item>
         <item>1FAB4</item>
@@ -1561,13 +1571,14 @@
         <item>1F335</item>
         <item>1F33E</item>
         <item>1F33F</item>
-        <item>2618,FE0F</item>
+        <item>2618</item>
         <item>1F340</item>
         <item>1F341</item>
         <item>1F342</item>
         <item>1F343</item>
         <item>1FAB9</item>
         <item>1FABA</item>
+        <item>1F344</item>
     </array>
     <array
         name="emoji_eight_smiley_people"
@@ -1627,6 +1638,7 @@
         <item>1F62C</item>
         <item>1F62E,200D,1F4A8</item>
         <item>1F925</item>
+        <item>1FAE8</item>
         <!-- face-sleepy -->
         <item>1F60C</item>
         <item>1F614</item>
@@ -1659,7 +1671,7 @@
         <item>1FAE4</item>
         <item>1F61F</item>
         <item>1F641</item>
-        <item>2639,FE0F</item>
+        <item>2639</item>
         <item>1F62E</item>
         <item>1F62F</item>
         <item>1F632</item>
@@ -1689,7 +1701,7 @@
         <item>1F608</item>
         <item>1F47F</item>
         <item>1F480</item>
-        <item>2620,FE0F</item>
+        <item>2620</item>
         <!-- face-costume -->
         <item>1F4A9</item>
         <item>1F921</item>
@@ -1713,8 +1725,7 @@
         <item>1F648</item>
         <item>1F649</item>
         <item>1F64A</item>
-        <!-- emotion -->
-        <item>1F48B</item>
+        <!-- heart -->
         <item>1F48C</item>
         <item>1F498</item>
         <item>1F49D</item>
@@ -1724,19 +1735,24 @@
         <item>1F49E</item>
         <item>1F495</item>
         <item>1F49F</item>
-        <item>2763,FE0F</item>
+        <item>2763</item>
         <item>1F494</item>
         <item>2764,FE0F,200D,1F525</item>
         <item>2764,FE0F,200D,1FA79</item>
         <item>2764</item>
+        <item>1FA77</item>
         <item>1F9E1</item>
         <item>1F49B</item>
         <item>1F49A</item>
         <item>1F499</item>
+        <item>1FA75</item>
         <item>1F49C</item>
         <item>1F90E</item>
         <item>1F5A4</item>
+        <item>1FA76</item>
         <item>1F90D</item>
+        <!-- emotion -->
+        <item>1F48B</item>
         <item>1F4AF</item>
         <item>1F4A2</item>
         <item>1F4A5</item>
@@ -1744,7 +1760,6 @@
         <item>1F4A6</item>
         <item>1F4A8</item>
         <item>1F573</item>
-        <item>1F4A3</item>
         <item>1F4AC</item>
         <item>1F441,FE0F,200D,1F5E8,FE0F</item>
         <item>1F5E8</item>
@@ -1761,6 +1776,8 @@
         <item>1FAF2</item>
         <item>1FAF3</item>
         <item>1FAF4</item>
+        <item>1FAF7</item>
+        <item>1FAF8</item>
         <!-- hand-fingers-partial -->
         <item>1F44C</item>
         <item>1F90C</item>
@@ -1795,7 +1812,7 @@
         <item>1F91D</item>
         <item>1F64F</item>
         <!-- hand-prop -->
-        <item>270D,FE0F</item>
+        <item>270D</item>
         <item>1F485</item>
         <item>1F933</item>
         <!-- body-parts -->
@@ -2036,7 +2053,7 @@
         <!-- person-sport -->
         <item>1F93A</item>
         <item>1F3C7</item>
-        <item>26F7,FE0F</item>
+        <item>26F7</item>
         <item>1F3C2</item>
         <item>1F3CC</item>
         <item>1F3CC,FE0F,200D,2642,FE0F</item>
@@ -2050,7 +2067,7 @@
         <item>1F3CA</item>
         <item>1F3CA,200D,2642,FE0F</item>
         <item>1F3CA,200D,2640,FE0F</item>
-        <item>26F9,FE0F</item>
+        <item>26F9</item>
         <item>26F9,FE0F,200D,2642,FE0F</item>
         <item>26F9,FE0F,200D,2640,FE0F</item>
         <item>1F3CB</item>
@@ -2149,6 +2166,7 @@
         <item>1F602</item>
         <item>1F642</item>
         <item>1F643</item>
+        <item>1FAE0</item>
         <item>1F609</item>
         <item>1F60A</item>
         <item>1F607</item>
@@ -2172,19 +2190,26 @@
         <!-- face-hand -->
         <item>1F917</item>
         <item>1F92D</item>
+        <item>1FAE2</item>
+        <item>1FAE3</item>
         <item>1F92B</item>
         <item>1F914</item>
+        <item>1FAE1</item>
         <!-- face-neutral-skeptical -->
         <item>1F910</item>
         <item>1F928</item>
         <item>1F610</item>
         <item>1F611</item>
         <item>1F636</item>
+        <item>1FAE5</item>
+        <item>1F636,200D,1F32B,FE0F</item>
         <item>1F60F</item>
         <item>1F612</item>
         <item>1F644</item>
         <item>1F62C</item>
+        <item>1F62E,200D,1F4A8</item>
         <item>1F925</item>
+        <item>1FAE8</item>
         <!-- face-sleepy -->
         <item>1F60C</item>
         <item>1F614</item>
@@ -2202,6 +2227,7 @@
         <item>1F976</item>
         <item>1F974</item>
         <item>1F635</item>
+        <item>1F635,200D,1F4AB</item>
         <item>1F92F</item>
         <!-- face-hat -->
         <item>1F920</item>
@@ -2213,14 +2239,16 @@
         <item>1F9D0</item>
         <!-- face-concerned -->
         <item>1F615</item>
+        <item>1FAE4</item>
         <item>1F61F</item>
         <item>1F641</item>
-        <item>2639,FE0F</item>
+        <item>2639</item>
         <item>1F62E</item>
         <item>1F62F</item>
         <item>1F632</item>
         <item>1F633</item>
         <item>1F97A</item>
+        <item>1F979</item>
         <item>1F626</item>
         <item>1F627</item>
         <item>1F628</item>
@@ -2244,7 +2272,7 @@
         <item>1F608</item>
         <item>1F47F</item>
         <item>1F480</item>
-        <item>2620,FE0F</item>
+        <item>2620</item>
         <!-- face-costume -->
         <item>1F4A9</item>
         <item>1F921</item>
@@ -2268,8 +2296,7 @@
         <item>1F648</item>
         <item>1F649</item>
         <item>1F64A</item>
-        <!-- emotion -->
-        <item>1F48B</item>
+        <!-- heart -->
         <item>1F48C</item>
         <item>1F498</item>
         <item>1F49D</item>
@@ -2279,17 +2306,24 @@
         <item>1F49E</item>
         <item>1F495</item>
         <item>1F49F</item>
-        <item>2763,FE0F</item>
+        <item>2763</item>
         <item>1F494</item>
+        <item>2764,FE0F,200D,1F525</item>
+        <item>2764,FE0F,200D,1FA79</item>
         <item>2764</item>
+        <item>1FA77</item>
         <item>1F9E1</item>
         <item>1F49B</item>
         <item>1F49A</item>
         <item>1F499</item>
+        <item>1FA75</item>
         <item>1F49C</item>
         <item>1F90E</item>
         <item>1F5A4</item>
+        <item>1FA76</item>
         <item>1F90D</item>
+        <!-- emotion -->
+        <item>1F48B</item>
         <item>1F4AF</item>
         <item>1F4A2</item>
         <item>1F4A5</item>
@@ -2297,7 +2331,6 @@
         <item>1F4A6</item>
         <item>1F4A8</item>
         <item>1F573</item>
-        <item>1F4A3</item>
         <item>1F4AC</item>
         <item>1F441,FE0F,200D,1F5E8,FE0F</item>
         <item>1F5E8</item>
@@ -2310,12 +2343,19 @@
         <item>1F590</item>
         <item>270B</item>
         <item>1F596</item>
+        <item>1FAF1</item>
+        <item>1FAF2</item>
+        <item>1FAF3</item>
+        <item>1FAF4</item>
+        <item>1FAF7</item>
+        <item>1FAF8</item>
         <!-- hand-fingers-partial -->
         <item>1F44C</item>
         <item>1F90C</item>
         <item>1F90F</item>
         <item>270C</item>
         <item>1F91E</item>
+        <item>1FAF0</item>
         <item>1F91F</item>
         <item>1F918</item>
         <item>1F919</item>
@@ -2326,6 +2366,7 @@
         <item>1F595</item>
         <item>1F447</item>
         <item>261D</item>
+        <item>1FAF5</item>
         <!-- hand-fingers-closed -->
         <item>1F44D</item>
         <item>1F44E</item>
@@ -2336,12 +2377,13 @@
         <!-- hands -->
         <item>1F44F</item>
         <item>1F64C</item>
+        <item>1FAF6</item>
         <item>1F450</item>
         <item>1F932</item>
         <item>1F91D</item>
         <item>1F64F</item>
         <!-- hand-prop -->
-        <item>270D,FE0F</item>
+        <item>270D</item>
         <item>1F485</item>
         <item>1F933</item>
         <!-- body-parts -->
@@ -2362,6 +2404,7 @@
         <item>1F441</item>
         <item>1F445</item>
         <item>1F444</item>
+        <item>1FAE6</item>
         <!-- person -->
         <item>1F476</item>
         <item>1F9D2</item>
@@ -2371,6 +2414,8 @@
         <item>1F471</item>
         <item>1F468</item>
         <item>1F9D4</item>
+        <item>1F9D4,200D,2642,FE0F</item>
+        <item>1F9D4,200D,2640,FE0F</item>
         <item>1F468,200D,1F9B0</item>
         <item>1F468,200D,1F9B1</item>
         <item>1F468,200D,1F9B3</item>
@@ -2482,6 +2527,7 @@
         <item>1F477</item>
         <item>1F477,200D,2642,FE0F</item>
         <item>1F477,200D,2640,FE0F</item>
+        <item>1FAC5</item>
         <item>1F934</item>
         <item>1F478</item>
         <item>1F473</item>
@@ -2496,6 +2542,8 @@
         <item>1F470,200D,2642,FE0F</item>
         <item>1F470,200D,2640,FE0F</item>
         <item>1F930</item>
+        <item>1FAC3</item>
+        <item>1FAC4</item>
         <item>1F931</item>
         <item>1F469,200D,1F37C</item>
         <item>1F468,200D,1F37C</item>
@@ -2532,6 +2580,7 @@
         <item>1F9DF</item>
         <item>1F9DF,200D,2642,FE0F</item>
         <item>1F9DF,200D,2640,FE0F</item>
+        <item>1F9CC</item>
         <!-- person-activity -->
         <item>1F486</item>
         <item>1F486,200D,2642,FE0F</item>
@@ -2575,7 +2624,7 @@
         <!-- person-sport -->
         <item>1F93A</item>
         <item>1F3C7</item>
-        <item>26F7,FE0F</item>
+        <item>26F7</item>
         <item>1F3C2</item>
         <item>1F3CC</item>
         <item>1F3CC,FE0F,200D,2642,FE0F</item>
@@ -2589,7 +2638,7 @@
         <item>1F3CA</item>
         <item>1F3CA,200D,2642,FE0F</item>
         <item>1F3CA,200D,2640,FE0F</item>
-        <item>26F9,FE0F</item>
+        <item>26F9</item>
         <item>26F9,FE0F,200D,2642,FE0F</item>
         <item>26F9,FE0F,200D,2640,FE0F</item>
         <item>1F3CB</item>
@@ -2711,10 +2760,11 @@
         <item>1F966</item>
         <item>1F9C4</item>
         <item>1F9C5</item>
-        <item>1F344</item>
         <item>1F95C</item>
         <item>1FAD8</item>
         <item>1F330</item>
+        <item>1FADA</item>
+        <item>1FADB</item>
         <!-- food-prepared -->
         <item>1F35E</item>
         <item>1F950</item>
@@ -2844,6 +2894,7 @@
         <item>1FA73</item>
         <item>1F459</item>
         <item>1F45A</item>
+        <item>1FAAD</item>
         <item>1F45B</item>
         <item>1F45C</item>
         <item>1F45D</item>
@@ -2858,13 +2909,14 @@
         <item>1F461</item>
         <item>1FA70</item>
         <item>1F462</item>
+        <item>1FAAE</item>
         <item>1F451</item>
         <item>1F452</item>
         <item>1F3A9</item>
         <item>1F393</item>
         <item>1F9E2</item>
         <item>1FA96</item>
-        <item>26D1,FE0F</item>
+        <item>26D1</item>
         <item>1F4FF</item>
         <item>1F484</item>
         <item>1F48D</item>
@@ -2899,6 +2951,8 @@
         <item>1FA95</item>
         <item>1F941</item>
         <item>1FA98</item>
+        <item>1FA87</item>
+        <item>1FA88</item>
         <!-- phone -->
         <item>1F4F1</item>
         <item>1F4F2</item>
@@ -2913,7 +2967,7 @@
         <item>1F4BB</item>
         <item>1F5A5</item>
         <item>1F5A8</item>
-        <item>2328,FE0F</item>
+        <item>2328</item>
         <item>1F5B1</item>
         <item>1F5B2</item>
         <item>1F4BD</item>
@@ -2968,7 +3022,7 @@
         <item>1F9FE</item>
         <item>1F4B9</item>
         <!-- mail -->
-        <item>2709,FE0F</item>
+        <item>2709</item>
         <item>1F4E7</item>
         <item>1F4E8</item>
         <item>1F4E9</item>
@@ -2982,8 +3036,8 @@
         <item>1F4EE</item>
         <item>1F5F3</item>
         <!-- writing -->
-        <item>270F,FE0F</item>
-        <item>2712,FE0F</item>
+        <item>270F</item>
+        <item>2712</item>
         <item>1F58B</item>
         <item>1F58A</item>
         <item>1F58C</item>
@@ -3009,7 +3063,7 @@
         <item>1F587</item>
         <item>1F4CF</item>
         <item>1F4D0</item>
-        <item>2702,FE0F</item>
+        <item>2702</item>
         <item>1F5C3</item>
         <item>1F5C4</item>
         <item>1F5D1</item>
@@ -3023,12 +3077,12 @@
         <!-- tool -->
         <item>1F528</item>
         <item>1FA93</item>
-        <item>26CF,FE0F</item>
-        <item>2692,FE0F</item>
+        <item>26CF</item>
+        <item>2692</item>
         <item>1F6E0</item>
         <item>1F5E1</item>
-        <item>2694,FE0F</item>
-        <item>1F52B</item>
+        <item>2694</item>
+        <item>1F4A3</item>
         <item>1FA83</item>
         <item>1F3F9</item>
         <item>1F6E1</item>
@@ -3036,18 +3090,18 @@
         <item>1F527</item>
         <item>1FA9B</item>
         <item>1F529</item>
-        <item>2699,FE0F</item>
+        <item>2699</item>
         <item>1F5DC</item>
-        <item>2696,FE0F</item>
+        <item>2696</item>
         <item>1F9AF</item>
         <item>1F517</item>
-        <item>26D3,FE0F</item>
+        <item>26D3</item>
         <item>1FA9D</item>
         <item>1F9F0</item>
         <item>1F9F2</item>
         <item>1FA9C</item>
         <!-- science -->
-        <item>2697,FE0F</item>
+        <item>2697</item>
         <item>1F9EA</item>
         <item>1F9EB</item>
         <item>1F9EC</item>
@@ -3090,9 +3144,11 @@
         <item>1F6D2</item>
         <!-- other-object -->
         <item>1F6AC</item>
-        <item>26B0,FE0F</item>
+        <item>26B0</item>
         <item>1FAA6</item>
-        <item>26B1,FE0F</item>
+        <item>26B1</item>
+        <item>1F9FF</item>
+        <item>1FAAC</item>
         <item>1F5FF</item>
         <item>1FAA7</item>
         <item>1FAAA</item>
@@ -3151,7 +3207,7 @@
         <item>1F94B</item>
         <item>1F945</item>
         <item>26F3</item>
-        <item>26F8,FE0F</item>
+        <item>26F8</item>
         <item>1F3A3</item>
         <item>1F93F</item>
         <item>1F3BD</item>
@@ -3162,11 +3218,10 @@
         <item>1F3AF</item>
         <item>1FA80</item>
         <item>1FA81</item>
+        <item>1F52B</item>
         <item>1F3B1</item>
         <item>1F52E</item>
         <item>1FA84</item>
-        <item>1F9FF</item>
-        <item>1FAAC</item>
         <item>1F3AE</item>
         <item>1F579</item>
         <item>1F3B0</item>
@@ -3180,7 +3235,7 @@
         <item>2665</item>
         <item>2666</item>
         <item>2663</item>
-        <item>265F,FE0F</item>
+        <item>265F</item>
         <item>1F0CF</item>
         <item>1F004</item>
         <item>1F3B4</item>
@@ -3207,7 +3262,7 @@
         <item>1F9ED</item>
         <!-- place-geographic -->
         <item>1F3D4</item>
-        <item>26F0,FE0F</item>
+        <item>26F0</item>
         <item>1F30B</item>
         <item>1F5FB</item>
         <item>1F3D5</item>
@@ -3248,7 +3303,7 @@
         <item>1F54C</item>
         <item>1F6D5</item>
         <item>1F54D</item>
-        <item>26E9,FE0F</item>
+        <item>26E9</item>
         <item>1F54B</item>
         <!-- place-other -->
         <item>26F2</item>
@@ -3261,7 +3316,7 @@
         <item>1F306</item>
         <item>1F307</item>
         <item>1F309</item>
-        <item>2668,FE0F</item>
+        <item>2668</item>
         <item>1F3A0</item>
         <item>1F6DD</item>
         <item>1F3A1</item>
@@ -3326,11 +3381,11 @@
         <item>1F6F6</item>
         <item>1F6A4</item>
         <item>1F6F3</item>
-        <item>26F4,FE0F</item>
+        <item>26F4</item>
         <item>1F6E5</item>
         <item>1F6A2</item>
         <!-- transport-air -->
-        <item>2708,FE0F</item>
+        <item>2708</item>
         <item>1F6E9</item>
         <item>1F6EB</item>
         <item>1F6EC</item>
@@ -3351,8 +3406,8 @@
         <item>23F3</item>
         <item>231A</item>
         <item>23F0</item>
-        <item>23F1,FE0F</item>
-        <item>23F2,FE0F</item>
+        <item>23F1</item>
+        <item>23F2</item>
         <item>1F570</item>
         <item>1F55B</item>
         <item>1F567</item>
@@ -3402,7 +3457,7 @@
         <item>1F30C</item>
         <item>2601</item>
         <item>26C5</item>
-        <item>26C8,FE0F</item>
+        <item>26C8</item>
         <item>1F324</item>
         <item>1F325</item>
         <item>1F326</item>
@@ -3415,14 +3470,14 @@
         <item>1F300</item>
         <item>1F308</item>
         <item>1F302</item>
-        <item>2602,FE0F</item>
+        <item>2602</item>
         <item>2614</item>
-        <item>26F1,FE0F</item>
+        <item>26F1</item>
         <item>26A1</item>
         <item>2744</item>
-        <item>2603,FE0F</item>
+        <item>2603</item>
         <item>26C4</item>
-        <item>2604,FE0F</item>
+        <item>2604</item>
         <item>1F525</item>
         <item>1F4A7</item>
         <item>1F30A</item>
