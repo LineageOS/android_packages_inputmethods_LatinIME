@@ -16,6 +16,23 @@
       "message": "Didn\u0027t build yet, but used the updated script to generate this. Doesn\u0027t need the follow up patch anymore if this works :)",
       "revId": "6a6ead59693719d13c184ab937e5a5a75ae23687",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "46f8addc_3a4aec30",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2023-03-25T22:30:31Z",
+      "side": 1,
+      "message": "This \"works\" but now has every icon with skin color listed separately, thus making it 6 of every hand, leg, ear, face, ...",
+      "revId": "6a6ead59693719d13c184ab937e5a5a75ae23687",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
