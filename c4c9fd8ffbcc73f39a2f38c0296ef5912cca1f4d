@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c24d8c7e_8b0560e0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 17890
+      },
+      "writtenOn": "2023-03-29T08:20:39Z",
+      "side": 1,
+      "message": "This would be nice to have on 19.1 devices.",
+      "revId": "c4c9fd8ffbcc73f39a2f38c0296ef5912cca1f4d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
