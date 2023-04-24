@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+**
+** Copyright 2014, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<!--
+    These Emoji symbols are unsupported by TTS.
+    TODO: Remove this file when TTS/TalkBack support these Emoji symbols.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="spoken_emoji_231A">Ɛass</string>
+  <string name="spoken_emoji_231B">Amasrag</string>
+  <string name="spoken_emoji_2328">Anasiw</string>
+  <string name="spoken_emoji_2601">Asigna</string>
+  <string name="spoken_emoji_2602">Tasiwant</string>
+  <string name="spoken_emoji_2603">Argaz n udfel</string>
+  <string name="spoken_emoji_2604">Asmil</string>
+  <string name="spoken_emoji_260E">Tiliɣri taberkant</string>
+  <string name="spoken_emoji_2693">Tamdeyt</string>
+  <string name="spoken_emoji_26EA">Taglizt</string>
+  <string name="spoken_emoji_26F0">Adrar</string>
+  <string name="spoken_emoji_26F2">Tala</string>
+  <string name="spoken_emoji_1F170">Idammen anaw A</string>
+  <string name="spoken_emoji_1F171">Idammen anaw B</string>
+  <string name="spoken_emoji_1F17E">Idammen anaw O</string>
+  <string name="spoken_emoji_1F18E">Idammen anaw AB</string>
+  <string name="spoken_emoji_1F301">Agu</string>
+  <string name="spoken_emoji_1F305">Alluy n yiṭṭij</string>
+  <string name="spoken_emoji_1F335">Akermus</string>
+  <string name="spoken_emoji_1F344">Agersal</string>
+  <string name="spoken_emoji_1F34C">Tabanant</string>
+  <string name="spoken_emoji_1F353">Tazwelt</string>
+  <string name="spoken_emoji_1F373">Cuisson</string>
+  <string name="spoken_emoji_1F386">Ifufucen</string>
+  <string name="spoken_emoji_1F3A4">Asawaḍ</string>
+  <string name="spoken_emoji_1F3A6">Ssinima</string>
+  <string name="spoken_emoji_1F3B3">Basketball x x</string>
+  <string name="spoken_emoji_1F3B8">Tagitaṛt</string>
+  <string name="spoken_emoji_1F3BA">Lɣiḍa</string>
+  <string name="spoken_emoji_1F3DF">Annar</string>
+  <string name="spoken_emoji_1F3E5">Sbiṭar</string>
+  <string name="spoken_emoji_1F3E6">Tabanka</string>
+  <string name="spoken_emoji_1F3E8">Asensu</string>
+  <string name="spoken_emoji_1F3E9">Asensu n tayri</string>
+  <string name="spoken_emoji_1F3EB">Aɣerbaz</string>
+  <string name="spoken_emoji_1F3F7">Tabzimt</string>
+  <string name="spoken_emoji_1F401">Taɣerdayt</string>
+  <string name="spoken_emoji_1F407">Awtul</string>
+  <string name="spoken_emoji_1F408">Amcic</string>
+  <string name="spoken_emoji_1F40C">Aɛarus</string>
+  <string name="spoken_emoji_1F40E">Aεewdiw</string>
+  <string name="spoken_emoji_1F413">Ayaziḍ</string>
+  <string name="spoken_emoji_1F415">Aqjun</string>
+  <string name="spoken_emoji_1F416">Ilef</string>
+  <string name="spoken_emoji_1F418">Ilu</string>
+  <string name="spoken_emoji_1F419">Azayz</string>
+  <string name="spoken_emoji_1F41F">Lḥut</string>
+  <string name="spoken_emoji_1F422">Afekrun</string>
+  <string name="spoken_emoji_1F426">Agdiḍ</string>
+  <string name="spoken_emoji_1F427">Awarfus</string>
+  <string name="spoken_emoji_1F42C">Dolphin</string>
+  <string name="spoken_emoji_1F46A">Famille</string>
+  <string name="spoken_emoji_1F476">A-lufan</string>
+  <string name="spoken_emoji_1F48D">Aṭenṭen</string>
+  <string name="spoken_emoji_1F4B3">Takarḍa n usmad</string>
+  <string name="spoken_emoji_1F4C5">Tasmektit</string>
+  <string name="spoken_emoji_1F4CB">Ɣef afus</string>
+  <string name="spoken_emoji_1F4DC">Adrudem</string>
+  <string name="spoken_emoji_1F4E6">Paquet</string>
+  <string name="spoken_emoji_1F4F7">Takamiṛat</string>
+  <string name="spoken_emoji_1F4FB">Ṛṛadyu</string>
+  <string name="spoken_emoji_1F508">Amsimγur usiwel</string>
+  <string name="spoken_emoji_1F50B">Aẓru</string>
+  <string name="spoken_emoji_1F511">Tasarut</string>
+  <string name="spoken_emoji_1F512">Sekkeṛ</string>
+  <string name="spoken_emoji_1F514">Anayna</string>
+  <string name="spoken_emoji_1F516">Signet</string>
+  <string name="spoken_emoji_1F517">Symbole de lien</string>
+  <string name="spoken_emoji_1F525">Times</string>
+  <string name="spoken_emoji_1F528">Tafḍist</string>
+  <string name="spoken_emoji_1F680">Timeẓdit</string>
+  <string name="spoken_emoji_1F686">Tamacint</string>
+  <string name="spoken_emoji_1F689">Ṛṛadyu</string>
+  <string name="spoken_emoji_1F68C">Azrug</string>
+  <string name="spoken_emoji_1F695">Aṭaksi</string>
+  <string name="spoken_emoji_1F697">Takeṛṛust</string>
+  <string name="spoken_emoji_1F6B2">Azlalam</string>
+  <string name="spoken_emoji_1F6B6">Amsebrid</string>
+  <string name="spoken_emoji_1F6BF">Tasnuceft</string>
+  <string name="spoken_emoji_1F6E3">Abrid agejdan</string>
+  <string name="spoken_emoji_1F6F0">Aṣatilit</string>
+  <string name="spoken_emoji_1F983">Ṭṭerk</string>
+  <string name="spoken_emoji_1F1E8_1F1E6">Anay i Kanada</string>
+  <string name="spoken_emoji_1F1E9_1F1FF">Anay i Lezzayer</string>
+  <string name="spoken_emoji_1F1EB_1F1F7">Anay i Fransa</string>
+  <string name="spoken_emoji_1F1EF_1F1F5">Anay I Japun</string>
+  <string name="spoken_emoji_1F1F0_1F1EA">Anay i Kenya</string>
+  <string name="spoken_emoji_1F1F1_1F1F0">Anay i Sri Lanka</string>
+  <string name="spoken_emoji_1F1F1_1F1F7">Anay i Sri Libirya</string>
+  <string name="spoken_emoji_1F1F1_1F1F8">Anay i Lizuṭu</string>
+  <string name="spoken_emoji_1F1F1_1F1FE">Anay i Libya</string>
+  <string name="spoken_emoji_1F1F2_1F1E6">Anay i lmaṛṛuk</string>
+  <string name="spoken_emoji_1F1F2_1F1F1">Anay i Mali</string>
+  <string name="spoken_emoji_1F1F2_1F1F2">Anay i Myanmar</string>
+  <string name="spoken_emoji_1F1F2_1F1FE">Anay i Malizia</string>
+  <string name="spoken_emoji_1F1F9_1F1F3">Anay i Tunes</string>
+  <string name="spoken_emoji_1F1F9_1F1FC">Anay i Taywan</string>
+  <string name="spoken_emoji_1F1FF_1F1FC">Anay i Zimbabwi</string>
+</resources>
