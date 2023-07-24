@@ -210,6 +210,11 @@
     <!-- Title of the item to change the keyboard theme [CHAR LIMIT=20]-->
     <string name="keyboard_layout">Keyboard theme</string>
 
+    <!-- Title of the preference item for enabling the number row -->
+    <string name="number_row">Number row</string>
+    <!-- Summary of the preference item for enabling the number row -->
+    <string name="number_row_summary">Always show number row</string>
+
     <!-- Title of the preference item for switching accounts [CHAR LIMIT=30] -->
     <string name="switch_accounts">Switch accounts</string>
     <!-- Summary of the preference item for switching accounts when no accounts

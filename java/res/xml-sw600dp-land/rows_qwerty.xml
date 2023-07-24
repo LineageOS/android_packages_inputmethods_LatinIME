@@ -24,6 +24,8 @@
     <include
         latin:keyboardLayout="@xml/key_styles_common" />
     <!-- First row -->
+    <include
+        latin:keyboardLayout="@xml/row_number_keys" />
     <Row>
         <switch>
             <!-- Split keyboard layout for the first row -->
