@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9943770e_b9cd4ced",
+        "filename": "java/src/com/android/inputmethod/keyboard/internal/KeyboardBuilder.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 686,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2023-07-24T21:33:48Z",
+      "side": 1,
+      "message": "line length",
+      "revId": "e2cf387699f43bad8630244b3708ee530cefa952",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
