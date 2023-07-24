@@ -31,4 +31,9 @@ disposition rather than other common dispositions for Latin languages. [CHAR LIM
 
     <!-- Title of the settings for setting keyboard height -->
     <string name="prefs_keyboard_height_scale">Keyboard height scale</string>
+
+    <!-- Preference item for enabling the number row -->
+    <string name="number_row">Number row</string>
+    <string name="number_row_summary">Always show number row in QWERTY, QWERTZ, AZERTY layouts</string>
+
 </resources>
