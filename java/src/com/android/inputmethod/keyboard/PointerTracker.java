@@ -85,6 +85,7 @@ public final class PointerTracker implements PointerTrackerQueue.Element,
 
     // Parameters for pointer handling.
     private static PointerTrackerParams sParams;
+    private static int sPointerStep;
     private static GestureStrokeRecognitionParams sGestureStrokeRecognitionParams;
     private static GestureStrokeDrawingParams sGestureStrokeDrawingParams;
     private static boolean sNeedsPhantomSuddenMoveEventHack;
@@ -128,6 +129,12 @@ public final class PointerTracker implements PointerTrackerQueue.Element,
     private int mLastX;
     private int mLastY;
 
+    // For spacebar slide tracking.
+    private int mStartX;
+    private int mStartY;
+    private long mStartTime;
+    private boolean mCursorMoved = false;
+
     // true if keyboard layout has been changed.
     private boolean mKeyboardLayoutHasBeenChanged;
 
@@ -156,6 +163,7 @@ public final class PointerTracker implements PointerTrackerQueue.Element,
     public static void init(final TypedArray mainKeyboardViewAttr, final TimerProxy timerProxy,
             final DrawingProxy drawingProxy) {
         sParams = new PointerTrackerParams(mainKeyboardViewAttr);
+        sPointerStep = (int)(10.0 * Resources.getSystem().getDisplayMetrics().density);
         sGestureStrokeRecognitionParams = new GestureStrokeRecognitionParams(mainKeyboardViewAttr);
         sGestureStrokeDrawingParams = new GestureStrokeDrawingParams(mainKeyboardViewAttr);
         sTypingTimeRecorder = new TypingTimeRecorder(
@@ -696,6 +704,10 @@ public final class PointerTracker implements PointerTrackerQueue.Element,
             startRepeatKey(key);
             startLongPressTimer(key);
             setPressedKeyGraphics(key, eventTime);
+
+            mStartX = x;
+            mStartY = y;
+            mStartTime = System.currentTimeMillis();
         }
     }
 
@@ -899,6 +911,21 @@ public final class PointerTracker implements PointerTrackerQueue.Element,
         final Key oldKey = mCurrentKey;
         final Key newKey = onMoveKey(x, y);
 
+        // Cursor space bar slider
+        if (Settings.getInstance().getCurrent().mSpaceTrackpadEnabled) {
+            if (oldKey != null && oldKey.getCode() == Constants.CODE_SPACE) {
+                int steps = (x - mStartX) / sPointerStep;
+                if (steps != 0
+                        && mStartTime + Settings.getInstance().getCurrent().mKeyLongpressTimeout
+                            < System.currentTimeMillis()) {
+                    mCursorMoved = true;
+                    mStartX += steps * sPointerStep;
+                    sListener.onMovePointer(steps);
+                }
+                return;
+            }
+        }
+
         if (sGestureEnabler.shouldHandleGesture()) {
             // Register move event on gesture tracker.
             onGestureMoveEvent(x, y, eventTime, true /* isMajorEvent */, newKey);
@@ -981,6 +1008,11 @@ public final class PointerTracker implements PointerTrackerQueue.Element,
             return;
         }
 
+        if (mCursorMoved) {
+            mCursorMoved = false;
+            return;
+        }
+
         if (sInGesture) {
             if (currentKey != null) {
                 callListenerOnRelease(currentKey, currentKey.getCode(), true /* withSliding */);
@@ -1021,6 +1053,9 @@ public final class PointerTracker implements PointerTrackerQueue.Element,
     public void onLongPressed() {
         sTimerProxy.cancelLongPressTimersOf(this);
         if (isShowingMoreKeysPanel()) {
+            return;
+        }
+        if (mCursorMoved) {
             return;
         }
         final Key key = getKey();
