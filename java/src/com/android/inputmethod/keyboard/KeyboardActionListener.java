@@ -101,6 +101,11 @@ public interface KeyboardActionListener {
      */
     public boolean onCustomRequest(int requestCode);
 
+    /**
+     * Called when user finished sliding space bar.
+     */
+    public void onMovePointer(int steps);
+
     public static final KeyboardActionListener EMPTY_LISTENER = new Adapter();
 
     public static class Adapter implements KeyboardActionListener {
@@ -128,5 +133,7 @@ public interface KeyboardActionListener {
         public boolean onCustomRequest(int requestCode) {
             return false;
         }
+        @Override
+        public void onMovePointer(int steps) {}
     }
 }
