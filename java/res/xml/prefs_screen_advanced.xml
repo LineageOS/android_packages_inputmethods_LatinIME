@@ -48,6 +48,11 @@
         android:title="@string/show_setup_wizard_icon"
         android:summary="@string/show_setup_wizard_icon_summary"
         android:persistent="true" />
+    <CheckBoxPreference
+        android:key="pref_space_trackpad"
+        android:title="@string/space_trackpad"
+        android:summary="@string/space_trackpad_summary"
+        android:defaultValue="true" />
     <com.android.inputmethod.latin.settings.SeekBarDialogPreference
         android:key="pref_keyboard_height_scale"
         android:title="@string/prefs_keyboard_height_scale"
