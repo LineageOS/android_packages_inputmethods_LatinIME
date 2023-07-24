@@ -126,6 +126,8 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
     static final long DELAY_WAIT_FOR_DICTIONARY_LOAD_MILLIS = TimeUnit.SECONDS.toMillis(2);
     static final long DELAY_DEALLOCATE_MEMORY_MILLIS = TimeUnit.SECONDS.toMillis(10);
 
+    private static final int MAX_SPACESLIDE_CHARS = 32;
+
     /**
      * A broadcast intent action to hide the software keyboard.
      */
@@ -1417,6 +1419,24 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
             return false;
         }
         return false;
+    }
+
+    @Override
+    public void onMovePointer(int steps) {
+        if (steps < 0) {
+            int availableCharacters =
+                getCurrentInputConnection().getTextBeforeCursor(MAX_SPACESLIDE_CHARS, 0).length();
+            steps = availableCharacters < -steps ? -availableCharacters : steps;
+        } else if (steps > 0) {
+            int availableCharacters =
+                getCurrentInputConnection().getTextAfterCursor(MAX_SPACESLIDE_CHARS, 0).length();
+            steps = availableCharacters < steps ? availableCharacters : steps;
+        } else {
+            return;
+        }
+
+        int newPosition = mInputLogic.mConnection.getExpectedSelectionStart() + steps;
+        getCurrentInputConnection().setSelection(newPosition, newPosition);
     }
 
     private boolean isShowingOptionDialog() {
