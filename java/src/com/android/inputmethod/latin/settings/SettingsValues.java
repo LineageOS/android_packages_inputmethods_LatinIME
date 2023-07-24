@@ -68,6 +68,7 @@ public class SettingsValues {
     public final boolean mKeyPreviewPopupOn;
     public final boolean mShowsVoiceInputKey;
     public final boolean mIncludesOtherImesInLanguageSwitchList;
+    public final boolean mShowNumberRow;
     public final boolean mShowsLanguageSwitchKey;
     public final boolean mUseContactsDict;
     public final boolean mUsePersonalizedDicts;
@@ -142,6 +143,7 @@ public class SettingsValues {
         mIncludesOtherImesInLanguageSwitchList = Settings.ENABLE_SHOW_LANGUAGE_SWITCH_KEY_SETTINGS
                 ? prefs.getBoolean(Settings.PREF_INCLUDE_OTHER_IMES_IN_LANGUAGE_SWITCH_LIST, false)
                 : true /* forcibly */;
+        mShowNumberRow = prefs.getBoolean(Settings.PREF_SHOW_NUMBER_ROW, false);
         mShowsLanguageSwitchKey = Settings.ENABLE_SHOW_LANGUAGE_SWITCH_KEY_SETTINGS
                 ? Settings.readShowsLanguageSwitchKey(prefs) : true /* forcibly */;
         mUseContactsDict = prefs.getBoolean(Settings.PREF_KEY_USE_CONTACTS_DICT, true);
