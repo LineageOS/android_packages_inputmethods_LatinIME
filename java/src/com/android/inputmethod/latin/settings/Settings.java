@@ -118,6 +118,9 @@ public final class Settings implements SharedPreferences.OnSharedPreferenceChang
     // Keyboard height (moved from debug settings)
     public static final String PREF_KEYBOARD_HEIGHT_SCALE = "pref_keyboard_height_scale";
 
+    // Space bar trackpad slider
+    public static final String PREF_SPACE_TRACKPAD = "pref_space_trackpad";
+
     // Emoji
     public static final String PREF_EMOJI_RECENT_KEYS = "emoji_recent_keys";
     public static final String PREF_EMOJI_CATEGORY_LAST_TYPED_ID = "emoji_category_last_typed_id";
@@ -360,6 +363,10 @@ public final class Settings implements SharedPreferences.OnSharedPreferenceChang
         final float percentage = prefs.getFloat(
                 PREF_KEYBOARD_HEIGHT_SCALE, UNDEFINED_PREFERENCE_VALUE_FLOAT);
         return (percentage != UNDEFINED_PREFERENCE_VALUE_FLOAT) ? percentage : defaultValue;
+    }
+
+    public static boolean readSpaceTrackpadEnabled(final SharedPreferences prefs) {
+        return prefs.getBoolean(PREF_SPACE_TRACKPAD, true);
     }
 
     public static boolean readUseFullscreenMode(final Resources res) {
