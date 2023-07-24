@@ -35,4 +35,8 @@ disposition rather than other common dispositions for Latin languages. [CHAR LIM
     <!-- Preference item for enabling the number row -->
     <string name="number_row">Number row</string>
     <string name="number_row_summary">Always show number row in QWERTY, QWERTZ, AZERTY layouts</string>
+
+    <!-- Preference item for the space bar track pad -->
+    <string name="space_trackpad">Space bar trackpad</string>
+    <string name="space_trackpad_summary">Swipe on the spacebar to move the cursor</string>
 </resources>
