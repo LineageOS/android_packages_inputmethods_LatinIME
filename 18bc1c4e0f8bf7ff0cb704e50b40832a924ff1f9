@@ -1,0 +1,106 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8b91fab3_a10613b4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2023-07-24T21:38:52Z",
+      "side": 1,
+      "message": "if I remember correctly this used to exist some time in the past. nice!",
+      "revId": "18bc1c4e0f8bf7ff0cb704e50b40832a924ff1f9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3e906363_860c2b3a",
+        "filename": "java/src/com/android/inputmethod/keyboard/PointerTracker.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 918,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2023-07-24T21:38:52Z",
+      "side": 1,
+      "message": "line length",
+      "revId": "18bc1c4e0f8bf7ff0cb704e50b40832a924ff1f9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cecd7359_dfe6114e",
+        "filename": "java/src/com/android/inputmethod/keyboard/PointerTracker.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1057,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2023-07-24T21:38:52Z",
+      "side": 1,
+      "message": "space after if",
+      "revId": "18bc1c4e0f8bf7ff0cb704e50b40832a924ff1f9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "68e09314_b159d306",
+        "filename": "java/src/com/android/inputmethod/latin/LatinIME.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1410,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2023-07-24T21:38:52Z",
+      "side": 1,
+      "message": "line length",
+      "revId": "18bc1c4e0f8bf7ff0cb704e50b40832a924ff1f9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a47b2815_ff63d788",
+        "filename": "java/src/com/android/inputmethod/latin/LatinIME.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1410,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2023-07-24T21:38:52Z",
+      "side": 1,
+      "message": "where does the magic 64 come from?",
+      "revId": "18bc1c4e0f8bf7ff0cb704e50b40832a924ff1f9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e7477b2b_eafb71e3",
+        "filename": "java/src/com/android/inputmethod/latin/LatinIME.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1414,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2023-07-24T21:38:52Z",
+      "side": 1,
+      "message": "line length",
+      "revId": "18bc1c4e0f8bf7ff0cb704e50b40832a924ff1f9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
