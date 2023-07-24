@@ -78,6 +78,7 @@ public final class KeyboardId {
     public final int mElementId;
     public final EditorInfo mEditorInfo;
     public final boolean mClobberSettingsKey;
+    public final boolean mNumberRowEnabled;
     public final boolean mLanguageSwitchKeyEnabled;
     public final String mCustomActionLabel;
     public final boolean mHasShortcutKey;
@@ -93,6 +94,7 @@ public final class KeyboardId {
         mElementId = elementId;
         mEditorInfo = params.mEditorInfo;
         mClobberSettingsKey = params.mNoSettingsKey;
+        mNumberRowEnabled = params.mNumberRowEnabled;
         mLanguageSwitchKeyEnabled = params.mLanguageSwitchKeyEnabled;
         mCustomActionLabel = (mEditorInfo.actionLabel != null)
                 ? mEditorInfo.actionLabel.toString() : null;
@@ -110,6 +112,7 @@ public final class KeyboardId {
                 id.mHeight,
                 id.passwordInput(),
                 id.mClobberSettingsKey,
+                id.mNumberRowEnabled,
                 id.mHasShortcutKey,
                 id.mLanguageSwitchKeyEnabled,
                 id.isMultiLine(),
@@ -131,6 +134,7 @@ public final class KeyboardId {
                 && other.mHeight == mHeight
                 && other.passwordInput() == passwordInput()
                 && other.mClobberSettingsKey == mClobberSettingsKey
+                && other.mNumberRowEnabled == mNumberRowEnabled
                 && other.mHasShortcutKey == mHasShortcutKey
                 && other.mLanguageSwitchKeyEnabled == mLanguageSwitchKeyEnabled
                 && other.isMultiLine() == isMultiLine()
@@ -200,6 +204,7 @@ public final class KeyboardId {
                 (navigateNext() ? " navigateNext" : ""),
                 (navigatePrevious() ? " navigatePrevious" : ""),
                 (mClobberSettingsKey ? " clobberSettingsKey" : ""),
+                (mNumberRowEnabled ? " numberRowEnabled" : ""),
                 (passwordInput() ? " passwordInput" : ""),
                 (mHasShortcutKey ? " hasShortcutKey" : ""),
                 (mLanguageSwitchKeyEnabled ? " languageSwitchKeyEnabled" : ""),
