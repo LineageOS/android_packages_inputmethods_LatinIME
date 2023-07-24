@@ -34,6 +34,18 @@
             latin:keyStyle="deleteKeyStyle"
             latin:keyWidth="fillRight" />
     </Row>
+    <switch>
+        <case
+            latin:numberRowEnabled="true"
+            >
+            <Row
+                latin:keyWidth="10%p"
+                >
+                <include
+                    latin:keyboardLayout="@xml/rowkeys_symbols_shift1" />
+            </Row>
+        </case>
+    </switch>
     <Row
         latin:keyWidth="9.0%p"
     >
