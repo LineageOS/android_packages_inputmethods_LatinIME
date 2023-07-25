@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "71e8a1af_c635a049",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 5911
+      },
+      "writtenOn": "2023-07-25T11:16:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8b91fab3_a10613b4",
+      "revId": "18bc1c4e0f8bf7ff0cb704e50b40832a924ff1f9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "3e906363_860c2b3a",
@@ -35,6 +53,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "8c31eae0_5994c9d1",
+        "filename": "java/src/com/android/inputmethod/keyboard/PointerTracker.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 918,
+      "author": {
+        "id": 5911
+      },
+      "writtenOn": "2023-07-25T11:16:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3e906363_860c2b3a",
+      "revId": "18bc1c4e0f8bf7ff0cb704e50b40832a924ff1f9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "cecd7359_dfe6114e",
@@ -48,6 +84,24 @@
       "writtenOn": "2023-07-24T21:38:52Z",
       "side": 1,
       "message": "space after if",
+      "revId": "18bc1c4e0f8bf7ff0cb704e50b40832a924ff1f9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "45150239_9ef828a8",
+        "filename": "java/src/com/android/inputmethod/keyboard/PointerTracker.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1057,
+      "author": {
+        "id": 5911
+      },
+      "writtenOn": "2023-07-25T11:16:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "cecd7359_dfe6114e",
       "revId": "18bc1c4e0f8bf7ff0cb704e50b40832a924ff1f9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
@@ -86,6 +140,42 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "55da3ac8_25a75c34",
+        "filename": "java/src/com/android/inputmethod/latin/LatinIME.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1410,
+      "author": {
+        "id": 5911
+      },
+      "writtenOn": "2023-07-25T11:16:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "68e09314_b159d306",
+      "revId": "18bc1c4e0f8bf7ff0cb704e50b40832a924ff1f9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a978bd40_aa46652d",
+        "filename": "java/src/com/android/inputmethod/latin/LatinIME.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1410,
+      "author": {
+        "id": 5911
+      },
+      "writtenOn": "2023-07-25T11:16:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a47b2815_ff63d788",
+      "revId": "18bc1c4e0f8bf7ff0cb704e50b40832a924ff1f9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e7477b2b_eafb71e3",
@@ -99,6 +189,24 @@
       "writtenOn": "2023-07-24T21:38:52Z",
       "side": 1,
       "message": "line length",
+      "revId": "18bc1c4e0f8bf7ff0cb704e50b40832a924ff1f9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d81f3ed2_498cbf26",
+        "filename": "java/src/com/android/inputmethod/latin/LatinIME.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1414,
+      "author": {
+        "id": 5911
+      },
+      "writtenOn": "2023-07-25T11:16:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e7477b2b_eafb71e3",
       "revId": "18bc1c4e0f8bf7ff0cb704e50b40832a924ff1f9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
