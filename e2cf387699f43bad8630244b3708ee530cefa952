@@ -16,6 +16,24 @@
       "message": "line length",
       "revId": "e2cf387699f43bad8630244b3708ee530cefa952",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b06b5766_0dd712cf",
+        "filename": "java/src/com/android/inputmethod/keyboard/internal/KeyboardBuilder.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 686,
+      "author": {
+        "id": 5911
+      },
+      "writtenOn": "2023-07-25T11:15:40Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9943770e_b9cd4ced",
+      "revId": "e2cf387699f43bad8630244b3708ee530cefa952",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
