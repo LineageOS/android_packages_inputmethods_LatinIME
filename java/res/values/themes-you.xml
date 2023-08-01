@@ -75,10 +75,10 @@
         <item name="functionalKeyBackground">@drawable/btn_keyboard_key_functional_you</item>
         <item name="spacebarBackground">@drawable/btn_keyboard_key_you</item>
         <item name="keyTextColor">@color/keyboard_key_text_color_you</item>
-        <item name="keyTextInactivatedColor">@color/functional_text_color_you</item>
-        <item name="functionalTextColor">@color/functional_text_color_you</item>
+        <item name="keyTextInactivatedColor">@color/keyboard_key_functional_text_color_you</item>
+        <item name="functionalTextColor">@color/keyboard_key_functional_text_color_you</item>
         <item name="keyHintLetterColor">@color/key_hint_letter_color_you</item>
-        <item name="keyHintLabelColor">@color/key_text_inactive_color_lxx_dark</item>
+        <item name="keyHintLabelColor">@color/key_hint_letter_color_you</item>
         <item name="keyShiftedLetterHintInactivatedColor">@color/key_text_inactive_color_lxx_dark</item>
         <item name="keyShiftedLetterHintActivatedColor">@color/key_text_color_lxx_dark</item>
         <item name="keyPreviewTextColor">@color/keyboard_key_text_color_you</item>
@@ -111,8 +111,8 @@
         parent="MainKeyboardView.You"
     >
         <item name="categoryIndicatorEnabled">false</item>
-        <item name="categoryPageIndicatorColor">@color/category_page_indicator_color</item>
-        <item name="categoryPageIndicatorBackground">@null</item>
+        <item name="categoryPageIndicatorColor">@color/highlight_color_you</item>
+        <item name="categoryPageIndicatorBackground">@color/emoji_tab_page_indicator_background_you</item>
         <item name="iconEmojiRecentsTab">@drawable/ic_emoji_recents_lxx_dark</item>
         <item name="iconEmojiCategory1Tab">@drawable/ic_emoji_people_lxx_dark</item>
         <item name="iconEmojiCategory2Tab">@drawable/ic_emoji_objects_lxx_dark</item>
