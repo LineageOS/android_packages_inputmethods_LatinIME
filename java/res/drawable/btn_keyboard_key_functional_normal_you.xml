@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="@color/functional_normal_color_you" />
+    <solid android:color="@color/keyboard_key_functional_normal_color_you" />
 
     <padding android:left="1dp"
              android:top="1dp"
