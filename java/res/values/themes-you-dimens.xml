@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
     <dimen name="keyboard_key_corner_radius_you">8dp</dimen>
+    <dimen name="keyboard_key_action_corner_radius_you">120dp</dimen>
     <dimen name="config_gesture_floating_preview_round_radius_you">8dp</dimen>
 </resources>
