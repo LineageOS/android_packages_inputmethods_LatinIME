@@ -38,7 +38,7 @@
 
     <fraction name="config_keyboard_top_padding_holo">2.335%p</fraction>
     <fraction name="config_keyboard_bottom_padding_holo">4.669%p</fraction>
-    <fraction name="config_key_vertical_gap_you">3.5%p</fraction>
+    <fraction name="config_key_vertical_gap_you">4.5%p</fraction>
     <fraction name="config_key_vertical_gap_holo">6.127%p</fraction>
     <fraction name="config_key_horizontal_gap_holo">1.739%p</fraction>
     <!-- config_more_keys_keyboard_key_height x -0.5 -->
@@ -53,7 +53,7 @@
     <fraction name="config_key_preview_text_ratio_you">70%</fraction>
     <fraction name="config_key_letter_ratio_holo">55%</fraction>
     <fraction name="config_key_letter_ratio_lxx">55%</fraction>
-    <fraction name="config_key_letter_ratio_you">52%</fraction>
+    <fraction name="config_key_letter_ratio_you">55%</fraction>
     <fraction name="config_key_large_letter_ratio_holo">65%</fraction>
     <fraction name="config_key_large_letter_ratio_lxx">90%</fraction>
     <fraction name="config_key_label_ratio_holo">34%</fraction>
