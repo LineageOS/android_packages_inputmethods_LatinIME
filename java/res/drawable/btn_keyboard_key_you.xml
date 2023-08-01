@@ -21,6 +21,7 @@
     <item android:state_active="true"
           android:drawable="@drawable/btn_keyboard_key_normal_you" />
 
+    <!-- Normal keys. -->
     <item android:state_pressed="true"
           android:drawable="@drawable/btn_keyboard_key_pressed_you" />
     <item android:drawable="@drawable/btn_keyboard_key_normal_you" />
