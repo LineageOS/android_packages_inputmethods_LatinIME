@@ -215,6 +215,11 @@
     <!-- Summary of the preference item for enabling the number row -->
     <string name="number_row_summary">Always show number row in QWERTY, QWERTZ, AZERTY layouts</string>
 
+     <!-- Title of the item to show longpress key hints -->
+    <string name="show_longpress_hints">Show long-press key hints</string>
+    <!-- Description of the settings to show hints -->
+    <string name="show_longpress_hints_summary">Shows long-press hints for supported keys</string>
+
     <!-- Title of the preference item for switching accounts [CHAR LIMIT=30] -->
     <string name="switch_accounts">Switch accounts</string>
     <!-- Summary of the preference item for switching accounts when no accounts
