@@ -39,4 +39,8 @@ disposition rather than other common dispositions for Latin languages. [CHAR LIM
     <!-- Preference item for the space bar track pad -->
     <string name="space_trackpad">Space bar trackpad</string>
     <string name="space_trackpad_summary">Swipe on the spacebar to move the cursor</string>
+
+    <!-- Preference item for enabling longpress key hints -->
+    <string name="show_longpress_hints">Show long-press key hints</string>
+    <string name="show_longpress_hints_summary">Shows long-press hints for supported keys</string>
 </resources>
