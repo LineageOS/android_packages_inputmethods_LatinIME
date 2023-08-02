@@ -36,6 +36,7 @@ import com.android.inputmethod.keyboard.internal.KeyDrawParams;
 import com.android.inputmethod.keyboard.internal.KeyVisualAttributes;
 import com.android.inputmethod.latin.R;
 import com.android.inputmethod.latin.common.Constants;
+import com.android.inputmethod.latin.settings.Settings;
 import com.android.inputmethod.latin.utils.TypefaceUtils;
 
 import java.util.HashSet;
@@ -442,7 +443,7 @@ public class KeyboardView extends View {
 
         // Draw hint label.
         final String hintLabel = key.getHintLabel();
-        if (hintLabel != null) {
+        if (hintLabel != null && Settings.getInstance().getCurrent().mShowLongpressHints) {
             paint.setTextSize(key.selectHintTextSize(params));
             paint.setColor(key.selectHintTextColor(params));
             // TODO: Should add a way to specify type face for hint letters
