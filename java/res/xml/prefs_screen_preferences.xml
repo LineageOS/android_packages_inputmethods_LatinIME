@@ -31,6 +31,12 @@
         android:defaultValue="false"
         android:persistent="true" />
     <CheckBoxPreference
+        android:key="pref_show_longpress_hints"
+        android:title="@string/show_longpress_hints"
+        android:summary="@string/show_longpress_hints_summary"
+        android:defaultValue="true"
+        android:persistent="true" />
+    <CheckBoxPreference
         android:key="pref_key_use_double_space_period"
         android:title="@string/use_double_space_period"
         android:summary="@string/use_double_space_period_summary"
