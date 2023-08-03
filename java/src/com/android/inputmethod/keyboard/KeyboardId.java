@@ -80,6 +80,7 @@ public final class KeyboardId {
     public final boolean mClobberSettingsKey;
     public final boolean mNumberRowEnabled;
     public final boolean mLanguageSwitchKeyEnabled;
+    public final boolean mEmojiKeyEnabled;
     public final String mCustomActionLabel;
     public final boolean mHasShortcutKey;
     public final boolean mIsSplitLayout;
@@ -96,6 +97,7 @@ public final class KeyboardId {
         mClobberSettingsKey = params.mNoSettingsKey;
         mNumberRowEnabled = params.mNumberRowEnabled;
         mLanguageSwitchKeyEnabled = params.mLanguageSwitchKeyEnabled;
+        mEmojiKeyEnabled = params.mEmojiKeyEnabled;
         mCustomActionLabel = (mEditorInfo.actionLabel != null)
                 ? mEditorInfo.actionLabel.toString() : null;
         mHasShortcutKey = params.mVoiceInputKeyEnabled;
@@ -115,6 +117,7 @@ public final class KeyboardId {
                 id.mNumberRowEnabled,
                 id.mHasShortcutKey,
                 id.mLanguageSwitchKeyEnabled,
+                id.mEmojiKeyEnabled,
                 id.isMultiLine(),
                 id.imeAction(),
                 id.mCustomActionLabel,
@@ -137,6 +140,7 @@ public final class KeyboardId {
                 && other.mNumberRowEnabled == mNumberRowEnabled
                 && other.mHasShortcutKey == mHasShortcutKey
                 && other.mLanguageSwitchKeyEnabled == mLanguageSwitchKeyEnabled
+                && other.mEmojiKeyEnabled == mEmojiKeyEnabled
                 && other.isMultiLine() == isMultiLine()
                 && other.imeAction() == imeAction()
                 && TextUtils.equals(other.mCustomActionLabel, mCustomActionLabel)
@@ -208,6 +212,7 @@ public final class KeyboardId {
                 (passwordInput() ? " passwordInput" : ""),
                 (mHasShortcutKey ? " hasShortcutKey" : ""),
                 (mLanguageSwitchKeyEnabled ? " languageSwitchKeyEnabled" : ""),
+                (mEmojiKeyEnabled ? " emojiKeyEnabled" : ""),
                 (isMultiLine() ? " isMultiLine" : ""),
                 (mIsSplitLayout ? " isSplitLayout" : "")
         );
