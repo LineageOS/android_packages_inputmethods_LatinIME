@@ -78,7 +78,6 @@ public final class EmojiPalettesView extends LinearLayout implements OnTabChange
 
     private ImageButton mDeleteKey;
     private TextView mAlphabetKeyLeft;
-    private TextView mAlphabetKeyRight;
     private View mSpacebar;
     // TODO: Remove this workaround.
     private View mSpacebarIcon;
@@ -199,12 +198,6 @@ public final class EmojiPalettesView extends LinearLayout implements OnTabChange
         final LinearLayout actionBar = (LinearLayout)findViewById(R.id.emoji_action_bar);
         mEmojiLayoutParams.setActionBarProperties(actionBar);
 
-        // deleteKey depends only on OnTouchListener.
-        mDeleteKey = (ImageButton)findViewById(R.id.emoji_keyboard_delete);
-        mDeleteKey.setBackgroundResource(mFunctionalKeyBackgroundId);
-        mDeleteKey.setTag(Constants.CODE_DELETE);
-        mDeleteKey.setOnTouchListener(mDeleteKeyOnTouchListener);
-
         // {@link #mAlphabetKeyLeft}, {@link #mAlphabetKeyRight, and spaceKey depend on
         // {@link View.OnClickListener} as well as {@link View.OnTouchListener}.
         // {@link View.OnTouchListener} is used as the trigger of key-press, while
@@ -217,16 +210,18 @@ public final class EmojiPalettesView extends LinearLayout implements OnTabChange
         mAlphabetKeyLeft.setTag(Constants.CODE_ALPHA_FROM_EMOJI);
         mAlphabetKeyLeft.setOnTouchListener(this);
         mAlphabetKeyLeft.setOnClickListener(this);
-        mAlphabetKeyRight = (TextView)findViewById(R.id.emoji_keyboard_alphabet_right);
-        mAlphabetKeyRight.setBackgroundResource(mFunctionalKeyBackgroundId);
-        mAlphabetKeyRight.setTag(Constants.CODE_ALPHA_FROM_EMOJI);
-        mAlphabetKeyRight.setOnTouchListener(this);
-        mAlphabetKeyRight.setOnClickListener(this);
         mSpacebar = findViewById(R.id.emoji_keyboard_space);
         mSpacebar.setBackgroundResource(mSpacebarBackgroundId);
         mSpacebar.setTag(Constants.CODE_SPACE);
         mSpacebar.setOnTouchListener(this);
         mSpacebar.setOnClickListener(this);
+
+        // deleteKey depends only on OnTouchListener.
+        mDeleteKey = (ImageButton)findViewById(R.id.emoji_keyboard_delete);
+        mDeleteKey.setBackgroundResource(mFunctionalKeyBackgroundId);
+        mDeleteKey.setTag(Constants.CODE_DELETE);
+        mDeleteKey.setOnTouchListener(mDeleteKeyOnTouchListener);
+
         mEmojiLayoutParams.setKeyProperties(mSpacebar);
         mSpacebarIcon = findViewById(R.id.emoji_keyboard_space_icon);
     }
@@ -386,7 +381,6 @@ public final class EmojiPalettesView extends LinearLayout implements OnTabChange
         final KeyDrawParams params = new KeyDrawParams();
         params.updateParams(mEmojiLayoutParams.getActionBarHeight(), keyVisualAttr);
         setupAlphabetKey(mAlphabetKeyLeft, switchToAlphaLabel, params);
-        setupAlphabetKey(mAlphabetKeyRight, switchToAlphaLabel, params);
         mEmojiPager.setAdapter(mEmojiPalettesAdapter);
         mEmojiPager.setCurrentItem(mCurrentPagerPosition);
     }
