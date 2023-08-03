@@ -45,10 +45,20 @@
                 latin:keyStyle="zwnjKeyStyle" />
         </case>
         <case
+            latin:emojiKeyEnabled="false"
             latin:languageSwitchKeyEnabled="true"
         >
             <Key
                 latin:keyStyle="languageSwitchKeyStyle" />
+            <Key
+                latin:keyStyle="spaceKeyStyle"
+                latin:keyWidth="40%p" />
+        </case>
+        <case
+            latin:emojiKeyEnabled="true"
+        >
+            <Key
+                latin:keyStyle="emojiKeyStyle" />
             <Key
                 latin:keyStyle="spaceKeyStyle"
                 latin:keyWidth="40%p" />
