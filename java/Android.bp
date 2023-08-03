@@ -45,6 +45,8 @@ android_app {
         "jsr305",
         "latinime-common",
         "androidx.legacy_legacy-support-v4",
+        "androidx.recyclerview_recyclerview",
+        "androidx.viewpager2_viewpager2",
     ],
 
     // Do not compress dictionary files to mmap dict data runtime
