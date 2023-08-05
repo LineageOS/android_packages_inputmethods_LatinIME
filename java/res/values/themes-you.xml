@@ -73,7 +73,7 @@
         <item name="android:background">@color/keyboard_background_you</item>
         <item name="keyBackground">@drawable/btn_keyboard_key_you</item>
         <item name="functionalKeyBackground">@drawable/btn_keyboard_key_functional_you</item>
-        <item name="spacebarBackground">@drawable/btn_keyboard_key_you</item>
+        <item name="spacebarBackground">@drawable/btn_keyboard_spacebar_you</item>
         <item name="keyTextColor">@color/keyboard_key_text_color_you</item>
         <item name="keyTextInactivatedColor">@color/keyboard_key_functional_text_color_you</item>
         <item name="functionalTextColor">@color/keyboard_key_functional_text_color_you</item>
@@ -98,7 +98,7 @@
         <item name="gestureFloatingPreviewColor">@color/gesture_floating_preview_color_you</item>
         <item name="gestureTrailColor">@color/gesture_trail_color_you</item>
         <item name="slidingKeyInputPreviewColor">@color/sliding_key_input_preview_color_you</item>
-        <item name="languageOnSpacebarTextColor">@color/key_text_inactive_color_lxx_dark</item>
+        <item name="languageOnSpacebarTextColor">@color/key_hint_letter_color_you</item>
         <!-- A negative value to disable text shadow layer. -->
         <item name="languageOnSpacebarTextShadowRadius">-1.0</item>
     </style>
