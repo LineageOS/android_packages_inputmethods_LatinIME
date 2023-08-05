@@ -34,7 +34,7 @@
         <item name="iconPreviousKey">@drawable/sym_keyboard_previous_you</item>
         <item name="iconTabKey">@drawable/sym_keyboard_tab_you</item>
         <item name="iconShortcutKey">@drawable/sym_keyboard_voice_you</item>
-        <item name="iconSpaceKeyForNumberLayout">@drawable/sym_keyboard_space_lxx_dark</item>
+        <item name="iconSpaceKeyForNumberLayout">@drawable/sym_keyboard_space_you</item>
         <item name="iconShiftKeyShifted">@drawable/sym_keyboard_shift_locked_you</item>
         <item name="iconShortcutKeyDisabled">@drawable/sym_keyboard_voice_off_you</item>
         <item name="iconLanguageSwitchKey">@drawable/sym_keyboard_language_switch_you</item>
