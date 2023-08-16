@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "28f82232_bb5cdb11",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 10
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2023-08-16T10:06:41Z",
+      "side": 1,
+      "message": "They were already updated here https://review.lineageos.org/c/LineageOS/android_packages_inputmethods_LatinIME/+/352144",
+      "revId": "064d06fbea4c26cdab84ffaa8fcbd2827acdaa5e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
