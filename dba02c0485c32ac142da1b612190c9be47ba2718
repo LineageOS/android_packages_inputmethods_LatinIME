@@ -24,6 +24,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "3f15a1f0_3ad38a26",
+        "filename": "java/res/values/strings.xml",
+        "patchSetId": 14
+      },
+      "lineNbr": 590,
+      "author": {
+        "id": 5911
+      },
+      "writtenOn": "2023-08-17T10:29:31Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1d7be278_ef184ba4",
+      "range": {
+        "startLine": 588,
+        "startChar": 4,
+        "endLine": 590,
+        "endChar": 91
+      },
+      "revId": "dba02c0485c32ac142da1b612190c9be47ba2718",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "5f818c44_0bf469f6",
@@ -37,6 +61,24 @@
       "writtenOn": "2023-08-17T09:53:47Z",
       "side": 1,
       "message": "line length",
+      "revId": "dba02c0485c32ac142da1b612190c9be47ba2718",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "41f4c220_b7679249",
+        "filename": "java/src/com/android/inputmethod/keyboard/PointerTracker.java",
+        "patchSetId": 14
+      },
+      "lineNbr": 1185,
+      "author": {
+        "id": 5911
+      },
+      "writtenOn": "2023-08-17T10:29:31Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5f818c44_0bf469f6",
       "revId": "dba02c0485c32ac142da1b612190c9be47ba2718",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
@@ -58,6 +100,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "863fbb64_2646e5e9",
+        "filename": "java/src/com/android/inputmethod/keyboard/PointerTracker.java",
+        "patchSetId": 14
+      },
+      "lineNbr": 1186,
+      "author": {
+        "id": 5911
+      },
+      "writtenOn": "2023-08-17T10:29:31Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "98d4b7fa_c32d7fd6",
+      "revId": "dba02c0485c32ac142da1b612190c9be47ba2718",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "bfd7d4ad_101bcc2a",
@@ -71,6 +131,30 @@
       "writtenOn": "2023-08-17T09:56:56Z",
       "side": 1,
       "message": "this deserves some brackets as well :)",
+      "range": {
+        "startLine": 1421,
+        "startChar": 8,
+        "endLine": 1422,
+        "endChar": 19
+      },
+      "revId": "dba02c0485c32ac142da1b612190c9be47ba2718",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9ea52495_ad5d69de",
+        "filename": "java/src/com/android/inputmethod/latin/LatinIME.java",
+        "patchSetId": 14
+      },
+      "lineNbr": 1422,
+      "author": {
+        "id": 5911
+      },
+      "writtenOn": "2023-08-17T10:29:31Z",
+      "side": 1,
+      "message": "oh you java people... :)",
+      "parentUuid": "bfd7d4ad_101bcc2a",
       "range": {
         "startLine": 1421,
         "startChar": 8,
