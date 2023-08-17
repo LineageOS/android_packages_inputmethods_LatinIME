@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4f27ef16_5046f1a7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 11
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 5911
+      },
+      "writtenOn": "2023-08-17T10:24:33Z",
+      "side": 1,
+      "message": "pretty sure the qpr2 emoji were not there, but i might be wrong. in any case, will check outside of this chain, not really necessary",
+      "revId": "22e82941ee772075bdbc4f26ae0528fe6acd904c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
