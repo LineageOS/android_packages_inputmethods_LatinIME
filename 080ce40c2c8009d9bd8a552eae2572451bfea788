@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "84e205fc_64448996",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 15
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19936
+      },
+      "writtenOn": "2023-08-17T16:43:10Z",
+      "side": 1,
+      "message": "Is not related to this change, but the emoji category icons appear white-on-white, Known issue?",
+      "revId": "080ce40c2c8009d9bd8a552eae2572451bfea788",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
