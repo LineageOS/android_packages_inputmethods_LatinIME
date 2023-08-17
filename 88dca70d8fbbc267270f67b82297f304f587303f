@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f17c1875_bd122dc5",
+        "filename": "java/res/values/strings.xml",
+        "patchSetId": 12
+      },
+      "lineNbr": 216,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2023-08-17T09:55:27Z",
+      "side": 1,
+      "message": "out additions need to go to cm_strings.xml for translations",
+      "range": {
+        "startLine": 213,
+        "startChar": 4,
+        "endLine": 216,
+        "endChar": 103
+      },
+      "revId": "88dca70d8fbbc267270f67b82297f304f587303f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
