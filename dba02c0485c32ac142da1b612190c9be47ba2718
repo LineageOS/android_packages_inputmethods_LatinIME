@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5f818c44_0bf469f6",
+        "filename": "java/src/com/android/inputmethod/keyboard/PointerTracker.java",
+        "patchSetId": 14
+      },
+      "lineNbr": 1185,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2023-08-17T09:53:47Z",
+      "side": 1,
+      "message": "line length",
+      "revId": "dba02c0485c32ac142da1b612190c9be47ba2718",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "98d4b7fa_c32d7fd6",
+        "filename": "java/src/com/android/inputmethod/keyboard/PointerTracker.java",
+        "patchSetId": 14
+      },
+      "lineNbr": 1186,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2023-08-17T09:53:47Z",
+      "side": 1,
+      "message": "same",
+      "revId": "dba02c0485c32ac142da1b612190c9be47ba2718",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
