@@ -17,6 +17,7 @@
 package com.android.inputmethod.keyboard;
 
 import android.content.Context;
+import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.util.Log;
 import android.view.ContextThemeWrapper;
@@ -67,6 +68,9 @@ public final class KeyboardSwitcher implements KeyboardState.SwitchActions {
 
     private KeyboardTheme mKeyboardTheme;
     private Context mThemeContext;
+    // Cache the configuration to detect changes, Context/Resources changes it in real time,
+    // we need to keep the one used for creation to detect changes
+    private Configuration mThemeConfig;
 
     private static final KeyboardSwitcher sInstance = new KeyboardSwitcher();
 
@@ -102,9 +106,11 @@ public final class KeyboardSwitcher implements KeyboardState.SwitchActions {
     private boolean updateKeyboardThemeAndContextThemeWrapper(final Context context,
             final KeyboardTheme keyboardTheme) {
         if (mThemeContext == null || !keyboardTheme.equals(mKeyboardTheme)
-                || !mThemeContext.getResources().equals(context.getResources())) {
+                || !mThemeContext.getResources().equals(context.getResources())
+                || !mThemeConfig.equals(context.getResources().getConfiguration())) {
             mKeyboardTheme = keyboardTheme;
             mThemeContext = new ContextThemeWrapper(context, keyboardTheme.mStyleId);
+            mThemeConfig = mThemeContext.getResources().getConfiguration();
             KeyboardLayoutSet.onKeyboardThemeChanged();
             return true;
         }
