@@ -16,6 +16,24 @@
       "message": "better +1 the top of the chain, duh.",
       "revId": "74d0ba05376e0438377e7adace46164f306ea38b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6b26d08b_4e600419",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21651
+      },
+      "writtenOn": "2023-08-24T08:23:49Z",
+      "side": 1,
+      "message": "Look good, but I think the long-press hint and key letter are too close to each other, so propably the main letter needs to be a little bit smaller (or moved down little).",
+      "parentUuid": "4ee2e0d9_9d576bad",
+      "revId": "74d0ba05376e0438377e7adace46164f306ea38b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
