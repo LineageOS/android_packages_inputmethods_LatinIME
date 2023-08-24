@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d0c2e7b6_7fcfb3e5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 11
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 5911
+      },
+      "writtenOn": "2023-08-24T14:25:33Z",
+      "side": 1,
+      "message": "no idea what version youre using, but the one i have in gboard, the space key gets brighter when pressed, not darker. that was the inspiration for this particular change.",
+      "revId": "34fe47b0c4ab513693042bf566f6b2c196e5577d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
