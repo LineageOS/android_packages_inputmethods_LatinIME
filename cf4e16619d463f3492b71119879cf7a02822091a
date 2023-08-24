@@ -51,6 +51,24 @@
       "message": "cant reprodu",
       "revId": "cf4e16619d463f3492b71119879cf7a02822091a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e68fae44_248b4388",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 14
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21651
+      },
+      "writtenOn": "2023-08-24T08:42:44Z",
+      "side": 1,
+      "message": "If there is only one language selected, the emoji key is always shown (I45bc72d833e2737b40bbfeac1bf175b8ebab2b7b). So this adds another one.",
+      "parentUuid": "80fa54e6_d0305826",
+      "revId": "cf4e16619d463f3492b71119879cf7a02822091a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
