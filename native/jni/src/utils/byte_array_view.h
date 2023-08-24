@@ -50,8 +50,6 @@ class ReadOnlyByteArrayView {
     }
 
  private:
-    DISALLOW_ASSIGNMENT_OPERATOR(ReadOnlyByteArrayView);
-
     const uint8_t *const mPtr;
     const size_t mSize;
 };
