@@ -69,6 +69,24 @@
       "parentUuid": "5af6c8c4_26e9527a",
       "revId": "34fe47b0c4ab513693042bf566f6b2c196e5577d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bf2f6869_4b645af6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 11
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21651
+      },
+      "writtenOn": "2023-08-24T14:48:08Z",
+      "side": 1,
+      "message": "Version 13.2.04.543712237, latest available in play store.",
+      "parentUuid": "894179f1_ccdf1f06",
+      "revId": "34fe47b0c4ab513693042bf566f6b2c196e5577d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
