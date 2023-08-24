@@ -44,8 +44,6 @@ class BloomFilter {
     }
 
  private:
-    DISALLOW_ASSIGNMENT_OPERATOR(BloomFilter);
-
     AK_FORCE_INLINE size_t getIndex(const int position) const {
         return static_cast<size_t>(position) % BIGRAM_FILTER_MODULO;
     }

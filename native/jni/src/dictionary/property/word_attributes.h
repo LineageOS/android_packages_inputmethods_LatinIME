@@ -56,8 +56,6 @@ class WordAttributes {
     }
 
  private:
-    DISALLOW_ASSIGNMENT_OPERATOR(WordAttributes);
-
     int mProbability;
     bool mIsBlacklisted;
     bool mIsNotAWord;
