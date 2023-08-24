@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dcb54c12_d8b1765f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 10
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21651
+      },
+      "writtenOn": "2023-08-24T09:23:26Z",
+      "side": 1,
+      "message": "The spacebar could be dark(er) also when pressed, like in gboard.",
+      "revId": "6bf40b376fce693e1946e0717c71fb465517e553",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
