@@ -26,13 +26,11 @@
             latin:mode="email|url"
         >
             <Key
-                latin:keyStyle="comKeyStyle"
-                latin:keyWidth="fillRight" />
+                latin:keyStyle="comKeyStyle" />
         </case>
         <default>
             <Key
-                latin:keyStyle="emojiKeyStyle"
-                latin:keyWidth="fillRight" />
+                latin:keyStyle="emojiKeyStylePopup" />
         </default>
     </switch>
 </merge>
