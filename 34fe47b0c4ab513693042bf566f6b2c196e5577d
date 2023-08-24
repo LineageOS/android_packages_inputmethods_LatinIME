@@ -16,6 +16,24 @@
       "message": "no idea what version youre using, but the one i have in gboard, the space key gets brighter when pressed, not darker. that was the inspiration for this particular change.",
       "revId": "34fe47b0c4ab513693042bf566f6b2c196e5577d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5af6c8c4_26e9527a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 11
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21651
+      },
+      "writtenOn": "2023-08-24T14:31:58Z",
+      "side": 1,
+      "message": "I am using the latest version of gboard with \"dynamic colour\" theme in dark mode. The spacebar key stays nearly the same color as without pressing.",
+      "parentUuid": "d0c2e7b6_7fcfb3e5",
+      "revId": "34fe47b0c4ab513693042bf566f6b2c196e5577d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
