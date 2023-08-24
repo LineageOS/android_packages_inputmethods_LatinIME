@@ -21,25 +21,31 @@
     <PreferenceScreen
         android:fragment="com.android.inputmethod.latin.settings.PreferencesSettingsFragment"
         android:title="@string/settings_screen_preferences"
-        android:key="screen_preferences" />
+        android:key="screen_preferences"
+        android:icon="@drawable/ic_settings_preferences" />
     <PreferenceScreen
         android:fragment="com.android.inputmethod.latin.settings.AccountsSettingsFragment"
         android:title="@string/settings_screen_accounts"
-        android:key="screen_accounts" />
+        android:key="screen_accounts"
+        android:icon="@drawable/ic_settings_privacy" />
     <PreferenceScreen
         android:fragment="com.android.inputmethod.latin.settings.AppearanceSettingsFragment"
         android:title="@string/settings_screen_appearance"
-        android:key="screen_appearance" />
+        android:key="screen_appearance"
+        android:icon="@drawable/ic_settings_appearance" />
     <PreferenceScreen
         android:fragment="com.android.inputmethod.latin.settings.GestureSettingsFragment"
         android:title="@string/settings_screen_gesture"
-        android:key="screen_gesture" />
+        android:key="screen_gesture"
+        android:icon="@drawable/ic_settings_gesture" />
     <PreferenceScreen
         android:fragment="com.android.inputmethod.latin.settings.CorrectionSettingsFragment"
         android:title="@string/settings_screen_correction"
-        android:key="screen_correction" />
+        android:key="screen_correction"
+        android:icon="@drawable/ic_settings_spellcheck" />
     <PreferenceScreen
         android:fragment="com.android.inputmethod.latin.settings.AdvancedSettingsFragment"
         android:title="@string/settings_screen_advanced"
-        android:key="screen_advanced" />
+        android:key="screen_advanced"
+        android:icon="@drawable/ic_settings_advanced" />
 </PreferenceScreen>
