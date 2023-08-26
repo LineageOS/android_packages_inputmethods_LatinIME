@@ -16,6 +16,24 @@
       "message": "packages/inputmethods/LatinIME/java/res/drawable/ic_settings_advanced.xml:1: error: resource attr/colorControlNormal (aka com.android.inputmethod.latin:attr/colorControlNormal) not found.\npackages/inputmethods/LatinIME/java/res/drawable/ic_settings_appearance.xml:1: error: resource attr/colorControlNormal (aka com.android.inputmethod.latin:attr/colorControlNormal) not found.\npackages/inputmethods/LatinIME/java/res/drawable/ic_settings_gesture.xml:1: error: resource attr/colorControlNormal (aka com.android.inputmethod.latin:attr/colorControlNormal) not found.\npackages/inputmethods/LatinIME/java/res/drawable/ic_settings_languages.xml:1: error: resource attr/colorControlNormal (aka com.android.inputmethod.latin:attr/colorControlNormal) not found.\npackages/inputmethods/LatinIME/java/res/drawable/ic_settings_preferences.xml:1: error: resource attr/colorControlNormal (aka com.android.inputmethod.latin:attr/colorControlNormal) not found.\npackages/inputmethods/LatinIME/java/res/drawable/ic_settings_privacy.xml:1: error: resource attr/colorControlNormal (aka com.android.inputmethod.latin:attr/colorControlNormal) not found.\npackages/inputmethods/LatinIME/java/res/drawable/ic_settings_spellcheck.xml:1: error: resource attr/colorControlNormal (aka com.android.inputmethod.latin:attr/colorControlNormal) not found.\nerror: failed linking file resources.",
       "revId": "70139f29940644f320717194efa08a688c32d805",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "254b8c2f_d57ec34a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 5911
+      },
+      "writtenOn": "2023-08-26T17:15:34Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8c20fe3b_998859d3",
+      "revId": "70139f29940644f320717194efa08a688c32d805",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
