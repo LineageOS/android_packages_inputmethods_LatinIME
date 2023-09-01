@@ -16,6 +16,8 @@
 
 package com.android.inputmethod.latin;
 
+import static android.view.WindowInsetsController.APPEARANCE_LIGHT_NAVIGATION_BARS;
+import static android.view.WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS;
 import static com.android.inputmethod.latin.common.Constants.ImeOption.FORCE_ASCII;
 import static com.android.inputmethod.latin.common.Constants.ImeOption.NO_MICROPHONE;
 import static com.android.inputmethod.latin.common.Constants.ImeOption.NO_MICROPHONE_COMPAT;
@@ -31,7 +33,8 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.res.Configuration;
 import android.content.res.Resources;
-import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
 import android.inputmethodservice.InputMethodService;
 import android.media.AudioManager;
 import android.os.Build;
@@ -1097,7 +1100,7 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
     @Override
     public void onWindowShown() {
         super.onWindowShown();
-        setNavigationBarVisibility(isInputViewShown());
+        updateNavigationBarColor();
     }
 
     @Override
@@ -1107,7 +1110,6 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
         if (mainKeyboardView != null) {
             mainKeyboardView.closing();
         }
-        setNavigationBarVisibility(false);
     }
 
     void onFinishInputInternal() {
@@ -2042,12 +2044,26 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
         return mRichImm.shouldOfferSwitchingToNextInputMethod(token, fallbackValue);
     }
 
-    private void setNavigationBarVisibility(final boolean visible) {
-        if (BuildCompatUtils.EFFECTIVE_SDK_INT > Build.VERSION_CODES.M) {
-            // For N and later, IMEs can specify Color.TRANSPARENT to make the navigation bar
-            // transparent.  For other colors the system uses the default color.
-            getWindow().getWindow().setNavigationBarColor(
-                    visible ? Color.BLACK : Color.TRANSPARENT);
+    /** @noinspection deprecation*/
+    private void updateNavigationBarColor() {
+        // This may happen for devices with a physical keyboard
+        if (mInputView == null)
+            return;
+
+        if (BuildCompatUtils.EFFECTIVE_SDK_INT > Build.VERSION_CODES.R) {
+            Drawable bg = mInputView.findViewById(R.id.keyboard_view).getBackground();
+            Window w = getWindow().getWindow();
+            if (bg instanceof ColorDrawable) {
+                w.setNavigationBarColor(((ColorDrawable) bg).getColor());
+            }
+
+            int nightModeFlags = mDisplayContext.getResources().getConfiguration().uiMode &
+                    Configuration.UI_MODE_NIGHT_MASK;
+            int flags = FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS;
+            if (nightModeFlags != Configuration.UI_MODE_NIGHT_YES) {
+                flags |= APPEARANCE_LIGHT_NAVIGATION_BARS;
+            }
+            w.getDecorView().setSystemUiVisibility(flags);
         }
     }
 }
