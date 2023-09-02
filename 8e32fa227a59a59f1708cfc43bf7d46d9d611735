@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1ca06b11_7d1fa2e8",
+        "filename": "java/src/com/android/inputmethod/latin/LatinIME.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 2041,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2023-09-02T19:05:06Z",
+      "side": 1,
+      "message": "int flags \u003d FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS;\nif (not nightmode) {\n    flags |\u003d SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR;\n}\nw.getdecorview().set...",
+      "revId": "8e32fa227a59a59f1708cfc43bf7d46d9d611735",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
