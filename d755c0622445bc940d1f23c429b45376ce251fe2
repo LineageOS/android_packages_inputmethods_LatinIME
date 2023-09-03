@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4b6cff6f_564f3dad",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 5911
+      },
+      "writtenOn": "2023-09-03T20:31:35Z",
+      "side": 1,
+      "message": "fine by me, still stinks the new api doesnt work properly. updated the commit msg accordingly :P",
+      "revId": "d755c0622445bc940d1f23c429b45376ce251fe2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
