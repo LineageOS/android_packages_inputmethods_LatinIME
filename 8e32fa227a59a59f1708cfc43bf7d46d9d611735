@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "e9835ebb_67a22af2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2023-09-03T11:36:54Z",
+      "side": 1,
+      "message": "Ack, but looks like WindowInsetsController doesn\u0027t consider the icons.\nUploaded code changes anyway to at least improve the usage of the deprecated code ;)",
+      "parentUuid": "572b5676_c2bf23a3",
+      "revId": "8e32fa227a59a59f1708cfc43bf7d46d9d611735",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "1ca06b11_7d1fa2e8",
