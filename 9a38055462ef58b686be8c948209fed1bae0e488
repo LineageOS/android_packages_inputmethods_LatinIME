@@ -34,6 +34,24 @@
       "parentUuid": "6f188fc8_10665adf",
       "revId": "9a38055462ef58b686be8c948209fed1bae0e488",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5547a210_8575aa45",
+        "filename": "java/res/drawable/ic_settings_advanced.xml",
+        "patchSetId": 12
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2023-09-04T18:55:16Z",
+      "side": 1,
+      "message": "If you use an icon from google material design as-is, it should have the following header:\n\nSPDX-FileCopyrightText: Material Design Authors / Google LLC\n\nIf it\u0027s a custom icon made by us, it can have our copyright",
+      "parentUuid": "51921261_3700fa49",
+      "revId": "9a38055462ef58b686be8c948209fed1bae0e488",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
