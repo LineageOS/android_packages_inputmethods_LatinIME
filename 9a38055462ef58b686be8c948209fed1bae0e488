@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6f188fc8_10665adf",
+        "filename": "java/res/drawable/ic_settings_advanced.xml",
+        "patchSetId": 12
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2023-09-04T17:24:24Z",
+      "side": 1,
+      "message": "Did we create these icons? Or they are just from material design icons reference?",
+      "revId": "9a38055462ef58b686be8c948209fed1bae0e488",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
