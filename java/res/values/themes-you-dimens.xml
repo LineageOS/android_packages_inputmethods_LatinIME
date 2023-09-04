@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2022 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
     <dimen name="keyboard_key_corner_radius_you">8dp</dimen>
     <dimen name="keyboard_key_action_corner_radius_you">120dp</dimen>
