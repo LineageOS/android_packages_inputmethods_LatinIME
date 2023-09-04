@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8e90d906_b31eaa94",
+        "filename": "java/res/drawable/sym_keyboard_space_you.xml",
+        "patchSetId": 20
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2023-09-04T17:22:14Z",
+      "side": 1,
+      "message": "Did we create this icon?",
+      "revId": "93dbacd41b7d2596d5dd955f32497fc8efc7209f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
