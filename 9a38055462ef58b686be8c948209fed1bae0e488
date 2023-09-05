@@ -69,6 +69,24 @@
       "parentUuid": "51921261_3700fa49",
       "revId": "9a38055462ef58b686be8c948209fed1bae0e488",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4c5de083_b0b811fa",
+        "filename": "java/res/drawable/ic_settings_advanced.xml",
+        "patchSetId": 12
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 5911
+      },
+      "writtenOn": "2023-09-05T04:47:48Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5547a210_8575aa45",
+      "revId": "9a38055462ef58b686be8c948209fed1bae0e488",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
