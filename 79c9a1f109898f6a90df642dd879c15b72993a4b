@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "308d9d82_79e2b19b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 15
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 5911
+      },
+      "writtenOn": "2023-09-05T06:34:34Z",
+      "side": 1,
+      "message": "should be enough to drop that file instead of overlaying the base twice. seems to work fine for all dialogs and settings pages.",
+      "revId": "79c9a1f109898f6a90df642dd879c15b72993a4b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
