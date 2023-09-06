@@ -172,8 +172,7 @@ public final class CustomInputStyleSettingsFragment extends CustomPreferenceFrag
             return;
         }
         if (findDuplicatedSubtype(subtype) == null) {
-            final InputMethodSubtype[] subTypes = saveAndGetSubTypes();
-            mRichImm.setAdditionalInputMethodSubtypes(subTypes);
+            mRichImm.setAdditionalInputMethodSubtypes(getSubtypes());
             return;
         }
 
@@ -190,8 +189,7 @@ public final class CustomInputStyleSettingsFragment extends CustomPreferenceFrag
         mIsAddingNewSubtype = false;
         final InputMethodSubtype subtype = stylePref.getSubtype();
         if (findDuplicatedSubtype(subtype) == null) {
-            final InputMethodSubtype[] subTypes = saveAndGetSubTypes();
-            mRichImm.setAdditionalInputMethodSubtypes(subTypes);
+            mRichImm.setAdditionalInputMethodSubtypes(getSubtypes());
             mSubtypePreferenceKeyForSubtypeEnabler = stylePref.getKey();
             mSubtypeEnablerNotificationDialog = createDialog();
             mSubtypeEnablerNotificationDialog.show();
@@ -285,7 +283,16 @@ public final class CustomInputStyleSettingsFragment extends CustomPreferenceFrag
     @Override
     public void onPause() {
         super.onPause();
-        final InputMethodSubtype[] subtypes = saveAndGetSubTypes();
+        final String oldSubtypes = Settings.readPrefAdditionalSubtypes(mPrefs, getResources());
+        final InputMethodSubtype[] subtypes = getSubtypes();
+        final String prefSubtypes = AdditionalSubtypeUtils.createPrefSubtypes(subtypes);
+        if (DEBUG_CUSTOM_INPUT_STYLES) {
+            Log.i(TAG, "Save custom input styles: " + prefSubtypes);
+        }
+        if (prefSubtypes.equals(oldSubtypes)) {
+            return;
+        }
+        Settings.writePrefAdditionalSubtypes(mPrefs, prefSubtypes);
         mRichImm.setAdditionalInputMethodSubtypes(subtypes);
     }
 
@@ -306,19 +313,5 @@ public final class CustomInputStyleSettingsFragment extends CustomPreferenceFrag
             return true;
         }
         return super.onOptionsItemSelected(item);
-    }
-
-    private InputMethodSubtype[] saveAndGetSubTypes() {
-        final String oldSubtypes = Settings.readPrefAdditionalSubtypes(mPrefs, getResources());
-        final InputMethodSubtype[] subtypes = getSubtypes();
-        final String prefSubtypes = AdditionalSubtypeUtils.createPrefSubtypes(subtypes);
-        if (DEBUG_CUSTOM_INPUT_STYLES) {
-            Log.i(TAG, "Save custom input styles: " + prefSubtypes);
-        }
-        if (prefSubtypes.equals(oldSubtypes)) {
-            return null;
-        }
-        Settings.writePrefAdditionalSubtypes(mPrefs, prefSubtypes);
-        return subtypes;
     }
 }
