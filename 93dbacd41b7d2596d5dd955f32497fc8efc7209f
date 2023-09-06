@@ -70,6 +70,24 @@
       "parentUuid": "785b820f_fe268d2d",
       "revId": "93dbacd41b7d2596d5dd955f32497fc8efc7209f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6680a20f_635b89c8",
+        "filename": "java/res/drawable/sym_keyboard_space_you.xml",
+        "patchSetId": 20
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 32911
+      },
+      "writtenOn": "2023-09-06T14:37:47Z",
+      "side": 1,
+      "message": "the other devs",
+      "parentUuid": "d36767d5_36221fcf",
+      "revId": "93dbacd41b7d2596d5dd955f32497fc8efc7209f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
