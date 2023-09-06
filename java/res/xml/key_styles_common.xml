@@ -77,6 +77,7 @@
         latin:keyActionFlags="isRepeatable|noKeyPreview"
         latin:backgroundType="functional" />
     <!-- emojiKeyStyle must be defined before including @xml/key_syles_enter. -->
+<<<<<<< HEAD   (dbdcbe Latin IME bug with deleted text will reappear after screen o)
     <key-style
         latin:styleName="emojiKeyStyle"
         latin:keySpec="!icon/emoji_normal_key|!code/key_emoji"
@@ -88,6 +89,26 @@
         latin:keyLabelFlags="keepBackgroundAspectRatio"
         latin:keyActionFlags="noKeyPreview"
         latin:backgroundType="action" />
+=======
+    <switch>
+        <case latin:keyboardTheme="ICS|KLP">
+            <key-style
+                latin:styleName="emojiKeyStyle"
+                latin:keySpec="!icon/emoji_action_key|!code/key_emoji"
+                latin:keyActionFlags="noKeyPreview"
+                latin:backgroundType="action" />
+        </case>
+        <!-- keyboardTheme="LXXLight|LXXDark" -->
+        <default>
+            <key-style
+                latin:styleName="emojiKeyStyle"
+                latin:keySpec="!icon/emoji_action_key|!code/key_emoji"
+                latin:keyLabelFlags="keepBackgroundAspectRatio"
+                latin:keyActionFlags="noKeyPreview"
+                latin:backgroundType="action" />
+        </default>
+    </switch>
+>>>>>>> CHANGE (ae933b Revert "LatinIME: Remove unused resources")
     <include
         latin:keyboardLayout="@xml/key_styles_enter" />
     <!-- TODO: Currently there is no way to specify icon alignment per theme. -->
