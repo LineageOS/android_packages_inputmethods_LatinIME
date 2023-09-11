@@ -157,8 +157,6 @@ class IntArrayView {
     }
 
  private:
-    DISALLOW_ASSIGNMENT_OPERATOR(IntArrayView);
-
     const int *const mPtr;
     const size_t mSize;
 };

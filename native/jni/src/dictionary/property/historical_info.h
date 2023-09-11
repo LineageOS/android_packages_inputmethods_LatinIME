@@ -48,9 +48,6 @@ class HistoricalInfo {
     }
 
  private:
-    // Default copy constructor is used for using in std::vector.
-    DISALLOW_ASSIGNMENT_OPERATOR(HistoricalInfo);
-
     const int mTimestamp;
     const int mLevel;
     const int mCount;
