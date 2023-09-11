@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "04e08c89_06c2eee9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 5911
+      },
+      "writtenOn": "2023-09-11T18:16:20Z",
+      "side": 1,
+      "message": "duh. phone detection is flawed, too... should prolly fix that as well, but we really never need the emoji action key",
+      "revId": "bed85602b15011e9be88561f23d8f05ea63c4412",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
