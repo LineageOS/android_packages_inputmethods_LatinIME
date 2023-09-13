@@ -16,6 +16,23 @@
       "message": "duh. phone detection is flawed, too... should prolly fix that as well, but we really never need the emoji action key",
       "revId": "bed85602b15011e9be88561f23d8f05ea63c4412",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1b3a1976_b1bf1368",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 5911
+      },
+      "writtenOn": "2023-09-13T13:25:02Z",
+      "side": 1,
+      "message": "this used to happen when using the reply feature in a notification: https://imgur.com/a/Xll0jC5",
+      "revId": "bed85602b15011e9be88561f23d8f05ea63c4412",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
