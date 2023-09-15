@@ -18,4 +18,12 @@
     <string name="subtype_hu_ZZ">Hungarisht (QWERTY)</string>
     <string name="keyboard_theme_material_follow_system">Material - ndiq cilësimet e sistemit</string>
     <string name="prefs_keyboard_height_scale">Shkalla e lartësisë së tastierës</string>
+    <string name="number_row">Rreshti i numrave</string>
+    <string name="number_row_summary">Trego gjithmonë një rresht me numra për të gjitha paraqitjet që përmbajnë 4 rreshta çelësash</string>
+    <string name="space_trackpad">Tabela e shiritit hapësinor</string>
+    <string name="space_trackpad_summary">Rrëshqitni në shiritin e hapësirës për të lëvizur kursorin</string>
+    <string name="show_longpress_hints">Shfaq sugjerimet e tastit me shtypje të gjatë</string>
+    <string name="show_longpress_hints_summary">Tregon sugjerime për shtypjen e gjatë për çelësat e mbështetur</string>
+    <string name="show_emoji_key">Shfaq çelësin e emoji</string>
+    <string name="show_emoji_key_summary">Trego gjithmonë çelësin e emoji-t. Kur ky opsion është i aktivizuar, tasti i ndërrimit të gjuhës nuk mund të shfaqet.</string>
 </resources>

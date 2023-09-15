@@ -18,4 +18,12 @@
     <string name="subtype_hu_ZZ">ハンガリー語（QWERTY）</string>
     <string name="keyboard_theme_material_follow_system">マテリアル - システム設定に従う</string>
     <string name="prefs_keyboard_height_scale">キーボードの高さ</string>
+    <string name="number_row">数の行</string>
+    <string name="number_row_summary">4行のキーを持つすべてのレイアウトに、常に数の行を表示します</string>
+    <string name="space_trackpad">スペースバーのトラックパッド</string>
+    <string name="space_trackpad_summary">スペースバーをスワイプしてカーソルを移動します</string>
+    <string name="show_longpress_hints">長押しのヒントを表示</string>
+    <string name="show_longpress_hints_summary">サポートしているキーでは長押しでヒントを表示します</string>
+    <string name="show_emoji_key">絵文字キーを表示</string>
+    <string name="show_emoji_key_summary">常に絵文字キーを表示します。このオプションを有効にすると、言語切り替えキーを表示できません。</string>
 </resources>

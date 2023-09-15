@@ -18,4 +18,12 @@
     <string name="subtype_hu_ZZ">უნგრული (QWERTY)</string>
     <string name="keyboard_theme_material_follow_system">Material - სისტემის შესაბამისი</string>
     <string name="prefs_keyboard_height_scale">კალვიატურის სიმაღლე</string>
+    <string name="number_row">ციფრების ზოლი</string>
+    <string name="number_row_summary">ციფრების ზოლის გამოჩენა ყველა 4-რიგიანი ღილაკების მქონე განლაგებისთვის</string>
+    <string name="space_trackpad">მგრძნობიარე გამოსატოვებელი ღილაკი</string>
+    <string name="space_trackpad_summary">ჰარიზე გადასმისას მაჩვენებლის გადაადგილება</string>
+    <string name="show_longpress_hints">მინიშნების გამოჩენა ხანგრძლივი დაჭერისას</string>
+    <string name="show_longpress_hints_summary">ხანგრძლივი დაჭერისას მინიშნების ჩვენება შესაბამის ღილაკებზე</string>
+    <string name="show_emoji_key">სიცილაკების ღილაკის ჩვენება</string>
+    <string name="show_emoji_key_summary">ყოველთვის ჩანდეს სიცილაკების ღილაკი. როცა მოქმედია, ენის გადართვის ღილაკი ვერ გამოჩნდება.</string>
 </resources>

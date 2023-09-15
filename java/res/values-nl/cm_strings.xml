@@ -18,4 +18,12 @@
     <string name="subtype_hu_ZZ">Hongaars (QWERTY)</string>
     <string name="keyboard_theme_material_follow_system">Material - volg systeem instellingen</string>
     <string name="prefs_keyboard_height_scale">Toetsenbord hoogte</string>
+    <string name="number_row">Nummerrij</string>
+    <string name="number_row_summary">Altijd een nummerrij weergeven voor alle lay-outs met 4 rijen toetsen</string>
+    <string name="space_trackpad">Spatiebalk trackpad</string>
+    <string name="space_trackpad_summary">Veeg op de spatiebalk om de cursor te verplaatsen</string>
+    <string name="show_longpress_hints">Toon langdruk-toets hints</string>
+    <string name="show_longpress_hints_summary">Toont langdruk-hints voor ondersteunde toetsen</string>
+    <string name="show_emoji_key">Toon emoji toets</string>
+    <string name="show_emoji_key_summary">Emoji-toets altijd weergeven. Als deze optie is ingeschakeld, kan de taalwisseltoets niet worden weergegeven.</string>
 </resources>

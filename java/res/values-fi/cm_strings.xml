@@ -18,4 +18,6 @@
     <string name="subtype_hu_ZZ">Unkari (QWERTY)</string>
     <string name="keyboard_theme_material_follow_system">Material - seuraa järjestelmän asetuksia</string>
     <string name="prefs_keyboard_height_scale">Näppäimistön korkeuden skaalaus</string>
+    <string name="number_row">Numerorivi</string>
+    <string name="show_emoji_key">Näytä emoji-painike</string>
 </resources>

@@ -18,4 +18,12 @@
     <string name="subtype_hu_ZZ">Венгерский (QWERTY)</string>
     <string name="keyboard_theme_material_follow_system">Material - следовать настройкам системы</string>
     <string name="prefs_keyboard_height_scale">Высота клавиатуры</string>
+    <string name="number_row">Ряд цифр</string>
+    <string name="number_row_summary">Для всех раскладок, имеющих 4 ряда клавиш, всегда показывать ряд цифр</string>
+    <string name="space_trackpad">Пробел как трекпад</string>
+    <string name="space_trackpad_summary">Перемещать курсор свайпом по клавише пробела</string>
+    <string name="show_longpress_hints">Подсказки при длительном нажатии клавиш</string>
+    <string name="show_longpress_hints_summary">Показывать всплывающие подсказки при длительном нажатии клавиш</string>
+    <string name="show_emoji_key">Показать клавишу смайликов</string>
+    <string name="show_emoji_key_summary">Всегда показывать клавишу смайликов. Если эта опция включена, клавиша переключения языка не отображается.</string>
 </resources>

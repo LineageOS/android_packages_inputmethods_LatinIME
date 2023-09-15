@@ -18,4 +18,12 @@
     <string name="subtype_hu_ZZ">Węgierski (QWERTY)</string>
     <string name="keyboard_theme_material_follow_system">Material - zgodnie z ustawieniami systemowymi</string>
     <string name="prefs_keyboard_height_scale">Rozmiar klawiatury</string>
+    <string name="number_row">Wiersz numeryczny</string>
+    <string name="number_row_summary">Zawsze wyświetlaj wiersz numeryczny dla wszystkich układów z 4 rzędami klawiszy</string>
+    <string name="space_trackpad">Klawisz spacji jako gładzik</string>
+    <string name="space_trackpad_summary">Przesuwaj palcem na spacji, aby poruszać kursorem</string>
+    <string name="show_longpress_hints">Pokaż podpowiedzi długiego przytrzymania klawisza</string>
+    <string name="show_longpress_hints_summary">Wyświetla podpowiedzi długiego przytrzymania dla obsługiwanych klawiszy</string>
+    <string name="show_emoji_key">Pokaż przycisk emoji</string>
+    <string name="show_emoji_key_summary">Zawsze pokazuj przycisk emoji. Gdy ta opcja jest włączona, przycisk przełączania języka nie będzie wyświetlany.</string>
 </resources>

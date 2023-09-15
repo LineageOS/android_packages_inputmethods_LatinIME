@@ -18,4 +18,12 @@
     <string name="subtype_hu_ZZ">匈牙利文 (QWERTY)</string>
     <string name="keyboard_theme_material_follow_system">Material - 遵循系統設定</string>
     <string name="prefs_keyboard_height_scale">鍵盤高度比例</string>
+    <string name="number_row">列數</string>
+    <string name="number_row_summary">對於有 4 列鍵的所有佈局，一律顯示數字列</string>
+    <string name="space_trackpad">空格鍵觸控板</string>
+    <string name="space_trackpad_summary">在空格鍵上滑動來移動游標</string>
+    <string name="show_longpress_hints">顯示長按按鍵提示</string>
+    <string name="show_longpress_hints_summary">對支援的鍵顯示長按提示</string>
+    <string name="show_emoji_key">顯示表情符號鍵</string>
+    <string name="show_emoji_key_summary">一律顯示表情符號鍵。啟用此選項時，將不會顯示語言切換鍵。</string>
 </resources>

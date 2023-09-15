@@ -18,4 +18,12 @@
     <string name="subtype_hu_ZZ">Macarca (QWERTY)</string>
     <string name="keyboard_theme_material_follow_system">Material - sistem tənzimləmələrini izlə</string>
     <string name="prefs_keyboard_height_scale">Klaviaturanın hündürlüyü</string>
+    <string name="number_row">Nömrə sətri</string>
+    <string name="number_row_summary">4 rəqəmli düymə ehtiva edən bütün düzümlər üçün hər zaman bir nömrə sətri göstər</string>
+    <string name="space_trackpad">Boşluq sətri trekped</string>
+    <string name="space_trackpad_summary">Kursoru hərəkət etdirmək üçün boşluq sətrini sürüşdürün</string>
+    <string name="show_longpress_hints">Uzun basdıqda düymə ipucularını göstər</string>
+    <string name="show_longpress_hints_summary">Dəstəklənən düymələr üçün uzun basma ipucularını göstərir</string>
+    <string name="show_emoji_key">İfadə düyməsini göstər</string>
+    <string name="show_emoji_key_summary">İfadə düyməsini hər zaman göstər. Bu seçim fəal olduqda, dil dəyişdirmə düyməsi göstərilə bilmir.</string>
 </resources>

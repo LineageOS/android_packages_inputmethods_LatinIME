@@ -18,4 +18,12 @@
     <string name="subtype_hu_ZZ">匈牙利 (QWERTY)</string>
     <string name="keyboard_theme_material_follow_system">主题材质 - 跟随系统设置</string>
     <string name="prefs_keyboard_height_scale">键盘高度缩放</string>
+    <string name="number_row">数字行</string>
+    <string name="number_row_summary">对于具有 4 行按键的所有布局，始终显示数字行</string>
+    <string name="space_trackpad">空格键触控板</string>
+    <string name="space_trackpad_summary">滑动空格键即可移动光标</string>
+    <string name="show_longpress_hints">显示长按键提示</string>
+    <string name="show_longpress_hints_summary">显示受支持按键的长按提示</string>
+    <string name="show_emoji_key">显示表情符号键</string>
+    <string name="show_emoji_key_summary">始终显示表情符号键。  启用此选项后，无法显示语言切换键。</string>
 </resources>

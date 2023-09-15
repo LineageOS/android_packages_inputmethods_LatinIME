@@ -18,4 +18,12 @@
     <string name="subtype_hu_ZZ">Madžarščina (QWERTY)</string>
     <string name="keyboard_theme_material_follow_system">Material - sledi sistemskim nastavitvam</string>
     <string name="prefs_keyboard_height_scale">Merilo višine tipkovnice</string>
+    <string name="number_row">Vrstica s številkami</string>
+    <string name="number_row_summary">Vedno prikaži vrstico s številkami za vse 4-vrstične postavitve gumbov</string>
+    <string name="space_trackpad">Sledilna ploščica preslednice</string>
+    <string name="space_trackpad_summary">Potegnite po preslednici za premik kazalca</string>
+    <string name="show_longpress_hints">Prikaži namige pridržanja tipke</string>
+    <string name="show_longpress_hints_summary">Prikaže namige pridržanja tipke za podprte tipke</string>
+    <string name="show_emoji_key">Prikaži emodži tipko</string>
+    <string name="show_emoji_key_summary">Vedno prikaži emodži tipko. Ko je ta možnost omogočena, preklopnik jezikov ne more biti prikazan.</string>
 </resources>
