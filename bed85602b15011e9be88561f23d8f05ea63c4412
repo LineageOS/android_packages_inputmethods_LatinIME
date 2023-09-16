@@ -35,6 +35,23 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "412c47a4_fb613a52",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24262
+      },
+      "writtenOn": "2023-09-16T17:40:11Z",
+      "side": 1,
+      "message": "sms app has a toggle for that that will be rendered useless, and i believe this commit shouldn\u0027t be merged because other apps can use that as well - \"never break public API\"",
+      "revId": "bed85602b15011e9be88561f23d8f05ea63c4412",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e8ef3a1c_74cba400",
