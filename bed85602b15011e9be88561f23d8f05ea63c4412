@@ -67,6 +67,24 @@
       "message": "Keep {} in multiple lines like before",
       "revId": "bed85602b15011e9be88561f23d8f05ea63c4412",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "daa362c8_885719c4",
+        "filename": "tests/src/com/android/inputmethod/keyboard/layout/customizer/LayoutCustomizer.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 163,
+      "author": {
+        "id": 5911
+      },
+      "writtenOn": "2023-09-17T09:15:41Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e8ef3a1c_74cba400",
+      "revId": "bed85602b15011e9be88561f23d8f05ea63c4412",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
