@@ -1,0 +1,20 @@
+name: build
+
+runs:
+    using: composite
+
+    steps:
+    - name: Setup JDK 17
+      uses: actions/setup-java@v3
+      with:
+        distribution: 'zulu'
+        java-version: 17
+
+    - name: Build with Gradle
+      shell: bash
+      run: ./gradlew assembleDebug
+
+    - uses: actions/upload-artifact@v3
+      with:
+        name: LatinIME-debug.apk
+        path: build/outputs/apk/debug/LatinIME-debug.apk
