@@ -2046,6 +2046,10 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
 
     /** @noinspection deprecation*/
     private void updateNavigationBarColor() {
+        // This may happen for devices with a physical keyboard
+        if (mInputView == null)
+            return;
+
         if (BuildCompatUtils.EFFECTIVE_SDK_INT > Build.VERSION_CODES.R) {
             Drawable bg = mInputView.findViewById(R.id.keyboard_view).getBackground();
             Window w = getWindow().getWindow();
