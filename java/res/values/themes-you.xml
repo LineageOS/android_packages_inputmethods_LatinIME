@@ -83,7 +83,7 @@
         <item name="gestureFloatingPreviewColor">@color/gesture_floating_preview_color_you</item>
         <item name="gestureTrailColor">@color/gesture_trail_color_you</item>
         <item name="slidingKeyInputPreviewColor">@color/sliding_key_input_preview_color_you</item>
-        <item name="languageOnSpacebarTextColor">@color/key_text_inactive_color_lxx_dark</item>
+        <item name="languageOnSpacebarTextColor">@color/key_hint_letter_color_you</item>
         <!-- A negative value to disable text shadow layer. -->
         <item name="languageOnSpacebarTextShadowRadius">-1.0</item>
     </style>
