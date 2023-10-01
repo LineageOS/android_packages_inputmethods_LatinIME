@@ -18,4 +18,12 @@
     <string name="subtype_hu_ZZ">Hongarès (QWERTY)</string>
     <string name="keyboard_theme_material_follow_system">Material - segueix la configuració del sistema</string>
     <string name="prefs_keyboard_height_scale">Escala de l\'alçada del teclat</string>
+    <string name="number_row">Número de fila</string>
+    <string name="number_row_summary">Mostra sempre el número de fila per totes les disposicions que inclouen 4 files de tecles</string>
+    <string name="space_trackpad">Ratolí tàctil a la barra espaiadora</string>
+    <string name="space_trackpad_summary">Feu lliscar el dit per moure el cursor</string>
+    <string name="show_longpress_hints">Consells de les tecles en mantenir-les premudes</string>
+    <string name="show_longpress_hints_summary">Manteniu premut per mostrar els consells de les tecles</string>
+    <string name="show_emoji_key">Mostra la tecla emoji</string>
+    <string name="show_emoji_key_summary">Mostra sempre la tecla emoji. Si trieu aquesta opció, no es mostrarà la tecla de canvi de llengua.</string>
 </resources>

@@ -20,7 +20,7 @@
     <string name="prefs_keyboard_height_scale">კალვიატურის სიმაღლე</string>
     <string name="number_row">ციფრების ზოლი</string>
     <string name="number_row_summary">ციფრების ზოლის გამოჩენა ყველა 4-რიგიანი ღილაკების მქონე განლაგებისთვის</string>
-    <string name="space_trackpad">მგრძნობიარე გამოსატოვებელი ღილაკი</string>
+    <string name="space_trackpad">შეხება დაშორების ღილაკზე</string>
     <string name="space_trackpad_summary">ჰარიზე გადასმისას მაჩვენებლის გადაადგილება</string>
     <string name="show_longpress_hints">მინიშნების გამოჩენა ხანგრძლივი დაჭერისას</string>
     <string name="show_longpress_hints_summary">ხანგრძლივი დაჭერისას მინიშნების ჩვენება შესაბამის ღილაკებზე</string>

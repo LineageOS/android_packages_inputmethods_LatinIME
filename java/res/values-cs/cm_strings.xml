@@ -18,4 +18,12 @@
     <string name="subtype_hu_ZZ">Maďarština (QWERTY)</string>
     <string name="keyboard_theme_material_follow_system">Material – podle nastavení systému</string>
     <string name="prefs_keyboard_height_scale">Měřítko výšky klávesnice</string>
+    <string name="number_row">Řádek čísel</string>
+    <string name="number_row_summary">Vždy zobrazit řádek s čísly pro všechna rozložení se 4 řadami kláves.</string>
+    <string name="space_trackpad">Ovládat kurzor mezerníkem </string>
+    <string name="space_trackpad_summary">Přejetím prstem po mezerníku přesunete kurzor</string>
+    <string name="show_longpress_hints">Dlouhým stiskem klávesy zobrazit nápovědu</string>
+    <string name="show_longpress_hints_summary">Dlouhým stiskem podporované klávesy zobrazit nápovědu</string>
+    <string name="show_emoji_key">Zobrazit klávesu emodži</string>
+    <string name="show_emoji_key_summary">Vždy zobrazte klávesu emoji. Pokud je tato možnost povolena, klávesa pro přepínání jazyků se nezobrazí.</string>
 </resources>

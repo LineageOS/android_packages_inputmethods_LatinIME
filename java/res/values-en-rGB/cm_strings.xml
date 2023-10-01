@@ -18,4 +18,12 @@
     <string name="subtype_hu_ZZ">Hungarian (QWERTY)</string>
     <string name="keyboard_theme_material_follow_system">Material - follow system settings</string>
     <string name="prefs_keyboard_height_scale">Keyboard height scale</string>
+    <string name="number_row">Number row</string>
+    <string name="number_row_summary">Always show a number row for all layouts that feature 4 rows of keys</string>
+    <string name="space_trackpad">Space bar trackpad</string>
+    <string name="space_trackpad_summary">Swipe on the space bar to move the cursor</string>
+    <string name="show_longpress_hints">Show long-press key hints</string>
+    <string name="show_longpress_hints_summary">Shows long-press hints for supported keys</string>
+    <string name="show_emoji_key">Show emoji key</string>
+    <string name="show_emoji_key_summary">Always show emoji key. When this option is enabled, the language switch key cannot be shown.</string>
 </resources>

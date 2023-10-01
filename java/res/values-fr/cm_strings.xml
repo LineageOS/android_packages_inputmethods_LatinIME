@@ -18,4 +18,7 @@
     <string name="subtype_hu_ZZ">Hongrois (QWERTY)</string>
     <string name="keyboard_theme_material_follow_system">Matériel - suivre les paramètres du système</string>
     <string name="prefs_keyboard_height_scale">Hauteur du clavier</string>
+    <string name="number_row">Ligne des numéros</string>
+    <string name="show_emoji_key">Afficher la touche Émoji</string>
+    <string name="show_emoji_key_summary">Toujours afficher la touche Émoji. Lorsque cette option est activée, la touche de changement de langue ne peut pas être affichée.</string>
 </resources>

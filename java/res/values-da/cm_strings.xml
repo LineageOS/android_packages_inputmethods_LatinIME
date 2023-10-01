@@ -17,4 +17,13 @@
     <string name="subtype_no_language_bepo">Alfabet (Bépo)</string>
     <string name="subtype_hu_ZZ">Ungarsk (QWERTY)</string>
     <string name="keyboard_theme_material_follow_system">Materiale - følg systemindstillinger</string>
+    <string name="prefs_keyboard_height_scale">Højdeskala for tastatur</string>
+    <string name="number_row">Nummerække</string>
+    <string name="number_row_summary">Altid vis nummer række for alle opsætninger som bruger 4 rækker af taster</string>
+    <string name="space_trackpad">Mellemrums tast navigering</string>
+    <string name="space_trackpad_summary">Stryg på mellemrumstasten for at flytte markøren</string>
+    <string name="show_longpress_hints">Vis tasttips med et langt tryk</string>
+    <string name="show_longpress_hints_summary">Vis tasttips ved langt tryk for understøttede taster</string>
+    <string name="show_emoji_key">Vis emoji tast</string>
+    <string name="show_emoji_key_summary">Altid vis emoji tast. Når den indstilling er aktiveret, kan sprogskift tasten ikke vises</string>
 </resources>
