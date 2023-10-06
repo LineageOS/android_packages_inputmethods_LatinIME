@@ -26,7 +26,7 @@
         hence we cannot rely on "test-file-name" to install LatinIME.apk
     -->
 
-    <target_preparer class="com.android.tradefed.targetprep.TestAppInstallSetup">
+    <target_preparer class="com.android.tradefed.targetprep.suite.SuiteApkInstaller">
         <option name="cleanup-apks" value="true" />
         <option name="test-file-name" value="LatinIMETests.apk" />
     </target_preparer>
