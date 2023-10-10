@@ -36,7 +36,6 @@ class SuggestedWord {
         }
 
      private:
-        DISALLOW_ASSIGNMENT_OPERATOR(Comparator);
     };
 
     SuggestedWord(const int *const codePoints, const int codePointCount,
