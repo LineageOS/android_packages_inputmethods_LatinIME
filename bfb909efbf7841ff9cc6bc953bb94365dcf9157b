@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ab8b7c79_0869250f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 5911
+      },
+      "writtenOn": "2023-10-10T12:44:27Z",
+      "side": 1,
+      "message": "this one was already in the commit message of the \"update emoji\" commit, so i squashed it there (again)",
+      "revId": "bfb909efbf7841ff9cc6bc953bb94365dcf9157b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
