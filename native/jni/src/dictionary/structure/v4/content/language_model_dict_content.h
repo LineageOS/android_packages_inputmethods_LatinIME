@@ -53,7 +53,6 @@ class LanguageModelDictContent {
 
      private:
         DISALLOW_DEFAULT_CONSTRUCTOR(WordIdAndProbabilityEntry);
-        DISALLOW_ASSIGNMENT_OPERATOR(WordIdAndProbabilityEntry);
 
         const int mWordId;
         const ProbabilityEntry mProbabilityEntry;
@@ -83,7 +82,6 @@ class LanguageModelDictContent {
 
      private:
         DISALLOW_DEFAULT_CONSTRUCTOR(EntryIterator);
-        DISALLOW_ASSIGNMENT_OPERATOR(EntryIterator);
 
         TrieMap::TrieMapIterator mTrieMapIterator;
         const bool mHasHistoricalInfo;
@@ -105,7 +103,6 @@ class LanguageModelDictContent {
 
      private:
         DISALLOW_DEFAULT_CONSTRUCTOR(EntryRange);
-        DISALLOW_ASSIGNMENT_OPERATOR(EntryRange);
 
         const TrieMap::TrieMapRange mTrieMapRange;
         const bool mHasHistoricalInfo;
@@ -124,8 +121,6 @@ class LanguageModelDictContent {
         const ProbabilityEntry &getProbabilityEntry() const { return mProbabilityEntry; }
 
      private:
-        DISALLOW_ASSIGNMENT_OPERATOR(DumppedFullEntryInfo);
-
         const std::vector<int> mPrevWordIds;
         const int mTargetWordId;
         const WordAttributes mWordAttributes;
@@ -211,7 +206,6 @@ class LanguageModelDictContent {
             bool operator()(const EntryInfoToTurncate &left,
                     const EntryInfoToTurncate &right) const;
          private:
-            DISALLOW_ASSIGNMENT_OPERATOR(Comparator);
         };
 
         EntryInfoToTurncate(const int priority, const int count, const int key,
