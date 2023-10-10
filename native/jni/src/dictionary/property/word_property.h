@@ -51,9 +51,6 @@ class WordProperty {
     }
 
  private:
-    // Default copy constructor is used for using as a return value.
-    DISALLOW_ASSIGNMENT_OPERATOR(WordProperty);
-
     const std::vector<int> mCodePoints;
     const UnigramProperty mUnigramProperty;
     const std::vector<NgramProperty> mNgrams;
