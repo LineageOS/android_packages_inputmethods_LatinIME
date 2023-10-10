@@ -122,9 +122,6 @@ class UnigramProperty {
     }
 
  private:
-    // Default copy constructor is used for using as a return value.
-    DISALLOW_ASSIGNMENT_OPERATOR(UnigramProperty);
-
     const bool mRepresentsBeginningOfSentence;
     const bool mIsNotAWord;
     const bool mIsBlacklisted;
