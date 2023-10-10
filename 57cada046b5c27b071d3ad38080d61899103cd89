@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b681b7f0_7818745d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2023-10-10T12:56:23Z",
+      "side": 1,
+      "message": "the voting mechanism isn\u0027t there for users to express facebook likes or dislikes. removed vote",
+      "revId": "57cada046b5c27b071d3ad38080d61899103cd89",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
