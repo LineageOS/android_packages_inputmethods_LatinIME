@@ -126,7 +126,6 @@ class TrieMap {
 
      private:
         DISALLOW_DEFAULT_CONSTRUCTOR(TrieMapIterator);
-        DISALLOW_ASSIGNMENT_OPERATOR(TrieMapIterator);
 
         const TrieMap *const mTrieMap;
         std::vector<TrieMap::TableIterationState> mStateStack;
@@ -155,7 +154,6 @@ class TrieMap {
 
      private:
         DISALLOW_DEFAULT_CONSTRUCTOR(TrieMapRange);
-        DISALLOW_ASSIGNMENT_OPERATOR(TrieMapRange);
 
         const TrieMap *const mTrieMap;
         const int mBaseBitmapEntryIndex;

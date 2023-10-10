@@ -51,7 +51,6 @@ class NgramProperty {
  private:
     // Default copy constructor is used for using in std::vector.
     DISALLOW_DEFAULT_CONSTRUCTOR(NgramProperty);
-    DISALLOW_ASSIGNMENT_OPERATOR(NgramProperty);
 
     const NgramContext mNgramContext;
     const std::vector<int> mTargetCodePoints;
