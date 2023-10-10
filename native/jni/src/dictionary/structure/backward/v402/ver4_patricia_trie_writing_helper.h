@@ -119,7 +119,6 @@ class Ver4PatriciaTrieWritingHelper {
         }
 
      private:
-        DISALLOW_ASSIGNMENT_OPERATOR(DictProbabilityComparator);
     };
 
     bool runGC(const int rootPtNodeArrayPos, const HeaderPolicy *const headerPolicy,

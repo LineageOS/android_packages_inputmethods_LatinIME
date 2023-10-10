@@ -41,8 +41,6 @@ class EntryCounts final {
     }
 
  private:
-    DISALLOW_ASSIGNMENT_OPERATOR(EntryCounts);
-
     // Counts from Unigram (0-th element) to (MAX_PREV_WORD_COUNT_FOR_N_GRAM + 1)-gram
     // (MAX_PREV_WORD_COUNT_FOR_N_GRAM-th element)
     const std::array<int, MAX_PREV_WORD_COUNT_FOR_N_GRAM + 1> mEntryCounts;
