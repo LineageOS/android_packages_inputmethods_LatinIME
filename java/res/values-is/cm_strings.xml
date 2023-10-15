@@ -18,4 +18,5 @@
     <string name="subtype_hu_ZZ">Ungverska (QWERTY)</string>
     <string name="keyboard_theme_material_follow_system">Material - fylgja kerfisstillingum</string>
     <string name="prefs_keyboard_height_scale">Kvarði lyklaborðs í hæð</string>
+    <string name="show_emoji_key">Sýna lykla með tjáningartáknum</string>
 </resources>
