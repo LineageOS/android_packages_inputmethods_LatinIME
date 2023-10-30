@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6b8b3361_e0915aad",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19552
+      },
+      "writtenOn": "2023-10-30T14:37:42Z",
+      "side": 1,
+      "message": "This could arguably do with a tiny bit of updating - all negotiating countries for EU enlargement could be added (Albania, North Macedonia, etc.).",
+      "revId": "3a67145911999932bdbd437ef80bc6bb228f490a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
