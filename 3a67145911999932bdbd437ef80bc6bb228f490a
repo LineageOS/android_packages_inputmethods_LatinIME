@@ -16,6 +16,24 @@
       "message": "This could arguably do with a tiny bit of updating - all negotiating countries for EU enlargement could be added (Albania, North Macedonia, etc.).",
       "revId": "3a67145911999932bdbd437ef80bc6bb228f490a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ae372976_7c1e739f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2023-10-30T14:44:38Z",
+      "side": 1,
+      "message": "I don\u0027t want to block the bringup for this change. It can be a separate commit and backported to the rest of the branches as well.",
+      "parentUuid": "6b8b3361_e0915aad",
+      "revId": "3a67145911999932bdbd437ef80bc6bb228f490a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
