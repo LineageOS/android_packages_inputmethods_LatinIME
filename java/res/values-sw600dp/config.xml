@@ -34,6 +34,8 @@
     <!-- config_more_keys_keyboard_key_height x 1.2 -->
     <dimen name="config_more_keys_keyboard_slide_allowance">98.3dp</dimen>
 
+    <fraction name="config_keyboard_left_padding">2%p</fraction>
+    <fraction name="config_keyboard_right_padding">2%p</fraction>
     <fraction name="config_keyboard_top_padding_holo">2.335%p</fraction>
     <fraction name="config_keyboard_bottom_padding_holo">4.0%p</fraction>
     <fraction name="config_key_vertical_gap_holo">4.5%p</fraction>
@@ -44,6 +46,7 @@
     <fraction name="config_key_preview_text_ratio">50%</fraction>
     <fraction name="config_key_letter_ratio_holo">42%</fraction>
     <fraction name="config_key_letter_ratio_lxx">50%</fraction>
+    <fraction name="config_key_letter_ratio_you">45%</fraction>
     <fraction name="config_key_large_letter_ratio_holo">45%</fraction>
     <fraction name="config_key_large_letter_ratio_lxx">60%</fraction>
     <fraction name="config_key_label_ratio_holo">25%</fraction>
