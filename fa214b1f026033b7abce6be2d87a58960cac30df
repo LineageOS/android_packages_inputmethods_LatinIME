@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a2b2a04b_6d1a86bd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2023-10-31T18:35:36Z",
+      "side": 1,
+      "message": "uploading a revert doesn\u0027t make us bring it back",
+      "revId": "fa214b1f026033b7abce6be2d87a58960cac30df",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
