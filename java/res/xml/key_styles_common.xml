@@ -77,6 +77,26 @@
         latin:keyActionFlags="isRepeatable|noKeyPreview"
         latin:backgroundType="functional" />
     <!-- emojiKeyStyle must be defined before including @xml/key_syles_enter. -->
+<<<<<<< PATCH SET (7677ca Revert "LatinIME: Remove unused resources")
+    <switch>
+        <case latin:keyboardTheme="ICS|KLP">
+            <key-style
+                latin:styleName="emojiKeyStyle"
+                latin:keySpec="!icon/emoji_action_key|!code/key_emoji"
+                latin:keyActionFlags="noKeyPreview"
+                latin:backgroundType="action" />
+        </case>
+        <!-- keyboardTheme="LXXLight|LXXDark" -->
+        <default>
+            <key-style
+                latin:styleName="emojiKeyStyle"
+                latin:keySpec="!icon/emoji_action_key|!code/key_emoji"
+                latin:keyLabelFlags="keepBackgroundAspectRatio"
+                latin:keyActionFlags="noKeyPreview"
+                latin:backgroundType="action" />
+        </default>
+    </switch>
+=======
     <key-style
         latin:styleName="emojiKeyStyle"
         latin:keySpec="!icon/emoji_normal_key|!code/key_emoji"
@@ -87,6 +107,7 @@
         latin:keyLabelFlags="keepBackgroundAspectRatio"
         latin:keyActionFlags="noKeyPreview"
         latin:backgroundType="action" />
+>>>>>>> BASE      (53f230 LatinIME: Set navigation bar color to KB background)
     <include
         latin:keyboardLayout="@xml/key_styles_enter" />
     <!-- TODO: Currently there is no way to specify icon alignment per theme. -->
