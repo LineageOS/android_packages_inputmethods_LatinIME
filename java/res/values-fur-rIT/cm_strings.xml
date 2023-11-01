@@ -18,4 +18,12 @@
     <string name="subtype_hu_ZZ">Ongjarês (QWERTY)</string>
     <string name="keyboard_theme_material_follow_system">Material - va daûr des impostazions di sisteme</string>
     <string name="prefs_keyboard_height_scale">Altece de tastiere</string>
+    <string name="number_row">Rie numars</string>
+    <string name="number_row_summary">Mostre simpri la rie dai numars par ducj i strâts cun 4 riis di tascj</string>
+    <string name="space_trackpad">Spostament cu la sbare di spazi</string>
+    <string name="space_trackpad_summary">Scor su la sbare di spazi par spostâ il cursôr</string>
+    <string name="show_longpress_hints">Mostre sugjeriments di pression sprolungjade</string>
+    <string name="show_longpress_hints_summary">Mostre sugjeriments di pression sprolungjade pai tascj supuartâts</string>
+    <string name="show_emoji_key">Metre tast emoji</string>
+    <string name="show_emoji_key_summary">Mostre simpri il tast emoji. Se cheste opzion e je ative, nol sarà pussibil mostrâ il tast par cambiâ lenghe.</string>
 </resources>

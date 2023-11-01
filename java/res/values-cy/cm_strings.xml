@@ -18,4 +18,7 @@
     <string name="subtype_hu_ZZ">Hwngareg (QWERTY)</string>
     <string name="keyboard_theme_material_follow_system">Defnydd - defnyddio gosodiadau system</string>
     <string name="prefs_keyboard_height_scale">Cyfradd uchder y bysellfwrdd</string>
+    <string name="number_row">Rhes rhif</string>
+    <string name="space_trackpad">Pad tracio bylchwr</string>
+    <string name="show_emoji_key">Dangos bysell emoji</string>
 </resources>
