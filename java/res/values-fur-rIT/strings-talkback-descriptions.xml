@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+**
+** Copyright 2015, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="spoken_use_headphones">Tache lis scufis par sintî pronunziâ i tascj fracâts pe password.</string>
+    <string name="spoken_current_text_is">Il test atuâl al è \"%s\"</string>
+    <string name="spoken_no_text_entered">Nissun test inserît</string>
+    <string name="spoken_auto_correct"><xliff:g id="KEY_NAME" example="Space">%1$s</xliff:g> al corêç <xliff:g id="ORIGINAL_WORD">%2$s</xliff:g> cun <xliff:g id="CORRECTED_WORD">%3$s</xliff:g></string>
+    <string name="spoken_auto_correct_obscured"><xliff:g id="KEY_NAME" example="Space">%1$s</xliff:g> al eseguìs la corezion automatiche</string>
+    <string name="spoken_empty_suggestion">Nissun sugjeriment</string>
+    <string name="spoken_description_unknown">Caratar no cognossût</string>
+    <string name="spoken_description_shift">Maiusc</string>
+    <string name="spoken_description_symbols_shift">Altris simbui</string>
+    <string name="spoken_description_shift_shifted">Maiusc atîf</string>
+    <string name="spoken_description_symbols_shift_shifted">Simbui</string>
+    <string name="spoken_description_caps_lock">Bloc maiusculis atîf</string>
+    <string name="spoken_description_delete">Cancele</string>
+    <string name="spoken_description_to_symbol">Simbui</string>
+    <string name="spoken_description_to_alpha">Letaris</string>
+    <string name="spoken_description_to_numeric">Numars</string>
+    <string name="spoken_description_settings">Impostazions</string>
+    <string name="spoken_description_tab">Tab</string>
+    <string name="spoken_description_space">Spazi</string>
+    <string name="spoken_description_mic">Jentrade vocâl</string>
+    <string name="spoken_description_emoji">Emoji</string>
+    <string name="spoken_description_return">Invie</string>
+    <string name="spoken_description_search">Cîr</string>
+    <string name="spoken_description_dot">Pont</string>
+    <string name="spoken_description_language_switch">Cambi lenghe</string>
+    <string name="spoken_description_action_next">Sucessîf</string>
+    <string name="spoken_description_action_previous">Precedent</string>
+    <string name="spoken_description_shiftmode_on">Maiusc ativât</string>
+    <string name="spoken_description_shiftmode_locked">Bloc maiusculis ativât</string>
+    <string name="spoken_description_mode_symbol">Modalitât simbui</string>
+    <string name="spoken_description_mode_symbol_shift">Modalitât altris simbui</string>
+    <string name="spoken_description_mode_alpha">Modalitât letaris</string>
+    <string name="spoken_description_mode_phone">Modalitât telefon</string>
+    <string name="spoken_description_mode_phone_shift">Modalitât simbui telefon</string>
+    <string name="announce_keyboard_hidden">Tastiere platade</string>
+    <string name="announce_keyboard_mode">Vision tastiere <xliff:g id="KEYBOARD_MODE" example="email">%s</xliff:g></string>
+    <string name="keyboard_mode_date">date</string>
+    <string name="keyboard_mode_date_time">date e ore</string>
+    <string name="keyboard_mode_email">e-mail</string>
+    <string name="keyboard_mode_im">messaçs</string>
+    <string name="keyboard_mode_number">numar</string>
+    <string name="keyboard_mode_phone">telefon</string>
+    <string name="keyboard_mode_text">test</string>
+    <string name="keyboard_mode_time">ore</string>
+    <string name="keyboard_mode_url">URL</string>
+    <string name="spoken_descrption_emoji_category_recents">Resints</string>
+    <string name="spoken_descrption_emoji_category_people">Personis</string>
+    <string name="spoken_descrption_emoji_category_objects">Ogjets</string>
+    <string name="spoken_descrption_emoji_category_nature">Nature</string>
+    <string name="spoken_descrption_emoji_category_places">Lûcs</string>
+    <string name="spoken_descrption_emoji_category_symbols">Simbui</string>
+    <string name="spoken_descrption_emoji_category_flags">Bandieris</string>
+    <string name="spoken_descrption_emoji_category_eight_smiley_people">Musutis e personis</string>
+    <string name="spoken_descrption_emoji_category_eight_animals_nature">Animâi e nature</string>
+    <string name="spoken_descrption_emoji_category_eight_food_drink">Mangjative e bevi</string>
+    <string name="spoken_descrption_emoji_category_eight_travel_places">Viaçs e lûcs</string>
+    <string name="spoken_descrption_emoji_category_eight_activity">Ativitâts</string>
+    <string name="spoken_descrption_emoji_category_emoticons">Emoticons</string>
+    <string name="spoken_description_upper_case"><xliff:g id="LOWER_LETTER" example="A, E, ligature">%s</xliff:g> maiuscule</string>
+    <string name="spoken_letter_0049">I maiuscule</string>
+    <string name="spoken_letter_0130">I maiuscule, pont parsore</string>
+    <string name="spoken_symbol_unknown">Simbul no cognossût</string>
+    <string name="spoken_emoji_unknown">Emoji no cognossude</string>
+    <string name="spoken_emoticon_3A_2D_21_20">Musute secjade</string>
+    <string name="spoken_emoticon_3A_2D_24_20">Musute intrigade</string>
+    <string name="spoken_emoticon_42_2D_29_20">Musute cui ocjâi di soreli</string>
+    <string name="spoken_emoticon_3A_4F_20">Musute maraveade</string>
+    <string name="spoken_emoticon_3A_2D_2A_20">Musute che e busse</string>
+    <string name="spoken_emoticon_3A_2D_5B_20">Musute seriose</string>
+    <string name="spoken_open_more_keys_keyboard">A son disponibii caratars alternatîfs</string>
+    <string name="spoken_close_more_keys_keyboard">I caratars alternatîfs a vegnin ignorâts</string>
+    <string name="spoken_open_more_suggestions">A son disponibii caratars alternatîfs</string>
+    <string name="spoken_close_more_suggestions">I caratars alternatîfs a vegnin ignorâts</string>
+</resources>

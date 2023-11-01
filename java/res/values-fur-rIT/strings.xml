@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+**
+** Copyright 2008, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="english_ime_input_options">Opzions di imission</string>
+    <string name="use_contacts_for_spellchecking_option_title">Cîr in nons contats</string>
+    <string name="use_contacts_for_spellchecking_option_summary">Il coretôr ortografic al dopre vôs de liste dai contats</string>
+    <string name="vibrate_on_keypress">Vibre ae pression dai tascj</string>
+    <string name="sound_on_keypress">Sun ae pression dai tascj</string>
+    <string name="popup_on_keypress">Ingrandìs ae pression dai tascj</string>
+    <string name="settings_screen_preferences">Preferencis</string>
+    <string name="settings_screen_accounts">Accounts e riservatece</string>
+    <string name="settings_screen_appearance">Aspiet e disposizions</string>
+    <string name="settings_screen_gesture">Scriture cun mots</string>
+    <string name="settings_screen_correction">Corezion test</string>
+    <string name="settings_screen_advanced">Avanzadis</string>
+    <string name="settings_screen_theme">Teme</string>
+    <string name="enable_split_keyboard">Ative tastiere dividude</string>
+    <string name="cloud_sync_title">Sincronize tastiere Google</string>
+    <string name="cloud_sync_summary">La sincronizazion e je ative</string>
+    <string name="cloud_sync_summary_disabled">Sincronize il to dizionari personâl sui dispositîfs</string>
+    <string name="sync_now_title">Sincronize cumò</string>
+    <string name="clear_sync_data_title">Elimine dâts cloud</string>
+    <string name="clear_sync_data_summary">Al elimine i dâts che tu âs sincronizât di Google</string>
+    <string name="clear_sync_data_confirmation">I dâts che tu âs sincronizât a vignaran eliminâts dal cloud. Continuâ pardabon?</string>
+    <string name="clear_sync_data_ok">Elimine</string>
+    <string name="cloud_sync_cancel">Anule</string>
+    <string name="cloud_sync_opt_in_text">Il to dizionari personâl al vignarà sincronizât e archiviât come backup sui servidôrs di Google. Al è pussibil che a vegnin tiradis dongje lis informazions statistichis su la frecuence des peraulis par judâ a miorâ i nestris prodots. I dâts tirâts dongje e la lôr utilizazion a rispietaran lis <a href="https://www.google.com/policies/privacy">Normis su la riservatece di Google</a>.
+    </string>
+    <string name="add_account_to_enable_sync">        Zonte un account Google a chest dispositîf par ativâ cheste funzionalitât
+    </string>
+    <string name="cloud_sync_summary_disabled_work_profile">        La sincronizazion no je disponibile pai dispositîfs cun accounts Google Apps for Business
+    </string>
+    <string name="include_other_imes_in_language_switch_list">Passe a altris metodis di imission</string>
+    <string name="include_other_imes_in_language_switch_list_summary">Il tast par cambiâ lenghe al ufrìs altris metodis di imission</string>
+    <string name="show_language_switch_key">Tast cambi lenghe</string>
+    <string name="show_language_switch_key_summary">Mostre se a son ativis plui lenghis di imission</string>
+    <string name="key_preview_popup_dismiss_delay">Ritart rimozion ingrandiment tast</string>
+    <string name="key_preview_popup_dismiss_no_delay">Nissun ritart</string>
+    <string name="key_preview_popup_dismiss_default_delay">Predefinît</string>
+    <string name="abbreviation_unit_milliseconds"><xliff:g id="MILLISECONDS">%s</xliff:g>ms</string>
+    <string name="settings_system_default">Predefinît di sisteme</string>
+    <string name="use_contacts_dict">Sugjerìs nons di contats</string>
+    <string name="use_contacts_dict_summary">Dopre i nons di Contats par sugjeriments e corezions</string>
+    <string name="use_personalized_dicts">Sugjeriments personaliz.</string>
+    <string name="enable_metrics_logging">"Miore <xliff:g id="APPLICATION_NAME" example="Android Keyboard">%s</xliff:g>"</string>
+    <string name="use_double_space_period">Dopli-spazi pal pont</string>
+    <string name="use_double_space_period_summary">Une dople tocjade su la sbare di spazi e inserìs un pont cun daûr un spazi</string>
+    <string name="auto_cap">Maiusculis automatichis</string>
+    <string name="auto_cap_summary">Met maiuscule la iniziâl de prime peraule di ogni frase</string>
+    <string name="edit_personal_dictionary">Dizionari personâl</string>
+    <string name="configure_dictionaries_title">Dizionaris adizionâi</string>
+    <string name="main_dictionary">Dizionari principâl</string>
+    <string name="prefs_show_suggestions">Mostre sugjeriments di corezion</string>
+    <string name="prefs_show_suggestions_summary">Visualize lis peraulis sugjeridis intant che tu scrivis</string>
+    <string name="prefs_block_potentially_offensive_title">Bloche peraulis ofensivis</string>
+    <string name="prefs_block_potentially_offensive_summary">No sta sugjerî peraulis che a puedin jessi ofensivis</string>
+    <string name="auto_correction">Corezion automatiche</string>
+    <string name="auto_correction_summary">La sbare di spazi e la puntuazion a corezin in automatic lis peraulis scritis mâl</string>
+    <string name="auto_correction_threshold_mode_off">Off</string>
+    <string name="auto_correction_threshold_mode_modest">Moderade</string>
+    <string name="auto_correction_threshold_mode_aggressive">Agressive</string>
+    <string name="auto_correction_threshold_mode_very_aggressive">Une vore agressive</string>
+    <string name="bigram_prediction">Sugjeriment peraule sucessive</string>
+    <string name="bigram_prediction_summary">Dopre la peraule precedente par fâ sugjeriments</string>
+    <string name="gesture_input">Abilite scriture a mots</string>
+    <string name="gesture_input_summary">Inserìs une peraule scorint tra lis letaris</string>
+    <string name="gesture_preview_trail">Mostre sdrasse dal mot</string>
+    <string name="gesture_floating_preview_text">Anteprime mobile dinamiche</string>
+    <string name="gesture_floating_preview_text_summary">Viôt la peraule sugjeride intant che tu fasis il mot</string>
+    <string name="gesture_space_aware">Mot di frase</string>
+    <string name="gesture_space_aware_summary">Inserìs spazis dilunc i mots fasint sbrissâ il dêt sul tast dal spazi</string>
+    <string name="voice_input">Tast input vocâl</string>
+    <string name="voice_input_disabled_summary">Nissun metodi di imission vocâl abilitât. Controle lis impostazions di Lenghis e imission.</string>
+    <string name="configure_input_method">Configure i metodis di imission</string>
+    <string name="language_selection_title">Lenghis</string>
+    <string name="help_and_feedback">Jutori e valutazions</string>
+    <string name="select_language">Lenghis</string>
+    <string name="hint_add_to_dictionary">Tocje di gnûf par salvâ</string>
+    <string name="hint_add_to_dictionary_without_word">Toche achì par salvâ</string>
+    <string name="has_dictionary">Dizionari disponibil</string>
+    <string name="keyboard_layout">Teme de tastiere</string>
+    <string name="switch_accounts">Cambie accounts</string>
+    <string name="no_accounts_selected">Nissun account selezionât</string>
+    <string name="account_selected">In chest moment doprât: <xliff:g id="EMAIL_ADDRESS" example="someone@example.com">%1$s</xliff:g></string>
+    <string name="account_select_ok">Va ben</string>
+    <string name="account_select_cancel">Anule</string>
+    <string name="account_select_sign_out">Jes</string>
+    <string name="account_select_title">Selezione un account di doprâ</string>
+    <string name="subtype_en_GB">Inglês (UK)</string>
+    <string name="subtype_en_US">Inglês (USA)</string>
+    <string name="subtype_es_US">Spagnûl (USA)</string>
+    <string name="subtype_hi_ZZ">Hinglish</string>
+    <string name="subtype_sr_ZZ">Serp (Latin)</string>
+    <string name="subtype_with_layout_en_GB">Inglese (UK) (<xliff:g id="KEYBOARD_LAYOUT" example="QWERTY">%s</xliff:g>)</string>
+    <string name="subtype_with_layout_en_US">Inglese (US) (<xliff:g id="KEYBOARD_LAYOUT" example="QWERTY">%s</xliff:g>)</string>
+    <string name="subtype_with_layout_es_US">Spagnole (US) (<xliff:g id="KEYBOARD_LAYOUT" example="QWERTY">%s</xliff:g>)</string>
+    <string name="subtype_with_layout_hi_ZZ">Hinglish (<xliff:g id="KEYBOARD_LAYOUT" example="QWERTY">%s</xliff:g>)</string>
+    <string name="subtype_with_layout_sr_ZZ">Serbe (<xliff:g id="KEYBOARD_LAYOUT" example="QWERTY">%s</xliff:g>)</string>
+    <string name="subtype_generic_traditional"><xliff:g id="LANGUAGE_NAME" example="Nepali">%s</xliff:g> (tradizionâl)</string>
+    <string name="subtype_generic_compact"><xliff:g id="LANGUAGE_NAME" example="Hindi">%s</xliff:g> (compat)</string>
+    <string name="subtype_no_language">Nissune lenghe (alfabet)</string>
+    <string name="subtype_no_language_qwerty">Alfabet (QWERTY)</string>
+    <string name="subtype_no_language_qwertz">Alfabet (QWERTZ)</string>
+    <string name="subtype_no_language_azerty">Alfabet (AZERTY)</string>
+    <string name="subtype_no_language_dvorak">Alfabet (Dvorak)</string>
+    <string name="subtype_no_language_colemak">Alfabet (Colemak)</string>
+    <string name="subtype_no_language_pcqwerty">Alfabet (PC)</string>
+    <string name="subtype_emoji">Emoji</string>
+    <string name="keyboard_theme">Teme de tastiere</string>
+    <string name="custom_input_styles_title">Stîi imission personalizâts</string>
+    <string name="add_style">Zonte stîl</string>
+    <string name="add">Zonte</string>
+    <string name="remove">Gjave</string>
+    <string name="save">Salve</string>
+    <string name="subtype_locale">Lenghe</string>
+    <string name="keyboard_layout_set">Disposizion</string>
+    <string name="custom_input_style_note_message">"Il to stîl di imission personalizât al à bisugne che al sedi ativât prime di scomençâ a doprâlu. Ativâlu daurman?"</string>
+    <string name="enable">Ative</string>
+    <string name="not_now">No cumò</string>
+    <string name="custom_input_style_already_exists">"Il stes stîl di imission al esist za: <xliff:g id="INPUT_STYLE_NAME" example="English (Dvorak)">%s</xliff:g>"</string>
+    <string name="prefs_keypress_vibration_duration_settings">Durade vibrazion de pression tascj</string>
+    <string name="prefs_keypress_sound_volume_settings">Volum audio a pression tast</string>
+    <string name="prefs_key_longpress_timeout_settings">Ritart pression lungje dai tascj</string>
+    <string name="prefs_enable_emoji_alt_physical_key">Emoji pe tastiere fisiche</string>
+    <string name="prefs_enable_emoji_alt_physical_key_summary">Il tast fisic Alt al mostre la palete dai emoji</string>
+    <string name="button_default">Predefinît</string>
+    <string name="setup_welcome_title">"Benvignûts su <xliff:g id="APPLICATION_NAME" example="Android Keyboard">%s</xliff:g>"</string>
+    <string name="setup_welcome_additional_description">cun scriture a mots</string>
+    <string name="setup_start_action">Scomence</string>
+    <string name="setup_next_action">Passaç sucessîf</string>
+    <string name="setup_steps_title">"Configurazion di <xliff:g id="APPLICATION_NAME" example="Android Keyboard">%s</xliff:g>"</string>
+    <string name="setup_step1_title">"Abilite <xliff:g id="APPLICATION_NAME" example="Android Keyboard">%s</xliff:g>"</string>
+    <string name="setup_step1_instruction">"Selezione \"<xliff:g id="APPLICATION_NAME" example="Android Keyboard">%s</xliff:g>\" tes impostazions di Lenghe e imission par autorizâ la esecuzion sul to dispositîf."</string>
+    <string name="setup_step1_finished_instruction">"<xliff:g id="APPLICATION_NAME" example="Android Keyboard">%s</xliff:g> al è za ativât tes impostazions di Lenghe e imission, duncje chest passaç al è fat. Nin a chel dopo!"</string>
+    <string name="setup_step1_action">Abilite tes Impostazions</string>
+    <string name="setup_step2_title">"Passe a <xliff:g id="APPLICATION_NAME" example="Android Keyboard">%s</xliff:g>"</string>
+    <string name="setup_step2_instruction">"Dopo selezione \"<xliff:g id="APPLICATION_NAME" example="Android Keyboard">%s</xliff:g>\" tant che to metodi atîf di imission-test."</string>
+    <string name="setup_step2_action">Cambie metodis di imission</string>
+    <string name="setup_step3_title">"Congratulazions, cumò al è dut pront!"</string>
+    <string name="setup_step3_instruction">Cumò tu puedis scrivi in dutis lis tôs aplicazions preferidis cun <xliff:g id="APPLICATION_NAME" example="Android Keyboard">%s</xliff:g>.</string>
+    <string name="setup_step3_action">Configure lenghis adizionâls</string>
+    <string name="setup_finish_action">Completât</string>
+    <string name="show_setup_wizard_icon">Mostre icone de aplicazion</string>
+    <string name="show_setup_wizard_icon_summary">Visualize la icone de aplicazion tal inviadôr</string>
+    <string name="app_name">Furnidôr di dizionari</string>
+    <string name="dictionary_provider_name">Furnidôr di dizionari</string>
+    <string name="dictionary_service_name">Servizi dal dizionari</string>
+    <string name="download_description">Informazions di inzornament dal dizionari</string>
+    <string name="dictionary_settings_title">Dizionaris adizionâi</string>
+    <string name="dictionary_install_over_metered_network_prompt">Dizionari disponibil</string>
+    <string name="dictionary_settings_summary">Impostazions pai dizionaris</string>
+    <string name="user_dictionaries">Dizionaris dal utent</string>
+    <string name="default_user_dict_pref_name">Dizionari dal utent</string>
+    <string name="dictionary_available">Dizionari disponibil</string>
+    <string name="dictionary_downloading">Cumò al è daûr a discjariâsi</string>
+    <string name="dictionary_installed">Instalât</string>
+    <string name="dictionary_disabled">Instalât, disabilitât</string>
+    <string name="cannot_connect_to_dict_service">Coness. diz. impuss.</string>
+    <string name="no_dictionaries_available">Nissun dizionari</string>
+    <string name="check_for_updates_now">Inzorne</string>
+    <string name="last_update">Ultin inzornament</string>
+    <string name="message_updating">Verifiche disponibilitât inzornaments</string>
+    <string name="message_loading">Daûr a cjariâ…</string>
+    <string name="main_dict_description">Dizionari principâl</string>
+    <string name="cancel">Anule</string>
+    <string name="go_to_settings">Impostazions</string>
+    <string name="install_dict">Instale</string>
+    <string name="cancel_download_dict">Anule</string>
+    <string name="delete_dict">Elimine</string>
+    <string name="should_download_over_metered_prompt">Pe lenghe selezionade sul dispositîf al è disponibil un dizionari.&lt;br/&gt;
+Ti conseìn di &lt;b&gt;discjariâ&lt;/b&gt; il dizionari par <xliff:g id="LANGUAGE_NAME" example="English">%1$s</xliff:g> par miorâ la esperience di scriture.&lt;br/&gt;
+&lt;br/&gt;
+Il discjariament al podarès puartâ vie un o doi minûts cul 3G. Tu podaressis vê coscj se no tu âs un &lt;b&gt;plan tarifari par dâts ilimitâts&lt;/b&gt;.&lt;br/&gt;
+Se no tu sâs ce plan tarifari che tu âs, ti conseìn di cjatâ une conession Wi-Fi par scomençâ a discjariâ in automatic.&lt;br/&gt;
+&lt;br/&gt;
+Sugjeriment: Tu puedis discjariâ e gjavâ dizionaris lant su &lt;b&gt;Lenghis e imission&lt;/b&gt; tal menù &lt;b&gt;Impostazions&lt;/b&gt; dal to dispositîf mobil.</string>
+    <string name="download_over_metered">Discjame cumò (<xliff:g id="SIZE_IN_MEGABYTES" example="0.7">%1$.1f</xliff:g>MB)</string>
+    <string name="do_not_download_over_metered">Discjame vie Wi-Fi</string>
+    <string name="dict_available_notification_title">Al è disponibil un dizionari pal <xliff:g id="LANGUAGE_NAME" example="English">%1$s</xliff:g></string>
+    <string name="dict_available_notification_description">Frache par esaminâ e discjariâ</string>
+    <string name="toast_downloading_suggestions">Daûr a discjariâ: i sugjeriments pal <xliff:g id="LANGUAGE_NAME" example="English">%1$s</xliff:g> a saran pronts chi di pôc.</string>
+    <string name="version_text">Version <xliff:g id="VERSION_NUMBER" example="1.0.1864.643521">%1$s</xliff:g></string>
+    <string name="user_dict_settings_add_menu_title">Zonte</string>
+    <string name="user_dict_settings_add_dialog_title">Zonte al dizionari</string>
+    <string name="user_dict_settings_add_screen_title">Frase</string>
+    <string name="user_dict_settings_add_dialog_more_options">Altris opzions</string>
+    <string name="user_dict_settings_add_dialog_less_options">Mancul opzions</string>
+    <string name="user_dict_settings_add_dialog_confirm">Va ben</string>
+    <string name="user_dict_settings_add_word_option_name">Peraule:</string>
+    <string name="user_dict_settings_add_shortcut_option_name">Scurte:</string>
+    <string name="user_dict_settings_add_locale_option_name">Lenghe:</string>
+    <string name="user_dict_settings_add_word_hint">Scrîf une peraule</string>
+    <string name="user_dict_settings_add_shortcut_hint">Scurte facoltative</string>
+    <string name="user_dict_settings_edit_dialog_title">Modifiche peraule</string>
+    <string name="user_dict_settings_context_menu_edit_title">Modifiche</string>
+    <string name="user_dict_settings_context_menu_delete_title">Elimine</string>
+    <string name="user_dict_settings_empty_text">No je nissune peraule tal dizionari dal utent. Par zontâ une peraule, tocje il boton Zonte (+).</string>
+    <string name="user_dict_settings_all_languages">Par dutis lis lenghis</string>
+    <string name="user_dict_settings_more_languages">Altris lenghis…</string>
+    <string name="user_dict_settings_delete">Elimine</string>
+    <string name="user_dict_fast_scroll_alphabet">\u0020ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+</resources>
