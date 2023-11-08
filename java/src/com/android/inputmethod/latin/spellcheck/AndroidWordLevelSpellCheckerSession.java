@@ -24,6 +24,8 @@ import android.service.textservice.SpellCheckerService.Session;
 import android.text.TextUtils;
 import android.util.Log;
 import android.util.LruCache;
+import android.view.inputmethod.InputMethodManager;
+import android.view.inputmethod.InputMethodSubtype;
 import android.view.textservice.SuggestionsInfo;
 import android.view.textservice.TextInfo;
 
@@ -113,10 +115,26 @@ public abstract class AndroidWordLevelSpellCheckerSession extends Session {
 
     @Override
     public void onCreate() {
-        final String localeString = getLocale();
-        mLocale = (null == localeString) ? null
-                : LocaleUtils.constructLocaleFromString(localeString);
+        mLocale = getActiveLocale();
         mScript = ScriptUtils.getScriptFromSpellCheckerLocale(mLocale);
+    }
+
+    private Locale getActiveLocale() {
+        final InputMethodManager imm = mService.getSystemService(InputMethodManager.class);
+
+        if (imm != null) {
+            final InputMethodSubtype currentInputMethodSubtype = imm.getCurrentInputMethodSubtype();
+            if (currentInputMethodSubtype != null) {
+                final String localeString = currentInputMethodSubtype.getLanguageTag();
+                if (!TextUtils.isEmpty(localeString)) {
+                    return Locale.forLanguageTag(localeString);
+                }
+            }
+        }
+
+        final String localeString = getLocale();
+        return (!TextUtils.isEmpty(localeString)) ? null
+                : LocaleUtils.constructLocaleFromString(localeString);
     }
 
     @Override
