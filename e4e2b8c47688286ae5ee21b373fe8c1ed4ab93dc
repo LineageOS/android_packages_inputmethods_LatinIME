@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "16c4b97f_cffa4491",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 5911
+      },
+      "writtenOn": "2023-11-09T15:45:02Z",
+      "side": 1,
+      "message": "the re-added makefiles break aosp builds",
+      "revId": "e4e2b8c47688286ae5ee21b373fe8c1ed4ab93dc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
