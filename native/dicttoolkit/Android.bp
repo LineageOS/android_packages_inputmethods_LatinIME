@@ -24,6 +24,7 @@ package {
 cc_defaults {
     name: "dicttoolkit_defaults",
 
+    cpp_std: "gnu++17",
     cflags: [
         "-Werror",
         "-Wall",
