@@ -16,6 +16,24 @@
       "message": "the re-added makefiles break aosp builds",
       "revId": "e4e2b8c47688286ae5ee21b373fe8c1ed4ab93dc",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d42a51cc_fab213c9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2023-11-19T16:57:51Z",
+      "side": 1,
+      "message": "adding empty Android.mk in / solves it, tested with m and ./gradlew assembleDebug.",
+      "parentUuid": "16c4b97f_cffa4491",
+      "revId": "e4e2b8c47688286ae5ee21b373fe8c1ed4ab93dc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
