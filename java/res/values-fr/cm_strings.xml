@@ -19,6 +19,11 @@
     <string name="keyboard_theme_material_follow_system">Matériel - suivre les paramètres du système</string>
     <string name="prefs_keyboard_height_scale">Hauteur du clavier</string>
     <string name="number_row">Ligne des numéros</string>
+    <string name="number_row_summary">Toujours afficher la rangée des chiffres pour tous les agencements comprenant 4 rangées de touches.</string>
+    <string name="space_trackpad">Pavé tactile de la barre d\'espace</string>
+    <string name="space_trackpad_summary">Glisser sur la barre d\'espace pour déplacer le curseur</string>
+    <string name="show_longpress_hints">Afficher les indices d\'appui long sur une touche</string>
+    <string name="show_longpress_hints_summary">Affiche les indices d\'appui long pour les touches prises en charge</string>
     <string name="show_emoji_key">Afficher la touche Émoji</string>
     <string name="show_emoji_key_summary">Toujours afficher la touche Émoji. Lorsque cette option est activée, la touche de changement de langue ne peut pas être affichée.</string>
 </resources>
