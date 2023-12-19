@@ -49,7 +49,7 @@ android_test {
 
     instrumentation_for: "LatinIME",
 
-    min_sdk_version: "14",
+    min_sdk_version: "19",
     target_sdk_version: "30",
     sdk_version: "current",
 }

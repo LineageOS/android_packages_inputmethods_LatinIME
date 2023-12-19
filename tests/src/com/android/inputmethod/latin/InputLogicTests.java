@@ -18,9 +18,10 @@ package com.android.inputmethod.latin;
 
 import static android.test.MoreAsserts.assertNotEqual;
 
-import android.test.suitebuilder.annotation.LargeTest;
 import android.text.TextUtils;
 import android.view.inputmethod.BaseInputConnection;
+
+import androidx.test.filters.LargeTest;
 
 import com.android.inputmethod.latin.common.Constants;
 import com.android.inputmethod.latin.define.DecoderSpecificConstants;

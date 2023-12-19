@@ -16,13 +16,14 @@
 
 package com.android.inputmethod.latin;
 
-import com.android.inputmethod.latin.settings.Settings;
-
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.os.Build.VERSION_CODES;
-import android.test.suitebuilder.annotation.LargeTest;
 import android.view.inputmethod.EditorInfo;
+
+import androidx.test.filters.LargeTest;
+
+import com.android.inputmethod.latin.settings.Settings;
 
 @LargeTest
 public class AppWorkaroundsTests extends InputTestsBase {

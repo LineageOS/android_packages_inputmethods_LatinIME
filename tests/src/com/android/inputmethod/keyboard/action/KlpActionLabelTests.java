@@ -17,9 +17,10 @@
 package com.android.inputmethod.keyboard.action;
 
 import android.content.res.Resources;
-import android.test.suitebuilder.annotation.MediumTest;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodSubtype;
+
+import androidx.test.filters.MediumTest;
 
 import com.android.inputmethod.keyboard.KeyboardLayoutSet;
 import com.android.inputmethod.keyboard.internal.KeyboardIconsSet;

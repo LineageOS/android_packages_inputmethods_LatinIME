@@ -16,7 +16,7 @@
 
 package com.android.inputmethod.latin;
 
-import android.test.suitebuilder.annotation.LargeTest;
+import androidx.test.filters.LargeTest;
 
 @LargeTest
 public class LatinImeTests extends InputTestsBase {

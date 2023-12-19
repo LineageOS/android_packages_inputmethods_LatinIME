@@ -16,7 +16,7 @@
 
 package com.android.inputmethod.keyboard.internal;
 
-import android.test.suitebuilder.annotation.SmallTest;
+import androidx.test.filters.SmallTest;
 
 @SmallTest
 public class KeyboardStateSingleTouchTests extends KeyboardStateTestsBase {

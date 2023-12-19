@@ -16,8 +16,9 @@
 
 package com.android.inputmethod.keyboard.layout.tests;
 
-import android.test.suitebuilder.annotation.SmallTest;
 import android.view.inputmethod.InputMethodSubtype;
+
+import androidx.test.filters.SmallTest;
 
 import com.android.inputmethod.keyboard.KeyboardLayoutSetTestsBase;
 import com.android.inputmethod.keyboard.KeyboardTheme;
