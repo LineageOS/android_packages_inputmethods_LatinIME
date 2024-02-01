@@ -19,5 +19,7 @@
     <string name="keyboard_theme_material_follow_system">Material - siguir la configuración del sistema</string>
     <string name="prefs_keyboard_height_scale">Escala del altor del tecláu</string>
     <string name="number_row">Filera de númberos</string>
+    <string name="space_trackpad">Mur táctil na barra d\'espaciu</string>
+    <string name="space_trackpad_summary">Esliza\'l deu pela barra d\'espaciu pa mover el cursor</string>
     <string name="show_emoji_key">Amosar la tecla de fustaxes</string>
 </resources>
