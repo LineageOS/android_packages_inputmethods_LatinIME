@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+**
+** Copyright 2014, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<!--
+    These accented letters (spoken_accented_letter_*) are unsupported by TTS.
+    These symbols (spoken_symbol_*) are also unsupported by TTS.
+    TODO: Remove these string resources when TTS/TalkBack support these letters.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="spoken_accented_letter_00AA">Indicadôr ordenâl feminin</string>
+    <string name="spoken_accented_letter_00B5">Simbul micro</string>
+    <string name="spoken_accented_letter_00BA">Indicadôr ordenâl masculin</string>
+    <string name="spoken_accented_letter_00DF">Scharfes S</string>
+    <string name="spoken_accented_letter_00E0">A, acent grâf</string>
+    <string name="spoken_accented_letter_00E1">A, acent acût</string>
+    <string name="spoken_accented_letter_00E2">A, acent circonflès</string>
+    <string name="spoken_accented_letter_00E3">A, tilde</string>
+    <string name="spoken_accented_letter_00E4">A, dieresi</string>
+    <string name="spoken_accented_letter_00E5">A, anel parsore</string>
+    <string name="spoken_accented_letter_00E6">A, E, leadure</string>
+    <string name="spoken_accented_letter_00E7">C, cedilie</string>
+    <string name="spoken_accented_letter_00E8">E, acent grâf</string>
+    <string name="spoken_accented_letter_00E9">E, acent acût</string>
+    <string name="spoken_accented_letter_00EA">E, acent circonflès</string>
+    <string name="spoken_accented_letter_00EB">E, dieresi</string>
+    <string name="spoken_accented_letter_00EC">I, acent grâf</string>
+    <string name="spoken_accented_letter_00ED">I, acent acût</string>
+    <string name="spoken_accented_letter_00EE">I, acent circonflès</string>
+    <string name="spoken_accented_letter_00EF">I, dieresi</string>
+    <string name="spoken_accented_letter_00F0">Eth</string>
+    <string name="spoken_accented_letter_00F1">N, tilde</string>
+    <string name="spoken_accented_letter_00F2">O, acent grâf</string>
+    <string name="spoken_accented_letter_00F3">O, acent acût</string>
+    <string name="spoken_accented_letter_00F4">O, acent circonflès</string>
+    <string name="spoken_accented_letter_00F5">O, tilde</string>
+    <string name="spoken_accented_letter_00F6">O, dieresi</string>
+    <string name="spoken_accented_letter_00F8">O, sbarade</string>
+    <string name="spoken_accented_letter_00F9">U, acent grâf</string>
+    <string name="spoken_accented_letter_00FA">U, acent acût</string>
+    <string name="spoken_accented_letter_00FB">U, acent circonflès</string>
+    <string name="spoken_accented_letter_00FC">U, dieresi</string>
+    <string name="spoken_accented_letter_00FD">Y, acent acût</string>
+    <string name="spoken_accented_letter_00FE">Thorn</string>
+    <string name="spoken_accented_letter_00FF">Y, dieresi</string>
+    <string name="spoken_accented_letter_0101">A, macron</string>
+    <string name="spoken_accented_letter_0103">A, diacritc curt</string>
+    <string name="spoken_accented_letter_0105">A, codute</string>
+    <string name="spoken_accented_letter_0107">C, acent acût</string>
+    <string name="spoken_accented_letter_0109">C, acent circonflès</string>
+    <string name="spoken_accented_letter_010B">C, pont parsore</string>
+    <string name="spoken_accented_letter_010D">C, pipe</string>
+    <string name="spoken_accented_letter_010F">D, pipe</string>
+    <string name="spoken_accented_letter_0111">D, sbarât</string>
+    <string name="spoken_accented_letter_0113">E, macron</string>
+    <string name="spoken_accented_letter_0115">E, diacritc curt</string>
+    <string name="spoken_accented_letter_0117">E, pont parsore</string>
+    <string name="spoken_accented_letter_0119">E, codute</string>
+    <string name="spoken_accented_letter_011B">E, pipe</string>
+    <string name="spoken_accented_letter_011D">G, acent circonflès</string>
+    <string name="spoken_accented_letter_011F">G, diacritc curt</string>
+    <string name="spoken_accented_letter_0121">G, pont parsore</string>
+    <string name="spoken_accented_letter_0123">G, cedilie</string>
+    <string name="spoken_accented_letter_0125">H, acent circonflès</string>
+    <string name="spoken_accented_letter_0127">H, sbarât</string>
+    <string name="spoken_accented_letter_0129">I, tilde</string>
+    <string name="spoken_accented_letter_012B">I, macron</string>
+    <string name="spoken_accented_letter_012D">I, diacritc curt</string>
+    <string name="spoken_accented_letter_012F">I, codute</string>
+    <string name="spoken_accented_letter_0131">I cence puntin</string>
+    <string name="spoken_accented_letter_0133">I, J, leadure</string>
+    <string name="spoken_accented_letter_0135">J, acent circonflès</string>
+    <string name="spoken_accented_letter_0137">K, cedilie</string>
+    <string name="spoken_accented_letter_0138">Kra</string>
+    <string name="spoken_accented_letter_013A">L, acent acût</string>
+    <string name="spoken_accented_letter_013C">L, cedilie</string>
+    <string name="spoken_accented_letter_013E">L, pipe</string>
+    <string name="spoken_accented_letter_0140">L, pont median</string>
+    <string name="spoken_accented_letter_0142">L, sbarât</string>
+    <string name="spoken_accented_letter_0144">N, acent acût</string>
+    <string name="spoken_accented_letter_0146">N, cedilie</string>
+    <string name="spoken_accented_letter_0148">N, pipe</string>
+    <string name="spoken_accented_letter_0149">N, precedût dal apostrof</string>
+    <string name="spoken_accented_letter_014B">Nasâl velâr</string>
+    <string name="spoken_accented_letter_014D">O, macron</string>
+    <string name="spoken_accented_letter_014F">O, diacritc curt</string>
+    <string name="spoken_accented_letter_0151">O, dopli acent acût</string>
+    <string name="spoken_accented_letter_0153">O, E, leadure</string>
+    <string name="spoken_accented_letter_0155">R, acent acût</string>
+    <string name="spoken_accented_letter_0157">R, cedilie</string>
+    <string name="spoken_accented_letter_0159">R, pipe</string>
+    <string name="spoken_accented_letter_015B">S, acent acût</string>
+    <string name="spoken_accented_letter_015D">S, acent circonflès</string>
+    <string name="spoken_accented_letter_015F">S, cedilie</string>
+    <string name="spoken_accented_letter_0161">S, pipe</string>
+    <string name="spoken_accented_letter_0163">T, cedilie</string>
+    <string name="spoken_accented_letter_0165">T, pipe</string>
+    <string name="spoken_accented_letter_0167">T, sbarât</string>
+    <string name="spoken_accented_letter_0169">U, tilde</string>
+    <string name="spoken_accented_letter_016B">U, macron</string>
+    <string name="spoken_accented_letter_016D">U, diacritc curt</string>
+    <string name="spoken_accented_letter_016F">U, anel parsore</string>
+    <string name="spoken_accented_letter_0171">U, dopli acent acût</string>
+    <string name="spoken_accented_letter_0173">U, codute</string>
+    <string name="spoken_accented_letter_0175">W, acent circonflès</string>
+    <string name="spoken_accented_letter_0177">Y, acent circonflès</string>
+    <string name="spoken_accented_letter_017A">Z, acent acût</string>
+    <string name="spoken_accented_letter_017C">Z, pont parsore</string>
+    <string name="spoken_accented_letter_017E">Z, pipe</string>
+    <string name="spoken_accented_letter_017F">S lungje</string>
+    <string name="spoken_accented_letter_01A1">O, cuar</string>
+    <string name="spoken_accented_letter_01B0">U, cuar</string>
+    <string name="spoken_accented_letter_0219">S, virgule sot</string>
+    <string name="spoken_accented_letter_021B">T, virgule sot</string>
+    <string name="spoken_accented_letter_0259">Schwa</string>
+    <string name="spoken_accented_letter_1EA1">A, pont sotscrit</string>
+    <string name="spoken_accented_letter_1EA3">A, ganç parsore</string>
+    <string name="spoken_accented_letter_1EA5">A, acent circonflès e acût</string>
+    <string name="spoken_accented_letter_1EA7">A, acent circonflès e grâf</string>
+    <string name="spoken_accented_letter_1EA9">A, acent circonflès e ganç parsore</string>
+    <string name="spoken_accented_letter_1EAB">A, acent circonflès e tilde</string>
+    <string name="spoken_accented_letter_1EAD">A, acent circonflès e pont sotscrit</string>
+    <string name="spoken_accented_letter_1EAF">A, diacritic curt e acent acût</string>
+    <string name="spoken_accented_letter_1EB1">A, diacritic curt e acent grâf</string>
+    <string name="spoken_accented_letter_1EB3">A, diacritic curt e ganç parsore</string>
+    <string name="spoken_accented_letter_1EB5">A, diacritic curt e tilde</string>
+    <string name="spoken_accented_letter_1EB7">A, diacritic curt e pont sotscrit</string>
+    <string name="spoken_accented_letter_1EB9">E, pont sotscrit</string>
+    <string name="spoken_accented_letter_1EBB">E, ganç parsore</string>
+    <string name="spoken_accented_letter_1EBD">E, tilde</string>
+    <string name="spoken_accented_letter_1EBF">E, acent circonflès e acût</string>
+    <string name="spoken_accented_letter_1EC1">E, acent circonflès e grâf</string>
+    <string name="spoken_accented_letter_1EC3">E, acent circonflès e ganç parsore</string>
+    <string name="spoken_accented_letter_1EC5">E, acent circonflès e tilde</string>
+    <string name="spoken_accented_letter_1EC7">E, acent circonflès e pont sotscrit</string>
+    <string name="spoken_accented_letter_1EC9">I, ganç parsore</string>
+    <string name="spoken_accented_letter_1ECB">I, pont sotscrit</string>
+    <string name="spoken_accented_letter_1ECD">O, pont sotscrit</string>
+    <string name="spoken_accented_letter_1ECF">O, ganç parsore</string>
+    <string name="spoken_accented_letter_1ED1">O, acent circonflès e acût</string>
+    <string name="spoken_accented_letter_1ED3">O, acent circonflès e grâf</string>
+    <string name="spoken_accented_letter_1ED5">O, acent circonflès e ganç parsore</string>
+    <string name="spoken_accented_letter_1ED7">O, acent circonflès e tilde</string>
+    <string name="spoken_accented_letter_1ED9">O, acent circonflès e pont sotscrit</string>
+    <string name="spoken_accented_letter_1EDB">O, cuar e acent acût</string>
+    <string name="spoken_accented_letter_1EDD">O, cuar e acent grâf</string>
+    <string name="spoken_accented_letter_1EDF">O, cuar e ganç parsore</string>
+    <string name="spoken_accented_letter_1EE1">O, cuar e tilde</string>
+    <string name="spoken_accented_letter_1EE3">O, cuar e pont sotscrit</string>
+    <string name="spoken_accented_letter_1EE5">U, pont sotscrit</string>
+    <string name="spoken_accented_letter_1EE7">U, ganç parsore</string>
+    <string name="spoken_accented_letter_1EE9">U, cuar e acent acût</string>
+    <string name="spoken_accented_letter_1EEB">U, cuar e acent grâf</string>
+    <string name="spoken_accented_letter_1EED">U, cuar e ganç parsore</string>
+    <string name="spoken_accented_letter_1EEF">U, cuar e tilde</string>
+    <string name="spoken_accented_letter_1EF1">U, cuar e pont sotscrit</string>
+    <string name="spoken_accented_letter_1EF3">Y, acent grâf</string>
+    <string name="spoken_accented_letter_1EF5">Y, pont sotscrit</string>
+    <string name="spoken_accented_letter_1EF7">Y, ganç parsore</string>
+    <string name="spoken_accented_letter_1EF9">Y, tilde</string>
+    <string name="spoken_symbol_00A1">Pont esclamatîf invertît</string>
+    <string name="spoken_symbol_00AB">Virgulutis bassis doplis viertis</string>
+    <string name="spoken_symbol_00B7">Pont median</string>
+    <string name="spoken_symbol_00B9">Un in apiç</string>
+    <string name="spoken_symbol_00BB">Virgulutis bassis doplis sieradis</string>
+    <string name="spoken_symbol_00BF">Pont interogatîf invertît</string>
+    <string name="spoken_symbol_2018">Virgulute singule vierte</string>
+    <string name="spoken_symbol_2019">Virgulute singule sierade</string>
+    <string name="spoken_symbol_201A">Virgulute singule low-9</string>
+    <string name="spoken_symbol_201C">Virgulutis doplis viertis</string>
+    <string name="spoken_symbol_201D">Virgulutis doplis sieradis</string>
+    <string name="spoken_symbol_2020">Obelisc</string>
+    <string name="spoken_symbol_2021">Dopli obelisc</string>
+    <string name="spoken_symbol_2030">Segn di par mil</string>
+    <string name="spoken_symbol_2032">Prin</string>
+    <string name="spoken_symbol_2033">Dopli prin</string>
+    <string name="spoken_symbol_2039">Virgulute basse singule vierte</string>
+    <string name="spoken_symbol_203A">Virgulute basse singule sierade</string>
+    <string name="spoken_symbol_2074">Cuatri in apiç</string>
+    <string name="spoken_symbol_207F">Letare latine n minuscule in apiç</string>
+    <string name="spoken_symbol_20B1">Simbul dal peso</string>
+    <string name="spoken_symbol_2105">Li di</string>
+    <string name="spoken_symbol_2192">Frece viers diestre</string>
+    <string name="spoken_symbol_2193">Frece viers il bas</string>
+    <string name="spoken_symbol_2205">Insiemi vueit</string>
+    <string name="spoken_symbol_2206">Increment</string>
+    <string name="spoken_symbol_2264">Minôr o avuâl a</string>
+    <string name="spoken_symbol_2265">Maiôr o avuâl a</string>
+    <string name="spoken_symbol_2605">Stele nere</string>
+</resources>
