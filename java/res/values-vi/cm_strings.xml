@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2015 The CyanogenMod Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="subtype_no_language_bepo">Bảng chữ cái (Bépo)</string>
+    <string name="subtype_hu_ZZ">Hungary (QWERTY)</string>
+    <string name="keyboard_theme_material_follow_system">Material - theo cài đặt hệ thống</string>
+    <string name="prefs_keyboard_height_scale">Chiều cao của bàn phím</string>
+    <string name="number_row">Dãy phím số</string>
+    <string name="number_row_summary">Luôn hiển thị dãy phím số cho tất cả các bố cục có 4 hàng phím</string>
+    <string name="space_trackpad">Phím cách trackpad</string>
+    <string name="space_trackpad_summary">Vuốt trên phím cách để di chuyển con trỏ</string>
+    <string name="show_longpress_hints">Hiển thị các gợi ý khi nhấn giữ phím</string>
+    <string name="show_longpress_hints_summary">Hiển thị các gợi ý khi nhấn giữ phím được hỗ trợ</string>
+    <string name="show_emoji_key">Hiển thị phím biểu tượng cảm xúc</string>
+    <string name="show_emoji_key_summary">Luôn hiển thị phím biểu tượng cảm xúc. Khi tùy chọn này được bật, phím chuyển đổi ngôn ngữ không thể được hiển thị.</string>
+</resources>
