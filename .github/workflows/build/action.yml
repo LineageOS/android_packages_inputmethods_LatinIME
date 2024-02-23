@@ -13,7 +13,7 @@ runs:
 
     - name: Build with Gradle
       shell: bash
-      run: ./gradlew assembleDebug
+      run: ./gradlew assembleDebug;find
 
     - uses: actions/upload-artifact@v3
       with:
