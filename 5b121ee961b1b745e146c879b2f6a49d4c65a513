@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "170c7b9c_9d00e207",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24262
+      },
+      "writtenOn": "2024-03-23T17:58:55Z",
+      "side": 1,
+      "message": "Original code has unclear license. DNM.",
+      "revId": "5b121ee961b1b745e146c879b2f6a49d4c65a513",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
