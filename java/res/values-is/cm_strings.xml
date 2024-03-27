@@ -18,5 +18,12 @@
     <string name="subtype_hu_ZZ">Ungverska (QWERTY)</string>
     <string name="keyboard_theme_material_follow_system">Material - fylgja kerfisstillingum</string>
     <string name="prefs_keyboard_height_scale">Kvarði lyklaborðs í hæð</string>
+    <string name="number_row">Talnaröð</string>
+    <string name="number_row_summary">Alltaf birta talnaröð í öllum framsetningum með 4 röðum lykla</string>
+    <string name="space_trackpad">Bilslá sem tilfærsla</string>
+    <string name="space_trackpad_summary">Strjúka á bilslá til að færa bendilinn</string>
+    <string name="show_longpress_hints">Birta ábendingar þegar ýtt er lengi</string>
+    <string name="show_longpress_hints_summary">Birtir ábendingar þegar ýtt er lengi á studda lykla</string>
     <string name="show_emoji_key">Sýna lykla með tjáningartáknum</string>
+    <string name="show_emoji_key_summary">Alltaf birta lykil með emoji-táknum. Sé þetta valið, er ekki hægt að hafa lykil til að skipta um tungumál.</string>
 </resources>
