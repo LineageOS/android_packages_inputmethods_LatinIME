@@ -16,8 +16,9 @@
 
 package com.android.inputmethod.latin.spellcheck;
 
-import android.test.suitebuilder.annotation.LargeTest;
 import android.text.style.SuggestionSpan;
+
+import androidx.test.filters.LargeTest;
 
 import com.android.inputmethod.latin.InputTestsBase;
 

@@ -19,7 +19,7 @@ package com.android.inputmethod.keyboard.internal;
 import static com.android.inputmethod.keyboard.internal.KeyboardIconsSet.ICON_UNDEFINED;
 import static com.android.inputmethod.latin.common.Constants.CODE_UNSPECIFIED;
 
-import android.test.suitebuilder.annotation.SmallTest;
+import androidx.test.filters.SmallTest;
 
 import com.android.inputmethod.latin.common.Constants;
 

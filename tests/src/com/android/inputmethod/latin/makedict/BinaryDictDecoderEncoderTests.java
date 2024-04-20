@@ -17,10 +17,11 @@
 package com.android.inputmethod.latin.makedict;
 
 import android.test.AndroidTestCase;
-import android.test.suitebuilder.annotation.LargeTest;
 import android.util.Log;
 import android.util.Pair;
 import android.util.SparseArray;
+
+import android.test.suitebuilder.annotation.LargeTest;
 
 import com.android.inputmethod.latin.BinaryDictionary;
 import com.android.inputmethod.latin.common.CodePointUtils;

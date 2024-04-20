@@ -16,7 +16,7 @@
 
 package com.android.inputmethod.latin;
 
-import android.test.suitebuilder.annotation.LargeTest;
+import androidx.test.filters.LargeTest;
 
 import com.android.inputmethod.latin.common.CodePointUtils;
 
