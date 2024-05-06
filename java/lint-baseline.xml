@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<issues format="5" by="lint 4.1.0" client="cli" variant="all" version="4.1.0">
+<issues format="6" by="lint 8.4.0-alpha01" type="baseline" client="" dependencies="true" name="" variant="all" version="8.4.0-alpha01">
 
     <issue
         id="NewApi"
@@ -26,36 +26,45 @@
     <issue
         id="NewApi"
         message="Call requires API level 23 (current min is 21): `android.content.Context#getSystemService`"
+        errorLine1="        final WindowManager wm = getSystemService(WindowManager.class);"
+        errorLine2="                                 ~~~~~~~~~~~~~~~~">
+        <location
+            file="packages/inputmethods/LatinIME/java/src/com/android/inputmethod/latin/LatinIME.java"
+            line="605"
+            column="34"/>
+    </issue>
+
+    <issue
+        id="NewApi"
+        message="Call requires API level 23 (current min is 21): `android.app.ActivityOptions#makeBasic`"
+        errorLine1="                ActivityOptions.makeBasic().setLaunchDisplayId(currentDisplayId).toBundle());"
+        errorLine2="                                ~~~~~~~~~">
+        <location
+            file="packages/inputmethods/LatinIME/java/src/com/android/inputmethod/latin/LatinIME.java"
+            line="1857"
+            column="33"/>
+    </issue>
+
+    <issue
+        id="NewApi"
+        message="Call requires API level 26 (current min is 21): `android.app.ActivityOptions#setLaunchDisplayId`"
+        errorLine1="                ActivityOptions.makeBasic().setLaunchDisplayId(currentDisplayId).toBundle());"
+        errorLine2="                                            ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="packages/inputmethods/LatinIME/java/src/com/android/inputmethod/latin/LatinIME.java"
+            line="1857"
+            column="45"/>
+    </issue>
+
+    <issue
+        id="NewApi"
+        message="Call requires API level 23 (current min is 21): `android.content.Context#getSystemService`"
         errorLine1="        final UserManager userManager = context.getSystemService(UserManager.class);"
         errorLine2="                                                ~~~~~~~~~~~~~~~~">
         <location
             file="packages/inputmethods/LatinIME/java/src/com/android/inputmethod/compat/UserManagerCompatUtils.java"
             line="69"
             column="49"/>
-    </issue>
-
-    <issue
-        id="NewApi"
-        message="Call requires API level 23 (current min is 21): `android.app.ActivityOptions#makeBasic`">
-        <location
-            file="packages/inputmethods/LatinIME/java/src/com/android/inputmethod/latin/LatinIME.java"
-            line="1842"/>
-    </issue>
-
-    <issue
-        id="NewApi"
-        message="Call requires API level 23 (current min is 21): `android.content.Context#getSystemService`">
-        <location
-            file="packages/inputmethods/LatinIME/java/src/com/android/inputmethod/latin/LatinIME.java"
-            line="605"/>
-    </issue>
-
-    <issue
-        id="NewApi"
-        message="Call requires API level 26 (current min is 21): `android.app.ActivityOptions#setLaunchDisplayId`">
-        <location
-            file="packages/inputmethods/LatinIME/java/src/com/android/inputmethod/latin/LatinIME.java"
-            line="1842"/>
     </issue>
 
 </issues>
