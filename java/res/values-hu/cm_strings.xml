@@ -18,4 +18,12 @@
     <string name="subtype_hu_ZZ">Magyar (QWERTY)</string>
     <string name="keyboard_theme_material_follow_system">Material - rendszerbeállításokat követve</string>
     <string name="prefs_keyboard_height_scale">A billentyűzetmagasság értéke</string>
+    <string name="number_row">Számkarakterek</string>
+    <string name="number_row_summary">Négy gombsoros elrendezésnél mindig meg fogja jeleníteni a számkarakterek sorát is</string>
+    <string name="space_trackpad">Szóköz, mint egérpad</string>
+    <string name="space_trackpad_summary">A kurzor mozgatásához húzza az ujját a szóköz billentyűn</string>
+    <string name="show_longpress_hints">Tippek megjelenítése hosszan nyomáskor</string>
+    <string name="show_longpress_hints_summary">A támogatott billentyűkön, hosszan lenyomáskor tippeket jelenít meg</string>
+    <string name="show_emoji_key">Emoji-gomb megjelenítése</string>
+    <string name="show_emoji_key_summary">Mindig mutassa meg az emojik gombját.  Ha ez az opció engedélyezve van, a nyelvváltó gomb nem jeleníthető meg.</string>
 </resources>
