@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8c659369_5f95ccf1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19936
+      },
+      "writtenOn": "2024-06-04T00:29:31Z",
+      "side": 1,
+      "message": "Test:\n- Compiles\n- 15.1 emoji available in emoji selector as per https://unicode.org/Public/emoji/15.1/emoji-test.txt",
+      "revId": "0729276f78bbf73f17a12bac8eb91254360310b1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
