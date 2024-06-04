@@ -1508,6 +1508,7 @@
         <item>1FABD</item>
         <item>1F426,200D,2B1B</item>
         <item>1FABF</item>
+        <item>1F426,200D,1F525</item>
         <!-- animal-amphibian -->
         <item>1F438</item>
         <!-- animal-reptile -->
@@ -1639,6 +1640,8 @@
         <item>1F62E,200D,1F4A8</item>
         <item>1F925</item>
         <item>1FAE8</item>
+        <item>1F642,200D,2194,FE0F</item>
+        <item>1F642,200D,2195,FE0F</item>
         <!-- face-sleepy -->
         <item>1F60C</item>
         <item>1F614</item>
@@ -2020,24 +2023,42 @@
         <item>1F6B6</item>
         <item>1F6B6,200D,2642,FE0F</item>
         <item>1F6B6,200D,2640,FE0F</item>
+        <item>1F6B6,200D,27A1,FE0F</item>
+        <item>1F6B6,200D,2640,FE0F,200D,27A1,FE0F</item>
+        <item>1F6B6,200D,2642,FE0F,200D,27A1,FE0F</item>
         <item>1F9CD</item>
         <item>1F9CD,200D,2642,FE0F</item>
         <item>1F9CD,200D,2640,FE0F</item>
         <item>1F9CE</item>
         <item>1F9CE,200D,2642,FE0F</item>
         <item>1F9CE,200D,2640,FE0F</item>
+        <item>1F9CE,200D,27A1,FE0F</item>
+        <item>1F9CE,200D,2640,FE0F,200D,27A1,FE0F</item>
+        <item>1F9CE,200D,2642,FE0F,200D,27A1,FE0F</item>
         <item>1F9D1,200D,1F9AF</item>
+        <item>1F9D1,200D,1F9AF,200D,27A1,FE0F</item>
         <item>1F468,200D,1F9AF</item>
+        <item>1F468,200D,1F9AF,200D,27A1,FE0F</item>
         <item>1F469,200D,1F9AF</item>
+        <item>1F469,200D,1F9AF,200D,27A1,FE0F</item>
         <item>1F9D1,200D,1F9BC</item>
+        <item>1F9D1,200D,1F9BC,200D,27A1,FE0F</item>
         <item>1F468,200D,1F9BC</item>
+        <item>1F468,200D,1F9BC,200D,27A1,FE0F</item>
         <item>1F469,200D,1F9BC</item>
+        <item>1F469,200D,1F9BC,200D,27A1,FE0F</item>
         <item>1F9D1,200D,1F9BD</item>
+        <item>1F9D1,200D,1F9BD,200D,27A1,FE0F</item>
         <item>1F468,200D,1F9BD</item>
+        <item>1F468,200D,1F9BD,200D,27A1,FE0F</item>
         <item>1F469,200D,1F9BD</item>
+        <item>1F469,200D,1F9BD,200D,27A1,FE0F</item>
         <item>1F3C3</item>
         <item>1F3C3,200D,2642,FE0F</item>
         <item>1F3C3,200D,2640,FE0F</item>
+        <item>1F3C3,200D,27A1,FE0F</item>
+        <item>1F3C3,200D,2640,FE0F,200D,27A1,FE0F</item>
+        <item>1F3C3,200D,2642,FE0F,200D,27A1,FE0F</item>
         <item>1F483</item>
         <item>1F57A</item>
         <item>1F574,FE0F</item>
@@ -2144,6 +2165,11 @@
         <item>1F464</item>
         <item>1F465</item>
         <item>1FAC2</item>
+        <item>1F46A</item>
+        <item>1F9D1,200D,1F9D1,200D,1F9D2</item>
+        <item>1F9D1,200D,1F9D1,200D,1F9D2,200D,1F9D2</item>
+        <item>1F9D1,200D,1F9D2</item>
+        <item>1F9D1,200D,1F9D2,200D,1F9D2</item>
         <item>1F463</item>
         <!-- hair-style -->
         <item>1F9B0</item>
@@ -2210,6 +2236,8 @@
         <item>1F62E,200D,1F4A8</item>
         <item>1F925</item>
         <item>1FAE8</item>
+        <item>1F642,200D,2194,FE0F</item>
+        <item>1F642,200D,2195,FE0F</item>
         <!-- face-sleepy -->
         <item>1F60C</item>
         <item>1F614</item>
@@ -2591,24 +2619,42 @@
         <item>1F6B6</item>
         <item>1F6B6,200D,2642,FE0F</item>
         <item>1F6B6,200D,2640,FE0F</item>
+        <item>1F6B6,200D,27A1,FE0F</item>
+        <item>1F6B6,200D,2640,FE0F,200D,27A1,FE0F</item>
+        <item>1F6B6,200D,2642,FE0F,200D,27A1,FE0F</item>
         <item>1F9CD</item>
         <item>1F9CD,200D,2642,FE0F</item>
         <item>1F9CD,200D,2640,FE0F</item>
         <item>1F9CE</item>
         <item>1F9CE,200D,2642,FE0F</item>
         <item>1F9CE,200D,2640,FE0F</item>
+        <item>1F9CE,200D,27A1,FE0F</item>
+        <item>1F9CE,200D,2640,FE0F,200D,27A1,FE0F</item>
+        <item>1F9CE,200D,2642,FE0F,200D,27A1,FE0F</item>
         <item>1F9D1,200D,1F9AF</item>
+        <item>1F9D1,200D,1F9AF,200D,27A1,FE0F</item>
         <item>1F468,200D,1F9AF</item>
+        <item>1F468,200D,1F9AF,200D,27A1,FE0F</item>
         <item>1F469,200D,1F9AF</item>
+        <item>1F469,200D,1F9AF,200D,27A1,FE0F</item>
         <item>1F9D1,200D,1F9BC</item>
+        <item>1F9D1,200D,1F9BC,200D,27A1,FE0F</item>
         <item>1F468,200D,1F9BC</item>
+        <item>1F468,200D,1F9BC,200D,27A1,FE0F</item>
         <item>1F469,200D,1F9BC</item>
+        <item>1F469,200D,1F9BC,200D,27A1,FE0F</item>
         <item>1F9D1,200D,1F9BD</item>
+        <item>1F9D1,200D,1F9BD,200D,27A1,FE0F</item>
         <item>1F468,200D,1F9BD</item>
+        <item>1F468,200D,1F9BD,200D,27A1,FE0F</item>
         <item>1F469,200D,1F9BD</item>
+        <item>1F469,200D,1F9BD,200D,27A1,FE0F</item>
         <item>1F3C3</item>
         <item>1F3C3,200D,2642,FE0F</item>
         <item>1F3C3,200D,2640,FE0F</item>
+        <item>1F3C3,200D,27A1,FE0F</item>
+        <item>1F3C3,200D,2640,FE0F,200D,27A1,FE0F</item>
+        <item>1F3C3,200D,2642,FE0F,200D,27A1,FE0F</item>
         <item>1F483</item>
         <item>1F57A</item>
         <item>1F574,FE0F</item>
@@ -2715,6 +2761,11 @@
         <item>1F464</item>
         <item>1F465</item>
         <item>1FAC2</item>
+        <item>1F46A</item>
+        <item>1F9D1,200D,1F9D1,200D,1F9D2</item>
+        <item>1F9D1,200D,1F9D1,200D,1F9D2,200D,1F9D2</item>
+        <item>1F9D1,200D,1F9D2</item>
+        <item>1F9D1,200D,1F9D2,200D,1F9D2</item>
         <item>1F463</item>
         <!-- hair-style -->
         <item>1F9B0</item>
@@ -2733,6 +2784,7 @@
         <item>1F349</item>
         <item>1F34A</item>
         <item>1F34B</item>
+        <item>1F34B,200D,1F7E9</item>
         <item>1F34C</item>
         <item>1F34D</item>
         <item>1F96D</item>
@@ -2765,6 +2817,7 @@
         <item>1F330</item>
         <item>1FADA</item>
         <item>1FADB</item>
+        <item>1F344,200D,1F7EB</item>
         <!-- food-prepared -->
         <item>1F35E</item>
         <item>1F950</item>
@@ -3095,6 +3148,7 @@
         <item>2696,FE0F</item>
         <item>1F9AF</item>
         <item>1F517</item>
+        <item>26D3,FE0F,200D,1F4A5</item>
         <item>26D3,FE0F</item>
         <item>1FA9D</item>
         <item>1F9F0</item>
