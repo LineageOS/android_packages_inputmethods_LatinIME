@@ -64,4 +64,7 @@ android_app {
     optimize: {
         proguard_flags_files: ["proguard.flags"],
     },
+    lint: {
+        baseline_filename: "lint-baseline.xml",
+    },
 }
