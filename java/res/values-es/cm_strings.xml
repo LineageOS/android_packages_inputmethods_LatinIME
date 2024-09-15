@@ -16,5 +16,14 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="subtype_no_language_bepo">Alfabeto (Bépo)</string>
     <string name="subtype_hu_ZZ">Húngaro (QWERTY)</string>
+    <string name="keyboard_theme_material_follow_system">Material - sigue los ajustes del sistema</string>
     <string name="prefs_keyboard_height_scale">Escala de altura del teclado</string>
+    <string name="number_row">Fila de números</string>
+    <string name="number_row_summary">Mostrar siempre una fila de números para todos los diseños que tengan 4 filas de teclas</string>
+    <string name="space_trackpad">Panel táctil de barra espaciadora</string>
+    <string name="space_trackpad_summary">Desliza sobre la barra espaciadora para mover el cursor</string>
+    <string name="show_longpress_hints">Mostrar sugerencias de teclas pulsadas prolongadamente</string>
+    <string name="show_longpress_hints_summary">Muestra sugerencias de pulsación prolongada para las teclas compatibles</string>
+    <string name="show_emoji_key">Mostrar tecla de emoticonos</string>
+    <string name="show_emoji_key_summary">Mostrar siempre la tecla de emoticonos. Si se activa esta opción, no es posible mostrar la tecla de cambio de idioma.</string>
 </resources>
