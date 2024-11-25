@@ -5,7 +5,7 @@ runs:
 
     steps:
     - name: Setup JDK 17
-      uses: actions/setup-java@v3
+      uses: actions/setup-java@v4
       with:
         distribution: 'zulu'
         java-version: 17
@@ -15,7 +15,7 @@ runs:
       shell: bash
       run: ./gradlew assembleDebug
 
-    - uses: actions/upload-artifact@v3
+    - uses: actions/upload-artifact@v4
       with:
         name: LatinIME-debug.apk
         path: build/outputs/apk/debug/LatinIME-debug.apk
