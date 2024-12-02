@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2013 The Android Open Source Project
+ * Copyright (C) 2024 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,6 +17,7 @@
 
 package com.android.inputmethod.keyboard.emoji;
 
+import android.content.Context;
 import android.content.res.Resources;
 import androidx.viewpager2.widget.ViewPager2;
 import android.view.View;
@@ -35,9 +37,10 @@ final class EmojiLayoutParams {
     private final int mBottomPadding;
     private final int mTopPadding;
 
-    public EmojiLayoutParams(final Resources res) {
+    public EmojiLayoutParams(final Context context) {
+        Resources res = context.getResources();
         final int defaultKeyboardHeight = ResourceUtils.getDefaultKeyboardHeight(res);
-        final int defaultKeyboardWidth = ResourceUtils.getDefaultKeyboardWidth(res);
+        final int defaultKeyboardWidth = ResourceUtils.getDefaultKeyboardWidth(context);
         mKeyVerticalGap = (int) res.getFraction(R.fraction.config_key_vertical_gap_holo,
                 defaultKeyboardHeight, defaultKeyboardHeight);
         mBottomPadding = (int) res.getFraction(R.fraction.config_keyboard_bottom_padding_holo,
