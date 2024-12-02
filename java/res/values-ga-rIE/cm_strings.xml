@@ -14,6 +14,10 @@
      limitations under the License.
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="subtype_no_language_bepo">Aibítir (Bépo)</string>
+    <string name="subtype_hu_ZZ">Ungáiris (QWERTY)</string>
+    <string name="keyboard_theme_material_follow_system">Ábhar - lean socruithe an chórais</string>
+    <string name="prefs_keyboard_height_scale">Scála airde méarchláir</string>
     <string name="number_row">Sraith uimhreacha</string>
     <string name="number_row_summary">Taispeáin sraith uimhreach i gcónaí do gach leagan amach ina bhfuil 4 shraith eochracha</string>
     <string name="space_trackpad">Trackpad barra spáis</string>
