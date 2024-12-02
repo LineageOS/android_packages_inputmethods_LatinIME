@@ -19,7 +19,7 @@
      package="com.android.inputmethod.latin"
      android:versionCode="30">
 
-    <uses-sdk android:minSdkVersion="21"
+    <uses-sdk android:minSdkVersion="30"
          android:targetSdkVersion="30"/>
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
