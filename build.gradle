@@ -11,7 +11,7 @@ buildscript {
 apply plugin: 'com.android.application'
 
 android {
-    compileSdk 34
+    compileSdk 35
 
     namespace 'com.android.inputmethod.latin'
 
@@ -26,7 +26,7 @@ android {
 
     defaultConfig {
         minSdkVersion 31
-        targetSdkVersion 34
+        targetSdkVersion 35
         versionName "1.0"
 
         applicationId 'com.android.inputmethod.latin'
