@@ -26,5 +26,5 @@ java_library {
     host_supported: true,
     srcs: ["src/**/*.java"],
     static_libs: ["jsr305"],
-    sdk_version: "21",
+    sdk_version: "35",
 }
