@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2013 The Android Open Source Project
+ * Copyright (C) 2023-2025 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,6 +23,8 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.graphics.Color;
+import android.os.Handler;
+import android.os.Looper;
 import android.preference.PreferenceManager;
 import androidx.viewpager2.widget.ViewPager2;
 import android.util.AttributeSet;
@@ -432,8 +435,20 @@ public final class EmojiPalettesView extends LinearLayout implements OnTabChange
     }
 
     private static class DeleteKeyOnTouchListener implements OnTouchListener {
+        private static final int INITIAL_DELAY = 400;
+        private static final int REPEAT_DELAY = 100;
+
         private KeyboardActionListener mKeyboardActionListener =
                 KeyboardActionListener.EMPTY_LISTENER;
+
+        private final Handler mRepeatHandler = new Handler(Looper.getMainLooper());
+        private final Runnable mRepeatRunnable = new Runnable() {
+            @Override
+            public void run() {
+                mRepeatHandler.postDelayed(this, REPEAT_DELAY);
+                onClick();
+            }
+        };
 
         public void setKeyboardActionListener(final KeyboardActionListener listener) {
             mKeyboardActionListener = listener;
@@ -443,39 +458,39 @@ public final class EmojiPalettesView extends LinearLayout implements OnTabChange
         public boolean onTouch(final View v, final MotionEvent event) {
             switch (event.getActionMasked()) {
                 case MotionEvent.ACTION_DOWN:
-                    onTouchDown(v);
+                    mRepeatHandler.removeCallbacks(mRepeatRunnable);
+                    mRepeatHandler.postDelayed(mRepeatRunnable, INITIAL_DELAY);
+                    v.setPressed(true /* pressed */);
+                    onClick();
                     return true;
                 case MotionEvent.ACTION_MOVE:
                     final float x = event.getX();
                     final float y = event.getY();
                     if (x < 0.0f || v.getWidth() < x || y < 0.0f || v.getHeight() < y) {
                         // Stop generating key events once the finger moves away from the view area.
+                        mRepeatHandler.removeCallbacks(mRepeatRunnable);
                         onTouchCanceled(v);
                     }
                     return true;
                 case MotionEvent.ACTION_CANCEL:
                 case MotionEvent.ACTION_UP:
-                    onTouchUp(v);
+                    mRepeatHandler.removeCallbacks(mRepeatRunnable);
+                    v.setPressed(false /* pressed */);
                     return true;
             }
             return false;
         }
 
-        private void onTouchDown(final View v) {
-            mKeyboardActionListener.onPressKey(Constants.CODE_DELETE,
-                    0 /* repeatCount */, true /* isSinglePointer */);
-            v.setPressed(true /* pressed */);
+        private void onTouchCanceled(final View v) {
+            v.setBackgroundColor(Color.TRANSPARENT);
         }
 
-        private void onTouchUp(final View v) {
+        private void onClick() {
+            mKeyboardActionListener.onPressKey(Constants.CODE_DELETE,
+                    0 /* repeatCount */, true /* isSinglePointer */);
             mKeyboardActionListener.onCodeInput(Constants.CODE_DELETE,
                     NOT_A_COORDINATE, NOT_A_COORDINATE, false /* isKeyRepeat */);
             mKeyboardActionListener.onReleaseKey(Constants.CODE_DELETE, false /* withSliding */);
-            v.setPressed(false /* pressed */);
-        }
-
-        private void onTouchCanceled(final View v) {
-            v.setBackgroundColor(Color.TRANSPARENT);
         }
     }
 }
