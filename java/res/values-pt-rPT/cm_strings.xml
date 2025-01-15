@@ -18,4 +18,12 @@
     <string name="subtype_hu_ZZ">Húngaro (QWERTY)</string>
     <string name="keyboard_theme_material_follow_system">Material - seguir definições do sistema</string>
     <string name="prefs_keyboard_height_scale">Altura do teclado</string>
+    <string name="number_row">Linha numérica</string>
+    <string name="number_row_summary">Mostrar sempre uma linha com números para todos os esquemas que tenham 4 linhas de teclas</string>
+    <string name="space_trackpad">Mover com barra de espaço</string>
+    <string name="space_trackpad_summary">Deslize na barra de espaço para mover o cursor</string>
+    <string name="show_longpress_hints">Mostrar dicas com pressão longa</string>
+    <string name="show_longpress_hints_summary">Mostrar dicas ao pressionar longamente em teclas suportadas</string>
+    <string name="show_emoji_key">Mostrar tecla de emojis</string>
+    <string name="show_emoji_key_summary">Mostrar sempre a tecla de emojis. Quando esta opção está ativada, o alternador de idioma não será mostrado.</string>
 </resources>
