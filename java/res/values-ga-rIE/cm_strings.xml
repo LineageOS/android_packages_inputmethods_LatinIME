@@ -14,8 +14,8 @@
      limitations under the License.
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="subtype_no_language_bepo">Alfabeto (Bépo)</string>
-    <string name="subtype_hu_ZZ">Húngaro (QWERTY)</string>
-    <string name="keyboard_theme_material_follow_system">Material - sigue los ajustes del sistema</string>
-    <string name="prefs_keyboard_height_scale">Escala de altura del teclado</string>
+    <string name="subtype_no_language_bepo">Aibítir (Bépo)</string>
+    <string name="subtype_hu_ZZ">Ungáiris (QWERTY)</string>
+    <string name="keyboard_theme_material_follow_system">Ábhar - lean socruithe an chórais</string>
+    <string name="prefs_keyboard_height_scale">Scála airde méarchláir</string>
 </resources>
