@@ -22,4 +22,8 @@
     <string name="number_row_summary">همیشه برای همه طرح‌بندی‌هایی که دارای 4 ردیف کلید هستند، یک ردیف عددی نشان دهید</string>
     <string name="space_trackpad">صفحه دکمه فاصله</string>
     <string name="space_trackpad_summary">برای جابجایی مکان نما، انگشت خود را روی کلید فاصله بکشید</string>
+    <string name="show_longpress_hints">نمایش نکات کلیدی با فشار طولانی</string>
+    <string name="show_longpress_hints_summary">نمایش نکات با فشار طولانی برای کلیدهای پشتیبانی شده</string>
+    <string name="show_emoji_key">نمایش کلید ایموجی</string>
+    <string name="show_emoji_key_summary">همیشه کلید ایموجی را نشان دهید. وقتی این گزینه فعال باشد، کلید تغییر زبان نمایش داده نمی شود.</string>
 </resources>
