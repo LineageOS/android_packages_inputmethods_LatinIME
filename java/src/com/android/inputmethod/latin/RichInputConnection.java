@@ -705,6 +705,15 @@ public final class RichInputConnection implements PrivateCommandPerformer {
         if (!isConnected()) {
             return null;
         }
+
+        // Restart batch edit to force state update for broken web apps (for e.g. ProtonMail)
+        // as batch edit mode avoids sending state updates until batch edit end.
+        // See beginBatchEdit mode documentation for further information.
+        if (mNestLevel > 0) {
+            endBatchEdit();
+            beginBatchEdit();
+        }
+
         final CharSequence before = getTextBeforeCursorAndDetectLaggyConnection(
                 OPERATION_GET_WORD_RANGE_AT_CURSOR,
                 SLOW_INPUT_CONNECTION_ON_PARTIAL_RELOAD_MS,
