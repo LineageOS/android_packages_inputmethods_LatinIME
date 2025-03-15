@@ -25,5 +25,5 @@
     <string name="show_longpress_hints">Mostrar dicas de tecla de toque longo</string>
     <string name="show_longpress_hints_summary">Mostra dicas de toque longo para teclas suportadas</string>
     <string name="show_emoji_key">Mostrar tecla de emoji</string>
-    <string name="show_emoji_key_summary">Sempre mostrar a tecla de emojis. Quando esta opção está habilitada, a tecla de alternar idioma não pode ser mostrada.</string>
+    <string name="show_emoji_key_summary">Sempre mostrar a tecla de emojis. Quando esta opção está ativada, a tecla de alternar idioma não pode ser mostrada.</string>
 </resources>
