@@ -22,8 +22,8 @@
     <string name="number_row_summary">Zawsze wyświetlaj wiersz numeryczny dla wszystkich układów z 4 rzędami klawiszy</string>
     <string name="space_trackpad">Klawisz spacji jako gładzik</string>
     <string name="space_trackpad_summary">Przesuwaj palcem na spacji, aby poruszać kursorem</string>
-    <string name="show_longpress_hints">Pokaż podpowiedzi długiego przytrzymania klawisza</string>
+    <string name="show_longpress_hints">Pokazuj podpowiedzi długiego przytrzymania klawisza</string>
     <string name="show_longpress_hints_summary">Wyświetla podpowiedzi długiego przytrzymania dla obsługiwanych klawiszy</string>
-    <string name="show_emoji_key">Pokaż przycisk emoji</string>
+    <string name="show_emoji_key">Pokazuj przycisk emoji</string>
     <string name="show_emoji_key_summary">Zawsze pokazuj przycisk emoji. Gdy ta opcja jest włączona, przycisk przełączania języka nie będzie wyświetlany.</string>
 </resources>
