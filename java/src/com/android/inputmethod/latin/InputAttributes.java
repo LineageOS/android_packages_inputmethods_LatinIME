@@ -43,7 +43,7 @@ public final class InputAttributes {
     final public boolean mApplicationSpecifiedCompletionOn;
     final public boolean mShouldInsertSpacesAutomatically;
     final public boolean mShouldShowVoiceInputKey;
-    final public boolean mNoLearning;
+    final public boolean mNoPersonalizedLearning;
     /**
      * Whether the floating gesture preview should be disabled. If true, this should override the
      * corresponding keyboard settings preference, always suppressing the floating preview text.
@@ -87,7 +87,7 @@ public final class InputAttributes {
             mShouldShowVoiceInputKey = false;
             mDisableGestureFloatingPreviewText = false;
             mIsGeneralTextInput = false;
-            mNoLearning = false;
+            mNoPersonalizedLearning = false;
             return;
         }
         // inputClass == InputType.TYPE_CLASS_TEXT
@@ -142,7 +142,8 @@ public final class InputAttributes {
                 && InputType.TYPE_TEXT_VARIATION_WEB_EMAIL_ADDRESS != variation
                 && InputType.TYPE_TEXT_VARIATION_WEB_PASSWORD != variation;
 
-        mNoLearning = (editorInfo.imeOptions & EditorInfo.IME_FLAG_NO_PERSONALIZED_LEARNING) != 0;
+        mNoPersonalizedLearning =
+                (editorInfo.imeOptions & EditorInfo.IME_FLAG_NO_PERSONALIZED_LEARNING) != 0;
     }
 
     public boolean isTypeNull() {

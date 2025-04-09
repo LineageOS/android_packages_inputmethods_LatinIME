@@ -1438,7 +1438,8 @@ public final class InputLogic {
         // If correction is not enabled, we don't add words to the user history dictionary.
         // That's to avoid unintended additions in some sensitive fields, or fields that
         // expect to receive non-words.
-        if (!settingsValues.mAutoCorrectionEnabledPerUserSettings) return;
+        if (!settingsValues.mAutoCorrectionEnabledPerUserSettings ||
+                !settingsValues.isPersonalizedLearningEnabled()) return;
         if (mConnection.hasSlowInputConnection()) {
             // Since we don't unlearn when the user backspaces on a slow InputConnection,
             // turn off learning to guard against adding typos that the user later deletes.
