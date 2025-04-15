@@ -18,4 +18,12 @@
     <string name="subtype_hu_ZZ">Унгарска (QWERTY)</string>
     <string name="keyboard_theme_material_follow_system">Material - Използвай системни настойки</string>
     <string name="prefs_keyboard_height_scale">Височина на клавиатурата</string>
+    <string name="number_row">Номериран ред</string>
+    <string name="number_row_summary">Винаги показвай номериран ред за всички оформления, включващи 4 реда клавиши</string>
+    <string name="space_trackpad">тъчпад на интервала</string>
+    <string name="space_trackpad_summary">Плъзнете на интервала, за да преместите курсора</string>
+    <string name="show_longpress_hints">Покажи подсказки при задържане на бутони</string>
+    <string name="show_longpress_hints_summary">Покажи подсказки при задържане на бутони</string>
+    <string name="show_emoji_key">Покажи емоджи бутона</string>
+    <string name="show_emoji_key_summary">Винаги да се показва емоджи бутона. Когато опцията е изключена, бутонът за смяна на езика не се показва.</string>
 </resources>
