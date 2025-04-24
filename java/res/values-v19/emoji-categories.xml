@@ -1325,6 +1325,7 @@
         <item>00A9,FE0F</item>
         <item>00AE,FE0F</item>
         <item>2122,FE0F</item>
+        <item>1FADF</item>
         <!-- keycap -->
         <item>0023,FE0F,20E3</item>
         <item>002A,FE0F,20E3</item>
@@ -1533,6 +1534,11 @@
         <item>1F41A</item>
         <item>1FAB8</item>
         <item>1FABC</item>
+        <item>1F980</item>
+        <item>1F99E</item>
+        <item>1F990</item>
+        <item>1F991</item>
+        <item>1F9AA</item>
         <!-- animal-bug -->
         <item>1F40C</item>
         <item>1F98B</item>
@@ -1580,6 +1586,7 @@
         <item>1FAB9</item>
         <item>1FABA</item>
         <item>1F344</item>
+        <item>1FABE</item>
     </array>
     <array
         name="emoji_eight_smiley_people"
@@ -1648,6 +1655,7 @@
         <item>1F62A</item>
         <item>1F924</item>
         <item>1F634</item>
+        <item>1FAE9</item>
         <!-- face-unwell -->
         <item>1F637</item>
         <item>1F912</item>
@@ -2171,6 +2179,7 @@
         <item>1F9D1,200D,1F9D2</item>
         <item>1F9D1,200D,1F9D2,200D,1F9D2</item>
         <item>1F463</item>
+        <item>1FAC6</item>
         <!-- hair-style -->
         <item>1F9B0</item>
         <item>1F9B1</item>
@@ -2244,6 +2253,7 @@
         <item>1F62A</item>
         <item>1F924</item>
         <item>1F634</item>
+        <item>1FAE9</item>
         <!-- face-unwell -->
         <item>1F637</item>
         <item>1F912</item>
@@ -2767,6 +2777,7 @@
         <item>1F9D1,200D,1F9D2</item>
         <item>1F9D1,200D,1F9D2,200D,1F9D2</item>
         <item>1F463</item>
+        <item>1FAC6</item>
         <!-- hair-style -->
         <item>1F9B0</item>
         <item>1F9B1</item>
@@ -2818,6 +2829,7 @@
         <item>1FADA</item>
         <item>1FADB</item>
         <item>1F344,200D,1F7EB</item>
+        <item>1FADC</item>
         <!-- food-prepared -->
         <item>1F35E</item>
         <item>1F950</item>
@@ -3006,6 +3018,7 @@
         <item>1FA98</item>
         <item>1FA87</item>
         <item>1FA88</item>
+        <item>1FA89</item>
         <!-- phone -->
         <item>1F4F1</item>
         <item>1F4F2</item>
@@ -3154,6 +3167,7 @@
         <item>1F9F0</item>
         <item>1F9F2</item>
         <item>1FA9C</item>
+        <item>1FA8F</item>
         <!-- science -->
         <item>2697,FE0F</item>
         <item>1F9EA</item>
@@ -3601,6 +3615,7 @@
         <item>1F1E8,1F1F3</item>
         <item>1F1E8,1F1F4</item>
         <item>1F1E8,1F1F5</item>
+        <item>1F1E8,1F1F6</item>
         <item>1F1E8,1F1F7</item>
         <item>1F1E8,1F1FA</item>
         <item>1F1E8,1F1FB</item>
