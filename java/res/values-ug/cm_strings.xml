@@ -15,4 +15,15 @@
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="subtype_no_language_bepo">ئېلىپبە(Bépo)</string>
+    <string name="subtype_hu_ZZ">ماجارچە (QWERTY)</string>
+    <string name="keyboard_theme_material_follow_system">ماتېرىيال - سىستېما تەڭشىكىگە ئەگىشىدۇ</string>
+    <string name="prefs_keyboard_height_scale">ھەرپتاختا ئېگىزلىك نىسبىتى</string>
+    <string name="number_row">قۇر سانى</string>
+    <string name="number_row_summary">تۆت قۇرلۇق ھەرپ ئورۇنلاشتۇرۇلغان جايلاشتۇرۇشقا نىسبەتەن ھەمىشە رەقەم قۇرىنى كۆرسىتىدۇ</string>
+    <string name="space_trackpad">بوشلۇق كۇنۇپكا سەزگۈر تاختا</string>
+    <string name="space_trackpad_summary">بوشلۇق كۇنۇپكا سېيرىلسا سىنبەلگە يۆتكىلىدۇ</string>
+    <string name="show_longpress_hints">ئۇزۇن بېسىلسا ئەسكەرتىشنى كۆرسىتىدۇ</string>
+    <string name="show_longpress_hints_summary">قوللايدىغان كۇنۇپكىنىڭ ئۇزۇن بېسىلسا ئەسكەرتىشىنى كۆرسىتىدۇ</string>
+    <string name="show_emoji_key">چىراي ئىپادە كۇنۇپكىسىنى كۆرسەت</string>
+    <string name="show_emoji_key_summary">ھەمىشە چىراي ئىپادە كۇنۇپكىسىنى كۆرسىتىدۇ. بۇ تاللانما قوزغىتىلسا، تىل ئالماشتۇرۇش كۇنۇپكىسى كۆرۈنمەيدۇ.</string>
 </resources>
