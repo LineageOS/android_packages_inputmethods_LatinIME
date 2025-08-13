@@ -84,6 +84,9 @@
     <!-- Description for Bulgarian (BEKL) subtype. -->
     <string name="subtype_bulgarian_bekl">%s (BEKL)</string>
 
+    <!-- Description for Turkish (FGĞIOD) subtype. -->
+    <string name="subtype_turkish_f">%s (FGĞIOD)</string>
+
     <!-- Compatibility map from subtypeLocale:subtypeExtraValue to keyboardLayoutSet -->
     <string-array name="locale_and_extra_value_to_keyboard_layout_set_map">
         <item>en_US:TrySuppressingImeSwitcher,AsciiCapable,SupportTouchPositionCorrection,EmojiCapable</item>
@@ -126,7 +129,5 @@
         <item>south_slavic</item>
         <item>sv:AsciiCapable,SupportTouchPositionCorrection,EmojiCapable</item>
         <item>nordic</item>
-        <item>tr:AsciiCapable,SupportTouchPositionCorrection,EmojiCapable</item>
-        <item>qwerty</item>
     </string-array>
 </resources>

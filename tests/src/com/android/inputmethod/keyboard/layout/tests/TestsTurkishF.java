@@ -19,37 +19,37 @@ package com.android.inputmethod.keyboard.layout.tests;
 import androidx.test.filters.SmallTest;
 
 import com.android.inputmethod.keyboard.layout.LayoutBase;
-import com.android.inputmethod.keyboard.layout.Turkish;
+import com.android.inputmethod.keyboard.layout.TurkishF;
 import com.android.inputmethod.keyboard.layout.customizer.EuroCustomizer;
-import com.android.inputmethod.keyboard.layout.customizer.TurkishCustomizer;
+import com.android.inputmethod.keyboard.layout.customizer.TurkishFCustomizer;
 import com.android.inputmethod.keyboard.layout.expected.ExpectedKeyboardBuilder;
 
 import java.util.Locale;
 
 /**
- * tr: Turkish/turkish
+ * tr: Turkish/turkish_f
  */
 @SmallTest
-public final class TestsTurkish extends LayoutTestsBase {
+public final class TestsTurkishF extends LayoutTestsBase {
     private static final Locale LOCALE = new Locale("tr");
-    private static final LayoutBase LAYOUT = new Turkish(new TurkishCustomizer(LOCALE));
+    private static final LayoutBase LAYOUT = new TurkishF(new TurkishFCustomizer(LOCALE));
 
     @Override
     LayoutBase getLayout() { return LAYOUT; }
 
-    private static class TurkishCustomizer extends EuroCustomizer {
-        private final com.android.inputmethod.keyboard.layout.customizer.TurkishCustomizer
-        mTurkishCustomizer;
+    private static class TurkishFCustomizer extends EuroCustomizer {
+        private final com.android.inputmethod.keyboard.layout.customizer.TurkishFCustomizer
+        mTurkishFCustomizer;
 
-        TurkishCustomizer(final Locale locale) {
+        TurkishFCustomizer(final Locale locale) {
             super(locale);
-            mTurkishCustomizer = new com.android.inputmethod.keyboard.layout.customizer
-        .TurkishCustomizer(locale);
+            mTurkishFCustomizer = new com.android.inputmethod.keyboard.layout.customizer
+        .TurkishFCustomizer(locale);
         }
 
         @Override
         public ExpectedKeyboardBuilder setAccentedLetters(final ExpectedKeyboardBuilder builder) {
-            return mTurkishCustomizer.setAccentedLetters(builder);
+            return mTurkishFCustomizer.setAccentedLetters(builder);
         }
     }
 }
