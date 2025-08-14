@@ -16,6 +16,24 @@
       "message": "Could you split the add and fix of the layout?\nI\u0027m not entirely sure if you\u0027re fixing some pre-existing layout or fixing the one you just added.\nWith that said, I\u0027ll try to check it today...",
       "revId": "b23d362e139e64177506eed1c541d581cc2c4415",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "96d8d16e_565f2d6c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35767
+      },
+      "writtenOn": "2025-08-14T14:13:32Z",
+      "side": 1,
+      "message": "My bad, it fixes the current one, and adds a different layout alongside the fixed one.",
+      "parentUuid": "9a98c517_f9f7f485",
+      "revId": "b23d362e139e64177506eed1c541d581cc2c4415",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
