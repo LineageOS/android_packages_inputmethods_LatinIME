@@ -87,6 +87,24 @@
       "parentUuid": "13aeddd1_ab6d7cc8",
       "revId": "b23d362e139e64177506eed1c541d581cc2c4415",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c0c4379c_cda695e5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35767
+      },
+      "writtenOn": "2025-08-14T16:17:16Z",
+      "side": 1,
+      "message": "I can re-run the generator, it\u0027s OK. Abandoning.",
+      "parentUuid": "56c9a9be_85ad5a4d",
+      "revId": "b23d362e139e64177506eed1c541d581cc2c4415",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
