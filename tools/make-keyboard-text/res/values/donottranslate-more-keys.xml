@@ -74,6 +74,12 @@
     <string name="morekeys_swiss_row1_11"></string>
     <string name="morekeys_swiss_row2_10"></string>
     <string name="morekeys_swiss_row2_11"></string>
+    <string name="keyspec_turkish_row1_8"></string>
+    <string name="keyspec_turkish_row1_11"></string>
+    <string name="keyspec_turkish_row1_12"></string>
+    <string name="keyspec_turkish_row2_10"></string>
+    <string name="keyspec_turkish_row3_8"></string>
+    <string name="keyspec_turkish_row3_9"></string>
     <!-- Label for "switch to alphabetic" key. -->
     <string name="keylabel_to_alpha">ABC</string>
     <string name="single_quotes">!text/single_lqm_rqm</string>
