@@ -101,7 +101,7 @@
     te_IN: Telugu (India)/telugu
     th: Thai/thai
     tl: Tagalog/spanish
-    tr: Turkish/qwerty
+    tr: Turkish/turkish
     uk: Ukrainian/east_slavic
     uz_UZ: Uzbek (Uzbekistan)/uzbek # This is a preliminary keyboard layout.
     vi: Vietnamese/qwerty
@@ -784,7 +784,7 @@
             android:subtypeId="0x4a3179de"
             android:imeSubtypeLocale="tr"
             android:imeSubtypeMode="keyboard"
-            android:imeSubtypeExtraValue="AsciiCapable,SupportTouchPositionCorrection,EmojiCapable"
+            android:imeSubtypeExtraValue="KeyboardLayoutSet=turkish,AsciiCapable,EmojiCapable"
             android:isAsciiCapable="true"
     />
     <subtype android:icon="@drawable/ic_ime_switcher_dark"
