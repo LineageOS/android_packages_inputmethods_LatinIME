@@ -126,7 +126,5 @@
         <item>south_slavic</item>
         <item>sv:AsciiCapable,SupportTouchPositionCorrection,EmojiCapable</item>
         <item>nordic</item>
-        <item>tr:AsciiCapable,SupportTouchPositionCorrection,EmojiCapable</item>
-        <item>qwerty</item>
     </string-array>
 </resources>
