@@ -34,6 +34,23 @@
       "parentUuid": "869cd421_7d734ae0",
       "revId": "c9185cef984c77622fcd6bac162054bde5af3722",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3a726449_474f84ad",
+        "filename": "java/src/com/android/inputmethod/keyboard/internal/KeyboardTextsTable.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 1870,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-08-22T13:42:18Z",
+      "side": 1,
+      "message": "I\u0027m pretty sure this change is incorrect, android still uses the \u0027iw\u0027 language code",
+      "revId": "c9185cef984c77622fcd6bac162054bde5af3722",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
