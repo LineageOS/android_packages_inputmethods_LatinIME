@@ -16,6 +16,24 @@
       "message": "It was last regenerated in 2015: https://github.com/LineageOS/android_packages_inputmethods_LatinIME/commit/cf5a1adc6577d1bb87e532ac32303b969be4088b",
       "revId": "c9185cef984c77622fcd6bac162054bde5af3722",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d2abee13_52eaec20",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2025-08-22T13:41:20Z",
+      "side": 1,
+      "message": "I tried java7/8 and it generated updated locales, probably host tzdb/cldr does it, but I\u0027m not going to bother ever figuring it out",
+      "parentUuid": "869cd421_7d734ae0",
+      "revId": "c9185cef984c77622fcd6bac162054bde5af3722",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
