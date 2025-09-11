@@ -102,6 +102,7 @@
     th: Thai/thai
     tl: Tagalog/spanish
     tr: Turkish/turkish
+    tr: Turkish/turkish_f
     uk: Ukrainian/east_slavic
     uz_UZ: Uzbek (Uzbekistan)/uzbek # This is a preliminary keyboard layout.
     vi: Vietnamese/qwerty
@@ -785,6 +786,14 @@
             android:imeSubtypeLocale="tr"
             android:imeSubtypeMode="keyboard"
             android:imeSubtypeExtraValue="KeyboardLayoutSet=turkish,AsciiCapable,EmojiCapable"
+            android:isAsciiCapable="true"
+    />
+    <subtype android:icon="@drawable/ic_ime_switcher_dark"
+            android:label="@string/subtype_turkish_f"
+            android:subtypeId="0x7fff1504"
+            android:imeSubtypeLocale="tr"
+            android:imeSubtypeMode="keyboard"
+            android:imeSubtypeExtraValue="KeyboardLayoutSet=turkish_f,AsciiCapable,EmojiCapable"
             android:isAsciiCapable="true"
     />
     <subtype android:icon="@drawable/ic_ime_switcher_dark"
