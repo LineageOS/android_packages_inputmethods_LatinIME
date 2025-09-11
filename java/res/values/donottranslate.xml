@@ -80,9 +80,12 @@
 
     <!-- Description for Bulgarian (BDS) subtype. -->
     <string name="subtype_bulgarian_bds">%s (BDS)</string>
-  
+
     <!-- Description for Bulgarian (BEKL) subtype. -->
     <string name="subtype_bulgarian_bekl">%s (BEKL)</string>
+
+    <!-- Description for Turkish (FGĞIOD) subtype. -->
+    <string name="subtype_turkish_f">%s (FGĞIOD)</string>
 
     <!-- Compatibility map from subtypeLocale:subtypeExtraValue to keyboardLayoutSet -->
     <string-array name="locale_and_extra_value_to_keyboard_layout_set_map">

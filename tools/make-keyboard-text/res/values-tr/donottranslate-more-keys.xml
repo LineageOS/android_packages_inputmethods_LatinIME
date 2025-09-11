@@ -78,4 +78,16 @@
     <string name="keyspec_turkish_row3_8">&#x00F6;</string>
     <!-- U+00E7: "ç" LATIN SMALL LETTER C WITH CEDILLA -->
     <string name="keyspec_turkish_row3_9">&#x00E7;</string>
+    <!-- U+011F: "ğ" LATIN SMALL LETTER G WITH BREVE -->
+    <string name="keyspec_turkish_f_row1_3">&#x011F;</string>
+    <!-- U+0131: "ı" LATIN SMALL LETTER DOTLESS I -->
+    <string name="keyspec_turkish_f_row1_4">&#x0131;</string>
+    <!-- U+00FC: "ü" LATIN SMALL LETTER U WITH DIAERESIS -->
+    <string name="keyspec_turkish_f_row2_5">&#x00FC;</string>
+    <!-- U+015F: "ş" LATIN SMALL LETTER S WITH CEDILLA -->
+    <string name="keyspec_turkish_f_row2_11">&#x015F;</string>
+    <!-- U+00F6: "ö" LATIN SMALL LETTER O WITH DIAERESIS -->
+    <string name="keyspec_turkish_f_row3_2">&#x00F6;</string>
+    <!-- U+00E7: "ç" LATIN SMALL LETTER C WITH CEDILLA -->
+    <string name="keyspec_turkish_f_row3_5">&#x00E7;</string>
 </resources>
