@@ -16,6 +16,24 @@
       "message": "All these changes here and below are unrelated to the turkish one the commit is about",
       "revId": "d565b6033da062f2935969fd1f6157b395b141a7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3543a548_bbd57255",
+        "filename": "java/src/com/android/inputmethod/keyboard/internal/KeyboardTextsTable.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 676,
+      "author": {
+        "id": 35767
+      },
+      "writtenOn": "2025-09-12T10:14:40Z",
+      "side": 0,
+      "message": "It\u0027s due to being re-generated using jdk17, it was originally generated back in 2015. We\u0027re on it",
+      "parentUuid": "b821a74b_b773f9d6",
+      "revId": "d565b6033da062f2935969fd1f6157b395b141a7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
