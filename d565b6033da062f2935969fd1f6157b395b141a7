@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b821a74b_b773f9d6",
+        "filename": "java/src/com/android/inputmethod/keyboard/internal/KeyboardTextsTable.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 676,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2025-09-12T10:08:19Z",
+      "side": 0,
+      "message": "All these changes here and below are unrelated to the turkish one the commit is about",
+      "revId": "d565b6033da062f2935969fd1f6157b395b141a7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
