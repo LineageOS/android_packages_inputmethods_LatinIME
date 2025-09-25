@@ -40,4 +40,6 @@
         latin:moreKeys="!text/morekeys_s" />
     <Key
         latin:keySpec="b" />
+    <Key
+        latin:keySpec="!text/keyspec_x" />
 </merge>
