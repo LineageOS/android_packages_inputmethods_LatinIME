@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8f4f1e9d_06df1a11",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35975
+      },
+      "writtenOn": "2025-09-25T12:20:11Z",
+      "side": 1,
+      "message": "I am newbie on gerrit. \nhttps://github.com/fork-for-humanity/android_packages_inputmethods_LatinIME/commit/275591b09289718be7d3c9919f0f57eb5fca9c9f\n\nMy actually commit here.",
+      "revId": "71b85d45b170d1621d06127a0c101cc3de099282",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
