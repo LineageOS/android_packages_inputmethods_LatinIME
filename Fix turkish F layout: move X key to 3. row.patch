@@ -1,0 +1,22 @@
+diff --git a/java/res/xml/rowkeys_turkish_f2.xml b/java/res/xml/rowkeys_turkish_f2.xml
+index 4fdaf3a..34e5aa2 100644
+--- a/java/res/xml/rowkeys_turkish_f2.xml
++++ b/java/res/xml/rowkeys_turkish_f2.xml
+@@ -48,6 +48,4 @@
+         latin:moreKeys="!text/morekeys_y" />
+     <Key
+         latin:keySpec="!text/keyspec_turkish_f_row2_11" />
+-    <Key
+-        latin:keySpec="!text/keyspec_x" />
+ </merge>
+diff --git a/java/res/xml/rowkeys_turkish_f3.xml b/java/res/xml/rowkeys_turkish_f3.xml
+index 9fd5a81..7ee3df9 100644
+--- a/java/res/xml/rowkeys_turkish_f3.xml
++++ b/java/res/xml/rowkeys_turkish_f3.xml
+@@ -40,4 +40,6 @@
+         latin:moreKeys="!text/morekeys_s" />
+     <Key
+         latin:keySpec="b" />
++    <Key
++        latin:keySpec="!text/keyspec_x" />
+ </merge>
