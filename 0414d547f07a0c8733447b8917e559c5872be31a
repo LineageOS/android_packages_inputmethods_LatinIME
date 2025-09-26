@@ -16,6 +16,23 @@
       "message": "The X key being on the third row on Gboard does not mean it\u0027s correct.\n\nThe correct key placement can be seen at https://en.m.wikipedia.org/wiki/Keyboard_layout#/media/File%3AKB_Turkey_f_yeni.svg",
       "revId": "0414d547f07a0c8733447b8917e559c5872be31a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a4473f63_7144489c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35981
+      },
+      "writtenOn": "2025-09-26T08:10:47Z",
+      "side": 1,
+      "message": "This is a PC keyboard, not a mobile keyboard.\n\nIn the current layout, the \"X\" key in the second row is too small for typing and poorly aligned. To resolve this issue, we should move the \"X\" key to the third row.\n\nFor the Turkish F layout, the \",\" key is located in the third row, while in the Turkish Q layout, it is in the second row. Therefore, the mobile F layout cannot be the same as the PC layout.",
+      "revId": "0414d547f07a0c8733447b8917e559c5872be31a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
