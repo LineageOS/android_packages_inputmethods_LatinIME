@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ec6594ef_9fc9352a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35767
+      },
+      "writtenOn": "2025-09-26T07:08:23Z",
+      "side": 1,
+      "message": "The X key being on the third row on Gboard does not mean it\u0027s correct.\n\nThe correct key placement can be seen at https://en.m.wikipedia.org/wiki/Keyboard_layout#/media/File%3AKB_Turkey_f_yeni.svg",
+      "revId": "0414d547f07a0c8733447b8917e559c5872be31a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
