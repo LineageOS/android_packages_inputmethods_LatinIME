@@ -48,6 +48,4 @@
         latin:moreKeys="!text/morekeys_y" />
     <Key
         latin:keySpec="!text/keyspec_turkish_f_row2_11" />
-    <Key
-        latin:keySpec="!text/keyspec_x" />
 </merge>
