@@ -87,6 +87,23 @@
       "parentUuid": "ee56a495_8a115206",
       "revId": "0414d547f07a0c8733447b8917e559c5872be31a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "88ada11d_d872e89f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35767
+      },
+      "writtenOn": "2025-09-27T21:27:25Z",
+      "side": 1,
+      "message": "\u003e the \"X\" key in the second row is too small for typing and poorly aligned\n\nThis does not make any sense. All keys in the first and second row, including the X key, are exactly the same size. Also it\u0027s alignment reflects the correct one so it\u0027s not poorly aligned.\n\nThe correct layout can be seen at https://en.m.wikipedia.org/wiki/Keyboard_layout#/media/File%3AKB_Turkey_f_yeni.svg and someone complaining about yours https://r2.community.samsung.com/t5/Galaxy-S/T%C3%BCrk%C3%A7e-F-klavye-harf-dizilimi-hatas%C4%B1/td-p/16822607 supports that the X key should not be moved from it\u0027s original position.",
+      "revId": "0414d547f07a0c8733447b8917e559c5872be31a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
