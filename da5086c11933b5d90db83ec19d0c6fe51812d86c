@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d9447b60_1faad274",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35767
+      },
+      "writtenOn": "2025-09-28T09:37:08Z",
+      "side": 1,
+      "message": "The nonsense arguments you\u0027re coming with to convince me while ignoring the guy\u0027s complaint from Samsung forums is worrying.\n\n\u003e I\u0027ve increased the key width of the second row from 8.3% to 8.7%\n\nAt the same time, you reduced the key width of the third row.\n\n\u003e Additionally, the alignment of the \u0027f\u0027 and \u0027u\u0027 keys is not consistent\n\nThat\u0027s because Caps Lock key is wider than Tab key on PC layout.\n\n\u003e Also, the backspace button on the mobile keyboard is not positioned in the first row\n\nIt\u0027s positioned on the number row on PC layout (including English QWERTY, TRQ and TRF) so I have no idea what\u0027s your point here.\n\n\u003e Also some for keyboard. X key located at first row\n\nThe fact that other keyboards are incorrect does not justify your change.\n\n\u003e In the Turkish-Q layout, the \u0027x\u0027 button is located where the \u0027,\u0027 button is, and the \u0027,\u0027 button is positioned to the left of the space bar. In contrast, for the English layout, the \u0027\u0027\u0027 button is located in the symbols section\n\nNo, the X key is between Z and C just like on English QWERTY. Also , and \u0027 keys are different so you can\u0027t compare different keys\u0027 positions.\n\n\u003e Turkish F Layout: The second row has an extra key, while the third row is missing a key, resulting in misalignment\n\nThat\u0027s why we added a spacer on the third row to align horizontally and made shift and del keys the same size as English, Norwegian Bokmål and more. Speaking of Norwegian Bokmål,\nhttps://en.wikipedia.org/wiki/List_of_QWERTY_keyboard_language_variants#/media/File:KB_Norway.svg\nThe key ratio from third row to second row is 7 / 11 \u003d 0,636. On Turkish F, it\u0027s 8 / 12 \u003d 0,667. So, Norwegian Bokmål has more spacer on the third row. Did they move a key from first or second row to third row just because it\u0027s \"misaligned\" or has \"less keys\"?\n\n\u003e Additionally, it\u0027s important to note that mobile and desktop layouts cannot be the same due to their different designs and functionalities\n\nTheir functionality is the same: typing.\n\nIf you\u0027re so obsessed with it, you can switch to Gboard, we\u0027re not holding you back.",
+      "revId": "da5086c11933b5d90db83ec19d0c6fe51812d86c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
