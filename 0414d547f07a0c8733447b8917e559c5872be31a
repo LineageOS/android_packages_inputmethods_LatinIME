@@ -140,6 +140,24 @@
       "parentUuid": "e668697f_046c5a52",
       "revId": "0414d547f07a0c8733447b8917e559c5872be31a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6f032d52_2428bec1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35981
+      },
+      "writtenOn": "2025-09-28T08:16:23Z",
+      "side": 1,
+      "message": "https://raw.githubusercontent.com/my-garbage-stuff/garbage-images/refs/heads/main/photo_2025-09-28_08-10-05.jpg\n\n* Keyboard (Blue Switch Mechanical): This keyboard has been converted from the EN-US layout, with the X key located in the first row. Additionally, this keyboard does not have a \u003c key. (Please note that I used incorrect keycaps for some keys, as I only have EN-US keycaps available.)\n\n* Keyboard (Logitech): This keyboard has been converted from the Turkish Q layout, with the X key located in the second row.\n\nThe keyboard layout can be adjusted as needed.",
+      "parentUuid": "6b4023eb_030a8bb4",
+      "revId": "0414d547f07a0c8733447b8917e559c5872be31a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
