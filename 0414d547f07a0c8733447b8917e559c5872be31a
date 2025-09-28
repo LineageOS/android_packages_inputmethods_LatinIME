@@ -122,6 +122,24 @@
       "parentUuid": "88ada11d_d872e89f",
       "revId": "0414d547f07a0c8733447b8917e559c5872be31a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6b4023eb_030a8bb4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35981
+      },
+      "writtenOn": "2025-09-28T07:55:51Z",
+      "side": 1,
+      "message": "I created keyboard layouts (only letters, like mobile) without alignment changes. You can view them here: https://raw.githubusercontent.com/my-garbage-stuff/garbage-images/refs/heads/main/rect91.png\n\nI\u0027ve noticed a couple of alignment issues:\n\n* Turkish F Layout: The second row has an extra key, while the third row is missing a key, resulting in misalignment.\n* Turkish Q and US Layouts: These layouts do not have this issue and are properly aligned.\n\nAdditionally, it\u0027s important to note that mobile and desktop layouts cannot be the same due to their different designs and functionalities.",
+      "parentUuid": "e668697f_046c5a52",
+      "revId": "0414d547f07a0c8733447b8917e559c5872be31a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
