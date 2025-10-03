@@ -158,6 +158,24 @@
       "parentUuid": "6b4023eb_030a8bb4",
       "revId": "0414d547f07a0c8733447b8917e559c5872be31a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7c50736b_85a55520",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35981
+      },
+      "writtenOn": "2025-10-03T10:29:04Z",
+      "side": 1,
+      "message": "When you merge? I am waiting for this fix. I cannot use keyboard with this issue.",
+      "parentUuid": "4f669617_801f1959",
+      "revId": "0414d547f07a0c8733447b8917e559c5872be31a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
