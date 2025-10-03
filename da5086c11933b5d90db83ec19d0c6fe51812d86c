@@ -69,6 +69,23 @@
       "parentUuid": "8c806069_907d571f",
       "revId": "da5086c11933b5d90db83ec19d0c6fe51812d86c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dc900cd3_4dccd7b2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2025-10-03T13:27:43Z",
+      "side": 1,
+      "message": "Given both gboard and ios follow this layout I\u0027ll go with that as mobile users are more familiar with such layout.\n\nI would agree the desktop standard layout should be the one to implement, but memory muscle comes first.",
+      "revId": "da5086c11933b5d90db83ec19d0c6fe51812d86c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
