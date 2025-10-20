@@ -53,7 +53,7 @@ android_app {
     // Include all the resources regardless of system supported locales
     aapt_include_all_resources: true,
 
-    min_sdk_version: "21",
+    min_sdk_version: "23",
     target_sdk_version: "30",
     sdk_version: "current",
 
