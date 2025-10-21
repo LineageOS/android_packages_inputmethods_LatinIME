@@ -756,6 +756,15 @@
     />
     <subtype android:icon="@drawable/ic_ime_switcher_dark"
             android:label="@string/subtype_generic"
+            android:subtypeId="0x18bf74e5"
+            android:imeSubtypeLocale="tyv_RU"
+            android:languageTag="tyv-RU"
+            android:imeSubtypeMode="keyboard"
+            android:imeSubtypeExtraValue="KeyboardLayoutSet=tuvan,AsciiCapable,EmojiCapable"
+            android:isAsciiCapable="true"
+    />
+    <subtype android:icon="@drawable/ic_ime_switcher_dark"
+            android:label="@string/subtype_generic"
             android:subtypeId="0x3e84492c"
             android:imeSubtypeLocale="uk"
             android:imeSubtypeMode="keyboard"
