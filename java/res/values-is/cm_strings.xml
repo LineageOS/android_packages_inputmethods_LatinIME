@@ -24,6 +24,6 @@
     <string name="space_trackpad_summary">Strjúka á bilslá til að færa bendilinn</string>
     <string name="show_longpress_hints">Birta ábendingar þegar ýtt er lengi</string>
     <string name="show_longpress_hints_summary">Birtir ábendingar þegar ýtt er lengi á studda lykla</string>
-    <string name="show_emoji_key">Sýna lykla með tjáningartáknum</string>
+    <string name="show_emoji_key">Sýna lykla með lyndistáknum</string>
     <string name="show_emoji_key_summary">Alltaf birta lykil með emoji-táknum. Sé þetta valið, er ekki hægt að hafa lykil til að skipta um tungumál.</string>
 </resources>
