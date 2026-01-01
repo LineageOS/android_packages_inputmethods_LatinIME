@@ -16,4 +16,12 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="subtype_no_language_bepo">Alfabetu (Bépo)</string>
     <string name="subtype_hu_ZZ">Ungheresu (QWERTY)</string>
+    <string name="keyboard_theme_material_follow_system">Materiale - sighi sa cunfiguratzione de su sistema</string>
+    <string name="prefs_keyboard_height_scale">Iscala de s\'artària de su tecladu</string>
+    <string name="number_row">Nùmeru de sa riga</string>
+    <string name="number_row_summary">Mustra semper su nùmeru de sa riga pro totu is dispositziones chi includent 4 rigas de teclas</string>
+    <string name="space_trackpad">Trackpad in s\'istanga de ispàtziu</string>
+    <string name="space_trackpad_summary">Iscurre in s\'istanga de ispàtziu pro ispostare su puntadore</string>
+    <string name="show_emoji_key">Mustra sa tecla de emoji</string>
+    <string name="show_emoji_key_summary">Mustra semper sa tecla de emoji. Cun custa optzione ativada, sa tecla pro cuncambiare sa limba no at a èssere mustrada.</string>
 </resources>
