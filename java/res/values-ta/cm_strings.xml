@@ -20,10 +20,10 @@
     <string name="prefs_keyboard_height_scale">விசைப்பலகை உயர அளவுகோல்</string>
     <string name="number_row">எண் வரிசை</string>
     <string name="number_row_summary">4 வரிசை விசைகளைக் கொண்ட அனைத்துத் தளவமைப்புகளுக்கும், எப்போதும் எண் வரிசையைக் காண்பிக்க</string>
-    <string name="space_trackpad">இடைவெளிபட்டித் தொடுதளம்</string>
-    <string name="space_trackpad_summary">இடஞ்சுட்டியை நகர்த்த, இடைவெளி விசையின் மேல் வருடுக</string>
-    <string name="show_longpress_hints">நீண்ட அழுத்த முதன்மைக் குறிப்புகளைக் காட்டுக</string>
-    <string name="show_longpress_hints_summary">ஆதரிக்கப்படும் விசைகளுக்கான நீண்ட அழுத்தக் குறிப்புகளைக் காட்டுகிறது</string>
+    <string name="space_trackpad">இடைவெளி விசைத் தொடுதளம்</string>
+    <string name="space_trackpad_summary">இடஞ்சுட்டியை நகர்த்த, இடைவெளி விசையின் மேல் தேய்க்க</string>
+    <string name="show_longpress_hints">நீண்ட-அழுத்த விசை குறிப்புகளைக் காட்டுக</string>
+    <string name="show_longpress_hints_summary">ஒத்துழைக்கப்படும் விசைகளுக்கான நீண்ட-அழுத்த குறிப்புகளைக் காட்டுகிறது</string>
     <string name="show_emoji_key">கருகுறி விசையைக் காட்டுக</string>
     <string name="show_emoji_key_summary">எப்போதும் கருகுறி விசையைக் காண்பிக்க. இவ்விருப்பம் இயக்கப்பட்டிருக்கும்போது, ​​மொழி மாற்று விசையைக் காண்பிக்க முடியாது.</string>
 </resources>
