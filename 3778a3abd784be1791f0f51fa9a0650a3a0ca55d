@@ -34,6 +34,24 @@
       "parentUuid": "e9422991_5215eab5",
       "revId": "3778a3abd784be1791f0f51fa9a0650a3a0ca55d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cca47196_55e1dd69",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2026-03-02T23:59:38Z",
+      "side": 1,
+      "message": "There\u0027s also 18.0, which is in draft. 17.0 released in 2025. URL is also changed now https://review.lineageos.org/c/LineageOS/scripts/+/475026",
+      "parentUuid": "6bdd0f04_2e0f8b47",
+      "revId": "3778a3abd784be1791f0f51fa9a0650a3a0ca55d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
