@@ -16,6 +16,24 @@
       "message": "You should be targeting the version that 16 QPR2 supports, not simply \u0027latest\u0027",
       "revId": "3778a3abd784be1791f0f51fa9a0650a3a0ca55d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6bdd0f04_2e0f8b47",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2026-03-02T23:48:43Z",
+      "side": 1,
+      "message": "There is only 16.0 which is from 2024. 17.0 is the same as latest.",
+      "parentUuid": "e9422991_5215eab5",
+      "revId": "3778a3abd784be1791f0f51fa9a0650a3a0ca55d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
