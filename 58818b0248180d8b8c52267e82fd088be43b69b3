@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7a3d4267_fb2b8e38",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24418
+      },
+      "writtenOn": "2026-03-19T09:51:08Z",
+      "side": 1,
+      "message": "See https://gistpreview.github.io/?90857947dddf60ee7dd964c393451d37 for the screenshots and a dump of the material colors I used to figure this out. I\u0027ve tested with a few different color schemes.",
+      "revId": "58818b0248180d8b8c52267e82fd088be43b69b3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
