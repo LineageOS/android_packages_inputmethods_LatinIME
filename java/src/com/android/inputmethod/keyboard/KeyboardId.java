@@ -95,7 +95,7 @@ public final class KeyboardId {
         mElementId = elementId;
         mEditorInfo = params.mEditorInfo;
         mClobberSettingsKey = params.mNoSettingsKey;
-        mNumberRowEnabled = params.mNumberRowEnabled;
+        mNumberRowEnabled = params.mNumberRowEnabled || (params.mNumberRowPasswordEnabled && params.mIsPasswordField);
         mLanguageSwitchKeyEnabled = params.mLanguageSwitchKeyEnabled;
         mEmojiKeyEnabled = params.mEmojiKeyEnabled;
         mCustomActionLabel = (mEditorInfo.actionLabel != null)

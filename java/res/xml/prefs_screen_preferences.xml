@@ -31,6 +31,12 @@
         android:defaultValue="false"
         android:persistent="true" />
     <CheckBoxPreference
+        android:key="pref_show_number_row_password"
+        android:title="@string/number_row_password"
+        android:summary="@string/number_row_password_summary"
+        android:defaultValue="false"
+        android:persistent="true" />
+    <CheckBoxPreference
         android:key="pref_show_emoji_key"
         android:title="@string/show_emoji_key"
         android:summary="@string/show_emoji_key_summary"

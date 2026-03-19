@@ -36,6 +36,10 @@ disposition rather than other common dispositions for Latin languages. [CHAR LIM
     <string name="number_row">Number row</string>
     <string name="number_row_summary">Always show a number row for all layouts that feature 4 rows of keys</string>
 
+    <!-- Preference item for enabling the number row on password inputs -->
+    <string name="number_row_password">Number row for passwords</string>
+    <string name="number_row_password_summary">Always show a number row for all layouts that feature 4 rows of keys for password input</string>
+
     <!-- Preference item for the space bar track pad -->
     <string name="space_trackpad">Space bar trackpad</string>
     <string name="space_trackpad_summary">Swipe on the spacebar to move the cursor</string>
