@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a377dee2_8c2111ae",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24418
+      },
+      "writtenOn": "2026-03-19T11:16:10Z",
+      "side": 1,
+      "message": "Tested with the next CL (I001f557d392357f0b1669966c6741f308e75aa04), and also with a lowercase \"a\" as the keySpecUpper to ensure stuff is overridden correctly. Also tested with non-trivial KeySpecs like \"!text/\".",
+      "revId": "1c1d26c78c72ead05f70efa21ce3efd50b764617",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
