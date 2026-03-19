@@ -23,5 +23,5 @@
 >
     <Key
         latin:keyStyle="spaceKeyStyle"
-        latin:keyWidth="30%p" />
+        latin:keyWidth="50%p" />
 </merge>
