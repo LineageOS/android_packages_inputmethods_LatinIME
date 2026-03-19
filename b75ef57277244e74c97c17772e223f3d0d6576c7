@@ -35,6 +35,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "0de9d99a_7b9e24b8",
+        "filename": "java/src/com/android/inputmethod/latin/LatinIME.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 1464,
+      "author": {
+        "id": 24418
+      },
+      "writtenOn": "2026-03-19T09:56:35Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "60c9eccb_a85ad329",
+      "revId": "b75ef57277244e74c97c17772e223f3d0d6576c7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "cde3f9d1_43d51dec",
@@ -48,6 +66,24 @@
       "writtenOn": "2026-03-19T07:54:45Z",
       "side": 1,
       "message": "Line length",
+      "revId": "b75ef57277244e74c97c17772e223f3d0d6576c7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "24375785_0d99df67",
+        "filename": "java/src/com/android/inputmethod/latin/LatinIME.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 1510,
+      "author": {
+        "id": 24418
+      },
+      "writtenOn": "2026-03-19T09:56:35Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "cde3f9d1_43d51dec",
       "revId": "b75ef57277244e74c97c17772e223f3d0d6576c7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
