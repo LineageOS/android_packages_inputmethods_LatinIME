@@ -255,6 +255,8 @@ public class Key implements Comparable<Key> {
     public Key(@Nullable final String keySpec, @Nonnull final TypedArray keyAttr,
             @Nonnull final KeyStyle style, @Nonnull final KeyboardParams params,
             @Nonnull final KeyboardRow row) {
+        final String keySpecUpper = style.getString(keyAttr, R.styleable.Keyboard_Key_keySpecUpper);
+
         mHorizontalGap = isSpacer() ? 0 : params.mHorizontalGap;
         mVerticalGap = params.mVerticalGap;
 
@@ -335,12 +337,13 @@ public class Key implements Comparable<Key> {
             mMoreKeys = null;
         }
         mActionFlags = actionFlags;
-
+android.util.Log.d("TODO", "ks="+keySpec + " ksu="+(keySpecUpper!=null ? keySpecUpper : "(null)"));
         mIconId = KeySpecParser.getIconId(keySpec);
         final int disabledIconId = KeySpecParser.getIconId(style.getString(keyAttr,
                 R.styleable.Keyboard_Key_keyIconDisabled));
 
-        final int code = KeySpecParser.getCode(keySpec);
+        final int code = KeySpecParser.getCode(
+                (needsToUpcase && keySpecUpper != null) ? keySpecUpper : keySpec);
         if ((mLabelFlags & LABEL_FLAGS_FROM_CUSTOM_ACTION_LABEL) != 0) {
             mLabel = params.mId.mCustomActionLabel;
         } else if (code >= Character.MIN_SUPPLEMENTARY_CODE_POINT) {
@@ -351,7 +354,9 @@ public class Key implements Comparable<Key> {
         } else {
             final String label = KeySpecParser.getLabel(keySpec);
             mLabel = needsToUpcase
-                    ? StringUtils.toTitleCaseOfKeyLabel(label, localeForUpcasing)
+                    ? keySpecUpper != null
+                        ? KeySpecParser.getLabel(keySpecUpper)
+                        : StringUtils.toTitleCaseOfKeyLabel(label, localeForUpcasing)
                     : label;
         }
         if ((mLabelFlags & LABEL_FLAGS_DISABLE_HINT_LABEL) != 0) {
@@ -365,7 +370,9 @@ public class Key implements Comparable<Key> {
         }
         String outputText = KeySpecParser.getOutputText(keySpec);
         if (needsToUpcase) {
-            outputText = StringUtils.toTitleCaseOfKeyLabel(outputText, localeForUpcasing);
+            outputText = keySpecUpper != null
+                    ? KeySpecParser.getOutputText(keySpecUpper)
+                    : StringUtils.toTitleCaseOfKeyLabel(outputText, localeForUpcasing);
         }
         // Choose the first letter of the label as primary code if not specified.
         if (code == CODE_UNSPECIFIED && TextUtils.isEmpty(outputText)
