@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7ff79f9a_c444f796",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24418
+      },
+      "writtenOn": "2026-03-19T12:08:31Z",
+      "side": 1,
+      "message": "It already mostly matches except that gboard adds another key to the gap at the end of the middle row (symbols: slash, shifted: backslash), and switches around the underscore and percent so the extra keys on the bottom symbol row beside the spacebar can be removed.\n\nNo symbols are lost during this shuffle, and the slash/backslash become easier to access (and doesn\u0027t mess with muscle memory from gboard).",
+      "revId": "bc816d8dd3998e0f07419fc5dbaa7f5a05a1bb49",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
