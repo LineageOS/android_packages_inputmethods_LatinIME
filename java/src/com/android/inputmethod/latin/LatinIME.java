@@ -1441,6 +1441,37 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
         getCurrentInputConnection().setSelection(newPosition, newPosition);
     }
 
+    @Override
+    public void onBackspaceSlide(int steps) {
+        // TODO: step by words, not characters
+        if (steps < 0) {
+            int availableCharacters =
+                    getCurrentInputConnection().getTextBeforeCursor(MAX_SPACESLIDE_CHARS, 0).length();
+            steps = availableCharacters < -steps ? -availableCharacters : steps;
+        } else if (steps > 0) {
+            int availableCharacters =
+                    getCurrentInputConnection().getTextAfterCursor(MAX_SPACESLIDE_CHARS, 0).length();
+            steps = availableCharacters < steps ? availableCharacters : steps;
+        } else {
+            return;
+        }
+
+        // We only extend the start of the selection, never going past the original selection end.
+        int newStart = mInputLogic.mConnection.getExpectedSelectionStart() + steps;
+        int newEnd = mInputLogic.mConnection.getExpectedSelectionEnd();
+        if (newStart > newEnd) {
+            newStart = newEnd;
+        }
+        getCurrentInputConnection().setSelection(newStart, newEnd);
+    }
+
+    @Override
+    public void onBackspaceSlideFinished() {
+        if (mInputLogic.mConnection.getExpectedSelectionStart() != mInputLogic.mConnection.getExpectedSelectionEnd()) {
+            getCurrentInputConnection().commitText("", 1);
+        }
+    }
+
     private boolean isShowingOptionDialog() {
         return mOptionsDialog != null && mOptionsDialog.isShowing();
     }
