@@ -40,6 +40,10 @@ disposition rather than other common dispositions for Latin languages. [CHAR LIM
     <string name="space_trackpad">Space bar trackpad</string>
     <string name="space_trackpad_summary">Swipe on the spacebar to move the cursor</string>
 
+    <!-- Preference item for the backspace key track pad -->
+    <string name="backspace_trackpad">Backspace key trackpad</string>
+    <string name="backspace_trackpad_summary">Swipe on the backspace key to delete words</string>
+
     <!-- Preference item for enabling longpress key hints -->
     <string name="show_longpress_hints">Show long-press key hints</string>
     <string name="show_longpress_hints_summary">Shows long-press hints for supported keys</string>

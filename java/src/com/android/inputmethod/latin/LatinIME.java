@@ -106,6 +106,7 @@ import com.android.inputmethod.latin.utils.ViewLayoutUtils;
 
 import java.io.FileDescriptor;
 import java.io.PrintWriter;
+import java.text.BreakIterator;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
@@ -158,6 +159,8 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
     // We expect to have only one decoder in almost all cases, hence the default capacity of 1.
     // If it turns out we need several, it will get grown seamlessly.
     final SparseArray<HardwareEventDecoder> mHardwareEventDecoders = new SparseArray<>(1);
+
+    BreakIterator mBreakWordIterator = BreakIterator.getWordInstance();
 
     // TODO: Move these {@link View}s to {@link KeyboardSwitcher}.
     private View mInputView;
@@ -744,6 +747,19 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
                     settingsValues.mAutoCorrectionThreshold);
         }
         mInputLogic.mSuggest.setPlausibilityThreshold(settingsValues.mPlausibilityThreshold);
+    }
+
+    /**
+     * Reset the BreakIterator for the given locale.
+     *
+     * @param locale the locale
+     */
+    private void resetBreakIterator(final Locale locale) {
+        if (locale == null) {
+            mBreakWordIterator = BreakIterator.getWordInstance(Locale.US);
+        } else {
+            mBreakWordIterator = BreakIterator.getWordInstance(locale);
+        }
     }
 
     /**
@@ -1439,6 +1455,61 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
 
         int newPosition = mInputLogic.mConnection.getExpectedSelectionStart() + steps;
         getCurrentInputConnection().setSelection(newPosition, newPosition);
+    }
+
+    @Override
+    public void onBackspaceSlide(int steps) {
+        int delta = 0;
+        if (steps < 0) {
+            CharSequence text = getCurrentInputConnection().getTextBeforeCursor(MAX_SPACESLIDE_CHARS, 0);
+            if (text == null || text.length() == 0) {
+                return;
+            }
+            mBreakWordIterator.setText(text.toString());
+            mBreakWordIterator.last();
+            delta = text.length();
+            while (steps < 0) {
+                int start = mBreakWordIterator.previous();
+                if (start == BreakIterator.DONE) {
+                    break;
+                }
+                delta = start;
+                steps++;
+            }
+            delta -= text.length();
+        } else if (steps > 0) {
+            CharSequence text = getCurrentInputConnection().getSelectedText(0);
+            if (text == null || text.length() == 0) {
+                return;
+            }
+            mBreakWordIterator.setText(text.toString());
+            mBreakWordIterator.first();
+            while (steps > 0) {
+                int end = mBreakWordIterator.next();
+                if (end == BreakIterator.DONE) {
+                    break;
+                }
+                delta = end;
+                steps--;
+            }
+        } else {
+            return;
+        }
+
+        // We only extend the start of the selection, never going past the original selection end.
+        int newStart = mInputLogic.mConnection.getExpectedSelectionStart() + delta;
+        int newEnd = mInputLogic.mConnection.getExpectedSelectionEnd();
+        if (newStart > newEnd) {
+            newStart = newEnd;
+        }
+        getCurrentInputConnection().setSelection(newStart, newEnd);
+    }
+
+    @Override
+    public void onBackspaceSlideFinished() {
+        if (mInputLogic.mConnection.getExpectedSelectionStart() != mInputLogic.mConnection.getExpectedSelectionEnd()) {
+            getCurrentInputConnection().commitText("", 1);
+        }
     }
 
     private boolean isShowingOptionDialog() {

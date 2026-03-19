@@ -106,6 +106,16 @@ public interface KeyboardActionListener {
      */
     public void onMovePointer(int steps);
 
+    /**
+     * Called while user is sliding backspace key.
+     */
+    public void onBackspaceSlide(int steps);
+
+    /**
+     * Called when user finished sliding backspace key.
+     */
+    public void onBackspaceSlideFinished();
+
     public static final KeyboardActionListener EMPTY_LISTENER = new Adapter();
 
     public static class Adapter implements KeyboardActionListener {
@@ -135,5 +145,9 @@ public interface KeyboardActionListener {
         }
         @Override
         public void onMovePointer(int steps) {}
+        @Override
+        public void onBackspaceSlide(int steps) {}
+        @Override
+        public void onBackspaceSlideFinished() {}
     }
 }
