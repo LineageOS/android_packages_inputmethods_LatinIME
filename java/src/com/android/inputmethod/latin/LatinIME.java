@@ -1441,6 +1441,17 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
         getCurrentInputConnection().setSelection(newPosition, newPosition);
     }
 
+    @Override
+    public void onBackspaceSlide(int steps) {
+        // TODO: something based on handleBackspaceEvent
+        Log.w(TAG, "TODO: backspace word selection step " + steps);
+    }
+
+    @Override
+    public void onBackspaceSlideFinished() {
+        Log.w(TAG, "TODO: backspace slide commit");
+    }
+
     private boolean isShowingOptionDialog() {
         return mOptionsDialog != null && mOptionsDialog.isShowing();
     }
