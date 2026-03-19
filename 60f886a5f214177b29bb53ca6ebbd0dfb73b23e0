@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "98180d90_e9a156c5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 12
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24418
+      },
+      "writtenOn": "2026-03-19T11:17:51Z",
+      "side": 1,
+      "message": "Need to build make-keyboard-text to regenerate stuff so I can use donottranslate-more-keys.xml properly so it can be overridden, but this works as-is right now.",
+      "revId": "60f886a5f214177b29bb53ca6ebbd0dfb73b23e0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
