@@ -129,11 +129,12 @@ public final class PointerTracker implements PointerTrackerQueue.Element,
     private int mLastX;
     private int mLastY;
 
-    // For spacebar slide tracking.
+    // For spacebar/backspace slide tracking.
     private int mStartX;
     private int mStartY;
     private long mStartTime;
     private boolean mSlidOnSpaceBar = false;
+    private boolean mSlidOnBackspace = false;
 
     // true if keyboard layout has been changed.
     private boolean mKeyboardLayoutHasBeenChanged;
@@ -925,6 +926,21 @@ public final class PointerTracker implements PointerTrackerQueue.Element,
             return;
         }
 
+        // Backspace slider
+        if (oldKey != null && oldKey.getCode() == Constants.CODE_DELETE
+                && Settings.getInstance().getCurrent().mBackspaceTrackpadEnabled) {
+            int steps = (x - mStartX) / sPointerStep;
+            // TODO: implement select-and-delete-on-release logic
+            if (steps != 0
+                    && mStartTime + Settings.getInstance().getCurrent().mKeyLongpressTimeout
+                    < System.currentTimeMillis()) {
+                mSlidOnBackspace = true;
+                mStartX += steps * sPointerStep;
+                sListener.onMovePointer(steps);
+            }
+            return;
+        }
+
         if (sGestureEnabler.shouldHandleGesture()) {
             // Register move event on gesture tracker.
             onGestureMoveEvent(x, y, eventTime, true /* isMajorEvent */, newKey);
@@ -1012,6 +1028,11 @@ public final class PointerTracker implements PointerTrackerQueue.Element,
             return;
         }
 
+        if (mSlidOnBackspace) {
+            mSlidOnBackspace = false;
+            return;
+        }
+
         if (sInGesture) {
             if (currentKey != null) {
                 callListenerOnRelease(currentKey, currentKey.getCode(), true /* withSliding */);
@@ -1055,6 +1076,9 @@ public final class PointerTracker implements PointerTrackerQueue.Element,
             return;
         }
         if (mSlidOnSpaceBar) {
+            return;
+        }
+        if (mSlidOnBackspace) {
             return;
         }
         final Key key = getKey();
