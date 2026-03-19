@@ -104,6 +104,7 @@ public final class Settings implements SharedPreferences.OnSharedPreferenceChang
 
     public static final String PREF_ENABLE_METRICS_LOGGING = "pref_enable_metrics_logging";
     public static final String PREF_SHOW_NUMBER_ROW = "pref_show_number_row";
+    public static final String PREF_SHOW_NUMBER_ROW_PASSWORD = "pref_show_number_row_password";
 
     public static final String PREF_SHOW_LONGPRESS_HINTS = "pref_show_longpress_hints";
     // This preference key is deprecated. Use {@link #PREF_SHOW_LANGUAGE_SWITCH_KEY} instead.

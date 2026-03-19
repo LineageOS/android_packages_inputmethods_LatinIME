@@ -95,6 +95,9 @@ public final class PreferencesSettingsFragment extends SubScreenFragment {
             setPreferenceEnabled(Settings.PREF_KEY_PREVIEW_POPUP_DISMISS_DELAY,
                     Settings.readKeyPreviewPopupEnabled(prefs, res));
         }
+        if (key.equals(Settings.PREF_SHOW_NUMBER_ROW)) {
+            setPreferenceEnabled(Settings.PREF_SHOW_NUMBER_ROW_PASSWORD, !Settings.readShowNumberRow(prefs));
+        }
         refreshEnablingsOfKeypressSoundAndVibrationSettings();
     }
 
