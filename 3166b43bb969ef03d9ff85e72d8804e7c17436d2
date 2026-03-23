@@ -105,6 +105,24 @@
       "parentUuid": "57bc63c4_a09ddad1",
       "revId": "3166b43bb969ef03d9ff85e72d8804e7c17436d2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ea7e2d7d_6147476e",
+        "filename": "java/src/com/android/inputmethod/keyboard/internal/KeyboardTextsTable.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1884,
+      "author": {
+        "id": 24418
+      },
+      "writtenOn": "2026-03-23T19:20:00Z",
+      "side": 1,
+      "message": "Sounds good. I\u0027ll abandon this and just include the required changes for 478703.",
+      "parentUuid": "48e3b1e5_1d0d36c1",
+      "revId": "3166b43bb969ef03d9ff85e72d8804e7c17436d2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
