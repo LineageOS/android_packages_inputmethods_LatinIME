@@ -27,5 +27,6 @@
         <item name="iconZwjKey">@drawable/sym_keyboard_zwj_lxx_dark</item>
         <item name="iconEmojiActionKey">@drawable/sym_keyboard_smiley_you</item>
         <item name="iconEmojiNormalKey">@drawable/sym_keyboard_smiley_you</item>
+        <item name="iconClipboardPasteKey">@drawable/sym_keyboard_clipboard_paste_you</item>
     </style>
 </resources>

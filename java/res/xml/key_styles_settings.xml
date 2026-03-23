@@ -35,7 +35,7 @@
             <key-style
                 latin:styleName="settingsMoreKeysStyle"
                 latin:keyLabelFlags="hasPopupHint"
-                latin:additionalMoreKeys="!text/keyspec_settings"
+                latin:additionalMoreKeys="!text/keyspec_settings,!text/keyspec_clipboard_paste"
                 latin:backgroundType="functional" />
         </default>
     </switch>
