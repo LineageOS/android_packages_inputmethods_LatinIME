@@ -33,6 +33,23 @@
       "message": "Actually, I think it\u0027s better this way since it provides more flexibility for grouping different layouts/locales together (e.g., like in key_styles_currency.xml).",
       "revId": "60f886a5f214177b29bb53ca6ebbd0dfb73b23e0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9627f177_044e152c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 12
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-03-23T19:59:50Z",
+      "side": 1,
+      "message": "This feels weird to me... I would expect the row to always have numbers (or derived from them)",
+      "revId": "60f886a5f214177b29bb53ca6ebbd0dfb73b23e0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
