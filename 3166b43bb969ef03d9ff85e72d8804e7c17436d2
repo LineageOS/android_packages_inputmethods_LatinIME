@@ -51,6 +51,24 @@
       "message": "This change (from JDK 17+) can be avoided with `-Djava.locale.useOldISOCodes\u003dtrue`, but that option is deprecated.",
       "revId": "3166b43bb969ef03d9ff85e72d8804e7c17436d2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "befaeb02_87ad44d0",
+        "filename": "java/src/com/android/inputmethod/keyboard/internal/KeyboardTextsTable.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1884,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-03-23T18:55:53Z",
+      "side": 1,
+      "message": "This change is incorrect for android",
+      "parentUuid": "4b28adf7_aa1d3a4d",
+      "revId": "3166b43bb969ef03d9ff85e72d8804e7c17436d2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
