@@ -158,6 +158,24 @@
       "parentUuid": "48e3b1e5_1d0d36c1",
       "revId": "3166b43bb969ef03d9ff85e72d8804e7c17436d2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "77b7b50b_d6c1bbe3",
+        "filename": "java/src/com/android/inputmethod/keyboard/internal/KeyboardTextsTable.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1884,
+      "author": {
+        "id": 24418
+      },
+      "writtenOn": "2026-03-23T21:56:58Z",
+      "side": 1,
+      "message": "FWIW, dexing make-keyboard.text.java, adding classes.dex to the jar, pushing the jar to the device, then running it with app_process results in an identical generated file.",
+      "parentUuid": "ea7e2d7d_6147476e",
+      "revId": "3166b43bb969ef03d9ff85e72d8804e7c17436d2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": [
