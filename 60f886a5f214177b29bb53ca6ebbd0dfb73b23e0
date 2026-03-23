@@ -67,6 +67,24 @@
       "message": "side note: the pc qwerty layout also does this with a case in the XML, but I don\u0027t fully understand it",
       "revId": "60f886a5f214177b29bb53ca6ebbd0dfb73b23e0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b9302480_8c3ca6ce",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 12
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24418
+      },
+      "writtenOn": "2026-03-23T20:54:05Z",
+      "side": 1,
+      "message": "gboard does this too",
+      "parentUuid": "9627f177_044e152c",
+      "revId": "60f886a5f214177b29bb53ca6ebbd0dfb73b23e0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
