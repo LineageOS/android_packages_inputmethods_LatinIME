@@ -16,6 +16,23 @@
       "message": "Tested with the next CL (I001f557d392357f0b1669966c6741f308e75aa04), and also with a lowercase \"a\" as the keySpecUpper to ensure stuff is overridden correctly. Also tested with non-trivial KeySpecs like \"!text/\".",
       "revId": "1c1d26c78c72ead05f70efa21ce3efd50b764617",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "85c4a450_98b3d642",
+        "filename": "java/src/com/android/inputmethod/keyboard/Key.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 258,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-03-23T19:57:23Z",
+      "side": 1,
+      "message": "move this right before the first usage?",
+      "revId": "1c1d26c78c72ead05f70efa21ce3efd50b764617",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
