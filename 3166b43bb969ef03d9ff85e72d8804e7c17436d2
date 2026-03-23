@@ -87,6 +87,24 @@
       "parentUuid": "befaeb02_87ad44d0",
       "revId": "3166b43bb969ef03d9ff85e72d8804e7c17436d2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "48e3b1e5_1d0d36c1",
+        "filename": "java/src/com/android/inputmethod/keyboard/internal/KeyboardTextsTable.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1884,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-03-23T19:17:10Z",
+      "side": 1,
+      "message": "Yeah, we\u0027ve been over this before and using the host open jdk (prebuilt or not) won\u0027t output proper android configs.\n\nWhat I did before was to manually create a diff and apply it with the only required changes.",
+      "parentUuid": "57bc63c4_a09ddad1",
+      "revId": "3166b43bb969ef03d9ff85e72d8804e7c17436d2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
