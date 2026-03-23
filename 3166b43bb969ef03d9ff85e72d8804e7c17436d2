@@ -38,6 +38,23 @@
     {
       "unresolved": false,
       "key": {
+        "uuid": "f3d2abeb_d39dee11",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-03-23T20:04:38Z",
+      "side": 1,
+      "message": "If you need to update the table please do something like that\nhttps://review.lineageos.org/c/LineageOS/android_packages_inputmethods_LatinIME/+/445422\n\nUpdate KeyboardTextsTable -\u003e Make the changes you need to donttranslate -\u003e Re-update KeyboardTextsTable -\u003e Apply those changes manually on top the \"original\" KeyboardTextsTable manually",
+      "revId": "3166b43bb969ef03d9ff85e72d8804e7c17436d2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
         "uuid": "4b28adf7_aa1d3a4d",
         "filename": "java/src/com/android/inputmethod/keyboard/internal/KeyboardTextsTable.java",
         "patchSetId": 1
