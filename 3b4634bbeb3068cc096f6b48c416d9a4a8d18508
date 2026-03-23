@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cd0093ef_be59455a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24418
+      },
+      "writtenOn": "2026-03-23T20:00:32Z",
+      "side": 1,
+      "message": "Rebased without full make-keyboard-text regen, tested again.",
+      "revId": "3b4634bbeb3068cc096f6b48c416d9a4a8d18508",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
