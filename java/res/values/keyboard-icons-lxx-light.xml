@@ -44,5 +44,6 @@
         <item name="iconEmojiActionKey">@drawable/sym_keyboard_smiley_lxx_dark</item>
         <!-- Use dark green emoji icon (for lxx_light) because a normal key has white color background. -->
         <item name="iconEmojiNormalKey">@drawable/sym_keyboard_smiley_lxx_light</item>
+        <item name="iconClipboardPasteKey">@drawable/sym_keyboard_clipboard_paste_lxx_light</item>
     </style>
 </resources>

@@ -247,6 +247,7 @@ public final class Constants {
     public static final int CODE_ALPHA_FROM_EMOJI = -14;
     // Code value representing the code is not specified.
     public static final int CODE_UNSPECIFIED = -15;
+    public static final int CODE_CLIPBOARD_PASTE = -16;
 
     public static boolean isLetterCode(final int code) {
         return code >= CODE_SPACE;
@@ -269,6 +270,7 @@ public final class Constants {
         case CODE_SHIFT_ENTER: return "shiftEnter";
         case CODE_ALPHA_FROM_EMOJI: return "alpha";
         case CODE_UNSPECIFIED: return "unspec";
+        case CODE_CLIPBOARD_PASTE: return "clipboard_paste";
         case CODE_TAB: return "tab";
         case CODE_ENTER: return "enter";
         case CODE_SPACE: return "space";
