@@ -69,6 +69,24 @@
       "parentUuid": "4b28adf7_aa1d3a4d",
       "revId": "3166b43bb969ef03d9ff85e72d8804e7c17436d2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "57bc63c4_a09ddad1",
+        "filename": "java/src/com/android/inputmethod/keyboard/internal/KeyboardTextsTable.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1884,
+      "author": {
+        "id": 24418
+      },
+      "writtenOn": "2026-03-23T18:57:08Z",
+      "side": 1,
+      "message": "It does it when you run it in the regular build too since that uses the jdk17 prebuilts.",
+      "parentUuid": "befaeb02_87ad44d0",
+      "revId": "3166b43bb969ef03d9ff85e72d8804e7c17436d2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
