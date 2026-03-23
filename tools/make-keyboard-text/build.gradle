@@ -1,0 +1,31 @@
+plugins {
+    id 'application'
+}
+
+application {
+    mainClass = 'com.android.inputmethod.keyboard.tools.MakeKeyboardText'
+}
+
+sourceSets {
+    main.java.srcDir 'src'
+    main.resources.srcDir 'res'
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': application.mainClass
+    }
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+tasks.register('generate', JavaExec) {
+    mainClass = application.mainClass
+    dependsOn jar
+    classpath jar.archiveFile
+    workingDir rootProject.projectDir
+    args '-java', 'java'
+}
