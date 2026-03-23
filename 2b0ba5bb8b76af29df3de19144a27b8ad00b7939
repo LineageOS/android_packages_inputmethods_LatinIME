@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9cb3f1d8_e44fc1b1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24418
+      },
+      "writtenOn": "2026-03-23T21:04:17Z",
+      "side": 1,
+      "message": "side note: the pc qwerty layout also does this a slightly different way with a case in the XML, but I don\u0027t fully understand it",
+      "revId": "2b0ba5bb8b76af29df3de19144a27b8ad00b7939",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
