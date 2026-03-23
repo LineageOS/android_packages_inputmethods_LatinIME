@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "163135fa_98f77c87",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24418
+      },
+      "writtenOn": "2026-03-23T20:20:51Z",
+      "side": 1,
+      "message": "Added a warning message about the JVM locale stuff.",
+      "revId": "99c3732a19ea59f82791a1645f353701d966cc69",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
