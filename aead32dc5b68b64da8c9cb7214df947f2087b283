@@ -34,6 +34,24 @@
       "parentUuid": "377519b2_5f786074",
       "revId": "aead32dc5b68b64da8c9cb7214df947f2087b283",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d739e917_5f7afe01",
+        "filename": "java/res/xml/prefs_screen_preferences.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 24418
+      },
+      "writtenOn": "2026-03-23T20:13:37Z",
+      "side": 1,
+      "message": "Okay, so I don\u0027t know if I\u0027m just stupid or something, but I can\u0027t get `disableDependentsState\u003dtrue` on `pref_show_number_row` to take effect with `dependency\u003dpref_show_number_row` on `pref_show_number_row_password`. It always acts as if `disableDependentsState` wasn\u0027t specified, disabling the password one when the overall one is disabled.\n\nI\u0027m just going to leave it this way with it being controlled in `PreferencesSettingsFragment` for now.",
+      "parentUuid": "fa8369b0_059d00bb",
+      "revId": "aead32dc5b68b64da8c9cb7214df947f2087b283",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
