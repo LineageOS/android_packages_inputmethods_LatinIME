@@ -683,6 +683,9 @@ public final class InputLogic {
             case Constants.CODE_SETTINGS:
                 onSettingsKeyPressed();
                 break;
+            case Constants.CODE_CLIPBOARD_PASTE:
+                mConnection.performContextMenuAction(android.R.id.paste);
+                break;
             case Constants.CODE_SHORTCUT:
                 // We need to switch to the shortcut IME. This is handled by LatinIME since the
                 // input logic has no business with IME switching.

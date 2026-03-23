@@ -507,6 +507,13 @@ public final class RichInputConnection implements PrivateCommandPerformer {
         }
     }
 
+    public void performContextMenuAction(final int actionId) {
+        mIC = mParent.getCurrentInputConnection();
+        if (isConnected()) {
+            mIC.performContextMenuAction(actionId);
+        }
+    }
+
     public void sendKeyEvent(final KeyEvent keyEvent) {
         if (DEBUG_BATCH_NESTING) checkBatchEdit();
         if (keyEvent.getAction() == KeyEvent.ACTION_DOWN) {
