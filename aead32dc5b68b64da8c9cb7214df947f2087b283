@@ -16,6 +16,24 @@
       "message": "Now that I think about it, it\u0027s probably better to tie this setting to !pref_show_number_row\nIt makes sense to have this setting toggle-able only if the \"general\" number row is disabled no?",
       "revId": "aead32dc5b68b64da8c9cb7214df947f2087b283",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fa8369b0_059d00bb",
+        "filename": "java/res/xml/prefs_screen_preferences.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 24418
+      },
+      "writtenOn": "2026-03-23T20:04:34Z",
+      "side": 1,
+      "message": "I did do that, but I was apparently half-asleep and forgot I could do it in the XML. Will fix it.",
+      "parentUuid": "377519b2_5f786074",
+      "revId": "aead32dc5b68b64da8c9cb7214df947f2087b283",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
