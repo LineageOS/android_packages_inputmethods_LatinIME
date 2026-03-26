@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a3404b65_f4a293ed",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-03-26T18:25:56Z",
+      "side": 1,
+      "message": "Unicode 17.0 is only added since 16 QPR3",
+      "revId": "43c14870daf2cd1cfb0882bb977dd6a7ae88d95f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
