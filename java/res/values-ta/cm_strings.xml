@@ -19,7 +19,7 @@
     <string name="keyboard_theme_material_follow_system">மெட்டீரியல் - முறைமை அமைப்புகளைப் பின்பற்றுக</string>
     <string name="prefs_keyboard_height_scale">விசைப்பலகை உயர அளவுகோல்</string>
     <string name="number_row">எண் வரிசை</string>
-    <string name="number_row_summary">4 வரிசை விசைகளைக் கொண்ட அனைத்துத் தளவமைப்புகளுக்கும், எப்போதும் எண் வரிசையைக் காண்பிக்க</string>
+    <string name="number_row_summary">கடவுச்சொல் உள்ளிடும்போது, 4 வரிசை விசை அமைப்புகளில் எப்போதும் எண் வரிசையைக் காட்டுக</string>
     <string name="space_trackpad">இடைவெளி விசைத் தொடுதளம்</string>
     <string name="space_trackpad_summary">இடஞ்சுட்டியை நகர்த்த, இடைவெளி விசையின் மேல் தேய்க்க</string>
     <string name="show_longpress_hints">நீண்ட-அழுத்த விசை குறிப்புகளைக் காட்டுக</string>
