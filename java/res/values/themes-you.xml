@@ -32,6 +32,7 @@
     </style>
 
     <style name="KeyboardTheme.You" parent="KeyboardIcons.You">
+        <item name="keyIconTint">@color/icon_color_you</item>
         <item name="inputViewStyle">@style/InputView.You</item>
         <item name="keyboardStyle">@style/Keyboard.You</item>
         <item name="keyboardViewStyle">@style/KeyboardView.You</item>

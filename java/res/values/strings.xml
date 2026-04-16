@@ -357,6 +357,7 @@ mobile devices. [CHAR LIMIT=25] -->
     <string name="keyboard_theme_material_light" translatable="false">Material Light</string>
     <!-- The keyboard theme name, Material You. This is marked as translatable="false" because this is a proper name of system-wide UI Theme. -->
     <string name="keyboard_theme_material_you" translatable="false">Material You</string>
+    <string name="keyboard_theme_oled" translatable="false">OLED</string>
 
     <!-- Title of the preference settings for custom input styles (language and keyboard layout pairs) [CHAR LIMIT=35]-->
     <string name="custom_input_styles_title">Custom input styles</string>
