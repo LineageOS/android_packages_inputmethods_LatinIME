@@ -1,0 +1,2 @@
+#!/bin/bash
+./gradlew assembleRelease -x lint && /home/pg/sdk/android/build-tools/36.1.0/apksigner sign --key /home/pg/misc/custom-rom-signing/shared.pk8 --cert /home/pg/misc/custom-rom-signing/shared.x509.pem /home/pg/src/lineage/packages/inputmethods/LatinIME/build/outputs/apk/release/LatinIME-release.apk && adb install --no-streaming /home/pg/src/lineage/packages/inputmethods/LatinIME/build/outputs/apk/release/LatinIME-release.apk

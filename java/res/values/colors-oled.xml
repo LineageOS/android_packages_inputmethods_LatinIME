@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Color resources for OLED theme (pure black background, dim grey keys) -->
+    <color name="keyboard_background_oled">#000000</color>
+    <color name="key_background_oled">#1A1A1A</color>
+    <color name="key_background_pressed_oled">#333333</color>
+    <color name="key_functional_background_oled">#222222</color>
+    <color name="key_functional_background_pressed_oled">#3A3A3A</color>
+    <color name="key_action_background_oled">#001D2B</color>
+    <color name="key_action_background_pressed_oled">#002D40</color>
+    <color name="icon_color_oled">#AAAAAA</color>
+    <color name="key_text_color_oled">#AAAAAA</color>
+    <color name="key_functional_text_color_oled">#AAAAAAAA</color>
+    <color name="key_text_inactive_color_oled">#80AAAAAA</color>
+    <color name="key_hint_letter_color_oled">#80AAAAAA</color>
+    <color name="highlight_color_oled">#005851</color>
+    <color name="auto_correct_color_oled">#AAAAAA</color>
+    <color name="typed_word_color_oled">#D9AAAAAA</color>
+    <color name="suggested_word_color_oled">#B3AAAAAA</color>
+    <color name="gesture_trail_color_oled">#005851</color>
+    <color name="sliding_key_input_preview_color_oled">#B3005851</color>
+    <color name="gesture_floating_preview_color_oled">#E6222222</color>
+    <color name="gesture_floating_preview_text_color_oled">#AAAAAA</color>
+    <color name="emoji_tab_page_indicator_background_oled">#111111</color>
+    <color name="suggested_word_background_selected_oled">#22AAAAAA</color>
+</resources>

@@ -7,10 +7,8 @@
     android:width="24dp"
     android:height="24dp"
     android:viewportWidth="960"
-    android:viewportHeight="960"
-    android:autoMirrored="true">
+    android:viewportHeight="960">
     <path
-        android:fillColor="@color/icon_color_you"
-        android:pathData="M360,720L120,480L360,240L416,296L272,440L760,440L760,280L840,280L840,520L272,520L416,664L360,720Z"/>
+        android:fillColor="?attr/keyIconTint"
+        android:pathData="M382,720L154,492L211,435L382,606L749,239L806,296L382,720Z"/>
 </vector>
-

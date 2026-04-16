@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="KeyboardTheme.OLED" parent="KeyboardIcons.OLED">
+        <item name="keyIconTint">@color/icon_color_oled</item>
+        <item name="inputViewStyle">@style/InputView.LXX</item>
+        <item name="keyboardStyle">@style/Keyboard.OLED</item>
+        <item name="keyboardViewStyle">@style/KeyboardView.OLED</item>
+        <item name="mainKeyboardViewStyle">@style/MainKeyboardView.OLED</item>
+        <item name="emojiPalettesViewStyle">@style/EmojiPalettesView.OLED</item>
+        <item name="moreKeysKeyboardStyle">@style/MoreKeysKeyboard.OLED</item>
+        <item name="moreKeysKeyboardViewStyle">@style/MoreKeysKeyboardView.OLED</item>
+        <item name="moreKeysKeyboardViewForActionStyle">@style/MoreKeysKeyboardView.OLED.Action</item>
+        <item name="suggestionStripViewStyle">@style/SuggestionStripView.OLED</item>
+        <item name="suggestionWordStyle">@style/SuggestionWord.OLED</item>
+    </style>
+    <style
+        name="Keyboard.OLED"
+        parent="Keyboard"
+    >
+        <!-- This should be aligned with KeyboardTheme.THEME_ID_* -->
+        <item name="themeId">OLED</item>
+        <item name="verticalGap">@fraction/config_key_vertical_gap_you</item>
+    </style>
+    <style
+        name="KeyboardView.OLED"
+        parent="KeyboardView.You_Common"
+    >
+        <item name="android:background">@color/keyboard_background_oled</item>
+        <item name="keyBackground">@drawable/btn_keyboard_key_oled</item>
+        <item name="functionalKeyBackground">@drawable/btn_keyboard_key_functional_oled</item>
+        <item name="spacebarBackground">@drawable/btn_keyboard_key_functional_oled</item>
+        <item name="keyTextColor">@color/key_text_color_oled</item>
+        <item name="keyTextInactivatedColor">@color/key_text_inactive_color_oled</item>
+        <item name="functionalTextColor">@color/key_functional_text_color_oled</item>
+        <item name="keyHintLetterColor">@color/key_hint_letter_color_oled</item>
+        <item name="keyHintLabelColor">@color/key_hint_letter_color_oled</item>
+        <item name="keyShiftedLetterHintInactivatedColor">@color/key_text_inactive_color_oled</item>
+        <item name="keyShiftedLetterHintActivatedColor">@color/key_text_color_oled</item>
+        <item name="keyPreviewTextColor">@color/key_text_color_oled</item>
+        <item name="gestureFloatingPreviewRoundRadius">@dimen/config_gesture_floating_preview_round_radius_you</item>
+    </style>
+    <style
+        name="MainKeyboardView.OLED"
+        parent="KeyboardView.OLED"
+    >
+        <item name="moreKeysKeyboardForActionLayout">@layout/more_keys_keyboard_for_action_lxx</item>
+        <item name="keyPreviewBackground">@drawable/keyboard_key_feedback_oled</item>
+        <item name="keyPreviewHeight">@dimen/config_key_preview_height_you</item>
+        <item name="keyPreviewOffset">@dimen/config_key_preview_offset_you</item>
+        <item name="keyPreviewShowUpAnimator">@anim/key_preview_show_up_lxx</item>
+        <item name="keyPreviewDismissAnimator">@anim/key_preview_dismiss_lxx</item>
+        <item name="gestureFloatingPreviewTextColor">@color/gesture_floating_preview_text_color_oled</item>
+        <item name="gestureFloatingPreviewColor">@color/gesture_floating_preview_color_oled</item>
+        <item name="gestureTrailColor">@color/gesture_trail_color_oled</item>
+        <item name="slidingKeyInputPreviewColor">@color/sliding_key_input_preview_color_oled</item>
+        <item name="languageOnSpacebarTextColor">@color/key_text_inactive_color_oled</item>
+        <!-- A negative value to disable text shadow layer. -->
+        <item name="languageOnSpacebarTextShadowRadius">-1.0</item>
+    </style>
+    <!-- Though {@link com.android.inputmethod.keyboard.emoji.EmojiPalettesView} doesn't extend
+         {@link com.android.inputmethod.keyboard.KeyboardView}, some views inside it, for instance
+         delete button, need themed {@link com.android.inputmethod.keyboard.KeyboardView}
+         attributes. -->
+    <style
+        name="EmojiPalettesView.OLED"
+        parent="MainKeyboardView.OLED"
+    >
+        <item name="categoryIndicatorEnabled">false</item>
+        <item name="categoryPageIndicatorColor">@color/highlight_color_oled</item>
+        <item name="categoryPageIndicatorBackground">@color/emoji_tab_page_indicator_background_oled</item>
+        <item name="iconEmojiRecentsTab">@drawable/ic_emoji_recents_lxx_dark</item>
+        <item name="iconEmojiCategory1Tab">@drawable/ic_emoji_people_lxx_dark</item>
+        <item name="iconEmojiCategory2Tab">@drawable/ic_emoji_objects_lxx_dark</item>
+        <item name="iconEmojiCategory3Tab">@drawable/ic_emoji_nature_lxx_dark</item>
+        <item name="iconEmojiCategory4Tab">@drawable/ic_emoji_places_lxx_dark</item>
+        <item name="iconEmojiCategory5Tab">@drawable/ic_emoji_symbols_lxx_dark</item>
+        <item name="iconEmojiCategory6Tab">@drawable/ic_emoji_emoticons_lxx_dark</item>
+        <item name="iconEmojiCategory7Tab">@drawable/ic_emoji_flag_lxx_dark</item>
+        <item name="iconEmojiCategory8Tab">@drawable/ic_emoji_people_lxx_dark</item>
+        <item name="iconEmojiCategory9Tab">@drawable/ic_emoji_nature_lxx_dark</item>
+        <item name="iconEmojiCategory10Tab">@drawable/ic_emoji_food_lxx_dark</item>
+        <item name="iconEmojiCategory11Tab">@drawable/ic_emoji_places_lxx_dark</item>
+        <item name="iconEmojiCategory12Tab">@drawable/ic_emoji_activity_lxx_dark</item>
+        <item name="iconEmojiCategory13Tab">@drawable/ic_emoji_objects_lxx_dark</item>
+        <item name="iconEmojiCategory14Tab">@drawable/ic_emoji_symbols_lxx_dark</item>
+        <item name="iconEmojiCategory15Tab">@drawable/ic_emoji_flag_lxx_dark</item>
+        <item name="iconEmojiCategory16Tab">@drawable/ic_emoji_people_lxx_dark</item>
+    </style>
+    <style
+        name="MoreKeysKeyboard.OLED"
+        parent="Keyboard.OLED"
+    >
+        <item name="keyboardTopPadding">0%p</item>
+        <item name="keyboardBottomPadding">0%p</item>
+        <item name="horizontalGap">0%p</item>
+        <item name="touchPositionCorrectionData">@null</item>
+    </style>
+    <style
+        name="MoreKeysKeyboardView.OLED"
+        parent="KeyboardView.OLED"
+    >
+        <item name="android:background">@drawable/btn_keyboard_key_oled</item>
+        <item name="keyBackground">@drawable/btn_keyboard_key_oled</item>
+        <item name="divider">@drawable/more_keys_divider</item>
+        <item name="keyTypeface">normal</item>
+        <item name="verticalCorrection">@dimen/config_more_keys_keyboard_vertical_correction_holo</item>
+    </style>
+    <style
+        name="MoreKeysKeyboardView.OLED.Action"
+        parent="MoreKeysKeyboardView.OLED"
+    >
+        <item name="android:background">@android:color/transparent</item>
+        <item name="keyBackground">@drawable/btn_keyboard_key_popup_action_you</item>
+        <item name="divider">@null</item>
+        <item name="keyLabelFlags">keepBackgroundAspectRatio</item>
+    </style>
+    <style
+        name="SuggestionStripView.OLED"
+        parent="KeyboardView.OLED"
+    >
+        <item name="suggestionsCountInStrip">@integer/config_suggestions_count_in_strip</item>
+        <item name="centerSuggestionPercentile">@fraction/config_center_suggestion_percentile</item>
+        <item name="maxMoreSuggestionsRow">@integer/config_max_more_suggestions_row</item>
+        <item name="minMoreSuggestionsWidth">@fraction/config_min_more_suggestions_width</item>
+        <item name="android:background">@color/keyboard_background_oled</item>
+        <item name="android:src">@drawable/suggestions_strip_divider_lxx_dark</item>
+        <item name="suggestionStripOptions">autoCorrectBold|validTypedWordBold</item>
+        <item name="colorValidTypedWord">@color/typed_word_color_oled</item>
+        <item name="colorTypedWord">@color/typed_word_color_oled</item>
+        <item name="colorAutoCorrect">@color/auto_correct_color_oled</item>
+        <item name="colorSuggested">@color/suggested_word_color_oled</item>
+        <item name="alphaObsoleted">70%</item>
+    </style>
+    <style
+        name="SuggestionWord.OLED"
+        parent="SuggestionWord"
+    >
+        <item name="android:background">@drawable/btn_suggestion_oled</item>
+        <item name="android:textColor">@color/highlight_color_oled</item>
+    </style>
+</resources>
