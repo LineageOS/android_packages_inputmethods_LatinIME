@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-    SPDX-FileCopyrightText: Material Design Authors / Google LLC
+    SPDX-FileCopyrightText: 2026 The LineageOS Project
     SPDX-License-Identifier: Apache-2.0
 -->
-<vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="24dp"
-    android:height="24dp"
-    android:viewportWidth="960"
-    android:viewportHeight="960"
-    android:autoMirrored="true">
-    <path
-        android:fillColor="@color/icon_color_you"
-        android:pathData="M504,480L320,296L376,240L616,480L376,720L320,664L504,480Z"/>
-</vector>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/sym_keyboard_next"
+          android:tint="@color/icon_color_you" />
+</layer-list>
