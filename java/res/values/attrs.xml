@@ -241,6 +241,7 @@
             <enum name="LXXLight" value="3" />
             <enum name="LXXDark" value="4" />
             <enum name="You" value="6" />
+            <enum name="OLED" value="7" />
         </attr>
         <!-- Touch position correction -->
         <attr name="touchPositionCorrectionData" format="reference" />
