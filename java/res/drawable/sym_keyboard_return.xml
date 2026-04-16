@@ -10,7 +10,7 @@
     android:viewportHeight="960"
     android:autoMirrored="true">
     <path
-        android:fillColor="@color/icon_color_you"
-        android:pathData="M560,720L320,480L560,240L616,296L432,480L616,664L560,720Z"/>
+        android:fillColor="?attr/keyIconTint"
+        android:pathData="M360,720L120,480L360,240L416,296L272,440L760,440L760,280L840,280L840,520L272,520L416,664L360,720Z"/>
 </vector>
 

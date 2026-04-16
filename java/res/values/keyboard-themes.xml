@@ -24,6 +24,7 @@
         <item>@string/keyboard_theme_material_dark</item>
         <item>@string/keyboard_theme_material_follow_system</item>
         <item>@string/keyboard_theme_material_you</item>
+        <item>@string/keyboard_theme_oled</item>
     </string-array>
     <!-- An element must be a keyboard theme id of
          {@link com.android.inputmethod.keyboard.KeyboardTheme#THEME_ID_ICS} etc. -->
@@ -32,5 +33,6 @@
         <item>4</item>
         <item>5</item>
         <item>6</item>
+        <item>7</item>
     </integer-array>
 </resources>
