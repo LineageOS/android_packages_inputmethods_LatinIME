@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c3e27f6e_6a77d573",
+        "filename": "java/res/drawable/sym_keyboard_space.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-04-20T13:26:03Z",
+      "side": 1,
+      "message": "nope",
+      "revId": "59e6a28c98e08a8979611da4e5d1d09ba342b27c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
