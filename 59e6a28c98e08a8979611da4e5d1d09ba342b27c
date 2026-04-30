@@ -16,6 +16,24 @@
       "message": "nope",
       "revId": "59e6a28c98e08a8979611da4e5d1d09ba342b27c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dd765451_1974dad3",
+        "filename": "java/res/drawable/sym_keyboard_space.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 24418
+      },
+      "writtenOn": "2026-04-30T02:10:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c3e27f6e_6a77d573",
+      "revId": "59e6a28c98e08a8979611da4e5d1d09ba342b27c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
