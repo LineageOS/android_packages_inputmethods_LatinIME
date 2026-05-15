@@ -20,4 +20,7 @@
     <string name="prefs_keyboard_height_scale">Skala ketinggian keyboard</string>
     <string name="number_row">Baris angka</string>
     <string name="number_row_summary">Selalu tampilkan baris angka untuk semua tata letak yang menampilkan 4 baris tombol</string>
+    <string name="show_longpress_hints">Tampilkan petunjuk tombol tekan lama</string>
+    <string name="show_longpress_hints_summary">Menampilkan petunjuk tekan lama untuk tombol yang didukung</string>
+    <string name="show_emoji_key">Tampilkan emoji</string>
 </resources>
