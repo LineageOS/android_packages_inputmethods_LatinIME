@@ -171,6 +171,8 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
     @UsedForTesting final KeyboardSwitcher mKeyboardSwitcher;
     private final SubtypeState mSubtypeState = new SubtypeState();
     private EmojiAltPhysicalKeyDetector mEmojiAltPhysicalKeyDetector;
+    private final SymbolAltPhysicalKeyDetector mSymbolAltPhysicalKeyDetector =
+            new SymbolAltPhysicalKeyDetector();
     private StatsUtilsManager mStatsUtilsManager;
     // Working variable for {@link #startShowingInputView()} and
     // {@link #onEvaluateInputViewShown()}.
@@ -1881,6 +1883,32 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
     // Hooks for hardware keyboard
     @Override
     public boolean onKeyDown(final int keyCode, final KeyEvent keyEvent) {
+        // Physical Alt symbol/number layer. When enabled, Alt drives the symbol layer.
+        final SettingsValues settingsValues = mSettings.getCurrent();
+        if (settingsValues != null && settingsValues.mEnableSymbolAltPhysicalKey) {
+            if (SymbolAltPhysicalKeyDetector.isAltKey(keyCode)) {
+                mSymbolAltPhysicalKeyDetector.onAltKey(keyEvent);
+                // Consume Alt so the system does not apply its default handling.
+                return true;
+            }
+            if (mSymbolAltPhysicalKeyDetector.isAltActive() && keyEvent.isPrintingKey()) {
+                final int codePoint = mSymbolAltPhysicalKeyDetector.resolveAltCodePoint(keyEvent);
+                if (codePoint != Event.NOT_A_CODE_POINT) {
+                    final boolean isKeyRepeat = (0 != keyEvent.getRepeatCount());
+                    final Event event = Event.createHardwareKeypressEvent(codePoint, keyCode,
+                            null /* next */, isKeyRepeat);
+                    mInputLogic.onCodeInput(settingsValues, event,
+                            mKeyboardSwitcher.getKeyboardShiftMode(),
+                            mKeyboardSwitcher.getCurrentKeyboardScriptId(), mHandler);
+                    mSymbolAltPhysicalKeyDetector.onAltCodePointEmitted();
+                    // Remember the key so we also swallow its matching key-up.
+                    final long keyIdentifier =
+                            keyEvent.getDeviceId() << 32 + keyEvent.getKeyCode();
+                    mInputLogic.mCurrentlyPressedHardwareKeys.add(keyIdentifier);
+                    return true;
+                }
+            }
+        }
         if (mEmojiAltPhysicalKeyDetector == null) {
             mEmojiAltPhysicalKeyDetector = new EmojiAltPhysicalKeyDetector(
                     getApplicationContext().getResources());
@@ -1906,6 +1934,19 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
 
     @Override
     public boolean onKeyUp(final int keyCode, final KeyEvent keyEvent) {
+        // Physical Alt symbol/number layer (see onKeyDown).
+        final SettingsValues settingsValues = mSettings.getCurrent();
+        if (settingsValues != null && settingsValues.mEnableSymbolAltPhysicalKey) {
+            if (SymbolAltPhysicalKeyDetector.isAltKey(keyCode)) {
+                mSymbolAltPhysicalKeyDetector.onAltKey(keyEvent);
+                return true;
+            }
+            // Swallow the key-up for any key whose down we consumed as an Alt-layer symbol.
+            final long keyIdentifier = keyEvent.getDeviceId() << 32 + keyEvent.getKeyCode();
+            if (mInputLogic.mCurrentlyPressedHardwareKeys.remove(keyIdentifier)) {
+                return true;
+            }
+        }
         if (mEmojiAltPhysicalKeyDetector == null) {
             mEmojiAltPhysicalKeyDetector = new EmojiAltPhysicalKeyDetector(
                     getApplicationContext().getResources());

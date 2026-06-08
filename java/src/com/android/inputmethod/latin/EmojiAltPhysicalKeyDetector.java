@@ -23,6 +23,7 @@ import android.view.KeyEvent;
 
 import com.android.inputmethod.keyboard.KeyboardSwitcher;
 import com.android.inputmethod.latin.settings.Settings;
+import com.android.inputmethod.latin.settings.SettingsValues;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -171,10 +172,18 @@ final class EmojiAltPhysicalKeyDetector {
     }
 
     private static boolean shouldProcessEvent(@Nonnull final KeyEvent keyEvent) {
-        if (!Settings.getInstance().getCurrent().mEnableEmojiAltPhysicalKey) {
+        final SettingsValues settingsValues = Settings.getInstance().getCurrent();
+        if (!settingsValues.mEnableEmojiAltPhysicalKey) {
             // The feature is disabled.
             if (DEBUG) {
                 Log.d(TAG, "shouldProcessEvent(): Disabled");
+            }
+            return false;
+        }
+        if (settingsValues.mEnableSymbolAltPhysicalKey) {
+            // The Alt symbol/number layer owns the Alt key; don't also open the emoji palette.
+            if (DEBUG) {
+                Log.d(TAG, "shouldProcessEvent(): Suppressed by Alt symbol layer");
             }
             return false;
         }
