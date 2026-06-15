@@ -19,7 +19,7 @@
     <string name="keyboard_theme_material_follow_system">ماتیریال - پەیڕەوی ڕێکخستنی سیستم بکە</string>
     <string name="prefs_keyboard_height_scale">قەبارەی بەرزی تەختەکلیل</string>
     <string name="number_row">ڕیزە ژمارە</string>
-    <string name="number_row_summary">هەمیشە ڕیزە ژمارە نیشان بدە بۆ ئەو نەخشەیانەی کە لە ٤ ڕیز پێکدێن</string>
+    <string name="number_row_summary">هەمیشە ڕیزە ژمارە نیشان بدە بۆ ئەو نەخشەیانەی کە لە 4 ڕیز پێکدێن</string>
     <string name="space_trackpad">بۆشایی وەک تراکپاد</string>
     <string name="space_trackpad_summary">دەست بەسەر دوگمەی بۆشاییدا بهێنە بۆ جوڵاندنی نیشاندەر (Cursor)</string>
     <string name="show_longpress_hints">نیشاندانی ئاماژەی داگرتنی درێژ</string>
