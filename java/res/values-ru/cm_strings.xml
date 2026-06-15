@@ -20,8 +20,11 @@
     <string name="prefs_keyboard_height_scale">Высота клавиатуры</string>
     <string name="number_row">Ряд цифр</string>
     <string name="number_row_summary">Для всех раскладок, имеющих 4 ряда клавиш, всегда показывать ряд цифр</string>
+    <string name="number_row_password">Строка цифр для паролей</string>
+    <string name="number_row_password_summary">Для всех раскладок, имеющих 4 ряда клавиш, показывать ряд цифр при вводе пароля</string>
     <string name="space_trackpad">Пробел как трекпад</string>
     <string name="space_trackpad_summary">Перемещать курсор свайпом по клавише пробела</string>
+    <string name="backspace_trackpad_summary">Проведите пальцем по клавише backspace для удаления слов</string>
     <string name="show_longpress_hints">Подсказки при длительном нажатии клавиш</string>
     <string name="show_longpress_hints_summary">Показывать всплывающие подсказки при длительном нажатии клавиш</string>
     <string name="show_emoji_key">Показать клавишу смайликов</string>
