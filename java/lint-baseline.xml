@@ -1,70 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<issues format="6" by="lint 8.4.0-alpha01" type="baseline" client="" dependencies="true" name="" variant="all" version="8.4.0-alpha01">
+<issues format="6" by="lint 8.4.0-alpha08" type="baseline" client="" dependencies="true" name="" variant="all" version="8.4.0-alpha08">
 
     <issue
         id="NewApi"
-        message="Call requires API level 23 (current min is 21): `android.graphics.Paint#hasGlyph`"
-        errorLine1="            return paint.hasGlyph(switzerland);"
-        errorLine2="                         ~~~~~~~~">
+        message="`&lt;androidx.core.app.CoreComponentFactory&gt;` requires API level 28 (current min is 23)"
+        errorLine1="    &lt;application"
+        errorLine2="    ^">
         <location
-            file="packages/inputmethods/LatinIME/java/src/com/android/inputmethod/keyboard/emoji/EmojiCategory.java"
-            line="445"
-            column="26"/>
+            file="./out/soong/.intermediates/packages/inputmethods/LatinIME/java/LatinIME/android_common/manifest_merger/AndroidManifest.xml"
+            line="74"
+            column="5"/>
     </issue>
 
     <issue
         id="NewApi"
-        message="Call requires API level 23 (current min is 21): `android.graphics.Paint#hasGlyph`"
-        errorLine1="            return paint.hasGlyph(cheese);"
-        errorLine2="                         ~~~~~~~~">
-        <location
-            file="packages/inputmethods/LatinIME/java/src/com/android/inputmethod/keyboard/emoji/EmojiCategory.java"
-            line="461"
-            column="26"/>
-    </issue>
-
-    <issue
-        id="NewApi"
-        message="Call requires API level 23 (current min is 21): `android.content.Context#getSystemService`"
-        errorLine1="        final WindowManager wm = getSystemService(WindowManager.class);"
-        errorLine2="                                 ~~~~~~~~~~~~~~~~">
-        <location
-            file="packages/inputmethods/LatinIME/java/src/com/android/inputmethod/latin/LatinIME.java"
-            line="605"
-            column="34"/>
-    </issue>
-
-    <issue
-        id="NewApi"
-        message="Call requires API level 23 (current min is 21): `android.app.ActivityOptions#makeBasic`"
-        errorLine1="                ActivityOptions.makeBasic().setLaunchDisplayId(currentDisplayId).toBundle());"
-        errorLine2="                                ~~~~~~~~~">
-        <location
-            file="packages/inputmethods/LatinIME/java/src/com/android/inputmethod/latin/LatinIME.java"
-            line="1857"
-            column="33"/>
-    </issue>
-
-    <issue
-        id="NewApi"
-        message="Call requires API level 26 (current min is 21): `android.app.ActivityOptions#setLaunchDisplayId`"
+        message="Call requires API level 26 (current min is 23): `android.app.ActivityOptions#setLaunchDisplayId`"
         errorLine1="                ActivityOptions.makeBasic().setLaunchDisplayId(currentDisplayId).toBundle());"
         errorLine2="                                            ~~~~~~~~~~~~~~~~~~">
         <location
             file="packages/inputmethods/LatinIME/java/src/com/android/inputmethod/latin/LatinIME.java"
             line="1857"
             column="45"/>
-    </issue>
-
-    <issue
-        id="NewApi"
-        message="Call requires API level 23 (current min is 21): `android.content.Context#getSystemService`"
-        errorLine1="        final UserManager userManager = context.getSystemService(UserManager.class);"
-        errorLine2="                                                ~~~~~~~~~~~~~~~~">
-        <location
-            file="packages/inputmethods/LatinIME/java/src/com/android/inputmethod/compat/UserManagerCompatUtils.java"
-            line="69"
-            column="49"/>
     </issue>
 
 </issues>
