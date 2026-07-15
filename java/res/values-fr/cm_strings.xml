@@ -20,8 +20,12 @@
     <string name="prefs_keyboard_height_scale">Hauteur du clavier</string>
     <string name="number_row">Ligne des numéros</string>
     <string name="number_row_summary">Toujours afficher la rangée des chiffres pour tous les agencements comprenant 4 rangées de touches.</string>
+    <string name="number_row_password">Rangée des chiffres pour les mots de passe</string>
+    <string name="number_row_password_summary">Toujours afficher la rangée de chiffres pour tous les claviers à 4 rangées lors de la saisie de mot de passe</string>
     <string name="space_trackpad">Pavé tactile de la barre d\'espace</string>
     <string name="space_trackpad_summary">Glisser sur la barre d\'espace pour déplacer le curseur</string>
+    <string name="backspace_trackpad">Suppression rapide</string>
+    <string name="backspace_trackpad_summary">Faites glisser votre doigt sur la touche retour arrière pour supprimer des mots</string>
     <string name="show_longpress_hints">Afficher les indices d\'appui long sur une touche</string>
     <string name="show_longpress_hints_summary">Affiche les indices d\'appui long pour les touches prises en charge</string>
     <string name="show_emoji_key">Afficher la touche Émoji</string>
