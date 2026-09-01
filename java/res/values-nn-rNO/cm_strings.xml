@@ -20,8 +20,12 @@
     <string name="prefs_keyboard_height_scale">Skalering av tastaturhøgd</string>
     <string name="number_row">Talrad</string>
     <string name="number_row_summary">Vis alltid ei talrad for alle oppsett med fire rader</string>
+    <string name="number_row_password">Talrad for passord</string>
+    <string name="number_row_password_summary">Vis alltid ei talrad i alle oppsett med 4 tasterader ved inntasting av passord</string>
     <string name="space_trackpad">Styreflate på mellomromstasten</string>
     <string name="space_trackpad_summary">Sveip på mellomromstasten for å flytta skrivemerket</string>
+    <string name="backspace_trackpad">Styreflate på rettetasten</string>
+    <string name="backspace_trackpad_summary">Sveip over rettetasten for å sletta ord</string>
     <string name="show_longpress_hints">Vis hint for lange trykk</string>
     <string name="show_longpress_hints_summary">Viser hint for lange trykk på tastar som støttar det</string>
     <string name="show_emoji_key">Vis emoji-tast</string>
