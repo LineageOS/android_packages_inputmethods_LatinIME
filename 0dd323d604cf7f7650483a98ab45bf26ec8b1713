@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "694e0286_1f1ef404",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 37894
+      },
+      "writtenOn": "2026-09-02T09:59:34Z",
+      "side": 1,
+      "message": "I have not commited the generated main_sk.dict file, I am not sure if I should have, (or if it gets generated in the build process somehow, but that didn\u0027t seem to be the case), given that they are present in the repo for some but not all languages. Sorry if I pinged anyone unnecessarily, this is the first time I\u0027m using gerrit, it\u0027s a bit confusing.",
+      "revId": "0dd323d604cf7f7650483a98ab45bf26ec8b1713",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
