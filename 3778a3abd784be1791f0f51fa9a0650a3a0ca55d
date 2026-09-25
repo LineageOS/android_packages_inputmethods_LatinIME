@@ -70,6 +70,24 @@
       "parentUuid": "cca47196_55e1dd69",
       "revId": "3778a3abd784be1791f0f51fa9a0650a3a0ca55d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fc95a33b_3cf87857",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-09-25T19:25:40Z",
+      "side": 1,
+      "message": "Is android 17 shipping with unicode 17.0?",
+      "parentUuid": "bd978f9f_dc9d5635",
+      "revId": "3778a3abd784be1791f0f51fa9a0650a3a0ca55d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
