@@ -106,6 +106,24 @@
       "parentUuid": "fc95a33b_3cf87857",
       "revId": "3778a3abd784be1791f0f51fa9a0650a3a0ca55d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7c06f758_e6869bec",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2026-09-25T19:48:41Z",
+      "side": 1,
+      "message": "Mentioned in beta.2 that it is there https://developer.android.com/blog/posts/the-second-beta-of-android-17",
+      "parentUuid": "fc8ab21c_072af166",
+      "revId": "3778a3abd784be1791f0f51fa9a0650a3a0ca55d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
