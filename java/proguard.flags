@@ -47,3 +47,6 @@
 # TODO: remove once used in code.
 -keep class com.android.inputmethod.keyboard.KeyboardLayout { *; }
 
+-keep public class * extends androidx.fragment.app.Fragment {
+    public <init>();
+}

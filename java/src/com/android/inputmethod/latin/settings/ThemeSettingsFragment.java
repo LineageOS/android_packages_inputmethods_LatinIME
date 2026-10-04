@@ -19,25 +19,26 @@ package com.android.inputmethod.latin.settings;
 import android.content.Context;
 import android.content.res.Resources;
 import android.os.Bundle;
-import android.preference.Preference;
-import android.preference.PreferenceScreen;
+import androidx.preference.Preference;
+import androidx.preference.PreferenceScreen;
 
 import com.android.inputmethod.keyboard.KeyboardTheme;
 import com.android.inputmethod.latin.R;
-import com.android.inputmethod.latin.settings.RadioButtonPreference.OnRadioButtonClickedListener;
+import com.android.settingslib.widget.SelectorWithWidgetPreference;
 
 /**
  * "Keyboard theme" settings sub screen.
  */
 public final class ThemeSettingsFragment extends SubScreenFragment
-        implements OnRadioButtonClickedListener {
+        implements SelectorWithWidgetPreference.OnClickListener {
     private int mSelectedThemeId;
 
-    static class KeyboardThemePreference extends RadioButtonPreference {
+    static class KeyboardThemePreference extends SelectorWithWidgetPreference {
         final int mThemeId;
 
         KeyboardThemePreference(final Context context, final String name, final int id) {
             super(context);
+            setPersistent(false);
             setTitle(name);
             mThemeId = id;
         }
@@ -70,13 +71,13 @@ public final class ThemeSettingsFragment extends SubScreenFragment
             final KeyboardThemePreference pref = new KeyboardThemePreference(
                     context, keyboardThemeNames[index], keyboardThemeIds[index]);
             screen.addPreference(pref);
-            pref.setOnRadioButtonClickedListener(this);
+            pref.setOnClickListener(this);
         }
         mSelectedThemeId = KeyboardTheme.getSelectedKeyboardThemeId(context);
     }
 
     @Override
-    public void onRadioButtonClicked(final RadioButtonPreference preference) {
+    public void onRadioButtonClicked(final SelectorWithWidgetPreference preference) {
         if (preference instanceof KeyboardThemePreference) {
             final KeyboardThemePreference pref = (KeyboardThemePreference)preference;
             mSelectedThemeId = pref.mThemeId;
@@ -104,7 +105,7 @@ public final class ThemeSettingsFragment extends SubScreenFragment
             if (preference instanceof KeyboardThemePreference) {
                 final KeyboardThemePreference pref = (KeyboardThemePreference)preference;
                 final boolean selected = (mSelectedThemeId == pref.mThemeId);
-                pref.setSelected(selected);
+                pref.setChecked(selected);
             }
         }
     }

@@ -19,8 +19,8 @@ package com.android.inputmethod.latin.spellcheck;
 import android.Manifest;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.preference.PreferenceScreen;
-import android.preference.SwitchPreference;
+import androidx.preference.PreferenceScreen;
+import androidx.preference.SwitchPreference;
 import android.text.TextUtils;
 
 import com.android.inputmethod.latin.R;

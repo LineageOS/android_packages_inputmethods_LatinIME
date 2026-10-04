@@ -17,21 +17,39 @@
 package com.android.inputmethod.latin.settings;
 
 import android.os.Bundle;
-import android.preference.PreferenceFragment;
-import android.view.View;
-import android.widget.ListView;
 
-/**
- * A base abstract class for a {@link PreferenceFragment} that removes divider lines
- */
-public abstract class CustomPreferenceFragment extends PreferenceFragment {
+import androidx.annotation.NonNull;
+import androidx.preference.Preference;
+import androidx.preference.PreferenceDialogFragmentCompat;
+
+import com.android.settingslib.widget.SettingsBasePreferenceFragment;
+
+public abstract class CustomPreferenceFragment extends SettingsBasePreferenceFragment {
+    private static final String DIALOG_FRAGMENT_TAG = "CustomPreferenceFragment.DIALOG";
+
     @Override
-    public void onActivityCreated(Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
+    public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
+    }
 
-        // remove dividers
-        View rootView = getView();
-        ListView list = (ListView) rootView.findViewById(android.R.id.list);
-        list.setDivider(null);
+    @Override
+    public void onDisplayPreferenceDialog(@NonNull final Preference preference) {
+        if (preference instanceof SeekBarDialogPreference) {
+            showPreferenceDialog(SeekBarDialogPreference.SeekBarDialogFragment.newInstance(
+                    preference.getKey()));
+        } else if (preference instanceof CustomInputStylePreference) {
+            showPreferenceDialog(CustomInputStylePreference.CustomInputStyleDialogFragment
+                    .newInstance(preference.getKey()));
+        } else {
+            super.onDisplayPreferenceDialog(preference);
+        }
+    }
+
+    @SuppressWarnings("deprecation")
+    private void showPreferenceDialog(final PreferenceDialogFragmentCompat dialogFragment) {
+        if (getParentFragmentManager().findFragmentByTag(DIALOG_FRAGMENT_TAG) != null) {
+            return;
+        }
+        dialogFragment.setTargetFragment(this, 0);
+        dialogFragment.show(getParentFragmentManager(), DIALOG_FRAGMENT_TAG);
     }
 }
