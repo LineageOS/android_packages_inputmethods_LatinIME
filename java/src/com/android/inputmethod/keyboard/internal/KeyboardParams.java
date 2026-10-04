@@ -24,6 +24,7 @@ import com.android.inputmethod.latin.common.Constants;
 
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.List;
 import java.util.SortedSet;
 import java.util.TreeSet;
 
@@ -150,6 +151,17 @@ public class KeyboardParams {
         for (final Key key : allKeys) {
             final Key filteredKey = Key.removeRedundantMoreKeys(key, lettersOnBaseLayout);
             mSortedKeys.add(mUniqueKeysCache.getUniqueKey(filteredKey));
+        }
+    }
+
+    public void applySplitLayout(final boolean duplicateCenterKeys) {
+        final SplitKeyboardTransformer transformer = new SplitKeyboardTransformer(
+                mLeftPadding, mOccupiedWidth - mRightPadding, duplicateCenterKeys);
+        final List<Key> splitKeys = transformer.transform(new ArrayList<>(mSortedKeys));
+        clearKeys();
+        mAltCodeKeysWhileTyping.clear();
+        for (final Key key : splitKeys) {
+            onAddKey(key);
         }
     }
 
