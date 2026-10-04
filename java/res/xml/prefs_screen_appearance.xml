@@ -26,13 +26,13 @@
         android:fragment="com.android.inputmethod.latin.settings.CustomInputStyleSettingsFragment"
         android:key="custom_input_styles"
         android:title="@string/custom_input_styles_title" />
-    <CheckBoxPreference
+    <SwitchPreferenceCompat
         android:key="pref_split_keyboard"
         android:title="@string/enable_split_keyboard"
         android:summary="@string/enable_split_keyboard_summary"
         android:persistent="true"
         android:defaultValue="false" />
-    <CheckBoxPreference
+    <SwitchPreferenceCompat
         android:key="pref_split_keyboard_duplicate_keys"
         android:title="@string/split_keyboard_duplicate_keys"
         android:summary="@string/split_keyboard_duplicate_keys_summary"
