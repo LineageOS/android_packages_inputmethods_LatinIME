@@ -201,7 +201,7 @@ public final class KeyboardLayoutSet {
         // The KeyboardId is an internal key for a Keyboard object.
 
         mParams.mIsSplitLayoutEnabled = mParams.mIsSplitLayoutEnabledByUser
-                && elementParams.mSupportsSplitLayout;
+                && keyboardLayoutSetElementId <= KeyboardId.ELEMENT_SYMBOLS_SHIFTED;
         final KeyboardId id = new KeyboardId(keyboardLayoutSetElementId, mParams);
         try {
             return getKeyboard(elementParams, id);

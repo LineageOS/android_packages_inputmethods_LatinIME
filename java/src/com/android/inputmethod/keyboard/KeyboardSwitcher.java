@@ -38,6 +38,7 @@ import com.android.inputmethod.latin.LatinIME;
 import com.android.inputmethod.latin.R;
 import com.android.inputmethod.latin.RichInputMethodManager;
 import com.android.inputmethod.latin.WordComposer;
+import com.android.inputmethod.latin.common.Constants;
 import com.android.inputmethod.latin.define.ProductionFlags;
 import com.android.inputmethod.latin.settings.Settings;
 import com.android.inputmethod.latin.settings.SettingsValues;
@@ -132,7 +133,9 @@ public final class KeyboardSwitcher implements KeyboardState.SwitchActions {
         builder.setLanguageSwitchKeyEnabled(mLatinIME.shouldShowLanguageSwitchKey());
         builder.setEmojiKeyEnabled(settingsValues.mShowsEmojiKey);
         builder.setSplitLayoutEnabledByUser(ProductionFlags.IS_SPLIT_KEYBOARD_SUPPORTED
-                && settingsValues.mIsSplitKeyboardEnabled);
+                && settingsValues.mIsSplitKeyboardEnabled
+                && !Constants.isPhone(Settings.readScreenMetrics(res))
+                && res.getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE);
         mKeyboardLayoutSet = builder.build();
         try {
             mState.onLoadKeyboard(currentAutoCapsState, currentRecapitalizeState);
