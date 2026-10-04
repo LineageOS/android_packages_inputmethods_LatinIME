@@ -458,6 +458,37 @@ public class Key implements Comparable<Key> {
         return (filteredMoreKeys == moreKeys) ? key : new Key(key, filteredMoreKeys);
     }
 
+    @Nonnull
+    public static Key copyWithGeometry(@Nonnull final Key key, final int slotLeft,
+            final int slotRight, @Nonnull final Rect hitBox) {
+        return new Key(key, slotLeft, slotRight, hitBox);
+    }
+
+    private Key(@Nonnull final Key key, final int slotLeft, final int slotRight,
+            @Nonnull final Rect hitBox) {
+        mCode = key.mCode;
+        mLabel = key.mLabel;
+        mHintLabel = key.mHintLabel;
+        mLabelFlags = key.mLabelFlags;
+        mIconId = key.mIconId;
+        mHorizontalGap = key.mHorizontalGap;
+        mWidth = slotRight - slotLeft - mHorizontalGap;
+        mHeight = key.mHeight;
+        mVerticalGap = key.mVerticalGap;
+        mX = slotLeft + mHorizontalGap / 2;
+        mY = key.mY;
+        mHitBox.set(hitBox);
+        mMoreKeys = key.mMoreKeys;
+        mMoreKeysColumnAndFlags = key.mMoreKeysColumnAndFlags;
+        mBackgroundType = key.mBackgroundType;
+        mActionFlags = key.mActionFlags;
+        mKeyVisualAttributes = key.mKeyVisualAttributes;
+        mOptionalAttributes = key.mOptionalAttributes;
+        mHashCode = computeHashCode(this);
+        mPressed = key.mPressed;
+        mEnabled = key.mEnabled;
+    }
+
     private static boolean needsToUpcase(final int labelFlags, final int keyboardElementId) {
         if ((labelFlags & LABEL_FLAGS_PRESERVE_CASE) != 0) return false;
         switch (keyboardElementId) {
