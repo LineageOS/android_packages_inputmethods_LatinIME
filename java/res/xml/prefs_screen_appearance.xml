@@ -29,6 +29,14 @@
     <CheckBoxPreference
         android:key="pref_split_keyboard"
         android:title="@string/enable_split_keyboard"
+        android:summary="@string/enable_split_keyboard_summary"
         android:persistent="true"
         android:defaultValue="false" />
+    <CheckBoxPreference
+        android:key="pref_split_keyboard_duplicate_keys"
+        android:title="@string/split_keyboard_duplicate_keys"
+        android:summary="@string/split_keyboard_duplicate_keys_summary"
+        android:dependency="pref_split_keyboard"
+        android:persistent="true"
+        android:defaultValue="true" />
 </PreferenceScreen>

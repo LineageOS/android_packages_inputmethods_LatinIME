@@ -208,6 +208,20 @@ public class Keyboard {
         }
     }
 
+    // Native proximity info keeps only the last key per code, so taps on other copies move there.
+    public int getSplitDuplicateOffsetX(@Nonnull final Key key) {
+        if (!mId.mIsSplitDuplicateKeys) {
+            return 0;
+        }
+        Key scoredKey = key;
+        for (final Key k : getSortedKeys()) {
+            if (k.getCode() == key.getCode() && !k.isSpacer()) {
+                scoredKey = k;
+            }
+        }
+        return scoredKey.getX() - key.getX();
+    }
+
     public boolean hasKey(@Nonnull final Key aKey) {
         if (mKeyCache.indexOfValue(aKey) >= 0) {
             return true;

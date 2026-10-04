@@ -33,6 +33,7 @@ public final class AppearanceSettingsFragment extends SubScreenFragment {
         if (!ProductionFlags.IS_SPLIT_KEYBOARD_SUPPORTED ||
                 Constants.isPhone(Settings.readScreenMetrics(getResources()))) {
             removePreference(Settings.PREF_ENABLE_SPLIT_KEYBOARD);
+            removePreference(Settings.PREF_SPLIT_KEYBOARD_DUPLICATE_KEYS);
         }
     }
 

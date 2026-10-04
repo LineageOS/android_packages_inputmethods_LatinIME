@@ -153,6 +153,15 @@ public abstract class KeyboardLayoutSetTestsBase extends AndroidTestCase {
     protected KeyboardLayoutSet createKeyboardLayoutSet(final InputMethodSubtype subtype,
             final EditorInfo editorInfo, final boolean voiceInputKeyEnabled,
             final boolean languageSwitchKeyEnabled, final boolean splitLayoutEnabled) {
+        return createKeyboardLayoutSet(subtype, editorInfo, voiceInputKeyEnabled,
+                languageSwitchKeyEnabled, splitLayoutEnabled,
+                false /* splitDuplicateKeysEnabled */);
+    }
+
+    protected KeyboardLayoutSet createKeyboardLayoutSet(final InputMethodSubtype subtype,
+            final EditorInfo editorInfo, final boolean voiceInputKeyEnabled,
+            final boolean languageSwitchKeyEnabled, final boolean splitLayoutEnabled,
+            final boolean splitDuplicateKeysEnabled) {
         final Context context = getContext();
         final Resources res = context.getResources();
         final int keyboardWidth = ResourceUtils.getDefaultKeyboardWidth(context);
@@ -162,7 +171,8 @@ public abstract class KeyboardLayoutSetTestsBase extends AndroidTestCase {
                 .setSubtype(RichInputMethodSubtype.getRichInputMethodSubtype(subtype))
                 .setVoiceInputKeyEnabled(voiceInputKeyEnabled)
                 .setLanguageSwitchKeyEnabled(languageSwitchKeyEnabled)
-                .setSplitLayoutEnabledByUser(splitLayoutEnabled);
+                .setSplitLayoutEnabledByUser(splitLayoutEnabled)
+                .setSplitDuplicateKeysEnabled(splitDuplicateKeysEnabled);
         return builder.build();
     }
 }

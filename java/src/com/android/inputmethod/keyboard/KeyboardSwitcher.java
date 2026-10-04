@@ -136,6 +136,7 @@ public final class KeyboardSwitcher implements KeyboardState.SwitchActions {
                 && settingsValues.mIsSplitKeyboardEnabled
                 && !Constants.isPhone(Settings.readScreenMetrics(res))
                 && res.getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE);
+        builder.setSplitDuplicateKeysEnabled(settingsValues.mSplitKeyboardDuplicateKeys);
         mKeyboardLayoutSet = builder.build();
         try {
             mState.onLoadKeyboard(currentAutoCapsState, currentRecapitalizeState);

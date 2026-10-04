@@ -876,7 +876,7 @@ public class KeyboardBuilder<KP extends KeyboardParams> {
 
     private void endKeyboard() {
         if (mParams.mId.mIsSplitLayout) {
-            mParams.applySplitLayout(false /* duplicateCenterKeys */);
+            mParams.applySplitLayout(mParams.mId.mIsSplitDuplicateKeys);
         }
         mParams.removeRedundantMoreKeys();
         // {@link #parseGridRows(XmlPullParser,boolean)} may populate keyboard rows higher than
