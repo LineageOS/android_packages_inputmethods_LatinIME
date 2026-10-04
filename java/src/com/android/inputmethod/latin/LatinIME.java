@@ -100,6 +100,7 @@ import com.android.inputmethod.latin.utils.IntentUtils;
 import com.android.inputmethod.latin.utils.JniUtils;
 import com.android.inputmethod.latin.utils.LeakGuardHandlerWrapper;
 import com.android.inputmethod.latin.utils.StatsUtils;
+import com.android.inputmethod.latin.utils.SplitKeyboardUtils;
 import com.android.inputmethod.latin.utils.StatsUtilsManager;
 import com.android.inputmethod.latin.utils.SubtypeLocaleUtils;
 import com.android.inputmethod.latin.utils.ViewLayoutUtils;
@@ -1413,6 +1414,16 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
     }
 
     @Override
+    public void toggleSplitKeyboard() {
+        SplitKeyboardUtils.toggleSplitKeyboard(PreferenceManager.getDefaultSharedPreferences(this));
+        loadSettings();
+        if (mKeyboardSwitcher.getMainKeyboardView() != null) {
+            mKeyboardSwitcher.loadKeyboard(getCurrentInputEditorInfo(), mSettings.getCurrent(),
+                    getCurrentAutoCapsState(), getCurrentRecapitalizeState());
+        }
+    }
+
+    @Override
     public void onRequestPermissionsResult(boolean allGranted) {
         ImportantNoticeUtils.updateContactsNoticeShown(this /* context */);
         setNeutralSuggestionStrip();
@@ -1693,6 +1704,7 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
                 && currentSettingsValues.isSuggestionsEnabledPerUserSettings();
         final boolean shouldShowSuggestionsStripUnlessPassword = shouldShowImportantNotice
                 || currentSettingsValues.mShowsVoiceInputKey
+                || SplitKeyboardUtils.isSplitKeyboardAvailable(getResources())
                 || shouldShowSuggestionCandidates
                 || currentSettingsValues.isApplicationSpecifiedCompletionsOn();
         final boolean shouldShowSuggestionsStrip = shouldShowSuggestionsStripUnlessPassword

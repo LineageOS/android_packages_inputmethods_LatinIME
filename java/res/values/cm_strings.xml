@@ -62,4 +62,9 @@ disposition rather than other common dispositions for Latin languages. [CHAR LIM
     <!-- Preference item for showing keys near the middle on both halves of the split keyboard [CHAR LIMIT=65] -->
     <string name="split_keyboard_duplicate_keys">Duplicate center keys</string>
     <string name="split_keyboard_duplicate_keys_summary">Show keys near the middle on both halves</string>
+
+    <!-- Spoken description of the suggestion strip key that splits the keyboard into two halves -->
+    <string name="spoken_description_split_keyboard">Split keyboard</string>
+    <!-- Spoken description of the suggestion strip key that joins the split keyboard halves -->
+    <string name="spoken_description_merge_keyboard">Merge keyboard</string>
 </resources>

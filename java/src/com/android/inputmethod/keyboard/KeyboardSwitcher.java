@@ -38,8 +38,6 @@ import com.android.inputmethod.latin.LatinIME;
 import com.android.inputmethod.latin.R;
 import com.android.inputmethod.latin.RichInputMethodManager;
 import com.android.inputmethod.latin.WordComposer;
-import com.android.inputmethod.latin.common.Constants;
-import com.android.inputmethod.latin.define.ProductionFlags;
 import com.android.inputmethod.latin.settings.Settings;
 import com.android.inputmethod.latin.settings.SettingsValues;
 import com.android.inputmethod.latin.utils.CapsModeUtils;
@@ -47,6 +45,7 @@ import com.android.inputmethod.latin.utils.LanguageOnSpacebarUtils;
 import com.android.inputmethod.latin.utils.RecapitalizeStatus;
 import com.android.inputmethod.latin.utils.ResourceUtils;
 import com.android.inputmethod.latin.utils.ScriptUtils;
+import com.android.inputmethod.latin.utils.SplitKeyboardUtils;
 
 import javax.annotation.Nonnull;
 
@@ -132,10 +131,8 @@ public final class KeyboardSwitcher implements KeyboardState.SwitchActions {
         builder.setNumberRowPasswordEnabled(settingsValues.mShowNumberRowPassword);
         builder.setLanguageSwitchKeyEnabled(mLatinIME.shouldShowLanguageSwitchKey());
         builder.setEmojiKeyEnabled(settingsValues.mShowsEmojiKey);
-        builder.setSplitLayoutEnabledByUser(ProductionFlags.IS_SPLIT_KEYBOARD_SUPPORTED
-                && settingsValues.mIsSplitKeyboardEnabled
-                && !Constants.isPhone(Settings.readScreenMetrics(res))
-                && res.getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE);
+        builder.setSplitLayoutEnabledByUser(settingsValues.mIsSplitKeyboardEnabled
+                && SplitKeyboardUtils.isSplitKeyboardAvailable(res));
         builder.setSplitDuplicateKeysEnabled(settingsValues.mSplitKeyboardDuplicateKeys);
         mKeyboardLayoutSet = builder.build();
         try {
