@@ -14,8 +14,11 @@ import com.android.inputmethod.latin.common.Constants;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Locale;
+import java.util.Map;
 
 @SmallTest
 public class SplitKeyboardLayoutTests extends KeyboardLayoutSetTestsBase {
@@ -173,6 +176,83 @@ public class SplitKeyboardLayoutTests extends KeyboardLayoutSetTestsBase {
         final List<Key> sorted = split.getSortedKeys();
         for (final Key key : split.mAltCodeKeysWhileTyping) {
             assertTrue("stale alt-code key " + key, sorted.contains(key));
+        }
+    }
+
+    private Keyboard buildDuplicate(final boolean duplicate) {
+        final InputMethodSubtype subtype = getSubtype(Locale.US, "qwerty");
+        return createKeyboardLayoutSet(subtype, new EditorInfo(), false, false,
+                true /* split */, duplicate).getKeyboard(KeyboardId.ELEMENT_ALPHABET);
+    }
+
+    public void testDuplicateFlagChangesKeyboardId() {
+        final Keyboard off = buildDuplicate(false);
+        final Keyboard on = buildDuplicate(true);
+        assertFalse(off.mId.mIsSplitDuplicateKeys);
+        assertTrue(on.mId.mIsSplitDuplicateKeys);
+        assertFalse(off.mId.equals(on.mId));
+    }
+
+    public void testDuplicateFlagIgnoredWhenNotSplit() {
+        final InputMethodSubtype subtype = getSubtype(Locale.US, "qwerty");
+        final Keyboard keyboard = createKeyboardLayoutSet(subtype, new EditorInfo(), false,
+                false, false /* split */, true /* duplicate */)
+                .getKeyboard(KeyboardId.ELEMENT_ALPHABET);
+        assertFalse(keyboard.mId.mIsSplitDuplicateKeys);
+    }
+
+    public void testDuplicatedKeysAppearOncePerSide() {
+        final Keyboard off = buildDuplicate(false);
+        final Keyboard on = buildDuplicate(true);
+        assertEquals(new HashSet<>(describeKeys(off)), new HashSet<>(describeKeys(on)));
+        assertTrue(on.getSortedKeys().size() >= off.getSortedKeys().size());
+
+        final float mid = on.mOccupiedWidth / 2.0f;
+        final Map<String, Integer> leftCount = new HashMap<>();
+        final Map<String, Integer> rightCount = new HashMap<>();
+        for (final Key key : on.getSortedKeys()) {
+            if (key.isSpacer() || key.getCode() == Constants.CODE_SPACE) continue;
+            final String id = key.getY() + ":" + key.getCode() + ":" + key.getLabel();
+            final Map<String, Integer> side = key.getX() < mid ? leftCount : rightCount;
+            side.put(id, side.containsKey(id) ? side.get(id) + 1 : 1);
+        }
+        for (final Map.Entry<String, Integer> e : leftCount.entrySet()) {
+            assertEquals(e.getKey() + " left", 1, (int) e.getValue());
+        }
+        for (final Map.Entry<String, Integer> e : rightCount.entrySet()) {
+            assertEquals(e.getKey() + " right", 1, (int) e.getValue());
+        }
+        assertHalves("duplicate", on);
+        assertNoOverlapInRows("duplicate", on);
+    }
+
+    public void testDuplicateTapsMapOntoScoredCopy() {
+        final Keyboard on = buildDuplicate(true);
+        final Map<Integer, List<Key>> keysByCode = new HashMap<>();
+        for (final Key key : on.getSortedKeys()) {
+            if (key.isSpacer()) continue;
+            if (!keysByCode.containsKey(key.getCode())) {
+                keysByCode.put(key.getCode(), new ArrayList<Key>());
+            }
+            keysByCode.get(key.getCode()).add(key);
+        }
+        int duplicatedCodes = 0;
+        for (final List<Key> copies : keysByCode.values()) {
+            final Key scored = copies.get(copies.size() - 1);
+            assertEquals(scored.toString(), 0, on.getSplitDuplicateOffsetX(scored));
+            if (copies.size() < 2) continue;
+            duplicatedCodes++;
+            final Key other = copies.get(0);
+            assertEquals(other.toString(), scored.getX() - other.getX(),
+                    on.getSplitDuplicateOffsetX(other));
+        }
+        assertTrue("no duplicated keys", duplicatedCodes > 0);
+    }
+
+    public void testNoDuplicateOffsetWithoutDuplicates() {
+        final Keyboard off = buildDuplicate(false);
+        for (final Key key : off.getSortedKeys()) {
+            assertEquals(key.toString(), 0, off.getSplitDuplicateOffsetX(key));
         }
     }
 }
