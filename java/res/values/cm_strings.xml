@@ -55,4 +55,11 @@ disposition rather than other common dispositions for Latin languages. [CHAR LIM
     <!-- Preference item for always showing the emoji key -->
     <string name="show_emoji_key">Show emoji key</string>
     <string name="show_emoji_key_summary">Always show emoji key. When this option is enabled, the language switch key cannot be shown.</string>
+
+    <!-- Summary of the preference item for enabling the split keyboard layout [CHAR LIMIT=65] -->
+    <string name="enable_split_keyboard_summary">Only in landscape</string>
+
+    <!-- Preference item for showing keys near the middle on both halves of the split keyboard [CHAR LIMIT=65] -->
+    <string name="split_keyboard_duplicate_keys">Duplicate center keys</string>
+    <string name="split_keyboard_duplicate_keys_summary">Show keys near the middle on both halves</string>
 </resources>

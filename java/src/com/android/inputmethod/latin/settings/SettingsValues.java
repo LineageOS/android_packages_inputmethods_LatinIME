@@ -94,6 +94,7 @@ public class SettingsValues {
     public final boolean mShouldShowLxxSuggestionUi;
     // Use split layout for keyboard.
     public final boolean mIsSplitKeyboardEnabled;
+    public final boolean mSplitKeyboardDuplicateKeys;
     public final int mScreenMetrics;
 
     // From the input box
@@ -168,6 +169,8 @@ public class SettingsValues {
         mHasHardwareKeyboard = Settings.readHasHardwareKeyboard(res.getConfiguration());
         mEnableMetricsLogging = prefs.getBoolean(Settings.PREF_ENABLE_METRICS_LOGGING, true);
         mIsSplitKeyboardEnabled = prefs.getBoolean(Settings.PREF_ENABLE_SPLIT_KEYBOARD, false);
+        mSplitKeyboardDuplicateKeys = prefs.getBoolean(
+                Settings.PREF_SPLIT_KEYBOARD_DUPLICATE_KEYS, true);
         mScreenMetrics = Settings.readScreenMetrics(res);
 
         mShouldShowLxxSuggestionUi = Settings.SHOULD_SHOW_LXX_SUGGESTION_UI
