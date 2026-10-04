@@ -52,6 +52,7 @@ import com.android.inputmethod.latin.settings.Settings;
 import com.android.inputmethod.latin.settings.SettingsValues;
 import com.android.inputmethod.latin.suggestions.MoreSuggestionsView.MoreSuggestionsListener;
 import com.android.inputmethod.latin.utils.ImportantNoticeUtils;
+import com.android.inputmethod.latin.utils.SplitKeyboardUtils;
 
 import java.util.ArrayList;
 
@@ -61,13 +62,17 @@ public final class SuggestionStripView extends RelativeLayout implements OnClick
         public void showImportantNoticeContents();
         public void pickSuggestionManually(SuggestedWordInfo word);
         public void onCodeInput(int primaryCode, int x, int y, boolean isKeyRepeat);
+        public void toggleSplitKeyboard();
     }
 
     static final boolean DBG = DebugFlags.DEBUG_ENABLED;
     private static final float DEBUG_INFO_TEXT_SIZE_IN_DIP = 6.0f;
+    private static final int SPLIT_KEY_ALPHA_ON = 255;
+    private static final int SPLIT_KEY_ALPHA_OFF = 128;
 
     private final ViewGroup mSuggestionsStrip;
     private final ImageButton mVoiceKey;
+    private final ImageButton mSplitKey;
     private final View mImportantNoticeStrip;
     MainKeyboardView mMainKeyboardView;
 
@@ -140,6 +145,7 @@ public final class SuggestionStripView extends RelativeLayout implements OnClick
 
         mSuggestionsStrip = (ViewGroup)findViewById(R.id.suggestions_strip);
         mVoiceKey = (ImageButton)findViewById(R.id.suggestions_strip_voice_key);
+        mSplitKey = (ImageButton)findViewById(R.id.suggestions_strip_split_key);
         mImportantNoticeStrip = findViewById(R.id.important_notice_strip);
         mStripVisibilityGroup = new StripVisibilityGroup(this, mSuggestionsStrip,
                 mImportantNoticeStrip);
@@ -178,6 +184,8 @@ public final class SuggestionStripView extends RelativeLayout implements OnClick
         keyboardAttr.recycle();
         mVoiceKey.setImageDrawable(iconVoice);
         mVoiceKey.setOnClickListener(this);
+        mSplitKey.setImageTintList(mWordViews.get(0).getTextColors());
+        mSplitKey.setOnClickListener(this);
     }
 
     /**
@@ -194,6 +202,21 @@ public final class SuggestionStripView extends RelativeLayout implements OnClick
         setVisibility(visibility);
         final SettingsValues currentSettingsValues = Settings.getInstance().getCurrent();
         mVoiceKey.setVisibility(currentSettingsValues.mShowsVoiceInputKey ? VISIBLE : INVISIBLE);
+        updateSplitKey();
+    }
+
+    private void updateSplitKey() {
+        if (!SplitKeyboardUtils.isSplitKeyboardAvailable(getResources())) {
+            mSplitKey.setVisibility(INVISIBLE);
+            return;
+        }
+        final boolean isSplit = Settings.getInstance().getCurrent().mIsSplitKeyboardEnabled;
+        mSplitKey.setVisibility(VISIBLE);
+        mSplitKey.setActivated(isSplit);
+        mSplitKey.setImageAlpha(isSplit ? SPLIT_KEY_ALPHA_ON : SPLIT_KEY_ALPHA_OFF);
+        mSplitKey.setContentDescription(getResources().getString(isSplit
+                ? R.string.spoken_description_merge_keyboard
+                : R.string.spoken_description_split_keyboard));
     }
 
     public void setSuggestions(final SuggestedWords suggestedWords, final boolean isRtlLanguage) {
@@ -451,6 +474,11 @@ public final class SuggestionStripView extends RelativeLayout implements OnClick
                 Constants.CODE_UNSPECIFIED, this);
         if (view == mImportantNoticeStrip) {
             mListener.showImportantNoticeContents();
+            return;
+        }
+        if (view == mSplitKey) {
+            mListener.toggleSplitKeyboard();
+            updateSplitKey();
             return;
         }
         if (view == mVoiceKey) {
