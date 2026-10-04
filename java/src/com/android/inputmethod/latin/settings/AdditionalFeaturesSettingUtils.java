@@ -18,7 +18,7 @@ package com.android.inputmethod.latin.settings;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.preference.PreferenceFragment;
+import androidx.preference.PreferenceFragmentCompat;
 import android.view.inputmethod.InputMethodSubtype;
 
 import com.android.inputmethod.latin.RichInputMethodSubtype;
@@ -38,7 +38,7 @@ public class AdditionalFeaturesSettingUtils {
     }
 
     public static void addAdditionalFeaturesPreferences(
-            final Context context, final PreferenceFragment settingsFragment) {
+            final Context context, final PreferenceFragmentCompat settingsFragment) {
         // do nothing.
     }
 

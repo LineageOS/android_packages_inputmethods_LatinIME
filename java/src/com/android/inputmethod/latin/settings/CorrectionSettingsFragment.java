@@ -25,8 +25,8 @@ import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.os.Build;
 import android.os.Bundle;
-import android.preference.Preference;
-import android.preference.SwitchPreference;
+import androidx.preference.Preference;
+import androidx.preference.SwitchPreference;
 import android.text.TextUtils;
 
 import com.android.inputmethod.dictionarypack.DictionarySettingsActivity;

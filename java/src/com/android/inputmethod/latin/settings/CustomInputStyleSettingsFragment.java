@@ -23,8 +23,8 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.os.Bundle;
-import android.preference.Preference;
-import android.preference.PreferenceGroup;
+import androidx.preference.Preference;
+import androidx.preference.PreferenceGroup;
 import androidx.core.view.ViewCompat;
 import android.text.TextUtils;
 import android.util.Log;
@@ -99,20 +99,7 @@ public final class CustomInputStyleSettingsFragment extends CustomPreferenceFrag
         mRichImm = RichInputMethodManager.getInstance();
         addPreferencesFromResource(R.xml.additional_subtype_settings);
         setHasOptionsMenu(true);
-    }
 
-    @Override
-    public View onCreateView(final LayoutInflater inflater, final ViewGroup container,
-            final Bundle savedInstanceState) {
-        final View view = super.onCreateView(inflater, container, savedInstanceState);
-        // For correct display in RTL locales, we need to set the layout direction of the
-        // fragment's top view.
-        ViewCompat.setLayoutDirection(view, ViewCompat.LAYOUT_DIRECTION_LOCALE);
-        return view;
-    }
-
-    @Override
-    public void onActivityCreated(final Bundle savedInstanceState) {
         final Context context = getActivity();
         mSubtypeLocaleAdapter = new CustomInputStylePreference.SubtypeLocaleAdapter(context);
         mKeyboardLayoutSetAdapter =
@@ -131,7 +118,20 @@ public final class CustomInputStyleSettingsFragment extends CustomPreferenceFrag
             getPreferenceScreen().addPreference(
                     CustomInputStylePreference.newIncompleteSubtypePreference(context, this));
         }
+    }
 
+    @Override
+    public View onCreateView(final LayoutInflater inflater, final ViewGroup container,
+            final Bundle savedInstanceState) {
+        final View view = super.onCreateView(inflater, container, savedInstanceState);
+        // For correct display in RTL locales, we need to set the layout direction of the
+        // fragment's top view.
+        ViewCompat.setLayoutDirection(view, ViewCompat.LAYOUT_DIRECTION_LOCALE);
+        return view;
+    }
+
+    @Override
+    public void onActivityCreated(final Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
         if (savedInstanceState != null && savedInstanceState.containsKey(
