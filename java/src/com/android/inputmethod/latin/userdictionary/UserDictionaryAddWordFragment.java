@@ -17,12 +17,12 @@
 package com.android.inputmethod.latin.userdictionary;
 
 import com.android.inputmethod.latin.R;
+import com.android.inputmethod.latin.settings.SettingsBaseActivity;
 import com.android.inputmethod.latin.userdictionary.UserDictionaryAddWordContents.LocaleRenderer;
 import com.android.inputmethod.latin.userdictionary.UserDictionaryLocalePicker.LocationChangedListener;
 
-import android.app.Fragment;
+import androidx.fragment.app.Fragment;
 import android.os.Bundle;
-import android.preference.PreferenceActivity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -155,8 +155,8 @@ public class UserDictionaryAddWordFragment extends Fragment
             final long id) {
         final LocaleRenderer locale = (LocaleRenderer)parent.getItemAtPosition(pos);
         if (locale.isMoreLanguages()) {
-            PreferenceActivity preferenceActivity = (PreferenceActivity)getActivity();
-            preferenceActivity.startPreferenceFragment(new UserDictionaryLocalePicker(), true);
+            ((SettingsBaseActivity) requireActivity()).startFragment(
+                    new UserDictionaryLocalePicker(), null);
         } else {
             mContents.updateLocale(locale.getLocaleString());
         }
