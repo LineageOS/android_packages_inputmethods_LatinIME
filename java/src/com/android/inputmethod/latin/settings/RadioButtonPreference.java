@@ -17,10 +17,10 @@
 package com.android.inputmethod.latin.settings;
 
 import android.content.Context;
-import android.preference.Preference;
-import android.util.AttributeSet;
-import android.view.View;
 import android.widget.RadioButton;
+
+import androidx.preference.Preference;
+import androidx.preference.PreferenceViewHolder;
 
 import com.android.inputmethod.latin.R;
 
@@ -38,26 +38,10 @@ public class RadioButtonPreference extends Preference {
     }
 
     private boolean mIsSelected;
-    private RadioButton mRadioButton;
     private OnRadioButtonClickedListener mListener;
-    private final View.OnClickListener mClickListener = new View.OnClickListener() {
-        @Override
-        public void onClick(final View v) {
-            callListenerOnRadioButtonClicked();
-        }
-    };
 
     public RadioButtonPreference(final Context context) {
-        this(context, null);
-    }
-
-    public RadioButtonPreference(final Context context, final AttributeSet attrs) {
-        this(context, attrs, android.R.attr.preferenceStyle);
-    }
-
-    public RadioButtonPreference(final Context context, final AttributeSet attrs,
-            final int defStyleAttr) {
-        super(context, attrs, defStyleAttr);
+        super(context);
         setWidgetLayoutResource(R.layout.radio_button_preference_widget);
     }
 
@@ -65,19 +49,18 @@ public class RadioButtonPreference extends Preference {
         mListener = listener;
     }
 
-    void callListenerOnRadioButtonClicked() {
+    @Override
+    protected void onClick() {
         if (mListener != null) {
             mListener.onRadioButtonClicked(this);
         }
     }
 
     @Override
-    protected void onBindView(final View view) {
-        super.onBindView(view);
-        mRadioButton = (RadioButton)view.findViewById(R.id.radio_button);
-        mRadioButton.setChecked(mIsSelected);
-        mRadioButton.setOnClickListener(mClickListener);
-        view.setOnClickListener(mClickListener);
+    public void onBindViewHolder(final PreferenceViewHolder holder) {
+        super.onBindViewHolder(holder);
+        final RadioButton radioButton = (RadioButton) holder.findViewById(R.id.radio_button);
+        radioButton.setChecked(mIsSelected);
     }
 
     public boolean isSelected() {
@@ -89,9 +72,6 @@ public class RadioButtonPreference extends Preference {
             return;
         }
         mIsSelected = selected;
-        if (mRadioButton != null) {
-            mRadioButton.setChecked(selected);
-        }
         notifyChanged();
     }
 }
