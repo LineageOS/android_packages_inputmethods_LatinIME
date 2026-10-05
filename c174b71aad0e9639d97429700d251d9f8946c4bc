@@ -16,6 +16,24 @@
       "message": "I\u0027m 99% sure we didn\u0027t make this",
       "revId": "c174b71aad0e9639d97429700d251d9f8946c4bc",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "044fb2de_90dbf943",
+        "filename": "java/res/drawable/ic_split_keyboard.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 34519
+      },
+      "writtenOn": "2026-10-05T07:44:04Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "7d340aa3_df9a56b6",
+      "revId": "c174b71aad0e9639d97429700d251d9f8946c4bc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
