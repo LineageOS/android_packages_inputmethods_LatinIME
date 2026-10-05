@@ -5,12 +5,14 @@
 
 package com.android.inputmethod.keyboard;
 
+import android.content.Context;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodSubtype;
 
 import androidx.test.filters.SmallTest;
 
 import com.android.inputmethod.latin.common.Constants;
+import com.android.inputmethod.latin.utils.SplitKeyboardUtils;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -36,6 +38,19 @@ public class SplitKeyboardLayoutTests extends KeyboardLayoutSetTestsBase {
         return layoutSet.getKeyboard(elementId);
     }
 
+    private Keyboard buildUnsplitPhoneLayout(final Locale locale, final String layout,
+            final int elementId) {
+        final Context tabletContext = getContext();
+        KeyboardLayoutSet.onKeyboardThemeChanged();
+        setContext(SplitKeyboardUtils.createPhoneLayoutContext(tabletContext));
+        try {
+            return build(locale, layout, elementId, false);
+        } finally {
+            setContext(tabletContext);
+            KeyboardLayoutSet.onKeyboardThemeChanged();
+        }
+    }
+
     private static List<String> describeKeys(final Keyboard keyboard) {
         final ArrayList<String> keys = new ArrayList<>();
         for (final Key key : keyboard.getSortedKeys()) {
@@ -47,7 +62,7 @@ public class SplitKeyboardLayoutTests extends KeyboardLayoutSetTestsBase {
     }
 
     private void assertSplit(final Locale locale, final String layout, final int elementId) {
-        final Keyboard plain = build(locale, layout, elementId, false);
+        final Keyboard plain = buildUnsplitPhoneLayout(locale, layout, elementId);
         final Keyboard split = build(locale, layout, elementId, true);
         final String name = layout + "/" + elementId;
         assertTrue(name + " id", split.mId.mIsSplitLayout);
@@ -127,6 +142,30 @@ public class SplitKeyboardLayoutTests extends KeyboardLayoutSetTestsBase {
         assertInnerEdgesAligned(Locale.US, "qwerty", KeyboardId.ELEMENT_ALPHABET);
         assertInnerEdgesAligned(Locale.FRENCH, "azerty", KeyboardId.ELEMENT_ALPHABET);
         assertInnerEdgesAligned(Locale.US, "qwerty", KeyboardId.ELEMENT_SYMBOLS);
+    }
+
+    private static int rowOf(final Keyboard keyboard, final int code) {
+        for (final Key key : keyboard.getSortedKeys()) {
+            if (key.getCode() == code) return key.getY();
+        }
+        throw new AssertionError("no key " + code);
+    }
+
+    public void testSplitUsesPhoneLayout() {
+        final Keyboard keyboard = build(Locale.US, "qwerty", KeyboardId.ELEMENT_ALPHABET, true);
+        final int topRow = rowOf(keyboard, 'q');
+        final int homeRow = rowOf(keyboard, 'a');
+        int topRowLetters = 0;
+        for (final Key key : keyboard.getSortedKeys()) {
+            if (key.getY() == topRow) {
+                assertTrue("top row " + key, key.getCode() != Constants.CODE_DELETE);
+                if (Character.isLetter(key.getCode())) topRowLetters++;
+            }
+            if (key.getY() == homeRow) {
+                assertTrue("home row " + key, key.getCode() != Constants.CODE_ENTER);
+            }
+        }
+        assertEquals(10, topRowLetters);
     }
 
     public void testQwertySplit() {
