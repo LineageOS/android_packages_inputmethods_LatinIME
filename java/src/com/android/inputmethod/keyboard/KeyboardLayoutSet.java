@@ -42,6 +42,7 @@ import com.android.inputmethod.latin.RichInputMethodSubtype;
 import com.android.inputmethod.latin.define.DebugFlags;
 import com.android.inputmethod.latin.utils.InputTypeUtils;
 import com.android.inputmethod.latin.utils.ScriptUtils;
+import com.android.inputmethod.latin.utils.SplitKeyboardUtils;
 import com.android.inputmethod.latin.utils.SubtypeLocaleUtils;
 import com.android.inputmethod.latin.utils.XmlParseUtils;
 
@@ -73,6 +74,7 @@ public final class KeyboardLayoutSet {
     private static final String KEYBOARD_LAYOUT_SET_RESOURCE_PREFIX = "keyboard_layout_set_";
 
     private final Context mContext;
+    private Context mSplitLayoutContext;
     @Nonnull
     private final Params mParams;
 
@@ -212,6 +214,13 @@ public final class KeyboardLayoutSet {
         }
     }
 
+    private Context getSplitLayoutContext() {
+        if (mSplitLayoutContext == null) {
+            mSplitLayoutContext = SplitKeyboardUtils.createPhoneLayoutContext(mContext);
+        }
+        return mSplitLayoutContext;
+    }
+
     @Nonnull
     private Keyboard getKeyboard(final ElementParams elementParams, final KeyboardId id) {
         final SoftReference<Keyboard> ref = sKeyboardCache.get(id);
@@ -223,8 +232,9 @@ public final class KeyboardLayoutSet {
             return cachedKeyboard;
         }
 
+        final Context context = id.mIsSplitLayout ? getSplitLayoutContext() : mContext;
         final KeyboardBuilder<KeyboardParams> builder =
-                new KeyboardBuilder<>(mContext, new KeyboardParams(sUniqueKeysCache));
+                new KeyboardBuilder<>(context, new KeyboardParams(sUniqueKeysCache));
         sUniqueKeysCache.setEnabled(id.isAlphabetKeyboard());
         builder.setAllowRedundantMoreKes(elementParams.mAllowRedundantMoreKeys);
         final int keyboardXmlId = elementParams.mKeyboardXmlId;
