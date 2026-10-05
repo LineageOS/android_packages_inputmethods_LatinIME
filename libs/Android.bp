@@ -1,0 +1,37 @@
+//
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+android_library_import {
+    name: "LatinIME_com.google.android.material_material",
+    aars: ["com/google/android/material/material/1.14.0-alpha09/material-1.14.0-alpha09.aar"],
+    sdk_version: "35",
+    min_sdk_version: "30",
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
+    static_libs: [
+        "androidx.activity_activity",
+        "androidx.annotation_annotation",
+        "androidx.annotation_annotation-experimental",
+        "androidx.appcompat_appcompat",
+        "androidx.cardview_cardview",
+        "androidx-constraintlayout_constraintlayout",
+        "androidx.coordinatorlayout_coordinatorlayout",
+        "androidx.core_core",
+        "androidx.customview_customview",
+        "androidx.drawerlayout_drawerlayout",
+        "androidx.dynamicanimation_dynamicanimation",
+        "androidx.fragment_fragment",
+        "androidx.graphics_graphics-shapes",
+        "androidx.lifecycle_lifecycle-runtime",
+        "androidx.recyclerview_recyclerview",
+        "androidx.resourceinspection_resourceinspection-annotation",
+        "androidx.transition_transition",
+        "androidx.vectordrawable_vectordrawable",
+        "androidx.viewpager2_viewpager2",
+        "error_prone_annotations",
+    ],
+}
