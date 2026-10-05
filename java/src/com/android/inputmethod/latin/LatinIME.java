@@ -33,6 +33,8 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.res.Configuration;
 import android.content.res.Resources;
+import android.graphics.Color;
+import android.graphics.Rect;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.inputmethodservice.InputMethodService;
@@ -53,6 +55,8 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
 import android.view.Window;
+import android.view.WindowInsets;
+import android.view.WindowInsetsController;
 import android.view.WindowManager;
 import android.view.inputmethod.CompletionInfo;
 import android.view.inputmethod.EditorInfo;
@@ -100,6 +104,7 @@ import com.android.inputmethod.latin.utils.IntentUtils;
 import com.android.inputmethod.latin.utils.JniUtils;
 import com.android.inputmethod.latin.utils.LeakGuardHandlerWrapper;
 import com.android.inputmethod.latin.utils.StatsUtils;
+import com.android.inputmethod.latin.utils.FloatingKeyboardUtils;
 import com.android.inputmethod.latin.utils.SplitKeyboardUtils;
 import com.android.inputmethod.latin.utils.StatsUtilsManager;
 import com.android.inputmethod.latin.utils.SubtypeLocaleUtils;
@@ -166,6 +171,7 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
     // TODO: Move these {@link View}s to {@link KeyboardSwitcher}.
     private View mInputView;
     private InsetsUpdater mInsetsUpdater;
+    private final Rect mFloatingPanelRect = new Rect();
     private SuggestionStripView mSuggestionStripView;
 
     private RichInputMethodManager mRichImm;
@@ -1284,6 +1290,19 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
             mInsetsUpdater.setInsets(outInsets);
             return;
         }
+        if (mKeyboardSwitcher.isFloatingKeyboard()) {
+            outInsets.contentTopInsets = inputHeight;
+            outInsets.visibleTopInsets = inputHeight;
+            outInsets.touchableInsets = InputMethodService.Insets.TOUCHABLE_INSETS_REGION;
+            if (mKeyboardSwitcher.isShowingMoreKeysPanel()) {
+                outInsets.touchableRegion.set(0, 0, mInputView.getWidth(), inputHeight);
+            } else {
+                mKeyboardSwitcher.getFloatingPanelRect(mFloatingPanelRect);
+                outInsets.touchableRegion.set(mFloatingPanelRect);
+            }
+            mInsetsUpdater.setInsets(outInsets);
+            return;
+        }
         final int suggestionsHeight = (!mKeyboardSwitcher.isShowingEmojiPalettes()
                 && mSuggestionStripView.getVisibility() == View.VISIBLE)
                 ? mSuggestionStripView.getHeight() : 0;
@@ -1339,6 +1358,9 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
         final SettingsValues settingsValues = mSettings.getCurrent();
         if (isImeSuppressedByHardwareKeyboard()) {
             // If there is a hardware keyboard, disable full screen mode.
+            return false;
+        }
+        if (settingsValues.mIsFloatingKeyboardEnabled) {
             return false;
         }
         // Reread resource value here, because this method is called by the framework as needed.
@@ -1411,6 +1433,31 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
         PermissionsManager.get(this).requestPermissions(
                 this /* PermissionsResultCallback */,
                 null /* activity */, permission.READ_CONTACTS);
+    }
+
+    public void reloadKeyboard() {
+        if (mKeyboardSwitcher.getMainKeyboardView() != null) {
+            mKeyboardSwitcher.loadKeyboard(getCurrentInputEditorInfo(), mSettings.getCurrent(),
+                    getCurrentAutoCapsState(), getCurrentRecapitalizeState());
+        }
+    }
+
+    @Override
+    public void toggleFloatingKeyboard() {
+        FloatingKeyboardUtils.toggleFloatingKeyboard(
+                PreferenceManager.getDefaultSharedPreferences(this));
+        loadSettings();
+        updateFullscreenMode();
+        updateNavigationBarColor();
+        if (mKeyboardSwitcher.getMainKeyboardView() != null) {
+            mKeyboardSwitcher.loadKeyboard(getCurrentInputEditorInfo(), mSettings.getCurrent(),
+                    getCurrentAutoCapsState(), getCurrentRecapitalizeState());
+        }
+        if (hasSuggestionStripView()) {
+            mSuggestionStripView.updateVisibility(
+                    !mSettings.getCurrent().mInputAttributes.mIsPasswordField,
+                    isFullscreenMode());
+        }
     }
 
     @Override
@@ -1702,13 +1749,8 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
         final boolean shouldShowSuggestionCandidates =
                 currentSettingsValues.mInputAttributes.mShouldShowSuggestions
                 && currentSettingsValues.isSuggestionsEnabledPerUserSettings();
-        final boolean shouldShowSuggestionsStripUnlessPassword = shouldShowImportantNotice
-                || currentSettingsValues.mShowsVoiceInputKey
-                || SplitKeyboardUtils.isSplitKeyboardAvailable(getResources())
-                || shouldShowSuggestionCandidates
-                || currentSettingsValues.isApplicationSpecifiedCompletionsOn();
-        final boolean shouldShowSuggestionsStrip = shouldShowSuggestionsStripUnlessPassword
-                && !currentSettingsValues.mInputAttributes.mIsPasswordField;
+        final boolean shouldShowSuggestionsStrip =
+                !currentSettingsValues.mInputAttributes.mIsPasswordField;
         mSuggestionStripView.updateVisibility(shouldShowSuggestionsStrip, isFullscreenMode());
         if (!shouldShowSuggestionsStrip) {
             return;
@@ -2139,8 +2181,19 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
         if (BuildCompatUtils.EFFECTIVE_SDK_INT > Build.VERSION_CODES.R) {
             Drawable bg = mInputView.findViewById(R.id.keyboard_view).getBackground();
             Window w = getWindow().getWindow();
-            if (bg instanceof ColorDrawable) {
+            final boolean isFloating = mSettings.getCurrent().mIsFloatingKeyboardEnabled;
+            if (isFloating) {
+                w.setNavigationBarColor(Color.TRANSPARENT);
+            } else if (bg instanceof ColorDrawable) {
                 w.setNavigationBarColor(((ColorDrawable) bg).getColor());
+            }
+            final WindowInsetsController insetsController = w.getInsetsController();
+            if (insetsController != null) {
+                if (isFloating) {
+                    insetsController.hide(WindowInsets.Type.captionBar());
+                } else {
+                    insetsController.show(WindowInsets.Type.captionBar());
+                }
             }
 
             int nightModeFlags = mDisplayContext.getResources().getConfiguration().uiMode &

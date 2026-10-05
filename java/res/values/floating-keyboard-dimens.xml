@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <dimen name="config_floating_drag_handle_height">40dp</dimen>
+    <dimen name="config_floating_drag_handle_pill_width">48dp</dimen>
+    <dimen name="config_floating_drag_handle_pill_height">4dp</dimen>
+    <dimen name="config_floating_reset_button_margin">8dp</dimen>
+    <dimen name="config_floating_reset_button_drawable_padding">4dp</dimen>
+    <dimen name="config_floating_reset_button_text_size">12sp</dimen>
+</resources>
