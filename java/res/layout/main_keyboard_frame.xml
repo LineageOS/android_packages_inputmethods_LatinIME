@@ -42,4 +42,55 @@
         android:layoutDirection="ltr"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:id="@+id/floating_drag_handle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/config_floating_drag_handle_height"
+        android:contentDescription="@string/floating_keyboard_drag_handle"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/floating_hide_button"
+            android:layout_width="@dimen/config_floating_drag_handle_height"
+            android:layout_height="@dimen/config_floating_drag_handle_height"
+            android:layout_gravity="start|center_vertical"
+            android:scaleType="center"
+            android:src="@drawable/ic_floating_hide_keyboard"
+            android:contentDescription="@string/floating_keyboard_hide"
+            android:background="?android:attr/selectableItemBackgroundBorderless" />
+
+        <ImageView
+            android:id="@+id/floating_switch_ime_button"
+            android:layout_width="@dimen/config_floating_drag_handle_height"
+            android:layout_height="@dimen/config_floating_drag_handle_height"
+            android:layout_gravity="end|center_vertical"
+            android:scaleType="center"
+            android:src="@drawable/ic_floating_switch_ime"
+            android:contentDescription="@string/floating_keyboard_switch_ime"
+            android:background="?android:attr/selectableItemBackgroundBorderless" />
+
+        <View
+            android:id="@+id/floating_drag_handle_pill"
+            android:layout_width="@dimen/config_floating_drag_handle_pill_width"
+            android:layout_height="@dimen/config_floating_drag_handle_pill_height"
+            android:layout_gravity="center"
+            android:background="@drawable/floating_drag_handle_pill" />
+
+        <TextView
+            android:id="@+id/floating_reset_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="@dimen/config_floating_reset_button_margin"
+            android:paddingStart="@dimen/config_floating_reset_button_margin"
+            android:paddingEnd="@dimen/config_floating_reset_button_margin"
+            android:gravity="center_vertical"
+            android:drawableStart="@drawable/ic_floating_reset"
+            android:drawablePadding="@dimen/config_floating_reset_button_drawable_padding"
+            android:text="@string/floating_keyboard_reset"
+            android:textSize="@dimen/config_floating_reset_button_text_size"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:visibility="gone" />
+    </FrameLayout>
 </LinearLayout>

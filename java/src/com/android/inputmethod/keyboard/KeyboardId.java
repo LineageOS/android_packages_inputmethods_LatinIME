@@ -85,6 +85,7 @@ public final class KeyboardId {
     public final boolean mHasShortcutKey;
     public final boolean mIsSplitLayout;
     public final boolean mIsSplitDuplicateKeys;
+    public final boolean mIsFloating;
 
     private final int mHashCode;
 
@@ -105,6 +106,7 @@ public final class KeyboardId {
         mHasShortcutKey = params.mVoiceInputKeyEnabled;
         mIsSplitLayout = params.mIsSplitLayoutEnabled;
         mIsSplitDuplicateKeys = mIsSplitLayout && params.mSplitDuplicateKeysEnabled;
+        mIsFloating = params.mIsFloating;
 
         mHashCode = computeHashCode(this);
     }
@@ -128,7 +130,8 @@ public final class KeyboardId {
                 id.navigatePrevious(),
                 id.mSubtype,
                 id.mIsSplitLayout,
-                id.mIsSplitDuplicateKeys
+                id.mIsSplitDuplicateKeys,
+                id.mIsFloating
         });
     }
 
@@ -152,7 +155,8 @@ public final class KeyboardId {
                 && other.navigatePrevious() == navigatePrevious()
                 && other.mSubtype.equals(mSubtype)
                 && other.mIsSplitLayout == mIsSplitLayout
-                && other.mIsSplitDuplicateKeys == mIsSplitDuplicateKeys;
+                && other.mIsSplitDuplicateKeys == mIsSplitDuplicateKeys
+                && other.mIsFloating == mIsFloating;
     }
 
     private static boolean isAlphabetKeyboard(final int elementId) {
@@ -203,7 +207,7 @@ public final class KeyboardId {
 
     @Override
     public String toString() {
-        return String.format(Locale.ROOT, "[%s %s:%s %dx%d %s %s%s%s%s%s%s%s%s%s%s%s%s]",
+        return String.format(Locale.ROOT, "[%s %s:%s %dx%d %s %s%s%s%s%s%s%s%s%s%s%s%s%s]",
                 elementIdToName(mElementId),
                 mSubtype.getLocale(),
                 mSubtype.getExtraValueOf(KEYBOARD_LAYOUT_SET),
@@ -220,7 +224,8 @@ public final class KeyboardId {
                 (mEmojiKeyEnabled ? " emojiKeyEnabled" : ""),
                 (isMultiLine() ? " isMultiLine" : ""),
                 (mIsSplitLayout ? " isSplitLayout" : ""),
-                (mIsSplitDuplicateKeys ? " isSplitDuplicateKeys" : "")
+                (mIsSplitDuplicateKeys ? " isSplitDuplicateKeys" : ""),
+                (mIsFloating ? " isFloating" : "")
         );
     }
 
