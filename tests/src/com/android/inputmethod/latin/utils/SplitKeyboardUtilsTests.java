@@ -5,6 +5,7 @@
 
 package com.android.inputmethod.latin.utils;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
@@ -72,6 +73,12 @@ public class SplitKeyboardUtilsTests {
             assertTrue("sw" + smallestWidthDp, SplitKeyboardUtils.isSplitKeyboardAvailable(
                     resourcesFor(smallestWidthDp, Configuration.ORIENTATION_LANDSCAPE)));
         }
+    }
+
+    @Test
+    public void testSplitKeyboardHeightIsReduced() {
+        assertEquals(780, SplitKeyboardUtils.getSplitKeyboardHeight(1000));
+        assertEquals(0, SplitKeyboardUtils.getSplitKeyboardHeight(0));
     }
 
     @Test

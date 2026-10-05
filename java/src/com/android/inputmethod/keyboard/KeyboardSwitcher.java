@@ -124,15 +124,17 @@ public final class KeyboardSwitcher implements KeyboardState.SwitchActions {
         final Resources res = mThemeContext.getResources();
         final int keyboardWidth = ResourceUtils.getDefaultKeyboardWidth(mThemeContext);
         final int keyboardHeight = ResourceUtils.getKeyboardHeight(res, settingsValues);
-        builder.setKeyboardGeometry(keyboardWidth, keyboardHeight);
+        final boolean isSplitLayout = settingsValues.mIsSplitKeyboardEnabled
+                && SplitKeyboardUtils.isSplitKeyboardAvailable(res);
+        builder.setKeyboardGeometry(keyboardWidth, SplitKeyboardUtils.isSplitKeyboardAvailable(res)
+                ? SplitKeyboardUtils.getSplitKeyboardHeight(keyboardHeight) : keyboardHeight);
         builder.setSubtype(mRichImm.getCurrentSubtype());
         builder.setVoiceInputKeyEnabled(settingsValues.mShowsVoiceInputKey);
         builder.setNumberRowEnabled(settingsValues.mShowNumberRow);
         builder.setNumberRowPasswordEnabled(settingsValues.mShowNumberRowPassword);
         builder.setLanguageSwitchKeyEnabled(mLatinIME.shouldShowLanguageSwitchKey());
         builder.setEmojiKeyEnabled(settingsValues.mShowsEmojiKey);
-        builder.setSplitLayoutEnabledByUser(settingsValues.mIsSplitKeyboardEnabled
-                && SplitKeyboardUtils.isSplitKeyboardAvailable(res));
+        builder.setSplitLayoutEnabledByUser(isSplitLayout);
         builder.setSplitDuplicateKeysEnabled(settingsValues.mSplitKeyboardDuplicateKeys);
         mKeyboardLayoutSet = builder.build();
         try {
