@@ -84,6 +84,7 @@ public final class Settings implements SharedPreferences.OnSharedPreferenceChang
             "pref_include_other_imes_in_language_switch_list";
     public static final String PREF_CUSTOM_INPUT_STYLES = "custom_input_styles";
     public static final String PREF_ENABLE_SPLIT_KEYBOARD = "pref_split_keyboard";
+    public static final String PREF_FLOATING_KEYBOARD = "pref_floating_keyboard";
     public static final String PREF_SPLIT_KEYBOARD_DUPLICATE_KEYS =
             "pref_split_keyboard_duplicate_keys";
     // TODO: consolidate key preview dismiss delay with the key preview animation parameters.

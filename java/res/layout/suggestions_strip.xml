@@ -53,14 +53,24 @@
             style="?attr/suggestionWordStyle" />
     </LinearLayout>
     <ImageButton
-        android:id="@+id/suggestions_strip_split_key"
+        android:id="@+id/suggestions_strip_float_key"
         android:layout_width="@dimen/config_suggestions_strip_edge_key_width"
         android:layout_height="fill_parent"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"
+        android:src="@drawable/ic_floating_keyboard"
+        android:contentDescription="@string/spoken_description_float_keyboard"
+        style="?attr/suggestionWordStyle" />
+    <ImageButton
+        android:id="@+id/suggestions_strip_split_key"
+        android:layout_width="@dimen/config_suggestions_strip_edge_key_width"
+        android:layout_height="fill_parent"
+        android:layout_toEndOf="@id/suggestions_strip_float_key"
+        android:layout_toRightOf="@id/suggestions_strip_float_key"
+        android:layout_centerVertical="true"
         android:src="@drawable/ic_split_keyboard"
-        android:visibility="invisible"
+        android:visibility="gone"
         android:contentDescription="@string/spoken_description_split_keyboard"
         style="?attr/suggestionWordStyle" />
     <ImageButton

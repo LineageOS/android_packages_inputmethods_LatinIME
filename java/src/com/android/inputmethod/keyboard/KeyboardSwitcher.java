@@ -17,8 +17,11 @@
 package com.android.inputmethod.keyboard;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.Resources;
+import android.graphics.Rect;
+import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.ContextThemeWrapper;
 import android.view.LayoutInflater;
@@ -40,7 +43,9 @@ import com.android.inputmethod.latin.RichInputMethodManager;
 import com.android.inputmethod.latin.WordComposer;
 import com.android.inputmethod.latin.settings.Settings;
 import com.android.inputmethod.latin.settings.SettingsValues;
+import com.android.inputmethod.latin.suggestions.SuggestionStripView;
 import com.android.inputmethod.latin.utils.CapsModeUtils;
+import com.android.inputmethod.latin.utils.FloatingKeyboardUtils;
 import com.android.inputmethod.latin.utils.LanguageOnSpacebarUtils;
 import com.android.inputmethod.latin.utils.RecapitalizeStatus;
 import com.android.inputmethod.latin.utils.ResourceUtils;
@@ -56,6 +61,9 @@ public final class KeyboardSwitcher implements KeyboardState.SwitchActions {
     private View mMainKeyboardFrame;
     private MainKeyboardView mKeyboardView;
     private EmojiPalettesView mEmojiPalettesView;
+    private FloatingKeyboardController mFloatingKeyboardController;
+    private boolean mIsFloating;
+    private int mFloatingKeyboardWidth;
     private LatinIME mLatinIME;
     private RichInputMethodManager mRichImm;
     private boolean mIsHardwareAcceleratedDrawingEnabled;
@@ -122,12 +130,31 @@ public final class KeyboardSwitcher implements KeyboardState.SwitchActions {
         final KeyboardLayoutSet.Builder builder = new KeyboardLayoutSet.Builder(
                 mThemeContext, editorInfo);
         final Resources res = mThemeContext.getResources();
-        final int keyboardWidth = ResourceUtils.getDefaultKeyboardWidth(mThemeContext);
-        final int keyboardHeight = ResourceUtils.getKeyboardHeight(res, settingsValues);
-        final boolean isSplitLayout = settingsValues.mIsSplitKeyboardEnabled
+        final boolean isFloating = settingsValues.mIsFloatingKeyboardEnabled;
+        final boolean isSplitLayout = !isFloating && settingsValues.mIsSplitKeyboardEnabled
                 && SplitKeyboardUtils.isSplitKeyboardAvailable(res);
-        builder.setKeyboardGeometry(keyboardWidth, SplitKeyboardUtils.isSplitKeyboardAvailable(res)
-                ? SplitKeyboardUtils.getSplitKeyboardHeight(keyboardHeight) : keyboardHeight);
+        final int screenWidth = ResourceUtils.getDefaultKeyboardWidth(mThemeContext);
+        final int keyboardWidth;
+        final int keyboardHeight;
+        if (isFloating) {
+            final float density = res.getDisplayMetrics().density;
+            final SharedPreferences prefs =
+                    PreferenceManager.getDefaultSharedPreferences(mLatinIME);
+            final boolean isLandscape =
+                    res.getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE;
+            keyboardWidth = FloatingKeyboardUtils.loadPanelWidth(
+                    prefs, isLandscape, screenWidth, density)
+                    - 2 * FloatingKeyboardUtils.dpToPx(
+                            FloatingKeyboardUtils.PANEL_PADDING_DP, density);
+            keyboardHeight = FloatingKeyboardUtils.loadKeyboardHeight(prefs, isLandscape,
+                    keyboardWidth, res.getDisplayMetrics().heightPixels, density);
+        } else {
+            final int height = ResourceUtils.getKeyboardHeight(res, settingsValues);
+            keyboardWidth = screenWidth;
+            keyboardHeight = SplitKeyboardUtils.isSplitKeyboardAvailable(res)
+                    ? SplitKeyboardUtils.getSplitKeyboardHeight(height) : height;
+        }
+        builder.setKeyboardGeometry(keyboardWidth, keyboardHeight);
         builder.setSubtype(mRichImm.getCurrentSubtype());
         builder.setVoiceInputKeyEnabled(settingsValues.mShowsVoiceInputKey);
         builder.setNumberRowEnabled(settingsValues.mShowNumberRow);
@@ -136,7 +163,13 @@ public final class KeyboardSwitcher implements KeyboardState.SwitchActions {
         builder.setEmojiKeyEnabled(settingsValues.mShowsEmojiKey);
         builder.setSplitLayoutEnabledByUser(isSplitLayout);
         builder.setSplitDuplicateKeysEnabled(settingsValues.mSplitKeyboardDuplicateKeys);
+        builder.setFloatingKeyboard(isFloating);
         mKeyboardLayoutSet = builder.build();
+        mIsFloating = isFloating;
+        mFloatingKeyboardWidth = keyboardWidth;
+        if (mFloatingKeyboardController != null) {
+            mFloatingKeyboardController.setFloating(isFloating, keyboardWidth);
+        }
         try {
             mState.onLoadKeyboard(currentAutoCapsState, currentRecapitalizeState);
             mKeyboardTextsSet.setLocale(mRichImm.getCurrentSubtypeLocale(), mThemeContext);
@@ -442,6 +475,14 @@ public final class KeyboardSwitcher implements KeyboardState.SwitchActions {
         return mEmojiPalettesView != null && mEmojiPalettesView.isShown();
     }
 
+    public boolean isFloatingKeyboard() {
+        return mFloatingKeyboardController != null && mFloatingKeyboardController.isFloating();
+    }
+
+    public void getFloatingPanelRect(final Rect outRect) {
+        mFloatingKeyboardController.getPanelRect(outRect);
+    }
+
     public boolean isShowingMoreKeysPanel() {
         if (isShowingEmojiPalettes()) {
             return false;
@@ -490,6 +531,42 @@ public final class KeyboardSwitcher implements KeyboardState.SwitchActions {
         mEmojiPalettesView.setHardwareAcceleratedDrawingEnabled(
                 isHardwareAcceleratedDrawingEnabled);
         mEmojiPalettesView.setKeyboardActionListener(mLatinIME);
+
+        final View dragHandle = mCurrentInputView.findViewById(R.id.floating_drag_handle);
+        if (mKeyboardView.getBackground() != null) {
+            dragHandle.setBackground(
+                    mKeyboardView.getBackground().getConstantState().newDrawable());
+        }
+        final SuggestionStripView strip =
+                mCurrentInputView.findViewById(R.id.suggestion_strip_view);
+        dragHandle.findViewById(R.id.floating_drag_handle_pill)
+                .setBackgroundTintList(strip.getToolKeyTintList());
+        mFloatingKeyboardController = new FloatingKeyboardController(mCurrentInputView,
+                mMainKeyboardFrame, mEmojiPalettesView, dragHandle, mKeyboardView.getBackground(),
+                strip.getToolKeyTintList(),
+                PreferenceManager.getDefaultSharedPreferences(mLatinIME),
+                new FloatingKeyboardController.Listener() {
+                    @Override
+                    public void onFloatingKeyboardDocked() {
+                        mLatinIME.toggleFloatingKeyboard();
+                    }
+
+                    @Override
+                    public void onFloatingKeyboardResized() {
+                        mLatinIME.reloadKeyboard();
+                    }
+
+                    @Override
+                    public void onFloatingKeyboardHideRequested() {
+                        mLatinIME.requestHideSelf(0);
+                    }
+
+                    @Override
+                    public void onFloatingKeyboardSwitchImeRequested() {
+                        mRichImm.getInputMethodManager().showInputMethodPicker();
+                    }
+                });
+        mFloatingKeyboardController.setFloating(mIsFloating, mFloatingKeyboardWidth);
         return mCurrentInputView;
     }
 
