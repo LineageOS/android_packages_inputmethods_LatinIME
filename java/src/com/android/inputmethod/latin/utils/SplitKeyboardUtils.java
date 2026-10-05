@@ -16,6 +16,8 @@ import com.android.inputmethod.latin.settings.Settings;
 import javax.annotation.Nonnull;
 
 public final class SplitKeyboardUtils {
+    public static final float SPLIT_KEYBOARD_HEIGHT_RATIO = 0.78f;
+
     private SplitKeyboardUtils() {
     }
 
@@ -23,6 +25,10 @@ public final class SplitKeyboardUtils {
         return ProductionFlags.IS_SPLIT_KEYBOARD_SUPPORTED
                 && !Constants.isPhone(Settings.readScreenMetrics(res))
                 && res.getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE;
+    }
+
+    public static int getSplitKeyboardHeight(final int keyboardHeight) {
+        return Math.round(keyboardHeight * SPLIT_KEYBOARD_HEIGHT_RATIO);
     }
 
     public static boolean toggleSplitKeyboard(@Nonnull final SharedPreferences prefs) {
