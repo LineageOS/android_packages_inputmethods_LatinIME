@@ -19,8 +19,8 @@ package com.android.inputmethod.latin.settings;
 import android.content.Context;
 import android.content.res.Resources;
 import android.os.Bundle;
-import android.preference.Preference;
-import android.preference.PreferenceScreen;
+import androidx.preference.Preference;
+import androidx.preference.PreferenceScreen;
 
 import com.android.inputmethod.keyboard.KeyboardTheme;
 import com.android.inputmethod.latin.R;

@@ -16,15 +16,15 @@
 
 package com.android.inputmethod.latin.settings;
 
-import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.os.Bundle;
-import android.preference.Preference;
-import android.preference.PreferenceGroup;
+import androidx.appcompat.app.AlertDialog;
+import androidx.preference.Preference;
+import androidx.preference.PreferenceGroup;
 import androidx.core.view.ViewCompat;
 import android.text.TextUtils;
 import android.util.Log;
@@ -40,9 +40,9 @@ import android.widget.Toast;
 import com.android.inputmethod.latin.R;
 import com.android.inputmethod.latin.RichInputMethodManager;
 import com.android.inputmethod.latin.utils.AdditionalSubtypeUtils;
-import com.android.inputmethod.latin.utils.DialogUtils;
 import com.android.inputmethod.latin.utils.IntentUtils;
 import com.android.inputmethod.latin.utils.SubtypeLocaleUtils;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import java.util.ArrayList;
 
@@ -99,20 +99,7 @@ public final class CustomInputStyleSettingsFragment extends CustomPreferenceFrag
         mRichImm = RichInputMethodManager.getInstance();
         addPreferencesFromResource(R.xml.additional_subtype_settings);
         setHasOptionsMenu(true);
-    }
 
-    @Override
-    public View onCreateView(final LayoutInflater inflater, final ViewGroup container,
-            final Bundle savedInstanceState) {
-        final View view = super.onCreateView(inflater, container, savedInstanceState);
-        // For correct display in RTL locales, we need to set the layout direction of the
-        // fragment's top view.
-        ViewCompat.setLayoutDirection(view, ViewCompat.LAYOUT_DIRECTION_LOCALE);
-        return view;
-    }
-
-    @Override
-    public void onActivityCreated(final Bundle savedInstanceState) {
         final Context context = getActivity();
         mSubtypeLocaleAdapter = new CustomInputStylePreference.SubtypeLocaleAdapter(context);
         mKeyboardLayoutSetAdapter =
@@ -131,7 +118,20 @@ public final class CustomInputStyleSettingsFragment extends CustomPreferenceFrag
             getPreferenceScreen().addPreference(
                     CustomInputStylePreference.newIncompleteSubtypePreference(context, this));
         }
+    }
 
+    @Override
+    public View onCreateView(final LayoutInflater inflater, final ViewGroup container,
+            final Bundle savedInstanceState) {
+        final View view = super.onCreateView(inflater, container, savedInstanceState);
+        // For correct display in RTL locales, we need to set the layout direction of the
+        // fragment's top view.
+        ViewCompat.setLayoutDirection(view, ViewCompat.LAYOUT_DIRECTION_LOCALE);
+        return view;
+    }
+
+    @Override
+    public void onActivityCreated(final Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
         if (savedInstanceState != null && savedInstanceState.containsKey(
@@ -231,8 +231,7 @@ public final class CustomInputStyleSettingsFragment extends CustomPreferenceFrag
 
     private AlertDialog createDialog() {
         final String imeId = mRichImm.getInputMethodIdOfThisIme();
-        final AlertDialog.Builder builder = new AlertDialog.Builder(
-                DialogUtils.getPlatformDialogThemeContext(getActivity()));
+        final AlertDialog.Builder builder = new MaterialAlertDialogBuilder(requireContext());
         builder.setTitle(R.string.custom_input_styles_title)
                 .setMessage(R.string.custom_input_style_note_message)
                 .setNegativeButton(R.string.not_now, null)

@@ -16,7 +16,7 @@
 
 package com.android.inputmethod.latin.about;
 
-import android.app.Fragment;
+import androidx.fragment.app.Fragment;
 
 /**
  * Placeholer class of AboutPreferences. Never use this.

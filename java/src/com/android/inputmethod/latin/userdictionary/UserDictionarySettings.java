@@ -17,8 +17,11 @@
 package com.android.inputmethod.latin.userdictionary;
 
 import com.android.inputmethod.latin.R;
+import com.android.inputmethod.latin.settings.SettingsBaseActivity;
 
-import android.app.ListFragment;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.ListFragment;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
@@ -106,12 +109,6 @@ public class UserDictionarySettings extends ListFragment {
     protected String mLocale;
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        getActivity().getActionBar().setTitle(R.string.edit_personal_dictionary);
-    }
-
-    @Override
     public View onCreateView(
             LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         return inflater.inflate(
@@ -152,12 +149,16 @@ public class UserDictionarySettings extends ListFragment {
         final ListView listView = getListView();
         listView.setAdapter(createAdapter());
         listView.setFastScrollEnabled(true);
+        listView.setNestedScrollingEnabled(true);
         listView.setEmptyView(emptyView);
 
         setHasOptionsMenu(true);
         // Show the language as a subtitle of the action bar
-        getActivity().getActionBar().setSubtitle(
-                UserDictionarySettingsUtils.getLocaleDisplayName(getActivity(), mLocale));
+        final ActionBar actionBar = ((AppCompatActivity) requireActivity()).getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setSubtitle(
+                    UserDictionarySettingsUtils.getLocaleDisplayName(getActivity(), mLocale));
+        }
     }
 
     @Override
@@ -251,10 +252,10 @@ public class UserDictionarySettings extends ListFragment {
         args.putString(UserDictionaryAddWordContents.EXTRA_WORD, editingWord);
         args.putString(UserDictionaryAddWordContents.EXTRA_SHORTCUT, editingShortcut);
         args.putString(UserDictionaryAddWordContents.EXTRA_LOCALE, mLocale);
-        android.preference.PreferenceActivity pa =
-                (android.preference.PreferenceActivity)getActivity();
-        pa.startPreferencePanel(UserDictionaryAddWordFragment.class.getName(),
-                args, R.string.user_dict_settings_add_dialog_title, null, null, 0);
+        final UserDictionaryAddWordFragment fragment = new UserDictionaryAddWordFragment();
+        fragment.setArguments(args);
+        ((SettingsBaseActivity) requireActivity()).startFragment(fragment,
+                getString(R.string.user_dict_settings_add_dialog_title));
     }
 
     private String getWord(final int position) {
