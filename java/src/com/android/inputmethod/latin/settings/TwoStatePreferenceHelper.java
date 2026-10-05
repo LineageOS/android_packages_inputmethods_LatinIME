@@ -17,10 +17,10 @@
 package com.android.inputmethod.latin.settings;
 
 import android.os.Build;
-import android.preference.CheckBoxPreference;
-import android.preference.Preference;
-import android.preference.PreferenceGroup;
-import android.preference.SwitchPreference;
+import androidx.preference.CheckBoxPreference;
+import androidx.preference.Preference;
+import androidx.preference.PreferenceGroup;
+import androidx.preference.SwitchPreference;
 
 import java.util.ArrayList;
 

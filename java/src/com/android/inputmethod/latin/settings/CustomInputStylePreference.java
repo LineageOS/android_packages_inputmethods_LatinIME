@@ -16,14 +16,9 @@
 
 package com.android.inputmethod.latin.settings;
 
-import android.app.AlertDialog;
-import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.os.Parcel;
-import android.os.Parcelable;
-import android.preference.DialogPreference;
-import android.preference.Preference;
+import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodInfo;
@@ -31,6 +26,11 @@ import android.view.inputmethod.InputMethodSubtype;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
+import androidx.preference.DialogPreference;
+import androidx.preference.PreferenceDialogFragmentCompat;
 
 import com.android.inputmethod.compat.InputMethodSubtypeCompatUtils;
 import com.android.inputmethod.compat.ViewCompatUtils;
@@ -41,8 +41,7 @@ import com.android.inputmethod.latin.utils.SubtypeLocaleUtils;
 
 import java.util.TreeSet;
 
-final class CustomInputStylePreference extends DialogPreference
-        implements DialogInterface.OnCancelListener {
+final class CustomInputStylePreference extends DialogPreference {
     private static final boolean DEBUG_SUBTYPE_ID = false;
 
     interface Listener {
@@ -60,8 +59,6 @@ final class CustomInputStylePreference extends DialogPreference
     private InputMethodSubtype mPreviousSubtype;
 
     private final Listener mProxy;
-    private Spinner mSubtypeLocaleSpinner;
-    private Spinner mKeyboardLayoutSetSpinner;
 
     public static CustomInputStylePreference newIncompleteSubtypePreference(
             final Context context, final Listener proxy) {
@@ -78,7 +75,7 @@ final class CustomInputStylePreference extends DialogPreference
     }
 
     public void show() {
-        showDialog(null);
+        getPreferenceManager().showDialog(this);
     }
 
     public final boolean isIncomplete() {
@@ -114,36 +111,100 @@ final class CustomInputStylePreference extends DialogPreference
         return mSubtype != null && !mSubtype.equals(mPreviousSubtype);
     }
 
-    @Override
-    protected View onCreateDialogView() {
-        final View v = super.onCreateDialogView();
-        mSubtypeLocaleSpinner = (Spinner) v.findViewById(R.id.subtype_locale_spinner);
-        mSubtypeLocaleSpinner.setAdapter(mProxy.getSubtypeLocaleAdapter());
-        mKeyboardLayoutSetSpinner = (Spinner) v.findViewById(R.id.keyboard_layout_set_spinner);
-        mKeyboardLayoutSetSpinner.setAdapter(mProxy.getKeyboardLayoutSetAdapter());
-        // All keyboard layout names are in the Latin script and thus left to right. That means
-        // the view would align them to the left even if the system locale is RTL, but that
-        // would look strange. To fix this, we align them to the view's start, which will be
-        // natural for any direction.
-        ViewCompatUtils.setTextAlignment(
-                mKeyboardLayoutSetSpinner, ViewCompatUtils.TEXT_ALIGNMENT_VIEW_START);
-        return v;
-    }
+    public static final class CustomInputStyleDialogFragment
+            extends PreferenceDialogFragmentCompat {
+        private Spinner mSubtypeLocaleSpinner;
+        private Spinner mKeyboardLayoutSetSpinner;
 
-    @Override
-    protected void onPrepareDialogBuilder(final AlertDialog.Builder builder) {
-        builder.setCancelable(true).setOnCancelListener(this);
-        if (isIncomplete()) {
-            builder.setPositiveButton(R.string.add, this)
-                    .setNegativeButton(android.R.string.cancel, this);
-        } else {
-            builder.setPositiveButton(R.string.save, this)
-                    .setNeutralButton(android.R.string.cancel, this)
-                    .setNegativeButton(R.string.remove, this);
-            final SubtypeLocaleItem localeItem = new SubtypeLocaleItem(mSubtype);
-            final KeyboardLayoutSetItem layoutItem = new KeyboardLayoutSetItem(mSubtype);
-            setSpinnerPosition(mSubtypeLocaleSpinner, localeItem);
-            setSpinnerPosition(mKeyboardLayoutSetSpinner, layoutItem);
+        public static CustomInputStyleDialogFragment newInstance(final String key) {
+            final CustomInputStyleDialogFragment fragment = new CustomInputStyleDialogFragment();
+            final Bundle args = new Bundle(1);
+            args.putString(ARG_KEY, key);
+            fragment.setArguments(args);
+            return fragment;
+        }
+
+        private CustomInputStylePreference getStylePreference() {
+            return (CustomInputStylePreference) getPreference();
+        }
+
+        @Override
+        protected void onBindDialogView(@NonNull final View view) {
+            super.onBindDialogView(view);
+            final CustomInputStylePreference pref = getStylePreference();
+            mSubtypeLocaleSpinner = (Spinner) view.findViewById(R.id.subtype_locale_spinner);
+            mSubtypeLocaleSpinner.setAdapter(pref.mProxy.getSubtypeLocaleAdapter());
+            mKeyboardLayoutSetSpinner =
+                    (Spinner) view.findViewById(R.id.keyboard_layout_set_spinner);
+            mKeyboardLayoutSetSpinner.setAdapter(pref.mProxy.getKeyboardLayoutSetAdapter());
+            // All keyboard layout names are in the Latin script and thus left to right. That means
+            // the view would align them to the left even if the system locale is RTL, but that
+            // would look strange. To fix this, we align them to the view's start, which will be
+            // natural for any direction.
+            ViewCompatUtils.setTextAlignment(
+                    mKeyboardLayoutSetSpinner, ViewCompatUtils.TEXT_ALIGNMENT_VIEW_START);
+            if (!pref.isIncomplete()) {
+                setSpinnerPosition(mSubtypeLocaleSpinner, new SubtypeLocaleItem(pref.mSubtype));
+                setSpinnerPosition(mKeyboardLayoutSetSpinner,
+                        new KeyboardLayoutSetItem(pref.mSubtype));
+            }
+        }
+
+        @Override
+        protected void onPrepareDialogBuilder(@NonNull final AlertDialog.Builder builder) {
+            super.onPrepareDialogBuilder(builder);
+            if (getStylePreference().isIncomplete()) {
+                builder.setPositiveButton(R.string.add, this)
+                        .setNegativeButton(android.R.string.cancel, this);
+            } else {
+                builder.setPositiveButton(R.string.save, this)
+                        .setNeutralButton(android.R.string.cancel, this)
+                        .setNegativeButton(R.string.remove, this);
+            }
+        }
+
+        @Override
+        public void onCancel(@NonNull final DialogInterface dialog) {
+            super.onCancel(dialog);
+            final CustomInputStylePreference pref = getStylePreference();
+            if (pref.isIncomplete()) {
+                pref.mProxy.onRemoveCustomInputStyle(pref);
+            }
+        }
+
+        @Override
+        public void onClick(@NonNull final DialogInterface dialog, final int which) {
+            super.onClick(dialog, which);
+            final CustomInputStylePreference pref = getStylePreference();
+            switch (which) {
+            case DialogInterface.BUTTON_POSITIVE:
+                final boolean isEditing = !pref.isIncomplete();
+                final SubtypeLocaleItem locale =
+                        (SubtypeLocaleItem) mSubtypeLocaleSpinner.getSelectedItem();
+                final KeyboardLayoutSetItem layout =
+                        (KeyboardLayoutSetItem) mKeyboardLayoutSetSpinner.getSelectedItem();
+                final InputMethodSubtype subtype =
+                        AdditionalSubtypeUtils.createAsciiEmojiCapableAdditionalSubtype(
+                                locale.mLocaleString, layout.mLayoutName);
+                pref.setSubtype(subtype);
+                pref.notifyChanged();
+                if (isEditing) {
+                    pref.mProxy.onSaveCustomInputStyle(pref);
+                } else {
+                    pref.mProxy.onAddCustomInputStyle(pref);
+                }
+                break;
+            case DialogInterface.BUTTON_NEUTRAL:
+                // Nothing to do
+                break;
+            case DialogInterface.BUTTON_NEGATIVE:
+                pref.mProxy.onRemoveCustomInputStyle(pref);
+                break;
+            }
+        }
+
+        @Override
+        public void onDialogClosed(final boolean positiveResult) {
         }
     }
 
@@ -157,101 +218,6 @@ final class CustomInputStylePreference extends DialogPreference
                 return;
             }
         }
-    }
-
-    @Override
-    public void onCancel(final DialogInterface dialog) {
-        if (isIncomplete()) {
-            mProxy.onRemoveCustomInputStyle(this);
-        }
-    }
-
-    @Override
-    public void onClick(final DialogInterface dialog, final int which) {
-        super.onClick(dialog, which);
-        switch (which) {
-        case DialogInterface.BUTTON_POSITIVE:
-            final boolean isEditing = !isIncomplete();
-            final SubtypeLocaleItem locale =
-                    (SubtypeLocaleItem) mSubtypeLocaleSpinner.getSelectedItem();
-            final KeyboardLayoutSetItem layout =
-                    (KeyboardLayoutSetItem) mKeyboardLayoutSetSpinner.getSelectedItem();
-            final InputMethodSubtype subtype =
-                    AdditionalSubtypeUtils.createAsciiEmojiCapableAdditionalSubtype(
-                            locale.mLocaleString, layout.mLayoutName);
-            setSubtype(subtype);
-            notifyChanged();
-            if (isEditing) {
-                mProxy.onSaveCustomInputStyle(this);
-            } else {
-                mProxy.onAddCustomInputStyle(this);
-            }
-            break;
-        case DialogInterface.BUTTON_NEUTRAL:
-            // Nothing to do
-            break;
-        case DialogInterface.BUTTON_NEGATIVE:
-            mProxy.onRemoveCustomInputStyle(this);
-            break;
-        }
-    }
-
-    @Override
-    protected Parcelable onSaveInstanceState() {
-        final Parcelable superState = super.onSaveInstanceState();
-        final Dialog dialog = getDialog();
-        if (dialog == null || !dialog.isShowing()) {
-            return superState;
-        }
-
-        final SavedState myState = new SavedState(superState);
-        myState.mSubtype = mSubtype;
-        return myState;
-    }
-
-    @Override
-    protected void onRestoreInstanceState(final Parcelable state) {
-        if (!(state instanceof SavedState)) {
-            super.onRestoreInstanceState(state);
-            return;
-        }
-
-        final SavedState myState = (SavedState) state;
-        super.onRestoreInstanceState(myState.getSuperState());
-        setSubtype(myState.mSubtype);
-    }
-
-    static final class SavedState extends Preference.BaseSavedState {
-        InputMethodSubtype mSubtype;
-
-        public SavedState(final Parcelable superState) {
-            super(superState);
-        }
-
-        @Override
-        public void writeToParcel(final Parcel dest, final int flags) {
-            super.writeToParcel(dest, flags);
-            dest.writeParcelable(mSubtype, 0);
-        }
-
-        public SavedState(final Parcel source) {
-            super(source);
-            mSubtype = (InputMethodSubtype)source.readParcelable(null);
-        }
-
-        @SuppressWarnings("hiding")
-        public static final Parcelable.Creator<SavedState> CREATOR =
-                new Parcelable.Creator<SavedState>() {
-                    @Override
-                    public SavedState createFromParcel(final Parcel source) {
-                        return new SavedState(source);
-                    }
-
-                    @Override
-                    public SavedState[] newArray(final int size) {
-                        return new SavedState[size];
-                    }
-                };
     }
 
     static final class SubtypeLocaleItem implements Comparable<SubtypeLocaleItem> {

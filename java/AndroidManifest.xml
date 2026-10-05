@@ -127,7 +127,7 @@
         </activity>
 
         <activity android:name=".settings.SettingsActivity"
-             android:theme="@style/platformSettingsTheme"
+             android:theme="@style/Theme.SettingsLib"
              android:label="@string/english_ime_settings"
              android:exported="true">
             <intent-filter>
@@ -136,7 +136,7 @@
         </activity>
 
         <activity android:name=".spellcheck.SpellCheckerSettingsActivity"
-             android:theme="@style/platformSettingsTheme"
+             android:theme="@style/Theme.SettingsLib"
              android:label="@string/android_spell_checker_settings"
              android:exported="true">
             <intent-filter>
@@ -145,7 +145,7 @@
         </activity>
 
         <activity android:name="com.android.inputmethod.dictionarypack.DictionarySettingsActivity"
-             android:theme="@style/platformSettingsTheme"
+             android:theme="@style/Theme.SettingsLib"
              android:label="@string/dictionary_settings_title"
              android:uiOptions="splitActionBarWhenNarrow"
              android:exported="true">
@@ -165,6 +165,7 @@
 
         <!-- Unexported activity used for tests. -->
         <activity android:name=".settings.TestFragmentActivity"
+             android:theme="@style/Theme.SettingsLib"
              android:exported="false"/>
 
         <!-- Broadcast receivers -->

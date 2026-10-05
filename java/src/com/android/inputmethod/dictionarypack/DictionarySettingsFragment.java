@@ -30,8 +30,8 @@ import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.preference.Preference;
-import android.preference.PreferenceGroup;
+import androidx.preference.Preference;
+import androidx.preference.PreferenceGroup;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -67,8 +67,6 @@ public final class DictionarySettingsFragment extends CustomPreferenceFragment
     private ConnectivityManager mConnectivityManager;
     private MenuItem mUpdateNowMenu;
     private boolean mChangedSettings;
-    private DictionaryListInterfaceState mDictionaryListInterfaceState =
-            new DictionaryListInterfaceState();
     // never null
     private TreeMap<String, WordListPreference> mCurrentPreferenceMap = new TreeMap<>();
 
@@ -345,9 +343,8 @@ public final class DictionarySettingsFragment extends CustomPreferenceFragment
                         // Otherwise, discard it and create a new one instead.
                         // TODO: when the status is different from the old one, we need to
                         // animate the old one out before animating the new one in.
-                        pref = new WordListPreference(activity, mDictionaryListInterfaceState,
-                                mClientId, wordlistId, version, locale, description, status,
-                                filesize);
+                        pref = new WordListPreference(activity, mClientId, wordlistId, version,
+                                locale, description, status, filesize);
                     }
                     prefMap.put(key, pref);
                 }

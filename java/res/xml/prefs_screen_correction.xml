@@ -19,12 +19,12 @@
     xmlns:latin="http://schemas.android.com/apk/res/com.android.inputmethod.latin"
     android:title="@string/settings_screen_correction"
     android:key="screen_correction">
-    <PreferenceScreen
+    <Preference
         android:key="edit_personal_dictionary"
         android:title="@string/edit_personal_dictionary">
         <intent android:action="android.settings.USER_DICTIONARY_SETTINGS" />
-    </PreferenceScreen>
-    <PreferenceScreen
+    </Preference>
+    <Preference
         android:key="configure_dictionaries_key"
         android:title="@string/configure_dictionaries_title">
         <intent
@@ -34,7 +34,7 @@
                 android:name="clientId"
                 android:value="@string/dictionary_pack_client_id" />
         </intent>
-    </PreferenceScreen>
+    </Preference>
     <CheckBoxPreference
         android:key="pref_key_block_potentially_offensive"
         android:title="@string/prefs_block_potentially_offensive_title"

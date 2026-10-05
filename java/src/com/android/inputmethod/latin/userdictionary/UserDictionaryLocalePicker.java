@@ -16,7 +16,7 @@
 
 package com.android.inputmethod.latin.userdictionary;
 
-import android.app.Fragment;
+import androidx.fragment.app.Fragment;
 
 import java.util.Locale;
 

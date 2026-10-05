@@ -20,7 +20,6 @@ import static com.android.inputmethod.latin.settings.LocalSettingsConstants.PREF
 import static com.android.inputmethod.latin.settings.LocalSettingsConstants.PREF_ENABLE_CLOUD_SYNC;
 
 import android.Manifest;
-import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnShowListener;
@@ -28,9 +27,10 @@ import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.preference.Preference;
-import android.preference.Preference.OnPreferenceClickListener;
-import android.preference.TwoStatePreference;
+import androidx.appcompat.app.AlertDialog;
+import androidx.preference.Preference;
+import androidx.preference.Preference.OnPreferenceClickListener;
+import androidx.preference.TwoStatePreference;
 import android.text.TextUtils;
 import android.text.method.LinkMovementMethod;
 import android.widget.ListView;
@@ -43,6 +43,7 @@ import com.android.inputmethod.latin.accounts.LoginAccountUtils;
 import com.android.inputmethod.latin.define.ProductionFlags;
 import com.android.inputmethod.latin.permissions.PermissionsUtil;
 import com.android.inputmethod.latin.utils.ManagedProfileUtils;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 
@@ -366,7 +367,7 @@ public final class AccountsSettingsFragment extends SubScreenFragment {
                 break;
             }
         }
-        final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity())
+        final AlertDialog.Builder builder = new MaterialAlertDialogBuilder(requireContext())
                 .setTitle(R.string.account_select_title)
                 .setSingleChoiceItems(accounts, index, null)
                 .setPositiveButton(R.string.account_select_ok, positiveButtonClickListener)
@@ -436,7 +437,7 @@ public final class AccountsSettingsFragment extends SubScreenFragment {
     class DeleteSyncDataListener implements Preference.OnPreferenceClickListener {
         @Override
         public boolean onPreferenceClick(final Preference preference) {
-            final AlertDialog confirmationDialog = new AlertDialog.Builder(getActivity())
+            final AlertDialog confirmationDialog = new MaterialAlertDialogBuilder(requireContext())
                     .setTitle(R.string.clear_sync_data_title)
                     .setMessage(R.string.clear_sync_data_confirmation)
                     .setPositiveButton(R.string.clear_sync_data_ok,
@@ -469,7 +470,7 @@ public final class AccountsSettingsFragment extends SubScreenFragment {
                 syncPreference.setChecked(false);
 
                 // Show opt-in.
-                final AlertDialog optInDialog = new AlertDialog.Builder(getActivity())
+                final AlertDialog optInDialog = new MaterialAlertDialogBuilder(requireContext())
                         .setTitle(R.string.cloud_sync_title)
                         .setMessage(R.string.cloud_sync_opt_in_text)
                         .setPositiveButton(R.string.account_select_ok,
