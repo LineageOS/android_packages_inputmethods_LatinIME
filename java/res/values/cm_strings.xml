@@ -67,4 +67,19 @@ disposition rather than other common dispositions for Latin languages. [CHAR LIM
     <string name="spoken_description_split_keyboard">Split keyboard</string>
     <!-- Spoken description of the suggestion strip key that joins the split keyboard halves -->
     <string name="spoken_description_merge_keyboard">Merge keyboard</string>
+
+    <!-- Spoken description of the suggestion strip key that detaches the keyboard into a floating window -->
+    <string name="spoken_description_float_keyboard">Float keyboard</string>
+    <!-- Spoken description of the suggestion strip key that docks the floating keyboard back to the bottom -->
+    <string name="spoken_description_dock_keyboard">Dock keyboard</string>
+    <!-- Content description of the handle used to move the floating keyboard -->
+    <string name="floating_keyboard_drag_handle">Move keyboard</string>
+    <!-- Content description of the handle used to resize the floating keyboard -->
+    <string name="floating_keyboard_resize_handle">Resize keyboard</string>
+    <!-- Button that restores the default size and position of the floating keyboard [CHAR LIMIT=12] -->
+    <string name="floating_keyboard_reset">Reset</string>
+    <!-- Content description of the floating keyboard button that hides the keyboard -->
+    <string name="floating_keyboard_hide">Hide keyboard</string>
+    <!-- Content description of the floating keyboard button that switches to another input method -->
+    <string name="floating_keyboard_switch_ime">Switch input method</string>
 </resources>

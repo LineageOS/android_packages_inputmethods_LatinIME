@@ -74,7 +74,7 @@ public final class KeyboardLayoutSet {
     private static final String KEYBOARD_LAYOUT_SET_RESOURCE_PREFIX = "keyboard_layout_set_";
 
     private final Context mContext;
-    private Context mSplitLayoutContext;
+    private Context mPhoneLayoutContext;
     @Nonnull
     private final Params mParams;
 
@@ -136,6 +136,7 @@ public final class KeyboardLayoutSet {
         // whether the user has enabled it, and the keyboard layout supports it.
         boolean mIsSplitLayoutEnabled;
         boolean mSplitDuplicateKeysEnabled;
+        boolean mIsFloating;
         // Sparse array of KeyboardLayoutSet element parameters indexed by element's id.
         final SparseArray<ElementParams> mKeyboardLayoutSetElementIdToParamsMap =
                 new SparseArray<>();
@@ -204,6 +205,7 @@ public final class KeyboardLayoutSet {
         // The KeyboardId is an internal key for a Keyboard object.
 
         mParams.mIsSplitLayoutEnabled = mParams.mIsSplitLayoutEnabledByUser
+                && !mParams.mIsFloating
                 && keyboardLayoutSetElementId <= KeyboardId.ELEMENT_SYMBOLS_SHIFTED;
         final KeyboardId id = new KeyboardId(keyboardLayoutSetElementId, mParams);
         try {
@@ -214,11 +216,11 @@ public final class KeyboardLayoutSet {
         }
     }
 
-    private Context getSplitLayoutContext() {
-        if (mSplitLayoutContext == null) {
-            mSplitLayoutContext = SplitKeyboardUtils.createPhoneLayoutContext(mContext);
+    private Context getPhoneLayoutContext() {
+        if (mPhoneLayoutContext == null) {
+            mPhoneLayoutContext = SplitKeyboardUtils.createPhoneLayoutContext(mContext);
         }
-        return mSplitLayoutContext;
+        return mPhoneLayoutContext;
     }
 
     @Nonnull
@@ -232,7 +234,8 @@ public final class KeyboardLayoutSet {
             return cachedKeyboard;
         }
 
-        final Context context = id.mIsSplitLayout ? getSplitLayoutContext() : mContext;
+        final Context context =
+                (id.mIsSplitLayout || id.mIsFloating) ? getPhoneLayoutContext() : mContext;
         final KeyboardBuilder<KeyboardParams> builder =
                 new KeyboardBuilder<>(context, new KeyboardParams(sUniqueKeysCache));
         sUniqueKeysCache.setEnabled(id.isAlphabetKeyboard());
@@ -368,6 +371,11 @@ public final class KeyboardLayoutSet {
 
         public Builder setSplitDuplicateKeysEnabled(final boolean enabled) {
             mParams.mSplitDuplicateKeysEnabled = enabled;
+            return this;
+        }
+
+        public Builder setFloatingKeyboard(final boolean floating) {
+            mParams.mIsFloating = floating;
             return this;
         }
 
