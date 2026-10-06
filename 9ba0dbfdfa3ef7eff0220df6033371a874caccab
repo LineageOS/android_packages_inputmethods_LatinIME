@@ -52,6 +52,24 @@
       "parentUuid": "deff8007_9bfe1c34",
       "revId": "9ba0dbfdfa3ef7eff0220df6033371a874caccab",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e1a2f6f8_586e1c23",
+        "filename": "java/res/drawable/ic_floating_keyboard.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 34519
+      },
+      "writtenOn": "2026-10-06T10:18:52Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3843cc25_db4ee07e",
+      "revId": "9ba0dbfdfa3ef7eff0220df6033371a874caccab",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
