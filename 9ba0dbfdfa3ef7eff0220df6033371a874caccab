@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b07b107a_0924351a",
+        "filename": "java/res/drawable/ic_floating_keyboard.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-10-06T10:10:06Z",
+      "side": 1,
+      "message": "ditto for this, is this a google material icon?",
+      "revId": "9ba0dbfdfa3ef7eff0220df6033371a874caccab",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
