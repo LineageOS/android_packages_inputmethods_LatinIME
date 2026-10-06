@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bb61ccb9_0ad2851b",
+        "filename": "java/Android.bp",
+        "patchSetId": 4
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-10-06T10:12:19Z",
+      "side": 1,
+      "message": "use aosp repbuilt",
+      "range": {
+        "startLine": 53,
+        "startChar": 0,
+        "endLine": 53,
+        "endChar": 56
+      },
+      "revId": "50a4f1774d700de6cc9b2ce316826e85afc6b706",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
