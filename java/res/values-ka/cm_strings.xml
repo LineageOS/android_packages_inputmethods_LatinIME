@@ -26,4 +26,16 @@
     <string name="show_longpress_hints_summary">ხანგრძლივი დაჭერისას მინიშნების ჩვენება შესაბამის ღილაკებზე</string>
     <string name="show_emoji_key">სიცილაკების ღილაკის ჩვენება</string>
     <string name="show_emoji_key_summary">ყოველთვის ჩანდეს სიცილაკების ღილაკი. როცა მოქმედია, ენის გადართვის ღილაკი ვერ გამოჩნდება.</string>
+    <string name="enable_split_keyboard_summary">მხოლოდ თარაზული ხედისას</string>
+    <string name="split_keyboard_duplicate_keys">შუა ღილაკების გაორმაგება</string>
+    <string name="split_keyboard_duplicate_keys_summary">შუასთან ახლო ღილაკების ორივე ნახევარზე ჩვენება</string>
+    <string name="spoken_description_split_keyboard">კლავიატურის გაყოფა</string>
+    <string name="spoken_description_merge_keyboard">კლავიატურის გაერთიანება</string>
+    <string name="spoken_description_float_keyboard">კლავიატურის ამოტივტივება</string>
+    <string name="spoken_description_dock_keyboard">კლავიატურის ჩამაგრება</string>
+    <string name="floating_keyboard_drag_handle">კლავიატურის გადატანა</string>
+    <string name="floating_keyboard_resize_handle">კლავიატურის ზომის ცვლა</string>
+    <string name="floating_keyboard_reset">აღდგენა</string>
+    <string name="floating_keyboard_hide">კლავიატურის დამალვა</string>
+    <string name="floating_keyboard_switch_ime">შეყვანის მეთოდის გადართვა</string>
 </resources>

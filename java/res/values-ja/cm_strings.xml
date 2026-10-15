@@ -30,4 +30,16 @@
     <string name="show_longpress_hints_summary">サポートしているキーでは長押しでヒントを表示します</string>
     <string name="show_emoji_key">絵文字キーを表示</string>
     <string name="show_emoji_key_summary">常に絵文字キーを表示します。このオプションを有効にすると、言語切り替えキーを表示できません。</string>
+    <string name="enable_split_keyboard_summary">横向きの場合のみ</string>
+    <string name="split_keyboard_duplicate_keys">中央キーの複製</string>
+    <string name="split_keyboard_duplicate_keys_summary">中央付近のキーを左右の両側に表示します</string>
+    <string name="spoken_description_split_keyboard">キーボードを分割</string>
+    <string name="spoken_description_merge_keyboard">キーボードを結合</string>
+    <string name="spoken_description_float_keyboard">フローティングキーボード</string>
+    <string name="spoken_description_dock_keyboard">ドックキーボード</string>
+    <string name="floating_keyboard_drag_handle">キーボードを移動</string>
+    <string name="floating_keyboard_resize_handle">キーボードのサイズ変更</string>
+    <string name="floating_keyboard_reset">リセット</string>
+    <string name="floating_keyboard_hide">キーボードを隠す</string>
+    <string name="floating_keyboard_switch_ime">入力方法を切り替える</string>
 </resources>

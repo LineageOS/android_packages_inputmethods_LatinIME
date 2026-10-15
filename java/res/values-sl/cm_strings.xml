@@ -30,4 +30,16 @@
     <string name="show_longpress_hints_summary">Prikaže namige pridržanja tipke za podprte tipke</string>
     <string name="show_emoji_key">Prikaži tipko za izrazne ikone</string>
     <string name="show_emoji_key_summary">Vedno prikaži tipko za izrazne ikone. Ko je ta možnost omogočena, preklopnik jezikov ne more biti prikazan.</string>
+    <string name="enable_split_keyboard_summary">Samo v ležečem načinu</string>
+    <string name="split_keyboard_duplicate_keys">Podvoji sredinske tipke</string>
+    <string name="split_keyboard_duplicate_keys_summary">Prikaži tipke blizu sredine na obeh polovicah</string>
+    <string name="spoken_description_split_keyboard">Razdeli tipkovnico</string>
+    <string name="spoken_description_merge_keyboard">Združi tipkovnico</string>
+    <string name="spoken_description_float_keyboard">Lebdeča tipkovnica</string>
+    <string name="spoken_description_dock_keyboard">Usidraj tipkovnico</string>
+    <string name="floating_keyboard_drag_handle">Premakni tipkovnico</string>
+    <string name="floating_keyboard_resize_handle">Spremeni velikost tipkovnice</string>
+    <string name="floating_keyboard_reset">Ponastavi</string>
+    <string name="floating_keyboard_hide">Skrij tipkovnico</string>
+    <string name="floating_keyboard_switch_ime">Preklopi način vnosa</string>
 </resources>

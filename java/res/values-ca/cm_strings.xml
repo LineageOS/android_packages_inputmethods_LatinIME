@@ -30,4 +30,16 @@
     <string name="show_longpress_hints_summary">Manteniu premut per mostrar els consells de les tecles</string>
     <string name="show_emoji_key">Mostra la tecla emoji</string>
     <string name="show_emoji_key_summary">Mostra sempre la tecla emoji. Si trieu aquesta opció, no es mostrarà la tecla de canvi de llengua.</string>
+    <string name="enable_split_keyboard_summary">Només en horitzontal</string>
+    <string name="split_keyboard_duplicate_keys">Duplica les tecles centrals</string>
+    <string name="split_keyboard_duplicate_keys_summary">Mostra les tecles prop del centre a totes dues meitats.</string>
+    <string name="spoken_description_split_keyboard">Teclat dividit</string>
+    <string name="spoken_description_merge_keyboard">Combina el teclat</string>
+    <string name="spoken_description_float_keyboard">Teclat flotant</string>
+    <string name="spoken_description_dock_keyboard">Ancora el teclat</string>
+    <string name="floating_keyboard_drag_handle">Mou el teclat</string>
+    <string name="floating_keyboard_resize_handle">Canviar la mida del teclat</string>
+    <string name="floating_keyboard_reset">Reestableix</string>
+    <string name="floating_keyboard_hide">Amagar el teclat</string>
+    <string name="floating_keyboard_switch_ime">Canvia el mètode d\'entrada</string>
 </resources>

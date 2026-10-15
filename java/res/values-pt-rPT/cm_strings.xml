@@ -30,4 +30,16 @@
     <string name="show_longpress_hints_summary">Mostrar dicas ao pressionar longamente em teclas suportadas</string>
     <string name="show_emoji_key">Mostrar tecla de emojis</string>
     <string name="show_emoji_key_summary">Mostrar sempre a tecla de emojis. Quando esta opção está ativada, o alternador de idioma não será mostrado.</string>
+    <string name="enable_split_keyboard_summary">Apenas no modo paisagem</string>
+    <string name="split_keyboard_duplicate_keys">Duplicar teclas centrais</string>
+    <string name="split_keyboard_duplicate_keys_summary">Mostrar teclas perto do meio em ambas as metades</string>
+    <string name="spoken_description_split_keyboard">Dividir teclado</string>
+    <string name="spoken_description_merge_keyboard">Unir teclado</string>
+    <string name="spoken_description_float_keyboard">Teclado flutuante</string>
+    <string name="spoken_description_dock_keyboard">Fixar teclado</string>
+    <string name="floating_keyboard_drag_handle">Mover teclado</string>
+    <string name="floating_keyboard_resize_handle">Redimensionar teclado</string>
+    <string name="floating_keyboard_reset">Repor</string>
+    <string name="floating_keyboard_hide">Ocultar teclado</string>
+    <string name="floating_keyboard_switch_ime">Alternar o método de introdução</string>
 </resources>

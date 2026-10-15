@@ -30,4 +30,16 @@
     <string name="show_longpress_hints_summary">显示受支持按键的长按提示</string>
     <string name="show_emoji_key">显示表情符号键</string>
     <string name="show_emoji_key_summary">始终显示表情符号键。  启用此选项后，无法显示语言切换键。</string>
+    <string name="enable_split_keyboard_summary">仅横屏</string>
+    <string name="split_keyboard_duplicate_keys">重复中间按键</string>
+    <string name="split_keyboard_duplicate_keys_summary">在分体键盘的两侧均显示靠近中间的按键</string>
+    <string name="spoken_description_split_keyboard">分体式键盘</string>
+    <string name="spoken_description_merge_keyboard">合并键盘</string>
+    <string name="spoken_description_float_keyboard">浮动键盘</string>
+    <string name="spoken_description_dock_keyboard">停靠键盘</string>
+    <string name="floating_keyboard_drag_handle">移动键盘</string>
+    <string name="floating_keyboard_resize_handle">调整键盘大小</string>
+    <string name="floating_keyboard_reset">重置</string>
+    <string name="floating_keyboard_hide">隐藏键盘</string>
+    <string name="floating_keyboard_switch_ime">切换输入法</string>
 </resources>

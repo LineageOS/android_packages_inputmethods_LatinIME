@@ -30,4 +30,16 @@
     <string name="show_longpress_hints_summary">A támogatott billentyűkön, hosszan lenyomáskor tippeket jelenít meg</string>
     <string name="show_emoji_key">Emoji-gomb megjelenítése</string>
     <string name="show_emoji_key_summary">Mindig mutassa meg az emojik gombját.  Ha ez az opció engedélyezve van, a nyelvváltó gomb nem jeleníthető meg.</string>
+    <string name="enable_split_keyboard_summary">Csak Tájkép módban</string>
+    <string name="split_keyboard_duplicate_keys">Középső billentyűk megduplázása</string>
+    <string name="split_keyboard_duplicate_keys_summary">Billentyűk megjelenítése középen, mindkét oldalon.</string>
+    <string name="spoken_description_split_keyboard">Osztott billentyűzet</string>
+    <string name="spoken_description_merge_keyboard">Egyesített billentyűzet</string>
+    <string name="spoken_description_float_keyboard">Lebegő billentyűzet</string>
+    <string name="spoken_description_dock_keyboard">Dokk-billentyűzet</string>
+    <string name="floating_keyboard_drag_handle">Billentyűzet mozgatása</string>
+    <string name="floating_keyboard_resize_handle">Billentyűzet átméretezése</string>
+    <string name="floating_keyboard_reset">Visszaállítás</string>
+    <string name="floating_keyboard_hide">Billentyűzet elrejtése</string>
+    <string name="floating_keyboard_switch_ime">Beviteli mód váltása</string>
 </resources>

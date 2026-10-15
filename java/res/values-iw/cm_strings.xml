@@ -30,4 +30,16 @@
     <string name="show_longpress_hints_summary">הצגת רמזים בלחיצה ארוכה על מקשים נתמכים</string>
     <string name="show_emoji_key">הצגת מקש אמוג\'י</string>
     <string name="show_emoji_key_summary">הצג תמיד מקש אמוג\'י. כאשר אפשרות זו מופעלת, לא ניתן להציג את מקש החלפת שפה.</string>
+    <string name="enable_split_keyboard_summary">רק במצב לרוחב</string>
+    <string name="split_keyboard_duplicate_keys">שכפול המקשים האמצעיים</string>
+    <string name="split_keyboard_duplicate_keys_summary">הצגת המקשים שבאמצע בשני חצאי המקלדת</string>
+    <string name="spoken_description_split_keyboard">מקלדת מפוצלת</string>
+    <string name="spoken_description_merge_keyboard">איחוד המקלדת</string>
+    <string name="spoken_description_float_keyboard">מקלדת צפה</string>
+    <string name="spoken_description_dock_keyboard">מקלדת מוצמדת</string>
+    <string name="floating_keyboard_drag_handle">הזזת מקלדת</string>
+    <string name="floating_keyboard_resize_handle">שינוי גודל מקלדת</string>
+    <string name="floating_keyboard_reset">איפוס</string>
+    <string name="floating_keyboard_hide">הסתר מקלדת</string>
+    <string name="floating_keyboard_switch_ime">החלפת שיטת קלט</string>
 </resources>

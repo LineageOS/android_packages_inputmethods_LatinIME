@@ -30,4 +30,16 @@
     <string name="show_longpress_hints_summary">Wyświetla podpowiedzi długiego przytrzymania dla obsługiwanych klawiszy</string>
     <string name="show_emoji_key">Pokazuj przycisk emoji</string>
     <string name="show_emoji_key_summary">Zawsze pokazuj przycisk emoji. Gdy ta opcja jest włączona, przycisk przełączania języka nie będzie wyświetlany.</string>
+    <string name="enable_split_keyboard_summary">Tylko w pozycji poziomej</string>
+    <string name="split_keyboard_duplicate_keys">Duplikaty klawiszy środkowych</string>
+    <string name="split_keyboard_duplicate_keys_summary">Pokazuj klawisze znajdujące się mniej więcej pośrodku obu połówek</string>
+    <string name="spoken_description_split_keyboard">Rozdziel klawiaturę</string>
+    <string name="spoken_description_merge_keyboard">Scal klawiaturę</string>
+    <string name="spoken_description_float_keyboard">Klawiatura pływająca</string>
+    <string name="spoken_description_dock_keyboard">Zadokuj klawiaturę</string>
+    <string name="floating_keyboard_drag_handle">Przesuń klawiaturę</string>
+    <string name="floating_keyboard_resize_handle">Zmień rozmiar klawiatury</string>
+    <string name="floating_keyboard_reset">Zresetuj</string>
+    <string name="floating_keyboard_hide">Ukryj klawiaturę</string>
+    <string name="floating_keyboard_switch_ime">Zmień metodę wprowadzania tekstu</string>
 </resources>

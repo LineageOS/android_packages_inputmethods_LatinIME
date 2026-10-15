@@ -30,4 +30,16 @@
     <string name="show_longpress_hints_summary">Afişează indicii de apăsare lungă pentru tastele acceptate</string>
     <string name="show_emoji_key">Arată tastă emoji</string>
     <string name="show_emoji_key_summary">Arată întotdeauna cheia emoji. Când această opțiune este activată, tasta de comutare a limbii nu poate fi afișată.</string>
+    <string name="enable_split_keyboard_summary">Numai în modul peisaj</string>
+    <string name="split_keyboard_duplicate_keys">Duplicare taste centru</string>
+    <string name="split_keyboard_duplicate_keys_summary">Arată tastele de lângă mijloc în ambele jumătăți</string>
+    <string name="spoken_description_split_keyboard">Tastatură împărțită</string>
+    <string name="spoken_description_merge_keyboard">Îmbină tastatura</string>
+    <string name="spoken_description_float_keyboard">Tastatură plutitoare</string>
+    <string name="spoken_description_dock_keyboard">Andocare tastatură</string>
+    <string name="floating_keyboard_drag_handle">Mută tastatura</string>
+    <string name="floating_keyboard_resize_handle">Redimensionează tastatura</string>
+    <string name="floating_keyboard_reset">Resetare</string>
+    <string name="floating_keyboard_hide">Ascunde tastatura</string>
+    <string name="floating_keyboard_switch_ime">Comutați metoda de introducere a textului</string>
 </resources>

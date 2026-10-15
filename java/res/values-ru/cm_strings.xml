@@ -30,4 +30,15 @@
     <string name="show_longpress_hints_summary">Показывать всплывающие подсказки при длительном нажатии клавиш</string>
     <string name="show_emoji_key">Показать клавишу смайликов</string>
     <string name="show_emoji_key_summary">Всегда показывать клавишу смайликов. Если эта опция включена, клавиша переключения языка не отображается.</string>
+    <string name="enable_split_keyboard_summary">Только в альбомной ориентации</string>
+    <string name="split_keyboard_duplicate_keys">Дублировать ключи центра</string>
+    <string name="split_keyboard_duplicate_keys_summary">Показать клавиши ближе к середине на обеих половинках</string>
+    <string name="spoken_description_split_keyboard">Разделить клавиатуру</string>
+    <string name="spoken_description_merge_keyboard">Соединить клавиатуру</string>
+    <string name="spoken_description_float_keyboard">Плавающая клавиатура</string>
+    <string name="floating_keyboard_drag_handle">Переместить клавиатуру</string>
+    <string name="floating_keyboard_resize_handle">Изменить размер клавиатуры</string>
+    <string name="floating_keyboard_reset">Сбросить</string>
+    <string name="floating_keyboard_hide">Скрыть клавиатуру</string>
+    <string name="floating_keyboard_switch_ime">Переключить метод ввода</string>
 </resources>
