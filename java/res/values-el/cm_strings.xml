@@ -20,8 +20,12 @@
     <string name="prefs_keyboard_height_scale">Κλίμακα ύψους πληκτρολογίου</string>
     <string name="number_row">Σειρά αριθμών</string>
     <string name="number_row_summary">Πάντα εμφάνιση μιας σειράς αριθμών για όλες τις διατάξεις που διαθέτουν 4 σειρές πλήκτρων</string>
+    <string name="number_row_password">Σειρά αριθμών για κωδικούς πρόσβασης</string>
+    <string name="number_row_password_summary">Να εμφανίζεται πάντα μια σειρά αριθμών για όλες τις διατάξεις που διαθέτουν 4 σειρές πλήκτρων για την εισαγωγή κωδικών πρόσβασης</string>
     <string name="space_trackpad">Trackpad πλήκτρου διαστήματος</string>
     <string name="space_trackpad_summary">Σύρετε στο πλήκτρο διαστήματος για να μετακινήσετε το δρομέα</string>
+    <string name="backspace_trackpad">Trackpad πλήκτρου backspace</string>
+    <string name="backspace_trackpad_summary">Σύρετε στο πλήκτρο backspace για να διαγράψετε λέξεις</string>
     <string name="show_longpress_hints">Εμφάνιση υποδείξεων παρατεταμένου πατήματος</string>
     <string name="show_longpress_hints_summary">Εμφανίζει υποδείξεις παρατεταμένου πατήματος για τα υποστηριζόμενα πλήκτρα</string>
     <string name="show_emoji_key">Εμφάνιση πλήκτρου emoji</string>
