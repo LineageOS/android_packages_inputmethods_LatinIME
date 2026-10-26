@@ -92,6 +92,10 @@ public final class InlineSuggestionsStrip extends LinearLayout {
         }
     }
 
+    static int getChipBackgroundColor(final int textColor) {
+        return ColorUtils.setAlphaComponent(textColor, CHIP_BACKGROUND_ALPHA);
+    }
+
     public boolean hasSuggestions() {
         return mHasSuggestions;
     }
@@ -137,7 +141,7 @@ public final class InlineSuggestionsStrip extends LinearLayout {
     private InlineSuggestionUi.Style createStyle(final int textColor) {
         final Icon background = Icon.createWithResource(getContext(),
                 R.drawable.inline_suggestion_chip)
-                .setTint(ColorUtils.setAlphaComponent(textColor, CHIP_BACKGROUND_ALPHA));
+                .setTint(getChipBackgroundColor(textColor));
         final int padding = dpToPx(CHIP_HORIZONTAL_PADDING_DP);
         return InlineSuggestionUi.newStyleBuilder()
                 .setSingleIconChipStyle(new ViewStyle.Builder()

@@ -52,6 +52,13 @@ disposition rather than other common dispositions for Latin languages. [CHAR LIM
     <string name="swipe_down_for_digits">Swipe down for numbers</string>
     <string name="swipe_down_for_digits_summary">Swipe down on a key to type the number shown on it</string>
 
+    <!-- Preference item for suggesting recently copied text -->
+    <string name="show_clipboard_suggestions">Clipboard suggestions</string>
+    <string name="show_clipboard_suggestions_summary">Suggest recently copied text and verification codes</string>
+    <!-- Spoken description of the suggestion that pastes recently copied text -->
+    <string name="clipboard_suggestion_description">Paste <xliff:g id="text" example="482913">%s</xliff:g></string>
+    <string name="clipboard_suggestion_sensitive_description">Paste copied text</string>
+
     <!-- Preference item for enabling longpress key hints -->
     <string name="show_longpress_hints">Show long-press key hints</string>
     <string name="show_longpress_hints_summary">Shows long-press hints for supported keys</string>
