@@ -40,6 +40,7 @@ import android.graphics.drawable.Drawable;
 import android.inputmethodservice.InputMethodService;
 import android.media.AudioManager;
 import android.os.Build;
+import android.os.Bundle;
 import android.os.Debug;
 import android.os.IBinder;
 import android.os.Message;
@@ -60,6 +61,8 @@ import android.view.WindowInsetsController;
 import android.view.WindowManager;
 import android.view.inputmethod.CompletionInfo;
 import android.view.inputmethod.EditorInfo;
+import android.view.inputmethod.InlineSuggestionsRequest;
+import android.view.inputmethod.InlineSuggestionsResponse;
 import android.view.inputmethod.InputMethodSubtype;
 
 import androidx.annotation.NonNull;
@@ -913,6 +916,26 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
         mHandler.onFinishInputView(finishingInput);
         mStatsUtilsManager.onFinishInputView();
         mGestureConsumer = GestureConsumer.NULL_GESTURE_CONSUMER;
+    }
+
+    @Override
+    @Nullable
+    public InlineSuggestionsRequest onCreateInlineSuggestionsRequest(
+            @Nonnull final Bundle uiExtras) {
+        if (!hasSuggestionStripView()) {
+            return null;
+        }
+        return mSuggestionStripView.createInlineSuggestionsRequest(uiExtras);
+    }
+
+    @Override
+    public boolean onInlineSuggestionsResponse(
+            @Nonnull final InlineSuggestionsResponse response) {
+        if (!hasSuggestionStripView()) {
+            return false;
+        }
+        mSuggestionStripView.setInlineSuggestions(response.getInlineSuggestions());
+        return true;
     }
 
     @Override
