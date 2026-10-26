@@ -49,6 +49,7 @@ android_app {
         "androidx.viewpager2_viewpager2",
         "androidx.activity_activity",
         "androidx.appcompat_appcompat",
+        "androidx.autofill_autofill",
         "androidx.preference_preference",
         "com.google.android.material_material",
     ],
