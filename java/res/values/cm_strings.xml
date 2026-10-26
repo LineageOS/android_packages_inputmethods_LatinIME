@@ -48,6 +48,10 @@ disposition rather than other common dispositions for Latin languages. [CHAR LIM
     <string name="backspace_trackpad">Backspace key trackpad</string>
     <string name="backspace_trackpad_summary">Swipe on the backspace key to delete words</string>
 
+    <!-- Preference item for typing the number hint of a key by swiping down -->
+    <string name="swipe_down_for_digits">Swipe down for numbers</string>
+    <string name="swipe_down_for_digits_summary">Swipe down on a key to type the number shown on it</string>
+
     <!-- Preference item for enabling longpress key hints -->
     <string name="show_longpress_hints">Show long-press key hints</string>
     <string name="show_longpress_hints_summary">Shows long-press hints for supported keys</string>

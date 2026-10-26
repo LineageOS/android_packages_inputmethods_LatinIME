@@ -79,6 +79,7 @@ public class SettingsValues {
     public final boolean mBlockPotentiallyOffensive;
     public final boolean mSpaceTrackpadEnabled;
     public final boolean mBackspaceTrackpadEnabled;
+    public final boolean mSwipeDownForDigitsEnabled;
     // Use bigrams to predict the next word when there is no input for it yet
     public final boolean mBigramPredictionEnabled;
     public final boolean mGestureInputEnabled;
@@ -237,6 +238,7 @@ public class SettingsValues {
         }
         mSpaceTrackpadEnabled = Settings.readSpaceTrackpadEnabled(prefs);
         mBackspaceTrackpadEnabled = Settings.readBackspaceTrackpadEnabled(prefs);
+        mSwipeDownForDigitsEnabled = Settings.readSwipeDownForDigitsEnabled(prefs);
     }
 
     public boolean isMetricsLoggingEnabled() {

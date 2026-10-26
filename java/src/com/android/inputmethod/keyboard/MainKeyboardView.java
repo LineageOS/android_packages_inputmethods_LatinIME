@@ -50,6 +50,7 @@ import com.android.inputmethod.keyboard.internal.KeyPreviewView;
 import com.android.inputmethod.keyboard.internal.MoreKeySpec;
 import com.android.inputmethod.keyboard.internal.NonDistinctMultitouchHelper;
 import com.android.inputmethod.keyboard.internal.SlidingKeyInputDrawingPreview;
+import com.android.inputmethod.keyboard.internal.SwipeDownDigitPreview;
 import com.android.inputmethod.keyboard.internal.TimerHandler;
 import com.android.inputmethod.latin.R;
 import com.android.inputmethod.latin.RichInputMethodSubtype;
@@ -136,6 +137,7 @@ public final class MainKeyboardView extends KeyboardView implements DrawingProxy
     // Stuff to draw altCodeWhileTyping keys.
     private final ObjectAnimator mAltCodeKeyWhileTypingFadeoutAnimator;
     private final ObjectAnimator mAltCodeKeyWhileTypingFadeinAnimator;
+    private final SwipeDownDigitPreview mSwipeDownDigitPreview = new SwipeDownDigitPreview(this);
     private int mAltCodeKeyWhileTypingAnimAlpha = Constants.Color.ALPHA_OPAQUE;
 
     // Drawing preview placer view
@@ -497,6 +499,7 @@ public final class MainKeyboardView extends KeyboardView implements DrawingProxy
     @Override
     public void onKeyReleased(@Nonnull final Key key, final boolean withAnimation) {
         key.onReleased();
+        mSwipeDownDigitPreview.dismiss(key);
         invalidateKey(key);
         if (!key.noKeyPreview()) {
             if (withAnimation) {
@@ -505,6 +508,16 @@ public final class MainKeyboardView extends KeyboardView implements DrawingProxy
                 dismissKeyPreviewWithoutDelay(key);
             }
         }
+    }
+
+    @Override
+    public void showSwipeDownDigit(@Nonnull final Key key) {
+        mSwipeDownDigitPreview.show(key);
+    }
+
+    @Override
+    public void dismissSwipeDownDigit(@Nonnull final Key key) {
+        mSwipeDownDigitPreview.dismiss(key);
     }
 
     private void dismissKeyPreview(@Nonnull final Key key) {
@@ -807,7 +820,11 @@ public final class MainKeyboardView extends KeyboardView implements DrawingProxy
         if (key.altCodeWhileTyping() && key.isEnabled()) {
             params.mAnimAlpha = mAltCodeKeyWhileTypingAnimAlpha;
         }
+        final int saveCount = canvas.save();
+        mSwipeDownDigitPreview.slideOutKeyTop(key, canvas, params);
         super.onDrawKeyTopVisuals(key, canvas, paint, params);
+        canvas.restoreToCount(saveCount);
+        mSwipeDownDigitPreview.slideInDigit(key, canvas, paint, params);
         final int code = key.getCode();
         if (code == Constants.CODE_SPACE && key.isLongPressEnabled()) {
             // If input language are explicitly selected.

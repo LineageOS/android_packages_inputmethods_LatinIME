@@ -58,6 +58,11 @@
         android:title="@string/backspace_trackpad"
         android:summary="@string/backspace_trackpad_summary"
         android:defaultValue="true" />
+    <SwitchPreferenceCompat
+        android:key="pref_swipe_down_for_digits"
+        android:title="@string/swipe_down_for_digits"
+        android:summary="@string/swipe_down_for_digits_summary"
+        android:defaultValue="false" />
     <com.android.inputmethod.latin.settings.SeekBarDialogPreference
         android:key="pref_keyboard_height_scale"
         android:title="@string/prefs_keyboard_height_scale"

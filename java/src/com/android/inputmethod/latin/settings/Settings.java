@@ -131,6 +131,8 @@ public final class Settings implements SharedPreferences.OnSharedPreferenceChang
     // Backspace key trackpad slider
     public static final String PREF_BACKSPACE_TRACKPAD = "pref_backspace_trackpad";
 
+    public static final String PREF_SWIPE_DOWN_FOR_DIGITS = "pref_swipe_down_for_digits";
+
     // Emoji
     public static final String PREF_EMOJI_RECENT_KEYS = "emoji_recent_keys";
     public static final String PREF_EMOJI_CATEGORY_LAST_TYPED_ID = "emoji_category_last_typed_id";
@@ -381,6 +383,10 @@ public final class Settings implements SharedPreferences.OnSharedPreferenceChang
 
     public static boolean readBackspaceTrackpadEnabled(final SharedPreferences prefs) {
         return prefs.getBoolean(PREF_BACKSPACE_TRACKPAD, true);
+    }
+
+    public static boolean readSwipeDownForDigitsEnabled(final SharedPreferences prefs) {
+        return prefs.getBoolean(PREF_SWIPE_DOWN_FOR_DIGITS, false);
     }
 
     public static boolean readUseFullscreenMode(final Resources res) {
