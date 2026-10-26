@@ -38,6 +38,10 @@ public interface DrawingProxy {
      */
     public void onKeyReleased(@Nonnull Key key, boolean withAnimation);
 
+    public void showSwipeDownDigit(@Nonnull Key key);
+
+    public void dismissSwipeDownDigit(@Nonnull Key key);
+
     /**
      * Start showing more keys keyboard of a key that is being long pressed.
      * @param key the {@link Key} that is being long pressed and showing more keys keyboard.
