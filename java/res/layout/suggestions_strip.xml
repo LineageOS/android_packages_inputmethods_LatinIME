@@ -60,6 +60,31 @@
         android:layout_marginLeft="@dimen/config_suggestions_strip_horizontal_margin"
         android:layout_marginRight="@dimen/config_suggestions_strip_horizontal_margin"
         android:visibility="invisible" />
+    <LinearLayout
+        android:id="@+id/clipboard_suggestion_strip"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/config_suggestions_strip_horizontal_margin"
+        android:layout_marginRight="@dimen/config_suggestions_strip_horizontal_margin"
+        android:visibility="invisible">
+        <TextView
+            android:id="@+id/clipboard_suggestion_chip"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:maxWidth="240dp"
+            android:background="@drawable/inline_suggestion_chip"
+            android:drawablePadding="8dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:hapticFeedbackEnabled="false"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:singleLine="true"
+            android:soundEffectsEnabled="false"
+            android:textSize="16sp" />
+    </LinearLayout>
     <ImageButton
         android:id="@+id/suggestions_strip_float_key"
         android:layout_width="@dimen/config_suggestions_strip_edge_key_width"

@@ -54,6 +54,12 @@
         android:defaultValue="true"
         android:persistent="true" />
     <SwitchPreferenceCompat
+        android:key="pref_show_clipboard_suggestions"
+        android:title="@string/show_clipboard_suggestions"
+        android:summary="@string/show_clipboard_suggestions_summary"
+        android:defaultValue="true"
+        android:persistent="true" />
+    <SwitchPreferenceCompat
         android:key="pref_key_use_personalized_dicts"
         android:title="@string/use_personalized_dicts"
         android:summary="@string/use_personalized_dicts_summary"
