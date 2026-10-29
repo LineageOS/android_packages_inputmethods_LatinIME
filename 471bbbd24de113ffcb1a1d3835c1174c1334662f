@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "73a98273_537291e2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 38493
+      },
+      "writtenOn": "2026-10-29T06:18:48Z",
+      "side": 1,
+      "message": "Hello! I read contributing to individual apps and added a new layout, tested on my device. Then I used the guide from contributing to individual apps to get it to here. I don\u0027t understand why is it showing merge conflicts in this web ui. there is no conflict in local and I also checked the conflicting commit \"LatinIME: Support inline autofill suggestions\" and it has only one file in common: java/res/xml/method.xml. But the changes are not same at are differ in lines.",
+      "revId": "471bbbd24de113ffcb1a1d3835c1174c1334662f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
