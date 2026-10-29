@@ -25,6 +25,32 @@
     <string name="keylabel_to_alpha">&#x1000;&#x1001;&#x1002;</string>
     <!-- U+104A: "၊" MYANMAR SIGN LITTLE SECTION
          U+104B: "။" MYANMAR SIGN SECTION -->
+    <!-- U+1041: "၁" MYANMAR DIGIT ONE -->
+    <string name="keyspec_symbols_1">&#x1041;</string>
+    <!-- U+1042: "၂" MYANMAR DIGIT TWO -->
+    <string name="keyspec_symbols_2">&#x1042;</string>
+    <!-- U+1043: "၃" MYANMAR DIGIT THREE -->
+    <string name="keyspec_symbols_3">&#x1043;</string>
+    <!-- U+1044: "၄" MYANMAR DIGIT FOUR -->
+    <string name="keyspec_symbols_4">&#x1044;</string>
+    <!-- U+1045: "၅" MYANMAR DIGIT FIVE -->
+    <string name="keyspec_symbols_5">&#x1045;</string>
+    <!-- U+1046: "၆" MYANMAR DIGIT SIX -->
+    <string name="keyspec_symbols_6">&#x1046;</string>
+    <!-- U+1047: "၇" MYANMAR DIGIT SEVEN -->
+    <string name="keyspec_symbols_7">&#x1047;</string>
+    <!-- U+1048: "၈" MYANMAR DIGIT EIGHT -->
+    <string name="keyspec_symbols_8">&#x1048;</string>
+    <!-- U+1049: "၉" MYANMAR DIGIT NINE -->
+    <string name="keyspec_symbols_9">&#x1049;</string>
+    <!-- U+1040: "၀" MYANMAR DIGIT ZERO -->
+    <string name="keyspec_symbols_0">&#x1040;</string>
+    <!-- Label for "switch to symbol" key.
+     U+1041: "၁" MYANMAR DIGIT ONE
+     U+1042: "၂" MYANMAR DIGIT TWO
+     U+1043: "၃" MYANMAR DIGIT THREE -->
+    <string name="keylabel_to_symbol">?&#x1041;&#x1042;&#x1043;</string>
+    <string name="keyspec_comma">&#x104A;</string>
     <string name="keyspec_tablet_comma">&#x104A;</string>
     <string name="morekeys_tablet_comma">"\\,"</string>
     <string name="keyspec_tablet_period">&#x104B;</string>
