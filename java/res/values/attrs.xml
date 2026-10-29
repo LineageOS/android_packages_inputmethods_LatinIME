@@ -598,7 +598,7 @@
             <enum name="lao" value="10" />
             <enum name="latin" value="11" />
             <enum name="malayalam" value="12" />
-            <!-- Myanmar is disabled. <enum name="myanmar" value="13" /> -->
+            <enum name="myanmar" value="13" />
             <enum name="sinhala" value="14" />
             <enum name="tamil" value="15" />
             <enum name="telugu" value="16" />
