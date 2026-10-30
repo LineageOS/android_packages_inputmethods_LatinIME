@@ -92,6 +92,7 @@ import com.android.inputmethod.latin.clipboard.ClipboardSuggestionMonitor;
 import com.android.inputmethod.latin.common.Constants;
 import com.android.inputmethod.latin.common.CoordinateUtils;
 import com.android.inputmethod.latin.common.InputPointers;
+import com.android.inputmethod.latin.common.StringUtils;
 import com.android.inputmethod.latin.define.DebugFlags;
 import com.android.inputmethod.latin.define.ProductionFlags;
 import com.android.inputmethod.latin.inputlogic.InputLogic;
@@ -2029,6 +2030,9 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
                     getApplicationContext().getResources());
         }
         mEmojiAltPhysicalKeyDetector.onKeyDown(keyEvent);
+        if (shouldHandleReducedHardwareKey(keyEvent)) {
+            return onReducedHardwareKeyDown(keyCode, keyEvent);
+        }
         if (!ProductionFlags.IS_HARDWARE_KEYBOARD_SUPPORTED) {
             return super.onKeyDown(keyCode, keyEvent);
         }
@@ -2054,14 +2058,49 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
                     getApplicationContext().getResources());
         }
         mEmojiAltPhysicalKeyDetector.onKeyUp(keyEvent);
-        if (!ProductionFlags.IS_HARDWARE_KEYBOARD_SUPPORTED) {
+        if (!ProductionFlags.IS_HARDWARE_KEYBOARD_SUPPORTED && !hasReducedHardwareKeyboard()) {
             return super.onKeyUp(keyCode, keyEvent);
         }
-        final long keyIdentifier = keyEvent.getDeviceId() << 32 + keyEvent.getKeyCode();
-        if (mInputLogic.mCurrentlyPressedHardwareKeys.remove(keyIdentifier)) {
+        if (mInputLogic.mCurrentlyPressedHardwareKeys.remove(getHardwareKeyIdentifier(keyEvent))) {
             return true;
         }
         return super.onKeyUp(keyCode, keyEvent);
+    }
+
+    private boolean shouldHandleReducedHardwareKey(final KeyEvent keyEvent) {
+        final EditorInfo editorInfo = getCurrentInputEditorInfo();
+        return hasReducedHardwareKeyboard() && isInputViewShown() && keyEvent.hasNoModifiers()
+                && editorInfo != null && editorInfo.inputType != InputType.TYPE_NULL;
+    }
+
+    private boolean onReducedHardwareKeyDown(final int keyCode, final KeyEvent keyEvent) {
+        final Event event = getHardwareKeyEventDecoder(
+                keyEvent.getDeviceId()).decodeHardwareKey(keyEvent);
+        if (!event.isHandled()) {
+            return super.onKeyDown(keyCode, keyEvent);
+        }
+        mInputLogic.mCurrentlyPressedHardwareKeys.add(getHardwareKeyIdentifier(keyEvent));
+        onEvent(applyKeyboardShiftState(event));
+        return true;
+    }
+
+    @Nonnull
+    private Event applyKeyboardShiftState(@Nonnull final Event event) {
+        if (mKeyboardSwitcher.getKeyboardShiftMode() == WordComposer.CAPS_MODE_OFF
+                || !Character.isLetter(event.mCodePoint)) {
+            return event;
+        }
+        final int shiftedCodePoint = StringUtils.toTitleCaseOfKeyCode(event.mCodePoint,
+                mRichImm.getCurrentSubtypeLocale());
+        if (shiftedCodePoint == Constants.CODE_UNSPECIFIED) {
+            return event;
+        }
+        return Event.createHardwareKeypressEvent(shiftedCodePoint, event.mKeyCode,
+                null /* next */, event.isKeyRepeat());
+    }
+
+    private static long getHardwareKeyIdentifier(final KeyEvent keyEvent) {
+        return ((long) keyEvent.getDeviceId() << 32) + keyEvent.getKeyCode();
     }
 
     // onKeyDown and onKeyUp are the main events we are interested in. There are two more events
