@@ -141,6 +141,7 @@ public final class PointerTracker implements PointerTrackerQueue.Element,
 
     // true if keyboard layout has been changed.
     private boolean mKeyboardLayoutHasBeenChanged;
+    private boolean mIsPinnedToCurrentKey;
 
     // true if this pointer is no longer triggering any action because it has been canceled.
     private boolean mIsTrackingForActionDisabled;
@@ -702,13 +703,15 @@ public final class PointerTracker implements PointerTrackerQueue.Element,
                 || mKeyDetector.alwaysAllowsKeySelectionByDraggingFinger();
         mKeyboardLayoutHasBeenChanged = false;
         mIsTrackingForActionDisabled = false;
+        mIsPinnedToCurrentKey = false;
         resetKeySelectionByDraggingFinger();
         if (key != null) {
             // This onPress call may have changed keyboard layout. Those cases are detected at
             // {@link #setKeyboard}. In those cases, we should update key according to the new
             // keyboard layout.
+            final Keyboard keyboardBeforePress = mKeyboard;
             if (callListenerOnPressAndCheckKeyboardLayoutChange(key, 0 /* repeatCount */)) {
-                key = onDownKey(x, y, eventTime);
+                key = onDownKeyInChangedKeyboard(key, keyboardBeforePress, x, y, eventTime);
             }
 
             startRepeatKey(key);
@@ -722,6 +725,18 @@ public final class PointerTracker implements PointerTrackerQueue.Element,
         final boolean isSwipeDownForDigitsEnabled =
                 Settings.getInstance().getCurrent().mSwipeDownForDigitsEnabled;
         mSwipeDownDigitDetector.onDownEvent(isSwipeDownForDigitsEnabled ? key : null, x, y);
+    }
+
+    private Key onDownKeyInChangedKeyboard(final Key pressedKey, final Keyboard previousKeyboard,
+            final int x, final int y, final long eventTime) {
+        final Key equivalentKey = mKeyboard.getKey(pressedKey.getCode());
+        if (equivalentKey == null
+                || mKeyboard.mOccupiedHeight == previousKeyboard.mOccupiedHeight) {
+            return onDownKey(x, y, eventTime);
+        }
+        // Keyboards of different heights don't share touch coordinates.
+        mIsPinnedToCurrentKey = true;
+        return onMoveToNewKey(equivalentKey, x, y);
     }
 
     private void startKeySelectionByDraggingFinger(final Key key) {
@@ -773,7 +788,7 @@ public final class PointerTracker implements PointerTrackerQueue.Element,
         if (DEBUG_MOVE_EVENT) {
             printTouchEvent("onMoveEvent:", x, y, eventTime);
         }
-        if (mIsTrackingForActionDisabled) {
+        if (mIsTrackingForActionDisabled || mIsPinnedToCurrentKey) {
             return;
         }
 

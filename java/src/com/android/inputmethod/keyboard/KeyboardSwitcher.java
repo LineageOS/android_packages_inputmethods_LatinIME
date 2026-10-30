@@ -164,6 +164,7 @@ public final class KeyboardSwitcher implements KeyboardState.SwitchActions {
         builder.setSplitLayoutEnabledByUser(isSplitLayout);
         builder.setSplitDuplicateKeysEnabled(settingsValues.mSplitKeyboardDuplicateKeys);
         builder.setFloatingKeyboard(isFloating);
+        builder.setHardwareKeyboardBarEnabled(settingsValues.mHasReducedHardwareKeyboard);
         mKeyboardLayoutSet = builder.build();
         mIsFloating = isFloating;
         mFloatingKeyboardWidth = keyboardWidth;
@@ -319,7 +320,8 @@ public final class KeyboardSwitcher implements KeyboardState.SwitchActions {
     public boolean isImeSuppressedByHardwareKeyboard(
             @Nonnull final SettingsValues settingsValues,
             @Nonnull final KeyboardSwitchState toggleState) {
-        return settingsValues.mHasHardwareKeyboard && toggleState == KeyboardSwitchState.HIDDEN;
+        return settingsValues.mHasHardwareKeyboard && !settingsValues.mHasReducedHardwareKeyboard
+                && toggleState == KeyboardSwitchState.HIDDEN;
     }
 
     private void setMainKeyboardFrame(
