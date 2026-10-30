@@ -60,6 +60,7 @@ public class SettingsValues {
     // From configuration:
     public final Locale mLocale;
     public final boolean mHasHardwareKeyboard;
+    public final boolean mHasReducedHardwareKeyboard;
     public final int mDisplayOrientation;
     // From preferences, in the same order as xml/prefs.xml:
     public final boolean mAutoCap;
@@ -172,9 +173,12 @@ public class SettingsValues {
         mBigramPredictionEnabled = readBigramPredictionEnabled(prefs, res);
         mDoubleSpacePeriodTimeout = res.getInteger(R.integer.config_double_space_period_timeout);
         mHasHardwareKeyboard = Settings.readHasHardwareKeyboard(res.getConfiguration());
+        mHasReducedHardwareKeyboard =
+                Settings.readHasReducedHardwareKeyboard(res.getConfiguration());
         mEnableMetricsLogging = prefs.getBoolean(Settings.PREF_ENABLE_METRICS_LOGGING, true);
         mIsSplitKeyboardEnabled = prefs.getBoolean(Settings.PREF_ENABLE_SPLIT_KEYBOARD, false);
-        mIsFloatingKeyboardEnabled = prefs.getBoolean(Settings.PREF_FLOATING_KEYBOARD, false);
+        mIsFloatingKeyboardEnabled = prefs.getBoolean(Settings.PREF_FLOATING_KEYBOARD, false)
+                && !mHasReducedHardwareKeyboard;
         mSplitKeyboardDuplicateKeys = prefs.getBoolean(
                 Settings.PREF_SPLIT_KEYBOARD_DUPLICATE_KEYS, true);
         mScreenMetrics = Settings.readScreenMetrics(res);

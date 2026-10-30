@@ -39,6 +39,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.inputmethodservice.InputMethodService;
 import android.media.AudioManager;
+import android.hardware.input.InputManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Debug;
@@ -226,6 +227,24 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
     private GestureConsumer mGestureConsumer = GestureConsumer.NULL_GESTURE_CONSUMER;
 
     public final UIHandler mHandler = new UIHandler(this);
+
+    private final InputManager.InputDeviceListener mInputDeviceListener =
+            new InputManager.InputDeviceListener() {
+        @Override
+        public void onInputDeviceAdded(final int deviceId) {
+            onInputDevicesChanged();
+        }
+
+        @Override
+        public void onInputDeviceRemoved(final int deviceId) {
+            onInputDevicesChanged();
+        }
+
+        @Override
+        public void onInputDeviceChanged(final int deviceId) {
+            onInputDevicesChanged();
+        }
+    };
 
     public static final class UIHandler extends LeakGuardHandlerWrapper<LatinIME> {
         private static final int MSG_UPDATE_SHIFT_STATE = 0;
@@ -636,6 +655,8 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
         // {@link #resetDictionaryFacilitatorIfNecessary()}.
         loadSettings();
         resetDictionaryFacilitatorIfNecessary();
+        getSystemService(InputManager.class).registerInputDeviceListener(
+                mInputDeviceListener, mHandler);
 
         // Register to receive ringer mode change.
         final IntentFilter filter = new IntentFilter();
@@ -794,6 +815,7 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
     public void onDestroy() {
         mDictionaryFacilitator.closeDictionaries();
         mSettings.onDestroy();
+        getSystemService(InputManager.class).unregisterInputDeviceListener(mInputDeviceListener);
         unregisterReceiver(mHideSoftInputReceiver);
         unregisterReceiver(mRingerModeChangeReceiver);
         unregisterReceiver(mDictionaryPackInstallReceiver);
@@ -823,7 +845,9 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
             mHandler.startOrientationChanging();
             mInputLogic.onOrientationChange(mSettings.getCurrent());
         }
-        if (settingsValues.mHasHardwareKeyboard != Settings.readHasHardwareKeyboard(conf)) {
+        if (settingsValues.mHasHardwareKeyboard != Settings.readHasHardwareKeyboard(conf)
+                || settingsValues.mHasReducedHardwareKeyboard
+                        != Settings.readHasReducedHardwareKeyboard(conf)) {
             // If the state of having a hardware keyboard changed, then we want to reload the
             // settings to adjust for that.
             // TODO: we should probably do this unconditionally here, rather than only when we
@@ -1375,7 +1399,7 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
 
     @Override
     public boolean onShowInputRequested(final int flags, final boolean configChange) {
-        if (isImeSuppressedByHardwareKeyboard()) {
+        if (isImeSuppressedByHardwareKeyboard() || hasReducedHardwareKeyboard()) {
             return true;
         }
         return super.onShowInputRequested(flags, configChange);
@@ -1383,16 +1407,31 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
 
     @Override
     public boolean onEvaluateInputViewShown() {
-        if (mIsExecutingStartShowingInputView) {
+        if (mIsExecutingStartShowingInputView || hasReducedHardwareKeyboard()) {
             return true;
         }
         return super.onEvaluateInputViewShown();
     }
 
+    private boolean hasReducedHardwareKeyboard() {
+        return mSettings.getCurrent().mHasReducedHardwareKeyboard;
+    }
+
+    private void onInputDevicesChanged() {
+        if (hasReducedHardwareKeyboard()
+                == Settings.readHasReducedHardwareKeyboard(getResources().getConfiguration())) {
+            return;
+        }
+        loadSettings();
+        reloadKeyboard();
+        updateInputViewShown();
+        updateFullscreenMode();
+    }
+
     @Override
     public boolean onEvaluateFullscreenMode() {
         final SettingsValues settingsValues = mSettings.getCurrent();
-        if (isImeSuppressedByHardwareKeyboard()) {
+        if (isImeSuppressedByHardwareKeyboard() || settingsValues.mHasReducedHardwareKeyboard) {
             // If there is a hardware keyboard, disable full screen mode.
             return false;
         }

@@ -71,6 +71,8 @@ public final class KeyboardId {
     public static final int ELEMENT_EMOJI_CATEGORY15 = 25;
     public static final int ELEMENT_EMOJI_CATEGORY16 = 26;
 
+    private static final int HARDWARE_KEYBOARD_BAR_HEIGHT_DIVISOR = 4;
+
     public final RichInputMethodSubtype mSubtype;
     public final int mWidth;
     public final int mHeight;
@@ -86,13 +88,17 @@ public final class KeyboardId {
     public final boolean mIsSplitLayout;
     public final boolean mIsSplitDuplicateKeys;
     public final boolean mIsFloating;
+    public final boolean mIsHardwareKeyboardBar;
 
     private final int mHashCode;
 
     public KeyboardId(final int elementId, final KeyboardLayoutSet.Params params) {
         mSubtype = params.mSubtype;
         mWidth = params.mKeyboardWidth;
-        mHeight = params.mKeyboardHeight;
+        mIsHardwareKeyboardBar = params.mIsHardwareKeyboardBar;
+        mHeight = mIsHardwareKeyboardBar
+                ? params.mKeyboardHeight / HARDWARE_KEYBOARD_BAR_HEIGHT_DIVISOR
+                : params.mKeyboardHeight;
         mMode = params.mMode;
         mElementId = elementId;
         mEditorInfo = params.mEditorInfo;
@@ -131,7 +137,8 @@ public final class KeyboardId {
                 id.mSubtype,
                 id.mIsSplitLayout,
                 id.mIsSplitDuplicateKeys,
-                id.mIsFloating
+                id.mIsFloating,
+                id.mIsHardwareKeyboardBar
         });
     }
 
@@ -156,7 +163,8 @@ public final class KeyboardId {
                 && other.mSubtype.equals(mSubtype)
                 && other.mIsSplitLayout == mIsSplitLayout
                 && other.mIsSplitDuplicateKeys == mIsSplitDuplicateKeys
-                && other.mIsFloating == mIsFloating;
+                && other.mIsFloating == mIsFloating
+                && other.mIsHardwareKeyboardBar == mIsHardwareKeyboardBar;
     }
 
     private static boolean isAlphabetKeyboard(final int elementId) {
@@ -207,7 +215,7 @@ public final class KeyboardId {
 
     @Override
     public String toString() {
-        return String.format(Locale.ROOT, "[%s %s:%s %dx%d %s %s%s%s%s%s%s%s%s%s%s%s%s%s]",
+        return String.format(Locale.ROOT, "[%s %s:%s %dx%d %s %s%s%s%s%s%s%s%s%s%s%s%s%s%s]",
                 elementIdToName(mElementId),
                 mSubtype.getLocale(),
                 mSubtype.getExtraValueOf(KEYBOARD_LAYOUT_SET),
@@ -225,7 +233,8 @@ public final class KeyboardId {
                 (isMultiLine() ? " isMultiLine" : ""),
                 (mIsSplitLayout ? " isSplitLayout" : ""),
                 (mIsSplitDuplicateKeys ? " isSplitDuplicateKeys" : ""),
-                (mIsFloating ? " isFloating" : "")
+                (mIsFloating ? " isFloating" : ""),
+                (mIsHardwareKeyboardBar ? " isHardwareKeyboardBar" : "")
         );
     }
 
