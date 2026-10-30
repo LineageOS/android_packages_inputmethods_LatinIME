@@ -137,6 +137,8 @@ public final class KeyboardLayoutSet {
         boolean mIsSplitLayoutEnabled;
         boolean mSplitDuplicateKeysEnabled;
         boolean mIsFloating;
+        boolean mHardwareKeyboardBarEnabled;
+        boolean mIsHardwareKeyboardBar;
         // Sparse array of KeyboardLayoutSet element parameters indexed by element's id.
         final SparseArray<ElementParams> mKeyboardLayoutSetElementIdToParamsMap =
                 new SparseArray<>();
@@ -193,8 +195,11 @@ public final class KeyboardLayoutSet {
             break;
         }
 
-        ElementParams elementParams = mParams.mKeyboardLayoutSetElementIdToParamsMap.get(
-                keyboardLayoutSetElementId);
+        final boolean isHardwareKeyboardBar = mParams.mHardwareKeyboardBarEnabled
+                && keyboardLayoutSetElementId < KeyboardId.ELEMENT_SYMBOLS;
+        ElementParams elementParams = isHardwareKeyboardBar
+                ? createHardwareKeyboardBarElementParams()
+                : mParams.mKeyboardLayoutSetElementIdToParamsMap.get(keyboardLayoutSetElementId);
         if (elementParams == null) {
             elementParams = mParams.mKeyboardLayoutSetElementIdToParamsMap.get(
                     KeyboardId.ELEMENT_ALPHABET);
@@ -204,8 +209,10 @@ public final class KeyboardLayoutSet {
         // specified as an elementKeyboard attribute in the file.
         // The KeyboardId is an internal key for a Keyboard object.
 
+        mParams.mIsHardwareKeyboardBar = isHardwareKeyboardBar;
         mParams.mIsSplitLayoutEnabled = mParams.mIsSplitLayoutEnabledByUser
                 && !mParams.mIsFloating
+                && !isHardwareKeyboardBar
                 && keyboardLayoutSetElementId <= KeyboardId.ELEMENT_SYMBOLS_SHIFTED;
         final KeyboardId id = new KeyboardId(keyboardLayoutSetElementId, mParams);
         try {
@@ -214,6 +221,13 @@ public final class KeyboardLayoutSet {
             Log.e(TAG, "Can't create keyboard: " + id, e);
             throw new KeyboardLayoutSetException(e, id);
         }
+    }
+
+    private static ElementParams createHardwareKeyboardBarElementParams() {
+        final ElementParams elementParams = new ElementParams();
+        elementParams.mKeyboardXmlId = R.xml.kbd_hardware_keyboard_bar;
+        elementParams.mAllowRedundantMoreKeys = true;
+        return elementParams;
     }
 
     private Context getPhoneLayoutContext() {
@@ -376,6 +390,11 @@ public final class KeyboardLayoutSet {
 
         public Builder setFloatingKeyboard(final boolean floating) {
             mParams.mIsFloating = floating;
+            return this;
+        }
+
+        public Builder setHardwareKeyboardBarEnabled(final boolean enabled) {
+            mParams.mHardwareKeyboardBarEnabled = enabled;
             return this;
         }
 

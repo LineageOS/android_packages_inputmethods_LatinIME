@@ -24,6 +24,8 @@ import android.content.res.Resources;
 import android.os.Build;
 import android.preference.PreferenceManager;
 import android.util.Log;
+import android.view.InputDevice;
+import android.view.KeyEvent;
 
 import com.android.inputmethod.compat.BuildCompatUtils;
 import com.android.inputmethod.latin.AudioAndHapticFeedbackManager;
@@ -141,6 +143,14 @@ public final class Settings implements SharedPreferences.OnSharedPreferenceChang
 
     private static final float UNDEFINED_PREFERENCE_VALUE_FLOAT = -1.0f;
     private static final int UNDEFINED_PREFERENCE_VALUE_INT = -1;
+
+    private static final int[] HARDWARE_KEYBOARD_MODIFIER_KEY_CODES = {
+            KeyEvent.KEYCODE_SHIFT_LEFT,
+            KeyEvent.KEYCODE_SHIFT_RIGHT,
+            KeyEvent.KEYCODE_ALT_LEFT,
+            KeyEvent.KEYCODE_ALT_RIGHT,
+            KeyEvent.KEYCODE_SYM
+    };
 
     private Context mContext;
     private Resources mRes;
@@ -413,6 +423,34 @@ public final class Settings implements SharedPreferences.OnSharedPreferenceChang
         // is NOKEYS and if it's not hidden (e.g. folded inside the device).
         return conf.keyboard != Configuration.KEYBOARD_NOKEYS
                 && conf.hardKeyboardHidden != Configuration.HARDKEYBOARDHIDDEN_YES;
+    }
+
+    public static boolean readHasReducedHardwareKeyboard(final Configuration conf) {
+        if (!readHasHardwareKeyboard(conf)) {
+            return false;
+        }
+        boolean hasAlphabeticKeyboard = false;
+        for (final int deviceId : InputDevice.getDeviceIds()) {
+            final InputDevice device = InputDevice.getDevice(deviceId);
+            if (device == null || device.isVirtual()
+                    || device.getKeyboardType() != InputDevice.KEYBOARD_TYPE_ALPHABETIC) {
+                continue;
+            }
+            if (hasAnyKey(device, HARDWARE_KEYBOARD_MODIFIER_KEY_CODES)) {
+                return false;
+            }
+            hasAlphabeticKeyboard = true;
+        }
+        return hasAlphabeticKeyboard;
+    }
+
+    private static boolean hasAnyKey(final InputDevice device, final int[] keyCodes) {
+        for (final boolean hasKey : device.hasKeys(keyCodes)) {
+            if (hasKey) {
+                return true;
+            }
+        }
+        return false;
     }
 
     public static boolean isInternal(final SharedPreferences prefs) {
