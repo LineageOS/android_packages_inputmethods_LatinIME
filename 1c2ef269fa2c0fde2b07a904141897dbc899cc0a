@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9d408438_b9108baf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 38493
+      },
+      "writtenOn": "2026-11-01T16:08:15Z",
+      "side": 1,
+      "message": "do I need to include that regenerated KeyboardTextsTable.java in the commit? \n https://github.com/glclaritas/my-stuff/blob/main/gboardvsLatinIME.md#gboard-vs-latinime-comparison\nThe keyboard now has full layout(reference taken from gboard as it is most used to keyboard for android Myanmar users) and correctly labeled localized digits, alpha to symbols key, and symbols to alpha key.",
+      "revId": "1c2ef269fa2c0fde2b07a904141897dbc899cc0a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
