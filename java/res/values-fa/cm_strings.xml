@@ -30,4 +30,16 @@
     <string name="show_longpress_hints_summary">نمایش نکات با فشار طولانی برای کلیدهای پشتیبانی شده</string>
     <string name="show_emoji_key">نمایش کلید ایموجی</string>
     <string name="show_emoji_key_summary">همیشه کلید ایموجی را نشان دهید. وقتی این گزینه فعال باشد، کلید تغییر زبان نمایش داده نمی شود.</string>
+    <string name="enable_split_keyboard_summary">فقط در حالت افقی</string>
+    <string name="split_keyboard_duplicate_keys">کلیدهای مرکزی تکراری</string>
+    <string name="split_keyboard_duplicate_keys_summary">کلیدهای نزدیک به وسط را در هر دو نیمه نمایش دهید</string>
+    <string name="spoken_description_split_keyboard">صفحه‌کلید دوتکه</string>
+    <string name="spoken_description_merge_keyboard">ادغام صفحه‌کلید</string>
+    <string name="spoken_description_float_keyboard">صفحه‌کلید شناور</string>
+    <string name="spoken_description_dock_keyboard">صفحه‌کلید اسکله</string>
+    <string name="floating_keyboard_drag_handle">جابه‌جایی صفحه‌کلید</string>
+    <string name="floating_keyboard_resize_handle">تغییر اندازه صفحه‌کلید</string>
+    <string name="floating_keyboard_reset">بازنشانی</string>
+    <string name="floating_keyboard_hide">مخفی‌کردن صفحه‌کلید</string>
+    <string name="floating_keyboard_switch_ime">تغییر روش ورودی</string>
 </resources>

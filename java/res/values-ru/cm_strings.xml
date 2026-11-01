@@ -36,6 +36,7 @@
     <string name="spoken_description_split_keyboard">Разделить клавиатуру</string>
     <string name="spoken_description_merge_keyboard">Соединить клавиатуру</string>
     <string name="spoken_description_float_keyboard">Плавающая клавиатура</string>
+    <string name="spoken_description_dock_keyboard">Клавиатура док-панели</string>
     <string name="floating_keyboard_drag_handle">Переместить клавиатуру</string>
     <string name="floating_keyboard_resize_handle">Изменить размер клавиатуры</string>
     <string name="floating_keyboard_reset">Сбросить</string>

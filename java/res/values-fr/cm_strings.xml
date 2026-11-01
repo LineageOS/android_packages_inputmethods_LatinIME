@@ -30,4 +30,5 @@
     <string name="show_longpress_hints_summary">Affiche les indices d\'appui long pour les touches prises en charge</string>
     <string name="show_emoji_key">Afficher la touche Émoji</string>
     <string name="show_emoji_key_summary">Toujours afficher la touche Émoji. Lorsque cette option est activée, la touche de changement de langue ne peut pas être affichée.</string>
+    <string name="floating_keyboard_reset">Réinitialiser</string>
 </resources>

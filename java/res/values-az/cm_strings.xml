@@ -30,4 +30,16 @@
     <string name="show_longpress_hints_summary">Dəstəklənən düymələr üçün uzun basma ipucularını göstərir</string>
     <string name="show_emoji_key">İfadə düyməsini göstər</string>
     <string name="show_emoji_key_summary">İfadə düyməsini hər zaman göstər. Bu seçənək fəal olduğu zaman, dil dəyişdirmə düyməsi göstərilə bilmir.</string>
+    <string name="enable_split_keyboard_summary">Yalnız mənzərə rejimində</string>
+    <string name="split_keyboard_duplicate_keys">Mərkəz düymələri çoxalt</string>
+    <string name="split_keyboard_duplicate_keys_summary">Düymələri hər iki yarıda, ortaya yaxın göstər</string>
+    <string name="spoken_description_split_keyboard">Klaviaturanı ayır</string>
+    <string name="spoken_description_merge_keyboard">Klaviaturanı birləşdir</string>
+    <string name="spoken_description_float_keyboard">Üzən klaviatura</string>
+    <string name="spoken_description_dock_keyboard">Yuva klaviaturası</string>
+    <string name="floating_keyboard_drag_handle">Klaviaturanı daşı</string>
+    <string name="floating_keyboard_resize_handle">Klaviatura ölçüsünü dəyiş</string>
+    <string name="floating_keyboard_reset">Sıfırla</string>
+    <string name="floating_keyboard_hide">Klaviaturanı gizlət</string>
+    <string name="floating_keyboard_switch_ime">Giriş üsulunu dəyişdir</string>
 </resources>

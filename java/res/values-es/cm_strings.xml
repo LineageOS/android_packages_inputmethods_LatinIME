@@ -30,4 +30,14 @@
     <string name="show_longpress_hints_summary">Muestra sugerencias de pulsación prolongada para las teclas compatibles</string>
     <string name="show_emoji_key">Mostrar tecla de emoticonos</string>
     <string name="show_emoji_key_summary">Mostrar siempre la tecla de emoticonos. Si se activa esta opción, no es posible mostrar la tecla de cambio de idioma.</string>
+    <string name="enable_split_keyboard_summary">Solo en formato horizontal</string>
+    <string name="spoken_description_split_keyboard">Dividir teclado</string>
+    <string name="spoken_description_merge_keyboard">Unir teclado</string>
+    <string name="spoken_description_float_keyboard">Teclado flotante</string>
+    <string name="spoken_description_dock_keyboard">Acoplar teclado</string>
+    <string name="floating_keyboard_drag_handle">Mover teclado</string>
+    <string name="floating_keyboard_resize_handle">Redimensionar teclado</string>
+    <string name="floating_keyboard_reset">Restablecer</string>
+    <string name="floating_keyboard_hide">Ocultar teclado</string>
+    <string name="floating_keyboard_switch_ime">Cambiar método de entrada</string>
 </resources>

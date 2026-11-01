@@ -30,4 +30,16 @@
     <string name="show_longpress_hints_summary">Taispeáin leideanna fadbhrú le haghaidh eochracha tacaithe</string>
     <string name="show_emoji_key">Taispeáin eochair emoji</string>
     <string name="show_emoji_key_summary">Taispeáin eochair emoji i gcónaí. Nuair atá an rogha seo cumasaithe, ní féidir eochair an lasc teanga a thaispeáint.</string>
+    <string name="enable_split_keyboard_summary">I mód tírdhreacha amháin</string>
+    <string name="split_keyboard_duplicate_keys">Eochracha lárnacha dúblacha</string>
+    <string name="split_keyboard_duplicate_keys_summary">Taispeáin eochracha gar don lár ar an dá leath</string>
+    <string name="spoken_description_split_keyboard">Méarchlár scoilte</string>
+    <string name="spoken_description_merge_keyboard">Cumaisc an méarchlár</string>
+    <string name="spoken_description_float_keyboard">Méarchlár ar snámh</string>
+    <string name="spoken_description_dock_keyboard">Méarchlár duga</string>
+    <string name="floating_keyboard_drag_handle">Bog an méarchlár</string>
+    <string name="floating_keyboard_resize_handle">Athraigh méid an mhéarchláir</string>
+    <string name="floating_keyboard_reset">Athshocraigh</string>
+    <string name="floating_keyboard_hide">Folaigh an méarchlár</string>
+    <string name="floating_keyboard_switch_ime">Athraigh an modh ionchuir</string>
 </resources>
