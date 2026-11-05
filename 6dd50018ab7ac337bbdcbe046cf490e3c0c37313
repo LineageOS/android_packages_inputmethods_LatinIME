@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "73f1debe_370a3774",
+        "filename": "java/src/com/android/inputmethod/latin/DictionaryFacilitatorImpl.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 35591
+      },
+      "writtenOn": "2026-11-05T02:41:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "de3dd1b2_6fb94058",
+      "revId": "6dd50018ab7ac337bbdcbe046cf490e3c0c37313",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "7770b583_c55bf231",
@@ -35,6 +53,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "5b95d3e5_b1f5be0f",
+        "filename": "java/src/com/android/inputmethod/latin/DictionaryFacilitatorImpl.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 408,
+      "author": {
+        "id": 35591
+      },
+      "writtenOn": "2026-11-05T02:41:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7770b583_c55bf231",
+      "revId": "6dd50018ab7ac337bbdcbe046cf490e3c0c37313",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6d88f723_ee2d10ef",
@@ -48,6 +84,24 @@
       "writtenOn": "2026-11-05T02:24:53Z",
       "side": 1,
       "message": "Also could be one-liner",
+      "revId": "6dd50018ab7ac337bbdcbe046cf490e3c0c37313",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f8806666_53e459c6",
+        "filename": "java/src/com/android/inputmethod/latin/DictionaryFacilitatorImpl.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 525,
+      "author": {
+        "id": 35591
+      },
+      "writtenOn": "2026-11-05T02:41:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6d88f723_ee2d10ef",
       "revId": "6dd50018ab7ac337bbdcbe046cf490e3c0c37313",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
