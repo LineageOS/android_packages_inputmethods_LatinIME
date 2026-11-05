@@ -16,7 +16,6 @@
 
 package com.android.inputmethod.latin;
 
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
@@ -24,9 +23,6 @@ import java.util.concurrent.TimeUnit;
 
 import android.content.Context;
 import android.util.Log;
-import android.view.inputmethod.InputMethodInfo;
-import android.view.inputmethod.InputMethodManager;
-import android.view.inputmethod.InputMethodSubtype;
 
 /**
  * Cache for dictionary facilitators of multiple locales.
@@ -76,49 +72,14 @@ public class DictionaryFacilitatorLruCache {
         // Nothing to do if the locale is null.  This would be the case before any get() calls.
         if (mLocale != null) {
           mSecondaryLocales = mMultilingualSpellCheck
-              ? getSecondaryLocalesLocked(mLocale) : Collections.<Locale>emptyList();
+              ? RichInputMethodManager.getEnabledSubtypeLocales(mContext, mLocale)
+              : Collections.<Locale>emptyList();
           // Note: Given that personalized dictionaries are not used here; we can pass null account.
           mDictionaryFacilitator.resetDictionaries(mContext, mLocale, mSecondaryLocales,
               mUseContactsDictionary, false /* usePersonalizedDicts */,
               false /* forceReloadMainDictionary */, null /* account */,
               mDictionaryNamePrefix, null /* listener */);
         }
-    }
-
-    /**
-     * Returns the locales of the other enabled keyboard languages (excluding the primary one), so
-     * their dictionaries can be consulted when checking spelling in a multilingual setup.
-     */
-    private List<Locale> getSecondaryLocalesLocked(final Locale primaryLocale) {
-        final InputMethodManager imm =
-                (InputMethodManager) mContext.getSystemService(Context.INPUT_METHOD_SERVICE);
-        if (imm == null) {
-            return Collections.emptyList();
-        }
-        final String packageName = mContext.getPackageName();
-        final ArrayList<Locale> secondaryLocales = new ArrayList<>();
-        for (final InputMethodInfo imi : imm.getInputMethodList()) {
-            if (!packageName.equals(imi.getPackageName())) {
-                continue;
-            }
-            for (final InputMethodSubtype subtype
-                    : imm.getEnabledInputMethodSubtypeList(imi, true /* allowsImplicit */)) {
-                // Resolve the locale the same way as the keyboard so the primary is reliably
-                // excluded (RichInputMethodSubtype may remap it).
-                final RichInputMethodSubtype richSubtype =
-                        RichInputMethodSubtype.getRichInputMethodSubtype(subtype);
-                if (richSubtype.isNoLanguage()) {
-                    continue;
-                }
-                final Locale locale = richSubtype.getLocale();
-                if (locale != null && !locale.equals(primaryLocale)
-                        && !secondaryLocales.contains(locale)) {
-                    secondaryLocales.add(locale);
-                }
-            }
-            break;
-        }
-        return secondaryLocales;
     }
 
     public void setUseContactsDictionary(final boolean useContactsDictionary) {
