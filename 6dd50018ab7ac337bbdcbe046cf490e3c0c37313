@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "de3dd1b2_6fb94058",
+        "filename": "java/src/com/android/inputmethod/latin/DictionaryFacilitatorImpl.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 34519
+      },
+      "writtenOn": "2026-11-05T02:24:53Z",
+      "side": 1,
+      "message": "This comment could be a one-liner at max keeping it informative rather than going 4 lines",
+      "revId": "6dd50018ab7ac337bbdcbe046cf490e3c0c37313",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7770b583_c55bf231",
+        "filename": "java/src/com/android/inputmethod/latin/DictionaryFacilitatorImpl.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 408,
+      "author": {
+        "id": 34519
+      },
+      "writtenOn": "2026-11-05T02:24:53Z",
+      "side": 1,
+      "message": "Same comment as above",
+      "revId": "6dd50018ab7ac337bbdcbe046cf490e3c0c37313",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6d88f723_ee2d10ef",
+        "filename": "java/src/com/android/inputmethod/latin/DictionaryFacilitatorImpl.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 525,
+      "author": {
+        "id": 34519
+      },
+      "writtenOn": "2026-11-05T02:24:53Z",
+      "side": 1,
+      "message": "Also could be one-liner",
+      "revId": "6dd50018ab7ac337bbdcbe046cf490e3c0c37313",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
