@@ -18,6 +18,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
 >
     <SwitchPreferenceCompat
+        android:key="pref_spellcheck_multilingual"
+        android:title="@string/multilingual_spellcheck"
+        android:summary="@string/multilingual_spellcheck_summary"
+        android:defaultValue="true"
+        android:persistent="true" />
+    <SwitchPreferenceCompat
         android:key="pref_spellcheck_use_contacts"
         android:title="@string/use_contacts_for_spellchecking_option_title"
         android:summary="@string/use_contacts_for_spellchecking_option_summary"
