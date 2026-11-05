@@ -16,6 +16,24 @@
       "message": "Also comments issues here as well",
       "revId": "17e2c5308a93b87800c1842ccc8109c1ed9ec3df",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2aa0e89f_ae376a4f",
+        "filename": "java/src/com/android/inputmethod/latin/DictionaryFacilitatorLruCache.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 35591
+      },
+      "writtenOn": "2026-11-05T02:46:58Z",
+      "side": 1,
+      "message": "In this commit If3a9692b888b8125cdb9a26490d64ce8ecafbf03, this method ends up deleted anyways.",
+      "parentUuid": "6aca8c60_7ff82641",
+      "revId": "17e2c5308a93b87800c1842ccc8109c1ed9ec3df",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
