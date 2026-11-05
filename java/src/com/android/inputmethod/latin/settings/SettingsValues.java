@@ -71,6 +71,7 @@ public class SettingsValues {
     public final boolean mShowNumberRowPassword;
     public final boolean mShowLongpressHints;
     public final boolean mShowClipboardSuggestions;
+    public final boolean mMultilingualSuggestions;
     public final boolean mIncludesOtherImesInLanguageSwitchList;
     public final boolean mShowsLanguageSwitchKey;
     public final boolean mShowsEmojiKey;
@@ -154,6 +155,8 @@ public class SettingsValues {
         mShowLongpressHints = prefs.getBoolean(Settings.PREF_SHOW_LONGPRESS_HINTS, true);
         mShowClipboardSuggestions =
                 prefs.getBoolean(Settings.PREF_SHOW_CLIPBOARD_SUGGESTIONS, true);
+        mMultilingualSuggestions =
+                prefs.getBoolean(Settings.PREF_MULTILINGUAL_SUGGESTIONS, true);
         mIncludesOtherImesInLanguageSwitchList = Settings.ENABLE_SHOW_LANGUAGE_SWITCH_KEY_SETTINGS
                 ? prefs.getBoolean(Settings.PREF_INCLUDE_OTHER_IMES_IN_LANGUAGE_SWITCH_LIST, false)
                 : true /* forcibly */;

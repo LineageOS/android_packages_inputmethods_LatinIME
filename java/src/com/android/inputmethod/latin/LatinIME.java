@@ -119,6 +119,7 @@ import java.io.FileDescriptor;
 import java.io.PrintWriter;
 import java.text.BreakIterator;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
 import java.util.concurrent.TimeUnit;
@@ -752,6 +753,9 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
      * @param primaryLocale the locale of the currently selected subtype
      */
     private List<Locale> getSecondaryDictionaryLocales(final Locale primaryLocale) {
+        if (!mSettings.getCurrent().mMultilingualSuggestions) {
+            return Collections.emptyList();
+        }
         final List<InputMethodSubtype> subtypes =
                 mRichImm.getMyEnabledInputMethodSubtypeList(true /* allowsImplicitlySelected */);
         final ArrayList<Locale> secondaryLocales = new ArrayList<>();
