@@ -105,6 +105,14 @@ public class DictionaryFacilitatorImpl implements DictionaryFacilitator {
     }
 
     /**
+     * Returns the dictionary groups to consult for suggestions and word validity. The returned
+     * list is a snapshot that is safe to iterate without holding {@link #mLock}.
+     */
+    private List<DictionaryGroup> getDictionaryGroups() {
+        return Collections.singletonList(mDictionaryGroup);
+    }
+
+    /**
      * Returns whether this facilitator is exactly for this account.
      *
      * @param account the account to test against.
@@ -467,17 +475,21 @@ public class DictionaryFacilitatorImpl implements DictionaryFacilitator {
     // The main dictionaries are loaded asynchronously.  Don't cache the return value
     // of these methods.
     public boolean hasAtLeastOneInitializedMainDictionary() {
-        final Dictionary mainDict = mDictionaryGroup.getDict(Dictionary.TYPE_MAIN);
-        if (mainDict != null && mainDict.isInitialized()) {
-            return true;
+        for (final DictionaryGroup dictionaryGroup : getDictionaryGroups()) {
+            final Dictionary mainDict = dictionaryGroup.getDict(Dictionary.TYPE_MAIN);
+            if (mainDict != null && mainDict.isInitialized()) {
+                return true;
+            }
         }
         return false;
     }
 
     public boolean hasAtLeastOneUninitializedMainDictionary() {
-        final Dictionary mainDict = mDictionaryGroup.getDict(Dictionary.TYPE_MAIN);
-        if (mainDict == null || !mainDict.isInitialized()) {
-            return true;
+        for (final DictionaryGroup dictionaryGroup : getDictionaryGroups()) {
+            final Dictionary mainDict = dictionaryGroup.getDict(Dictionary.TYPE_MAIN);
+            if (mainDict == null || !mainDict.isInitialized()) {
+                return true;
+            }
         }
         return false;
     }
@@ -623,20 +635,22 @@ public class DictionaryFacilitatorImpl implements DictionaryFacilitator {
                 false /* firstSuggestionExceedsConfidenceThreshold */);
         final float[] weightOfLangModelVsSpatialModel =
                 new float[] { Dictionary.NOT_A_WEIGHT_OF_LANG_MODEL_VS_SPATIAL_MODEL };
-        for (final String dictType : ALL_DICTIONARY_TYPES) {
-            final Dictionary dictionary = mDictionaryGroup.getDict(dictType);
-            if (null == dictionary) continue;
-            final float weightForLocale = composedData.mIsBatchMode
-                    ? mDictionaryGroup.mWeightForGesturingInLocale
-                    : mDictionaryGroup.mWeightForTypingInLocale;
-            final ArrayList<SuggestedWordInfo> dictionarySuggestions =
-                    dictionary.getSuggestions(composedData, ngramContext,
-                            proximityInfoHandle, settingsValuesForSuggestion, sessionId,
-                            weightForLocale, weightOfLangModelVsSpatialModel);
-            if (null == dictionarySuggestions) continue;
-            suggestionResults.addAll(dictionarySuggestions);
-            if (null != suggestionResults.mRawSuggestions) {
-                suggestionResults.mRawSuggestions.addAll(dictionarySuggestions);
+        for (final DictionaryGroup dictionaryGroup : getDictionaryGroups()) {
+            for (final String dictType : ALL_DICTIONARY_TYPES) {
+                final Dictionary dictionary = dictionaryGroup.getDict(dictType);
+                if (null == dictionary) continue;
+                final float weightForLocale = composedData.mIsBatchMode
+                        ? dictionaryGroup.mWeightForGesturingInLocale
+                        : dictionaryGroup.mWeightForTypingInLocale;
+                final ArrayList<SuggestedWordInfo> dictionarySuggestions =
+                        dictionary.getSuggestions(composedData, ngramContext,
+                                proximityInfoHandle, settingsValuesForSuggestion, sessionId,
+                                weightForLocale, weightOfLangModelVsSpatialModel);
+                if (null == dictionarySuggestions) continue;
+                suggestionResults.addAll(dictionarySuggestions);
+                if (null != suggestionResults.mRawSuggestions) {
+                    suggestionResults.mRawSuggestions.addAll(dictionarySuggestions);
+                }
             }
         }
         return suggestionResults;
@@ -661,17 +675,19 @@ public class DictionaryFacilitatorImpl implements DictionaryFacilitator {
         if (TextUtils.isEmpty(word)) {
             return false;
         }
-        if (mDictionaryGroup.mLocale == null) {
-            return false;
-        }
-        for (final String dictType : dictionariesToCheck) {
-            final Dictionary dictionary = mDictionaryGroup.getDict(dictType);
-            // Ideally the passed map would come out of a {@link java.util.concurrent.Future} and
-            // would be immutable once it's finished initializing, but concretely a null test is
-            // probably good enough for the time being.
-            if (null == dictionary) continue;
-            if (dictionary.isValidWord(word)) {
-                return true;
+        for (final DictionaryGroup dictionaryGroup : getDictionaryGroups()) {
+            if (dictionaryGroup.mLocale == null) {
+                continue;
+            }
+            for (final String dictType : dictionariesToCheck) {
+                final Dictionary dictionary = dictionaryGroup.getDict(dictType);
+                // Ideally the passed map would come out of a {@link java.util.concurrent.Future}
+                // and would be immutable once it's finished initializing, but concretely a null
+                // test is probably good enough for the time being.
+                if (null == dictionary) continue;
+                if (dictionary.isValidWord(word)) {
+                    return true;
+                }
             }
         }
         return false;
