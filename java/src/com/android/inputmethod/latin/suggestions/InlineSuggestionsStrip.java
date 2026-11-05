@@ -121,7 +121,7 @@ public final class InlineSuggestionsStrip extends LinearLayout {
             }
             final ViewGroup container = batch.mSuggestions.get(i).getInfo().isPinned()
                     ? mPinnedSuggestions : mScrollableSuggestions;
-            container.addView(view, createChipLayoutParams());
+            container.addView(view, createChipLayoutParams(view.getLayoutParams()));
         }
     }
 
@@ -130,9 +130,8 @@ public final class InlineSuggestionsStrip extends LinearLayout {
         mPinnedSuggestions.removeAllViews();
     }
 
-    private LayoutParams createChipLayoutParams() {
-        final LayoutParams params =
-                new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
+    private LayoutParams createChipLayoutParams(@Nonnull final ViewGroup.LayoutParams chipSize) {
+        final LayoutParams params = new LayoutParams(chipSize.width, chipSize.height);
         params.setMarginEnd(dpToPx(CHIP_SPACING_DP));
         return params;
     }
