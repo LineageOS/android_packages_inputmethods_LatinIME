@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7604a378_9b2f28a9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35591
+      },
+      "writtenOn": "2026-11-05T01:47:54Z",
+      "side": 1,
+      "message": "Works fine on my end with english and french, mixed up in a same sentence or not.",
+      "revId": "a0b12050c09955b55e47b00049492bad092ac534",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
