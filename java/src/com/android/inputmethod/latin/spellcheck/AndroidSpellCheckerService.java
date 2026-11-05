@@ -35,6 +35,7 @@ import com.android.inputmethod.latin.R;
 import com.android.inputmethod.latin.RichInputMethodSubtype;
 import com.android.inputmethod.latin.SuggestedWords;
 import com.android.inputmethod.latin.common.ComposedData;
+import com.android.inputmethod.latin.settings.Settings;
 import com.android.inputmethod.latin.settings.SettingsValuesForSuggestion;
 import com.android.inputmethod.latin.utils.AdditionalSubtypeUtils;
 import com.android.inputmethod.latin.utils.ScriptUtils;
@@ -135,9 +136,13 @@ public final class AndroidSpellCheckerService extends SpellCheckerService
         if (PREF_USE_CONTACTS_KEY.equals(key)) {
             final boolean useContactsDictionary = prefs.getBoolean(PREF_USE_CONTACTS_KEY, true);
             mDictionaryFacilitatorCache.setUseContactsDictionary(useContactsDictionary);
-        } else if (PREF_MULTILINGUAL_SPELLCHECK_KEY.equals(key)) {
+        } else if (PREF_MULTILINGUAL_SPELLCHECK_KEY.equals(key)
+                || Settings.PREF_MULTILINGUAL_SUGGESTIONS.equals(key)) {
+            // Multilingual spell checking only applies when multilingual suggestions (the main
+            // multilingual switch, in the keyboard's text correction settings) is also on.
             final boolean multilingualSpellCheck =
-                    prefs.getBoolean(PREF_MULTILINGUAL_SPELLCHECK_KEY, true);
+                    prefs.getBoolean(PREF_MULTILINGUAL_SPELLCHECK_KEY, true)
+                    && prefs.getBoolean(Settings.PREF_MULTILINGUAL_SUGGESTIONS, true);
             mDictionaryFacilitatorCache.setMultilingualSpellCheck(multilingualSpellCheck);
         }
     }
