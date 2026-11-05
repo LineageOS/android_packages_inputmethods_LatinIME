@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6aca8c60_7ff82641",
+        "filename": "java/src/com/android/inputmethod/latin/DictionaryFacilitatorLruCache.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 34519
+      },
+      "writtenOn": "2026-11-05T02:28:00Z",
+      "side": 1,
+      "message": "Also comments issues here as well",
+      "revId": "17e2c5308a93b87800c1842ccc8109c1ed9ec3df",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
