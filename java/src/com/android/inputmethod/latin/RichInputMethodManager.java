@@ -38,6 +38,7 @@ import com.android.inputmethod.latin.utils.AdditionalSubtypeUtils;
 import com.android.inputmethod.latin.utils.LanguageOnSpacebarUtils;
 import com.android.inputmethod.latin.utils.SubtypeLocaleUtils;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -126,6 +127,46 @@ public class RichInputMethodManager {
             boolean allowsImplicitlySelectedSubtypes) {
         return getEnabledInputMethodSubtypeList(
                 getInputMethodInfoOfThisIme(), allowsImplicitlySelectedSubtypes);
+    }
+
+    /**
+     * Returns the locales of this IME's enabled subtypes, excluding {@code localeToExclude} and the
+     * "no language" subtype, deduplicated. This is a static helper so it can be used both from the
+     * keyboard and from the spell checker service (which has no initialized instance), resolving
+     * each locale the same way as {@link #getCurrentSubtypeLocale()}.
+     *
+     * @param context any context of this package
+     * @param localeToExclude a locale to leave out (typically the primary one), or {@code null}
+     */
+    public static List<Locale> getEnabledSubtypeLocales(final Context context,
+            @Nullable final Locale localeToExclude) {
+        final InputMethodManager imm =
+                (InputMethodManager) context.getSystemService(Context.INPUT_METHOD_SERVICE);
+        final ArrayList<Locale> locales = new ArrayList<>();
+        if (imm == null) {
+            return locales;
+        }
+        final String packageName = context.getPackageName();
+        for (final InputMethodInfo imi : imm.getInputMethodList()) {
+            if (!packageName.equals(imi.getPackageName())) {
+                continue;
+            }
+            for (final InputMethodSubtype subtype
+                    : imm.getEnabledInputMethodSubtypeList(imi, true /* allowsImplicit */)) {
+                final RichInputMethodSubtype richSubtype =
+                        RichInputMethodSubtype.getRichInputMethodSubtype(subtype);
+                if (richSubtype.isNoLanguage()) {
+                    continue;
+                }
+                final Locale locale = richSubtype.getLocale();
+                if (locale != null && !locale.equals(localeToExclude)
+                        && !locales.contains(locale)) {
+                    locales.add(locale);
+                }
+            }
+            break;
+        }
+        return locales;
     }
 
     public boolean switchToNextInputMethod(final IBinder token, final boolean onlyCurrentIme) {
