@@ -56,6 +56,7 @@ public final class AndroidSpellCheckerService extends SpellCheckerService
     private static final boolean DEBUG = false;
 
     public static final String PREF_USE_CONTACTS_KEY = "pref_spellcheck_use_contacts";
+    public static final String PREF_MULTILINGUAL_SPELLCHECK_KEY = "pref_spellcheck_multilingual";
 
     private static final int SPELLCHECKER_DUMMY_KEYBOARD_WIDTH = 480;
     private static final int SPELLCHECKER_DUMMY_KEYBOARD_HEIGHT = 301;
@@ -98,6 +99,7 @@ public final class AndroidSpellCheckerService extends SpellCheckerService
         final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         prefs.registerOnSharedPreferenceChangeListener(this);
         onSharedPreferenceChanged(prefs, PREF_USE_CONTACTS_KEY);
+        onSharedPreferenceChanged(prefs, PREF_MULTILINGUAL_SPELLCHECK_KEY);
     }
 
     public float getRecommendedThreshold() {
@@ -130,9 +132,14 @@ public final class AndroidSpellCheckerService extends SpellCheckerService
 
     @Override
     public void onSharedPreferenceChanged(final SharedPreferences prefs, final String key) {
-        if (!PREF_USE_CONTACTS_KEY.equals(key)) return;
-        final boolean useContactsDictionary = prefs.getBoolean(PREF_USE_CONTACTS_KEY, true);
-        mDictionaryFacilitatorCache.setUseContactsDictionary(useContactsDictionary);
+        if (PREF_USE_CONTACTS_KEY.equals(key)) {
+            final boolean useContactsDictionary = prefs.getBoolean(PREF_USE_CONTACTS_KEY, true);
+            mDictionaryFacilitatorCache.setUseContactsDictionary(useContactsDictionary);
+        } else if (PREF_MULTILINGUAL_SPELLCHECK_KEY.equals(key)) {
+            final boolean multilingualSpellCheck =
+                    prefs.getBoolean(PREF_MULTILINGUAL_SPELLCHECK_KEY, true);
+            mDictionaryFacilitatorCache.setMultilingualSpellCheck(multilingualSpellCheck);
+        }
     }
 
     @Override
