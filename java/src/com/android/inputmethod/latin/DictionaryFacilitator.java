@@ -75,6 +75,15 @@ public interface DictionaryFacilitator {
     boolean isForLocale(final Locale locale);
 
     /**
+     * Returns whether this facilitator is exactly for this primary locale and set of secondary
+     * locales (order independent).
+     *
+     * @param locale the primary locale to test against
+     * @param secondaryLocales the secondary locales to test against, may be {@code null} or empty
+     */
+    boolean isForLocales(final Locale locale, @Nullable final List<Locale> secondaryLocales);
+
+    /**
      * Returns whether this facilitator is exactly for this account.
      *
      * @param account the account to test against.
@@ -114,6 +123,22 @@ public interface DictionaryFacilitator {
     void resetDictionaries(
             final Context context,
             final Locale newLocale,
+            final boolean useContactsDict,
+            final boolean usePersonalizedDicts,
+            final boolean forceReloadMainDictionary,
+            @Nullable final String account,
+            final String dictNamePrefix,
+            @Nullable final DictionaryInitializationListener listener);
+
+    /**
+     * Same as {@link #resetDictionaries} but additionally loads a read-only main dictionary for
+     * each of the given secondary locales, so that words valid in another enabled language are
+     * suggested and are not autocorrected away.
+     */
+    void resetDictionaries(
+            final Context context,
+            final Locale newLocale,
+            @Nullable final List<Locale> secondaryLocales,
             final boolean useContactsDict,
             final boolean usePersonalizedDicts,
             final boolean forceReloadMainDictionary,
