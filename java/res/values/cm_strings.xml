@@ -52,6 +52,10 @@ disposition rather than other common dispositions for Latin languages. [CHAR LIM
     <string name="swipe_down_for_digits">Swipe down for numbers</string>
     <string name="swipe_down_for_digits_summary">Swipe down on a key to type the number shown on it</string>
 
+    <!-- Preference item for using the dictionaries of all enabled languages at once -->
+    <string name="multilingual_suggestions">Multilingual suggestions</string>
+    <string name="multilingual_suggestions_summary">Use the dictionaries of all enabled languages, so words from another language are not autocorrected away</string>
+
     <!-- Preference item for suggesting recently copied text -->
     <string name="show_clipboard_suggestions">Clipboard suggestions</string>
     <string name="show_clipboard_suggestions_summary">Suggest recently copied text and verification codes</string>
