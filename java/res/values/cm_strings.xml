@@ -59,6 +59,8 @@ disposition rather than other common dispositions for Latin languages. [CHAR LIM
     <!-- Preference item for spell-checking against the dictionaries of all enabled languages -->
     <string name="multilingual_spellcheck">Multilingual spell checking</string>
     <string name="multilingual_spellcheck_summary">Accept words from all enabled languages, so text in another language is not marked as misspelled</string>
+    <!-- Summary shown when multilingual spell checking is disabled because its prerequisite is off -->
+    <string name="multilingual_spellcheck_requires_suggestions">Turn on Multilingual suggestions (in the keyboard\'s Text correction settings) to use this</string>
 
     <!-- Preference item for suggesting recently copied text -->
     <string name="show_clipboard_suggestions">Clipboard suggestions</string>

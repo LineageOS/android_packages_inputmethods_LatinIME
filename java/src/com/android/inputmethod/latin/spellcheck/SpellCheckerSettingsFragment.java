@@ -26,6 +26,7 @@ import android.text.TextUtils;
 import com.android.inputmethod.latin.R;
 import com.android.inputmethod.latin.permissions.PermissionsManager;
 import com.android.inputmethod.latin.permissions.PermissionsUtil;
+import com.android.inputmethod.latin.settings.Settings;
 import com.android.inputmethod.latin.settings.SubScreenFragment;
 import com.android.inputmethod.latin.utils.ApplicationUtils;
 
@@ -50,6 +51,21 @@ public final class SpellCheckerSettingsFragment extends SubScreenFragment
         mLookupContactsPreference = (SwitchPreferenceCompat) findPreference(
                 AndroidSpellCheckerService.PREF_USE_CONTACTS_KEY);
         turnOffLookupContactsIfNoPermission();
+
+        // Multilingual spell checking depends on the keyboard's "Multilingual suggestions" switch,
+        // which lives on a different settings screen. Grey this out (with a hint) when that is off.
+        final SwitchPreferenceCompat multilingualPreference =
+                (SwitchPreferenceCompat) findPreference(
+                        AndroidSpellCheckerService.PREF_MULTILINGUAL_SPELLCHECK_KEY);
+        if (multilingualPreference != null) {
+            final boolean suggestionsMultilingual = getPreferenceManager().getSharedPreferences()
+                    .getBoolean(Settings.PREF_MULTILINGUAL_SUGGESTIONS, true);
+            multilingualPreference.setEnabled(suggestionsMultilingual);
+            if (!suggestionsMultilingual) {
+                multilingualPreference.setSummary(
+                        R.string.multilingual_spellcheck_requires_suggestions);
+            }
+        }
     }
 
     @Override
