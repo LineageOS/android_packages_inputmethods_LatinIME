@@ -69,6 +69,11 @@ public class DictionaryFacilitatorImpl implements DictionaryFacilitator {
     private static final int CAPITALIZED_FORM_MAX_PROBABILITY_FOR_INSERT = 140;
 
     private DictionaryGroup mDictionaryGroup = new DictionaryGroup();
+    // Read-only dictionary groups (main dictionary only) for the other enabled languages. They are
+    // consulted for suggestions and spell-checking in addition to the primary group, so that words
+    // valid in another enabled language are suggested and are not autocorrected away. Learning,
+    // user history and contacts stay on the primary group only.
+    private List<DictionaryGroup> mSecondaryDictionaryGroups = Collections.emptyList();
     private volatile CountDownLatch mLatchForWaitingLoadingMainDictionaries = new CountDownLatch(0);
     // To synchronize assigning mDictionaryGroup to ensure closing dictionaries.
     private final Object mLock = new Object();
@@ -104,12 +109,40 @@ public class DictionaryFacilitatorImpl implements DictionaryFacilitator {
         return locale != null && locale.equals(mDictionaryGroup.mLocale);
     }
 
+    @Override
+    public boolean isForLocales(final Locale locale,
+            @Nullable final List<Locale> secondaryLocales) {
+        if (!isForLocale(locale)) {
+            return false;
+        }
+        final List<Locale> currentSecondaryLocales = getSecondaryLocales();
+        final List<Locale> requestedSecondaryLocales = (secondaryLocales == null)
+                ? Collections.<Locale>emptyList() : secondaryLocales;
+        return currentSecondaryLocales.size() == requestedSecondaryLocales.size()
+                && currentSecondaryLocales.containsAll(requestedSecondaryLocales);
+    }
+
     /**
-     * Returns the dictionary groups to consult for suggestions and word validity. The returned
-     * list is a snapshot that is safe to iterate without holding {@link #mLock}.
+     * Returns the dictionary groups to consult for suggestions and word validity (the primary
+     * group followed by the secondary ones). The returned list is a snapshot that is safe to
+     * iterate without holding {@link #mLock}.
      */
     private List<DictionaryGroup> getDictionaryGroups() {
-        return Collections.singletonList(mDictionaryGroup);
+        final List<DictionaryGroup> secondaryGroups = mSecondaryDictionaryGroups;
+        final ArrayList<DictionaryGroup> dictionaryGroups =
+                new ArrayList<>(secondaryGroups.size() + 1);
+        dictionaryGroups.add(mDictionaryGroup);
+        dictionaryGroups.addAll(secondaryGroups);
+        return dictionaryGroups;
+    }
+
+    private List<Locale> getSecondaryLocales() {
+        final List<DictionaryGroup> secondaryGroups = mSecondaryDictionaryGroups;
+        final ArrayList<Locale> locales = new ArrayList<>(secondaryGroups.size());
+        for (final DictionaryGroup dictionaryGroup : secondaryGroups) {
+            locales.add(dictionaryGroup.mLocale);
+        }
+        return locales;
     }
 
     /**
@@ -293,6 +326,21 @@ public class DictionaryFacilitatorImpl implements DictionaryFacilitator {
             @Nullable final String account,
             final String dictNamePrefix,
             @Nullable final DictionaryInitializationListener listener) {
+        resetDictionaries(context, newLocale, Collections.<Locale>emptyList(), useContactsDict,
+                usePersonalizedDicts, forceReloadMainDictionary, account, dictNamePrefix, listener);
+    }
+
+    @Override
+    public void resetDictionaries(
+            final Context context,
+            final Locale newLocale,
+            @Nullable final List<Locale> secondaryLocales,
+            final boolean useContactsDict,
+            final boolean usePersonalizedDicts,
+            final boolean forceReloadMainDictionary,
+            @Nullable final String account,
+            final String dictNamePrefix,
+            @Nullable final DictionaryInitializationListener listener) {
         final HashMap<Locale, ArrayList<String>> existingDictionariesToCleanup = new HashMap<>();
         // TODO: Make subDictTypesToUse configurable by resource or a static final list.
         final HashSet<String> subDictTypesToUse = new HashSet<>();
@@ -357,11 +405,26 @@ public class DictionaryFacilitatorImpl implements DictionaryFacilitator {
         DictionaryGroup newDictionaryGroup =
                 new DictionaryGroup(newLocale, mainDict, account, subDicts);
 
+        // Build read-only secondary groups (main dictionary only) for the other enabled locales.
+        // Their suggestions are down-weighted so the primary (current) language keeps ranking
+        // first. If the enabled languages are unchanged (and no reload is forced), the existing
+        // groups are kept as-is so switching layouts or toggling settings does not needlessly
+        // reload those dictionaries; otherwise they are rebuilt and loaded asynchronously.
+        final List<DictionaryGroup> currentSecondaryDictionaryGroups = mSecondaryDictionaryGroups;
+        final List<DictionaryGroup> newSecondaryDictionaryGroups =
+                (!forceReloadMainDictionary && sameSecondaryLocales(
+                        currentSecondaryDictionaryGroups, secondaryLocales, newLocale))
+                ? currentSecondaryDictionaryGroups
+                : buildSecondaryDictionaryGroups(secondaryLocales, newLocale);
+
         // Replace Dictionaries.
         final DictionaryGroup oldDictionaryGroup;
+        final List<DictionaryGroup> oldSecondaryDictionaryGroups;
         synchronized (mLock) {
             oldDictionaryGroup = mDictionaryGroup;
+            oldSecondaryDictionaryGroups = mSecondaryDictionaryGroups;
             mDictionaryGroup = newDictionaryGroup;
+            mSecondaryDictionaryGroups = newSecondaryDictionaryGroups;
             if (hasAtLeastOneUninitializedMainDictionary()) {
                 asyncReloadUninitializedMainDictionaries(context, newLocale, listener);
             }
@@ -380,10 +443,67 @@ public class DictionaryFacilitatorImpl implements DictionaryFacilitator {
                 dictionarySetToCleanup.closeDict(dictType);
             }
         }
+        // Close old secondary main dictionaries, unless the groups were kept as-is above.
+        if (newSecondaryDictionaryGroups != oldSecondaryDictionaryGroups) {
+            for (final DictionaryGroup oldSecondaryDictionaryGroup : oldSecondaryDictionaryGroups) {
+                oldSecondaryDictionaryGroup.closeDict(Dictionary.TYPE_MAIN);
+            }
+        }
 
         if (mValidSpellingWordWriteCache != null) {
             mValidSpellingWordWriteCache.evictAll();
         }
+    }
+
+    /**
+     * Returns whether the given secondary dictionary groups already correspond exactly to the
+     * requested secondary locales (excluding the primary locale), order independent.
+     */
+    private static boolean sameSecondaryLocales(final List<DictionaryGroup> secondaryGroups,
+            @Nullable final List<Locale> requestedLocales, final Locale primaryLocale) {
+        final ArrayList<Locale> requested = new ArrayList<>();
+        if (requestedLocales != null) {
+            for (final Locale locale : requestedLocales) {
+                if (locale != null && !locale.equals(primaryLocale)) {
+                    requested.add(locale);
+                }
+            }
+        }
+        if (secondaryGroups.size() != requested.size()) {
+            return false;
+        }
+        for (final DictionaryGroup secondaryGroup : secondaryGroups) {
+            if (!requested.contains(secondaryGroup.mLocale)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    /**
+     * Builds a read-only dictionary group (main dictionary only, loaded later) for each requested
+     * secondary locale, with its suggestions down-weighted relative to the primary group.
+     */
+    private static List<DictionaryGroup> buildSecondaryDictionaryGroups(
+            @Nullable final List<Locale> secondaryLocales, final Locale primaryLocale) {
+        if (secondaryLocales == null || secondaryLocales.isEmpty()) {
+            return Collections.emptyList();
+        }
+        final ArrayList<DictionaryGroup> secondaryGroups = new ArrayList<>();
+        for (final Locale secondaryLocale : secondaryLocales) {
+            if (secondaryLocale == null || secondaryLocale.equals(primaryLocale)) {
+                continue;
+            }
+            final DictionaryGroup secondaryGroup = new DictionaryGroup(secondaryLocale,
+                    null /* mainDict */, null /* account */,
+                    Collections.<String, ExpandableBinaryDictionary>emptyMap());
+            secondaryGroup.mWeightForTypingInLocale =
+                    DictionaryGroup.WEIGHT_FOR_TYPING_IN_NOT_MOST_PROBABLE_LANGUAGE;
+            secondaryGroup.mWeightForGesturingInLocale =
+                    DictionaryGroup.WEIGHT_FOR_GESTURING_IN_NOT_MOST_PROBABLE_LANGUAGE;
+            secondaryGroups.add(secondaryGroup);
+        }
+        return secondaryGroups;
     }
 
     private void asyncReloadUninitializedMainDictionaries(final Context context,
@@ -402,21 +522,27 @@ public class DictionaryFacilitatorImpl implements DictionaryFacilitator {
     void doReloadUninitializedMainDictionaries(final Context context, final Locale locale,
             final DictionaryInitializationListener listener,
             final CountDownLatch latchForWaitingLoadingMainDictionary) {
-        final DictionaryGroup dictionaryGroup =
-                findDictionaryGroupWithLocale(mDictionaryGroup, locale);
-        if (null == dictionaryGroup) {
-            // This should never happen, but better safe than crashy
-            Log.w(TAG, "Expected a dictionary group for " + locale + " but none found");
-            return;
-        }
-        final Dictionary mainDict =
-                DictionaryFactory.createMainDictionaryFromManager(context, locale);
-        synchronized (mLock) {
-            if (locale.equals(dictionaryGroup.mLocale)) {
-                dictionaryGroup.setMainDict(mainDict);
-            } else {
-                // Dictionary facilitator has been reset for another locale.
-                mainDict.close();
+        // Load the main dictionary for every group (primary + secondary) whose main dictionary is
+        // not initialized yet. Each group loads the dictionary for its own locale.
+        for (final DictionaryGroup dictionaryGroup : getDictionaryGroups()) {
+            final Locale groupLocale = dictionaryGroup.mLocale;
+            if (groupLocale == null) {
+                continue;
+            }
+            final Dictionary existingMainDict = dictionaryGroup.getDict(Dictionary.TYPE_MAIN);
+            if (existingMainDict != null && existingMainDict.isInitialized()) {
+                continue;
+            }
+            final Dictionary mainDict =
+                    DictionaryFactory.createMainDictionaryFromManager(context, groupLocale);
+            synchronized (mLock) {
+                if (groupLocale.equals(dictionaryGroup.mLocale)
+                        && getDictionaryGroups().contains(dictionaryGroup)) {
+                    dictionaryGroup.setMainDict(mainDict);
+                } else {
+                    // Dictionary facilitator has been reset for other locales.
+                    mainDict.close();
+                }
             }
         }
         if (listener != null) {
@@ -458,12 +584,18 @@ public class DictionaryFacilitatorImpl implements DictionaryFacilitator {
 
     public void closeDictionaries() {
         final DictionaryGroup dictionaryGroupToClose;
+        final List<DictionaryGroup> secondaryDictionaryGroupsToClose;
         synchronized (mLock) {
             dictionaryGroupToClose = mDictionaryGroup;
+            secondaryDictionaryGroupsToClose = mSecondaryDictionaryGroups;
             mDictionaryGroup = new DictionaryGroup();
+            mSecondaryDictionaryGroups = Collections.emptyList();
         }
         for (final String dictType : ALL_DICTIONARY_TYPES) {
             dictionaryGroupToClose.closeDict(dictType);
+        }
+        for (final DictionaryGroup secondaryDictionaryGroup : secondaryDictionaryGroupsToClose) {
+            secondaryDictionaryGroup.closeDict(Dictionary.TYPE_MAIN);
         }
     }
 
@@ -486,6 +618,9 @@ public class DictionaryFacilitatorImpl implements DictionaryFacilitator {
 
     public boolean hasAtLeastOneUninitializedMainDictionary() {
         for (final DictionaryGroup dictionaryGroup : getDictionaryGroups()) {
+            if (dictionaryGroup.mLocale == null) {
+                continue;
+            }
             final Dictionary mainDict = dictionaryGroup.getDict(Dictionary.TYPE_MAIN);
             if (mainDict == null || !mainDict.isInitialized()) {
                 return true;
