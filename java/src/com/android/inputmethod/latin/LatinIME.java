@@ -694,7 +694,7 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
         // been displayed. Opening dictionaries never affects responsivity as dictionaries are
         // asynchronously loaded.
         if (!mHandler.hasPendingReopenDictionaries()) {
-            resetDictionaryFacilitator(locale);
+            resetDictionaryFacilitator(locale, getSecondaryDictionaryLocales(locale));
         }
         refreshPersonalizationDictionarySession(currentSettingsValues);
         resetDictionaryFacilitatorIfNecessary();
@@ -736,11 +736,41 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
         } else {
             subtypeLocale = subtypeSwitcherLocale;
         }
-        if (mDictionaryFacilitator.isForLocale(subtypeLocale)
+        final List<Locale> secondaryLocales = getSecondaryDictionaryLocales(subtypeLocale);
+        if (mDictionaryFacilitator.isForLocales(subtypeLocale, secondaryLocales)
                 && mDictionaryFacilitator.isForAccount(mSettings.getCurrent().mAccount)) {
             return;
         }
-        resetDictionaryFacilitator(subtypeLocale);
+        resetDictionaryFacilitator(subtypeLocale, secondaryLocales);
+    }
+
+    /**
+     * Collects the locales of the other enabled keyboard languages (all enabled subtypes except
+     * the given primary locale), so their main dictionaries can be loaded alongside the primary
+     * one for suggestions and spell-checking.
+     *
+     * @param primaryLocale the locale of the currently selected subtype
+     */
+    private List<Locale> getSecondaryDictionaryLocales(final Locale primaryLocale) {
+        final List<InputMethodSubtype> subtypes =
+                mRichImm.getMyEnabledInputMethodSubtypeList(true /* allowsImplicitlySelected */);
+        final ArrayList<Locale> secondaryLocales = new ArrayList<>();
+        for (final InputMethodSubtype subtype : subtypes) {
+            // Resolve the locale the same way as getCurrentSubtypeLocale() so the primary locale is
+            // reliably excluded (RichInputMethodSubtype may remap it).
+            final RichInputMethodSubtype richSubtype =
+                    RichInputMethodSubtype.getRichInputMethodSubtype(subtype);
+            if (richSubtype.isNoLanguage()) {
+                continue;
+            }
+            final Locale locale = richSubtype.getLocale();
+            if (locale == null || locale.equals(primaryLocale)
+                    || secondaryLocales.contains(locale)) {
+                continue;
+            }
+            secondaryLocales.add(locale);
+        }
+        return secondaryLocales;
     }
 
     /**
@@ -748,11 +778,13 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
      * the current settings values.
      *
      * @param locale the locale
+     * @param secondaryLocales the locales of the other enabled languages
      */
     // TODO: make sure the current settings always have the right locales, and read from them.
-    private void resetDictionaryFacilitator(final Locale locale) {
+    private void resetDictionaryFacilitator(final Locale locale,
+            final List<Locale> secondaryLocales) {
         final SettingsValues settingsValues = mSettings.getCurrent();
-        mDictionaryFacilitator.resetDictionaries(this /* context */, locale,
+        mDictionaryFacilitator.resetDictionaries(this /* context */, locale, secondaryLocales,
                 settingsValues.mUseContactsDict, settingsValues.mUsePersonalizedDicts,
                 false /* forceReloadMainDictionary */,
                 settingsValues.mAccount, "" /* dictNamePrefix */,
@@ -782,8 +814,9 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
      */
     /* package private */ void resetSuggestMainDict() {
         final SettingsValues settingsValues = mSettings.getCurrent();
+        final Locale locale = mDictionaryFacilitator.getLocale();
         mDictionaryFacilitator.resetDictionaries(this /* context */,
-                mDictionaryFacilitator.getLocale(), settingsValues.mUseContactsDict,
+                locale, getSecondaryDictionaryLocales(locale), settingsValues.mUseContactsDict,
                 settingsValues.mUsePersonalizedDicts,
                 true /* forceReloadMainDictionary */,
                 settingsValues.mAccount, "" /* dictNamePrefix */,
