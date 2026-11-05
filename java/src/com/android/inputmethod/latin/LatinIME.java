@@ -746,9 +746,8 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
     }
 
     /**
-     * Collects the locales of the other enabled keyboard languages (all enabled subtypes except
-     * the given primary locale), so their main dictionaries can be loaded alongside the primary
-     * one for suggestions and spell-checking.
+     * Collects the locales of the other enabled keyboard languages, so their main dictionaries can
+     * be loaded alongside the primary one for suggestions and spell-checking.
      *
      * @param primaryLocale the locale of the currently selected subtype
      */
@@ -756,25 +755,7 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
         if (!mSettings.getCurrent().mMultilingualSuggestions) {
             return Collections.emptyList();
         }
-        final List<InputMethodSubtype> subtypes =
-                mRichImm.getMyEnabledInputMethodSubtypeList(true /* allowsImplicitlySelected */);
-        final ArrayList<Locale> secondaryLocales = new ArrayList<>();
-        for (final InputMethodSubtype subtype : subtypes) {
-            // Resolve the locale the same way as getCurrentSubtypeLocale() so the primary locale is
-            // reliably excluded (RichInputMethodSubtype may remap it).
-            final RichInputMethodSubtype richSubtype =
-                    RichInputMethodSubtype.getRichInputMethodSubtype(subtype);
-            if (richSubtype.isNoLanguage()) {
-                continue;
-            }
-            final Locale locale = richSubtype.getLocale();
-            if (locale == null || locale.equals(primaryLocale)
-                    || secondaryLocales.contains(locale)) {
-                continue;
-            }
-            secondaryLocales.add(locale);
-        }
-        return secondaryLocales;
+        return RichInputMethodManager.getEnabledSubtypeLocales(this, primaryLocale);
     }
 
     /**
