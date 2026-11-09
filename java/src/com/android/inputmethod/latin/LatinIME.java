@@ -189,6 +189,8 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
     // Working variable for {@link #startShowingInputView()} and
     // {@link #onEvaluateInputViewShown()}.
     private boolean mIsExecutingStartShowingInputView;
+    private final HardwareKeyboardSoftInputRequest mHardwareKeyboardSoftInputRequest =
+            new HardwareKeyboardSoftInputRequest();
 
     // Used for re-initialize keyboard layout after onConfigurationChange.
     @Nullable private Context mDisplayContext;
@@ -1164,6 +1166,7 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
     @Override
     public void onWindowHidden() {
         super.onWindowHidden();
+        mHardwareKeyboardSoftInputRequest.reset();
         final MainKeyboardView mainKeyboardView = mKeyboardSwitcher.getMainKeyboardView();
         if (mainKeyboardView != null) {
             mainKeyboardView.closing();
@@ -1375,15 +1378,13 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
 
     @Override
     public boolean onShowInputRequested(final int flags, final boolean configChange) {
-        if (isImeSuppressedByHardwareKeyboard()) {
-            return true;
-        }
+        mHardwareKeyboardSoftInputRequest.onShowInputRequested(flags);
         return super.onShowInputRequested(flags, configChange);
     }
 
     @Override
     public boolean onEvaluateInputViewShown() {
-        if (mIsExecutingStartShowingInputView) {
+        if (mIsExecutingStartShowingInputView || mHardwareKeyboardSoftInputRequest.isRequested()) {
             return true;
         }
         return super.onEvaluateInputViewShown();
@@ -1990,6 +1991,7 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
                     getApplicationContext().getResources());
         }
         mEmojiAltPhysicalKeyDetector.onKeyDown(keyEvent);
+        hideSoftInputOnHardwareKeyboardTyping(keyEvent);
         if (!ProductionFlags.IS_HARDWARE_KEYBOARD_SUPPORTED) {
             return super.onKeyDown(keyCode, keyEvent);
         }
@@ -2006,6 +2008,16 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
             return true;
         }
         return super.onKeyDown(keyCode, keyEvent);
+    }
+
+    private void hideSoftInputOnHardwareKeyboardTyping(final KeyEvent keyEvent) {
+        if (!mHardwareKeyboardSoftInputRequest.isRequested()
+                || !mSettings.getCurrent().mHasHardwareKeyboard
+                || !HardwareKeyboardSoftInputRequest.isFromHardwareKeyboard(keyEvent)) {
+            return;
+        }
+        mHardwareKeyboardSoftInputRequest.reset();
+        requestHideSelf(0);
     }
 
     @Override

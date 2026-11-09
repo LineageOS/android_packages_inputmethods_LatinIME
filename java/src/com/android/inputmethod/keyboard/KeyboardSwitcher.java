@@ -319,7 +319,8 @@ public final class KeyboardSwitcher implements KeyboardState.SwitchActions {
     public boolean isImeSuppressedByHardwareKeyboard(
             @Nonnull final SettingsValues settingsValues,
             @Nonnull final KeyboardSwitchState toggleState) {
-        return settingsValues.mHasHardwareKeyboard && toggleState == KeyboardSwitchState.HIDDEN;
+        return settingsValues.mHasHardwareKeyboard && toggleState == KeyboardSwitchState.HIDDEN
+                && !mLatinIME.onEvaluateInputViewShown();
     }
 
     private void setMainKeyboardFrame(
