@@ -37,7 +37,7 @@ public class HardwareKeyboardBarLayoutTests extends KeyboardLayoutSetTestsBase {
                 .setSubtype(RichInputMethodSubtype.getRichInputMethodSubtype(
                         getSubtype(Locale.US, "qwerty")))
                 .setSplitLayoutEnabledByUser(true)
-                .setHardwareKeyboardBarEnabled(true)
+                .setHardwareKeyboardLayoutEnabled(true)
                 .build();
     }
 
@@ -53,7 +53,7 @@ public class HardwareKeyboardBarLayoutTests extends KeyboardLayoutSetTestsBase {
     public void testAlphabetKeyboardIsSingleRowBar() {
         final Keyboard keyboard = buildLayoutSet(InputType.TYPE_CLASS_TEXT)
                 .getKeyboard(KeyboardId.ELEMENT_ALPHABET);
-        assertTrue(keyboard.mId.mIsHardwareKeyboardBar);
+        assertTrue(keyboard.mId.mIsHardwareKeyboardLayout);
         assertFalse(keyboard.mId.mIsSplitLayout);
         assertTrue(keyboard.mOccupiedHeight < getKeyboardHeight());
         assertTrue(hasKey(keyboard, Constants.CODE_SHIFT));
@@ -68,22 +68,58 @@ public class HardwareKeyboardBarLayoutTests extends KeyboardLayoutSetTestsBase {
     public void testShiftedAlphabetKeyboardIsBar() {
         final Keyboard keyboard = buildLayoutSet(InputType.TYPE_CLASS_TEXT)
                 .getKeyboard(KeyboardId.ELEMENT_ALPHABET_SHIFT_LOCKED);
-        assertTrue(keyboard.mId.mIsHardwareKeyboardBar);
+        assertTrue(keyboard.mId.mIsHardwareKeyboardLayout);
         assertTrue(hasKey(keyboard, Constants.CODE_SHIFT));
     }
 
-    public void testSymbolsKeyboardIsFullLayout() {
-        final Keyboard keyboard = buildLayoutSet(InputType.TYPE_CLASS_TEXT)
-                .getKeyboard(KeyboardId.ELEMENT_SYMBOLS);
-        assertFalse(keyboard.mId.mIsHardwareKeyboardBar);
-        assertEquals(getKeyboardHeight(), keyboard.mOccupiedHeight);
+    public void testPasswordBarAddsNumberRow() {
+        final Keyboard keyboard = buildLayoutSet(
+                InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD)
+                .getKeyboard(KeyboardId.ELEMENT_ALPHABET);
+        assertEquals(getKeyboardHeight() / 2, keyboard.mId.mHeight);
         assertTrue(hasKey(keyboard, '1'));
+        assertTrue(hasKey(keyboard, Constants.CODE_SHIFT));
     }
 
-    public void testNumberFieldUsesNumberKeyboard() {
+    public void testUrlBarHasSlash() {
+        final Keyboard keyboard = buildLayoutSet(
+                InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_URI)
+                .getKeyboard(KeyboardId.ELEMENT_ALPHABET);
+        assertTrue(hasKey(keyboard, '/'));
+        assertFalse(hasKey(keyboard, '!'));
+    }
+
+    public void testEmailBarHasAtSign() {
+        final Keyboard keyboard = buildLayoutSet(
+                InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_EMAIL_ADDRESS)
+                .getKeyboard(KeyboardId.ELEMENT_ALPHABET);
+        assertTrue(hasKey(keyboard, '@'));
+    }
+
+    public void testSymbolsKeyboardIsCompactPanel() {
+        final Keyboard keyboard = buildLayoutSet(InputType.TYPE_CLASS_TEXT)
+                .getKeyboard(KeyboardId.ELEMENT_SYMBOLS);
+        assertTrue(keyboard.mId.mIsHardwareKeyboardLayout);
+        assertFalse(keyboard.mId.mIsSplitLayout);
+        assertEquals(getKeyboardHeight(), keyboard.mId.mHeight);
+        assertTrue(hasKey(keyboard, '1'));
+        assertTrue(hasKey(keyboard, Constants.CODE_SWITCH_ALPHA_SYMBOL));
+    }
+
+    public void testNumberFieldUsesHardwareNumberPad() {
         final Keyboard keyboard = buildLayoutSet(InputType.TYPE_CLASS_NUMBER)
                 .getKeyboard(KeyboardId.ELEMENT_ALPHABET);
-        assertFalse(keyboard.mId.mIsHardwareKeyboardBar);
+        assertTrue(keyboard.mId.mIsHardwareKeyboardLayout);
         assertEquals(KeyboardId.ELEMENT_NUMBER, keyboard.mId.mElementId);
+        assertEquals(getKeyboardHeight() * 3 / 4, keyboard.mId.mHeight);
+        assertTrue(hasKey(keyboard, '0'));
+        assertTrue(hasKey(keyboard, '9'));
+    }
+
+    public void testPhoneFieldKeepsPhoneKeyboard() {
+        final Keyboard keyboard = buildLayoutSet(InputType.TYPE_CLASS_PHONE)
+                .getKeyboard(KeyboardId.ELEMENT_ALPHABET);
+        assertFalse(keyboard.mId.mIsHardwareKeyboardLayout);
+        assertEquals(KeyboardId.ELEMENT_PHONE, keyboard.mId.mElementId);
     }
 }

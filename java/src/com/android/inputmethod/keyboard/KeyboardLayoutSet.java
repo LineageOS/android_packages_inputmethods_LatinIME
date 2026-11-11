@@ -137,8 +137,8 @@ public final class KeyboardLayoutSet {
         boolean mIsSplitLayoutEnabled;
         boolean mSplitDuplicateKeysEnabled;
         boolean mIsFloating;
-        boolean mHardwareKeyboardBarEnabled;
-        boolean mIsHardwareKeyboardBar;
+        boolean mHardwareKeyboardLayoutEnabled;
+        boolean mIsHardwareKeyboardLayout;
         // Sparse array of KeyboardLayoutSet element parameters indexed by element's id.
         final SparseArray<ElementParams> mKeyboardLayoutSetElementIdToParamsMap =
                 new SparseArray<>();
@@ -195,10 +195,11 @@ public final class KeyboardLayoutSet {
             break;
         }
 
-        final boolean isHardwareKeyboardBar = mParams.mHardwareKeyboardBarEnabled
-                && keyboardLayoutSetElementId < KeyboardId.ELEMENT_SYMBOLS;
-        ElementParams elementParams = isHardwareKeyboardBar
-                ? createHardwareKeyboardBarElementParams()
+        final int hardwareKeyboardXmlId = mParams.mHardwareKeyboardLayoutEnabled
+                ? HardwareKeyboardLayouts.getKeyboardXmlId(keyboardLayoutSetElementId) : 0;
+        final boolean isHardwareKeyboardLayout = hardwareKeyboardXmlId != 0;
+        ElementParams elementParams = isHardwareKeyboardLayout
+                ? createHardwareKeyboardElementParams(hardwareKeyboardXmlId)
                 : mParams.mKeyboardLayoutSetElementIdToParamsMap.get(keyboardLayoutSetElementId);
         if (elementParams == null) {
             elementParams = mParams.mKeyboardLayoutSetElementIdToParamsMap.get(
@@ -209,10 +210,10 @@ public final class KeyboardLayoutSet {
         // specified as an elementKeyboard attribute in the file.
         // The KeyboardId is an internal key for a Keyboard object.
 
-        mParams.mIsHardwareKeyboardBar = isHardwareKeyboardBar;
+        mParams.mIsHardwareKeyboardLayout = isHardwareKeyboardLayout;
         mParams.mIsSplitLayoutEnabled = mParams.mIsSplitLayoutEnabledByUser
                 && !mParams.mIsFloating
-                && !isHardwareKeyboardBar
+                && !isHardwareKeyboardLayout
                 && keyboardLayoutSetElementId <= KeyboardId.ELEMENT_SYMBOLS_SHIFTED;
         final KeyboardId id = new KeyboardId(keyboardLayoutSetElementId, mParams);
         try {
@@ -223,9 +224,9 @@ public final class KeyboardLayoutSet {
         }
     }
 
-    private static ElementParams createHardwareKeyboardBarElementParams() {
+    private static ElementParams createHardwareKeyboardElementParams(final int keyboardXmlId) {
         final ElementParams elementParams = new ElementParams();
-        elementParams.mKeyboardXmlId = R.xml.kbd_hardware_keyboard_bar;
+        elementParams.mKeyboardXmlId = keyboardXmlId;
         elementParams.mAllowRedundantMoreKeys = true;
         return elementParams;
     }
@@ -393,8 +394,8 @@ public final class KeyboardLayoutSet {
             return this;
         }
 
-        public Builder setHardwareKeyboardBarEnabled(final boolean enabled) {
-            mParams.mHardwareKeyboardBarEnabled = enabled;
+        public Builder setHardwareKeyboardLayoutEnabled(final boolean enabled) {
+            mParams.mHardwareKeyboardLayoutEnabled = enabled;
             return this;
         }
 

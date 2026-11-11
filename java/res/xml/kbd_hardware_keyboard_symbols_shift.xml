@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<Keyboard
+    xmlns:latin="http://schemas.android.com/apk/res-auto"
+    latin:keyWidth="10%p">
+    <include
+        latin:keyboardLayout="@xml/key_styles_common" />
+    <Row>
+        <Key
+            latin:keySpec="~"
+            latin:keyHintLabel="Q" />
+        <Key
+            latin:keySpec="`"
+            latin:keyHintLabel="W" />
+        <Key
+            latin:keySpec="{"
+            latin:keyHintLabel="E" />
+        <Key
+            latin:keySpec="}"
+            latin:keyHintLabel="R" />
+        <Key
+            latin:keySpec="["
+            latin:keyHintLabel="T" />
+        <Key
+            latin:keySpec="]"
+            latin:keyHintLabel="Y" />
+        <Key
+            latin:keySpec="&lt;"
+            latin:keyHintLabel="U" />
+        <Key
+            latin:keySpec="&gt;"
+            latin:keyHintLabel="I" />
+        <Key
+            latin:keySpec="^"
+            latin:moreKeys="↑,↓,←,→"
+            latin:keyHintLabel="O" />
+        <Key
+            latin:keySpec="°"
+            latin:keyHintLabel="P" />
+    </Row>
+    <Row>
+        <Key
+            latin:keySpec="÷"
+            latin:keyHintLabel="A" />
+        <Key
+            latin:keySpec="±"
+            latin:keyHintLabel="S" />
+        <Key
+            latin:keySpec="×"
+            latin:keyHintLabel="D" />
+        <Key
+            latin:keySpec="\\"
+            latin:keyHintLabel="F" />
+        <Key
+            latin:keySpec="|"
+            latin:keyHintLabel="G" />
+        <Key
+            latin:keySpec="•"
+            latin:moreKeys="!text/morekeys_bullet"
+            latin:keyHintLabel="H" />
+        <Key
+            latin:keySpec="¡"
+            latin:keyHintLabel="J" />
+        <Key
+            latin:keySpec="¿"
+            latin:keyHintLabel="K" />
+        <Key
+            latin:keySpec="§"
+            latin:keyHintLabel="L" />
+        <Key
+            latin:keyStyle="deleteKeyStyle"
+            latin:keyWidth="fillRight" />
+    </Row>
+    <Row>
+        <Key
+            latin:keySpec="¥"
+            latin:keyHintLabel="Z" />
+        <Key
+            latin:keySpec="€"
+            latin:keyHintLabel="X" />
+        <Key
+            latin:keySpec="£"
+            latin:keyHintLabel="C" />
+        <Key
+            latin:keySpec="¢"
+            latin:keyHintLabel="V" />
+        <Key
+            latin:keyStyle="spaceKeyStyle"
+            latin:keyWidth="20%p" />
+        <Key
+            latin:keySpec="!text/keyspec_left_double_angle_quote"
+            latin:moreKeys="!text/morekeys_double_quote"
+            latin:keyHintLabel="B" />
+        <Key
+            latin:keySpec="!text/keyspec_right_double_angle_quote"
+            latin:moreKeys="!text/morekeys_single_quote"
+            latin:keyHintLabel="N" />
+        <Key
+            latin:keySpec="©"
+            latin:keyHintLabel="M" />
+        <Key
+            latin:keyStyle="enterKeyStyle"
+            latin:keyWidth="fillRight" />
+    </Row>
+    <Row>
+        <Key
+            latin:keyStyle="backFromMoreSymbolKeyStyle"
+            latin:keyWidth="20%p" />
+        <include
+            latin:keyboardLayout="@xml/rowkeys_hardware_keyboard_punctuation" />
+        <Key
+            latin:keyStyle="toAlphaKeyStyle"
+            latin:keyWidth="fillRight" />
+    </Row>
+</Keyboard>

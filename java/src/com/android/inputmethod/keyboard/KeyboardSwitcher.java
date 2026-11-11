@@ -164,7 +164,7 @@ public final class KeyboardSwitcher implements KeyboardState.SwitchActions {
         builder.setSplitLayoutEnabledByUser(isSplitLayout);
         builder.setSplitDuplicateKeysEnabled(settingsValues.mSplitKeyboardDuplicateKeys);
         builder.setFloatingKeyboard(isFloating);
-        builder.setHardwareKeyboardBarEnabled(settingsValues.mHasReducedHardwareKeyboard);
+        builder.setHardwareKeyboardLayoutEnabled(settingsValues.mHasReducedHardwareKeyboard);
         mKeyboardLayoutSet = builder.build();
         mIsFloating = isFloating;
         mFloatingKeyboardWidth = keyboardWidth;
