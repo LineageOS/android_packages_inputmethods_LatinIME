@@ -54,6 +54,7 @@ import android.util.SparseArray;
 import android.view.Display;
 import android.view.Gravity;
 import android.view.KeyEvent;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
 import android.view.Window;
@@ -189,6 +190,8 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
     @UsedForTesting final KeyboardSwitcher mKeyboardSwitcher;
     private final SubtypeState mSubtypeState = new SubtypeState();
     private EmojiAltPhysicalKeyDetector mEmojiAltPhysicalKeyDetector;
+    private TouchKeyboardGestureDetector mTouchKeyboardGestureDetector;
+    private boolean mIsSymbolsPanelOneShot;
     private StatsUtilsManager mStatsUtilsManager;
     // Working variable for {@link #startShowingInputView()} and
     // {@link #onEvaluateInputViewShown()}.
@@ -650,6 +653,8 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
         mDisplayContext = getDisplayContext();
         KeyboardSwitcher.init(this);
         super.onCreate();
+        mTouchKeyboardGestureDetector = new TouchKeyboardGestureDetector(this,
+                mTouchKeyboardGestureListener);
 
         mHandler.onCreate();
         mClipboardSuggestionMonitor = new ClipboardSuggestionMonitor(this, this);
@@ -2002,6 +2007,9 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
     @Override
     public void onPressKey(final int primaryCode, final int repeatCount,
             final boolean isSinglePointer) {
+        if (primaryCode == Constants.CODE_SWITCH_ALPHA_SYMBOL) {
+            mIsSymbolsPanelOneShot = false;
+        }
         mKeyboardSwitcher.onPressKey(primaryCode, isSinglePointer, getCurrentAutoCapsState(),
                 getCurrentRecapitalizeState());
         hapticAndAudioFeedback(primaryCode, repeatCount);
@@ -2032,6 +2040,7 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
                     getApplicationContext().getResources());
         }
         mEmojiAltPhysicalKeyDetector.onKeyDown(keyEvent);
+        mTouchKeyboardGestureDetector.onHardwareKeyDown(keyEvent.getEventTime());
         if (shouldHandleReducedHardwareKey(keyEvent)) {
             return onReducedHardwareKeyDown(keyCode, keyEvent);
         }
@@ -2064,10 +2073,79 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
             return super.onKeyUp(keyCode, keyEvent);
         }
         if (mInputLogic.mCurrentlyPressedHardwareKeys.remove(getHardwareKeyIdentifier(keyEvent))) {
+            closeOneShotSymbolsPanel(keyEvent);
             return true;
         }
         return super.onKeyUp(keyCode, keyEvent);
     }
+
+    private void cycleSymbolsPanels() {
+        final Keyboard keyboard = mKeyboardSwitcher.getKeyboard();
+        if (keyboard == null) {
+            return;
+        }
+        final int elementId = keyboard.mId.mElementId;
+        if (keyboard.mId.isAlphabetKeyboard()) {
+            tapFunctionalKey(Constants.CODE_SWITCH_ALPHA_SYMBOL);
+            mIsSymbolsPanelOneShot = true;
+        } else if (elementId == KeyboardId.ELEMENT_SYMBOLS) {
+            tapFunctionalKey(Constants.CODE_SHIFT);
+        } else if (elementId == KeyboardId.ELEMENT_SYMBOLS_SHIFTED) {
+            tapFunctionalKey(Constants.CODE_SWITCH_ALPHA_SYMBOL);
+        }
+    }
+
+    private void closeOneShotSymbolsPanel(final KeyEvent keyEvent) {
+        if (mIsSymbolsPanelOneShot && HardwareKeyboardLayouts.findKeyMappedToHardwareKey(
+                mKeyboardSwitcher.getKeyboard(), keyEvent) != null) {
+            tapFunctionalKey(Constants.CODE_SWITCH_ALPHA_SYMBOL);
+        }
+    }
+
+    private void tapFunctionalKey(final int code) {
+        onPressKey(code, 0, true);
+        onCodeInput(code, Constants.NOT_A_COORDINATE, Constants.NOT_A_COORDINATE, false);
+        onReleaseKey(code, false);
+    }
+
+    @Override
+    public boolean onGenericMotionEvent(final MotionEvent event) {
+        if (!isInputViewShown()
+                || !TouchKeyboardGestureDetector.isFromBuiltInTouchKeyboard(event)) {
+            return super.onGenericMotionEvent(event);
+        }
+        mTouchKeyboardGestureDetector.onMotionEvent(event);
+        return true;
+    }
+
+    private final TouchKeyboardGestureDetector.Listener mTouchKeyboardGestureListener =
+            new TouchKeyboardGestureDetector.Listener() {
+        @Override
+        public void onSwipeUp(final float horizontalPosition) {
+            if (mSuggestionStripView != null) {
+                mSuggestionStripView.pickSuggestionAt(horizontalPosition);
+            }
+        }
+
+        @Override
+        public void onSwipeDown() {
+            cycleSymbolsPanels();
+        }
+
+        @Override
+        public void onSwipeLeft() {
+            if (!mRichImm.getCurrentSubtype().isRtlSubtype()) {
+                mInputLogic.deleteWordBeforeCursor();
+            }
+        }
+
+        @Override
+        public void onSwipeRight() {
+            if (mRichImm.getCurrentSubtype().isRtlSubtype()) {
+                mInputLogic.deleteWordBeforeCursor();
+            }
+        }
+    };
 
     private boolean shouldHandleReducedHardwareKey(final KeyEvent keyEvent) {
         final EditorInfo editorInfo = getCurrentInputEditorInfo();
