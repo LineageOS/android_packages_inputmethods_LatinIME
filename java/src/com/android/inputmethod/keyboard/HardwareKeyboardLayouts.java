@@ -54,6 +54,12 @@ public final class HardwareKeyboardLayouts {
         return SYMBOLS_PANEL_ROW_COUNT;
     }
 
+    static boolean isSymbolsPanel(@Nullable final Keyboard keyboard) {
+        return keyboard != null && keyboard.mId.mIsHardwareKeyboardLayout
+                && (keyboard.mId.mElementId == KeyboardId.ELEMENT_SYMBOLS
+                        || keyboard.mId.mElementId == KeyboardId.ELEMENT_SYMBOLS_SHIFTED);
+    }
+
     @Nullable
     public static Key findKeyMappedToHardwareKey(@Nullable final Keyboard keyboard,
             final KeyEvent keyEvent) {
