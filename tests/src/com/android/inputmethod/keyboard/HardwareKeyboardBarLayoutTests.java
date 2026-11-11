@@ -6,6 +6,7 @@
 package com.android.inputmethod.keyboard;
 
 import android.text.InputType;
+import android.view.KeyEvent;
 import android.view.inputmethod.EditorInfo;
 
 import androidx.test.filters.SmallTest;
@@ -112,6 +113,30 @@ public class HardwareKeyboardBarLayoutTests extends KeyboardLayoutSetTestsBase {
         assertTrue(hasKey(keyboard, Constants.CODE_SWITCH_ALPHA_SYMBOL));
     }
 
+    public void testSymbolsKeyboardMapsDigitsToTopLetterRow() {
+        final Keyboard keyboard = buildLayoutSet(InputType.TYPE_CLASS_TEXT)
+                .getKeyboard(KeyboardId.ELEMENT_SYMBOLS);
+        assertEquals('1', findMappedKey(keyboard, KeyEvent.KEYCODE_Q).getCode());
+        assertEquals('0', findMappedKey(keyboard, KeyEvent.KEYCODE_P).getCode());
+        assertEquals('=', findMappedKey(keyboard, KeyEvent.KEYCODE_A).getCode());
+        assertEquals('-', findMappedKey(keyboard, KeyEvent.KEYCODE_Z).getCode());
+    }
+
+    public void testShiftedSymbolsKeyboardMapsEveryLetter() {
+        final Keyboard keyboard = buildLayoutSet(InputType.TYPE_CLASS_TEXT)
+                .getKeyboard(KeyboardId.ELEMENT_SYMBOLS_SHIFTED);
+        assertTrue(keyboard.mId.mIsHardwareKeyboardLayout);
+        for (int keyCode = KeyEvent.KEYCODE_A; keyCode <= KeyEvent.KEYCODE_Z; keyCode++) {
+            assertNotNull(KeyEvent.keyCodeToString(keyCode), findMappedKey(keyboard, keyCode));
+        }
+    }
+
+    public void testAlphabetBarDoesNotMapHardwareKeys() {
+        final Keyboard keyboard = buildLayoutSet(InputType.TYPE_CLASS_TEXT)
+                .getKeyboard(KeyboardId.ELEMENT_ALPHABET);
+        assertNull(findMappedKey(keyboard, KeyEvent.KEYCODE_Q));
+    }
+
     public void testNumberFieldUsesHardwareNumberPad() {
         final Keyboard keyboard = buildLayoutSet(InputType.TYPE_CLASS_NUMBER)
                 .getKeyboard(KeyboardId.ELEMENT_ALPHABET);
@@ -122,10 +147,22 @@ public class HardwareKeyboardBarLayoutTests extends KeyboardLayoutSetTestsBase {
         assertTrue(hasKey(keyboard, '9'));
     }
 
+    public void testNumberPadMapsDigitsToLetterKeys() {
+        final Keyboard keyboard = buildLayoutSet(InputType.TYPE_CLASS_NUMBER)
+                .getKeyboard(KeyboardId.ELEMENT_ALPHABET);
+        assertEquals('1', findMappedKey(keyboard, KeyEvent.KEYCODE_W).getCode());
+        assertEquals('9', findMappedKey(keyboard, KeyEvent.KEYCODE_V).getCode());
+    }
+
     public void testPhoneFieldKeepsPhoneKeyboard() {
         final Keyboard keyboard = buildLayoutSet(InputType.TYPE_CLASS_PHONE)
                 .getKeyboard(KeyboardId.ELEMENT_ALPHABET);
         assertFalse(keyboard.mId.mIsHardwareKeyboardLayout);
         assertEquals(KeyboardId.ELEMENT_PHONE, keyboard.mId.mElementId);
+    }
+
+    private static Key findMappedKey(final Keyboard keyboard, final int keyCode) {
+        return HardwareKeyboardLayouts.findKeyMappedToHardwareKey(keyboard,
+                new KeyEvent(KeyEvent.ACTION_DOWN, keyCode));
     }
 }
