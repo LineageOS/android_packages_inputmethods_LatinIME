@@ -1,0 +1,52 @@
+/*
+ * SPDX-FileCopyrightText: The LineageOS Project
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+package com.android.inputmethod.keyboard;
+
+import com.android.inputmethod.latin.R;
+
+final class HardwareKeyboardLayouts {
+    private static final int SYMBOLS_PANEL_ROW_COUNT = 4;
+    private static final int BAR_ROW_COUNT = 1;
+    private static final int PASSWORD_BAR_ROW_COUNT = 2;
+    private static final int NUMBER_PAD_ROW_COUNT = 3;
+
+    private HardwareKeyboardLayouts() {
+    }
+
+    static int getKeyboardXmlId(final int elementId) {
+        switch (elementId) {
+        case KeyboardId.ELEMENT_ALPHABET:
+        case KeyboardId.ELEMENT_ALPHABET_MANUAL_SHIFTED:
+        case KeyboardId.ELEMENT_ALPHABET_AUTOMATIC_SHIFTED:
+        case KeyboardId.ELEMENT_ALPHABET_SHIFT_LOCKED:
+        case KeyboardId.ELEMENT_ALPHABET_SHIFT_LOCK_SHIFTED:
+            return R.xml.kbd_hardware_keyboard_bar;
+        case KeyboardId.ELEMENT_SYMBOLS:
+            return R.xml.kbd_hardware_keyboard_symbols;
+        case KeyboardId.ELEMENT_SYMBOLS_SHIFTED:
+            return R.xml.kbd_hardware_keyboard_symbols_shift;
+        case KeyboardId.ELEMENT_NUMBER:
+            return R.xml.kbd_hardware_keyboard_number;
+        default:
+            return 0;
+        }
+    }
+
+    static int getKeyboardHeight(final int elementId, final boolean isPasswordInput,
+            final int rowHeight) {
+        return rowHeight * getRowCount(elementId, isPasswordInput);
+    }
+
+    private static int getRowCount(final int elementId, final boolean isPasswordInput) {
+        if (elementId == KeyboardId.ELEMENT_NUMBER) {
+            return NUMBER_PAD_ROW_COUNT;
+        }
+        if (elementId < KeyboardId.ELEMENT_SYMBOLS) {
+            return isPasswordInput ? PASSWORD_BAR_ROW_COUNT : BAR_ROW_COUNT;
+        }
+        return SYMBOLS_PANEL_ROW_COUNT;
+    }
+}

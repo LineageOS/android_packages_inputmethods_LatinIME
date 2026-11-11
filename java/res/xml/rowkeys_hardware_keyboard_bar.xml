@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<merge
+    xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <Key
+        latin:keyStyle="shiftKeyStyle"
+        latin:keyWidth="20%p" />
+    <include
+        latin:keyboardLayout="@xml/rowkeys_hardware_keyboard_punctuation" />
+    <Key
+        latin:keyStyle="toSymbolKeyStyle"
+        latin:keyWidth="fillRight" />
+</merge>

@@ -86,20 +86,21 @@ public final class KeyboardId {
     public final boolean mIsSplitLayout;
     public final boolean mIsSplitDuplicateKeys;
     public final boolean mIsFloating;
-    public final boolean mIsHardwareKeyboardBar;
+    public final boolean mIsHardwareKeyboardLayout;
 
     private final int mHashCode;
 
     public KeyboardId(final int elementId, final KeyboardLayoutSet.Params params) {
         mSubtype = params.mSubtype;
         mWidth = params.mKeyboardWidth;
-        mIsHardwareKeyboardBar = params.mIsHardwareKeyboardBar;
-        mHeight = mIsHardwareKeyboardBar
-                ? params.mHardwareKeyboardRowHeight
-                : params.mKeyboardHeight;
         mMode = params.mMode;
         mElementId = elementId;
         mEditorInfo = params.mEditorInfo;
+        mIsHardwareKeyboardLayout = params.mIsHardwareKeyboardLayout;
+        mHeight = mIsHardwareKeyboardLayout
+                ? HardwareKeyboardLayouts.getKeyboardHeight(
+                        elementId, passwordInput(), params.mHardwareKeyboardRowHeight)
+                : params.mKeyboardHeight;
         mClobberSettingsKey = params.mNoSettingsKey;
         mNumberRowEnabled = params.mNumberRowEnabled ||
                 (params.mNumberRowPasswordEnabled && params.mIsPasswordField);
@@ -136,7 +137,7 @@ public final class KeyboardId {
                 id.mIsSplitLayout,
                 id.mIsSplitDuplicateKeys,
                 id.mIsFloating,
-                id.mIsHardwareKeyboardBar
+                id.mIsHardwareKeyboardLayout
         });
     }
 
@@ -162,7 +163,7 @@ public final class KeyboardId {
                 && other.mIsSplitLayout == mIsSplitLayout
                 && other.mIsSplitDuplicateKeys == mIsSplitDuplicateKeys
                 && other.mIsFloating == mIsFloating
-                && other.mIsHardwareKeyboardBar == mIsHardwareKeyboardBar;
+                && other.mIsHardwareKeyboardLayout == mIsHardwareKeyboardLayout;
     }
 
     private static boolean isAlphabetKeyboard(final int elementId) {
@@ -232,7 +233,7 @@ public final class KeyboardId {
                 (mIsSplitLayout ? " isSplitLayout" : ""),
                 (mIsSplitDuplicateKeys ? " isSplitDuplicateKeys" : ""),
                 (mIsFloating ? " isFloating" : ""),
-                (mIsHardwareKeyboardBar ? " isHardwareKeyboardBar" : "")
+                (mIsHardwareKeyboardLayout ? " isHardwareKeyboardLayout" : "")
         );
     }
 

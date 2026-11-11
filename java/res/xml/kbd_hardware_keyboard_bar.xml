@@ -9,29 +9,25 @@
     latin:rowHeight="100%p">
     <include
         latin:keyboardLayout="@xml/key_styles_common" />
-    <Row>
-        <Key
-            latin:keyStyle="shiftKeyStyle"
-            latin:keyWidth="20%p" />
-        <Key
-            latin:keySpec="!text/keyspec_comma" />
-        <Key
-            latin:keySpec="\'"
-            latin:moreKeys="!text/morekeys_single_quote" />
-        <Key
-            latin:keySpec=":"
-            latin:moreKeys="!text/keyspec_symbols_semicolon" />
-        <Key
-            latin:keySpec="!"
-            latin:moreKeys="!text/morekeys_exclamation" />
-        <Key
-            latin:keySpec="!text/keyspec_symbols_question"
-            latin:moreKeys="!text/morekeys_question" />
-        <Key
-            latin:keySpec="!text/keyspec_period"
-            latin:moreKeys="!text/morekeys_punctuation" />
-        <Key
-            latin:keyStyle="toSymbolKeyStyle"
-            latin:keyWidth="fillRight" />
-    </Row>
+    <switch>
+        <case
+            latin:passwordInput="true">
+            <Row
+                latin:rowHeight="50%p">
+                <include
+                    latin:keyboardLayout="@xml/rowkeys_hardware_keyboard_numbers" />
+            </Row>
+            <Row
+                latin:rowHeight="50%p">
+                <include
+                    latin:keyboardLayout="@xml/rowkeys_hardware_keyboard_bar" />
+            </Row>
+        </case>
+        <default>
+            <Row>
+                <include
+                    latin:keyboardLayout="@xml/rowkeys_hardware_keyboard_bar" />
+            </Row>
+        </default>
+    </switch>
 </Keyboard>
