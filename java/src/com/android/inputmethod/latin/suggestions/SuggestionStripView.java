@@ -604,6 +604,21 @@ public final class SuggestionStripView extends RelativeLayout implements OnClick
         return true;
     }
 
+    public void pickSuggestionAt(final float horizontalPosition) {
+        if (!mSuggestionsStrip.isShown()) {
+            return;
+        }
+        final float x = horizontalPosition * getWidth() - mSuggestionsStrip.getLeft();
+        for (int i = 0; i < mSuggestionsStrip.getChildCount(); i++) {
+            final View child = mSuggestionsStrip.getChildAt(i);
+            if (child.getVisibility() == VISIBLE && child.getTag() != null
+                    && x >= child.getLeft() && x < child.getRight()) {
+                onClick(child);
+                return;
+            }
+        }
+    }
+
     @Override
     public void onClick(final View view) {
         AudioAndHapticFeedbackManager.getInstance().performHapticAndAudioFeedback(
