@@ -222,6 +222,15 @@ public final class InputLogic {
         mInputLogicHandler.reset();
     }
 
+    public void deleteWordBeforeCursor() {
+        if (mWordComposer.isComposingWord()) {
+            mConnection.finishComposingText();
+        }
+        resetComposingState(true /* alsoResetLastComposedWord */);
+        sendDownUpKeyEvent(KeyEvent.KEYCODE_DEL,
+                KeyEvent.META_CTRL_ON | KeyEvent.META_CTRL_LEFT_ON);
+    }
+
     // Normally this class just gets out of scope after the process ends, but in unit tests, we
     // create several instances of LatinIME in the same process, which results in several
     // instances of InputLogic. This cleans up the associated handler so that tests don't leak
@@ -1986,12 +1995,16 @@ public final class InputLogic {
      * @param keyCode the key code to send inside the key event.
      */
     private void sendDownUpKeyEvent(final int keyCode) {
+        sendDownUpKeyEvent(keyCode, 0 /* metaState */);
+    }
+
+    private void sendDownUpKeyEvent(final int keyCode, final int metaState) {
         final long eventTime = SystemClock.uptimeMillis();
         mConnection.sendKeyEvent(new KeyEvent(eventTime, eventTime,
-                KeyEvent.ACTION_DOWN, keyCode, 0, 0, KeyCharacterMap.VIRTUAL_KEYBOARD, 0,
+                KeyEvent.ACTION_DOWN, keyCode, 0, metaState, KeyCharacterMap.VIRTUAL_KEYBOARD, 0,
                 KeyEvent.FLAG_SOFT_KEYBOARD | KeyEvent.FLAG_KEEP_TOUCH_MODE));
         mConnection.sendKeyEvent(new KeyEvent(SystemClock.uptimeMillis(), eventTime,
-                KeyEvent.ACTION_UP, keyCode, 0, 0, KeyCharacterMap.VIRTUAL_KEYBOARD, 0,
+                KeyEvent.ACTION_UP, keyCode, 0, metaState, KeyCharacterMap.VIRTUAL_KEYBOARD, 0,
                 KeyEvent.FLAG_SOFT_KEYBOARD | KeyEvent.FLAG_KEEP_TOUCH_MODE));
     }
 
