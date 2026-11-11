@@ -16,6 +16,23 @@
       "message": "This is a PoC for the issue, someone who has any of the physical devices could test this out and maybe merge it off, if deemed useful\n\nI did try with a fake KB attached via adb and it did work fine on iceland",
       "revId": "c1eba9623c98176903c43ea5f73538c385b319c1",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9b353c77_9e79623b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35591
+      },
+      "writtenOn": "2026-11-11T16:30:49Z",
+      "side": 1,
+      "message": "Works properly with a yubikey.",
+      "revId": "c1eba9623c98176903c43ea5f73538c385b319c1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
