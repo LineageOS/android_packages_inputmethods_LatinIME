@@ -167,6 +167,7 @@ public final class MainKeyboardView extends KeyboardView implements DrawingProxy
 
     private final KeyDetector mKeyDetector;
     private final NonDistinctMultitouchHelper mNonDistinctMultitouchHelper;
+    private final HardwareKeyboardPanelSwipeDetector mHardwareKeyboardPanelSwipeDetector;
 
     private final TimerHandler mTimerHandler;
     private final int mLanguageOnSpacebarHorizontalMargin;
@@ -209,6 +210,7 @@ public final class MainKeyboardView extends KeyboardView implements DrawingProxy
                 && !forceNonDistinctMultitouch;
         mNonDistinctMultitouchHelper = hasDistinctMultitouch ? null
                 : new NonDistinctMultitouchHelper();
+        mHardwareKeyboardPanelSwipeDetector = new HardwareKeyboardPanelSwipeDetector(context);
 
         final int backgroundDimAlpha = mainKeyboardViewAttr.getInt(
                 R.styleable.MainKeyboardView_backgroundDimAlpha, 0);
@@ -711,6 +713,11 @@ public final class MainKeyboardView extends KeyboardView implements DrawingProxy
         if (getKeyboard() == null) {
             return false;
         }
+        if (mHardwareKeyboardPanelSwipeDetector.isSwipeDownOnSymbolsPanel(getKeyboard(), event)) {
+            cancelAllOngoingEvents();
+            closeSymbolsPanel();
+            return true;
+        }
         if (mNonDistinctMultitouchHelper != null) {
             if (event.getPointerCount() > 1 && mTimerHandler.isInKeyRepeat()) {
                 // Key repeating timer will be canceled if 2 or more keys are in action.
@@ -735,6 +742,14 @@ public final class MainKeyboardView extends KeyboardView implements DrawingProxy
         }
         tracker.processMotionEvent(event, mKeyDetector);
         return true;
+    }
+
+    private void closeSymbolsPanel() {
+        final int code = Constants.CODE_SWITCH_ALPHA_SYMBOL;
+        mKeyboardActionListener.onPressKey(code, 0 /* repeatCount */, true /* isSinglePointer */);
+        mKeyboardActionListener.onCodeInput(code, Constants.NOT_A_COORDINATE,
+                Constants.NOT_A_COORDINATE, false /* isKeyRepeat */);
+        mKeyboardActionListener.onReleaseKey(code, false /* withSliding */);
     }
 
     public void cancelAllOngoingEvents() {

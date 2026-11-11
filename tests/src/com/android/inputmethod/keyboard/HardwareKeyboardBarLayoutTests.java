@@ -159,4 +159,17 @@ public class HardwareKeyboardBarLayoutTests extends KeyboardLayoutSetTestsBase {
         return HardwareKeyboardLayouts.findKeyMappedToHardwareKey(keyboard,
                 new KeyEvent(KeyEvent.ACTION_DOWN, keyCode));
     }
+
+    public void testOnlySymbolsPanelsCloseOnSwipeDown() {
+        final KeyboardLayoutSet layoutSet = buildLayoutSet(InputType.TYPE_CLASS_TEXT);
+        assertTrue(HardwareKeyboardLayouts.isSymbolsPanel(
+                layoutSet.getKeyboard(KeyboardId.ELEMENT_SYMBOLS)));
+        assertTrue(HardwareKeyboardLayouts.isSymbolsPanel(
+                layoutSet.getKeyboard(KeyboardId.ELEMENT_SYMBOLS_SHIFTED)));
+        assertFalse(HardwareKeyboardLayouts.isSymbolsPanel(
+                layoutSet.getKeyboard(KeyboardId.ELEMENT_ALPHABET)));
+        assertFalse(HardwareKeyboardLayouts.isSymbolsPanel(
+                buildLayoutSet(InputType.TYPE_CLASS_NUMBER)
+                        .getKeyboard(KeyboardId.ELEMENT_ALPHABET)));
+    }
 }
