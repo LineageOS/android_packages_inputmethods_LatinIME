@@ -160,4 +160,16 @@ public class ResourceUtilsTests {
         keyValues.put(HARDWARE_KEY, "mantaray");
         assertEquals("0.2", ResourceUtils.findConstantForKeyValuePairs(keyValues, array));
     }
+
+    @Test
+    public void testKeyboardHeightStaysWithinBounds() {
+        assertEquals(534, ResourceUtils.clampKeyboardHeight(534f, 400f, 662f));
+        assertEquals(662, ResourceUtils.clampKeyboardHeight(900f, 400f, 662f));
+        assertEquals(400, ResourceUtils.clampKeyboardHeight(300f, 400f, 662f));
+    }
+
+    @Test
+    public void testKeyboardHeightMinimumNeverExceedsMaximum() {
+        assertEquals(662, ResourceUtils.clampKeyboardHeight(534f, 890f, 662f));
+    }
 }

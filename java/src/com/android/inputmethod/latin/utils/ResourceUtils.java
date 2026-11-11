@@ -230,9 +230,14 @@ public final class ResourceUtils {
             minKeyboardHeight = -res.getFraction(
                     R.fraction.config_min_keyboard_height, dm.widthPixels, dm.widthPixels);
         }
-        // Keyboard height will not exceed maxKeyboardHeight and will not be less than
-        // minKeyboardHeight.
-        return (int)Math.max(Math.min(keyboardHeight, maxKeyboardHeight), minKeyboardHeight);
+        return clampKeyboardHeight(keyboardHeight, minKeyboardHeight, maxKeyboardHeight);
+    }
+
+    @UsedForTesting
+    static int clampKeyboardHeight(final float keyboardHeight, final float minKeyboardHeight,
+            final float maxKeyboardHeight) {
+        return (int)Math.max(Math.min(keyboardHeight, maxKeyboardHeight),
+                Math.min(minKeyboardHeight, maxKeyboardHeight));
     }
 
     public static boolean isValidFraction(final float fraction) {
