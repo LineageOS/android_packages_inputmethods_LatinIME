@@ -54,6 +54,7 @@ import android.util.SparseArray;
 import android.view.Display;
 import android.view.Gravity;
 import android.view.KeyEvent;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
 import android.view.Window;
@@ -189,6 +190,7 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
     @UsedForTesting final KeyboardSwitcher mKeyboardSwitcher;
     private final SubtypeState mSubtypeState = new SubtypeState();
     private EmojiAltPhysicalKeyDetector mEmojiAltPhysicalKeyDetector;
+    private TouchKeyboardGestureDetector mTouchKeyboardGestureDetector;
     private StatsUtilsManager mStatsUtilsManager;
     // Working variable for {@link #startShowingInputView()} and
     // {@link #onEvaluateInputViewShown()}.
@@ -650,6 +652,8 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
         mDisplayContext = getDisplayContext();
         KeyboardSwitcher.init(this);
         super.onCreate();
+        mTouchKeyboardGestureDetector = new TouchKeyboardGestureDetector(this,
+                mTouchKeyboardGestureListener);
 
         mHandler.onCreate();
         mClipboardSuggestionMonitor = new ClipboardSuggestionMonitor(this, this);
@@ -2032,6 +2036,7 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
                     getApplicationContext().getResources());
         }
         mEmojiAltPhysicalKeyDetector.onKeyDown(keyEvent);
+        mTouchKeyboardGestureDetector.onHardwareKeyDown(keyEvent.getEventTime());
         if (shouldHandleReducedHardwareKey(keyEvent)) {
             return onReducedHardwareKeyDown(keyCode, keyEvent);
         }
@@ -2068,6 +2073,46 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
         }
         return super.onKeyUp(keyCode, keyEvent);
     }
+
+    @Override
+    public boolean onGenericMotionEvent(final MotionEvent event) {
+        if (!isInputViewShown()
+                || !TouchKeyboardGestureDetector.isFromBuiltInTouchKeyboard(event)) {
+            return super.onGenericMotionEvent(event);
+        }
+        mTouchKeyboardGestureDetector.onMotionEvent(event);
+        return true;
+    }
+
+    private final TouchKeyboardGestureDetector.Listener mTouchKeyboardGestureListener =
+            new TouchKeyboardGestureDetector.Listener() {
+        @Override
+        public void onSwipeUp(final float horizontalPosition) {
+            if (mSuggestionStripView != null) {
+                mSuggestionStripView.pickSuggestionAt(horizontalPosition);
+            }
+        }
+
+        @Override
+        public void onSwipeDown() {
+            onCodeInput(Constants.CODE_SWITCH_ALPHA_SYMBOL, Constants.NOT_A_COORDINATE,
+                    Constants.NOT_A_COORDINATE, false /* isKeyRepeat */);
+        }
+
+        @Override
+        public void onSwipeLeft() {
+            if (!mRichImm.getCurrentSubtype().isRtlSubtype()) {
+                mInputLogic.deleteWordBeforeCursor();
+            }
+        }
+
+        @Override
+        public void onSwipeRight() {
+            if (mRichImm.getCurrentSubtype().isRtlSubtype()) {
+                mInputLogic.deleteWordBeforeCursor();
+            }
+        }
+    };
 
     private boolean shouldHandleReducedHardwareKey(final KeyEvent keyEvent) {
         final EditorInfo editorInfo = getCurrentInputEditorInfo();
