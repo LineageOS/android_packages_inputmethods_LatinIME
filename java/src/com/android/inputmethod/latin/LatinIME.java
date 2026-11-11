@@ -80,6 +80,8 @@ import com.android.inputmethod.event.Event;
 import com.android.inputmethod.event.HardwareEventDecoder;
 import com.android.inputmethod.event.HardwareKeyboardEventDecoder;
 import com.android.inputmethod.event.InputTransaction;
+import com.android.inputmethod.keyboard.HardwareKeyboardLayouts;
+import com.android.inputmethod.keyboard.Key;
 import com.android.inputmethod.keyboard.Keyboard;
 import com.android.inputmethod.keyboard.KeyboardActionListener;
 import com.android.inputmethod.keyboard.KeyboardId;
@@ -2074,14 +2076,25 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
     }
 
     private boolean onReducedHardwareKeyDown(final int keyCode, final KeyEvent keyEvent) {
-        final Event event = getHardwareKeyEventDecoder(
-                keyEvent.getDeviceId()).decodeHardwareKey(keyEvent);
+        final Event event = decodeReducedHardwareKey(keyEvent);
         if (!event.isHandled()) {
             return super.onKeyDown(keyCode, keyEvent);
         }
         mInputLogic.mCurrentlyPressedHardwareKeys.add(getHardwareKeyIdentifier(keyEvent));
-        onEvent(applyKeyboardShiftState(event));
+        onEvent(event);
         return true;
+    }
+
+    @Nonnull
+    private Event decodeReducedHardwareKey(@Nonnull final KeyEvent keyEvent) {
+        final Key mappedKey = HardwareKeyboardLayouts.findKeyMappedToHardwareKey(
+                mKeyboardSwitcher.getKeyboard(), keyEvent);
+        if (mappedKey != null) {
+            return Event.createHardwareKeypressEvent(mappedKey.getCode(), keyEvent.getKeyCode(),
+                    null /* next */, keyEvent.getRepeatCount() > 0);
+        }
+        return applyKeyboardShiftState(getHardwareKeyEventDecoder(
+                keyEvent.getDeviceId()).decodeHardwareKey(keyEvent));
     }
 
     @Nonnull

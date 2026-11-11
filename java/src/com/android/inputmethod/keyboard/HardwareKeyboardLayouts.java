@@ -5,9 +5,13 @@
 
 package com.android.inputmethod.keyboard;
 
+import android.view.KeyEvent;
+
 import com.android.inputmethod.latin.R;
 
-final class HardwareKeyboardLayouts {
+import javax.annotation.Nullable;
+
+public final class HardwareKeyboardLayouts {
     private static final int FULL_KEYBOARD_ROW_COUNT = 4;
     private static final int BAR_ROW_COUNT = 1;
     private static final int PASSWORD_BAR_ROW_COUNT = 2;
@@ -49,5 +53,25 @@ final class HardwareKeyboardLayouts {
             return isPasswordInput ? PASSWORD_BAR_ROW_COUNT : BAR_ROW_COUNT;
         }
         return FULL_KEYBOARD_ROW_COUNT;
+    }
+
+    @Nullable
+    public static Key findKeyMappedToHardwareKey(@Nullable final Keyboard keyboard,
+            final KeyEvent keyEvent) {
+        if (keyboard == null || !keyboard.mId.mIsHardwareKeyboardLayout
+                || keyboard.mId.isAlphabetKeyboard()) {
+            return null;
+        }
+        final int codePoint = keyEvent.getUnicodeChar(0);
+        if (codePoint == 0) {
+            return null;
+        }
+        final String keyLabel = new String(Character.toChars(codePoint));
+        for (final Key key : keyboard.getSortedKeys()) {
+            if (keyLabel.equalsIgnoreCase(key.getHintLabel())) {
+                return key;
+            }
+        }
+        return null;
     }
 }
