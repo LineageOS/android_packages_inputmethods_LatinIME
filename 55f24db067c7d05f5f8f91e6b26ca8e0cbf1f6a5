@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "017cf965_7291a852",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-11-12T09:53:32Z",
+      "side": 1,
+      "message": "Was going to ask why there were 2 different impl to do basically the same, but there it is.",
+      "revId": "55f24db067c7d05f5f8f91e6b26ca8e0cbf1f6a5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
