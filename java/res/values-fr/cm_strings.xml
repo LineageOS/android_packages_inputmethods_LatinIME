@@ -26,9 +26,26 @@
     <string name="space_trackpad_summary">Glisser sur la barre d\'espace pour déplacer le curseur</string>
     <string name="backspace_trackpad">Suppression rapide</string>
     <string name="backspace_trackpad_summary">Faites glisser votre doigt sur la touche retour arrière pour supprimer des mots</string>
+    <string name="swipe_down_for_digits">Glisser vers le bas pour les chiffres</string>
+    <string name="swipe_down_for_digits_summary">Glisser vers le bas sur une touche pour saisir le chiffre affiché dessus</string>
+    <string name="show_clipboard_suggestions">Suggestions du presse-papier</string>
+    <string name="show_clipboard_suggestions_summary">Suggérer des textes et codes de vérification récemment copiés</string>
+    <string name="clipboard_suggestion_description">Coller <xliff:g id="text" example="482913">%s</xliff:g></string>
+    <string name="clipboard_suggestion_sensitive_description">Coller le texte copié</string>
     <string name="show_longpress_hints">Afficher les indices d\'appui long sur une touche</string>
     <string name="show_longpress_hints_summary">Affiche les indices d\'appui long pour les touches prises en charge</string>
     <string name="show_emoji_key">Afficher la touche Émoji</string>
     <string name="show_emoji_key_summary">Toujours afficher la touche Émoji. Lorsque cette option est activée, la touche de changement de langue ne peut pas être affichée.</string>
+    <string name="enable_split_keyboard_summary">Seulement en mode paysage</string>
+    <string name="split_keyboard_duplicate_keys">Dupliquer les touches centrales</string>
+    <string name="split_keyboard_duplicate_keys_summary">Afficher les touches près du milieu sur les deux moitiés</string>
+    <string name="spoken_description_split_keyboard">Diviser le clavier</string>
+    <string name="spoken_description_merge_keyboard">Fusionner le clavier</string>
+    <string name="spoken_description_float_keyboard">Clavier flottant</string>
+    <string name="spoken_description_dock_keyboard">Clavier ancré</string>
+    <string name="floating_keyboard_drag_handle">Déplacer le clavier</string>
+    <string name="floating_keyboard_resize_handle">Redimensionner le clavier</string>
     <string name="floating_keyboard_reset">Réinitialiser</string>
+    <string name="floating_keyboard_hide">Masquer le clavier</string>
+    <string name="floating_keyboard_switch_ime">Changer de mode de saisie</string>
 </resources>

@@ -26,6 +26,12 @@
     <string name="space_trackpad_summary">Deslize na barra de espaço para mover o cursor</string>
     <string name="backspace_trackpad">Deslizar na tecla de apagar</string>
     <string name="backspace_trackpad_summary">Deslize na tecla de apagar para apagar palavras</string>
+    <string name="swipe_down_for_digits">Deslize para baixo para números</string>
+    <string name="swipe_down_for_digits_summary">Deslize para baixo numa tecla para introduzir o número mostrado nela</string>
+    <string name="show_clipboard_suggestions">Sugestões da área de transferência</string>
+    <string name="show_clipboard_suggestions_summary">Sugerir texto e códigos de verificação recentemente copiados</string>
+    <string name="clipboard_suggestion_description">Colar <xliff:g id="text" example="482913">%s</xliff:g></string>
+    <string name="clipboard_suggestion_sensitive_description">Colar texto copiado</string>
     <string name="show_longpress_hints">Mostrar dicas com pressão longa</string>
     <string name="show_longpress_hints_summary">Mostrar dicas ao pressionar longamente em teclas suportadas</string>
     <string name="show_emoji_key">Mostrar tecla de emojis</string>

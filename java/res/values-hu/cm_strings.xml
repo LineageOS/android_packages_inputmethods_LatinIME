@@ -26,6 +26,12 @@
     <string name="space_trackpad_summary">A kurzor mozgatásához húzza az ujját a szóköz billentyűn</string>
     <string name="backspace_trackpad">Szótörlés csúsztatással</string>
     <string name="backspace_trackpad_summary">A törlés (backspace) gombon csúsztatás törli az egész szót</string>
+    <string name="swipe_down_for_digits">Számkarakterek lefelé húzással</string>
+    <string name="swipe_down_for_digits_summary">A szám a billenyűn való lefelé húzással érhető el</string>
+    <string name="show_clipboard_suggestions">Vágólapjavaslatok</string>
+    <string name="show_clipboard_suggestions_summary">Nemrég másolt szövegek és ellenőrző kódok felajánlása</string>
+    <string name="clipboard_suggestion_description"><xliff:g id="text" example="482913">%s</xliff:g> beillesztése</string>
+    <string name="clipboard_suggestion_sensitive_description">Másolt szöveg beillesztése</string>
     <string name="show_longpress_hints">Tippek megjelenítése hosszan nyomáskor</string>
     <string name="show_longpress_hints_summary">A támogatott billentyűkön, hosszan lenyomáskor tippeket jelenít meg</string>
     <string name="show_emoji_key">Emoji-gomb megjelenítése</string>

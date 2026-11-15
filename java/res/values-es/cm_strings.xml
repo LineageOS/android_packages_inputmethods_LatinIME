@@ -26,6 +26,10 @@
     <string name="space_trackpad_summary">Desliza sobre la barra espaciadora para mover el cursor</string>
     <string name="backspace_trackpad">Tecla de retroceso del panel táctil</string>
     <string name="backspace_trackpad_summary">Desliza el dedo sobre la tecla de retroceso para borrar palabras</string>
+    <string name="show_clipboard_suggestions">Sugerencias del portapapeles</string>
+    <string name="show_clipboard_suggestions_summary">Sugerir texto copiado recientemente y códigos de verificación</string>
+    <string name="clipboard_suggestion_description">Pegar <xliff:g id="text" example="482913">%s</xliff:g></string>
+    <string name="clipboard_suggestion_sensitive_description">Pegar texto copiado</string>
     <string name="show_longpress_hints">Mostrar sugerencias de teclas pulsadas prolongadamente</string>
     <string name="show_longpress_hints_summary">Muestra sugerencias de pulsación prolongada para las teclas compatibles</string>
     <string name="show_emoji_key">Mostrar tecla de emoticonos</string>

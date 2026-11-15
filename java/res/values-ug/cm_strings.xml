@@ -26,6 +26,12 @@
     <string name="space_trackpad_summary">بوشلۇق كۇنۇپكا سېيرىلسا سىنبەلگە يۆتكىلىدۇ</string>
     <string name="backspace_trackpad">backspace كۇنۇپكا سەزگۈر تاختىسى</string>
     <string name="backspace_trackpad_summary">سۆز ئۆچۈرۈشتە backspace كۇنۇپكىسىنىڭ ئۈستىدە سىيرىلىدۇ</string>
+    <string name="swipe_down_for_digits">سان كىرگۈزۈشتە ئاستىغا سىيرىلىدۇ</string>
+    <string name="swipe_down_for_digits_summary">كۇنۇپكىدا كۆرۈنگەن ساننى كىرگۈزۈشتە ئاستىغا سىيرىلىدۇ</string>
+    <string name="show_clipboard_suggestions">چاپلاش تاختا تەۋسىيەسى</string>
+    <string name="show_clipboard_suggestions_summary">يېقىندا كۆچۈرۈلگەن تېكىست ۋە دەلىللەش كودىنى تەۋسىيە قىلىدۇ</string>
+    <string name="clipboard_suggestion_description"><xliff:g id="text" example="482913">%s</xliff:g> نى چاپلا</string>
+    <string name="clipboard_suggestion_sensitive_description">كۆچۈرۈلگەن تېكىستنى چاپلا</string>
     <string name="show_longpress_hints">ئۇزۇن بېسىلسا ئەسكەرتىشنى كۆرسىتىدۇ</string>
     <string name="show_longpress_hints_summary">قوللايدىغان كۇنۇپكىنىڭ ئۇزۇن بېسىلسا ئەسكەرتىشىنى كۆرسىتىدۇ</string>
     <string name="show_emoji_key">چىراي ئىپادە كۇنۇپكىسىنى كۆرسەت</string>

@@ -26,6 +26,12 @@
     <string name="space_trackpad_summary">Przesuwaj palcem na spacji, aby poruszać kursorem</string>
     <string name="backspace_trackpad">Klawisz \"backspace\" na gładziku</string>
     <string name="backspace_trackpad_summary">Przesuwaj palcem po klawiszu \"backspace\", aby usuwać słowa</string>
+    <string name="swipe_down_for_digits">Przesuń palcem w dół, aby wyświetlić liczby</string>
+    <string name="swipe_down_for_digits_summary">Przesuń palcem w dół po klawiszu, aby wpisać wyświetloną na nim liczbę</string>
+    <string name="show_clipboard_suggestions">Propozycje schowka</string>
+    <string name="show_clipboard_suggestions_summary">Proponuj ostatnio skopiowany tekst i kody weryfikacyjne</string>
+    <string name="clipboard_suggestion_description">Wklej <xliff:g id="text" example="482913">%s</xliff:g></string>
+    <string name="clipboard_suggestion_sensitive_description">Wklej skopiowany tekst</string>
     <string name="show_longpress_hints">Pokazuj podpowiedzi długiego przytrzymania klawisza</string>
     <string name="show_longpress_hints_summary">Wyświetla podpowiedzi długiego przytrzymania dla obsługiwanych klawiszy</string>
     <string name="show_emoji_key">Pokazuj przycisk emoji</string>

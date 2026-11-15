@@ -26,6 +26,12 @@
     <string name="space_trackpad_summary">滑动空格键即可移动光标</string>
     <string name="backspace_trackpad">退格键触控板</string>
     <string name="backspace_trackpad_summary">在退格键上滑动以删除单词</string>
+    <string name="swipe_down_for_digits">向下滑动输入数字</string>
+    <string name="swipe_down_for_digits_summary">向下滑动按键即可输入按键上显示的数字</string>
+    <string name="show_clipboard_suggestions">根据剪切板内容给出的建议</string>
+    <string name="show_clipboard_suggestions_summary">建议最近复制的文本和验证码</string>
+    <string name="clipboard_suggestion_description">粘贴 <xliff:g id="text" example="482913">%s</xliff:g></string>
+    <string name="clipboard_suggestion_sensitive_description">粘贴已复制的文本</string>
     <string name="show_longpress_hints">显示长按键提示</string>
     <string name="show_longpress_hints_summary">显示受支持按键的长按提示</string>
     <string name="show_emoji_key">显示表情符号键</string>

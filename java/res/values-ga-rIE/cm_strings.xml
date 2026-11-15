@@ -26,6 +26,12 @@
     <string name="space_trackpad_summary">Sciob ar an mbarra spáis chun an cúrsóir a bhogadh.</string>
     <string name="backspace_trackpad">Eochair chúlspáis rianaithe</string>
     <string name="backspace_trackpad_summary">Svaidhpeáil ar an eochair cúlspáis chun focail a scriosadh</string>
+    <string name="swipe_down_for_digits">Svaipeáil síos le haghaidh uimhreacha</string>
+    <string name="swipe_down_for_digits_summary">Svaidhpeáil síos ar eochair chun an uimhir atá uirthi a chlóscríobh</string>
+    <string name="show_clipboard_suggestions">Moltaí an ghearrchláir</string>
+    <string name="show_clipboard_suggestions_summary">Mol téacs a cóipeáladh le déanaí agus cóid fíoraithe</string>
+    <string name="clipboard_suggestion_description">Greamaigh <xliff:g id="text" example="482913">%s</xliff:g></string>
+    <string name="clipboard_suggestion_sensitive_description">Greamaigh an téacs cóipeáilte</string>
     <string name="show_longpress_hints">Taispeáin leideanna fadbhrúite</string>
     <string name="show_longpress_hints_summary">Taispeáin leideanna fadbhrú le haghaidh eochracha tacaithe</string>
     <string name="show_emoji_key">Taispeáin eochair emoji</string>

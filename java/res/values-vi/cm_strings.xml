@@ -26,6 +26,12 @@
     <string name="space_trackpad_summary">Vuốt trên phím cách để di chuyển con trỏ</string>
     <string name="backspace_trackpad">Phím xóa lùi trên bàn di chuột</string>
     <string name="backspace_trackpad_summary">Vuốt trên phím xóa lùi để xóa từ</string>
+    <string name="swipe_down_for_digits">Vuốt xuống để nhập số</string>
+    <string name="swipe_down_for_digits_summary">Vuốt xuống trên một phím để nhập số hiển thị trên phím đó</string>
+    <string name="show_clipboard_suggestions">Gợi ý bảng nhớ tạm</string>
+    <string name="show_clipboard_suggestions_summary">Gợi ý văn bản và mã xác minh vừa được sao chép</string>
+    <string name="clipboard_suggestion_description">Dán <xliff:g id="text" example="482913">%s</xliff:g></string>
+    <string name="clipboard_suggestion_sensitive_description">Dán văn bản đã sao chép</string>
     <string name="show_longpress_hints">Hiển thị các gợi ý khi nhấn giữ phím</string>
     <string name="show_longpress_hints_summary">Hiển thị các gợi ý khi nhấn giữ phím được hỗ trợ</string>
     <string name="show_emoji_key">Hiển thị phím biểu tượng cảm xúc</string>

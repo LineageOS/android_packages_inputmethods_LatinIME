@@ -26,6 +26,12 @@
     <string name="space_trackpad_summary">Potegnite po preslednici za premik kazalca</string>
     <string name="backspace_trackpad">Sledilna ploščica vračalke</string>
     <string name="backspace_trackpad_summary">Potegnite po vračalki za izbris besed</string>
+    <string name="swipe_down_for_digits">Poteg navzdol za številke</string>
+    <string name="swipe_down_for_digits_summary">Potegnite navzdol na tipko, da napišete številko prikazano na njej</string>
+    <string name="show_clipboard_suggestions">Predlogi odložišča</string>
+    <string name="show_clipboard_suggestions_summary">Predlagaj nedavno kopirano besedilo in kode za preverjanje</string>
+    <string name="clipboard_suggestion_description">Prilepi <xliff:g id="text" example="482913">%s</xliff:g></string>
+    <string name="clipboard_suggestion_sensitive_description">Prilepi kopirano besedilo</string>
     <string name="show_longpress_hints">Prikaži namige pridržanja tipke</string>
     <string name="show_longpress_hints_summary">Prikaže namige pridržanja tipke za podprte tipke</string>
     <string name="show_emoji_key">Prikaži tipko za izrazne ikone</string>

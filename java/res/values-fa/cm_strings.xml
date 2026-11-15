@@ -26,6 +26,12 @@
     <string name="space_trackpad_summary">برای جابجایی مکان نما، انگشت خود را روی کلید فاصله بکشید</string>
     <string name="backspace_trackpad">دکمه پس‌بَر ترک‌پد</string>
     <string name="backspace_trackpad_summary">برای حذف کلمات، کلید پس‌بَر را بکشید</string>
+    <string name="swipe_down_for_digits">برای دیدن اعداد، به پایین بکشید</string>
+    <string name="swipe_down_for_digits_summary">برای تایپ عدد نمایش‌داده‌شده روی یک کلید، روی آن به سمت پایین بکشید</string>
+    <string name="show_clipboard_suggestions">پیشنهادهای بریده‌دان</string>
+    <string name="show_clipboard_suggestions_summary">پیشنهاد متن‌های به‌تازگی کپی‌شده و کدهای تأیید</string>
+    <string name="clipboard_suggestion_description">جای‌گذاری <xliff:g id="text" example="482913">%s</xliff:g></string>
+    <string name="clipboard_suggestion_sensitive_description">جای‌گذاری متن کپی‌شده</string>
     <string name="show_longpress_hints">نمایش نکات کلیدی با فشار طولانی</string>
     <string name="show_longpress_hints_summary">نمایش نکات با فشار طولانی برای کلیدهای پشتیبانی شده</string>
     <string name="show_emoji_key">نمایش کلید ایموجی</string>

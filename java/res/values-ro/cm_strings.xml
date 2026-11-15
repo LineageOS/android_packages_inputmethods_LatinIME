@@ -26,6 +26,12 @@
     <string name="space_trackpad_summary">Glisați pe bara de spațiu pentru a muta cursorul</string>
     <string name="backspace_trackpad">Trackpad cu tasta backspace</string>
     <string name="backspace_trackpad_summary">Glisați pe tasta backspace pentru a șterge cuvintele</string>
+    <string name="swipe_down_for_digits">Glisați în jos pentru numere</string>
+    <string name="swipe_down_for_digits_summary">Glisați în jos pe o tastă pentru a introduce numărul afișat pe ea</string>
+    <string name="show_clipboard_suggestions">Sugestii pentru clipboard</string>
+    <string name="show_clipboard_suggestions_summary">Sugerează textul și codurile de verificare recent copiate</string>
+    <string name="clipboard_suggestion_description">Lipire <xliff:g id="text" example="482913">%s</xliff:g></string>
+    <string name="clipboard_suggestion_sensitive_description">Lipește textul copiat</string>
     <string name="show_longpress_hints">Arată sugestii taste pentru apăsare lungă</string>
     <string name="show_longpress_hints_summary">Afişează indicii de apăsare lungă pentru tastele acceptate</string>
     <string name="show_emoji_key">Arată tastă emoji</string>

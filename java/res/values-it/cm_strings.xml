@@ -26,8 +26,26 @@
     <string name="space_trackpad_summary">Scorri sulla barra spaziatrice per spostare il cursore</string>
     <string name="backspace_trackpad">Trackpad sul tasto Backspace</string>
     <string name="backspace_trackpad_summary">Scorri sulla tasto Backspace per eliminare le parole</string>
+    <string name="swipe_down_for_digits">Scorri verso il basso per digitare le cifre</string>
+    <string name="swipe_down_for_digits_summary">Scorri verso il basso su una tasto per digitare la cifra corrispondente</string>
+    <string name="show_clipboard_suggestions">Suggerimenti dagli appunti</string>
+    <string name="show_clipboard_suggestions_summary">Suggerisci testo e codici di verifica copiati di recente</string>
+    <string name="clipboard_suggestion_description">Incolla <xliff:g id="text" example="482913">%s</xliff:g></string>
+    <string name="clipboard_suggestion_sensitive_description">Incolla testo copiato</string>
     <string name="show_longpress_hints">Simboli di pressione prolungata</string>
     <string name="show_longpress_hints_summary">Mostra i simboli di pressione prolungata per i tasti che li prevedono</string>
     <string name="show_emoji_key">Mostra tasto emoji</string>
     <string name="show_emoji_key_summary">Mostra sempre il tasto emoji. Quando questa opzione è abilitata, il tasto di selezione della lingua non può essere mostrato.</string>
+    <string name="enable_split_keyboard_summary">Solo in orizzontale</string>
+    <string name="split_keyboard_duplicate_keys">Duplica tasti centrali</string>
+    <string name="split_keyboard_duplicate_keys_summary">Mostra i tasti vicini al centro su entrambe le metà</string>
+    <string name="spoken_description_split_keyboard">Dividi tastiera</string>
+    <string name="spoken_description_merge_keyboard">Unisci tastiera</string>
+    <string name="spoken_description_float_keyboard">Tastiera fluttuante</string>
+    <string name="spoken_description_dock_keyboard">Riaggancia tastiera</string>
+    <string name="floating_keyboard_drag_handle">Sposta tastiera</string>
+    <string name="floating_keyboard_resize_handle">Ridimensiona tastiera</string>
+    <string name="floating_keyboard_reset">Reimposta</string>
+    <string name="floating_keyboard_hide">Nascondi tastiera</string>
+    <string name="floating_keyboard_switch_ime">Cambia metodo di inserimento</string>
 </resources>

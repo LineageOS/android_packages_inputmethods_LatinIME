@@ -26,6 +26,12 @@
     <string name="space_trackpad_summary">スペースバーをスワイプしてカーソルを移動します</string>
     <string name="backspace_trackpad">バックスペースキーのトラックパッド</string>
     <string name="backspace_trackpad_summary">バックスペースキーをスワイプして単語を削除します</string>
+    <string name="swipe_down_for_digits">下にスワイプして数字を表示</string>
+    <string name="swipe_down_for_digits_summary">キーを下にスワイプして数字を入力します</string>
+    <string name="show_clipboard_suggestions">クリップボードの候補</string>
+    <string name="show_clipboard_suggestions_summary">最近コピーしたテキストと認証コードを提案します</string>
+    <string name="clipboard_suggestion_description"><xliff:g id="text" example="482913">%s</xliff:g> を貼り付け</string>
+    <string name="clipboard_suggestion_sensitive_description">コピーしたテキストを貼り付け</string>
     <string name="show_longpress_hints">長押しのヒントを表示</string>
     <string name="show_longpress_hints_summary">サポートしているキーでは長押しでヒントを表示します</string>
     <string name="show_emoji_key">絵文字キーを表示</string>

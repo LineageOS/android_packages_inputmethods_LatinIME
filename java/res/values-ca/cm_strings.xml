@@ -26,6 +26,12 @@
     <string name="space_trackpad_summary">Feu lliscar el dit per moure el cursor</string>
     <string name="backspace_trackpad">Botó enrere del ratolí tàctil</string>
     <string name="backspace_trackpad_summary">Feu lliscar el dit amb la tecla de retrocés per suprimir paraules</string>
+    <string name="swipe_down_for_digits">Llisqueu cap avall per introduir números</string>
+    <string name="swipe_down_for_digits_summary">Llisqueu cap avall sobre una tecla per escriure el número que hi apareix</string>
+    <string name="show_clipboard_suggestions">Suggeriments del porta-retalls</string>
+    <string name="show_clipboard_suggestions_summary">Suggereix text i codis de verificació copiats recentment</string>
+    <string name="clipboard_suggestion_description">Enganxa <xliff:g id="text" example="482913">%s</xliff:g></string>
+    <string name="clipboard_suggestion_sensitive_description">Enganxa el text copiat</string>
     <string name="show_longpress_hints">Consells de les tecles en mantenir-les premudes</string>
     <string name="show_longpress_hints_summary">Manteniu premut per mostrar els consells de les tecles</string>
     <string name="show_emoji_key">Mostra la tecla emoji</string>

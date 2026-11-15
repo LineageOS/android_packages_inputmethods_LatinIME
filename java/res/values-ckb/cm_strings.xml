@@ -26,6 +26,12 @@
     <string name="space_trackpad_summary">دەست بەسەر دوگمەی بۆشاییدا بهێنە بۆ جوڵاندنی نیشاندەر (Cursor)</string>
     <string name="backspace_trackpad">تراکپادی دوگمەی Backspace</string>
     <string name="backspace_trackpad_summary">دەست بەسەر دوگمەی Backspaceدا بخشێنە بۆ سڕینەوەی وشەکان</string>
+    <string name="swipe_down_for_digits">بۆ خوارەوە ڕابکێشە بۆ ژمارەکان</string>
+    <string name="swipe_down_for_digits_summary">بۆ نووسینی ئەو ژمارەیەی لەسەر دوگمەکە دیارە، پەنجە بەسەریدا بۆ خوارەوە ڕابکێشە</string>
+    <string name="show_clipboard_suggestions">پێشنیارەکانی کلیپبۆرد (تەختەی لەبەرگرتنەوە)</string>
+    <string name="show_clipboard_suggestions_summary">پێشنیاز کردنی ئەو دەق و کۆدی پشتڕاستکردنەوانەی بەم دوایییە کۆپی کراون</string>
+    <string name="clipboard_suggestion_description">لکاندنی <xliff:g id="text" example="482913">%s</xliff:g></string>
+    <string name="clipboard_suggestion_sensitive_description">لکاندنی دەقی کۆپیکراو</string>
     <string name="show_longpress_hints">نیشاندانی ئاماژەی داگرتنی درێژ</string>
     <string name="show_longpress_hints_summary">ئاماژەی داگرتنی درێژ بۆ ئەو دوگمانە نیشان دەدات کە پاڵپشتی دەکەن</string>
     <string name="show_emoji_key">نیشاندانی دوگمەی ئیمۆجی</string>
